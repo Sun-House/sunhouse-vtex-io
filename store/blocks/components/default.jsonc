@@ -1,0 +1,26 @@
+{
+  "flex-layout.col#column-spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.row#line-spacer": {
+    "children": ["flex-layout.col#column-spacer"]
+  },
+  "link#whatsapp-float": {
+    "children": ["icon#whatsapp"],
+    "props": {
+      "blockClass": "whatsapp-float",
+      "target": "_blank",
+      "href": "https://api.whatsapp.com/send?phone=5511994877664"
+    }
+  },
+  "icon#whatsapp": {
+    "props": {
+      "id": "bnd-whatsapp",
+      "size": 51,
+      "activeClassName": "vtex-store-components-3-x-whatsappIcon"
+    }
+  }
+}

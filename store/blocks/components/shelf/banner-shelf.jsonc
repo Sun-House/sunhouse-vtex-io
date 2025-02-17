@@ -1,0 +1,135 @@
+{
+  "flex-layout.row#shelf-banner-desktop": {
+    "title": "Prateleira com Banner",
+    "children": [
+      "flex-layout.col#shelf-banner-cta",
+      "flex-layout.col#shelf-banner-content"
+    ],
+    "props": {
+      "blockClass": ["shelf-banner", "shelf-container"],
+      "colSizing": "auto",
+      "colGap": 8
+    }
+  },
+
+  "flex-layout.col#shelf-banner-cta": {
+    "title": "Banner Prateleira",
+    "children": [
+      "responsive-layout.desktop#shelf-banner-cta",
+      "responsive-layout.mobile#shelf-banner-cta"
+    ],
+    "props": {
+      // "width": "44%"
+    }
+  },
+  "flex-layout.col#shelf-banner-content": {
+    "title": "Prateleira com banner",
+    "children": ["hover-container#shelf-banner"],
+    "props": {
+      "blockClass": "shelf-banner-content"
+      // "width": "56%"
+    }
+  },
+
+  "responsive-layout.desktop#shelf-banner-cta": {
+    "children": ["stack-layout#shelf-banner-cta.desktop"]
+  },
+  "responsive-layout.mobile#shelf-banner-cta": {
+    "children": ["stack-layout#shelf-banner-cta.mobile"]
+  },
+
+  "stack-layout#shelf-banner-cta.desktop": {
+    "title": "Banner prateleira desktop",
+    "children": ["image#banner-shelf-desktop", "link#shelf-banner-button"],
+    "props": {
+      "blockClass": "shelf-banner-cta"
+    }
+  },
+  "stack-layout#shelf-banner-cta.mobile": {
+    "title": "Banner prateleira mobile",
+    "children": ["image#banner-shelf-mobile", "link#shelf-banner-button"],
+    "props": {
+      "blockClass": "shelf-banner-cta"
+    }
+  },
+
+  "link#shelf-banner-button": {
+    "title": "Botão banner prateleira",
+    "children": ["rich-text#shelf-banner-button-text", "icon#arrow-cta-shelf"],
+    "props": {
+      "href": "",
+      "label": "",
+      "blockClass": "shelf-banner-button"
+    }
+  },
+  "rich-text#shelf-banner-button-text": {
+    "props": {
+      "text": "Conheça toda a coleção",
+      "blockClass": "shelf-banner-button-text"
+    }
+  },
+  "icon#arrow-cta-shelf": {
+    "props": {
+      "id": "nav-arrow-right",
+      "size": 14,
+      "activeClassName": "vtex-store-components-3-x-arrowCTAIcon"
+    }
+  },
+
+  "hover-container#shelf-banner": {
+    "children": ["list-context.product-list#shelf-banner"],
+    "props": {
+      "blockClass": ["shelf-banner", "hover-shelf-list"]
+    }
+  },
+
+  "list-context.product-list#shelf-banner": {
+    "title": "Lista de produto",
+    "blocks": ["product-summary.shelf#main-product"],
+    "children": [
+      "responsive-layout.desktop#banner-shelf",
+      "responsive-layout.mobile#shelf-slider"
+    ],
+    "props": {
+      "maxItems": 10
+    }
+  },
+
+  "responsive-layout.desktop#banner-shelf": {
+    "children": ["slider-layout#banner-shelf"]
+  },
+
+  "slider-layout#banner-shelf": {
+    "title": "Carrossel da prateleira com banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly",
+      "infinite": true,
+      "blockClass": ["shelf", "banner-shelf"]
+    }
+  },
+
+  "image#banner-shelf-desktop": {
+    "props": {
+      "src": "assets/images/home/shelf-banner.png",
+      "alt": "Conheça toda a coleção",
+      "title": "Conheça toda a coleção ",
+      "blockClass": ["banner-shelf", "banner-home"]
+    }
+  },
+
+  "image#banner-shelf-mobile": {
+    "props": {
+      "src": "assets/images/home/shelf-banner-mobile.png",
+      "alt": "Conheça toda a coleção",
+      "title": "Conheça toda a coleção",
+
+      "blockClass": ["banner-shelf", "banner-home", "banner-shelf--mobile"]
+    }
+  }
+}

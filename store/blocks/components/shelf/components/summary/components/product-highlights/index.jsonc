@@ -1,0 +1,30 @@
+{
+  "container#product-highlights": {
+    "children": ["sunhouse.product-highlights@2.x:product-highlights"],
+    "props": {
+      "blockClass": "product-highlights"
+    }
+  },
+
+  "container#product-highlights--product-page": {
+    "children": ["sunhouse.product-highlights@2.x:product-highlights"],
+    "props": {
+      "blockClass": ["product-highlights", "product-highlights--product-page"]
+    }
+  },
+
+  "sunhouse.product-highlights@2.x:product-highlights": {
+    "props": {
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Pronta Entrega", "Vitrine Home - Lancamento"]
+      }
+    },
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  }
+}

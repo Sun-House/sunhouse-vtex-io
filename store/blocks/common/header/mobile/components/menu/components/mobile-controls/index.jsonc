@@ -1,0 +1,77 @@
+{
+  "container#menu-mobile-controls": {
+    "props": {
+      "blockClass": "menu-mobile-controls"
+    },
+    "children": [
+      "container#mobile-login",
+      "container#menu-mobile-controls--logged"
+    ]
+  },
+
+  "container#menu-mobile-controls--logged": {
+    "props": {
+      "blockClass": "menu-mobile-controls--logged"
+    },
+    "children": ["link#mobile-account", "minicart.v2", "link#mobile-wishlist"]
+  },
+
+  "container#mobile-login": {
+    "props": {
+      "blockClass": "mobile-login"
+    },
+    "children": ["conditional-login#mobile-login"]
+  },
+
+  "conditional-login#mobile-login": {
+    "blocks": [
+      "conditional-login.unlogged#mobile-login",
+      "conditional-login.logged#mobile-login"
+    ]
+  },
+
+  "conditional-login.unlogged#mobile-login": {
+    "children": ["link#mobile-login"]
+  },
+  "link#mobile-login": {
+    "props": {
+      "href": "/login",
+      "blockClass": "mobile-login"
+    },
+    "children": ["rich-text#mobile-loggin-unlogged"]
+  },
+  "rich-text#mobile-loggin-unlogged": {
+    "props": {
+      "text": "#### Login \n **Entre** ou **Cadastre-se**",
+      "blockClass": "mobile-login"
+    }
+  },
+  "conditional-login.logged#mobile-login": {
+    "children": ["conditional-login.greeting", "link#mobile-logout"]
+  },
+
+  "link#mobile-logout": {
+    "props": {
+      "blockClass": "mobile-logout",
+      "label": "[Sair]",
+      "href": "/logout"
+    }
+  },
+
+  "link#mobile-account": {
+    "props": {
+      "href": "/_secure/account#/orders",
+      "label": "Meus Pedidos",
+      "blockClass": "menu-mobile-link"
+    }
+  },
+
+  "link#mobile-wishlist": {
+    "props": {
+      "href": "/wishlist",
+      "label": "Lista de Favoritos",
+      "blockClass": ["menu-mobile-link", "menu-mobile-link--wishlist"]
+    },
+    "children": ["icon#wishlist"]
+  }
+}

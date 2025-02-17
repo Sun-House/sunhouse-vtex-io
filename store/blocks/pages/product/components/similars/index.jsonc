@@ -1,0 +1,47 @@
+{
+  "container#similars": {
+    "props": {
+      "blockClass": "similars"
+    },
+    "children": ["list-context.related-product-list#similars"]
+  },
+
+  "list-context.related-product-list#similars": {
+    "props": {
+      "title": "Outras opções de cores:",
+      "recommendation": "similars"
+    },
+    "blocks": ["product-summary.shelf#similars"],
+    "children": ["rich-text#similars", "embla-carousel#similars"]
+  },
+
+  "embla-carousel#similars": {
+    "props": {
+      "options": {
+        "navigation": true,
+        "align": "start"
+      },
+      "blockClass": ["similars"]
+    }
+  },
+
+  "rich-text#similars": {
+    "props": {
+      "blockClass": "similars",
+      "text": "Produtos similares:"
+    }
+  },
+
+  "product-summary.shelf#similars": {
+    "props": {
+      "blockClass": ["similars"]
+    },
+    "children": ["product-summary-image#similars"]
+  },
+
+  "product-summary-image#similars": {
+    "props": {
+      "blockClass": "similars"
+    }
+  }
+}

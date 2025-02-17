@@ -1,0 +1,9 @@
+sass
+styles/configs/font-faces.scss
+styles/configs/fantasticon.scss
+styles/iconpacks/icons
+**/*.scss
+
+**/*.Identifier
+
+checkout-ui-custom/resources

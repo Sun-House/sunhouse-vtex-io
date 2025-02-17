@@ -1,0 +1,66 @@
+{
+  "container#differentials": {
+    "title": "Diferenciais",
+    "props": {
+      "wrapper": true,
+      "blockClass": ["differentials", "differentials--home", "container-center"]
+    },
+    "children": ["list-context.differential-list#home"]
+  },
+
+  "list-context.differential-list#home": {
+    "props": {
+      "blockClass": "home",
+      "differentials": [
+        {
+          "iconImageUrl": "assets/images/differentials/30-anos.svg",
+          "text": "Mais de **30 anos** de mercado"
+        },
+        {
+          "iconImageUrl": "assets/images/differentials/loja.svg",
+          "text": "**4 lojas físicas** em São Paulo"
+        },
+        {
+          "iconImageUrl": "assets/images/differentials/feedback-do-cliente.svg",
+          "text": "Mais de **50 mil clientes** atendidos"
+        },
+        {
+          "iconImageUrl": "assets/images/differentials/desconto.svg",
+          "text": "Desconto de **7% no PIX**"
+        }
+      ]
+    },
+    "children": [
+      "responsive-layout.desktop#differentials",
+      "responsive-layout.mobile#differentials"
+    ]
+  },
+
+  "responsive-layout.desktop#differentials": {
+    "children": ["container.list-render#differentials"]
+  },
+
+  "responsive-layout.mobile#differentials": {
+    "children": ["slider-layout#differentials"]
+  },
+
+  "container.list-render#differentials": {
+    "props": {
+      "blockClass": "differentials-container"
+    }
+  },
+
+  "slider-layout#differentials": {
+    "props": {
+      "itemsPerPage": {
+        "mobile": 1,
+        "phone": 1,
+        "tablet": 2,
+        "desktop": 4
+      },
+      "showPaginationDots": "never",
+      "infinite": true,
+      "blockClass": ["diferentials", "diferentials-mobile"]
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "flex-layout.row#product-page-informations": {
+    "children": ["flex-layout.col#product-page-informations"],
+    "props": {
+      "blockClass": "product-page-informations"
+    }
+  },
+  "flex-layout.col#product-page-informations": {
+    "children": ["disclosure-layout-group#product-page-informations"],
+    "props": {
+      "blockClass": "product-page-informations"
+    }
+  },
+  "disclosure-layout-group#product-page-informations": {
+    "children": [
+      "disclosure-layout#product-page-description",
+      "disclosure-layout#product-page-specs"
+    ],
+    "props": {
+      "blockClass": "product-page-informations",
+      "maxVisible": "one"
+    }
+  },
+  "disclosure-layout#product-page-description": {
+    "children": [
+      "disclosure-trigger#product-page-description",
+      "disclosure-content#product-page-description"
+    ],
+    "props": {
+      "blockClass": "product-page-description",
+      "animated": true,
+      "initialVisibility": "visible"
+    }
+  },
+  "disclosure-trigger#product-page-description": {
+    "children": [
+      "flex-layout.row#product-description-title",
+      "disclosure-state-indicator#product-page-informations"
+    ],
+    "props": {
+      "blockClass": "product-page-description"
+    }
+  },
+  "disclosure-content#product-page-description": {
+    "children": ["flex-layout.row#product-description"],
+    "props": {
+      "blockClass": "product-page-description"
+    }
+  },
+  "flex-layout.row#product-description": {
+    "children": ["product-description"],
+    "props": {
+      "blockClass": "product-description"
+    }
+  },
+  "flex-layout.row#product-description-title": {
+    "children": ["rich-text#product-description-title"],
+    "props": {
+      "blockClass": "product-description"
+    }
+  },
+  "rich-text#product-description-title": {
+    "props": {
+      "text": "Descrição do produto",
+      "blockClass": "product-description-title"
+    }
+  },
+  "product-description": {
+    "props": {
+      "collapseContent": false,
+      "showTitle": false
+    }
+  },
+
+  "product-specification-group#content-page": {
+    "children": ["product-specification#content-page"],
+    "props": {
+      "filter": {
+        "type": "show",
+        "specificationGroups": ["Atributos"]
+      }
+    }
+  },
+  "product-specification#content-page": {
+    "children": ["disclosure-content#product-page-specifications"]
+  },
+
+  "disclosure-content#product-page-specifications": {
+    "children": ["product-specification-values"],
+    "props": {
+      "blockClass": "product-page-specifications"
+    }
+  },
+
+  "product-specification-values": {
+    "children": ["flex-layout.row#product-page-specs"]
+  },
+
+  "flex-layout.row#product-page-specs": {
+    "children": [
+      "product-specification-text#specification",
+      "product-specification-text#value"
+    ],
+    "props": {
+      "blockClass": "product-page-specs-table"
+    }
+  },
+  "product-specification-text#specification": {
+    "props": {
+      "message": "{specificationName}"
+    }
+  },
+  "product-specification-text#value": {
+    "props": {
+      "message": "{specificationValue}"
+    }
+  },
+  "disclosure-state-indicator#product-page-informations": {
+    "props": {
+      "Show": "icon#plus-disclosure",
+      "Hide": "icon#minus-disclosure"
+    }
+  },
+  "icon#minus-disclosure": {
+    "props": {
+      "id": "nav-minus",
+      "activeClassName": "vtex-store-components-3-x-minusDisclosureIcon"
+    }
+  },
+  "icon#plus-disclosure": {
+    "props": {
+      "id": "nav-plus",
+      "activeClassName": "vtex-store-components-3-x-plusDisclosureIcon"
+    }
+  },
+
+  "disclosure-layout#product-page-specs": {
+    "children": [
+      "disclosure-trigger#product-page-specs",
+      "disclosure-content#product-page-specs"
+    ],
+    "props": {
+      "blockClass": "product-page-specs",
+      "animated": true,
+      "initialVisibility": "visible"
+    }
+  },
+
+  "disclosure-trigger#product-page-specs": {
+    "children": [
+      "flex-layout.row#product-specs-title",
+      "disclosure-state-indicator#product-page-informations"
+    ],
+    "props": {
+      "blockClass": "product-page-description"
+    }
+  },
+  "disclosure-content#product-page-specs": {
+    "children": ["product-specification-group#content-page"],
+    "props": {
+      "blockClass": "product-page-specs"
+    }
+  },
+
+  "flex-layout.row#product-specs-title": {
+    "children": ["rich-text#product-specs-title"],
+    "props": {
+      "blockClass": "product-description"
+    }
+  },
+  "rich-text#product-specs-title": {
+    "props": {
+      "text": "Especificações",
+      "blockClass": "product-description-title"
+    }
+  }
+}

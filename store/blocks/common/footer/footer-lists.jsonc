@@ -1,0 +1,268 @@
+{
+  "flex-layout.row#footer-content-lists": {
+    "title": "Footer Menu",
+    "children": [
+      "flex-layout.col#footer-for-you",
+      "flex-layout.col#footer-institutional",
+      "flex-layout.col#footer-informations",
+      "flex-layout.col#footer-payments",
+      "flex-layout.col#footer-security"
+    ],
+    "props": {
+      "blockClass": "footer-content-lists",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#footer-for-you": {
+    "title": "Para Você",
+    "children": [
+      "rich-text#footer-for-you",
+      "rich-text#footer-for-you-content"
+    ],
+    "props": {
+      "blockClass": "footer-for-you",
+      "preventVerticalStretch": true,
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#footer-institutional": {
+    "title": "Institucional",
+    "children": [
+      "rich-text#footer-institutional",
+      "rich-text#footer-institutional-content"
+    ],
+    "props": {
+      "blockClass": "footer-institutional",
+      "preventVerticalStretch": true,
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#footer-informations": {
+    "title": "Informações",
+    "children": [
+      "rich-text#footer-informations",
+      "rich-text#footer-informations-content"
+    ],
+    "props": {
+      "blockClass": "footer-informations",
+      "preventVerticalStretch": true,
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#footer-payments": {
+    "title": "Pagamentos",
+    "children": [
+      "rich-text#footer-payments",
+      "flex-layout.row#footer-payments-content"
+    ],
+    "props": {
+      "blockClass": "footer-payments",
+      "preventVerticalStretch": true,
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#footer-security": {
+    "title": "Segurança",
+    "children": [
+      "rich-text#footer-security",
+      "flex-layout.row#footer-security-content"
+    ],
+    "props": {
+      "blockClass": "footer-security",
+      "preventVerticalStretch": true,
+      "width": "grow"
+    }
+  },
+  "rich-text#footer-for-you": {
+    "title": "Titulo Para Você",
+    "props": {
+      "text": "#### Para você",
+      "blockClass": ["footer-for-you", "footer-title", "footer-right-title"]
+    }
+  },
+  "rich-text#footer-for-you-content": {
+    "title": "Texto Para Você",
+    "props": {
+      "text": "- [Minha conta](/account#/profile)\n- [Pedidos](/account#/orders)\n- [Minha sacola](/checkout#/cart)",
+      "blockClass": ["footer-for-you-content", "footer-list"]
+    }
+  },
+  "rich-text#footer-institutional": {
+    "title": "Titulo Institucional",
+    "props": {
+      "text": "#### Institucional",
+      "blockClass": [
+        "footer-institutional",
+        "footer-title",
+        "footer-right-title"
+      ]
+    }
+  },
+  "rich-text#footer-institutional-content": {
+    "title": "Texto Institucional",
+    "props": {
+      "text": "- [Quem somos](/institucional/sobre-nos)\n- [Nossas Lojas](/institucional/nossas-lojas)\n- [Fale conosco](/institucional/fale-conosco)\n- [Politica de Privacidade](/institucional/politica-de-privacidade)\n- [Preciso de Ajuda](/institucional/ajuda)",
+      "blockClass": ["footer-institutional-content", "footer-list"]
+    }
+  },
+  "rich-text#footer-informations": {
+    "title": "Titulo Informações",
+    "props": {
+      "text": "#### Informações",
+      "blockClass": [
+        "footer-informations",
+        "footer-title",
+        "footer-right-title"
+      ]
+    }
+  },
+  "rich-text#footer-informations-content": {
+    "title": "Texto Informações",
+    "props": {
+      // politica de privacidade; duvidas frequentes; trocas e devolucoes; prazos de envio; formas de pagamento
+      "text": "- <a href='https://blog.sunhouse.com.br/' target='_blank'>Nosso blog</a>\n- [Montagens](/institucional/montagens)\n- [Vendas Corporativas](/institucional/vendas-corporativas)\n- [Perguntas Frequentes](/institucional/perguntas-frequentes)\n- <a href='https://design.sunhouse.com.br/' target='_blank'>Parcerias para Arquitetos</a>",
+      "blockClass": ["footer-informations-content", "footer-list"]
+    }
+  },
+  "rich-text#footer-payments": {
+    "title": "Titulo Pagamentos",
+    "props": {
+      "text": "#### Pagamentos",
+      "blockClass": ["footer-payments", "footer-title", "footer-right-title"]
+    }
+  },
+  "flex-layout.row#footer-payments-content": {
+    "title": "Icones Pagamentos",
+    "children": [
+      "image#mastercard",
+      "image#visa",
+      "image#elo",
+      "image#diners",
+      "image#amex",
+      "image#paypal",
+      "image#pix",
+      "image#boleto"
+    ],
+    "props": {
+      "blockClass": [
+        "footer-payments-content",
+        "footer-list",
+        "footer-payments-list"
+      ],
+      "colSizing": "auto",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#footer-security": {
+    "title": "Titulo Segurança",
+    "props": {
+      "text": "#### Segurança",
+      "blockClass": ["footer-security", "footer-title", "footer-right-title"]
+    }
+  },
+  "rich-text#footer-social": {
+    "title": "Titulo Rede Social",
+    "props": {
+      "text": "#### Siga nossas redes",
+      "blockClass": ["footer-social", "footer-title"]
+    }
+  },
+
+  "list-context.image-list#social": {
+    "props": {
+      "images": [
+        {
+          "image": "assets/images/footer/facebook.png",
+          "link": {
+            "title": "Facebook",
+            "url": "https://www.facebook.com/Sunhousemoveis/",
+            "openNewTab": true
+          }
+        },
+        {
+          "image": "assets/images/footer/instagram.png",
+          "link": {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/sunhousemoveis/",
+            "openNewTab": true
+          }
+        },
+        {
+          "image": "assets/images/footer/pinterest.png",
+          "link": {
+            "title": "Pinterest",
+            "url": "https://br.pinterest.com/sunhousemoveis/",
+            "openNewTab": true
+          }
+        },
+        {
+          "image": "assets/images/footer/blog.png",
+          "link": {
+            "title": "Instagram",
+            "url": "https://blog.sunhouse.com.br/",
+            "openNewTab": true
+          }
+        }
+      ]
+    },
+    "children": ["container.list-render#social"]
+  },
+
+  "container.list-render#social": {
+    "props": {
+      "blockClass": "footer-social-content"
+    }
+  },
+
+  "flex-layout.row#footer-social-content": {
+    "title": "Redes Social",
+    "children": ["list-context.image-list#social"],
+    "props": {
+      "blockClass": "footer-social-content",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colJustify": "between"
+    }
+  },
+  "rich-text#footer-schedules": {
+    "title": "Titulo Horario de Atendimento",
+    "props": {
+      "text": "#### Horário de Atendimento",
+      "blockClass": ["footer-schedules", "footer-title"]
+    }
+  },
+  "rich-text#footer-schedules-content": {
+    "title": "Texto Horario de Atendimento",
+    "props": {
+      "text": "\nLoja Online\nDas 08h30 às 17h30 \n\nLojas Físicas\nSegunda a Sábado das 09h às 20h\nDomingos e Feriados* das 10h30 às 19h\n\n*Exceto dia 01/01 e 25/12\n\nDúvidas? Entre em contato:\n(11) 2641-0594 ou (11) 9 9487-7664\natendimento@sunhouse.com.br",
+      "textAlignment": "CENTER",
+      "blockClass": "footer-schedules-content"
+    }
+  },
+  "flex-layout.row#footer-security-content": {
+    "children": ["link#letsencrypt", "image#pci-vtex"],
+    "props": {
+      "blockClass": [
+        "footer-security-content",
+        "footer-list",
+        "footer-security-list"
+      ],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "colGap": 4
+    }
+  },
+  "flex-layout.row#footer-images-bottom": {
+    "children": ["link#vtex", "link#eplus"],
+    "props": {
+      "blockClass": "footer-images-bottom",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  }
+}

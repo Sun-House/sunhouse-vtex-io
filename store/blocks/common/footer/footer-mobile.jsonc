@@ -1,0 +1,260 @@
+{
+  /* Toggles */
+  "flex-layout.row#footer-content-mobile": {
+    "title": "Footer Content",
+    "children": ["flex-layout.col#footer-content-mobile"],
+    "props": {
+      "blockClass": "footer-content-mobile",
+      "colSizing": "auto",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#footer-content-mobile": {
+    "children": ["disclosure-layout-group#footer-mobile"],
+    "props": {
+      "blockClass": "footer-content-mobile",
+      "width": "100%"
+    }
+  },
+  "disclosure-layout-group#footer-mobile": {
+    "children": [
+      "disclosure-layout#footer-about",
+      "flex-layout.col#footer-schedules",
+      "disclosure-layout#footer-for-you",
+      "disclosure-layout#footer-institutional",
+      "disclosure-layout#footer-informations"
+      // "disclosure-layout#footer-social"
+      // "disclosure-layout#footer-payments",
+      // "disclosure-layout#footer-security"
+    ],
+    "props": {
+      "blockClass": "footer-mobile"
+    }
+  },
+  "disclosure-state-indicator#footer-mobile": {
+    "props": {
+      "Show": "icon#arrow-line",
+      "Hide": "icon#arrow-line-rotate"
+    }
+  },
+
+  //about
+  "disclosure-layout#footer-about": {
+    "title": "Footer Sobre Nos",
+    "children": [
+      "disclosure-content#footer-about",
+      "disclosure-trigger#footer-about"
+    ],
+    "props": {
+      "animated": true,
+      "initialVisibility": "visible",
+      "blockClass": "footer-disclosure"
+    }
+  },
+  "disclosure-trigger#footer-about": {
+    "props": {
+      "blockClass": "footer-about"
+    },
+    "children": ["disclosure-state-indicator#footer-about"]
+  },
+  "disclosure-content#footer-about": {
+    "children": ["logo#logo-footer", "flex-layout.row#footer-content-about"],
+    "props": {
+      "blockClass": "footer-about"
+    }
+  },
+  "disclosure-state-indicator#footer-about": {
+    "props": {
+      "Show": "rich-text#footer-seeMore-about",
+      "Hide": "rich-text#footer-seeLess-about"
+    }
+  },
+  "rich-text#footer-seeMore-about": {
+    "props": {
+      "text": "Leia mais",
+      "blockClass": ["footer-seeMore-about", "footer-about"]
+    }
+  },
+  "rich-text#footer-seeLess-about": {
+    "props": {
+      "text": "Leia Menos",
+      "blockClass": ["footer-seeLess-about", "footer-about"]
+    }
+  },
+
+  //schedules
+  "flex-layout.col#footer-schedules": {
+    "title": "Pagamentos",
+    "children": [
+      "flex-layout.row#footer-schedules-title",
+      "flex-layout.row#footer-mobile-schedules"
+    ],
+    "props": {
+      "blockClass": "footer-payments",
+      "preventVerticalStretch": true,
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.row#footer-schedules-title": {
+    "children": ["rich-text#footer-schedules"],
+    "props": {
+      "blockClass": "footer-mobile-title"
+    }
+  },
+  "flex-layout.row#footer-mobile-schedules": {
+    "children": ["rich-text#footer-schedules-content"],
+    "props": {
+      "blockClass": "footer-schedules-title"
+    }
+  },
+
+  //for-you
+  "disclosure-layout#footer-for-you": {
+    "title": "Footer Para Você",
+    "children": [
+      "disclosure-trigger#footer-for-you",
+      "disclosure-content#footer-for-you"
+    ],
+    "props": {
+      "animated": true,
+      "blockClass": "footer-disclosure"
+    }
+  },
+  "disclosure-trigger#footer-for-you": {
+    "children": [
+      "flex-layout.row#footer-for-you-title",
+      "disclosure-state-indicator#footer-mobile"
+    ],
+    "props": {
+      "blockClass": ["footer-for-you", "footer-title"]
+    }
+  },
+  "disclosure-content#footer-for-you": {
+    "children": ["flex-layout.row#footer-mobile-for-you"],
+    "props": {
+      "blockClass": ["footer-for-you", "footer-content"]
+    }
+  },
+  "flex-layout.row#footer-for-you-title": {
+    "children": ["rich-text#footer-for-you"],
+    "props": {
+      "blockClass": "footer-for-you-title"
+    }
+  },
+  "flex-layout.row#footer-mobile-for-you": {
+    "children": ["rich-text#footer-for-you-content"],
+    "props": {
+      "blockClass": "footer-mobile-for-you"
+    }
+  },
+
+  //institutional
+  "disclosure-layout#footer-institutional": {
+    "title": "Footer Institucional",
+    "children": [
+      "disclosure-trigger#footer-institutional",
+      "disclosure-content#footer-institutional"
+    ],
+    "props": {
+      "animated": true,
+      "blockClass": "footer-disclosure"
+    }
+  },
+
+  "disclosure-trigger#footer-institutional": {
+    "children": [
+      "flex-layout.row#footer-institutional-title",
+      "disclosure-state-indicator#footer-mobile"
+    ],
+    "props": {
+      "blockClass": ["footer-institutional", "footer-title"]
+    }
+  },
+
+  "disclosure-content#footer-institutional": {
+    "children": ["flex-layout.row#footer-mobile-institutional"],
+    "props": {
+      "blockClass": ["footer-institutional", "footer-content"]
+    }
+  },
+
+  "flex-layout.row#footer-institutional-title": {
+    "children": ["rich-text#footer-institutional"],
+    "props": {
+      "blockClass": "footer-institutional-title"
+    }
+  },
+
+  "flex-layout.row#footer-mobile-institutional": {
+    "children": ["rich-text#footer-institutional-content"],
+    "props": {
+      "blockClass": "footer-mobile-institutional"
+    }
+  },
+
+  //informations
+  "disclosure-layout#footer-informations": {
+    "title": "Footer Informações",
+    "children": [
+      "disclosure-trigger#footer-informations",
+      "disclosure-content#footer-informations"
+    ],
+    "props": {
+      "animated": true,
+      "blockClass": "footer-disclosure"
+    }
+  },
+
+  "disclosure-trigger#footer-informations": {
+    "children": [
+      "flex-layout.row#footer-informations-title",
+      "disclosure-state-indicator#footer-mobile"
+    ],
+    "props": {
+      "blockClass": ["footer-informations", "footer-title"]
+    }
+  },
+
+  "disclosure-content#footer-informations": {
+    "children": ["flex-layout.row#footer-mobile-informations"],
+    "props": {
+      "blockClass": ["footer-informations", "footer-content"]
+    }
+  },
+
+  "flex-layout.row#footer-informations-title": {
+    "children": ["rich-text#footer-informations"],
+    "props": {
+      "blockClass": "footer-informations-title"
+    }
+  },
+
+  "flex-layout.row#footer-mobile-informations": {
+    "children": ["rich-text#footer-informations-content"],
+    "props": {
+      "blockClass": "footer-mobile-informations"
+    }
+  },
+
+  //social
+  "flex-layout.row#footer-payments-title": {
+    "title": "Titulo Pagamento",
+    "children": ["rich-text#footer-payments"],
+    "props": {
+      "blockClass": ["footer-payments-title", "footer-mobile-title"],
+      "colSizing": "auto",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#footer-security-title": {
+    "title": "Segurança",
+    "children": ["rich-text#footer-security"],
+    "props": {
+      "blockClass": ["footer-security-title", "footer-mobile-title"],
+      "colSizing": "auto",
+      "fullWidth": true
+    }
+  }
+}

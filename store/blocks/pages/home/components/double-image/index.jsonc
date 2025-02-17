@@ -1,0 +1,30 @@
+{
+  "list-context.image-list#image-double": {
+    "props": {
+      "blockClass": "image-double",
+      "images": [
+        {
+          "image": "assets/images/home/double-image.png",
+          "mobileImage": "assets/images/home/double-image-mobile-1.png",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/images/home/double-image.png",
+          "mobileImage": "assets/images/home/double-image-mobile-2.png",
+          "link": {
+            "url": "/"
+          }
+        }
+      ]
+    },
+    "children": ["container.list-render#images-double"]
+  },
+
+  "container.list-render#images-double": {
+    "props": {
+      "blockClass": "images-double"
+    }
+  }
+}

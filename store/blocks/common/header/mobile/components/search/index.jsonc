@@ -1,0 +1,8 @@
+{
+  "flex-layout.row#header-mobile-bottom": {
+    "children": ["sunhouse.store-components:search-bar", "speech-to-text"],
+    "props": {
+      "blockClass": "header-mobile-bottom"
+    }
+  }
+}

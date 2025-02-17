@@ -1,0 +1,15 @@
+{
+  "store.debug-pdp": {
+    "blocks": ["debug-pdp"]
+  },
+
+  "debug-pdp": {
+    "children": [
+      "responsive-layout.desktop#product-main",
+      "responsive-layout.mobile#product-main",
+      "condition-layout.product#product-content-availability",
+      "flex-layout.row#shelf-buy-too"
+      // "product-reviews"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "container#banner-infos": {
+    "title": "Banner Informações",
+    "props": {
+      "blockClass": "banner-infos"
+    },
+    "children": ["rich-text#banner-infos", "image-text-list#banner-infos"]
+  },
+
+  "rich-text#banner-infos": {
+    "title": "Titulo Banner Informações",
+    "props": {
+      "text": "## Dicas da Sun House \n\n Descubra tudo sobre dicas para seu ambiente",
+      "blockClass": ["common-title", "banner-infos"]
+    }
+  },
+
+  "image-text-list#banner-infos": {
+    "title": "Banner Informações Lista",
+    "children": [
+      "responsive-layout.desktop#banner-infos",
+      "responsive-layout.mobile#banner-infos"
+    ],
+    "props": {
+      "blockClass": "banner-infos",
+      "imageTextArray": [
+        {
+          "image": "assets/images/home/dicas-1.png",
+          "imageText": "Busque a perfuMaria mais próxima de você.",
+          "link": "/teste"
+        },
+        {
+          "image": "assets/images/home/dicas-1.png",
+          "link": "/teste",
+          "imageText": "Como cuidar dos seus cabelos descoloridos e coloridos."
+        },
+        {
+          "image": "assets/images/home/dicas-1.png",
+          "link": "/teste",
+          "imageText": "Dicas de maquiagem para o dia das bruxas."
+        },
+        {
+          "image": "assets/images/home/dicas-1.png",
+          "link": "/teste",
+          "imageText": "Como saber qual o melhor protetor solar para seu tipo de pele?"
+        }
+      ]
+    }
+  },
+
+  "responsive-layout.desktop#banner-infos": {
+    "children": ["embla-carousel#banner-infos"]
+  },
+  "responsive-layout.mobile#banner-infos": {
+    "children": ["embla-carousel#banner-infos-mobile"]
+  },
+
+  "embla-carousel#banner-infos": {
+    "props": {
+      "blockClass": "banner-infos",
+      "options": {
+        // "dots": true,
+        "navigation": true,
+        "draggable": true,
+        "forceLoop": true,
+        "align": "start"
+      }
+    }
+  },
+
+  "embla-carousel#banner-infos-mobile": {
+    "props": {
+      "blockClass": "banner-infos",
+      "options": {
+        // "dots": true,
+        "navigation": true,
+        "loop": true,
+        "draggable": true,
+        "align": "start"
+      }
+    }
+  }
+}

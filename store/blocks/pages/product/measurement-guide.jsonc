@@ -1,0 +1,147 @@
+{
+  "condition-layout.product#product-measurement-guide": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationGroup",
+          "arguments": {
+            "name": "Guia de medidas"
+          }
+        }
+      ],
+      "Then": "modal-trigger#measurement-guide"
+    }
+  },
+  "modal-trigger#measurement-guide": {
+    "children": [
+      "flex-layout.row#measurement-guide-text",
+      "modal-layout#measurement-guide"
+    ],
+    "props": {
+      "blockClass": "measurement-guide"
+    }
+  },
+  "modal-layout#measurement-guide": {
+    "children": [
+      "flex-layout.row#measurement-guide-header",
+      "flex-layout.row#measurement-guide-content"
+    ],
+    "props": {
+      "blockClass": "measurement-guide",
+      "fullScreen": true
+    }
+  },
+
+  "flex-layout.row#measurement-guide-text": {
+    "children": ["icon#measurement-guide", "rich-text#measurement-guide"],
+    "props": {
+      "blockClass": "measurement-guide-text",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#measurement-guide-content": {
+    "children": [
+      "flex-layout.col#measurement-guide-texts",
+      "flex-layout.col#measurement-guide-content"
+    ],
+    "props": {
+      "blockClass": "measurement-guide-content",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#measurement-guide": {
+    "props": {
+      "text": "GUIA DE TAMANHOS",
+      "blockClass": "measurement-guide"
+    }
+  },
+  "icon#measurement-guide": {
+    "props": {
+      "id": "mpa-ruler",
+      "activeClassName": "vtex-store-components-3-x-rulerIcon"
+    }
+  },
+
+  "flex-layout.col#measurement-guide-content": {
+    "children": [
+      "specification-table#measurement-guide",
+      "rich-text#measurement-guide-informations-bottom"
+    ],
+    "props": {
+      "blockClass": "measurement-guide-content",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#measurement-guide-header": {
+    "children": [
+      "rich-text#measurement-guide-title",
+      "modal-header#measurement-guide"
+    ],
+    "props": {
+      "blockClass": "measurement-guide-header",
+      "colSizing": "auto",
+      "marginBottom": 6,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "modal-header#measurement-guide": {
+    "props": {
+      "blockClass": "measurement-guide-header"
+    }
+  },
+  "rich-text#measurement-guide-title": {
+    "props": {
+      "text": "#### GUIA DE TAMANHOS",
+      "blockClass": "measurement-guide-title"
+    }
+  },
+  "specification-table#measurement-guide": {
+    "props": {
+      "tableGroupName": "Guia de medidas",
+      "blockClass": "measurement-guide"
+    }
+  },
+  "rich-text#measurement-guide-informations-bottom": {
+    "props": {
+      "text": "__AINDA TEM DÚVIDAS SOBRE O SEU TAMANHO?__\nENTRE EM CONTATO CONOSCO ATRAVÉS DO NÚMERO: __(11) 5489-5874__ OU PELO E-MAIL: __AGENCIAEPLUS@MAIL.COM.BR__",
+      "blockClass": "measurement-guide-informations-bottom"
+    }
+  },
+  "flex-layout.col#measurement-guide-texts": {
+    "children": ["product-specification-group#measurement-guide"],
+    "props": {
+      "blockClass": "measurement-guide-texts"
+    }
+  },
+  "product-specification-group#measurement-guide": {
+    "children": ["product-specification#measurement-guide"],
+    "props": {
+      "filter": {
+        "type": "show",
+        "specificationGroups": ["Guia de tamanhos"]
+      },
+      "blockClass": "measurement-guide"
+    }
+  },
+  "product-specification#measurement-guide": {
+    "children": ["product-specification-values#measurement-guide"],
+    "props": {
+      "blockClass": "measurement-guide"
+    }
+  },
+  "product-specification-values#measurement-guide": {
+    "children": ["product-specification-text#measurement-guide-value"],
+    "props": {
+      "blockClass": "measurement-guide"
+    }
+  },
+  "product-specification-text#measurement-guide-value": {
+    "props": {
+      "message": "{specificationValue}",
+      "blockClass": "measurement-guide-value"
+    }
+  }
+}

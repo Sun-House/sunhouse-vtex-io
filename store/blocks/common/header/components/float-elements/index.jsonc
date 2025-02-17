@@ -1,0 +1,33 @@
+{
+  "container#float-elements": {
+    "title": "Elementos Flutuantes",
+    "children": ["back-to-top-button", "storage-layout#cookies"],
+    "props": {
+      "blockClass": "float-elements"
+    }
+  },
+  "back-to-top-button": {
+    "props": {
+      "display": "caret-icon"
+    }
+  },
+  "storage-layout#cookies": {
+    "children": ["rich-text#text-cookies", "action-button#cookies"],
+    "props": {
+      "blockClass": "cookies"
+    }
+  },
+  "rich-text#text-cookies": {
+    "title": "Texto de cookies",
+    "props": {
+      "blockClass": "cookies",
+      "text": "Este site utiliza cookies para personalizar a sua experiência. Ao continuar navegando, você concorda com a nossa [política de utilização de cookies](/institucional/politica-de-privacidade)."
+    }
+  },
+  "action-button#cookies": {
+    "props": {
+      "text": "Aceitar",
+      "blockClass": "cookies"
+    }
+  }
+}

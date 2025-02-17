@@ -1,0 +1,41 @@
+{
+  "container#header__top-bar": {
+    "title": "Carrossel de informações",
+    "props": {
+      "wrapper": true,
+      "blockClass": ["top-bar", "container-center"]
+    },
+    "children": ["list-context.text-list#info-carousel"]
+  },
+
+  "list-context.text-list#info-carousel": {
+    "children": ["embla-carousel#info-carousel"],
+    "props": {
+      "texts": [
+        {
+          "value": "Desconto de **4%** à vista no **boleto** ou **PIX**"
+        },
+        {
+          "value": "Frete Grátis para pedidos acima de **R$150,00**"
+        }
+      ]
+    }
+  },
+
+  "embla-carousel#info-carousel": {
+    "props": {
+      "options": {
+        "slidesToScroll": 1,
+        "navigation": false,
+        "dots": false,
+        "draggable": true,
+        "loop": true,
+        "autoplay": {
+          "delay": 5000,
+          "playOnInit": true
+        }
+      },
+      "blockClass": ["info-carousel"]
+    }
+  }
+}

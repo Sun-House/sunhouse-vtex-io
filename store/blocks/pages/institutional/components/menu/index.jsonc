@@ -1,0 +1,25 @@
+{
+	"container#institutional-menu": {
+		"props": {
+			"blockClass": "institutional-menu"
+		},
+
+		"children": [
+			"responsive-layout.desktop#institutional-menu",
+			"responsive-layout.tablet#institutional-menu",
+			"responsive-layout.phone#institutional-menu"
+		]
+	},
+
+	"responsive-layout.desktop#institutional-menu": {
+		"children": ["institutional-menu"]
+	},
+
+	"responsive-layout.tablet#institutional-menu": {
+		"children": ["container#institutional-menu-trigger-mobile"]
+	},
+
+	"responsive-layout.phone#institutional-menu": {
+		"children": ["container#institutional-menu-trigger-mobile"]
+	}
+}

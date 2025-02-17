@@ -1,0 +1,49 @@
+{
+  "container#institutional": {
+    "props": {
+      "blockClass": "institutional"
+    },
+
+    "children": [
+      "container#institutional-breadcrumb",
+      "container#institutional-wrapper-menu-content"
+    ]
+  },
+
+  "container#institutional-wrapper-menu-content": {
+    "props": {
+      "blockClass": ["wrapper-menu-content"]
+    },
+    "children": [
+      "container#institutional-menu",
+      "container#institutional-content"
+    ]
+  },
+
+  "container#institutional-content": {
+    "props": {
+      "blockClass": "institutional-content"
+    },
+
+    "children": [
+      "rich-text#institutional-title",
+      "rich-text#institutional-description"
+    ]
+  },
+
+  "rich-text#institutional-title": {
+    "title": "Título",
+    "props": {
+      "text": "# PRIVACIDADE E SEGURANÇA",
+      "blockClass": ["title", "clean"]
+    }
+  },
+
+  "rich-text#institutional-description": {
+    "title": "Conteúdo",
+    "props": {
+      "text": "**Sobre a Loja**\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n **Declarações institucionais**\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n - **Lista**  Região Sul - até 11 dias úteis  Regiões Sudeste e Centro-oeste - até 8 dias úteis  Regiões Norte e Nordeste – de 9 a 20 dias úteis \n - **Lista**  Região Sul - até 11 dias úteis  Regiões Sudeste e Centro-oeste - até 8 dias úteis  Regiões Norte e Nordeste – [de 9 a 20 dias úteis ](https://www.example.com)",
+      "blockClass": ["description", "clean"]
+    }
+  }
+}

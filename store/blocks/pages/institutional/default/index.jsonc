@@ -1,0 +1,5 @@
+{
+	"store.custom#institutional-default": {
+		"children": ["container#institutional"]
+	}
+}

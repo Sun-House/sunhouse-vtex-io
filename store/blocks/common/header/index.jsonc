@@ -1,0 +1,25 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop#home", "header-layout.mobile"]
+  },
+
+  "header.full": {
+    "blocks": ["header-layout.desktop#home", "header-layout.mobile"]
+  },
+
+  "header-layout.desktop#home": {
+    "children": [
+      "container#header--desktop--home",
+      "container#float-elements",
+      "link#whatsapp-float"
+    ]
+  },
+
+  "header-layout.mobile": {
+    "children": [
+      "container#header--mobile",
+      "container#float-elements",
+      "link#whatsapp-float"
+    ]
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "store.search": {
+    "blocks": [
+      "sunhouse.search-result:search-result-layout#cluster-and-search"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL_AVAILABLE",
+        "orderByField": "OrderByTopSaleDESC",
+        "maxItemsPerPage": 16
+      }
+    }
+  },
+  "store.search#department": {
+    "blocks": ["sunhouse.search-result:search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL_AVAILABLE",
+        "orderByField": "OrderByTopSaleDESC",
+        "maxItemsPerPage": 16
+      }
+    }
+  },
+  "store.search#category": {
+    "blocks": ["sunhouse.search-result:search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL_AVAILABLE",
+        "orderByField": "OrderByTopSaleDESC",
+        "maxItemsPerPage": 16
+      }
+    }
+  },
+  "store.search#brand": {
+    "blocks": ["sunhouse.search-result:search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL_AVAILABLE",
+        "orderByField": "OrderByTopSaleDESC",
+        "maxItemsPerPage": 16
+      }
+    }
+  },
+  "store.search#subcategory": {
+    "blocks": ["sunhouse.search-result:search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL_AVAILABLE",
+        "orderByField": "OrderByTopSaleDESC",
+        "maxItemsPerPage": 16
+      }
+    }
+  },
+  "container#banner-department-desktop": {
+    "title": "Banner-Departamento/Categoria",
+    "children": ["image#search-result"],
+    "props": {
+      "blockClass": "search-banner"
+    }
+  },
+  "image#search-result": {
+    "title": "Banner Departamento",
+    "props": {
+      "src": "assets/images/search/banner.png",
+      "blockClass": "search-result"
+    }
+  },
+  "sunhouse.search-result:search-result-layout#cluster-and-search": {
+    "blocks": [
+      "sunhouse.search-result:search-result-layout.desktop#cluster-and-search",
+      "sunhouse.search-result:search-result-layout.mobile#cluster-and-search",
+      "sunhouse.search-result:search-not-found-layout"
+    ]
+  },
+  "sunhouse.search-result:search-result-layout": {
+    "blocks": [
+      "sunhouse.search-result:search-result-layout.desktop",
+      "sunhouse.search-result:search-result-layout.mobile",
+      "sunhouse.search-result:search-not-found-layout"
+    ]
+  },
+
+  "sunhouse.search-result:search-result-layout.desktop#cluster-and-search": {
+    "title": "Pagina de busca desktop",
+    "children": [
+      "flex-layout.row#search-breadcrumb",
+      "flex-layout.row#search-result-cluster-and-search",
+      "container#search-seo",
+      "container#spacing-default",
+      "container#banner-infos",
+      "container#spacing-default"
+    ],
+    "props": {
+      "showFacetQuantity": true
+    }
+  },
+  "sunhouse.search-result:search-result-layout.mobile#cluster-and-search": {
+    "title": "Pagina de busca mobile",
+    "children": [
+      "flex-layout.row#search-breadcrumb",
+      "flex-layout.row#search-result.mobile",
+      "container#search-seo",
+      // "flex-layout.row#banners-slider"
+      "container#spacing-default",
+      "container#banner-infos",
+      "container#spacing-default"
+    ],
+    "props": {
+      "showFacetQuantity": true
+    }
+  },
+  "flex-layout.row#search-result-cluster-and-search": {
+    "children": ["flex-layout.col#search-result-desktop-cluster-and-search"],
+    "props": {
+      "blockClass": "search-result",
+      "fullWidth": true
+    }
+  },
+  "condition-layout.user#unlogged": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isAuthenticated",
+          "arguments": {
+            "value": true
+          }
+        }
+      ],
+      "Else": "container#unlogged"
+    }
+  },
+  "container#unlogged": {
+    "props": {
+      "blockClass": "unlogged"
+    }
+  },
+  "flex-layout.col#search-result-desktop-cluster-and-search": {
+    "children": [
+      "flex-layout.row#filters-container.desktop",
+      "flex-layout.row#paged-controls-top",
+      "flex-layout.row#search-content.desktop",
+      "flex-layout.row#paged-controls-bottom"
+    ],
+    "props": {
+      "blockClass": "search-result"
+    }
+  },
+  "sunhouse.search-result:search-result-layout.desktop": {
+    "title": "Search Desktop",
+    "children": [
+      "container#banner-department-desktop",
+      "container#categories-slider",
+      "flex-layout.row#search-breadcrumb",
+      "flex-layout.row#search-result.desktop",
+      "container#search-seo",
+      // "flex-layout.row#banners-slider",
+      "container#spacing-default",
+      "container#banner-infos",
+      "container#spacing-default"
+    ],
+    "props": {
+      "defaultGalleryLayout": "grid",
+      "blockClass": "search-result",
+      "pagination": "paged",
+      "showProductsCount": true,
+      "showFacetQuantity": true,
+      "hiddenFacets": {
+        "specificationFilters": {
+          "hiddenFilters": [{ "name": "Marca" }]
+        }
+      }
+    }
+  },
+  "container#categories-slider": {
+    "title": "Carrossel de categorias",
+    "children": ["flex-layout.row#categories-slider"],
+    "props": {
+      "blockClass": "categories-slider",
+      "shouldRender": false
+    }
+  },
+
+  "sunhouse.search-result:search-result-layout.mobile": {
+    "title": "Search Mobile",
+    "children": [
+      "container#banner-department-mobile",
+      "container#categories-slider",
+      "flex-layout.row#search-breadcrumb",
+      "flex-layout.row#search-result.mobile",
+      "container#search-seo",
+      "container#spacing-default",
+      "container#banner-infos",
+      "container#spacing-default"
+      //"flex-layout.row#banners-slider"
+    ],
+    "props": {
+      "defaultGalleryLayout": "grid",
+      "blockClass": "search-result",
+      "pagination": "show-more",
+      "showProductsCount": true,
+      "showFacetQuantity": true,
+      "hiddenFacets": {
+        "specificationFilters": {
+          "hiddenFilters": [{ "name": "Marca" }]
+        }
+      }
+    }
+  },
+  "container#banner-department-mobile": {
+    "title": "Banner Mobile - Mobile.",
+    "children": ["image#department-banner-mobile"],
+    "props": {
+      "blockClass": "banner-department-mobile"
+    }
+  },
+  "image#department-banner-mobile": {
+    "props": {
+      "alt": "banner-mobile",
+      "title": "banner-mobile",
+      "src": "assets/images/search/banner.png"
+    }
+  },
+  "flex-layout.row#search-breadcrumb": {
+    "children": ["breadcrumb.search#search-result"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": false,
+      "blockClass": "search-breadcrumb"
+    }
+  },
+  "flex-layout.row#search-result.desktop": {
+    "children": ["flex-layout.col#search-result.desktop"],
+    "props": {
+      "blockClass": "search-result",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#search-result.desktop": {
+    "children": [
+      "flex-layout.row#filters-container.desktop",
+      "flex-layout.row#paged-controls-top",
+      "flex-layout.row#search-content.desktop",
+      "flex-layout.row#paged-controls-bottom"
+      // "flex-layout.row#fetch-more"
+    ],
+    "props": {
+      "blockClass": "search-result"
+    }
+  },
+  "flex-layout.row#search-result.mobile": {
+    "children": ["flex-layout.col#search-result.mobile"],
+    "props": {
+      "blockClass": "search-result"
+    }
+  },
+  "flex-layout.col#search-result.mobile": {
+    "children": [
+      "flex-layout.row#filters-container.mobile",
+      "flex-layout.row#paged-controls-top",
+      "flex-layout.row#search-content.mobile",
+      "flex-layout.row#paged-controls-bottom"
+      // "flex-layout.row#fetch-more"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "search-result-mobile"
+    }
+  },
+  "flex-layout.row#filters-container.desktop": {
+    "children": [
+      // "sunhouse.search-result:search-products-count-per-page",
+      // "container#filter-content",
+      "flex-layout.col#order-content"
+    ],
+    "props": {
+      "blockClass": "filters-container",
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "horizontalAlign": "right"
+    }
+  },
+  "flex-layout.row#filters-container.mobile": {
+    "children": ["flex-layout.col#filters-container.mobile"],
+    "props": {
+      "blockClass": "filters-container",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#filters-container.mobile": {
+    "children": [
+      "flex-layout.row#filters-container-top.mobile",
+      "flex-layout.row#filters-container-bottom.mobile"
+    ],
+    "props": {
+      "blockClass": "filters-container"
+    }
+  },
+  "flex-layout.row#filters-container-top.mobile": {
+    "children": [
+      // "container#filter-content",
+      "flex-layout.col#order-content"
+    ],
+    "props": {
+      "blockClass": ["filters-container-top", "filters-container-top-mobile"],
+      "preserveLayoutOnMobile": true,
+      "marginBottom": 6,
+      "colJustify": "between",
+      "colSizing": "auto",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#filters-container-bottom.mobile": {
+    "children": ["sunhouse.search-result:search-products-count-per-page"],
+    "props": {
+      "blockClass": "filters-container-bottom"
+    }
+  },
+  "container#filter-content": {
+    "children": [
+      "condition-layout.user#unlogged",
+      "sunhouse.search-result:filter-navigator.v3"
+    ],
+    "props": {
+      "blockClass": "filter-content",
+      "width": "grow"
+    }
+  },
+  "sunhouse.search-result:filter-navigator.v3": {
+    "blocks": ["sunhouse.search-result:sidebar-close-button"],
+    "props": {
+      "navigationTypeOnMobile": "collapsible",
+      "initiallyCollapsed": true,
+      "appliedFiltersOverview": "hide",
+      "closeOnOutsideClick": true,
+      "openFiltersMode": "one",
+      "priceRangeToggle": true,
+      "scrollToTop": "smooth",
+      "fullWidthOnMobile": true
+    }
+  },
+  "sunhouse.search-result:sidebar-close-button": {
+    "props": {
+      "type": "filled",
+      "size": 18
+    }
+  },
+  "flex-layout.col#order-content": {
+    "children": ["sunhouse.search-result:order-by.v2"],
+    "props": {
+      "blockClass": "order-content",
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true
+    }
+  },
+  "sunhouse.search-result:order-by.v2": {
+    "props": {
+      "hiddenOptions": []
+    }
+  },
+  "flex-layout.row#paged-controls-top": {
+    "children": ["paged-controls"],
+    "props": {
+      "blockClass": "paged-controls-top",
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "right",
+      "fullWidth": false
+    }
+  },
+  "flex-layout.row#paged-controls-bottom": {
+    "children": ["paged-controls#bottom"],
+    "props": {
+      "blockClass": "paged-controls-bottom",
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "fullWidth": false
+    }
+  },
+  "paged-controls": {
+    "props": {
+      "maxPageButtons": 4,
+      "showLastPage": true,
+      "showFirstPage": true,
+      "PreviousPageIcon": "icon#prev-page",
+      "NextPageIcon": "icon#next-page"
+    }
+  },
+  "paged-controls#bottom": {
+    "props": {
+      "maxPageButtons": 4,
+      "showLastPage": true,
+      "showFirstPage": true,
+      "PreviousPageIcon": "icon#prev-page",
+      "NextPageIcon": "icon#next-page",
+      "scrollToTop": "smooth"
+    }
+  },
+  "icon#prev-page": {
+    "props": {
+      "id": "nav-caret--left",
+      "size": 11,
+      "activeClassName": "vtex-store-components-3-x-prevIcon"
+    }
+  },
+  "icon#next-page": {
+    "props": {
+      "id": "nav-caret--right",
+      "size": 11,
+      "activeClassName": "vtex-store-components-3-x-nextIcon"
+    }
+  },
+  "flex-layout.row#search-content.desktop": {
+    "children": ["hover-container#search-content"],
+    "props": {
+      "blockClass": "search-content"
+    }
+  },
+  "hover-container#search-content": {
+    "children": ["sunhouse.search-result:search-content"],
+    "props": {
+      "blockClass": "hover-search-content"
+    }
+  },
+  "flex-layout.row#search-content.mobile": {
+    "children": ["sunhouse.search-result:search-content"],
+    "props": {
+      "blockClass": "search-content"
+    }
+  },
+  "sunhouse.search-result:search-content": {
+    "blocks": [
+      "sunhouse.search-result:gallery",
+      "sunhouse.search-result:not-found"
+    ]
+  },
+  "sunhouse.search-result:gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        },
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "desktop": 4,
+            "tablet": 2,
+            "mobile": 1
+          }
+        }
+      ],
+      "GridSummary": "product-summary.shelf#main-product",
+      "ListSummary": "product-summary.shelf#main-product"
+    }
+  },
+  "container#search-seo": {
+    "children": ["rich-text#search-seo"],
+    "props": {
+      "wrapper": true,
+      "blockClass": ["search-seo", "container-center"],
+      "colSizing": "auto",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "rich-text#search-seo": {
+    "title": "Texto Seo",
+    "props": {
+      "text": "## Sun House \n Para as noites tristes, algumas gotas de jasmim. Para acalmar as dores, exale camomila ou lavanda. Já nos dias frios, nada melhor que o cheirinho de canela espalhado pela casa. Com perfume, a vida fica mais bonita e aconchegante!",
+      "blockClass": "search-seo",
+      "textPosition": "CENTER"
+      // "textAlignment": "CENTER"
+    }
+  }
+}

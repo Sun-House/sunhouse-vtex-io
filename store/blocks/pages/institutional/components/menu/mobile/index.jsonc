@@ -1,0 +1,32 @@
+{
+  "container#institutional-menu-trigger-mobile": {
+    "props": {
+      "blockClass": ["institutional-menu-trigger-mobile"]
+    },
+
+    "children": ["disclosure-layout#institutional-menu"]
+  },
+
+  "disclosure-layout#institutional-menu": {
+    "children": [
+      "disclosure-trigger#institutional-menu",
+      "disclosure-content#institutional-menu"
+    ]
+  },
+
+  "disclosure-trigger#institutional-menu": {
+    "children": ["rich-text#institutional-menu-trigger"]
+  },
+
+  "rich-text#institutional-menu-trigger": {
+    "title": "Texto Botão Menu Institucional",
+    "props": {
+      "text": "Menu Institucional",
+      "blockClass": ["trigger"]
+    }
+  },
+
+  "disclosure-content#institutional-menu": {
+    "children": ["institutional-menu"]
+  }
+}

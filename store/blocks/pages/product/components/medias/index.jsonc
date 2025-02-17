@@ -1,0 +1,102 @@
+{
+  "container#product-medias": {
+    "props": {
+      "blockClass": "product-medias"
+    },
+    "children": ["embla-carousel.group#product-medias"]
+  },
+
+  "embla-carousel.group#product-medias": {
+    "children": [
+      "product-medias#product-medias-thumbs",
+      "container#product-medias-container"
+    ]
+  },
+
+  "container#product-medias-container": {
+    "props": {
+      "blockClass": "product-medias-container"
+    },
+    "children": [
+      "stack-layout#product-image-swiper-desktop",
+      "rich-text#zoom-text-mobile",
+      "product-dimensions"
+    ]
+  },
+
+  "rich-text#zoom-text-desktop": {
+    "title": "Mensagem de zoom",
+
+    "props": {
+      "text": "Posicione o mouse sob a imagem para dar zoom",
+      "blockClass": "zoom-text"
+    }
+  },
+
+  "rich-text#zoom-text-mobile": {
+    "title": "Mensagem de zoom",
+    "props": {
+      "text": "Posicione o mouse sob a imagem para dar zoom",
+      "blockClass": "zoom-text"
+    }
+  },
+
+  "stack-layout#product-image-swiper-desktop": {
+    "children": ["product-medias#product-medias", "product-price-savings"],
+    "props": {
+      "blockClass": "product-image-swiper"
+    }
+  },
+
+  "product-medias#product-medias": {
+    "props": {
+      "blockClass": "product-medias",
+      "videoPosition": 1,
+      "optionsZoom": {
+        "active": true,
+        "mode": "in-place-click"
+      },
+      "lcp": true,
+      "sizes": {
+        "desktop": {
+          "width": 1000,
+          "height": 1000
+        }
+      }
+    },
+    "children": ["embla-carousel#product-medias"]
+  },
+
+  "embla-carousel#product-medias": {
+    "props": {
+      "options": {
+        "navigation": true,
+        "dots": false,
+        "draggable": true
+      },
+      "blockClass": ["product-medias"]
+    }
+  },
+
+  "product-medias#product-medias-thumbs": {
+    "props": {
+      "blockClass": "product-medias-thumbs",
+      "videoPosition": "first",
+      "videoThumb": true
+    },
+    "children": ["embla-carousel#product-medias-thumbs"]
+  },
+
+  "embla-carousel#product-medias-thumbs": {
+    "props": {
+      "options": {
+        "axis": "y",
+        "navigation": true,
+        "preventClick": false,
+        "selectedOnClick": true,
+        "containScroll": "keepSnaps"
+      },
+      "blockClass": ["product-medias--thumbs"]
+    }
+  }
+}

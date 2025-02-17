@@ -1,0 +1,163 @@
+{
+  "store.not-found#search": {
+    "blocks": ["sunhouse.search-result:search-not-found-layout"]
+  },
+  "sunhouse.search-result:search-not-found-layout": {
+    "title": "Busca não encontrada",
+    "children": [
+      "flex-layout.row#not-found-container",
+      "container#spacing-default",
+      "list-context.image-list#banner-grid",
+      "container#spacing-default",
+      "flex-layout.row#shelf-home01",
+      "container#spacing-default",
+      "container#banner-infos",
+      "container#spacing-default"
+    ]
+  },
+  // "responsive-layout.desktop#empty-search-bottom": {
+  //   "children": [
+  //     "flex-layout.row#shelf-home01"
+  //     // "flex-layout.row#grid-banners-desktop",
+  //     //   "flex-layout.row#banners-slider"
+  //     // "flex-layout.row#banners-slider-home"
+  //   ]
+  // },
+  // "responsive-layout.tablet#empty-search-bottom": {
+  //   "children": [
+  //     "flex-layout.row#shelf-home01"
+  //     // "flex-layout.row#grid-banners-mobile",
+  //     // "flex-layout.row#banners-slider"
+  //     // "flex-layout.row#banners-slider-home"
+  //   ]
+  // },
+  // "responsive-layout.phone#empty-search-bottom": {
+  //   "children": [
+  //     "flex-layout.row#shelf-home01"
+  //     // "flex-layout.row#grid-banners-mobile",
+  //     // "flex-layout.row#banners-slider"
+  //     // "flex-layout.row#banners-slider-home"
+  //   ]
+  // },
+  "flex-layout.row#not-found-container": {
+    "children": ["flex-layout.col#not-found-container"],
+    "props": {
+      "blockClass": "not-found-container"
+    }
+  },
+  "flex-layout.col#not-found-container": {
+    "children": [
+      "flex-layout.row#search-breadcrumb-not-found",
+      "flex-layout.row#not-found-content"
+    ],
+    "props": {
+      "blockClass": "not-found-container"
+    }
+  },
+  "flex-layout.row#search-breadcrumb-not-found": {
+    "children": ["breadcrumb.search#search-not-found"],
+    "props": {
+      "blockClass": "not-found-breadcrumb"
+    }
+  },
+  "flex-layout.row#not-found-content": {
+    "children": ["flex-layout.col#not-found-content"],
+    "props": {
+      "blockClass": "not-found-content"
+    }
+  },
+  "flex-layout.col#not-found-content": {
+    "children": [
+      "flex-layout.row#not-found-content-top",
+      "flex-layout.row#not-found-content-bottom"
+    ],
+    "props": {
+      "blockClass": "not-found-content",
+      "rowGap": 6
+    }
+  },
+  "flex-layout.row#not-found-content-top": {
+    "children": [
+      "rich-text#not-found",
+      "sunhouse.search-result:search-title.v2#not-found"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "not-found-content-top",
+      "rowGap": 0,
+      "preventHorizontalStretch": true
+    }
+  },
+  "sunhouse.search-result:search-title.v2#not-found": {
+    "props": {
+      "blockClass": "not-found-title"
+    }
+  },
+  "rich-text#not-found": {
+    "props": {
+      "text": "Não encontramos nenhum resultado para",
+      "blockClass": "not-found-text",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#not-found-content-bottom": {
+    "children": ["flex-layout.col#not-found-content-bottom"],
+    "props": {
+      "blockClass": "not-found-content-bottom"
+    }
+  },
+  "flex-layout.col#not-found-content-bottom": {
+    "children": [
+      "rich-text#not-found-text",
+      "flex-layout.row#not-found-search-bar",
+      "link#back-to-home"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "not-found-content-bottom"
+    }
+  },
+  "rich-text#not-found-text": {
+    "props": {
+      "text": "Tente novamente seguindo nossas dicas:\n - Tente palavras menos específicas.\n - Tente palavras-chave diferentes.\n - Verifique a ortografia da palavra-chave",
+      "blockClass": "not-found-text-bottom",
+      "textAlignment": "CENTER"
+    }
+  },
+  "flex-layout.row#not-found-search-bar": {
+    "children": ["sunhouse.store-components:search-bar#not-found"],
+    "props": {
+      "blockClass": "not-found-search-bar"
+    }
+  },
+  "sunhouse.store-components:search-bar#not-found": {
+    "blocks": ["sunhouse.store-components:autocomplete-result-list"],
+    "props": {
+      "displayMode": "search-button",
+      "placeholder": "Faça sua busca novamente",
+      "emptyPlaceholder": "Faça sua busca novamente",
+      "autoFocus": false,
+      "disableBlurAndTouchEndHandler": true,
+      "maxWidth": "244px",
+      "autocompleteAlignment": "left",
+      "hasIconLeft": true,
+      "blockClass": ["not-found", "page-search-empty"]
+    }
+  },
+  "link#back-to-home": {
+    "children": ["icon#arrow-back"],
+    "props": {
+      "label": "Voltar para a home",
+      "href": "/",
+      "blockClass": "not-found-back-home"
+    }
+  },
+  "icon#arrow-back": {
+    "props": {
+      "id": "nav-arrow-left",
+      "size": 14,
+      "activeClassName": "vtex-store-components-3-x-backIcon"
+    }
+  }
+}

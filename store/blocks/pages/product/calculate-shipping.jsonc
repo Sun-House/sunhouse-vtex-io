@@ -1,0 +1,112 @@
+{
+  "flex-layout.row#shipping-simulator-wrapper": {
+    "children": ["shipping-simulator.wrapper"],
+    "props": {
+      "blockClass": "shipping-simulator-wrapper",
+      "preventVerticalStretch": true,
+      "marginBottom": 5
+    }
+  },
+
+  "shipping-simulator.wrapper": {
+    "children": [
+      "flex-layout.row#shipping-simulator-title",
+      "flex-layout.col#shipping-simulator-wrapper-column"
+    ],
+    "props": {
+      "blockClass": "shipping-simulator-product-page"
+    }
+  },
+
+  "flex-layout.row#shipping-simulator-title": {
+    "children": ["icon#shipping-simulator", "rich-text#shipping-calculate"],
+    "props": {
+      "blockClass": "shipping-simulator-title",
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "left",
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "icon#shipping-simulator": {
+    "props": {
+      "id": "mpa-shipping",
+      "activeClassName": "vtex-store-components-3-x-shippingIcon"
+    }
+  },
+  "rich-text#shipping-calculate": {
+    "props": {
+      "text": "Consulte o frete e prazo de entrega",
+      "blockClass": "shipping-calculate"
+    }
+  },
+
+  "flex-layout.col#shipping-simulator-wrapper-column": {
+    "children": [
+      "flex-layout.row#shipping-simulator-first-row",
+      "shipping-simulator.search",
+      "flex-layout.row#shipping-simulator-second-row"
+    ],
+    "props": {
+      "blockClass": "shipping-simulator-wrapper-column"
+    }
+  },
+
+  "flex-layout.row#shipping-simulator-second-row": {
+    "children": ["shipping-simulator.table"],
+    "props": {
+      "blockClass": "shipping-simulator-second-row"
+    }
+  },
+
+  "flex-layout.row#shipping-simulator-first-row": {
+    "children": [
+      "flex-layout.col#shipping-simulator-first-row-left",
+      "flex-layout.row#shipping-simulator-first-row-right"
+    ],
+    "props": {
+      "blockClass": "shipping-simulator-first-row",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    }
+  },
+
+  "flex-layout.col#shipping-simulator-first-row-left": {
+    "children": ["shipping-simulator.input"],
+    "props": {
+      "blockClass": "shipping-simulator-first-row-left"
+    }
+  },
+
+  "shipping-simulator.search": {
+    "props": {
+      "text": "Não sei meu CEP",
+      "blockClass": "shipping-simulator-search-postalcode"
+    }
+  },
+
+  "flex-layout.row#shipping-simulator-first-row-right": {
+    "children": ["shipping-simulator.button"],
+    "props": {
+      "blockClass": "shipping-simulator-first-row-right",
+      "preventHorizontalStretch": true,
+      "colGap": 0,
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": false
+    }
+  },
+
+  "shipping-simulator.button": {
+    "props": {
+      "blockClass": "shipping-simulator-button",
+      "text": "Calcular Frete"
+    }
+  },
+
+  "shipping-simulator.input": {
+    "props": {
+      "blockClass": "shipping-simulator-input"
+    }
+  }
+}

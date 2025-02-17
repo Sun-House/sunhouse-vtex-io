@@ -1,0 +1,82 @@
+{
+  "overlay-trigger#search-bar": {
+    "children": ["link#search-bar", "overlay-layout#search-bar"],
+    "props": {
+      "blockClass": "search-bar"
+    }
+  },
+
+  "link#search-bar": {
+    "title": "Lojas",
+    "children": ["icon#search-bar"],
+    "props": {
+      "label": "Buscar",
+      "href": "",
+      "blockClass": ["header-links", "header-links--login"]
+    }
+  },
+
+  "icon#search-bar": {
+    "props": {
+      "id": "hpa-search",
+      "size": 20,
+      "activeClassName": "vtex-store-components-3-x-storesIcon"
+    }
+  },
+
+  "overlay-layout#search-bar": {
+    "children": ["container#search-bar"],
+    "props": {
+      "blockClass": "search-bar"
+    }
+  },
+
+  "container#search-bar": {
+    "children": [
+      "speech-to-text#desktop",
+      "sunhouse.store-components:search-bar"
+    ],
+    "props": {
+      "blockClass": "search-bar-content"
+    }
+  },
+
+  "sunhouse.store-components:search-bar": {
+    "blocks": ["sunhouse.store-components:autocomplete-result-list"],
+    "props": {
+      "displayMode": "search-button",
+      "placeholder": "O que você procura hoje?",
+      "emptyPlaceholder": "O que você procura hoje?",
+      "autoFocus": false,
+      "disableBlurAndTouchEndHandler": true,
+      "maxWidth": "376px",
+      "autocompleteAlignment": "left"
+    }
+  },
+
+  "responsive-layout.desktop#speech-to-text": {
+    "children": ["speech-to-text#desktop"]
+  },
+
+  "responsive-layout.mobile#speech-to-text": {
+    "children": ["speech-to-text#desktop"]
+  },
+
+  "speech-to-text#desktop": {
+    "props": {
+      "lang": "pt-BR",
+      "iconHeight": "23px",
+      "iconWidth": "15px",
+      "imgSrc": "assets/images/mic-search.svg"
+    }
+  },
+
+  "speech-to-text#mobile": {
+    "props": {
+      "lang": "pt-BR",
+      "iconHeight": "28px",
+      "iconWidth": "17px",
+      "imgSrc": "assets/images/mobile-mic-search.svg"
+    }
+  }
+}

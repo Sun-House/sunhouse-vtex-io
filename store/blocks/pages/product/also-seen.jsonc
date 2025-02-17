@@ -1,0 +1,47 @@
+{
+  // shelf home01
+  "flex-layout.row#also-seen": {
+    "title": "Quem viu, viu também",
+    "children": ["list-context.related-product-list#also-seen"],
+    "props": {
+      "blockClass": ["also-seen", "shelf-container"],
+      "fullWidth": true
+    }
+  },
+
+  "list-context.related-product-list#also-seen": {
+    "title": "Quem viu, viu também",
+    "blocks": ["product-summary.shelf#main-product"],
+    "children": ["flex-layout.col#also-seen"],
+    "props": {
+      "recommendation": "view",
+      "maxItems": 10
+    }
+  },
+
+  "flex-layout.col#also-seen": {
+    "title": "Quem viu, viu também",
+    "children": ["rich-text#also-seen", "hover-container#also-seen"],
+    "props": {
+      "blockClass": "also-seen"
+    }
+  },
+
+  "rich-text#also-seen": {
+    "title": "Quem viu, viu também título",
+    "props": {
+      "text": "## Quem viu, viu também\nProdutos que você também pode gostar",
+      "blockClass": ["also-seen", "common-title"]
+    }
+  },
+
+  "hover-container#also-seen": {
+    "children": [
+      "responsive-layout.desktop#shelf-slider",
+      "responsive-layout.mobile#shelf-slider"
+    ],
+    "props": {
+      "blockClass": ["also-seen", "hover-shelf-list"]
+    }
+  }
+}

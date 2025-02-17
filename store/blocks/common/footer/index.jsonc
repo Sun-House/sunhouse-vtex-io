@@ -1,0 +1,214 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer#without-seo-info": {
+    "blocks": [
+      "footer-layout.desktop#without-seo-info",
+      "footer-layout.mobile#without-seo-info"
+    ]
+  },
+  "footer-layout.desktop#without-seo-info": {
+    "children": [
+      "container#newsletter",
+      "flex-layout.row#footer-content",
+      "flex-layout.row#footer-bottom"
+    ]
+  },
+  "footer-layout.mobile#without-seo-info": {
+    "children": [
+      "container#newsletter",
+      "flex-layout.row#footer-content-mobile",
+      "container#social-medias-mobile",
+      "flex-layout.row#footer-payments-title",
+      "flex-layout.row#footer-payments-content",
+      "flex-layout.row#footer-security-title",
+      "flex-layout.row#footer-security-content",
+      "container#footer-selo-mobile",
+      "flex-layout.row#footer-bottom"
+    ]
+  },
+  "footer-layout.desktop": {
+    "title": "Footer Desktop",
+    "children": [
+      "container#newsletter",
+      "flex-layout.row#footer-content",
+      "flex-layout.row#footer-bottom"
+    ]
+  },
+  "footer-layout.mobile": {
+    "title": "Footer Mobile",
+    "children": [
+      "container#newsletter",
+      "flex-layout.row#footer-content-mobile",
+      "container#social-medias-mobile",
+      "flex-layout.row#footer-payments-title",
+      "flex-layout.row#footer-payments-content",
+      "flex-layout.row#footer-security-title",
+      "flex-layout.row#footer-security-content",
+      "container#footer-selo-mobile",
+      "flex-layout.row#footer-bottom"
+    ]
+  },
+  "container#footer-selo-mobile": {
+    "title": "Footer Selos Mobile",
+    "children": ["link#vtex", "link#eplus"],
+    "props": {
+      "blockClass": ["footer-selos-mobile"]
+    }
+  },
+  "container#social-medias-mobile": {
+    "title": "Social Media Mobile",
+    "children": [
+      "container#social-medias-mobile-text",
+      "list-context.image-list#social"
+    ],
+    "props": {
+      "blockClass": "footer-social-medias-mobile"
+    }
+  },
+  "container#social-medias-mobile-text": {
+    "children": ["rich-text#social-medias-mobile-text"],
+    "props": {
+      "blockClass": "title-social-medias"
+    }
+  },
+  "rich-text#social-medias-mobile-text": {
+    "title": "Social Media Texto",
+    "props": {
+      "text": "#### Redes Sociais",
+      "blockClass": ["footer-title", "footer-right-title"]
+    }
+  },
+  "container#social-medias-mobile-icons-container": {
+    "children": [
+      "link#facebook",
+      "link#instagram",
+      "link#pinterest",
+      "link#blog"
+    ],
+    "props": {
+      "blockClass": "footer-link-social-medias-icons"
+    }
+  },
+
+  "flex-layout.row#footer-content": {
+    "title": "Footer Contente",
+    "children": [
+      "flex-layout.col#footer-content-left",
+      "flex-layout.col#footer-content-right"
+    ],
+    "props": {
+      "blockClass": "footer-content",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.col#footer-content-left": {
+    "title": "Footer Contente Esquerda",
+    "children": [
+      "flex-layout.row#footer-logo",
+      "flex-layout.row#footer-schedules",
+      "flex-layout.row#footer-social"
+    ],
+    "props": {
+      "blockClass": "footer-content-left",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#footer-logo": {
+    "children": ["image#logo-desktop-footer"],
+    "props": {
+      "blockClass": "footer-logo"
+    }
+  },
+  "flex-layout.row#footer-schedules": {
+    "children": ["rich-text#footer-schedules-content"],
+    "props": {
+      "blockClass": "footer-schedules"
+    }
+  },
+  "flex-layout.row#footer-social": {
+    "children": ["flex-layout.col#footer-social"],
+    "props": {
+      "blockClass": "footer-social"
+    }
+  },
+  "flex-layout.col#footer-social": {
+    "children": ["rich-text#footer-social", "list-context.image-list#social"],
+    "props": {
+      "blockClass": "footer-social"
+    }
+  },
+  "flex-layout.col#footer-content-right": {
+    "title": "Footer Contente Direita",
+    "children": [
+      "flex-layout.row#footer-content-about",
+      "flex-layout.row#footer-content-lists",
+      "flex-layout.row#footer-images-bottom"
+    ],
+    "props": {
+      "blockClass": "footer-content-right",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#footer-content-about": {
+    "children": ["rich-text#footer-about-text"],
+    "props": {
+      "blockClass": "footer-content-about"
+    }
+  },
+  "rich-text#footer-about-text": {
+    "title": "Texto Sobre-Nos",
+    "props": {
+      "text": "### Sobre a Sun House \n\n A Sun House é uma loja de móveis online e física que oferece aos nossos clientes os melhores móveis e itens de decoração para quartos, salas, cozinhas, banheiros e muito mais.\n\nAqui você encontra uma variedade enorme de produtos, como também o sofá perfeito para sua sala, a cama mais confortável e as mesas de cabeceiras mais duradouras para complementar o seu quarto.\n\nSe você está precisando de uma cadeira nova, com certeza encontrará os mais diversos estilos e designs, ou se estiver em busca de uma mesa de trabalho para seu ambiente corporativo, terá o melhor aproveitamento em nossas seções do site.\n\nIncrível, não é mesmo? Além de oferecermos os melhores móveis e artigos para decoração, aqui na loja online você tem a oportunidade de comprar durante todo o ano com ofertas incríveis! Tudo isso para te oferecer o melhor custo-benefício e decorar a sua casa com muita facilidade, sem abrir mão da qualidade.",
+      "blockClass": "footer-about-text"
+    }
+  },
+  "flex-layout.row#footer-bottom": {
+    "title": "Footer Baixo",
+    "children": ["rich-text#footer-bottom-text"],
+    "props": {
+      "blockClass": "footer-bottom",
+      "horizontalAlign": "center",
+      "colJustify": "around",
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#footer-bottom-text": {
+    "props": {
+      "text": "©Sun House - Todos os direitos reservados\nCNPJ: 14.234.441/0001-62 - IE: 146.455.109.119 | Rua Teodoro Sampaio, 1.749 - Pinheiros - SP - Cep - 05405-150",
+      "blockClass": "footer-bottom-text"
+    }
+  },
+
+  "icon#arrow-line": {
+    "props": {
+      "id": "nav-caret--up",
+      "size": 18,
+      "activeClassName": "vtex-store-components-3-x-arrowLine"
+    }
+  },
+
+  "icon#arrow-line-rotate": {
+    "props": {
+      "id": "nav-caret--down",
+      "size": 18,
+      "activeClassName": "vtex-store-components-3-x-arrowLineRotate"
+    }
+  },
+
+  "image#logo-desktop-footer": {
+    "title": "Logo",
+    "props": {
+      "alt": "Logo SunHouse",
+      "title": "Logo SunHouse",
+      "src": "assets/images/logo-white.svg",
+      "blockClass": ["logo-footer"],
+      "maxWidth": "145px",
+      "link": {
+        "url": "/"
+      }
+    }
+  }
+}

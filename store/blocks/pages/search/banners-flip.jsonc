@@ -1,0 +1,216 @@
+{
+  "flex-layout.row#banners-slider": {
+    "children": ["flex-layout.col#banners-slider"],
+    "props": {
+      "blockClass": "banners-slider",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#banners-slider": {
+    "children": ["rich-text#banners-slider", "image-flip-list#banners-slider"],
+    "props": {
+      "blockClass": "banners-slider"
+    }
+  },
+  "flex-layout.row#banners-slider-home": {
+    "title": "Banners Informaçoes",
+    "children": ["flex-layout.col#banners-slider-home"],
+    "props": {
+      "blockClass": "banners-slider",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#banners-slider-home": {
+    "children": [
+      "rich-text#banners-slider-home",
+      "image-flip-list#banners-slider"
+    ],
+    "props": {
+      "blockClass": "banners-slider"
+    }
+  },
+  "responsive-layout.desktop#blog": {
+    "children": ["image-flip-list#banners-slider"]
+  },
+  "responsive-layout.tablet#blog": {
+    "children": ["slider-layout#shelf-mobile-blog"]
+  },
+  "responsive-layout.phone#blog": {
+    "children": ["slider-layout#shelf-mobile-blog"]
+  },
+  "rich-text#banners-slider": {
+    "title": "Título do carossel de Banners Informaçoes",
+    "props": {
+      "text": "## Dicas de cuidados da Prohall\nDescubra mais sobre como cuidar do seu cabelo.",
+      "blockClass": ["banners-slider", "common-title"]
+    }
+  },
+  "rich-text#banners-slider-home": {
+    "title": "Título do carossel de Banners Informaçoes",
+    "props": {
+      "text": "## Dicas de cuidados da Prohall\nDescubra mais sobre como cuidar do seu cabelo.",
+      "blockClass": ["banners-slider", "common-title"]
+    }
+  },
+  "slider-layout#shelf-mobile-blog": {
+    "title": "Carossel da Banner Informaçoes",
+    "children": [
+      "container#blog-1",
+      "container#blog-2",
+      "container#blog-3",
+      "container#blog-4"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "tablet": 2,
+        "phone": 1
+      },
+      "showPaginationDots": "never",
+      "centerMode": "to-the-left",
+      "centerModeSlidesGap": 3,
+      "showNavigationArrows": "desktopOnly",
+      "infinite": true,
+      "blockClass": ["shelf", "banner-shelf"]
+    }
+  },
+  "container#blog-1": {
+    "title": "Conteudo Blog",
+    "children": [
+      "image#blog-information-1-new",
+      "rich-text#blog-information-1"
+    ],
+    "props": {
+      "blockClass": "blog-info-content"
+    }
+  },
+  "container#blog-2": {
+    "title": "Conteudo Blog",
+    "children": [
+      "image#blog-information-2-new",
+      "rich-text#blog-information-2"
+    ],
+    "props": {
+      "blockClass": "blog-info-content"
+    }
+  },
+  "container#blog-3": {
+    "title": "Conteudo Blog",
+    "children": [
+      "image#blog-information-3-new",
+      "rich-text#blog-information-3"
+    ],
+    "props": {
+      "blockClass": "blog-info-content"
+    }
+  },
+  "container#blog-4": {
+    "title": "Conteudo Blog",
+    "children": [
+      "image#blog-information-4-new",
+      "rich-text#blog-information-4"
+    ],
+    "props": {
+      "blockClass": "blog-info-content"
+    }
+  },
+  "rich-text#blog-information-1": {
+    "props": {
+      "blockClass": "blog-information",
+      "text": "Acesse o nosso Blog e acompanhe conteúdo exclusivo relacionados a beleza e bem estar!"
+    }
+  },
+  "rich-text#blog-information-2": {
+    "props": {
+      "blockClass": "blog-information",
+      "text": "Seja um distribuidor Prohall Cosmetic exclusivo em sua cidade!"
+    }
+  },
+  "rich-text#blog-information-3": {
+    "props": {
+      "blockClass": "blog-information",
+      "text": "Acesse a plataforma de cursos e treinamentos exclusivos da Prohall!"
+    }
+  },
+  "rich-text#blog-information-4": {
+    "props": {
+      "blockClass": "blog-information",
+      "text": "Ação Social"
+    }
+  },
+  "image#blog-information-1-new": {
+    "title": "Image Blog",
+    "props": {
+      "alt": "Distribuidor",
+      "src": "assets/images/search/dica-1.jpg",
+      "title": "Distribuidor"
+    }
+  },
+  "image#blog-information-2-new": {
+    "title": "Image Blog",
+    "props": {
+      "alt": "Blog ",
+      "src": "assets/images/search/dica-2.jpg",
+      "title": "blog"
+    }
+  },
+  "image#blog-information-3-new": {
+    "title": "Image Blog",
+    "props": {
+      "alt": "Blog ",
+      "src": "assets/images/search/dica-3.jpg",
+      "title": "blog"
+    }
+  },
+  "image#blog-information-4-new": {
+    "title": "Image Blog",
+    "props": {
+      "alt": "Training",
+      "src": "assets/images/search/dica-4.jpg",
+      "title": "Training"
+    }
+  },
+  "image-flip-list#banners-slider": {
+    "title": "Carossel de Banners Informaçoes",
+    "props": {
+      "layoutMode": "slider",
+      "sliderProps": {
+        "itemsPerPage": {
+          "tablet": 2,
+          "phone": 1,
+          "desktop": 4
+        },
+        "centerModeSlidesGap": 3,
+        "centerMode": "to-the-left",
+        "showPaginationDots": "never",
+        "infinite": true
+      },
+      "images": [
+        {
+          "title": "",
+          "imgURL": "assets/images/search/dica-1.jpg"
+        },
+        {
+          "title": "",
+          "imgURL": "assets/images/search/dica-2.jpg"
+        },
+        {
+          "title": "",
+          "imgURL": "assets/images/search/dica-3.jpg"
+        },
+        {
+          "title": "",
+          "imgURL": "assets/images/search/dica-4.jpg"
+        },
+        {
+          "title": "",
+          "imgURL": "assets/images/search/dica-1.jpg"
+        },
+        {
+          "title": "",
+          "imgURL": "assets/images/search/dica-2.jpg"
+        }
+      ],
+      "blockClass": ["banners-slider", "shelf"]
+    }
+  }
+}

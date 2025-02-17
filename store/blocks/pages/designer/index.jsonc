@@ -1,0 +1,372 @@
+{
+  "store.custom#designer": {
+    "children": [
+      "responsive-layout.desktop#banner-designer",
+      "responsive-layout.tablet#banner-designer",
+      "responsive-layout.phone#banner-designer",
+      "container#designers-breadcrumb",
+      "container#designers-link",
+      "container#designer-info",
+      "flex-layout.row#shelf-designer",
+      "flex-layout.row#designers-list"
+    ]
+  },
+
+  "container#designers-breadcrumb": {
+    "props": {
+      "wrapper": true,
+      "blockClass": ["breadcrumb", "breadcrumb--designers", "container-center"]
+    },
+    "children": ["breadcrumb-custom-routes"]
+  },
+
+  "responsive-layout.desktop#banner-designer": {
+    "children": ["image#banner-designer"]
+  },
+
+  "responsive-layout.tablet#banner-designer": {
+    "children": ["image#banner-designer"]
+  },
+
+  "responsive-layout.phone#banner-designer": {
+    "children": ["image#banner-designer--mobile"]
+  },
+
+  "image#banner-designer": {
+    "title": "Banner do designer - Tablet",
+    "props": {
+      "blockClass": ["designer"],
+      "src": "assets/images/designer/banner.png"
+    }
+  },
+
+  "image#banner-designer--mobile": {
+    "title": "Banner do designer - Phone",
+    "props": {
+      "blockClass": ["designer", "designer--mobile"],
+      "src": "assets/images/designer/banner-mobile.png"
+    }
+  },
+
+  "container#designers-link": {
+    "props": {
+      "wrapper": true,
+      "blockClass": ["designers-link", "container-center"]
+    },
+    "children": ["link#designers"]
+  },
+
+  "link#designers": {
+    "title": "Link para a página de designers",
+    "props": {
+      "href": "/designers",
+      "label": "Voltar",
+      "blockClass": ["designers"]
+    }
+  },
+
+  // Informações do designer
+  "container#designer-info": {
+    "title": "Informações do designer",
+    "props": {
+      "wrapper": true,
+      "blockClass": ["designer-info", "container-center"]
+    },
+    "children": ["image#designer", "rich-text#designer-info"]
+  },
+
+  "image#designer": {
+    "title": "Imagem do designer",
+    "props": {
+      "src": "assets/images/designer/designer.png",
+      "blockClass": ["designer-image"]
+    }
+  },
+
+  "rich-text#designer-info": {
+    "title": "Informações do designer",
+    "props": {
+      "blockClass": ["designer-info"],
+      "text": "# Charles e Ray Eames \n\n Charles Ormond Eames Jr (1907 - 1978) e Bernice Alexandra \"Ray\" Eames (1912 - 1988), Formam dois americanos que juntos realizaram projetos fantásticos para o design mundial e são uma das figuras mais marcantes do design do século XX. Charles e Ray se conheceram na faculdade, após alguns anos se casaram, a partir daí, começa uma longa e bem sucedida parceria no desenvolvimento de móveis, sendo uma das assinaturas mais reconhecidas do mundo."
+    }
+  },
+
+  // Shelf produtos
+  "flex-layout.row#shelf-designer": {
+    "title": "Prateleira container",
+    "children": ["flex-layout.col#shelf-designer"],
+    "props": {
+      "blockClass": ["shelf-designer", "shelf-container"],
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#shelf-designer": {
+    "children": ["rich-text#shelf-designer", "hover-container#shelf-designer"],
+    "props": {
+      "blockClass": "shelf-designer"
+    }
+  },
+
+  "rich-text#shelf-designer": {
+    "title": "Prateleira título",
+    "props": {
+      "text": "## Designers e Seus Produtos Únicos: Inspire-se\nPeças exclusivas que definem o estilo de cada designer",
+      "blockClass": ["shelf-designer", "common-title"]
+    }
+  },
+
+  "hover-container#shelf-designer": {
+    "children": ["list-context.product-list#shelf-designer"],
+    "props": {
+      "blockClass": ["shelf-designer", "hover-shelf-list"]
+    }
+  },
+
+  "list-context.product-list#shelf-designer": {
+    "title": "Lista de produto 01",
+    "blocks": ["product-summary.shelf#main-product"],
+    "children": [
+      "responsive-layout.desktop#shelf-slider",
+      "responsive-layout.mobile#shelf-slider"
+    ],
+    "props": {
+      "maxItems": 10
+    }
+  },
+
+  // Designers list
+  "flex-layout.row#designers-list": {
+    "title": "Prateleira container",
+    "children": ["flex-layout.col#designers-list"],
+    "props": {
+      "blockClass": ["designers-list", "shelf-container"],
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#designers-list": {
+    "children": ["rich-text#designers-list", "container#designers-list"],
+    "props": {
+      "blockClass": "designers-list"
+    }
+  },
+
+  "rich-text#designers-list": {
+    "title": "Prateleira título",
+    "props": {
+      "text": "## Conheça os produtos assinados pelo Designer\nCriatividade e design autoral para inspirar seu espaço",
+      "blockClass": ["designers-list", "common-title"]
+    }
+  },
+
+  "container#designers-list": {
+    "children": ["slider-layout#designers"],
+    "props": {
+      "wrapper": true,
+      "blockClass": ["designers-list", "container-center"]
+    }
+  },
+
+  "slider-layout#designers": {
+    "title": "Carossel das prateleiras ",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "infinite": false,
+      "blockClass": ["main-shelf", "designers"]
+    },
+    "children": [
+      "container#designer-card--1",
+      "container#designer-card--2",
+      "container#designer-card--3",
+      "container#designer-card--4",
+      "container#designer-card--5",
+      "container#designer-card--6",
+      "container#designer-card--7",
+      "container#designer-card--8"
+    ]
+  },
+
+  // Cards
+  // Card 01 - Charles e Ray Eames
+  "container#designer-card--1": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--1"]
+    },
+    "children": ["image#designer-card--1", "rich-text#designer-text--1"]
+  },
+
+  "image#designer-card--1": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--1"],
+      "src": "assets/images/designer/designer-1.png"
+    }
+  },
+
+  "rich-text#designer-text--1": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--1"],
+      "text": "### Charles e Ray Eames\n\n Dupla icônica do design, criadores de peças que equilibram estética e funcionalidade. \n\n[Conheça suas peças](/designers/charles-e-ray-eames)"
+    }
+  },
+
+  // Card 02 - Harry Bertoia
+  "container#designer-card--2": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--2"]
+    },
+    "children": ["image#designer-card--2", "rich-text#designer-text--2"]
+  },
+
+  "image#designer-card--2": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--2"],
+      "src": "assets/images/designer/designer-2.png"
+    }
+  },
+
+  "rich-text#designer-text--2": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--2"],
+      "text": "### Harry Bertoia\n\n Designer e artista italiano-americano, conhecido por suas esculturas e móveis de arame. \n\n[Conheça suas peças](/designers/harry-bertoia)"
+    }
+  },
+
+  // Card 03 - Xavier Pauchard
+  "container#designer-card--3": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--3"]
+    },
+    "children": ["image#designer-card--3", "rich-text#designer-text--3"]
+  },
+
+  "image#designer-card--3": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--3"],
+      "src": "assets/images/designer/designer-3.png"
+    }
+  },
+
+  "rich-text#designer-text--3": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--3"],
+      "text": "### Xavier Pauchard\n\n Pioneiro francês do design industrial, criador da icônica cadeira Tolix, empilhável e durável. \n\n[Conheça suas peças](/designers/xavier-pauchard)"
+    }
+  },
+
+  // Card 04 - Eero Saarinen
+  "container#designer-card--4": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--4"]
+    },
+    "children": ["image#designer-card--4", "rich-text#designer-text--4"]
+  },
+
+  "image#designer-card--4": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--4"],
+      "src": "assets/images/designer/designer-4.png"
+    }
+  },
+
+  "rich-text#designer-text--4": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--4"],
+      "text": "### Eero Saarinen\n\n Arquiteto e designer finlandês, famoso por suas formas orgânicas e modernistas no design. \n\n[Conheça suas peças](/designers/eero-saarinen)"
+    }
+  },
+
+  // Card 05 - André Cruz
+  "container#designer-card--5": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--5"]
+    },
+    "children": ["image#designer-card--5", "rich-text#designer-text--5"]
+  },
+
+  "image#designer-card--5": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--5"],
+      "src": "assets/images/designer/designer-5.png"
+    }
+  },
+
+  "rich-text#designer-text--5": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--5"],
+      "text": "### André Cruz\n\n Designer brasileiro, conhecido por suas peças de madeira e design autoral. \n\n[Conheça suas peças](/designers/andre-cruz)"
+    }
+  },
+
+  // Card 06 - Bruno Faucz
+  "container#designer-card--6": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--6"]
+    },
+    "children": ["image#designer-card--6", "rich-text#designer-text--6"]
+  },
+
+  "image#designer-card--6": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--6"],
+      "src": "assets/images/designer/designer-6.png"
+    }
+  },
+
+  "rich-text#designer-text--6": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--6"],
+      "text": "### Bruno Faucz\n\n Designer acessível e funcional, com mais de 60 publicações e destaque no design brasileiro. \n\n[Conheça suas peças](/designers/bruno-faucz)"
+    }
+  },
+
+  // Card 07 - Estúdio Galho
+  "container#designer-card--7": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--7"]
+    },
+    "children": ["image#designer-card--7", "rich-text#designer-text--7"]
+  },
+
+  "image#designer-card--7": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--7"],
+      "src": "assets/images/designer/designer-7.png"
+    }
+  },
+
+  "rich-text#designer-text--7": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--8"],
+      "text": "### Estúdio Galho\n\n Designers que transformam a riqueza cultural brasileira em peças minimalistas e únicas. \n\n[Conheça suas peças](/designers/estudio-galho)"
+    }
+  },
+
+  // Card 08 - Theo Egami
+  "container#designer-card--8": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--8"]
+    },
+    "children": ["image#designer-card--8", "rich-text#designer-text--8"]
+  },
+
+  "image#designer-card--8": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--8"],
+      "src": "assets/images/designer/designer-8.png"
+    }
+  },
+
+  "rich-text#designer-text--8": {
+    "props": {
+      "blockClass": ["designer-card", "designer-card--8"],
+      "text": "### Theo Egami\n\n Designer influenciado pela cultura oriental, cria móveis com simplicidade e precisão. \n\n[Conheça suas peças](/designers/theo-egami)"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "buy-together": {
+    "children": ["flex-layout.col#buyTogetherContent"]
+  },
+  "flex-layout.col#buyTogetherContent": {
+    "children": ["buy-together-title", "flex-layout.row#buyTogetherContainer"]
+  },
+  "buy-together-title": {
+    "props": {
+      "text": "Aproveite e leve também",
+      "blockClass": "buy-together-title"
+    }
+  },
+  "flex-layout.row#buyTogetherContainer": {
+    "children": [
+      "buy-together-current-product",
+      "flex-layout.col#icon-plus",
+      "buy-together-product-list",
+      "flex-layout.col#icon-equals",
+      "flex-layout.col#buyTogetherInformation"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "preventVerticalStretch": true,
+      "blockClass": "buyTogetherContainer"
+    }
+  },
+
+  "flex-layout.col#icon-plus": {
+    "children": ["icon-plus"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#icon-equals": {
+    "children": ["icon-equals"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "icon-equals": {
+    "props": {
+      "size": 38,
+      "blockClass": "icon-equals"
+    }
+  },
+
+  "buy-together-current-product": {
+    "blocks": ["product-summary.shelf#buy-together-current"]
+  },
+  "buy-together-product-list": {
+    "blocks": ["product-summary.shelf#buy-together"],
+    "props": {
+      "swiperProps": {
+        "spaceBetween": 50
+      }
+    }
+  },
+  "product-summary.shelf#buy-together-current": {
+    "children": ["product-summary-image#buy-together", "product-summary-name"],
+    "props": {
+      "blockClass": "buy-together"
+    }
+  },
+  "product-summary.shelf#buy-together": {
+    "children": ["stack-layout#shelf-product-image", "product-summary-name"],
+    "props": {
+      "blockClass": "buy-together"
+    }
+  },
+
+  "product-summary-image#buy-together": {
+    "title": "Imagem do produto Compre junto",
+    "props": {
+      "width": {
+        "desktop": 437,
+        "mobile": 437
+      },
+      "height": {
+        "desktop": 437,
+        "mobile": 437
+      },
+      "showBadge": false,
+      "blockClass": ["main-shelf", "buy-together"]
+    }
+  },
+  "flex-layout.col#buyTogetherInformation": {
+    "children": [
+      "buy-together-message",
+      "buy-together-total",
+      "buy-together-buy-button"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "blockClass": "buy-together-info"
+    }
+  },
+  "buy-together-buy-button": {
+    "props": {
+      "BuyButton": "add-to-cart-button#product-page"
+    }
+  },
+  "buy-together-message": {
+    "props": {
+      "message": "Compre o look"
+    }
+  }
+}

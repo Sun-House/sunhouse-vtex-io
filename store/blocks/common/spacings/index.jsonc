@@ -1,0 +1,7 @@
+{
+  "container#spacing-default": {
+    "props": {
+      "blockClass": "spacing-default"
+    }
+  }
+}

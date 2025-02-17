@@ -1,0 +1,68 @@
+{
+  "container#header--desktop__menu": {
+    "title": "Menu",
+    "props": {
+      "wrapper": true,
+      "blockClass": ["menu", "container-center"]
+    },
+    "children": ["super-menu#header-category-menu"]
+  },
+
+  "container#department-content": {
+    "props": {
+      "wrapper": true,
+      "blockClass": ["department-content", "container-center"]
+    },
+    "children": ["category-list", "container#department-image"]
+  },
+
+  "container#department-image": {
+    "props": {
+      "blockClass": "department-image"
+    },
+    "children": ["department-image", "department-item#message"]
+  },
+
+  "department-item#message": {
+    "props": {
+      "blockClass": "department-message",
+      "markers": ["bold"],
+      "message": "Confira tudo em <bold>{name}</bold>"
+    }
+  },
+
+  "category-list": {
+    "props": {
+      "orderByName": "asc"
+    },
+    "children": ["category-item"]
+  },
+
+  "category-item": {
+    "props": {
+      "blockClass": "common"
+    },
+    "children": ["container#category-content"]
+  },
+
+  "container#category-content": {
+    "props": {
+      "blockClass": "category-content"
+    },
+    "children": ["subcategory-list", "category-item#see-more"]
+  },
+
+  "subcategory-list": {
+    "props": {
+      "orderByName": "asc"
+    },
+    "children": ["subcategory-item"]
+  },
+
+  "category-item#see-more": {
+    "props": {
+      "message": "Ver mais",
+      "blockClass": "see-more"
+    }
+  }
+}

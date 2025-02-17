@@ -1,0 +1,48 @@
+{
+  "super-menu#header-category-menu": {
+    "title": "Menu de categorias",
+    "props": {
+      "withCategoryTree": true,
+      "blockClass": "header-category-menu",
+      "maxDepth": 4,
+      "categorySortMethod": "DEFAULT",
+      "showCustomItemsOnly": true,
+      "customItems": [
+        {
+          "id": "1000190",
+          "__editorItemTitle": "Móveis por Ambiente"
+        },
+        {
+          "id": "1000191",
+          "__editorItemTitle": "Sala de Jantar"
+        },
+        {
+          "id": "1000006",
+          "__editorItemTitle": "Sala de Estar"
+        },
+        {
+          "id": "1000010",
+          "__editorItemTitle": "Escritórios"
+        },
+        {
+          "id": "1000052",
+          "__editorItemTitle": "Cadeiras"
+        },
+        {
+          "id": "lancamentos",
+          "__editorItemTitle": "Lançamentos",
+          "name": "Lançamentos",
+          "href": "#",
+          "highlight": true
+        },
+        {
+          "id": "pronta-entrega",
+          "__editorItemTitle": "Pronta Entrega",
+          "name": "Pronta Entrega",
+          "href": "#",
+          "highlight": true
+        }
+      ]
+    }
+  }
+}

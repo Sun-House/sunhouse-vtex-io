@@ -1,0 +1,22 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#banner-main",
+      "container#differentials",
+      "flex-layout.row#categories-slider",
+      "container#spacing-default",
+      "list-context.image-list#image-double",
+      "container#spacing-default",
+      "flex-layout.row#shelf-home01",
+      "container#spacing-default",
+      "list-context.image-list#banner-grid",
+      "container#spacing-default",
+      "flex-layout.row#shelf-home02",
+      "container#spacing-default",
+      // "flex-layout.row#shelf-banner-desktop",
+      // "container#spacing-default",
+      "container#banner-infos",
+      "container#spacing-default"
+    ]
+  }
+}

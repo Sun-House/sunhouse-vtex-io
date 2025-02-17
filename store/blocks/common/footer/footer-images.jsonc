@@ -1,0 +1,192 @@
+{
+  "link#facebook": {
+    "title": "Link Facebook",
+    // "children": ["icon#facebook"],
+    "props": {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/Sunhousemoveis/",
+      "target": "_blank",
+      "blockClass": ["social-link", "facebook-link"]
+    }
+  },
+
+  "link#instagram": {
+    "title": "Link Instagram",
+    "props": {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/sunhousemoveis/",
+      "target": "_blank",
+      "blockClass": ["social-link", "instagram-link"]
+    }
+  },
+
+  "link#pinterest": {
+    "title": "Link Pinterest",
+    "props": {
+      "label": "Pinterest",
+      "href": "https://br.pinterest.com/sunhousemoveis/",
+      "target": "_blank",
+      "blockClass": ["social-link", "pinterest-link"]
+    }
+  },
+
+  "link#blog": {
+    "title": "Link Blog",
+    "props": {
+      "label": "Blog",
+      "href": "https://blog.sunhouse.com.br/",
+      "target": "_blank",
+      "blockClass": ["social-link", "blog-link"]
+    }
+  },
+
+  "logo#logo-footer": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/images/logo-white.svg",
+      "width": "194px",
+      "blockClass": ["logo-image", "logo-footer"]
+    }
+  },
+  "link#letsencrypt": {
+    "children": ["icon#letsencrypt"],
+    "props": {
+      "href": "https://letsencrypt.org/",
+      "target": "_blank",
+      "blockClass": ["footer-link", "letsencrypt-link"]
+    }
+  },
+  "link#eplus": {
+    "children": ["icon#eplus"],
+    "props": {
+      "href": "https://www.agenciaeplus.com.br/",
+      "target": "_blank",
+      "blockClass": ["footer-link", "eplus-link"]
+    }
+  },
+  "link#vtex": {
+    "children": ["icon#vtex"],
+    "props": {
+      "href": "https://vtex.com/br-pt/",
+      "target": "_blank",
+      "blockClass": ["footer-link", "vtex-link"]
+    }
+  },
+  "icon#letsencrypt": {
+    "props": {
+      "id": "bnd-letsencrypt",
+      "size": 53,
+      "activeClassName": "vtex-store-components-3-x-letsencryptIcon"
+    }
+  },
+  "icon#eplus": {
+    "props": {
+      "id": "bnd-agenciaeplus",
+      "size": 111,
+      "activeClassName": "vtex-store-components-3-x-eplusIcon"
+    }
+  },
+  "icon#vtex": {
+    "props": {
+      "id": "bnd-vtex",
+      "size": 68,
+      "activeClassName": "vtex-store-components-3-x-vtexIcon"
+    }
+  },
+  "image#pci-vtex": {
+    "props": {
+      "src": "assets/images/footer/vtex-pci-200.svg",
+      "alt": "PCI VTEX",
+      "title": "PCI VTEX",
+      "link": {
+        "url": "https://secure.vtex.com/?an=sunhouse",
+        "openNewTab": true,
+        "title": "PCI"
+      },
+      "blockClass": "pci-image"
+    }
+  },
+
+  // payment flags
+  // mastercard, visa, elo, diners, amex, paypal, pix, boleto
+  "image#mastercard": {
+    "props": {
+      "src": "assets/images/footer/mastercard.png",
+      "alt": "Mastercard",
+      "title": "Mastercard",
+      "blockClass": "payment-flag",
+      "maxWidth": "45px"
+    }
+  },
+
+  "image#visa": {
+    "props": {
+      "src": "assets/images/footer/visa.png",
+      "alt": "Visa",
+      "title": "Visa",
+      "blockClass": "payment-flag",
+      "maxWidth": "45px"
+    }
+  },
+
+  "image#elo": {
+    "props": {
+      "src": "assets/images/footer/elo.png",
+      "alt": "Elo",
+      "title": "Elo",
+      "blockClass": "payment-flag",
+      "maxWidth": "45px"
+    }
+  },
+
+  "image#diners": {
+    "props": {
+      "src": "assets/images/footer/diners.png",
+      "alt": "Diners",
+      "title": "Diners",
+      "blockClass": "payment-flag",
+      "maxWidth": "45px"
+    }
+  },
+
+  "image#amex": {
+    "props": {
+      "src": "assets/images/footer/amex.png",
+      "alt": "Amex",
+      "title": "Amex",
+      "blockClass": "payment-flag",
+      "maxWidth": "45px"
+    }
+  },
+
+  "image#paypal": {
+    "props": {
+      "src": "assets/images/footer/paypal.png",
+      "alt": "Paypal",
+      "title": "Paypal",
+      "blockClass": "payment-flag",
+      "maxWidth": "45px"
+    }
+  },
+
+  "image#pix": {
+    "props": {
+      "src": "assets/images/footer/pix.png",
+      "alt": "Pix",
+      "title": "Pix",
+      "blockClass": "payment-flag",
+      "maxWidth": "45px"
+    }
+  },
+
+  "image#boleto": {
+    "props": {
+      "src": "assets/images/footer/boleto.png",
+      "alt": "Boleto",
+      "title": "Boleto",
+      "blockClass": "payment-flag",
+      "maxWidth": "45px"
+    }
+  }
+}

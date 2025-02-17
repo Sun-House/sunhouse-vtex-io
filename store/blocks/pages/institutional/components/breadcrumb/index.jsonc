@@ -1,0 +1,9 @@
+{
+	"container#institutional-breadcrumb": {
+		"props": {
+			"blockClass": ["breadcrumb"]
+		},
+
+		"children": ["breadcrumb-custom-routes"]
+	}
+}

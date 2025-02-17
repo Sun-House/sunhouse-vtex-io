@@ -1,0 +1,242 @@
+{
+  "minicart.v2": {
+    "props": {
+      "MinicartIcon": "icon-cart#minicart-icon",
+      "quantityDisplay": "always",
+      "alwaysTwoDigits": "not-empty",
+      "maxDrawerWidth": 500,
+      "customPixelEventName": "addToCart",
+      "itemCountMode": "total",
+      "blockClass": ["minicart", "minicart-main"]
+    },
+    "children": ["flex-layout.row#minicart-header", "minicart-base-content"]
+  },
+
+  "icon-cart#minicart-icon": {
+    "props": {
+      "size": 20,
+      "id": "hpa-bag",
+      "blockClass": "minicart-icon"
+    }
+  },
+  "flex-layout.row#minicart-header": {
+    "children": [
+      "flex-layout.col#minicart-close",
+      "flex-layout.col#column-spacer",
+      "flex-layout.row#minicart-title"
+    ],
+    "props": {
+      "blockClass": "minicart-header",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#minicart-close": {
+    "children": ["drawer-close-button#minciart-header-close"],
+    "props": {
+      "blockClass": "minicart-close"
+    }
+  },
+  "drawer-close-button#minciart-header-close": {
+    "props": {
+      "text": "Voltar",
+      "blockClass": "minicart-close-button"
+    }
+  },
+  "drawer-close-button#minciart-header-close-bottom": {
+    "props": {
+      "text": "Voltar para a página inicial",
+      "blockClass": "minicart-close-bottom"
+    }
+  },
+  "flex-layout.row#minicart-title": {
+    "children": [
+      "icon-cart#minicart-icon",
+      "flex-layout.col#minicart-quantity"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "horizontalAlign": "left",
+      "blockClass": "minicart-title",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#minicart-quantity": {
+    "children": [
+      "rich-text#minicart-title",
+      "minicart-quantity-badge#header-quantity"
+    ],
+    "props": {
+      "blockClass": "header-quantity",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#minicart-title": {
+    "title": "Texto Sacola",
+    "props": {
+      "text": "Carrinho",
+      "blockClass": "minicart-title"
+    }
+  },
+  "minicart-quantity-badge#header-quantity": {
+    "props": {
+      "quantityDisplay": "always",
+      "blockClass": "header-quantity",
+      "alwaysTwoDigits": "not-empty",
+      "itemCountMode": "total",
+      "showText": true,
+      "isOutBadge": true
+    }
+  },
+  "minicart-base-content": {
+    "blocks": ["minicart-empty-state"],
+    "children": ["minicart-product-list", "flex-layout.row#minicart-footer"]
+  },
+  "minicart-empty-state": {
+    "children": ["flex-layout.row#empty-state"]
+  },
+  "flex-layout.row#empty-state": {
+    "children": ["flex-layout.col#empty-state"]
+  },
+  "flex-layout.col#empty-state": {
+    "children": [
+      "icon-cart#minicart-empty-state",
+      "rich-text#minicart-default-empty-state",
+      "drawer-close-button#minciart-header-close-bottom"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "rowGap": 5,
+      "blockClass": "minicart-empty-state"
+    }
+  },
+  "icon-cart#minicart-empty-state": {
+    "props": {
+      "id": "hpa-bag",
+      "size": 143,
+      "blockClass": "minicart-empty-state"
+    }
+  },
+  "rich-text#minicart-default-empty-state": {
+    "title": "Texto Carrinho vazio",
+    "props": {
+      "text": "**Seu carrinho está vazio :(**\n\n Adicione produtos clicando no botão 'comprar'\n na página de produtos",
+      "blockClass": "empty-state"
+    }
+  },
+  "minicart-product-list": {
+    "blocks": ["product-list#minicart"]
+  },
+  "flex-layout.row#minicart-footer": {
+    "children": ["flex-layout.col#minicart-footer"],
+    "props": {
+      "blockClass": "minicart-footer"
+    }
+  },
+  "flex-layout.col#minicart-footer": {
+    "children": [
+      "rich-text#observation",
+      "flex-layout.row#minicart-footer-quantity",
+      "flex-layout.row#minicart-footer-summary",
+      "flex-layout.row#line-spacer",
+      "flex-layout.row#minicart-footer-buttons"
+    ],
+    "props": {
+      "blockClass": "minicart-footer"
+    }
+  },
+
+  "rich-text#observation": {
+    "props": {
+      "text": "Cupons são inseridos no checkout*",
+      "textAlignment": "CENTER",
+      "blockClass": "minicart-observation"
+    }
+  },
+
+  "flex-layout.row#minicart-footer-summary": {
+    "children": ["minicart-summary"],
+    "props": {
+      "blockClass": "minicart-footer-summary"
+    }
+  },
+  "minicart-summary": {
+    "blocks": ["checkout-summary.compact#minicart"],
+    "props": {
+      "blockClass": "minicart-summary"
+    }
+  },
+  "checkout-summary.compact#minicart": {
+    "children": ["summary-totalizers#minicart"],
+    "props": {
+      "totalizersToShow": ["Items"]
+    }
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": false
+    }
+  },
+  "flex-layout.row#minicart-footer-quantity": {
+    "children": [
+      "rich-text#footer-quantity",
+      "minicart-quantity-badge#footer-quantity"
+    ],
+    "props": {
+      "colJustify": "between",
+      "colSizing": "auto",
+      "blockClass": "minicart-footer-quantity",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "minicart-quantity-badge#footer-quantity": {
+    "props": {
+      "quantityDisplay": "not-empty",
+      "alwaysTwoDigits": "not-empty",
+      "blockClass": "footer-quantity",
+      "itemCountMode": "total",
+      "showText": false,
+      "isOutBadge": true
+    }
+  },
+  "rich-text#footer-quantity": {
+    "title": "Quantidade de Itens",
+    "props": {
+      "text": "Quantidade de itens:",
+      "blockClass": "footer-quantity"
+    }
+  },
+  "flex-layout.row#minicart-footer-buttons": {
+    "children": [
+      "flex-layout.col#minicart-continue-button",
+      "flex-layout.col#minicart-checkout-button"
+    ],
+    "props": {
+      "preventHorizontalStretch": false,
+      "colJustify": "between",
+      "blockClass": "minicart-footer-buttons"
+    }
+  },
+  "flex-layout.col#minicart-checkout-button": {
+    "children": ["minicart-checkout-button"],
+    "props": {
+      "blockClass": "minicart-checkout-button"
+    }
+  },
+  "flex-layout.col#minicart-continue-button": {
+    "children": ["drawer-close-button#minicart-footer-close"],
+    "props": {
+      "blockClass": "minicart-continue-button"
+    }
+  },
+  "drawer-close-button#minicart-footer-close": {
+    "props": {
+      "text": "Continuar Comprando",
+      "blockClass": "minicart-footer-close"
+    }
+  }
+}

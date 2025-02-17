@@ -1,0 +1,79 @@
+{
+  "container#header--mobile": {
+    "props": {
+      "blockClass": ["header", "header--mobile"]
+    },
+    "children": ["fixed-layout#mobile-header"]
+  },
+
+  "fixed-layout#mobile-header": {
+    "props": {
+      "threshold": 100,
+      "thresholdByRouteId": {
+        "store.home": 500
+      },
+      "blockClass": ["sticky-header", "sticky-header--mobile"]
+    },
+    "children": ["container#header--mobile__content"]
+  },
+
+  "container#header--mobile__content": {
+    "title": "Cabeçalho mobile",
+    "props": {
+      "blockClass": "header--mobile__content"
+    },
+    "children": [
+      "container#header__top-bar",
+      "container#header--mobile__main",
+      "flex-layout.row#header-mobile-bottom"
+    ]
+  },
+
+  "container#header--mobile__main": {
+    "title": "Principal",
+    "props": {
+      "wrapper": true,
+      "blockClass": ["header--mobile__main", "container-center"]
+    },
+    "children": [
+      "container#header--mobile__controls--left",
+      "logo#logo-mobile",
+      "container#header--mobile__controls--right"
+    ]
+  },
+
+  "container#header--mobile__controls--left": {
+    "title": "Controles esquerda",
+    "props": {
+      "wrapper": true,
+      "blockClass": [
+        "header--mobile__controls",
+        "header--mobile__controls--left"
+      ]
+    },
+    "children": ["drawer#menu-mobile"]
+  },
+
+  "logo#logo-mobile": {
+    "title": "Logo",
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/images/logo-white.svg",
+      "width": "52",
+      "blockClass": ["logo-image", "logo-image--mobile"]
+    }
+  },
+
+  "container#header--mobile__controls--right": {
+    "title": "Controles esquerda",
+    "props": {
+      "wrapper": true,
+      "blockClass": [
+        "header--mobile__controls",
+        "header--mobile__controls--right"
+      ]
+    },
+    "children": ["minicart.v2"]
+  }
+}

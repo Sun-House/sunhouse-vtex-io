@@ -1,0 +1,38 @@
+{
+  "list-context.image-list#banner-grid": {
+    "children": ["container.list-render#banner-grid"],
+    "title": "Banners Grid",
+    "props": {
+      "images": [
+        {
+          "image": "assets/images/home/grid-1.png",
+          "mobileImage": "assets/images/home/grid-mobile-1.png",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/images/home/grid-2.png",
+          "mobileImage": "assets/images/home/grid-mobile-2.png",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "image": "assets/images/home/grid-2.png",
+          "mobileImage": "assets/images/home/grid-mobile-3.png",
+          "link": {
+            "url": "/"
+          }
+        }
+      ]
+    }
+  },
+
+  "container.list-render#banner-grid": {
+    "props": {
+      "blockClass": "banner-grid",
+      "wrapper": true
+    }
+  }
+}

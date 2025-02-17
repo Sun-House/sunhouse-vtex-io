@@ -1,0 +1,112 @@
+{
+  "container#header--desktop__main": {
+    "title": "Principal",
+    "props": {
+      "wrapper": true,
+      "blockClass": ["header--desktop__main", "container-center"]
+    },
+    "children": [
+      "container#header--desktop__controls--left",
+      "logo#logo-desktop",
+      "container#header--desktop__controls--right"
+    ]
+  },
+
+  "container#header--desktop__controls--left": {
+    "title": "Controles esquerda",
+    "props": {
+      "wrapper": true,
+      "blockClass": [
+        "header--desktop__controls",
+        "header--desktop__controls--left"
+      ]
+    },
+    "children": ["link#stores", "link#wishlist--left"]
+  },
+
+  "link#stores": {
+    "title": "Lojas",
+    "children": ["icon#stores"],
+    "props": {
+      "label": "Lojas",
+      "href": "/institucional/nossas-lojas",
+      "target": "_blank",
+      "blockClass": ["header-links"]
+    }
+  },
+
+  "icon#stores": {
+    "props": {
+      "id": "hpa-stores",
+      "size": 22,
+      "activeClassName": "vtex-store-components-3-x-storesIcon"
+    }
+  },
+
+  "link#wishlist--left": {
+    "title": "Link Favoritos",
+    "children": ["icon#wishlist", "icon#wishlist-filled"],
+    "props": {
+      "label": "Favoritos",
+      "href": "/wishlist",
+      "blockClass": ["wishlist", "header-links"]
+    }
+  },
+
+  "icon#wishlist": {
+    "props": {
+      "id": "inf-heart",
+      "size": 21,
+      "activeClassName": "vtex-store-components-3-x-heartIcon"
+    }
+  },
+
+  "icon#wishlist-filled": {
+    "props": {
+      "id": "inf-heart--filled",
+      "size": 21,
+      "activeClassName": "vtex-store-components-3-x-heartFilledIcon"
+    }
+  },
+
+  "container#header--desktop__controls--right": {
+    "title": "Controles direita",
+    "props": {
+      "blockClass": [
+        "header--desktop__controls",
+        "header--desktop__controls--right"
+      ]
+    },
+    "children": [
+      "link#wishlist--right",
+      "overlay-trigger#login",
+      "overlay-trigger#search-bar",
+      "minicart.v2"
+    ]
+  },
+
+  "link#wishlist--right": {
+    "title": "Link Favoritos",
+    "children": ["icon#wishlist", "icon#wishlist-filled"],
+    "props": {
+      "href": "/wishlist",
+      "blockClass": [
+        "wishlist",
+        "wishlist--right",
+        "header-links",
+        "header-links--wishlist--right"
+      ]
+    }
+  },
+
+  "logo#logo-desktop": {
+    "title": "Logo",
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/images/logo-white.svg",
+      "width": "110",
+      "blockClass": ["logo-image--desktop", "logo-white"]
+    }
+  }
+}

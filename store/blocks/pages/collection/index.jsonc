@@ -1,0 +1,22 @@
+{
+  "store.custom#collection": {
+    "blocks": [
+      "sunhouse.search-result:search-result-layout.customQuery#collection"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL_AVAILABLE",
+        "orderByField": "OrderByTopSaleDESC",
+        "maxItemsPerPage": 16
+      }
+    }
+  },
+  "sunhouse.search-result:search-result-layout.customQuery#collection": {
+    "title": "Configurações de Coleção",
+    "blocks": [
+      "sunhouse.search-result:search-result-layout.desktop",
+      "sunhouse.search-result:search-result-layout.mobile",
+      "sunhouse.search-result:search-not-found-layout"
+    ]
+  }
+}

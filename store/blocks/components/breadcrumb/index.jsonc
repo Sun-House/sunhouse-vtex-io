@@ -1,0 +1,26 @@
+{
+  "breadcrumb.search#search-result": {
+    "props": {
+      "homeType": "text",
+      "homeLinkText": "Home",
+      "blockClass": "search-result",
+      "showOnMobile": true
+    }
+  },
+  "breadcrumb.search#search-not-found": {
+    "props": {
+      "homeType": "text",
+      "homeLinkText": "Home",
+      "blockClass": "search-not-found",
+      "showOnMobile": true
+    }
+  },
+  "breadcrumb#product-page": {
+    "props": {
+      "homeType": "text",
+      "homeLinkText": "Home",
+      "blockClass": "product-page",
+      "showOnMobile": true
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "overlay-trigger#login": {
+    "children": ["container#greeting-title", "conditional-login"],
+    "props": {
+      "trigger": "hover",
+      "blockClass": "login"
+    }
+  },
+
+  "container#greeting-title": {
+    "children": ["conditional-login.greeting#title"],
+    "props": {
+      "blockClass": ["greeting", "greeting--title"]
+    }
+  },
+
+  "conditional-login.greeting#title": {
+    "props": {
+      "loggedText": "Olá, {user}",
+      "unloggedText": "Login",
+      "blockClass": ["logged-username", "logged-username--title"]
+    }
+  },
+
+  "conditional-login": {
+    "blocks": ["conditional-login.logged", "conditional-login.unlogged"]
+  },
+
+  "conditional-login.logged": {
+    "children": ["overlay-layout#logged"]
+  },
+
+  "overlay-layout#logged": {
+    "children": [
+      "container#greeting",
+      "rich-text#my-orders",
+      "rich-text#my-account",
+      "rich-text#logout"
+    ],
+    "props": {
+      "blockClass": ["logged", "dropdown-login"]
+    }
+  },
+  "container#greeting": {
+    "children": ["conditional-login.greeting"],
+    "props": {
+      "blockClass": "greeting"
+    }
+  },
+  "rich-text#logout": {
+    "props": {
+      "text": "[Sair (x)](/logout)",
+      "blockClass": [
+        "overlay-login",
+        "overlay-layout-option-logout",
+        "overlay-layout-option"
+      ]
+    }
+  },
+  "rich-text#my-orders": {
+    "title": "Meus pedidos",
+    "props": {
+      "text": "[Meus Pedidos](/account#/orders)",
+      "blockClass": ["overlay-login", "overlay-layout-option"]
+    }
+  },
+  "rich-text#my-account": {
+    "title": "Minha Conta",
+    "props": {
+      "text": "[Minha Conta](/account#/orders)",
+      "blockClass": ["overlay-login", "overlay-layout-option"]
+    }
+  },
+
+  "conditional-login.unlogged": {
+    "children": ["overlay-layout#unlogged"]
+  },
+  "overlay-layout#unlogged": {
+    "children": [
+      "rich-text#login-text-overlay",
+      "rich-text#login",
+      "rich-text#meus-pedidos",
+      "rich-text#minha-conta"
+    ],
+    "props": {
+      "placement": "top",
+      "blockClass": ["unlogged", "dropdown-login"]
+    }
+  },
+  "rich-text#meus-pedidos": {
+    "title": "Texto Meus pedidos",
+    "props": {
+      "text": "[Meus Pedidos](/account#/orders)",
+      "blockClass": ["text-unlogged", "text-meus-pedidos"]
+    }
+  },
+  "rich-text#minha-conta": {
+    "title": "Texto Minha Conta ",
+    "props": {
+      "text": "[Minha Conta](/account#/profile)",
+      "blockClass": "text-unlogged"
+    }
+  },
+  "rich-text#login": {
+    "title": "Texto Login",
+    "props": {
+      "text": "[Entrar/Cadastrar](/login)",
+      "blockClass": "text-unlogged"
+    }
+  },
+  "rich-text#login-text-overlay": {
+    "title": "Login",
+    "props": {
+      "text": "LOGIN",
+      "blockClass": "login-text-overlay"
+    }
+  },
+  //Mobile
+  "flex-layout.row#login-mobile": {
+    "children": ["conditional-login#mobile"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "login-mobile"
+    }
+  },
+  "conditional-login#mobile": {
+    "blocks": [
+      "conditional-login.logged#mobile",
+      "conditional-login.unlogged#mobile"
+    ]
+  },
+  "conditional-login.logged#mobile": {
+    "children": ["conditional-login.greeting", "rich-text#logout-mobile"]
+  },
+  "conditional-login.greeting": {
+    "props": {
+      "loggedText": "Olá, {user}",
+      "blockClass": "logged-username"
+    }
+  },
+  "rich-text#logout-mobile": {
+    "title": "Texto Logout Mobile",
+    "props": {
+      "text": "[Sair](/logout)",
+      "blockClass": "logout-mobile-sidebar"
+    }
+  },
+  "conditional-login.unlogged#mobile": {
+    "children": ["modal-trigger#login-mobile"]
+  },
+  "modal-actions.close#login-mobile": {
+    "props": {
+      "label": "X",
+      "blockClass": "login-mobile"
+    }
+  },
+  "modal-trigger#login-mobile": {
+    "children": ["rich-text#login-mobile", "modal-layout#login-mobile"]
+  },
+  "rich-text#login-mobile": {
+    "title": "Text Login Mobile",
+    "props": {
+      "text": "LOGIN \n [**Entre** ou **Cadastre-se**](/login)",
+      "blockClass": "text-unlogged"
+    }
+  },
+  "modal-layout#login-mobile": {
+    "children": ["modal-actions.close#login-mobile", "login-content"],
+    "props": {
+      "blockClass": "login-mobile",
+      "fullScreen": true
+    }
+  },
+  "link#my-orders": {
+    "title": "Meus Pedidos",
+    "props": {
+      "label": "Meus Pedidos",
+      "href": "/account#/orders",
+      "blockClass": "my-orders-link"
+    }
+  },
+
+  "flex-layout.row#my-orders": {
+    "children": ["link#my-orders"],
+    "props": {
+      "fullWidth": true,
+      "verticalAlign": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "my-orders"
+    }
+  }
+}

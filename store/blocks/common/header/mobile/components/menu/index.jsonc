@@ -1,0 +1,71 @@
+{
+  "drawer#menu-mobile": {
+    "blocks": ["drawer-header#menu-mobile"],
+    "props": {
+      "blockClass": "menu-mobile"
+    },
+    "children": [
+      "container#menu-mobile-controls",
+      "super-menu#header-category-menu-mobile"
+    ]
+  },
+
+  "drawer-header#menu-mobile": {
+    "children": ["drawer-close-button#menu-mobile"]
+  },
+
+  "drawer-close-button#menu-mobile": {
+    "props": {
+      "blockClass": "menu-mobile",
+      "type": "filled",
+      "size": 16
+    }
+  },
+
+  "super-menu#header-category-menu-mobile": {
+    "title": "Menu de categorias",
+    "props": {
+      "withCategoryTree": true,
+      "blockClass": "mobile-category-menu-all",
+      "maxDepth": 4,
+      "categorySortMethod": "DEFAULT",
+      "showCustomItemsOnly": true,
+      "customItems": [
+        {
+          "id": "1000190",
+          "__editorItemTitle": "Móveis por Ambiente"
+        },
+        {
+          "id": "1000191",
+          "__editorItemTitle": "Sala de Jantar"
+        },
+        {
+          "id": "1000006",
+          "__editorItemTitle": "Sala de Estar"
+        },
+        {
+          "id": "1000010",
+          "__editorItemTitle": "Escritórios"
+        },
+        {
+          "id": "1000052",
+          "__editorItemTitle": "Cadeiras"
+        },
+        {
+          "id": "lancamentos",
+          "__editorItemTitle": "Lançamentos",
+          "name": "Lançamentos",
+          "href": "#",
+          "highlight": true
+        },
+        {
+          "id": "pronta-entrega",
+          "__editorItemTitle": "Pronta Entrega",
+          "name": "Pronta Entrega",
+          "href": "#",
+          "highlight": true
+        }
+      ]
+    }
+  }
+}

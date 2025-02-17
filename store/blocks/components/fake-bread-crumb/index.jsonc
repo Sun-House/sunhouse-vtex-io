@@ -1,0 +1,37 @@
+{
+  "container#fake-bread-crumb": {
+    "props": {
+      "wrapper": true,
+      "blockClass": ["fake-bread-crumb", "container-center"]
+    },
+    "children": [
+      "link#fake-bread-crumb--home",
+      "link#fake-bread-crumb--current",
+      "link#fake-bread-crumb--back-to-home"
+    ]
+  },
+
+  "link#fake-bread-crumb--home": {
+    "props": {
+      "href": "/",
+      "label": "Home",
+      "blockClass": ["fake-bread-crumb", "fake-bread-crumb--home"]
+    }
+  },
+
+  "link#fake-bread-crumb--current": {
+    "props": {
+      "href": "/",
+      "label": "Formulário de Cadastro",
+      "blockClass": ["fake-bread-crumb", "fake-bread-crumb--current"]
+    }
+  },
+
+  "link#fake-bread-crumb--back-to-home": {
+    "props": {
+      "href": "/",
+      "label": "Voltar para a Home",
+      "blockClass": ["back-to-home"]
+    }
+  }
+}

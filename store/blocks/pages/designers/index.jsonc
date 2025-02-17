@@ -1,0 +1,677 @@
+{
+  "store.custom#designers": {
+    "blocks": [
+      "responsive-layout.desktop#banner-designers",
+      "responsive-layout.tablet#banner-designers",
+      "responsive-layout.phone#banner-designers",
+      "container#designers-breadcrumb",
+      "container#designers-info",
+      "container#designer--1",
+      "container#designer--2",
+      "container#designer--3",
+      "container#designer-group",
+      "container#designer--6",
+      "container#designer-group--2"
+    ]
+  },
+
+  "container#designer-group": {
+    "props": {
+      "wrapper": true,
+      "blockClass": ["designer-group", "designer-group--1", "container-center"]
+    },
+    "children": ["container#designer--4", "container#designer--5"]
+  },
+
+  "container#designer-group--2": {
+    "props": {
+      "wrapper": true,
+      "blockClass": ["designer-group", "designer-group--2", "container-center"]
+    },
+    "children": ["container#designer--7", "container#designer--8"]
+  },
+
+  // Main banners
+  "responsive-layout.desktop#banner-designers": {
+    "children": ["image#banner-designers"]
+  },
+
+  "responsive-layout.tablet#banner-designers": {
+    "children": ["image#banner-designers"]
+  },
+
+  "responsive-layout.phone#banner-designers": {
+    "children": ["image#banner-designers--mobile"]
+  },
+
+  "image#banner-designers": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer"],
+      "src": "assets/images/designers/banner.png"
+    }
+  },
+
+  "image#banner-designers--mobile": {
+    "title": "Banner do designer para mobile",
+    "props": {
+      "blockClass": ["designer", "designer--mobile"],
+      "src": "assets/images/designers/banner-mobile.png"
+    }
+  },
+
+  // Main info
+  "container#designers-info": {
+    "props": {
+      "wrapper": true,
+      "blockClass": ["designers-info", "container-center"]
+    },
+    "children": [
+      "rich-text#designers-info--title",
+      "container#designers-info--content"
+    ]
+  },
+
+  "rich-text#designers-info--title": {
+    "props": {
+      "blockClass": "designers-info-title",
+      "text": "#inspire\n # Designers"
+    }
+  },
+
+  "container#designers-info--content": {
+    "props": {
+      "blockClass": "designers-info--content"
+    },
+    "children": ["rich-text#designers-info", "image#designers-info"]
+  },
+
+  "rich-text#designers-info": {
+    "props": {
+      "blockClass": "designers-info",
+      "text": "Bem-vindo à nossa página dedicada aos maiores designers de móveis renomados e atuais! Aqui, você encontrará uma coleção única de designers de todo o mundo, com uma ampla gama de estilos e habilidades. Desde designers consagrados com décadas de experiência, até jovens talentos que estão rapidamente se destacando na indústria, nós reunimos o melhor da atualidade.\n\nSe você está procurando por uma peça de móvel para complementar sua casa, ou se deseja fazer uma escolha significativa para sua empresa ou escritório, pode encontrar o design perfeito para você nessa página. Aqui, você pode navegar pelos portfólios de cada designer e escolher o estilo e a habilidade que melhor se adapte às suas necessidades.\nNão perca mais tempo, comece a navegar em nossa página agora mesmo e descubra o designer ideal para suas necessidades. Estamos animados para ajudá-lo a encontrar a peça perfeita de móvel!"
+    }
+  },
+
+  "image#designers-info": {
+    "title": "Banner",
+    "props": {
+      "blockClass": ["info"],
+      "src": "assets/images/designers/info.png"
+    }
+  },
+
+  // Charles e Ray Eames
+  "container#designer--1": {
+    "props": {
+      "wrapper": true,
+      "blockClass": ["designer", "designer--1", "container-center"]
+    },
+    "children": [
+      "responsive-layout.desktop#designer__image--1",
+      "responsive-layout.mobile#designer__image--1",
+      "container#designer__content--1"
+    ]
+  },
+
+  "responsive-layout.desktop#designer__image--1": {
+    "children": ["image#designer__image--1"]
+  },
+
+  "responsive-layout.mobile#designer__image--1": {
+    "children": ["image#designer__image--1--mobile"]
+  },
+
+  "image#designer__image--1": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer", "designer--1"],
+      "src": "assets/images/designers/designer--1.png"
+    }
+  },
+
+  "image#designer__image--1--mobile": {
+    "title": "Banner do designer para mobile",
+    "props": {
+      "blockClass": ["designer", "designer--1", "designer--mobile"],
+      "src": "assets/images/designers/designer-mobile--1.png"
+    }
+  },
+
+  "container#designer__title--1": {
+    "props": {
+      "blockClass": ["designer__title", "designer__title--1"]
+    },
+    "children": ["image#designer__title--1", "rich-text#designer__title--1"]
+  },
+
+  "image#designer__title--1": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer__title", "designer__title--1"],
+      "src": "assets/images/designers/designer-title--1.png"
+    }
+  },
+
+  "rich-text#designer__title--1": {
+    "props": {
+      "blockClass": ["designer__title", "designer__title--1"],
+      "text": "## Charles e Ray Eames"
+    }
+  },
+
+  "container#designer__content--1": {
+    "props": {
+      "blockClass": ["designer__content", "designer__content--1"]
+    },
+    "children": [
+      "container#designer__title--1",
+      "rich-text#designer__content--1",
+      "link#designer__content--1"
+    ]
+  },
+
+  "rich-text#designer__content--1": {
+    "props": {
+      "blockClass": ["designer__content", "designer__content--1"],
+      "text": "Charles e Ray Eames (1907-1978 e 1912-1988) foram uma dupla americana icônica no design mundial. Eles se conheceram na faculdade e, após o casamento, formaram uma parceria de sucesso no desenvolvimento de móveis. Juntos, revolucionaram o design do século XX, criando peças que equilibram funcionalidade e estética. Suas criações, como as cadeiras moldadas, são até hoje referências no design moderno, com um legado que permanece forte no mobiliário contemporâneo."
+    }
+  },
+
+  "link#designer__content--1": {
+    "props": {
+      "blockClass": ["designer__content", "designer__content--1"],
+      "label": "Conheça suas peças",
+      "href": "/designers/charles-e-ray-eames"
+    }
+  },
+
+  // Harry Bertóia
+  "container#designer--2": {
+    "props": {
+      "wrapper": true,
+      "blockClass": ["designer", "designer--2", "container-wrapper"]
+    },
+    "children": ["container#designer__content--2", "image#designer__image--2"]
+  },
+
+  "image#designer__image--2": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer", "designer--2"],
+      "src": "assets/images/designers/designer--2.png"
+    }
+  },
+
+  "container#designer__title--2": {
+    "props": {
+      "blockClass": ["designer__title", "designer__title--2"]
+    },
+    "children": ["image#designer__title--2", "rich-text#designer__title--2"]
+  },
+
+  "image#designer__title--2": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer__title", "designer__title--2"],
+      "src": "assets/images/designers/designer-title--2.png"
+    }
+  },
+
+  "rich-text#designer__title--2": {
+    "props": {
+      "blockClass": "designer__title",
+      "text": "## Harry Bertóia"
+    }
+  },
+
+  "container#designer__content--2": {
+    "props": {
+      "blockClass": ["designer__content", "designer__content--2"]
+    },
+    "children": [
+      "container#designer__title--2",
+      "rich-text#designer__content--2",
+      "link#designer__content--2"
+    ]
+  },
+
+  "rich-text#designer__content--2": {
+    "props": {
+      "blockClass": "designer__content",
+      "text": "Harry Bertoia nasceu em San Lorenzo, Itália, em 10 de março de 1915. Designer de renome, estudou na Cranbrook Academy of Art, onde conheceu ícones como Charles e Ray Eames. Suas criações são conhecidas pela leveza e inovação. Harry definia suas obras como 'feitas de ar', destacando a simplicidade e a transparência de suas peças. Entre suas criações mais famosas estão as cadeiras em arame, que se tornaram clássicos do design mundial. O legado de Bertoia é marcado por sua habilidade de combinar arte e funcionalidade de forma única."
+    }
+  },
+
+  "link#designer__content--2": {
+    "props": {
+      "blockClass": "designer__content",
+      "label": "Conheça suas peças",
+      "href": "/designers/harry-bertoia"
+    }
+  },
+
+  // Xavier Pauchard
+  "container#designer--3": {
+    "props": {
+      "blockClass": ["designer", "designer--3"]
+    },
+    "children": ["image#designer__image--3", "container#designer__content--3"]
+  },
+
+  "image#designer__image--3": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer", "designer--3"],
+      "src": "assets/images/designers/designer--3.png"
+    }
+  },
+
+  "container#designer__title--3": {
+    "props": {
+      "blockClass": ["designer__title", "designer__title--3"]
+    },
+    "children": ["image#designer__title--3", "rich-text#designer__title--3"]
+  },
+
+  "image#designer__title--3": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer__title", "designer__title--3"],
+      "src": "assets/images/designers/designer-title--3.png"
+    }
+  },
+
+  "rich-text#designer__title--3": {
+    "props": {
+      "blockClass": "designer__title",
+      "text": "## Xavier Pauchard"
+    }
+  },
+
+  "container#designer__content--3": {
+    "props": {
+      "blockClass": ["designer__content", "designer__content--3"]
+    },
+    "children": [
+      "container#designer__title--3",
+      "rich-text#designer__content--3",
+      "link#designer__content--3"
+    ]
+  },
+
+  "rich-text#designer__content--3": {
+    "props": {
+      "blockClass": "designer__content",
+      "text": "Xavier Pauchard (1880-1948), nascido na França, foi pioneiro no uso da galvanização no design de móveis. Em 1927, fundou a marca Tolix, que lançou a icônica Cadeira Iron Tolix. Conhecida por sua resistência e por ser empilhável, a cadeira rapidamente conquistou popularidade na França e no mundo, tornando-se um símbolo do design industrial. Também chamada de 'Francesinha', a Tolix é famosa por sua durabilidade e estilo atemporal, sendo uma peça essencial em projetos de interiores até hoje. Pauchard revolucionou o design com seu foco em funcionalidade e longevidade."
+    }
+  },
+
+  "link#designer__content--3": {
+    "props": {
+      "blockClass": "designer__content",
+      "label": "Conheça suas peças",
+      "href": "/designers/xavier-pauchard"
+    }
+  },
+
+  // Eero Saarinen
+  "container#designer--4": {
+    "props": {
+      "blockClass": ["designer", "designer--4"]
+    },
+    "children": [
+      "responsive-layout.desktop#designer__image--4",
+      "responsive-layout.mobile#designer__image--4",
+      "container#designer__content--4"
+    ]
+  },
+
+  "responsive-layout.desktop#designer__image--4": {
+    "children": ["image#designer__image--4"]
+  },
+
+  "responsive-layout.mobile#designer__image--4": {
+    "children": ["image#designer__image--4--mobile"]
+  },
+
+  "image#designer__image--4": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer", "designer--4"],
+      "src": "assets/images/designers/designer--4.png"
+    }
+  },
+
+  "image#designer__image--4--mobile": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer", "designer--4"],
+      "src": "assets/images/designers/designer--4--mobile.png"
+    }
+  },
+
+  "container#designer__title--4": {
+    "props": {
+      "blockClass": ["designer__title", "designer__title--4"]
+    },
+    "children": ["image#designer__title--4", "rich-text#designer__title--4"]
+  },
+
+  "image#designer__title--4": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer__title", "designer__title--4"],
+      "src": "assets/images/designers/designer-title--4.png"
+    }
+  },
+
+  "rich-text#designer__title--4": {
+    "props": {
+      "blockClass": "designer__title",
+      "text": "## Eero Saarinen"
+    }
+  },
+
+  "container#designer__content--4": {
+    "props": {
+      "blockClass": ["designer__content", "designer__content--4"]
+    },
+    "children": [
+      "container#designer__title--4",
+      "rich-text#designer__content--4",
+      "link#designer__content--4"
+    ]
+  },
+
+  "rich-text#designer__content--4": {
+    "props": {
+      "blockClass": "designer__content",
+      "text": "Eero Saarinen (1910-1961), arquiteto e designer finlandês, emigrou para os EUA em 1923 e formou-se em arquitetura em Yale. Suas formas orgânicas e modernistas marcaram concursos de design de móveis, influenciando o design contemporâneo."
+    }
+  },
+
+  "link#designer__content--4": {
+    "props": {
+      "blockClass": "designer__content",
+      "label": "Conheça suas peças",
+      "href": "/designers/eero-saarinen"
+    }
+  },
+
+  // Andre Cruz
+  "container#designer--5": {
+    "props": {
+      "blockClass": ["designer", "designer--5"]
+    },
+    "children": [
+      "responsive-layout.desktop#designer__image--5",
+      "responsive-layout.mobile#designer__image--5",
+      "container#designer__content--5"
+    ]
+  },
+
+  "responsive-layout.desktop#designer__image--5": {
+    "children": ["image#designer__image--5"]
+  },
+
+  "responsive-layout.mobile#designer__image--5": {
+    "children": ["image#designer__image--5--mobile"]
+  },
+
+  "image#designer__image--5": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer", "designer--5"],
+      "src": "assets/images/designers/designer--5.png"
+    }
+  },
+
+  "image#designer__image--5--mobile": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer", "designer--5"],
+      "src": "assets/images/designers/designer--5--mobile.png"
+    }
+  },
+
+  "container#designer__title--5": {
+    "props": {
+      "blockClass": ["designer__title", "designer__title--5"]
+    },
+    "children": ["image#designer__title--5", "rich-text#designer__title--5"]
+  },
+
+  "image#designer__title--5": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer__title", "designer__title--5"],
+      "src": "assets/images/designers/designer-title--5.png"
+    }
+  },
+
+  "rich-text#designer__title--5": {
+    "props": {
+      "blockClass": "designer__title",
+      "text": "## Andre Cruz"
+    }
+  },
+
+  "container#designer__content--5": {
+    "props": {
+      "blockClass": ["designer__content", "designer__content--5"]
+    },
+    "children": [
+      "container#designer__title--5",
+      "rich-text#designer__content--5",
+      "link#designer__content--5"
+    ]
+  },
+
+  "rich-text#designer__content--5": {
+    "props": {
+      "blockClass": "designer__content",
+      "text": "André Cruz é formado em Comunicação pela FAAP e tem MBA pela FGV. À frente do André Cruz Design & Ideias, foca em criar produtos inovadores que refletem as necessidades dos clientes."
+    }
+  },
+
+  "link#designer__content--5": {
+    "props": {
+      "blockClass": "designer__content",
+      "label": "Conheça suas peças",
+      "href": "/designers/andre-cruz"
+    }
+  },
+  // Nem tudo é igual
+  "container#designer--6": {
+    "props": {
+      "wrapper": true,
+      "blockClass": ["designer", "designer--6", "container-center"]
+    },
+    "children": ["container#designer__content--6", "image#designer__image--6"]
+  },
+
+  "image#designer__image--6": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer", "designer--6"],
+      "src": "assets/images/designers/designer--6.png"
+    }
+  },
+
+  "container#designer__title--6": {
+    "props": {
+      "blockClass": ["designer__title", "designer__title--6"]
+    },
+    "children": ["image#designer__title--6", "rich-text#designer__title--6"]
+  },
+
+  "image#designer__title--6": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer__title", "designer__title--6"],
+      "src": "assets/images/designers/designer-title--6.png"
+    }
+  },
+
+  "rich-text#designer__title--6": {
+    "props": {
+      "blockClass": "designer__title",
+      "text": "## Nem tudo é igual"
+    }
+  },
+
+  "container#designer__content--6": {
+    "props": {
+      "blockClass": ["designer__content", "designer__content--6"]
+    },
+    "children": [
+      "container#designer__title--6",
+      "rich-text#designer__content--6",
+      "link#designer__content--6"
+    ]
+  },
+
+  "rich-text#designer__content--6": {
+    "props": {
+      "blockClass": "designer__content",
+      "text": "Bruno Faucz é o fundador do estúdio “Nem Tudo É Igual”, conhecido por seu design acessível e funcional. Desde 2013, sua carreira independente já rendeu mais de 60 publicações em revistas renomadas de casa e decoração. O estúdio se destaca por criar produtos completos, da produção ao uso cotidiano. Uma de suas peças mais notáveis foi publicada no livro “Design Brasileiro de Móveis”, que reúne os maiores destaques do setor de assentos de 1928 a 2013. Faucz combina estética e praticidade, levando o design brasileiro ao reconhecimento global."
+    }
+  },
+
+  "link#designer__content--6": {
+    "props": {
+      "blockClass": "designer__content",
+      "label": "Conheça suas peças",
+      "href": "/designers/nem-tudo-e-igual"
+    }
+  },
+
+  // Estúdio Galho
+  "container#designer--7": {
+    "props": {
+      "blockClass": ["designer", "designer--7"]
+    },
+    "children": ["image#designer__image--7", "container#designer__content--7"]
+  },
+
+  "image#designer__image--7": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer", "designer--7"],
+      "src": "assets/images/designers/designer--7.png"
+    }
+  },
+
+  "container#designer__title--7": {
+    "props": {
+      "blockClass": ["designer__title", "designer__title--7"]
+    },
+    "children": ["image#designer__title--7", "rich-text#designer__title--7"]
+  },
+
+  "image#designer__title--7": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer__title", "designer__title--7"],
+      "src": "assets/images/designers/designer-title--7.png"
+    }
+  },
+
+  "rich-text#designer__title--7": {
+    "props": {
+      "blockClass": "designer__title",
+      "text": "## Estúdio Galho"
+    }
+  },
+
+  "container#designer__content--7": {
+    "props": {
+      "blockClass": ["designer__content", "designer__content--7"]
+    },
+    "children": [
+      "container#designer__title--7",
+      "rich-text#designer__content--7",
+      "link#designer__content--7"
+    ]
+  },
+
+  "rich-text#designer__content--7": {
+    "props": {
+      "blockClass": "designer__content",
+      "text": "Estúdio Galho, fundado por Klivisson Campelo e Edson Martone, traz a simplicidade e beleza da natureza para cada peça. Inspirados pela rica cultura brasileira, criam objetos únicos e minimalistas que tocam o coração e despertam memórias. Suas criações transcendem a função e se conectam profundamente com os usuários. O processo criativo do estúdio reflete a evolução natural, resultando em peças que são verdadeiras obras de arte, celebrando a simplicidade e a harmonia com o ambiente."
+    }
+  },
+
+  "link#designer__content--7": {
+    "props": {
+      "blockClass": "designer__content",
+      "label": "Conheça suas peças",
+      "href": "/designers/estudio-galho"
+    }
+  },
+
+  // Theo Egami
+  "container#designer--8": {
+    "props": {
+      "blockClass": ["designer", "designer--8"]
+    },
+    "children": ["image#designer__image--8", "container#designer__content--8"]
+  },
+
+  "image#designer__image--8": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer", "designer--8"],
+      "src": "assets/images/designers/designer--8.png"
+    }
+  },
+
+  "container#designer__title--8": {
+    "props": {
+      "blockClass": ["designer__title", "designer__title--8"]
+    },
+    "children": ["image#designer__title--8", "rich-text#designer__title--8"]
+  },
+
+  "image#designer__title--8": {
+    "title": "Banner do designer",
+    "props": {
+      "blockClass": ["designer__title", "designer__title--8"],
+      "src": "assets/images/designers/designer-title--8.png"
+    }
+  },
+
+  "rich-text#designer__title--8": {
+    "props": {
+      "blockClass": "designer__title",
+      "text": "## Theo Egami"
+    }
+  },
+
+  "container#designer__content--8": {
+    "props": {
+      "blockClass": ["designer__content", "designer__content--8"]
+    },
+    "children": [
+      "container#designer__title--8",
+      "rich-text#designer__content--8",
+      "link#designer__content--8"
+    ]
+  },
+
+  "rich-text#designer__content--8": {
+    "props": {
+      "blockClass": "designer__content",
+      "text": "Theo Egami é um designer que une história e cultura oriental em suas criações. Suas peças são marcadas pela simplicidade, harmonia e funcionalidade. Influenciado pelo minimalismo japonês, Theo valoriza o equilíbrio e a precisão em cada detalhe, criando móveis que refletem sua trajetória pessoal e profissional. Combinando estética e funcionalidade, seu trabalho é um reflexo de sua busca constante por inovação, sempre mantendo a essência da cultura oriental em evidência."
+    }
+  },
+
+  "link#designer__content--8": {
+    "props": {
+      "blockClass": "designer__content",
+      "label": "Conheça suas peças",
+      "href": "/designers/theo-egami"
+    }
+  }
+}

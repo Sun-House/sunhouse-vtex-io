@@ -1,0 +1,144 @@
+{
+  // shelf home01
+  "flex-layout.row#shelf-home01": {
+    "title": "Prateleira 01 container",
+    "children": ["flex-layout.col#shelf-home01"],
+    "props": {
+      "blockClass": ["shelf-home01", "shelf-container"],
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#shelf-home01": {
+    "title": "Prateleira 01",
+    "children": ["rich-text#shelf-home01", "hover-container#shelf-home01"],
+    "props": {
+      "blockClass": "shelf-home01"
+    }
+  },
+
+  "rich-text#shelf-home01": {
+    "title": "Prateleira 01 título",
+    "props": {
+      "text": "## Os mais vendidos\nUma seleção dos queridinhos",
+      "blockClass": ["shelf-home01", "common-title"]
+    }
+  },
+
+  "hover-container#shelf-home01": {
+    "children": ["list-context.product-list#shelf-home01"],
+    "props": {
+      "blockClass": ["shelf-home01", "hover-shelf-list"]
+    }
+  },
+
+  "list-context.product-list#shelf-home01": {
+    "title": "Lista de produto 01",
+    "blocks": ["product-summary.shelf#main-product"],
+    "children": [
+      "responsive-layout.desktop#shelf-slider",
+      "responsive-layout.mobile#shelf-slider"
+    ],
+    "props": {
+      "maxItems": 10
+    }
+  },
+
+  // shelf home02
+  "flex-layout.row#shelf-home02": {
+    "title": "Prateleira 02 container",
+    "children": ["flex-layout.col#shelf-home02"],
+    "props": {
+      "blockClass": ["shelf-home02", "shelf-container"],
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#shelf-home02": {
+    "title": "Prateleira 02",
+    "children": ["rich-text#shelf-home02", "hover-container#shelf-home02"],
+    "props": {
+      "blockClass": "shelf-home02"
+    }
+  },
+
+  "rich-text#shelf-home02": {
+    "title": "Prateleira 02 título",
+    "props": {
+      "text": "## Novidades\nFique por dentro das tendências",
+      "blockClass": ["shelf-home02", "common-title"]
+    }
+  },
+
+  "hover-container#shelf-home02": {
+    "children": ["list-context.product-list#shelf-home02"],
+    "props": {
+      "blockClass": ["shelf-home02", "hover-shelf-list"]
+    }
+  },
+
+  "list-context.product-list#shelf-home02": {
+    "title": "Lista de produto 02",
+    "blocks": ["product-summary.shelf#main-product"],
+    "children": [
+      "responsive-layout.desktop#shelf-slider",
+      "responsive-layout.mobile#shelf-slider"
+    ],
+    "props": {
+      "maxItems": 10
+    }
+  },
+
+  // shelf slider
+
+  "responsive-layout.desktop#shelf-slider": {
+    "children": ["slider-layout#main-shelf"]
+  },
+
+  "slider-layout#main-shelf": {
+    "title": "Carossel das prateleiras ",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4
+      },
+      "showPaginationDots": "always",
+      "showNavigationArrows": "desktopOnly",
+      "infinite": false,
+      "blockClass": ["shelf", "main-shelf"]
+    }
+  },
+
+  "responsive-layout.mobile#shelf-slider": {
+    "children": ["embla-carousel#shelf-mobile"]
+  },
+
+  // "slider-layout#shelf-mobile": {
+  //   "title": "Carossel da prateleir",
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "tablet": 2,
+  //       "phone": 1
+  //     },
+  //     "showPaginationDots": "always",
+  //     "centerMode": "to-the-left",
+  //     "centerModeSlidesGap": 1,
+  //     "showNavigationArrows": "desktopOnly",
+  //     "infinite": true,
+  //     "blockClass": ["shelf", "banner-shelf"]
+  //   }
+  // },
+
+  "embla-carousel#shelf-mobile": {
+    "props": {
+      "options": {
+        "navigation": false,
+        "dots": true,
+        "draggable": true,
+        "loop": false,
+        "disabledPreventClick": true,
+        "align": "start"
+      },
+      "blockClass": ["shelf", "banner-shelf", "shelf--mobile"]
+    }
+  }
+}
