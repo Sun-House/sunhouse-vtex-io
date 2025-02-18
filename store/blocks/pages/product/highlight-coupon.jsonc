@@ -1,0 +1,55 @@
+{
+    "container#wrapper__highlight-coupon": {
+        "title": "Faixa Destaque de Cupom",
+        "children": [
+            "flex-layout.row#highlight-coupon"
+        ],
+        "props": {
+            "wrapper": true,
+            "blockClass": ["wrapper__highlight-coupon", "highlight--coupon"]
+        }
+    },
+
+    "flex-layout.row#highlight-coupon": {
+        "props" : {
+            "blockClass": "wrapper__highlight-pdp"
+        },
+        "children": [
+            "rich-text#highlight-text"
+        ]
+    },
+    "rich-text#highlight-text": {
+        "title": "Texto da Faixa",
+        "props": {
+            "blockClass": "text__coupon-info",
+            "text": "EXEMPLO - Desconto garantido! Aproveite o cupom SUNHOUSE10 em qualquer valor de compra! Corre que é por tempo limitado!"
+        }
+    },
+
+    "container#wrapper__highlight-coupon-mobile": {
+        "title": "Faixa Destaque de Cupom Mobile",
+        "children": [
+            "flex-layout.row#highlight-coupon-mobile"
+        ],
+        "props": {
+            "wrapper": true,
+            "blockClass": ["wrapper__highlight-coupon-mobile", "highlight--coupon-mobile"]
+        }
+    },
+
+    "flex-layout.row#highlight-coupon-mobile": {
+        "props" : {
+            "blockClass": "wrapper__highlight-pdp-mobile"
+        },
+        "children": [
+            "rich-text#highlight-text-mobile"
+        ]
+    },
+    "rich-text#highlight-text-mobile": {
+        "title": "Texto da Faixa",
+        "props": {
+            "blockClass": "text__coupon-info",
+            "text": "EXEMPLO - Desconto garantido! Aproveite o cupom SUNHOUSE10 em qualquer valor de compra! Corre que é por tempo limitado!"
+        }
+    }
+}

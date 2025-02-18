@@ -37,10 +37,15 @@
 
   "responsive-layout.desktop#product-main": {
     "title": "Produto",
-    "children": ["flex-layout.row#product-main"]
+    "children": [
+      "container#wrapper__highlight-coupon",
+      "flex-layout.row#product-main"
+    ]
   },
   "responsive-layout.mobile#product-main": {
-    "children": ["flex-layout.row#product-main-mobile"]
+    "children": [
+      "flex-layout.row#product-main-mobile"
+    ]
   },
   "flex-layout.row#product-main": {
     "children": [
@@ -60,6 +65,7 @@
   "flex-layout.col#product-main-mobile": {
     "children": [
       "flex-layout.row#breadcrumb-product",
+      "container#wrapper__highlight-coupon-mobile",
       "vtex.store-components:product-name",
       "flex-layout.row#product-mobile-images",
       "product-dimensions",
