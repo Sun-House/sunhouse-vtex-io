@@ -10,7 +10,7 @@
   "rich-text#banner-infos": {
     "title": "Titulo Banner Informações",
     "props": {
-      "text": "## Dicas da Sun House \n\n Descubra tudo sobre dicas para seu ambiente",
+      "text": "## Dicas no Blog da Sun House \n\n Inspire-se com ideias criativas para deixar sua casa mais aconchegante",
       "blockClass": ["common-title", "banner-infos"]
     }
   },
@@ -23,26 +23,32 @@
     ],
     "props": {
       "blockClass": "banner-infos",
+      // abaixo setei as imagens fixas - ja que nao terao alteracoes frequentes
       "imageTextArray": [
         {
-          "image": "assets/images/home/dicas-1.png",
-          "imageText": "Busque a perfuMaria mais próxima de você.",
-          "link": "/teste"
+          //"image": "assets/images/home/blog-1.png",
+          "image": "assets/images/banner-infos/blog-1.png",
+          "link": "https://blog.sunhouse.com.br/moveis-estilo-industrial/",
+          "imageText": "Movéis estilo industrial: incorpore-os na sua decoração!",
+          "target": "_blank"
         },
         {
-          "image": "assets/images/home/dicas-1.png",
-          "link": "/teste",
-          "imageText": "Como cuidar dos seus cabelos descoloridos e coloridos."
+          "image": "assets/images/banner-infos/blog-2.png",
+          "link": "https://blog.sunhouse.com.br/8-inspiracoes-de-decoracao-para-a-sua-sala-de-estar/",
+          "imageText": "8 Inspirações de decoração para a sua sala de estar!",
+          "target": "_blank"
         },
         {
-          "image": "assets/images/home/dicas-1.png",
-          "link": "/teste",
-          "imageText": "Dicas de maquiagem para o dia das bruxas."
+          "image": "assets/images/banner-infos/blog-3.png",
+          "link": "https://blog.sunhouse.com.br/estilos-de-decoracao-para-se-inspirar/",
+          "imageText": "Estilos de decoração: descubra 13 ideias para se inspirar",
+          "target": "_blank"
         },
         {
-          "image": "assets/images/home/dicas-1.png",
-          "link": "/teste",
-          "imageText": "Como saber qual o melhor protetor solar para seu tipo de pele?"
+          "image": "assets/images/banner-infos/blog-4.png",
+          "link": "https://blog.sunhouse.com.br/palha-indiana/",
+          "imageText": "Palha Indiana: conheça os detalhes deste acabamento único",
+          "target": "_blank"
         }
       ]
     }
@@ -59,10 +65,11 @@
     "props": {
       "blockClass": "banner-infos",
       "options": {
-        // "dots": true,
-        "navigation": true,
-        "draggable": true,
-        "forceLoop": true,
+        //"dots": true,
+        // precis mudar pra true abaixo caso va ter mais de quatro elementos
+        "navigation": false,
+        "draggable": false,
+        "forceLoop": false,
         "align": "start"
       }
     }
@@ -72,7 +79,7 @@
     "props": {
       "blockClass": "banner-infos",
       "options": {
-        // "dots": true,
+        //"dots": true,
         "navigation": true,
         "loop": true,
         "draggable": true,

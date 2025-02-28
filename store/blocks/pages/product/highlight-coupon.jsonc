@@ -1,4 +1,4 @@
-{
+{    
     "container#wrapper__highlight-coupon": {
         "title": "Faixa Destaque de Cupom",
         "children": [
@@ -22,7 +22,7 @@
         "title": "Texto da Faixa",
         "props": {
             "blockClass": "text__coupon-info",
-            "text": "EXEMPLO - Desconto garantido! Aproveite o cupom SUNHOUSE10 em qualquer valor de compra! Corre que é por tempo limitado!"
+            "text": "Desconto garantido! Aproveite o cupom SUNHOUSE10 em qualquer valor de compra! Corre que é por tempo limitado!"
         }
     },
 
@@ -49,7 +49,7 @@
         "title": "Texto da Faixa",
         "props": {
             "blockClass": "text__coupon-info",
-            "text": "EXEMPLO - Desconto garantido! Aproveite o cupom SUNHOUSE10 em qualquer valor de compra! Corre que é por tempo limitado!"
+            "text": "Desconto garantido! Aproveite o cupom SUNHOUSE10 em qualquer valor de compra! Corre que é por tempo limitado!"
         }
     }
 }

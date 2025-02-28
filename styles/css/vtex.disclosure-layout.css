@@ -1,1 +1,227 @@
-.trigger--footer-title{border:none;background-color:#fff;border-top:1px solid #aba9a8;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;height:48px;padding-inline:22px 18px}.trigger :global(.vtex-store-components-3-x-arrowLine),.trigger :global(.vtex-store-components-3-x-arrowLineRotate){color:#2d2926}.trigger--footer-about{background-color:#ffda00;margin-inline:42px;height:48px;border:none;border-radius:5px;text-align:center;font-weight:700;margin-bottom:20px}.content--footer-content{padding:8px 22px}.content--footer-content--visible{margin-bottom:32px}.content--footer-content--hidden{max-height:0;padding-block:0;overflow-y:hidden}.content--footer-content--visible{max-height:300px}.content--footer-about{padding:0 15px}.content--footer-about :global(.vtex-store-components-3-x-logoLink--logo-footer){margin:0 auto;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;display:block}.content--footer-about--hidden{overflow-y:hidden}.content--footer-about--visible{max-height:1000px}.trigger--mobile-menu-item{position:relative;padding:0;border:none;background-color:rgba(0,0,0,0);cursor:pointer}.trigger--mobile-menu-item::after{display:inline-flex;content:"";font-size:20px;font-family:"fantasticon";font-style:normal;font-weight:400;line-height:1;color:#fff;right:20px;position:absolute;top:50%;transform:translateY(-50%);transition:all .2s}.trigger--mobile-menu-item--department::after{color:#fff}.trigger--mobile-menu-item--visible::after{transform:translateY(-50%) rotate(180deg)}:global(.vtex-container-container--institutional-menu-trigger-mobile) .trigger{width:100%;height:2.75rem;padding:0 .75rem;border:unset;background:#ffda00;position:relative;display:flex;justify-content:space-between;align-items:center;gap:1rem}:global(.vtex-container-container--institutional-menu-trigger-mobile) .trigger::after{display:inline-flex;content:"";font-size:1rem;font-family:"fantasticon";font-style:normal;font-weight:400;line-height:1;color:#2d2926;transition:transform .3s}:global(.vtex-container-container--institutional-menu-trigger-mobile) .trigger--visible::after{transform:rotate(180deg)}:global(.vtex-container-container--institutional-menu-trigger-mobile) .content{display:flex !important;flex-direction:column;transition-duration:.3s}:global(.vtex-container-container--institutional-menu-trigger-mobile) .content.content--hidden{max-height:0;overflow:hidden;opacity:0}:global(.vtex-container-container--institutional-menu-trigger-mobile) .content.content--visible{max-height:500px;overflow:visible;opacity:1}.trigger--product-page-description,.trigger--product-page-specifications{width:100%;border:1px solid #d5d4d4;border-left:none;border-right:none;border-bottom:none;background-color:rgba(0,0,0,0);padding:0;height:59px;display:flex;align-items:center;justify-content:space-between;cursor:pointer}.trigger--installments{padding:0;border:0;background-color:rgba(0,0,0,0);cursor:pointer}.content--product-page-description--hidden,.content--product-page-specifications--hidden{max-height:0;overflow-y:hidden}.content--product-page-description--visible,.content--product-page-specifications--visible{max-height:1000px}.content--product-page-description--visible:nth-child(odd),.content--product-page-specifications--visible:nth-child(odd){background-color:#f7f7f7}.content--installments{border-radius:10px;box-shadow:0px 4px 4px rgba(0,0,0,.1);background-color:#fff;transform:translateX(-50%);position:absolute;top:100%;left:50%;z-index:999}.content--result-seo{overflow:hidden;height:100%;transition:max-height 300ms ease}.content--result-seo--hidden{display:block !important;max-height:148px}.content--result-seo--visible{max-height:999999px}.trigger--result-seo{all:unset;width:100%;display:flex;justify-content:center;margin-top:10px}@media screen and (max-width: 1024px){.content--footer-about{padding:0 42px}.content--installments{left:72%}}
+.trigger--footer-title {
+    border: none;
+    background-color: #fff;
+    border-top: 1px solid #aba9a8;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding-inline: 22px 18px
+}
+
+.trigger :global(.vtex-store-components-3-x-arrowLine),
+.trigger :global(.vtex-store-components-3-x-arrowLineRotate) {
+    color: #2d2926
+}
+
+.trigger--footer-about {
+    background-color: #ffda00;
+    margin-inline: 42px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+.content--footer-content {
+    padding: 8px 22px
+}
+
+.content--footer-content--visible {
+    margin-bottom: 32px
+}
+
+.content--footer-content--hidden {
+    max-height: 0;
+    padding-block: 0;
+    overflow-y: hidden
+}
+
+.content--footer-content--visible {
+    max-height: 300px
+}
+
+.content--footer-about {
+    padding: 0 15px
+}
+
+.content--footer-about :global(.vtex-store-components-3-x-logoLink--logo-footer) {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block
+}
+
+.content--footer-about--hidden {
+    overflow-y: hidden
+}
+
+.content--footer-about--visible {
+    max-height: 1000px
+}
+
+.trigger--mobile-menu-item {
+    position: relative;
+    padding: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer
+}
+
+.trigger--mobile-menu-item::after {
+    display: inline-flex;
+    content: "";
+    font-size: 20px;
+    font-family: "fantasticon";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    right: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .2s
+}
+
+.trigger--mobile-menu-item--department::after {
+    color: #fff
+}
+
+.trigger--mobile-menu-item--visible::after {
+    transform: translateY(-50%) rotate(180deg)
+}
+
+:global(.vtex-container-container--institutional-menu-trigger-mobile) .trigger {
+    width: 100%;
+    height: 2.75rem;
+    padding: 0 .75rem;
+    border: unset;
+    background: #ffda00;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem
+}
+
+:global(.vtex-container-container--institutional-menu-trigger-mobile) .trigger::after {
+    display: inline-flex;
+    content: "";
+    font-size: 1rem;
+    font-family: "fantasticon";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #2d2926;
+    transition: transform .3s
+}
+
+:global(.vtex-container-container--institutional-menu-trigger-mobile) .trigger--visible::after {
+    transform: rotate(180deg)
+}
+
+:global(.vtex-container-container--institutional-menu-trigger-mobile) .content {
+    display: flex !important;
+    flex-direction: column;
+    transition-duration: .3s
+}
+
+:global(.vtex-container-container--institutional-menu-trigger-mobile) .content.content--hidden {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0
+}
+
+:global(.vtex-container-container--institutional-menu-trigger-mobile) .content.content--visible {
+    max-height: 500px;
+    overflow: visible;
+    opacity: 1
+}
+
+.trigger--product-page-description,
+.trigger--product-page-specifications {
+    width: 100%;
+    border: 1px solid #d5d4d4;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer
+}
+
+.trigger--installments {
+    padding: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer
+}
+
+.content--product-page-description--hidden,
+.content--product-page-specifications--hidden {
+    max-height: 0;
+    overflow-y: hidden
+}
+
+.content--product-page-description--visible,
+.content--product-page-specifications--visible {
+    max-height: 1000px
+}
+
+.content--product-page-description--visible:nth-child(odd),
+.content--product-page-specifications--visible:nth-child(odd) {
+    background-color: #f7f7f7
+}
+
+.content--installments {
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .1);
+    background-color: #fff;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 999
+}
+
+.content--result-seo {
+    overflow: hidden;
+    height: 100%;
+    transition: max-height 300ms ease
+}
+
+.content--result-seo--hidden {
+    display: block !important;
+    max-height: 148px
+}
+
+.content--result-seo--visible {
+    max-height: 999999px
+}
+
+.trigger--result-seo {
+    all: unset;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px
+}
+
+@media screen and (max-width: 1024px) {
+    .content--footer-about {
+        padding: 0 42px
+    }
+
+    .content--installments {
+        left: 72%
+    }
+}

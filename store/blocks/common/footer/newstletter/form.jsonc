@@ -48,7 +48,7 @@
   "form.checkbox#checkbox": {
     "props": {
       "fieldEntity": "allowed",
-      "required": true,
+      "required": false,
       "errorMessage": "A opção precisa estar marcada.",
       "blockClass": ["newsletter"],
       "Text": "rich-text#checkbox"
