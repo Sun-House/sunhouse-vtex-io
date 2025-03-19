@@ -1135,7 +1135,8 @@
     .flexCol--product-available,
     .flexCol--product-unavailable {
         margin-top: 0px;
-        border-top: none
+        border-top: none;
+        margin-bottom: 32px
     }
 
     .flexRow--filters-container-bottom {

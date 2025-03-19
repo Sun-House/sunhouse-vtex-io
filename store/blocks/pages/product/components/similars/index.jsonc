@@ -28,7 +28,7 @@
   "rich-text#similars": {
     "props": {
       "blockClass": "similars",
-      "text": "Produtos similares:"
+      "text": "Outras cores:"
     }
   },
 

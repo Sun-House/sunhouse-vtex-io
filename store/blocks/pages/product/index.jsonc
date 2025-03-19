@@ -39,7 +39,8 @@
     "title": "Produto",
     "children": [
       "container#wrapper__highlight-coupon",
-      "flex-layout.row#product-main"
+      "flex-layout.row#product-main",
+      "flex-layout.row#product-infos-wrapper"//
     ]
   },
   "responsive-layout.mobile#product-main": {
@@ -72,7 +73,8 @@
       "container#product-top-infos",
       "container#product-highlights--product-page",
       "condition-layout.product#product-availability",
-      "flex-layout.row#product-page-informations"
+      //"flex-layout.row#product-page-informations"
+      "flex-layout.row#product-infos-wrapper"
     ],
     "props": {
       "blockClass": "product-main-mobile"
@@ -164,8 +166,8 @@
       "container#product-top-infos",
       "vtex.store-components:product-name",
       "container#product-highlights--product-page",
-      "condition-layout.product#product-availability",
-      "flex-layout.row#product-page-informations"
+      "condition-layout.product#product-availability"
+      //"flex-layout.row#product-page-informations"
     ],
     "props": {
       "width": "43%",

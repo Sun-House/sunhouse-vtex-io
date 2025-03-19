@@ -1,0 +1,32 @@
+// Novo bloco de Descricao do Produto e Especificacoes - pode ser evoluido futuramente com avaliacoes tambem
+{
+    // Bloco principal contendo as informacoes
+    "flex-layout.row#product-infos-wrapper": {
+        "children": [
+            "flex-layout.col#product-description-wrapper"
+        ],
+        "props": {
+            "blockClass": "product-infos-wrapper"
+        }
+    },
+    //"flex-layout.row#product-infos-wrapper-mobile": {
+        //"children": [
+            //"disclosure-layout#product-page-description",
+            //"disclosure-layout#product-page-specs"
+        //],
+        //"props": {
+            //"blockClass": "product-infos-wrapper-mobile"
+        //}
+    //},
+
+    "flex-layout.col#product-description-wrapper": {
+        "children": [
+            "flex-layout.row#product-description-title",
+            "flex-layout.row#product-description",
+            "disclosure-layout#product-page-specs"
+        ],
+        "props": {
+            "blockClass": "product-description-wrapper"
+        }
+    }
+}

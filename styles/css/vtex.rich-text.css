@@ -1144,6 +1144,7 @@
     font-size: 14px;
     line-height: 2;
     display: -webkit-box;
+    line-clamp: 1;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden
@@ -1251,6 +1252,10 @@
     padding: 3px
 }
 
+.container--also-seen {
+    margin-top: 64px
+}
+
 @media screen and (max-width: 1250px) {
     .wrapper--common-title {
         padding-left: 15px;
@@ -1265,6 +1270,10 @@
     .paragraph--text__coupon-info {
         font-size: 17px;
         line-height: 22px
+    }
+
+    .container--also-seen {
+        margin-top: 0
     }
 }
 
