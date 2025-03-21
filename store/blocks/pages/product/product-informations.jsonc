@@ -56,7 +56,7 @@
   "flex-layout.row#product-description-title": {
     "children": ["rich-text#product-description-title"],
     "props": {
-      "blockClass": "product-description"
+      "blockClass": ["product-description", "product-description-main-title"]
     }
   },
   "rich-text#product-description-title": {

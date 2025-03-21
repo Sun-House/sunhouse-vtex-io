@@ -9,24 +9,47 @@
             "blockClass": "product-infos-wrapper"
         }
     },
-    //"flex-layout.row#product-infos-wrapper-mobile": {
-        //"children": [
-            //"disclosure-layout#product-page-description",
-            //"disclosure-layout#product-page-specs"
-        //],
-        //"props": {
-            //"blockClass": "product-infos-wrapper-mobile"
-        //}
-    //},
 
     "flex-layout.col#product-description-wrapper": {
         "children": [
             "flex-layout.row#product-description-title",
-            "flex-layout.row#product-description",
+            "container#product-description-simple",
+            "container#product-description-custom",
             "disclosure-layout#product-page-specs"
         ],
         "props": {
             "blockClass": "product-description-wrapper"
+        }
+    },
+
+    //
+    "container#product-description-simple": {
+        "title": "Descrição Normal do Produto",
+        "children": [
+            "flex-layout.row#product-description"
+        ],
+        "props": {
+            "blockClass": "product-description-simple"
+        }
+    },
+
+    // Descricao do produto customizada
+    "container#product-description-custom": {
+        "title": "Descrição Customizada do Produto",
+        "children": [
+            "flex-layout.row#product-description-custom"
+        ],
+        "props": {
+            "blockClass": "product-description-custom"
+        }
+    },
+    "flex-layout.row#product-description-custom": {
+        "title": "Blocos Customizaveis",
+        "children": [
+            //"container#description-custom-block"
+        ],
+        "props": {
+            "blockClass": "blocks__product-description-custom"
         }
     }
 }
