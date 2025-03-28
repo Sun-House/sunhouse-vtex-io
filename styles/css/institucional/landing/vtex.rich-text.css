@@ -1,0 +1,14 @@
+.paragraph--app-info-paragraph {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+    padding: 0 20px;
+    line-height: 1.4
+}
+
+@media screen and (max-width: 1200px) {
+    .paragraph--app-info-paragraph {
+        padding: unset;
+        text-align: justify
+    }
+}

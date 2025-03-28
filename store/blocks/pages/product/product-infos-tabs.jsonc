@@ -1,0 +1,130 @@
+{
+    "flex-layout.row#product-infos-tabs":{
+        "title": "Guias de Informações do Produto",
+        "children": [
+            "tab-layout#product-infos-tab"
+        ]
+    },
+
+    "tab-layout#product-infos-tab": {
+        "children": [
+            "tab-list#product-tab-list",
+            "tab-content#product-tab-content"
+        ],
+        "props": {
+            "blockClass": "product-infos-tab",
+            "defaultActiveTabId": "description-tab"
+        }
+    },
+
+    "tab-list#product-tab-list": {
+        "children": [
+            "tab-list.item#description-tab",
+            "tab-list.item#specs-tab",
+            "tab-list.item#rates-tab"
+        ],
+        "props": {
+            "blockClass": "product-tab-list"
+        }
+    },
+    "tab-list.item#description-tab": {
+        "title": "Descrição do Produto",
+        "props": {
+            "tabId": "description-tab",
+            "label": "Descrição do Produto",
+            "defaultActiveTab": true,
+            "blockClass": ["product-tab", "description-tab"]
+        }
+    },
+    "tab-list.item#specs-tab": {
+        "title": "Especificações",
+        "props": {
+            "tabId": "specs-tab",
+            "label": "Especificações e Dimensões",
+            "defaultActiveTab": false,
+            "blockClass": ["product-tab", "specs-tab"]
+        }
+    },
+    "tab-list.item#rates-tab": {
+        "title": "Avaliações Trustvox (inalterável)",
+        "props": {
+            "tabId": "rates-tab",
+            "label": "Perguntas e Avaliações",
+            "defaultActiveTab": false,
+            "blockClass": ["product-tab", "rates-tab"]
+        }
+    },
+
+    "tab-content#product-tab-content": {
+        "children": [
+            "tab-content.item#product-description-tab",
+            "tab-content.item#product-specs-tab",
+            "tab-content.item#product-rates-tab"
+        ]
+    },
+    "tab-content.item#product-description-tab": {
+        "children": [
+            "flex-layout.row#product-infos-wrapper"
+        ],
+        "props": {
+            "tabId": "description-tab"
+        }
+    },
+    "tab-content.item#product-specs-tab": {
+        "children": [
+            "product-specification-group"
+        ],
+        "props": {
+            "tabId": "specs-tab"
+        }
+    },
+    "tab-content.item#product-rates-tab": {
+        "children": [
+            // Bloco de avaliacoes do trust
+            // Sera testado na versão de testes em producao, mas pode nao ir para o master pois tem muitos bugs
+            "container#trustvox"
+        ],
+        "props": {
+            "tabId": "rates-tab"
+        }
+    },
+
+    // Cria novo bloco de especificacoes - COLOCAR NOMES PARA NAO DAR ERRO DE DUPLICACAO DE CONTEUDO
+    "product-specification-group": {
+        "children": ["product-specification"],
+        "props": {
+            "filter": {
+                "type": "show",
+                "specificationGroups": ["Atributos"]
+            },
+            "blockClass": "product-specs-new"
+        }
+    },
+    "product-specification": {
+        "children": ["product-specification-values"]
+    },
+
+    "product-specification-values": {
+        "children": ["flex-layout.row#product-tab-specs"]
+    },
+
+    "flex-layout.row#product-tab-specs": {
+        "children": [
+            "product-specification-text#specification",
+            "product-specification-text#value"
+        ],
+        "props": {
+            "blockClass": "product-tab-specs-table"
+        }
+    },
+    "product-specification-text#specification": {
+        "props": {
+            "message": "{specificationName}"
+        }
+    },
+    "product-specification-text#value": {
+        "props": {
+            "message": "{specificationValue}"
+        }
+    }
+}

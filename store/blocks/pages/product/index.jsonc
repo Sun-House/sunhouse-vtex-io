@@ -8,9 +8,12 @@
       "responsive-layout.mobile#product-main",
       "container#product__related-grid",
       // "condition-layout.user#buy-together",
+      //
+      //"container#trustvox",
       "flex-layout.row#also-seen",
-      "container#trustvox",
-      "container#spacing-default"
+      "container#spacing-default",
+      //
+      "product-rating-summary"
     ]
   },
 
@@ -40,7 +43,9 @@
     "children": [
       "container#wrapper__highlight-coupon",
       "flex-layout.row#product-main",
-      "flex-layout.row#product-infos-wrapper"//
+      //"flex-layout.row#product-infos-wrapper",
+      //"tab-layout#product-infos-tab"
+      "flex-layout.row#product-infos-tabs"
     ]
   },
   "responsive-layout.mobile#product-main": {

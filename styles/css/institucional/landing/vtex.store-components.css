@@ -1,0 +1,23 @@
+.imageElement--app-header-banner,
+.imageElement--app-main-banner {
+    border-radius: 30px;
+    margin-top: 24px;
+    margin-bottom: 24px
+}
+
+.imageElement--app-main-banner {
+    padding: 0 50px 0 50px;
+    max-width: -webkit-fill-available;
+    max-height: unset !important
+}
+
+@media screen and (max-width: 1200px) {
+    .imageElement--app-main-banner {
+        padding: unset
+    }
+
+    .imageElement--app-header-banner,
+    .imageElement--app-main-banner {
+        border-radius: 12px
+    }
+}

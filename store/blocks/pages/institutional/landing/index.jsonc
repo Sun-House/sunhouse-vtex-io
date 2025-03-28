@@ -1,0 +1,7 @@
+{
+	"store.custom#institucional-landing": {
+		"children": [
+			"container#institucional-landing"
+		]
+	}
+}

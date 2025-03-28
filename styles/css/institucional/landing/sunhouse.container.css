@@ -1,0 +1,13 @@
+.container--institucional-landing {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+@media screen and (max-width: 1200px) {
+    .container--institucional-landing {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px
+    }
+}

@@ -1,1 +1,12 @@
-.rating-click-here{display:none !important}
+.rating-click-here {
+    display: none !important
+}
+
+:global(.vtex-render__container-id-trustvox) {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    margin-top: 64px !important;
+    border-radius: 12px;
+    background-color: #eaeae9;
+}

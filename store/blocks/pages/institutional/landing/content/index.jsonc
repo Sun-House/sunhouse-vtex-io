@@ -1,0 +1,89 @@
+{
+    "container#institucional-landing": {
+        "props": {
+            "blockClass": "institucional-landing"
+        },
+        "children": [
+            "container#institutional-breadcrumb",
+            "container#institucional__app-header-banner",
+            "flex-layout.row#institucional__app-info",
+            "container#institucional__app-main-banner"
+        ]
+    },
+
+    "container#institucional__app-header-banner": {
+        "children": [
+            "list-context.image-list#app-header-banner"
+        ]
+    },
+    "flex-layout.row#institucional__app-info": {
+        "children": [
+            "rich-text#app-info-paragraph"
+        ]
+    },
+    "container#institucional__app-main-banner": {
+        "children": [
+            "list-context.image-list#app-main-banner"
+        ]
+    },
+
+    // Cria banner header
+    "list-context.image-list#app-header-banner": {
+        "props": {
+            "blockClass": "app-header-banner",
+            "images": [
+                {
+                    "image": "assets/images/institucional/app/Banner-Insitucional_App_2024.png",
+                    "mobileImage": "assets/images/institucional/app/Banner-Insitucional_App_Mobile_2024.png",
+                    "link": {
+                        "url": "https://onelink.to/pcfy79",
+                        "openNewTab": true
+                    }
+                }
+            ]
+        },
+        "children": ["container.list-render#app-header-banner"]
+    },
+
+    "container.list-render#app-header-banner": {
+        "props": {
+            "blockClass": "app-header-banner"
+        }
+    },
+
+    // Bloco de texto introdutorio
+    "rich-text#app-info-paragraph": {
+        "title": "testeDoze",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "No **APP Sun House** você encontra tudo o que precisa para transformar o seu lar, desde móveis até itens de decoração. Fácil de navegar e cheio de **ofertas especiais**, agora você também aproveita FRETE GRÁTIS em diversas categorias. Não perca tempo, **confira as condições direto no app** e faça suas compras com mais praticidade. Quando o assunto é sua casa, a solução está no **APP da Sun!**",
+            "blockClass": "app-info-paragraph"
+        }
+    },
+
+    // Cria banner main no corpo da page
+    "list-context.image-list#app-main-banner": {
+        "props": {
+            "blockClass": "app-header-banner",
+            "images": [
+                {
+                    "image": "assets/images/institucional/app/Banner-Insitucional_KobeApp_2024.png",
+                    "mobileImage": "assets/images/institucional/app/Banner-Insitucional_KobeApp_2024.png",
+                    "link": {
+                        "url": "https://onelink.to/pcfy79",
+                        "openNewTab": true
+                    },
+                    "loading": "lazy"
+                }
+            ]
+        },
+        "children": ["container.list-render#app-main-banner"]
+    },
+
+    "container.list-render#app-main-banner": {
+        "props": {
+            "blockClass": "app-main-banner"
+        }
+    }
+}
