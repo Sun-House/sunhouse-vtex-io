@@ -9,7 +9,7 @@
       "container#product__related-grid",
       // "condition-layout.user#buy-together",
       //
-      //"container#trustvox",
+      "container#trustvox",
       "flex-layout.row#also-seen",
       "container#spacing-default",
       //

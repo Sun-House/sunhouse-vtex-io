@@ -1,6 +1,6 @@
 {
     "flex-layout.row#product-infos-tabs":{
-        "title": "Guias de Informações do Produto",
+        "title": "Informações do Produto (Nav Tabs)",
         "children": [
             "tab-layout#product-infos-tab"
         ]
@@ -46,10 +46,10 @@
         }
     },
     "tab-list.item#rates-tab": {
-        "title": "Avaliações Trustvox (inalterável)",
+        "title": "Avaliações Trustvox",
         "props": {
             "tabId": "rates-tab",
-            "label": "Perguntas e Avaliações",
+            "label": "Perguntas e Avaliações - <a href='#trustvox-reviews' style='padding: 10px 15px; background-color: blue; color: white; text-decoration: none; border-radius: 5px;'>Clique aqui</a>",
             "defaultActiveTab": false,
             "blockClass": ["product-tab", "rates-tab"]
         }
@@ -81,8 +81,8 @@
     "tab-content.item#product-rates-tab": {
         "children": [
             // Bloco de avaliacoes do trust
-            // Sera testado na versão de testes em producao, mas pode nao ir para o master pois tem muitos bugs
-            "container#trustvox"
+            // Testar posteriormente na versão de testes em producao. Neste versao ira como gambiarra
+            //"container#trustvox"
         ],
         "props": {
             "tabId": "rates-tab"

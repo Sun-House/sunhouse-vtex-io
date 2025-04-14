@@ -1269,7 +1269,8 @@
 
     .paragraph--text__coupon-info {
         font-size: 17px;
-        line-height: 22px
+        line-height: 23px;
+        text-align: center
     }
 
     .container--also-seen {

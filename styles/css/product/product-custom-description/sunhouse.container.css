@@ -1,0 +1,18 @@
+/* Escopar elementos abaixo para o componente alvo correto e nao todos componentes do site */
+
+.imageElement--custom-description-banner {
+    width: 100%;
+    height: auto;
+    margin-left: 12px;
+    margin-top: 12px;
+    display: block;
+    max-width: calc(100% - 12px);
+    max-height: calc(100% - 24px);
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: .2s ease
+}
+
+.imageElement--custom-description-banner:hover {
+    opacity: .8
+}

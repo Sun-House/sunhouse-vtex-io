@@ -1,0 +1,12 @@
+/* Escopar elementos abaixo para o componente alvo correto e nao todos componentes do site */
+
+.flexCol--blocks__product-description-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #000;
+    box-sizing: border-box
+}
+
+.flexColChild--blocks__product-description-custom {
+    margin-right: 12px
+}

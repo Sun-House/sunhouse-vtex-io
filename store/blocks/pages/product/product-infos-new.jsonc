@@ -22,7 +22,7 @@
 
     // Descricao basica praticada com texto e SEO
     "container#product-description-simple": {
-        "title": "Descrição Normal do Produto",
+        "title": "Descrição Normal (Texto)",
         "children": [
             "flex-layout.row#product-description"
         ],
@@ -33,7 +33,7 @@
 
     // Descricao do produto customizada - blocos ainda em DEV
     "container#product-description-custom": { // ver se é possivel criar bg customizado para fundo de toda a custom description
-        "title": "Descrição Customizada do Produto",
+        "title": "Descrição Customizada",
         "children": [
             //"flex-layout.row#product-description-custom"
             "flex-layout.col#product-description-custom"
@@ -83,13 +83,16 @@
     },
     "container.list-render#main-banner-wide": {
         "props": {
-            "blockClass": "main-banner-wide"
+            "blockClass": ["custom-description-banner", "main-banner-wide"]
         }
     },
 
     "container#custom-block__col-features": {
         "title": "Grid - Principais Características",
-        "children": [],
+        "children": [
+            "flex-layout.row#blockOne",
+            "flex-layout.row#blockTwo"
+        ],
         "props": {
             "blockClass": "custom-block__col-features"
         }
@@ -111,21 +114,21 @@
     "flex-layout.col#blockOneCol": {
         "title": "",
         "children": [
-            "list-context.image-list#",
-            "rich-text#"
+            "list-context.image-list#image1",
+            "rich-text#texto1"
         ],
         "props": {
-            "blockClass": ""
+            "blockClass": "wrapper__custom-description-banner"
         }
     },
     //
-    "list-context.image-list#": {
+    "list-context.image-list#image1": {
         "props": {
             "blockClass": "",
             "images": [
                 {
-                    "image": "https://dummyimage.com/300x200",
-                    "mobileImage": "https://dummyimage.com/300x200",
+                    "image": "https://dummyimage.com/578x350",
+                    "mobileImage": "https://dummyimage.com/578x350",
                     "link": {
                         "url": "/"
                         //"openNewTab": true
@@ -133,37 +136,38 @@
                 }
             ]
         },
-        "children": ["container.list-render#"]
+        "children": ["container.list-render#image1"]
     },
-    "container.list-render#": {
+    "container.list-render#image1": {
         "props": {
-            "blockClass": ""
+            "blockClass": ["custom-description-banner"]
         }
     },
-    "rich-text#": {
+    "rich-text#texto1": {
         "props": {
-            "text": "teste 1"
+            "text": "teste 1",
+            "blockClass": "custom-description-banner_text"
         }
     },
     //
     "flex-layout.col#blockOneCol2": {
         "title": "",
         "children": [
-            "list-context.image-list#",
-            "rich-text#"
+            "list-context.image-list#image2",
+            "rich-text#texto2"
         ],
         "props": {
-            "blockClass": ""
+            "blockClass": "wrapper__custom-description-banner"
         }
     },
     //
-    "list-context.image-list#": {
+    "list-context.image-list#image2": {
         "props": {
             "blockClass": "",
             "images": [
                 {
-                    "image": "https://dummyimage.com/300x200",
-                    "mobileImage": "https://dummyimage.com/300x200",
+                    "image": "https://dummyimage.com/578x350",
+                    "mobileImage": "https://dummyimage.com/578x350",
                     "link": {
                         "url": "/"
                         //"openNewTab": true
@@ -171,16 +175,17 @@
                 }
             ]
         },
-        "children": ["container.list-render#"]
+        "children": ["container.list-render#image2"]
     },
-    "container.list-render#": {
+    "container.list-render#image2": {
         "props": {
-            "blockClass": ""
+            "blockClass": ["custom-description-banner"]
         }
     },
-    "rich-text#": {
+    "rich-text#texto2": {
         "props": {
-            "text": "teste 1"
+            "text": "teste 2",
+            "blockClass": "custom-description-banner_text"
         }
     },
     //
@@ -199,20 +204,82 @@
     },
     "flex-layout.col#blockTwoCol": {
         "title": "",
-        "children": [],
+        "children": [
+            "list-context.image-list#image3",
+            "rich-text#texto3"
+        ],
         "props": {
-            "blockClass": ""
+            "blockClass": "wrapper__custom-description-banner"
         }
     },
+    //
+    "list-context.image-list#image3": {
+        "props": {
+            "blockClass": "",
+            "images": [
+                {
+                    "image": "https://dummyimage.com/578x350",
+                    "mobileImage": "https://dummyimage.com/578x350",
+                    "link": {
+                        "url": "/"
+                        //"openNewTab": true
+                    }
+                }
+            ]
+        },
+        "children": ["container.list-render#image3"]
+    },
+    "container.list-render#image3": {
+        "props": {
+            "blockClass": ["custom-description-banner"]
+        }
+    },
+    "rich-text#texto3": {
+        "props": {
+            "text": "teste 3",
+            "blockClass": "custom-description-banner_text"
+        }
+    },
+    //
     "flex-layout.col#blockTwoCol2": {
         "title": "",
-        "children": [],
+        "children": [
+            "list-context.image-list#image4",
+            "rich-text#texto4"
+        ],
         "props": {
-            "blockClass": ""
+            "blockClass": "wrapper__custom-description-banner"
         }
     },
-
-
+    //
+    "list-context.image-list#image4": {
+        "props": {
+            "blockClass": "",
+            "images": [
+                {
+                    "image": "https://dummyimage.com/578x350",
+                    "mobileImage": "https://dummyimage.com/578x350",
+                    "link": {
+                        "url": "/"
+                        //"openNewTab": true
+                    }
+                }
+            ]
+        },
+        "children": ["container.list-render#image4"]
+    },
+    "container.list-render#image4": {
+        "props": {
+            "blockClass": ["custom-description-banner"]
+        }
+    },
+    "rich-text#texto4": {
+        "props": {
+            "text": "teste 4",
+            "blockClass": "custom-description-banner_text"
+        }
+    },
+    //
     // PRECISA AJUSTAR TODOS END
 
 
