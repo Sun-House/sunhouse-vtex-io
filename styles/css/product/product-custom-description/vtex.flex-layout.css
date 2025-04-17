@@ -3,7 +3,7 @@
 .flexCol--blocks__product-description-custom {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #000;
+    /*background-color: #000;*/
     box-sizing: border-box
 }
 

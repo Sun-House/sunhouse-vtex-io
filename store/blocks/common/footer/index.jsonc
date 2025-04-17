@@ -93,7 +93,7 @@
   },
 
   "flex-layout.row#footer-content": {
-    "title": "Footer Contente",
+    "title": "Footer Content",
     "children": [
       "flex-layout.col#footer-content-left",
       "flex-layout.col#footer-content-right"
@@ -105,7 +105,7 @@
   },
 
   "flex-layout.col#footer-content-left": {
-    "title": "Footer Contente Esquerda",
+    "title": "Footer Content Esquerda",
     "children": [
       "flex-layout.row#footer-logo",
       "flex-layout.row#footer-schedules",
@@ -141,7 +141,7 @@
     }
   },
   "flex-layout.col#footer-content-right": {
-    "title": "Footer Contente Direita",
+    "title": "Footer Content Direita",
     "children": [
       "flex-layout.row#footer-content-about",
       "flex-layout.row#footer-content-lists",
@@ -201,8 +201,8 @@
   "image#logo-desktop-footer": {
     "title": "Logo",
     "props": {
-      "alt": "Logo SunHouse",
-      "title": "Logo SunHouse",
+      "alt": "Logo Sun House",
+      "title": "Logo Sun House",
       "src": "assets/images/logo-white.svg",
       "blockClass": ["logo-footer"],
       "maxWidth": "145px",

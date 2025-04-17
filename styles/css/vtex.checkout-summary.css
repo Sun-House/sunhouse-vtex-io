@@ -1,1 +1,51 @@
-.summarySmallDisclaimer{display:none}.summaryItemContainer{margin:0;padding:0;justify-content:space-between}.summaryItemContainer:last-child{display:none}.summaryItemContainer .summaryItemLabel{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:bold;font-size:14px;line-height:17px;display:flex;align-items:center}.summaryItemContainer .summaryItemLabel::after{content:"(Sem frete):";font-weight:400;margin-left:3px}.summaryItemContainer .summaryItemPrice{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:bold;font-size:16px;line-height:20px;display:flex;align-items:center;text-transform:uppercase;color:#2d2926;flex:initial}
+.summarySmallDisclaimer {
+    display: none
+}
+
+.summaryItemContainer {
+    margin: 0;
+    padding: 0;
+    justify-content: space-between
+}
+
+.summaryItemContainer:last-child {
+    display: none
+}
+
+.summaryItemContainer .summaryItemLabel {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center
+}
+
+/*.summaryItemContainer .summaryItemLabel::after {
+    content: "(Sem frete):";
+    font-weight: 400;
+    margin-left: 3px
+}*/
+
+.summaryItemContainer .summaryItemPrice {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #2d2926;
+    flex: initial
+}
+
+/**/
+.summaryTitle--summary__minicartNew {
+    display: none
+}
+
+.installments--installments__minicartNew {
+    display: none
+}

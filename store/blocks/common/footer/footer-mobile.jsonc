@@ -58,7 +58,11 @@
     "children": ["disclosure-state-indicator#footer-about"]
   },
   "disclosure-content#footer-about": {
-    "children": ["logo#logo-footer", "flex-layout.row#footer-content-about"],
+    "children": [
+      //"logo#logo-footer",
+      "image#logo-mobile-footer",
+      "flex-layout.row#footer-content-about"
+    ],
     "props": {
       "blockClass": "footer-about"
     }
@@ -255,6 +259,23 @@
       "blockClass": ["footer-security-title", "footer-mobile-title"],
       "colSizing": "auto",
       "fullWidth": true
+    }
+  },
+
+  // Logo para Footer Sobre Nos
+  "image#logo-mobile-footer": {
+    "title": "Logo",
+    "props": {
+      "alt": "Logo Sun House",
+      "title": "Logo Sun House",
+      "src": "assets/images/logo-white.svg",
+      "blockClass": ["logo-footer"],
+      //"maxWidth": "145px",
+      "maxWidth": "120px",
+      "maxHeight": "120px",
+      "link": {
+        "url": "/"
+      }
     }
   }
 }
