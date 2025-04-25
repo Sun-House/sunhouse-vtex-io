@@ -164,9 +164,8 @@
   },
   "minicart-summary": {
     "blocks": [
-      //"checkout-summary.compact#minicart",
+      //"checkout-summary.compact#minicart"
       "checkout-summary#minicartNew" // esse deu certo, precisa apenas personalizar campos e visuais
-      //"checkout-summary.compact#minicartNew" // testando
     ],
     "props": {
       "blockClass": "minicart-summary"
@@ -177,13 +176,13 @@
   // EM DEV START
   "checkout-summary#minicartNew": {
     "children": [
-      "summary-coupon",
-      "summary-totalizers#minicartNew",
-      "summary-installments#minicartNew"
+      //"summary-coupon",
+      "summary-totalizers#minicartNew"
+      //"summary-installments#minicartNew"
     ],
     "props": {
-      "totalizersToShow": ["Shipping", "Items"],
-      "totalCalculation": "allTotalizers",
+      "totalizersToShow": ["Shipping"],
+      "totalCalculation": "visibleTotalizers",
       "blockClass": "summary__minicartNew"
     }
   },

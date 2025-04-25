@@ -79,7 +79,8 @@
       "container#product-highlights--product-page",
       "condition-layout.product#product-availability",
       //"flex-layout.row#product-page-informations"
-      "flex-layout.row#product-infos-wrapper"
+      //"flex-layout.row#product-infos-wrapper"
+      "flex-layout.col#product-description-wrapper-mobile"
     ],
     "props": {
       "blockClass": "product-main-mobile"
@@ -109,7 +110,8 @@
       "contentOrder": "videos-first",
       "displayThumbnailsArrows": true,
       "thumbnailsOrientation": "horizontal",
-      "showNavigationArrows": false,
+      //"showNavigationArrows": false,
+      "showNavigationArrows": true,
       "showPaginationDots": false,
       "blockClass": "product-page"
     }

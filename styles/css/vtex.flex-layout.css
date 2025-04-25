@@ -594,8 +594,8 @@
     height: 59px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid #d5d4d4
+    justify-content: space-between
+    /*border-top: 1px solid #d5d4d4*/
 }
 
 .flexRow--product-zoom-text {

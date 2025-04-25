@@ -31,7 +31,7 @@
         "title": "Descrição do Produto",
         "props": {
             "tabId": "description-tab",
-            "label": "Descrição do Produto",
+            "label": "Informações do Produto",
             "defaultActiveTab": true,
             "blockClass": ["product-tab", "description-tab"]
         }
@@ -40,7 +40,7 @@
         "title": "Especificações",
         "props": {
             "tabId": "specs-tab",
-            "label": "Especificações e Dimensões",
+            "label": "Ficha Técnica",
             "defaultActiveTab": false,
             "blockClass": ["product-tab", "specs-tab"]
         }

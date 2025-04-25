@@ -73,6 +73,7 @@
         "navigation": true,
         "dots": false,
         "draggable": true
+        //"forceLoop": true teoricamente torna o carrossel infinito, mas esta parando no segundo loop
       },
       "blockClass": ["product-medias"]
     }

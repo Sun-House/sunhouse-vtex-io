@@ -42,7 +42,11 @@
     }
   },
   "disclosure-content#product-page-description": {
-    "children": ["flex-layout.row#product-description"],
+    "children": [
+      //"flex-layout.row#product-description",
+      "container#product-description-simple",
+      "container#product-description-custom"
+    ],
     "props": {
       "blockClass": "product-page-description"
     }

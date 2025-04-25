@@ -90,7 +90,10 @@
     "props": {
       "textAlign": "left",
       "showListPrice": true,
-      "blockClass": "minicart-price"
+      "blockClass": "minicart-price",
+      //
+      "showDiscountValue": true,
+      "showListPriceRange": true
     }
   },
   "flex-layout.col#minicart-remove.desktop": {

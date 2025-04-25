@@ -19,6 +19,15 @@
             "blockClass": "product-description-wrapper"
         }
     },
+    "flex-layout.col#product-description-wrapper-mobile": {
+        "children": [
+            "disclosure-layout#product-page-description",
+            "disclosure-layout#product-page-specs"
+        ],
+        "props": {
+            "blockClass": "product-description-wrapper-mobile"
+        }
+    },
 
     // Descricao basica praticada com texto e SEO
     "container#product-description-simple": {

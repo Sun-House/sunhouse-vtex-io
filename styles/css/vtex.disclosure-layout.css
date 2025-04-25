@@ -224,4 +224,10 @@
     .content--installments {
         left: 72%
     }
+
+    .content--product-page-description--visible,
+    .content--product-page-specifications--visible {
+        max-height: unset;
+        margin-bottom: 24px
+    }
 }
