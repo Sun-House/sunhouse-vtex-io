@@ -452,10 +452,17 @@
     text-transform: none
 }
 
+/**/
+/*.flexCol--buy-button :global(.vtex-button) {
+    background: #ffe133 !important;
+    border-color: #ffda00 !important
+}*/
+
 .flexCol--buy-button :global(.vtex-button):hover {
     background: #ffe133 !important;
     border-color: #ffda00 !important
 }
+/**/
 
 .flexCol--shelf-quantity {
     border: solid 1px #575451;

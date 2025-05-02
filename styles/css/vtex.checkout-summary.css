@@ -53,11 +53,3 @@
 .summaryTitle--summary__minicartNew {
     display: none
 }
-
-:global(.vtex-product-list-10-x-productListUnavailableItemsMessage) {
-    background-color: #fff2b6;
-    color: #ff0000;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600
-}

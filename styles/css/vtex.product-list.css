@@ -1,1 +1,130 @@
-.productImageContainer{width:90px !important;height:90px;overflow:hidden}.productImage{width:auto;height:100%;border-radius:0}.productName{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:16px;line-height:20px;color:#2d2926;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.quantitySelectorContainer{width:94px;margin-right:20px}.quantitySelectorWrapper{border:1px solid #2d2926;box-sizing:border-box;border-radius:5px;width:100%;height:35px;padding:0 10px}.quantitySelectorButton{padding:0;border:none;background-color:rgba(0,0,0,0);color:#2d2926}.quantitySelectorButton:hover{background-color:rgba(0,0,0,0)}.inputContainer{padding:0;border:none;width:100%;flex:1;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:16px;line-height:20px;display:flex;align-items:center;text-align:center;color:#2d2926}.price--minicart-price{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:20px;display:flex;align-items:center}.price--minicart-price::before{margin-right:4px;content:"Por:"}.productPriceCurrency--minicart-price .currencyContainer{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:15px;text-decoration:line-through}.productPriceCurrency--minicart-price .currencyContainer::before{content:"De: "}.removeButton{padding:0;margin-bottom:5px}.removeButton .deleteIcon{width:24px;height:27px;color:#2d2926}@media screen and (max-width: 638px){.productName{font-size:16px;font-style:normal;font-weight:400}.quantitySelectorContainer{margin:5px 0}.price--minicart-price{font-size:14px;line-height:17px}}
+.productImageContainer {
+    width: 90px !important;
+    height: 90px;
+    overflow: hidden
+}
+
+.productImage {
+    width: auto;
+    height: 100%;
+    border-radius: 0
+}
+
+.productName {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2d2926;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.quantitySelectorContainer {
+    width: 94px;
+    margin-right: 20px
+}
+
+.quantitySelectorWrapper {
+    border: 1px solid #2d2926;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    padding: 0 10px
+}
+
+.quantitySelectorButton {
+    padding: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #2d2926
+}
+
+.quantitySelectorButton:hover {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.inputContainer {
+    padding: 0;
+    border: none;
+    width: 100%;
+    flex: 1;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2d2926
+}
+
+.price--minicart-price {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center
+}
+
+.price--minicart-price::before {
+    margin-right: 4px;
+    content: "Por:"
+}
+
+.productPriceCurrency--minicart-price .currencyContainer {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    text-decoration: line-through
+}
+
+.productPriceCurrency--minicart-price .currencyContainer::before {
+    content: "De: "
+}
+
+.removeButton {
+    padding: 0;
+    margin-bottom: 5px
+}
+
+.removeButton .deleteIcon {
+    width: 24px;
+    height: 27px;
+    color: #2d2926
+}
+
+.productListUnavailableItemsMessage {
+    background-color: #fff2b6;
+    color: #ff0000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600
+}
+
+@media screen and (max-width: 638px) {
+    .productName {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400
+    }
+
+    .quantitySelectorContainer {
+        margin: 5px 0
+    }
+
+    .price--minicart-price {
+        font-size: 14px;
+        line-height: 17px
+    }
+}

@@ -1,3 +1,50 @@
-.container--custom-description-banner_text {
-    display: none /* Temporario ate configurar a disposicao dos banners */
+/*.container-- .wrapper {
+
+}*/
+
+.container--wrapper__textoDescricao-esquerda .wrapper {
+    align-items: center;
+    justify-content: center;
+    height: 100%
+}
+
+
+/**/
+
+.wrapper--wrapper__textoDescricao-esquerda {
+    margin: 32px
+}
+
+.container--wrapper__textoDescricao-esquerda {
+    align-items: center;
+    justify-content: center;
+    height: 100%
+}
+
+.wrapper--wrapper__textoDescricao-esquerda .heading {
+    margin-bottom: 25px !important;
+    text-transform: uppercase;
+    font-size: 1.75rem
+}
+
+.wrapper--wrapper__textoDescricao-esquerda .paragraph {
+    line-height: 1.25;
+    text-align: justify
+}
+
+.wrapper--wrapper__textoDescricao-esquerda .link {
+    color: #F90041
+}
+
+.wrapper--wrapper__custom-description-text {
+    margin: 12px
+}
+
+.wrapper--wrapper__custom-description-text .heading {
+    font-size: 1.6rem;
+    margin-bottom: 12px !important
+}
+
+.wrapper--wrapper__custom-description-text .paragraph {
+    line-height: 1.18
 }

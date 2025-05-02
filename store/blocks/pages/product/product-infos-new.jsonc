@@ -29,9 +29,9 @@
         }
     },
 
-    // Descricao basica praticada com texto e SEO
+    // Descricao basica praticada com texto e SEO - Originada do Sistema Movelsoft
     "container#product-description-simple": {
-        "title": "Descrição Normal (Texto)",
+        "title": "Descrição Normal (Movelsoft)",
         "children": [
             "flex-layout.row#product-description"
         ],
@@ -40,8 +40,8 @@
         }
     },
 
-    // Descricao do produto customizada - blocos ainda em DEV
-    "container#product-description-custom": { // ver se é possivel criar bg customizado para fundo de toda a custom description
+    // Descricao do produto customizada - blocos em DEV
+    "container#product-description-custom": {
         "title": "Descrição Customizada",
         "children": [
             "flex-layout.col#product-description-custom"
@@ -53,17 +53,92 @@
     "flex-layout.col#product-description-custom": {
         "title": "Blocos Customizaveis",
         "children": [
+            "container#custom-block__desc-banner", // Descricao ao lado do banner - colunas iguais em tamanho - IMPORTANTE mas nao obrigatorio
+            // Tamanho imagem desse bloco: 581x 499 - definir tamanho fixo para esse container de imagem
+
             "container#custom-block__main-banner-wide", // banner wide para destaque produto - IMPORTANTE mas nao obrigatorio
-            "container#custom-block__col-features", // ate quatro blocos, dois para cada coluna, informando caracteristicas do produto - IMPORTANTE mas nao obrigatorio
-            "container#custom-block__col-seo", // col 1 esquerda - descricao em texto SEO simplificada e sem topicos - col 2 direita - foto destaque produto
-            "container#custom-block__col-photo-grid" // ate seis blocos, dois para cada coluna, apresentando fotos ambientadas - OPICIONAL
+            // Tamanho imagem desse bloco: 1174x254 - definir tamanho fixo para esse container de imagem
+
+            "container#custom-block__feature-cards", // ate quatro cards, dois para cada coluna, informando caracteristicas destaque do produto - IMPORTANTE mas nao obrigatorio
+            // Tamanho imagens desse bloco: 383x255 - definir tamanho fixo para esses containers de imagens
+
+            "container#custom-block__col-features", // ate seis bloquinhos, dois para cada coluna, informando caracteristicas do produto - IMPORTANTE mas nao obrigatorio
+            // Tamanho imagens desse bloco: 284x172 - definir tamanho fixo para esses containers de imagens
+
+            "container#custom-block__col-photo-grid" // Tres fotos, destaques, ou links, do fornecedor, produto ou linha - OPICIONAL mas muito relevante visualmente
+            // Tamanho imagens desse bloco: 383x680 - definir tamanho fixo para esses containers de imagens
         ],
         "props": {
             "blockClass": "blocks__product-description-custom"
         }
     },
 
-    // Descricao do produto customizada - seraracao dos blocos declarados acima
+    // Descricao do produto customizada - abaixo seraracao dos blocos declarados acima
+    // Bloco Descrição produto resumida - Text esquerda e foto na direita
+    "container#custom-block__desc-banner": {
+        "title": "Descricao com Banner",
+        "children": [
+            "flex-layout.row#desc-banner__row"
+        ],
+        "props": {
+            "blockClass": "custom-block__desc-banner"
+        }
+    },
+    "flex-layout.row#desc-banner__row": {
+        "title": "Descricao com Banner Agrupamento",
+        "children": [
+            "flex-layout.col#desc-banner_ColText",
+            "flex-layout.col#desc-banner_ColImage"
+        ],
+        "props": {
+            "blockClass": "desc-banner__row"
+        }
+    },
+    "flex-layout.col#desc-banner_ColText": {
+        "title": "Coluna da Descrição",
+        "children": [
+            "rich-text#desc-banner__textoDescricao"
+        ],
+        "props": {
+            "blockClass": ["col_desc-banner_ColText"]
+        }
+    },
+    "flex-layout.col#desc-banner_ColImage": {
+        "title": "Coluna da Foto do Produto ou Marca",
+        "children": [
+            "list-context.image-list#desc-banner__imagemDescricao"
+        ],
+        "props": {
+            "blockClass": ["col_desc-banner_ColImage"]
+        }
+    },
+    "rich-text#desc-banner__textoDescricao": {
+        "title": "Descricao Texto",
+        "props": {
+            "text": "## Nome do Produto \n **Texto em Negrito** e [link exemplo](https://www.example.com). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab!",
+            "blockClass": ["wrapper__textoDescricao-esquerda"]
+        }
+    },
+    "list-context.image-list#desc-banner__imagemDescricao": {
+        "title": "Foto Destaque Descricao",
+        "props": {
+            "images": [
+                {
+                    "image": "https://dummyimage.com/581x499",
+                    "mobileImage": "https://dummyimage.com/581x499" // Ver dimensão do banner mobile
+                }
+            ],
+            "blockClass": "img_desc-banner__imagemDescricao"
+        },
+        "children": ["container.list-render#desc-banner__imagemDescricao"]
+    },
+    "container.list-render#desc-banner__imagemDescricao": {
+        "props": {
+            "blockClass": ["custom-description-banner", "container_desc-banner__imagemDescricao"]
+        }
+    },
+
+    // Banner fino - destaque marca, fornecedor ou produto - curva A
     "container#custom-block__main-banner-wide": {
         "title": "Banner Apresentação",
         "children": [
@@ -75,19 +150,147 @@
     },
     "list-context.image-list#main-banner-wide": {
         "props": {
-            "blockClass": "main-banner-wide",
             "images": [
                 {
-                    "image": "https://dummyimage.com/1200x260",
-                    "mobileImage": "https://dummyimage.com/1200x260" // Ver dimensão do banner mobile
+                    "image": "https://dummyimage.com/1174x254",
+                    "mobileImage": "https://dummyimage.com/1174x254" // Ver dimensão do banner mobile
                 }
-            ]
+            ],
+            "blockClass": "main-banner-wide"
         },
         "children": ["container.list-render#main-banner-wide"]
     },
     "container.list-render#main-banner-wide": {
         "props": {
             "blockClass": ["custom-description-banner", "main-banner-wide"]
+        }
+    },
+
+    // Bloco caracteristicas 2 do produto - modelo bootstrap cards
+    "container#custom-block__feature-cards": {
+        "title": "Cards - Carcteristicas em Destaque",
+        "children": [
+            "flex-layout.row#feature-card__row"
+        ],
+        "props": {
+            "blockClass": "custom-block__feature-cards"
+        }
+    },
+
+    "flex-layout.row#feature-card__row": {
+        "title": "",
+        "children": [
+            "flex-layout.col#feature-card__row-ColOne",
+            "flex-layout.col#feature-card__row-ColTwo",
+            "flex-layout.col#feature-card__row-ColThree"
+        ],
+        "props": {
+            "blockClass": ""
+        }
+    },
+    
+    "flex-layout.col#feature-card__row-ColOne": {
+        "title": "",
+        "children": [
+            "list-context.image-list#feature-card__row-ColOne_image",
+            "rich-text#feature-card__row-ColOne_text"
+        ],
+        "props": {
+            "blockClass": [""]
+        }
+    },
+    "list-context.image-list#feature-card__row-ColOne_image": {
+        "props": {
+            "images": [
+                {
+                    "image": "https://dummyimage.com/383x255",
+                    "mobileImage": "https://dummyimage.com/383x255"
+                }
+            ],
+            "blockClass": ""
+        },
+        "children": ["container.list-render#feature-card__row-ColOne_image"]
+    },
+    "container.list-render#feature-card__row-ColOne_image": {
+        "props": {
+            "blockClass": ["custom-description-banner", "feature-card__image"]
+        }
+    },
+    "rich-text#feature-card__row-ColOne_text": {
+        "title": "",
+        "props": {
+            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices. Consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
+            "blockClass": "wrapper__custom-description-text"
+        }
+    },
+
+    "flex-layout.col#feature-card__row-ColTwo": {
+        "title": "",
+        "children": [
+            "list-context.image-list#feature-card__row-ColTwo_image",
+            "rich-text#feature-card__row-ColTwo_text"
+        ],
+        "props": {
+            "blockClass": [""]
+        }
+    },
+    "list-context.image-list#feature-card__row-ColTwo_image": {
+        "props": {
+            "images": [
+                {
+                    "image": "https://dummyimage.com/383x255",
+                    "mobileImage": "https://dummyimage.com/383x255"
+                }
+            ],
+            "blockClass": ""
+        },
+        "children": ["container.list-render#feature-card__row-ColTwo_image"]
+    },
+    "container.list-render#feature-card__row-ColTwo_image": {
+        "props": {
+            "blockClass": ["custom-description-banner", "feature-card__image"]
+        }
+    },
+    "rich-text#feature-card__row-ColTwo_text": {
+        "title": "",
+        "props": {
+            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices. Consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
+            "blockClass": "wrapper__custom-description-text"
+        }
+    },
+
+    "flex-layout.col#feature-card__row-ColThree": {
+        "title": "",
+        "children": [
+            "list-context.image-list#feature-card__row-ColThree_image",
+            "rich-text#feature-card__row-ColThree_text"
+        ],
+        "props": {
+            "blockClass": [""]
+        }
+    },
+    "list-context.image-list#feature-card__row-ColThree_image": {
+        "props": {
+            "images": [
+                {
+                    "image": "https://dummyimage.com/383x255",
+                    "mobileImage": "https://dummyimage.com/383x255"
+                }
+            ],
+            "blockClass": ""
+        },
+        "children": ["container.list-render#feature-card__row-ColTwo_image"]
+    },
+    "container.list-render#feature-card__row-ColThree_image": {
+        "props": {
+            "blockClass": ["custom-description-banner", "feature-card__image"]
+        }
+    },
+    "rich-text#feature-card__row-ColThree_text": {
+        "title": "",
+        "props": {
+            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices. Consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
+            "blockClass": "wrapper__custom-description-text"
         }
     },
     
@@ -103,7 +306,7 @@
             "blockClass": "custom-block__col-features"
         }
     },
-    
+
     "flex-layout.row#feature__RowOne": {
         "title": "",
         "children": [
@@ -113,16 +316,17 @@
             "flex-layout.col#feature__RowOne-ColFour"
         ],
         "props": {
-            "blockClass": "blockOne"
+            "blockClass": "feature-row"
         }
     },
+
     "flex-layout.col#feature__RowOne-ColOne": {
         "title": "",
         "children": [
             "list-context.image-list#RowOne-ColOne_image"
         ],
         "props": {
-            "blockClass": ["wrapper__custom-description-banner"]
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "list-context.image-list#RowOne-ColOne_image": {
@@ -130,8 +334,8 @@
             "blockClass": "",
             "images": [
                 {
-                    "image": "https://dummyimage.com/289x175",
-                    "mobileImage": "https://dummyimage.com/289x175"
+                    "image": "https://dummyimage.com/284x172",
+                    "mobileImage": "https://dummyimage.com/284x172"
                 }
             ]
         },
@@ -139,34 +343,34 @@
     },
     "container.list-render#RowOne-ColOne_image": {
         "props": {
-            "blockClass": ["custom-description-banner"]
+            "blockClass": ["custom-description-banner", "feature-col__image"]
         }
     },
+
     "flex-layout.col#feature__RowOne-ColTwo": {
         "title": "",
         "children": [
             "rich-text#RowOne-ColTwo_text"
         ],
         "props": {
-            "blockClass": "wrapper__custom-description-banner"
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "rich-text#RowOne-ColTwo_text": {
         "title": "",
         "props": {
-            "text": "## Sun House \n Para as noites tristes, algumas gotas de jasmim. Para acalmar as dores, exale camomila ou lavanda. Já nos dias frios, nada melhor que o cheirinho de canela espalhado pela casa. Com perfume, a vida fica mais bonita e aconchegante!",
+            "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
-            // "textPosition": "CENTER"
-            // "textAlignment": "CENTER"
         }
     },
+
     "flex-layout.col#feature__RowOne-ColThree": {
         "title": "",
         "children": [
             "list-context.image-list#RowOne-ColThree_image"
         ],
         "props": {
-            "blockClass": "wrapper__custom-description-banner"
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "list-context.image-list#RowOne-ColThree_image": {
@@ -174,8 +378,8 @@
             "blockClass": "",
             "images": [
                 {
-                    "image": "https://dummyimage.com/289x175",
-                    "mobileImage": "https://dummyimage.com/289x175"
+                    "image": "https://dummyimage.com/284x172",
+                    "mobileImage": "https://dummyimage.com/284x172"
                 }
             ]
         },
@@ -183,25 +387,24 @@
     },
     "container.list-render#RowOne-ColThree_image": {
         "props": {
-            "blockClass": ["custom-description-banner"]
+            "blockClass": ["custom-description-banner", "feature-col__image"]
         }
     },
+
     "flex-layout.col#feature__RowOne-ColFour": {
         "title": "",
         "children": [
             "rich-text#RowOne-ColFour_text"
         ],
         "props": {
-            "blockClass": "wrapper__custom-description-banner"
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "rich-text#RowOne-ColFour_text": {
         "title": "",
         "props": {
-            "text": "## Sun House \n Para as noites tristes, algumas gotas de jasmim. Para acalmar as dores, exale camomila ou lavanda. Já nos dias frios, nada melhor que o cheirinho de canela espalhado pela casa. Com perfume, a vida fica mais bonita e aconchegante!",
+            "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
-            // "textPosition": "CENTER"
-            // "textAlignment": "CENTER"
         }
     },
 
@@ -214,9 +417,10 @@
             "flex-layout.col#feature__RowTwo-ColFour"
         ],
         "props": {
-            "blockClass": "feature__RowTwo"
+            "blockClass": "feature-row"
         }
     },
+
     "flex-layout.col#feature__RowTwo-ColOne": {
         "title": "",
         "children": [
@@ -224,7 +428,7 @@
 
         ],
         "props": {
-            "blockClass": "wrapper__custom-description-banner"
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "list-context.image-list#RowTwo-ColOne_image": {
@@ -232,8 +436,8 @@
             "blockClass": "",
             "images": [
                 {
-                    "image": "https://dummyimage.com/289x175",
-                    "mobileImage": "https://dummyimage.com/289x175"
+                    "image": "https://dummyimage.com/284x172",
+                    "mobileImage": "https://dummyimage.com/284x172"
                 }
             ]
         },
@@ -241,34 +445,34 @@
     },
     "container.list-render#RowTwo-ColOne_image": {
         "props": {
-            "blockClass": ["custom-description-banner"]
+            "blockClass": ["custom-description-banner", "feature-col__image"]
         }
     },
+
     "flex-layout.col#feature__RowTwo-ColTwo": {
         "title": "",
         "children": [
             "rich-text#RowTwo-ColTwo_text"
         ],
         "props": {
-            "blockClass": "wrapper__custom-description-banner"
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "rich-text#RowTwo-ColTwo_text": {
         "title": "",
         "props": {
-            "text": "## Sun House \n Para as noites tristes, algumas gotas de jasmim. Para acalmar as dores, exale camomila ou lavanda. Já nos dias frios, nada melhor que o cheirinho de canela espalhado pela casa. Com perfume, a vida fica mais bonita e aconchegante!",
+            "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
-            // "textPosition": "CENTER"
-            // "textAlignment": "CENTER"
         }
     },
+
     "flex-layout.col#feature__RowTwo-ColThree": {
         "title": "",
         "children": [
             "list-context.image-list#RowTwo-ColThree_image"
         ],
         "props": {
-            "blockClass": "wrapper__custom-description-banner"
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "list-context.image-list#RowTwo-ColThree_image": {
@@ -276,8 +480,8 @@
             "blockClass": "",
             "images": [
                 {
-                    "image": "https://dummyimage.com/289x175",
-                    "mobileImage": "https://dummyimage.com/289x175"
+                    "image": "https://dummyimage.com/284x172",
+                    "mobileImage": "https://dummyimage.com/284x172"
                 }
             ]
         },
@@ -285,25 +489,24 @@
     },
     "container.list-render#RowTwo-ColThree_image": {
         "props": {
-            "blockClass": ["custom-description-banner"]
+            "blockClass": ["custom-description-banner", "feature-col__image"]
         }
     },
+
     "flex-layout.col#feature__RowTwo-ColFour": {
         "title": "",
         "children": [
             "rich-text#RowTwo-ColFour_text"
         ],
         "props": {
-            "blockClass": "wrapper__custom-description-banner"
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "rich-text#RowTwo-ColFour_text": {
         "title": "",
         "props": {
-            "text": "## Sun House \n Para as noites tristes, algumas gotas de jasmim. Para acalmar as dores, exale camomila ou lavanda. Já nos dias frios, nada melhor que o cheirinho de canela espalhado pela casa. Com perfume, a vida fica mais bonita e aconchegante!",
+            "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
-            // "textPosition": "CENTER"
-            // "textAlignment": "CENTER"
         }
     },
 
@@ -316,16 +519,17 @@
             "flex-layout.col#feature__RowThree-ColFour"
         ],
         "props": {
-            "blockClass": ""
+            "blockClass": "feature-row"
         }
     },
+
     "flex-layout.col#feature__RowThree-ColOne": {
         "title": "",
         "children": [
             "list-context.image-list#RowThree-ColOne_image"
         ],
         "props": {
-            "blockClass": "wrapper__custom-description-banner"
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "list-context.image-list#RowThree-ColOne_image": {
@@ -333,8 +537,8 @@
             "blockClass": "",
             "images": [
                 {
-                    "image": "https://dummyimage.com/289x175",
-                    "mobileImage": "https://dummyimage.com/289x175"
+                    "image": "https://dummyimage.com/284x172",
+                    "mobileImage": "https://dummyimage.com/284x172"
                 }
             ]
         },
@@ -342,34 +546,34 @@
     },
     "container.list-render#RowThree-ColOne_image": {
         "props": {
-            "blockClass": ["custom-description-banner"]
+            "blockClass": ["custom-description-banner", "feature-col__image"]
         }
     },
+
     "flex-layout.col#feature__RowThree-ColTwo": {
         "title": "",
         "children": [
             "rich-text#RowThree-ColTwo_text"
         ],
         "props": {
-            "blockClass": "wrapper__custom-description-banner"
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "rich-text#RowThree-ColTwo_text": {
         "title": "",
         "props": {
-            "text": "## Sun House \n Para as noites tristes, algumas gotas de jasmim. Para acalmar as dores, exale camomila ou lavanda. Já nos dias frios, nada melhor que o cheirinho de canela espalhado pela casa. Com perfume, a vida fica mais bonita e aconchegante!",
+            "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
-            // "textPosition": "CENTER"
-            // "textAlignment": "CENTER"
         }
     },
+
     "flex-layout.col#feature__RowThree-ColThree": {
         "title": "",
         "children": [
             "list-context.image-list#RowThree-ColThree_image"
         ],
         "props": {
-            "blockClass": "wrapper__custom-description-banner"
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "list-context.image-list#RowThree-ColThree_image": {
@@ -377,8 +581,8 @@
             "blockClass": "",
             "images": [
                 {
-                    "image": "https://dummyimage.com/289x175",
-                    "mobileImage": "https://dummyimage.com/289x175"
+                    "image": "https://dummyimage.com/284x172",
+                    "mobileImage": "https://dummyimage.com/284x172"
                 }
             ]
         },
@@ -386,173 +590,128 @@
     },
     "container.list-render#RowThree-ColThree_image": {
         "props": {
-            "blockClass": ["custom-description-banner"]
+            "blockClass": ["custom-description-banner", "feature-col__image"]
         }
     },
+
     "flex-layout.col#feature__RowThree-ColFour": {
         "title": "",
         "children": [
             "rich-text#RowThree-ColFour_text"
         ],
         "props": {
-            "blockClass": "wrapper__custom-description-banner"
+            "blockClass": ["wrapper__custom-description-banner", "feature-col"]
         }
     },
     "rich-text#RowThree-ColFour_text": {
         "title": "",
         "props": {
-            "text": "## Sun House \n Para as noites tristes, algumas gotas de jasmim. Para acalmar as dores, exale camomila ou lavanda. Já nos dias frios, nada melhor que o cheirinho de canela espalhado pela casa. Com perfume, a vida fica mais bonita e aconchegante!",
+            "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
-            // "textPosition": "CENTER"
-            // "textAlignment": "CENTER"
         }
     },
 
-    "container#custom-block__col-seo": {
-        "title": "Descrição SEO + Foto Destaque",
-        "children": [],
-        "props": {
-            "blockClass": "custom-block__col-seo"
-        }
-    },
-
-    // Bloco fotos ambientadas - destaque grid mosaico - esilo studioneat.com
+    // Bloco fotos destaque - esilo pichau - produto Cadeira Gamer Mancer Tyr Pro
     "container#custom-block__col-photo-grid": {
         "title": "Grid - Fotos Ambientadas",
         "children": [
-            "flex-layout.row#pGrid__RowOne",
-            "flex-layout.row#pGrid__RowTwo"
+            "flex-layout.row#photo-grid__row"
         ],
         "props": {
             "blockClass": "custom-block__col-photo-grid"
         }
     },
     
-    "flex-layout.row#pGrid__RowOne": {
+    "flex-layout.row#photo-grid__row": {
         "title": "",
         "children": [
-            "flex-layout.col#pGrid__RowOne-ColOne",
-            "flex-layout.col#pGrid__RowOne-ColTwo"
+            "flex-layout.col#photo-grid__ColOne",
+            "flex-layout.col#photo-grid__ColTwo",
+            "flex-layout.col#photo-grid__ColThree"
         ],
         "props": {
             "blockClass": "blockOne"
         }
     },
-    "flex-layout.col#pGrid__RowOne-ColOne": {
+
+    "flex-layout.col#photo-grid__ColOne": {
         "title": "",
         "children": [
-            "list-context.image-list#pGrid__RowOne-ColOne_image"
+            "list-context.image-list#photo-grid-ColOne_image"
         ],
         "props": {
             "blockClass": "wrapper__custom-description-banner"
         }
     },
-    "list-context.image-list#pGrid__RowOne-ColOne_image": {
+    "list-context.image-list#photo-grid-ColOne_image": {
         "props": {
-            "blockClass": "",
             "images": [
                 {
-                    "image": "https://dummyimage.com/578x350",
-                    "mobileImage": "https://dummyimage.com/578x350"
+                    "image": "https://dummyimage.com/383x680",
+                    "mobileImage": "https://dummyimage.com/383x680"
                 }
-            ]
+            ],
+            "blockClass": ""
         },
-        "children": ["container.list-render#pGrid__RowOne-ColOne_image"]
+        "children": ["container.list-render#photo-grid-ColOne_image"]
     },
-    "container.list-render#pGrid__RowOne-ColOne_image": {
+    "container.list-render#photo-grid-ColOne_image": {
         "props": {
-            "blockClass": ["custom-description-banner"]
-        }
-    },
-    
-    "flex-layout.col#pGrid__RowOne-ColTwo": {
-        "title": "",
-        "children": [
-            "list-context.image-list#pGrid__RowOne-ColTwo_image"
-        ],
-        "props": {
-            "blockClass": "wrapper__custom-description-banner"
-        }
-    },
-    "list-context.image-list#pGrid__RowOne-ColTwo_image": {
-        "props": {
-            "blockClass": "",
-            "images": [
-                {
-                    "image": "https://dummyimage.com/578x350",
-                    "mobileImage": "https://dummyimage.com/578x350"
-                }
-            ]
-        },
-        "children": ["container.list-render#pGrid__RowOne-ColTwo_image"]
-    },
-    "container.list-render#pGrid__RowOne-ColTwo_image": {
-        "props": {
-            "blockClass": ["custom-description-banner"]
+            "blockClass": ["custom-description-banner", "custom-photo-grid"]
         }
     },
 
-    "flex-layout.row#pGrid__RowTwo": {
+    "flex-layout.col#photo-grid__ColTwo": {
         "title": "",
         "children": [
-            "flex-layout.col#pGrid__RowTwo-ColOne",
-            "flex-layout.col#pGrid__RowTwo-ColTwo"
+            "list-context.image-list#photo-grid-ColTwo_image"
         ],
         "props": {
+            "blockClass": "wrapper__custom-description-banner"
+        }
+    },
+    "list-context.image-list#photo-grid-ColTwo_image": {
+        "props": {
+            "images": [
+                {
+                    "image": "https://dummyimage.com/383x680",
+                    "mobileImage": "https://dummyimage.com/383x680"
+                }
+            ],
             "blockClass": ""
+        },
+        "children": ["container.list-render#photo-grid-ColTwo_image"]
+    },
+    "container.list-render#photo-grid-ColTwo_image": {
+        "props": {
+            "blockClass": ["custom-description-banner", "custom-photo-grid"]
         }
     },
-    "flex-layout.col#pGrid__RowTwo-ColOne": {
+
+    "flex-layout.col#photo-grid__ColThree": {
         "title": "",
         "children": [
-            "list-context.image-list#pGrid__RowTwo-ColOne_image"
+            "list-context.image-list#photo-grid-ColThree_image"
         ],
         "props": {
             "blockClass": "wrapper__custom-description-banner"
         }
     },
-    "list-context.image-list#pGrid__RowTwo-ColOne_image": {
+    "list-context.image-list#photo-grid-ColThree_image": {
         "props": {
-            "blockClass": "",
             "images": [
                 {
-                    "image": "https://dummyimage.com/578x350",
-                    "mobileImage": "https://dummyimage.com/578x350"
+                    "image": "https://dummyimage.com/383x680",
+                    "mobileImage": "https://dummyimage.com/383x680"
                 }
-            ]
+            ],
+            "blockClass": ""
         },
-        "children": ["container.list-render#pGrid__RowTwo-ColOne_image"]
+        "children": ["container.list-render#photo-grid-ColThree_image"]
     },
-    "container.list-render#pGrid__RowTwo-ColOne_image": {
+    "container.list-render#photo-grid-ColThree_image": {
         "props": {
-            "blockClass": ["custom-description-banner"]
-        }
-    },
-    
-    "flex-layout.col#pGrid__RowTwo-ColTwo": {
-        "title": "",
-        "children": [
-            "list-context.image-list#pGrid__RowTwo-ColTwo_image"
-        ],
-        "props": {
-            "blockClass": "wrapper__custom-description-banner"
-        }
-    },
-    "list-context.image-list#pGrid__RowTwo-ColTwo_image": {
-        "props": {
-            "blockClass": "",
-            "images": [
-                {
-                    "image": "https://dummyimage.com/578x350",
-                    "mobileImage": "https://dummyimage.com/578x350"
-                }
-            ]
-        },
-        "children": ["container.list-render#pGrid__RowTwo-ColTwo_image"]
-    },
-    "container.list-render#pGrid__RowTwo-ColTwo_image": {
-        "props": {
-            "blockClass": ["custom-description-banner"]
+            "blockClass": ["custom-description-banner", "custom-photo-grid"]
         }
     }
 }

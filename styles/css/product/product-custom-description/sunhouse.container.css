@@ -1,5 +1,6 @@
 /* Escopar elementos abaixo para o componente alvo correto e nao todos componentes do site */
 
+/* Geral */
 .imageElement--custom-description-banner {
     width: 100%;
     height: auto;
@@ -15,4 +16,59 @@
 
 .imageElement--custom-description-banner:hover {
     opacity: .8
+}
+
+/* Bloco Descricao com Foto */
+.imageElement--container_desc-banner__imagemDescricao {
+    margin-bottom: 12px;
+    max-height: unset !important;
+    width: 581px;
+    height: 499px
+}
+
+/* Bloco Banner Wide */
+.imageElement--main-banner-wide {
+    margin-bottom: 12px;
+    width: 1174px;
+    height: 254px
+}
+
+/* Bloco Feature Cards */
+.container--custom-block__feature-cards {
+    margin-right: -12px
+}
+
+.imageElement--feature-card__image {
+    width: 383px;
+    height: 255px
+}
+
+/* Bloco Col Features */
+.container--custom-block__col-features {
+    margin-bottom: 12px
+}
+
+.imageElement--feature-col__image {
+    width: 284px;
+    height: 172px
+}
+
+/* Bloco Tres Colunas Fotos Destaque */
+.container--custom-block__col-photo-grid {
+    margin-right: -12px
+}
+
+.imageElement--custom-photo-grid {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    max-height: unset !important;
+    width: 383px;
+    height: 680px
+}
+
+/* Mobile Geral */
+@media screen and (max-width: 1024px) {
+    .container--custom-block__main-banner-wide {
+        display: none
+    }
 }
