@@ -1,0 +1,24 @@
+.sliderLayoutContainer--slider__custom-photo-grid {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 6px
+}
+
+.imageElement--slider__custom-photo-grid {
+    border-radius: 8px
+}
+
+.imageElement--slider-custom:hover{
+    opacity: .8
+}
+
+.paginationDotsContainer--slider__custom-photo-grid {
+    margin-bottom: 12px
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+    .sliderLayoutContainer--slider__custom-photo-grid {
+        margin-top: 24px
+    }
+}

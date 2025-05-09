@@ -53,20 +53,26 @@
     "flex-layout.col#product-description-custom": {
         "title": "Blocos Customizaveis",
         "children": [
-            "container#custom-block__desc-banner", // Descricao ao lado do banner - colunas iguais em tamanho - IMPORTANTE mas nao obrigatorio
-            // Tamanho imagem desse bloco: 581x 499 - definir tamanho fixo para esse container de imagem
+            "container#custom-block__desc-banner", // Descricao ao lado do banner (esquerda texto - direita imagem) - colunas iguais em tamanho - IMPORTANTE mas nao obrigatorio
+            // Tamanho imagem desse bloco: 581x 499
 
-            "container#custom-block__main-banner-wide", // banner wide para destaque produto - IMPORTANTE mas nao obrigatorio
-            // Tamanho imagem desse bloco: 1174x254 - definir tamanho fixo para esse container de imagem
+            "container#custom-block__main-banner-wide", // Banner wide para destaque produto - IMPORTANTE mas nao obrigatorio
+            // Tamanho imagem desse bloco: 1174x254
 
-            "container#custom-block__feature-cards", // ate quatro cards, dois para cada coluna, informando caracteristicas destaque do produto - IMPORTANTE mas nao obrigatorio
-            // Tamanho imagens desse bloco: 383x255 - definir tamanho fixo para esses containers de imagens
+            //"A DEFINIR - Ver no Figma "// Banner ou imagem destaque a esquerda (com carrossel) e a direita, tres cards de beneficios, diferenciais ou caracteristicas destaque do produto
+            // Tamanho imagem desse bloco: 581x 499 (igual em tamanho do elemento desc-banner - mas ver se muda - deixa mais quadrado)
 
-            "container#custom-block__col-features", // ate seis bloquinhos, dois para cada coluna, informando caracteristicas do produto - IMPORTANTE mas nao obrigatorio
-            // Tamanho imagens desse bloco: 284x172 - definir tamanho fixo para esses containers de imagens
+            "container#custom-block__feature-cards", // Ate quatro cards, dois para cada coluna, informando caracteristicas destaque do produto - IMPORTANTE mas nao obrigatorio
+            // Tamanho imagens desse bloco: 383x255
+            
+            "container#custom-block__col-features", // Ate seis bloquinhos, dois para cada coluna, informando caracteristicas do produto - IMPORTANTE mas nao obrigatorio
+            // Tamanho imagens desse bloco: 284x172
 
-            "container#custom-block__col-photo-grid" // Tres fotos, destaques, ou links, do fornecedor, produto ou linha - OPICIONAL mas muito relevante visualmente
-            // Tamanho imagens desse bloco: 383x680 - definir tamanho fixo para esses containers de imagens
+            //"A DEFINIR - Ver no Figma // Foto central para mostrar detalhes do produto - quatro cards nas laterias, cada um dando um foco no detalhe - puramente imagens
+            // Tamanho imagens desse bloco: (todas a definir)
+
+            "container#custom-block__slider-photo-grid" // Tres fotos, destaques, ou links, do fornecedor, produto ou linha - OPICIONAL mas muito relevante visualmente
+            // Tamanho imagens desse bloco: 383x680
         ],
         "props": {
             "blockClass": "blocks__product-description-custom"
@@ -166,31 +172,36 @@
         }
     },
 
-    // Bloco caracteristicas 2 do produto - modelo bootstrap cards
+    // Bloco caracteristicas do produto - modelo bootstrap cards
     "container#custom-block__feature-cards": {
-        "title": "Cards - Carcteristicas em Destaque",
+        "title": "Cards - Características em Destaque",
         "children": [
-            "flex-layout.row#feature-card__row"
+            //"flex-layout.row#feature-card__row"
+            "flex-layout.row#feature-card__title-row",
+            "slider-layout#slider-feature-cards"
         ],
         "props": {
             "blockClass": "custom-block__feature-cards"
         }
     },
 
-    "flex-layout.row#feature-card__row": {
-        "title": "",
+    "flex-layout.row#feature-card__title-row": {
         "children": [
-            "flex-layout.col#feature-card__row-ColOne",
-            "flex-layout.col#feature-card__row-ColTwo",
-            "flex-layout.col#feature-card__row-ColThree"
+            "rich-text#feature-card__title-row"
         ],
         "props": {
-            "blockClass": ""
+            "blockClass": "feature-card__title"
+        }
+    },
+    "rich-text#feature-card__title-row": {
+        "title": "Texto - Titulo Características",
+        "props": {
+            "text": "## Características",
+            "blockClass": "wrapper__custom-description-title"
         }
     },
     
     "flex-layout.col#feature-card__row-ColOne": {
-        "title": "",
         "children": [
             "list-context.image-list#feature-card__row-ColOne_image",
             "rich-text#feature-card__row-ColOne_text"
@@ -200,6 +211,7 @@
         }
     },
     "list-context.image-list#feature-card__row-ColOne_image": {
+        "title": "Card 1 - Imagem",
         "props": {
             "images": [
                 {
@@ -217,15 +229,14 @@
         }
     },
     "rich-text#feature-card__row-ColOne_text": {
-        "title": "",
+        "title": "Card 1 - Texto",
         "props": {
-            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices. Consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
+            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
             "blockClass": "wrapper__custom-description-text"
         }
     },
 
     "flex-layout.col#feature-card__row-ColTwo": {
-        "title": "",
         "children": [
             "list-context.image-list#feature-card__row-ColTwo_image",
             "rich-text#feature-card__row-ColTwo_text"
@@ -235,6 +246,7 @@
         }
     },
     "list-context.image-list#feature-card__row-ColTwo_image": {
+        "title": "Card 2 - Imagem",
         "props": {
             "images": [
                 {
@@ -252,15 +264,14 @@
         }
     },
     "rich-text#feature-card__row-ColTwo_text": {
-        "title": "",
+        "title": "Card 2 - Texto",
         "props": {
-            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices. Consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
+            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
             "blockClass": "wrapper__custom-description-text"
         }
     },
 
     "flex-layout.col#feature-card__row-ColThree": {
-        "title": "",
         "children": [
             "list-context.image-list#feature-card__row-ColThree_image",
             "rich-text#feature-card__row-ColThree_text"
@@ -270,6 +281,7 @@
         }
     },
     "list-context.image-list#feature-card__row-ColThree_image": {
+        "title": "Card 3 - Imagem",
         "props": {
             "images": [
                 {
@@ -287,17 +299,37 @@
         }
     },
     "rich-text#feature-card__row-ColThree_text": {
-        "title": "",
+        "title": "Card 3 - Texto",
         "props": {
-            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices. Consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
+            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
             "blockClass": "wrapper__custom-description-text"
         }
     },
-    
+
+    "slider-layout#slider-feature-cards": {
+        "title": "Configurações Carrossel - Textos",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 3,
+                "phone": 1
+            },
+            "showNavigationArrows": "desktopOnly",
+            "dots": true,
+            "infinite": true,
+            "blockClass": ["slider__feature-cards_text"]
+        },
+        "children": [
+            "flex-layout.col#feature-card__row-ColOne",
+            "flex-layout.col#feature-card__row-ColTwo",
+            "flex-layout.col#feature-card__row-ColThree"
+        ]
+    },
+
     // Bloco caracteristicas do produto - foco em acabamento e detalhes - estilo Flexform
     "container#custom-block__col-features": {
         "title": "Grid - Principais Características",
         "children": [
+            "flex-layout.row#feature-card__title-row",
             "flex-layout.row#feature__RowOne",
             "flex-layout.row#feature__RowTwo",
             "flex-layout.row#feature__RowThree"
@@ -308,7 +340,6 @@
     },
 
     "flex-layout.row#feature__RowOne": {
-        "title": "",
         "children": [
             "flex-layout.col#feature__RowOne-ColOne",
             "flex-layout.col#feature__RowOne-ColTwo",
@@ -321,7 +352,6 @@
     },
 
     "flex-layout.col#feature__RowOne-ColOne": {
-        "title": "",
         "children": [
             "list-context.image-list#RowOne-ColOne_image"
         ],
@@ -330,6 +360,7 @@
         }
     },
     "list-context.image-list#RowOne-ColOne_image": {
+        "title": "Card 1 - Imagem",
         "props": {
             "blockClass": "",
             "images": [
@@ -348,7 +379,6 @@
     },
 
     "flex-layout.col#feature__RowOne-ColTwo": {
-        "title": "",
         "children": [
             "rich-text#RowOne-ColTwo_text"
         ],
@@ -357,7 +387,7 @@
         }
     },
     "rich-text#RowOne-ColTwo_text": {
-        "title": "",
+        "title": "Card 1 - Texto",
         "props": {
             "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
@@ -365,7 +395,6 @@
     },
 
     "flex-layout.col#feature__RowOne-ColThree": {
-        "title": "",
         "children": [
             "list-context.image-list#RowOne-ColThree_image"
         ],
@@ -374,6 +403,7 @@
         }
     },
     "list-context.image-list#RowOne-ColThree_image": {
+        "title": "Card 2 - Imagem",
         "props": {
             "blockClass": "",
             "images": [
@@ -392,7 +422,6 @@
     },
 
     "flex-layout.col#feature__RowOne-ColFour": {
-        "title": "",
         "children": [
             "rich-text#RowOne-ColFour_text"
         ],
@@ -401,7 +430,7 @@
         }
     },
     "rich-text#RowOne-ColFour_text": {
-        "title": "",
+        "title": "Card 2 - Texto",
         "props": {
             "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
@@ -409,7 +438,6 @@
     },
 
     "flex-layout.row#feature__RowTwo": {
-        "title": "",
         "children": [
             "flex-layout.col#feature__RowTwo-ColOne",
             "flex-layout.col#feature__RowTwo-ColTwo",
@@ -422,7 +450,6 @@
     },
 
     "flex-layout.col#feature__RowTwo-ColOne": {
-        "title": "",
         "children": [
             "list-context.image-list#RowTwo-ColOne_image"
 
@@ -432,6 +459,7 @@
         }
     },
     "list-context.image-list#RowTwo-ColOne_image": {
+        "title": "Card 3 - Imagem",
         "props": {
             "blockClass": "",
             "images": [
@@ -450,7 +478,6 @@
     },
 
     "flex-layout.col#feature__RowTwo-ColTwo": {
-        "title": "",
         "children": [
             "rich-text#RowTwo-ColTwo_text"
         ],
@@ -459,7 +486,7 @@
         }
     },
     "rich-text#RowTwo-ColTwo_text": {
-        "title": "",
+        "title": "Card 3 - Texto",
         "props": {
             "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
@@ -467,7 +494,6 @@
     },
 
     "flex-layout.col#feature__RowTwo-ColThree": {
-        "title": "",
         "children": [
             "list-context.image-list#RowTwo-ColThree_image"
         ],
@@ -476,6 +502,7 @@
         }
     },
     "list-context.image-list#RowTwo-ColThree_image": {
+        "title": "Card 4 - Imagem",
         "props": {
             "blockClass": "",
             "images": [
@@ -494,7 +521,6 @@
     },
 
     "flex-layout.col#feature__RowTwo-ColFour": {
-        "title": "",
         "children": [
             "rich-text#RowTwo-ColFour_text"
         ],
@@ -503,7 +529,7 @@
         }
     },
     "rich-text#RowTwo-ColFour_text": {
-        "title": "",
+        "title": "Card 4 - Texto",
         "props": {
             "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
@@ -511,7 +537,6 @@
     },
 
     "flex-layout.row#feature__RowThree": {
-        "title": "",
         "children": [
             "flex-layout.col#feature__RowThree-ColOne",
             "flex-layout.col#feature__RowThree-ColTwo",
@@ -524,7 +549,6 @@
     },
 
     "flex-layout.col#feature__RowThree-ColOne": {
-        "title": "",
         "children": [
             "list-context.image-list#RowThree-ColOne_image"
         ],
@@ -533,6 +557,7 @@
         }
     },
     "list-context.image-list#RowThree-ColOne_image": {
+        "title": "Card 5 - Imagem",
         "props": {
             "blockClass": "",
             "images": [
@@ -551,7 +576,6 @@
     },
 
     "flex-layout.col#feature__RowThree-ColTwo": {
-        "title": "",
         "children": [
             "rich-text#RowThree-ColTwo_text"
         ],
@@ -560,7 +584,7 @@
         }
     },
     "rich-text#RowThree-ColTwo_text": {
-        "title": "",
+        "title": "Card 5 - Texto",
         "props": {
             "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
@@ -568,7 +592,6 @@
     },
 
     "flex-layout.col#feature__RowThree-ColThree": {
-        "title": "",
         "children": [
             "list-context.image-list#RowThree-ColThree_image"
         ],
@@ -577,6 +600,7 @@
         }
     },
     "list-context.image-list#RowThree-ColThree_image": {
+        "title": "Card 6 - Imagem",
         "props": {
             "blockClass": "",
             "images": [
@@ -595,7 +619,6 @@
     },
 
     "flex-layout.col#feature__RowThree-ColFour": {
-        "title": "",
         "children": [
             "rich-text#RowThree-ColFour_text"
         ],
@@ -604,14 +627,14 @@
         }
     },
     "rich-text#RowThree-ColFour_text": {
-        "title": "",
+        "title": "Card 6 - Texto",
         "props": {
             "text": "## Título breve \n **Máximo seis linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit.",
             "blockClass": "wrapper__custom-description-text"
         }
     },
 
-    // Bloco fotos destaque - esilo pichau - produto Cadeira Gamer Mancer Tyr Pro
+    // [INATIVO] Bloco fotos destaque - esilo pichau - produto Cadeira Gamer Mancer Tyr Pro
     "container#custom-block__col-photo-grid": {
         "title": "Grid - Fotos Ambientadas",
         "children": [
@@ -623,7 +646,6 @@
     },
     
     "flex-layout.row#photo-grid__row": {
-        "title": "",
         "children": [
             "flex-layout.col#photo-grid__ColOne",
             "flex-layout.col#photo-grid__ColTwo",
@@ -635,7 +657,6 @@
     },
 
     "flex-layout.col#photo-grid__ColOne": {
-        "title": "",
         "children": [
             "list-context.image-list#photo-grid-ColOne_image"
         ],
@@ -644,6 +665,7 @@
         }
     },
     "list-context.image-list#photo-grid-ColOne_image": {
+        "title": "Imagem 1",
         "props": {
             "images": [
                 {
@@ -662,7 +684,6 @@
     },
 
     "flex-layout.col#photo-grid__ColTwo": {
-        "title": "",
         "children": [
             "list-context.image-list#photo-grid-ColTwo_image"
         ],
@@ -671,6 +692,7 @@
         }
     },
     "list-context.image-list#photo-grid-ColTwo_image": {
+        "title": "Imagem 2",
         "props": {
             "images": [
                 {
@@ -680,7 +702,7 @@
             ],
             "blockClass": ""
         },
-        "children": ["container.list-render#photo-grid-ColTwo_image"]
+        "children": ["container.list-render#photo-grid-ColOne_image"]
     },
     "container.list-render#photo-grid-ColTwo_image": {
         "props": {
@@ -689,7 +711,6 @@
     },
 
     "flex-layout.col#photo-grid__ColThree": {
-        "title": "",
         "children": [
             "list-context.image-list#photo-grid-ColThree_image"
         ],
@@ -698,6 +719,7 @@
         }
     },
     "list-context.image-list#photo-grid-ColThree_image": {
+        "title": "Imagem 3",
         "props": {
             "images": [
                 {
@@ -707,11 +729,140 @@
             ],
             "blockClass": ""
         },
-        "children": ["container.list-render#photo-grid-ColThree_image"]
+        "children": ["container.list-render#photo-grid-ColOne_image"]
     },
     "container.list-render#photo-grid-ColThree_image": {
         "props": {
             "blockClass": ["custom-description-banner", "custom-photo-grid"]
+        }
+    },
+
+    // Bloco fotos destaque - esilo pichau - produto Cadeira Gamer Mancer Tyr Pro
+    "container#custom-block__slider-photo-grid": {
+        "title": "Grid - Fotos Ambientadas",
+        "children": [
+            "list-context.image-list#slider-photo-grid"
+        ],
+        "props": {
+            "blockClass": "custom-block__slider-photo-grid"
+        }
+    },
+
+    "list-context.image-list#slider-photo-grid": {
+        "title": "Imagens",
+        "props": {
+            "preload": false,
+            "height": "680px",
+            "experimentalSetExplicitDimensions": true,
+            "images": [
+                {
+                    "image": "https://dummyimage.com/383x680",
+                    "mobileImage": "https://dummyimage.com/383x680",
+                    "width": "383px",
+                    "description": "atributo alt",
+                    "loading": "lazy"
+                },
+                {
+                    "image": "https://dummyimage.com/383x680",
+                    "mobileImage": "https://dummyimage.com/383x680",
+                    "width": "383px",
+                    "description": "atributo alt",
+                    "loading": "lazy"
+                },
+                {
+                    "image": "https://dummyimage.com/383x680",
+                    "mobileImage": "https://dummyimage.com/383x680",
+                    "width": "383px",
+                    "description": "atributo alt",
+                    "loading": "lazy"
+                }
+            ]
+        },
+        "children": ["slider-layout#slider-photo-grid"]
+    },
+    "slider-layout#slider-photo-grid": {
+        "title": "Configurações Carrossel Imagens",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 3,
+                "phone": 1
+            },
+            "showNavigationArrows": "desktopOnly",
+            //"usePagination": false, - Propriedade interessante para criar 'slides' para mobile, mais leves e sem o classico slick carousel - usar em outros elemementos
+            "dots": true,
+            "infinite": true,
+            "blockClass": ["slider-custom", "slider__custom-photo-grid"]
+        }
+    },
+
+    // [INATIVO] TESTE - Copiando elemento acima para validar outra forma de blocar imagens
+    "container#custom-block__col-photo-grid-teste": {
+        "title": "[TESTE] Grid - Fotos Ambientadas",
+        "children": [
+            "flex-layout.row#photo-grid_teste_row"
+        ],
+        "props": {
+            "blockClass": "custom-block__col-photo-grid"
+        }
+    },
+    "flex-layout.row#photo-grid_teste_row": {
+        "children": [
+            "flex-layout.col#photo-grid_teste_ColOne",
+            "flex-layout.col#photo-grid_teste_ColTwo",
+            "flex-layout.col#photo-grid_teste_ColThree"
+        ],
+        "props": {
+            "blockClass": "blockOne"
+        }
+    },
+    
+    "flex-layout.col#photo-grid_teste_ColOne": {
+        "children": [
+            "image#example01"
+        ],
+        "props": {
+            "blockClass": "wrapper__custom-description-banner"
+        }
+    },
+    "flex-layout.col#photo-grid_teste_ColTwo": {
+        "children": [
+            "image#example02"
+        ],
+        "props": {
+            "blockClass": "wrapper__custom-description-banner"
+        }
+    },
+    "flex-layout.col#photo-grid_teste_ColThree": {
+        "children": [
+            "image#example03"
+        ],
+        "props": {
+            "blockClass": "wrapper__custom-description-banner"
+        }
+    },
+
+    "image#example01": {
+        "props": {
+            "src": "https://dummyimage.com/383x680",
+            "maxHeight": "unset",
+            "title": "Teste 01",
+            "alt": "Alt Teste 01"
+        }
+    },
+    "image#example02": {
+        "props": {
+            "src": "https://dummyimage.com/383x680",
+            "maxHeight": "unset",
+            "title": "Teste 02",
+            "alt": "Alt Teste 02"
+        }
+    },
+    "image#example03": {
+        "props": {
+            "src": "https://dummyimage.com/383x680",
+            "maxHeight": "unset",
+            "title": "Teste 03",
+            "alt": "Alt Teste 03"
         }
     }
 }

@@ -1,15 +1,9 @@
-/*.container-- .wrapper {
-
-}*/
-
+/**/
 .container--wrapper__textoDescricao-esquerda .wrapper {
     align-items: center;
     justify-content: center;
     height: 100%
 }
-
-
-/**/
 
 .wrapper--wrapper__textoDescricao-esquerda {
     margin: 32px
@@ -36,6 +30,17 @@
     color: #F90041
 }
 
+/**/
+.wrapper--wrapper__custom-description-title {
+    margin: 0 auto;
+    padding-top: 42px;
+    padding-bottom: 18px
+}
+
+.wrapper--wrapper__custom-description-title .heading {
+    font-size: 38px
+}
+
 .wrapper--wrapper__custom-description-text {
     margin: 12px
 }
@@ -47,4 +52,17 @@
 
 .wrapper--wrapper__custom-description-text .paragraph {
     line-height: 1.18
+}
+
+@media screen and (max-width: 1024px) {
+    /* Titulo Bloco Descricao com Foto */
+    .wrapper--wrapper__textoDescricao-esquerda .heading {
+        font-size: 26px
+    }
+
+    /* Titulo solto para Blocos */
+    .wrapper--wrapper__custom-description-title .heading {
+        font-size: 24px
+    }
+
 }
