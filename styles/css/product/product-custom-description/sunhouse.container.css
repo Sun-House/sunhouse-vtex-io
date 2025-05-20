@@ -24,11 +24,33 @@
     height: 499px
 }
 
+/* Bloco Titulo e Texto Breve */
+.container--custom-block__text-summary {
+    margin: 42px 0 12px
+}
+
+.container--text-summary_spacer {
+    width: 150px;
+    height: 6px;
+    border-radius: 50px;
+    margin: 0 auto
+}
+
+.container--text-summary_spacer1 {
+    background: #F90041
+}
+
+.container--text-summary_spacer2 {
+    background: #FFDA00
+}
+
 /* Bloco Banner Wide */
-.imageElement--main-banner-wide {
+/*.imageElement--main-banner-wide {*/
+.imageElement--banner-fulfill {
     margin-bottom: 12px;
     width: 1174px;
-    height: 254px
+    height: 643px;
+    max-height: unset !important
 }
 
 /* Bloco Feature Cards */
@@ -41,14 +63,28 @@
     height: 255px
 }
 
-/* Bloco Col Features */
-.container--custom-block__col-features {
-    margin-bottom: 12px
+/* Bloco Highlights Grid */
+.container--highlights-grid__container {
+    height: 100%;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 24px
 }
 
-.imageElement--feature-col__image {
-    width: 284px;
-    height: 172px
+/* Bloco Destaques em Grade - Ainda em DEV */
+.imageElement--container_highlights-grid__image {
+    max-height: unset !important
+}
+
+/*.container--highlights-grid__container-image {
+    width: fit-content !important
+}*/
+
+.imageElement--highlights-grid__container-image {
+    width: auto !important;
+    height: 135px;
+    border-radius: 8px
+    /*min-height: 135px;*/
 }
 
 /* Bloco Tres Colunas Fotos Destaque */
@@ -64,6 +100,14 @@
     height: 680px
 }
 
+/* Bloco FAQ */
+.container--custom-block__faq-disclosure {
+    margin: 24px 150px 12px 150px;
+    background: #eaeae9;
+    padding: 25px 50px;
+    border-radius: 8px
+}
+
 /* Mobile Geral */
 @media screen and (max-width: 1024px) {
     /* Bloco Descricao com Foto */
@@ -72,8 +116,9 @@
     }
 
     /* Bloco Banner Wide - nao sera exibido no mobile a principio */
-    .container--custom-block__main-banner-wide {
-        display: none
+    .imageElement--banner-fulfill {
+        width: 376px !important;
+        height: 480px
     }
 
     /* Bloco Feature Cards */
@@ -90,5 +135,14 @@
     /* Bloco Tres Colunas Fotos Destaque */
     .imageElement--custom-photo-grid {
         height: auto
+    }
+
+    /* Bloco FAQ */
+    .container--custom-block__faq-disclosure {
+        margin-top: unset;
+        margin-right: unset;
+        margin-bottom: unset;
+        margin-left: 12px;
+        padding: 20px 30px
     }
 }

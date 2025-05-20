@@ -1,0 +1,72 @@
+// Todos Blocos Titulo com Subtitulo
+{
+    // Bloco Titulo com Subtitulo 1
+    "container#custom-block__text-summary": {
+        "title": "Titulo e Texto entre Blocos",
+        "children": [
+            "container#text-summary_spacer",
+            "container#wrapper__text-summary"
+        ],
+        "props": {
+            "blockClass": "custom-block__text-summary"
+        }
+    },
+
+    "container#text-summary_spacer": {
+        "title": "Detalhe Visual",
+        "props": {
+            "blockClass": ["text-summary_spacer", "text-summary_spacer1"]
+        }
+    },
+    "container#wrapper__text-summary": {
+        "title": "Wrapper Texto",
+        "children": [
+            "rich-text#text-summary__text"
+        ],
+        "props": {
+            "blockClass": "wrapper__text-summary"
+        }
+    },
+    "rich-text#text-summary__text": {
+        "title": "Texto",
+        "props": {
+            "text": "## Texto Título Breve \n Texto subtítulo, ou breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "blockClass": ["wrapper__custom-description-title", "text-summary__text"]
+        }
+    },
+
+    // Bloco Titulo com Subtitulo 2
+    "container#custom-block__text-summary2": {
+        "title": "Titulo e Texto entre Blocos 2",
+        "children": [
+            "container#text-summary_spacer2",
+            "container#wrapper__text-summary2"
+        ],
+        "props": {
+            "blockClass": "custom-block__text-summary"
+        }
+    },
+
+    "container#text-summary_spacer2": {
+        "title": "Detalhe Visual",
+        "props": {
+            "blockClass": ["text-summary_spacer", "text-summary_spacer2"]
+        }
+    },
+    "container#wrapper__text-summary2": {
+        "title": "Wrapper Texto",
+        "children": [
+            "rich-text#text-summary__text2"
+        ],
+        "props": {
+            "blockClass": "wrapper__text-summary"
+        }
+    },
+    "rich-text#text-summary__text2": {
+        "title": "Texto",
+        "props": {
+            "text": "## Texto Título Breve \n Texto subtítulo, ou breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "blockClass": ["wrapper__custom-description-title", "text-summary__text"]
+        }
+    }
+}

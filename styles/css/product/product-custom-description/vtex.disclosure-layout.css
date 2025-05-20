@@ -1,0 +1,33 @@
+.trigger--faq-disclosure-line {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer
+}
+
+.trigger--faq-disclosure-line--hidden {
+    border-bottom: 1px solid #ccc
+}
+
+.trigger--faq-disclosure-line-last--hidden {
+    border-bottom: none
+}
+
+.content--faq-disclosure-line {
+    border: none
+}
+
+.content--faq-disclosure-line--visible {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 24px
+}
+
+.content--faq-disclosure-line-last--visible {
+    border-bottom: none;
+    padding-bottom: 0
+}

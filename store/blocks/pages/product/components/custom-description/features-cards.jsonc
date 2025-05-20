@@ -1,0 +1,148 @@
+// Bloco caracteristicas do produto - modelo bootstrap cards
+{
+    "container#custom-block__feature-cards": {
+        "title": "Cards - Características em Destaque",
+        "children": [
+            //"flex-layout.row#feature-card__row"
+            "flex-layout.row#feature-card__title-row",
+            "slider-layout#slider-feature-cards"
+        ],
+        "props": {
+            "blockClass": "custom-block__feature-cards"
+        }
+    },
+
+    "flex-layout.row#feature-card__title-row": {
+        "children": [
+            "rich-text#feature-card__title-row"
+        ],
+        "props": {
+            "blockClass": "feature-card__title"
+        }
+    },
+    "rich-text#feature-card__title-row": {
+        "title": "Texto - Titulo Características",
+        "props": {
+            "text": "## Características",
+            "blockClass": "wrapper__custom-description-title"
+        }
+    },
+
+    "flex-layout.col#feature-card__row-ColOne": {
+        "children": [
+            "list-context.image-list#feature-card__row-ColOne_image",
+            "rich-text#feature-card__row-ColOne_text"
+        ],
+        "props": {
+            "blockClass": [""]
+        }
+    },
+    "list-context.image-list#feature-card__row-ColOne_image": {
+        "title": "Card 1 - Imagem",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/383x255",
+                "mobileImage": "https://dummyimage.com/383x255" // Ver dimensão do banner mobile
+            }],
+            "blockClass": ""
+        },
+        "children": ["container.list-render#feature-card__row-ColOne_image"]
+    },
+    "container.list-render#feature-card__row-ColOne_image": {
+        "props": {
+            "blockClass": ["custom-description-banner", "feature-card__image"]
+        }
+    },
+    "rich-text#feature-card__row-ColOne_text": {
+        "title": "Card 1 - Texto",
+        "props": {
+            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
+            "blockClass": "wrapper__custom-description-text"
+        }
+    },
+
+    "flex-layout.col#feature-card__row-ColTwo": {
+        "children": [
+            "list-context.image-list#feature-card__row-ColTwo_image",
+            "rich-text#feature-card__row-ColTwo_text"
+        ],
+        "props": {
+            "blockClass": [""]
+        }
+    },
+    "list-context.image-list#feature-card__row-ColTwo_image": {
+        "title": "Card 2 - Imagem",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/383x255",
+                "mobileImage": "https://dummyimage.com/383x255" // Ver dimensão do banner mobile
+            }],
+            "blockClass": ""
+        },
+        "children": ["container.list-render#feature-card__row-ColTwo_image"]
+    },
+    "container.list-render#feature-card__row-ColTwo_image": {
+        "props": {
+            "blockClass": ["custom-description-banner", "feature-card__image"]
+        }
+    },
+    "rich-text#feature-card__row-ColTwo_text": {
+        "title": "Card 2 - Texto",
+        "props": {
+            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
+            "blockClass": "wrapper__custom-description-text"
+        }
+    },
+
+    "flex-layout.col#feature-card__row-ColThree": {
+        "children": [
+            "list-context.image-list#feature-card__row-ColThree_image",
+            "rich-text#feature-card__row-ColThree_text"
+        ],
+        "props": {
+            "blockClass": [""]
+        }
+    },
+    "list-context.image-list#feature-card__row-ColThree_image": {
+        "title": "Card 3 - Imagem",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/383x255",
+                "mobileImage": "https://dummyimage.com/383x255" // Ver dimensão do banner mobile
+            }],
+            "blockClass": ""
+        },
+        "children": ["container.list-render#feature-card__row-ColTwo_image"]
+    },
+    "container.list-render#feature-card__row-ColThree_image": {
+        "props": {
+            "blockClass": ["custom-description-banner", "feature-card__image"]
+        }
+    },
+    "rich-text#feature-card__row-ColThree_text": {
+        "title": "Card 3 - Texto",
+        "props": {
+            "text": "## Título breve \n **Máximo tres linhas de conteúdo.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices.",
+            "blockClass": "wrapper__custom-description-text"
+        }
+    },
+
+    "slider-layout#slider-feature-cards": {
+        "title": "Configurações Carrossel - Textos",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 3,
+                "phone": 1
+            },
+            "showNavigationArrows": "desktopOnly",
+            "dots": true,
+            "infinite": true,
+            "blockClass": ["slider__feature-cards_text"]
+        },
+        "children": [
+            "flex-layout.col#feature-card__row-ColOne",
+            "flex-layout.col#feature-card__row-ColTwo",
+            "flex-layout.col#feature-card__row-ColThree"
+        ]
+    }
+}

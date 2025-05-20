@@ -1,5 +1,3 @@
-/* Escopar elementos abaixo para o componente alvo correto e nao todos componentes do site */
-
 .flexCol--blocks__product-description-custom {
     max-width: 1200px;
     margin: 0 auto;
@@ -17,7 +15,12 @@
     height: 100%
 }
 
-/* Mobile */
-/*@media screen and (max-width: 1024px) {
-    
-}*/
+/* Bloco Hightlights Grid */
+.flexCol--highlights-grid__col-2 {
+    max-height: 185px;
+}
+
+.flexColChild--highlights-grid__col-2 {
+    margin-top: 12px;
+    margin-left: 24px
+}

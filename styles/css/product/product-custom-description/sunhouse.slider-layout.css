@@ -7,6 +7,9 @@
 .imageElement--slider__custom-photo-grid {
     border-radius: 8px
 }
+.imageElement--slider-custom {
+    transition: .2s ease
+}
 
 .imageElement--slider-custom:hover{
     opacity: .8
@@ -16,9 +19,22 @@
     margin-bottom: 12px
 }
 
+.sliderTrackContainer--slider__feature-cards_text {
+    margin-right: 12px
+}
+
 /* Mobile */
 @media screen and (max-width: 1024px) {
     .sliderLayoutContainer--slider__custom-photo-grid {
         margin-top: 24px
+    }
+
+    .paginationDotsContainer--slider__feature-cards_text {
+        bottom: 18px;
+    }
+
+    .sliderTrackContainer--slider__feature-cards_text {
+        margin-right: unset;
+        margin-bottom: 24px
     }
 }

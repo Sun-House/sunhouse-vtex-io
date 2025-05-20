@@ -1,0 +1,27 @@
+// Banner expandido - destaque produto ou marca
+{
+    "container#custom-block__banner-fulfill": {
+        "title": "Banner Grande Destaque",
+        "children": [
+            "list-context.image-list#banner-fulfill"
+        ],
+        "props": {
+            "blockClass": "custom-block__banner-fulfill"
+        }
+    },
+    "list-context.image-list#banner-fulfill": {
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/1174x643",
+                "mobileImage": "https://dummyimage.com/376x480"
+            }],
+            "blockClass": "banner-fulfill"
+        },
+        "children": ["container.list-render#banner-fulfill"]
+    },
+    "container.list-render#banner-fulfill": {
+        "props": {
+            "blockClass": ["custom-description-banner", "banner-fulfill"]
+        }
+    }
+}

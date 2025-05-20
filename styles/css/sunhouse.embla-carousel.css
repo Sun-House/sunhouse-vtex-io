@@ -450,6 +450,7 @@
 .container--product-medias--thumbs .emblaContainer .emblaSlide .emblaInnerSlide .image {
     display: block;
     height: auto;
+    border-radius: 11px;
     aspect-ratio: 1/1;
     -o-object-fit: contain;
     object-fit: contain

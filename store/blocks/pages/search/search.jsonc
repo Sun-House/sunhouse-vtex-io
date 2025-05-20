@@ -477,7 +477,7 @@
   "rich-text#search-seo": {
     "title": "Texto Seo",
     "props": {
-      "text": "## Sun House \n Para as noites tristes, algumas gotas de jasmim. Para acalmar as dores, exale camomila ou lavanda. Já nos dias frios, nada melhor que o cheirinho de canela espalhado pela casa. Com perfume, a vida fica mais bonita e aconchegante!",
+      "text": "# Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!",
       "blockClass": "search-seo",
       "textPosition": "CENTER"
       // "textAlignment": "CENTER"
