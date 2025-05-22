@@ -27,7 +27,6 @@
         }
     },
     "container#custom-block__faq-disclosure": {
-        //"title": "FAQ - Informações Uteis do Produto",
         "children": [
             "disclosure-layout#faq-disclosure-line-1", // Texto normal
             "disclosure-layout#faq-disclosure-line-2", // Mais de um paragrafo com quebra de linha
