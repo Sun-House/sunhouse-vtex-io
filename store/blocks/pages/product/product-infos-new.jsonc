@@ -61,6 +61,9 @@
             "container#custom-block__banner-fulfill", // Banner expandido para destaque produto (estilo cadeira Siggy Elements) - OPICIONAL mas pode ficar agradavel visualmente
             // Tamanho imagem desse bloco: 1174x643
 
+            "container#custom-block__banner-fulfill-mob", // Igual o bloco acima, mas com algumas configs especificas para o Mobile
+            // Tamanho imagem desse bloco: 376x480
+
             "container#custom-block__feature-cards", // Ate quatro cards, dois para cada coluna, informando caracteristicas destaque do produto - IMPORTANTE mas nao obrigatorio
             // Tamanho imagens desse bloco: 383x255
             

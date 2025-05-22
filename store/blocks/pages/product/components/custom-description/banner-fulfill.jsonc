@@ -1,7 +1,7 @@
 // Banner expandido - destaque produto ou marca
 {
     "container#custom-block__banner-fulfill": {
-        "title": "Banner Grande Destaque",
+        "title": "Banner Tela Completa Desktop",
         "children": [
             "list-context.image-list#banner-fulfill"
         ],

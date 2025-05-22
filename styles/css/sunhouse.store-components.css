@@ -1,1 +1,817 @@
-.searchBarInnerContainer{padding:8px 4px;position:absolute;right:33px;overflow:hidden;width:368px;top:-26px}.searchBarInnerContainer--filled{background-color:#fff}.searchBarInnerContainer :global(.vtex-input-prefix__group){overflow:visible;max-width:368px;width:100%;box-sizing:border-box;border-radius:50px;height:49px;border:none}.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-input__suffix){padding:0;background-color:rgba(0,0,0,0)}.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input){border:none !important;width:100%;background-color:rgba(0,0,0,0) !important;opacity:0;box-sizing:border-box;border-radius:50px;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:700 !important;font-size:14px !important;line-height:19px;color:#2d2926 !important}.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder{font-size:12px;font-weight:normal}.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder{font-size:12px;font-weight:normal}.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder{color:#3e3e3e}.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder{color:#3e3e3e}.searchBarIcon{padding:0;margin-top:-1px;background:rgba(0,0,0,0);border:1px solid rgba(0,0,0,0);box-sizing:border-box;border-radius:50px;width:104px;height:49px;justify-content:center}.searchBarIcon .searchIcon{color:#2d2926;width:20px;height:20px}.searchBarIcon::after{content:"Buscar";font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:12px;line-height:15px;text-align:center;color:#2d2926;margin-left:10px}.resultsList{background-color:#fff;border:none;width:360px;margin:5px 0 0 0;padding:0 0 3.9px 0;max-height:277px;overflow-y:auto;padding:0;display:none;position:absolute}.resultsList::-webkit-scrollbar{width:5px;height:5px}.resultsList::-webkit-scrollbar-track{background:#ede8ec;border-radius:100px}.resultsList ::-moz-scrollbar-button,.resultsList ::-webkit-scrollbar-button{width:0px}.resultsList::-webkit-scrollbar-thumb{background:#3e3e3e;border-radius:100px}.resultsList::-webkit-scrollbar-thumb:hover{background:#585858}.resultsList .resultsItem{padding:0;font-size:0;background:rgba(0,0,0,0);align-items:center}.resultsList .resultsItem:hover{background-color:rgba(0,0,0,0);color:#3e3e3e}.resultsList .resultsItem .searchTerm{display:none}.resultsList .resultsItem .resultsItemImage{border-radius:10px;margin-right:2px;margin-left:8px}.resultsList .resultsItem .resultsItemName{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:20px;color:#2d2926;padding-left:11px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}.searchBarContainer{position:relative;min-width:84px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:20px;padding:0;overflow:hidden;margin:0 26px}.searchBarContainer .searchBarInnerContainer--not-found{width:100%;height:100%;max-height:20px;background-color:rgba(0,0,0,0);box-shadow:none;border-radius:7px;position:static;padding:0}.searchBarContainer .searchBarInnerContainer--not-found .autoCompleteOuterContainer,.searchBarContainer .searchBarInnerContainer--not-found .compactMode{height:100%}.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group){border:none;height:100%;max-width:284px;border-radius:0;margin:0 auto;flex-direction:row-reverse;justify-content:center}.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-input__prefix){display:none}.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input){opacity:1;height:100%;padding:0 0 0 10px;max-width:206px;font-size:12px;line-height:14px;opacity:1}.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder{font-size:16px}.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder{font-size:16px}.searchBarContainer .searchBarInnerContainer--not-found .searchBarIcon{height:100%;width:20px}.searchBarContainer .searchBarInnerContainer--not-found .searchBarIcon .searchIcon{color:#2d2926}.searchBarContainer .searchBarInnerContainer--not-found .searchBarIcon::after{content:unset}.searchBarContainer .searchBarInnerContainer--not-found .resultsList{display:none}:global(.vtex-overlay-layout-0-x-popper--search-bar){transform:none !important;top:0px}:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer{overflow:visible}:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer{background-color:#fff}:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--opened{height:340px}:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found){width:368px;border-radius:7px}:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) :global(.vtex-input-prefix__group){border:1px solid #c0bfbe;border-right:none;background-color:#fff}:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input){opacity:1;padding:0 0 0 45.85px}:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon{background:#ffe133}:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon--search{justify-content:center}:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon .searchIcon{color:#2d2926}:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon::after{color:#2d2926 !important}:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .resultsList{display:block}:global(.vtex-overlay-layout-0-x-popper--search-bar) :global(.vtexarg-speech-to-text-1-x-audioSearchContainer){opacity:1;pointer-events:auto}.productImage--product-quick-view{overflow:hidden;cursor:zoom-in}.productImageTag--product-quick-view{-o-object-fit:contain !important;object-fit:contain !important;aspect-ratio:1/1 !important}.carouselGaleryCursor{width:100%;max-width:530.32px;padding-left:33.08px;margin:0}.carouselGaleryThumbs{max-width:91.92px;position:relative;max-height:497px}.carouselGaleryThumbs:first-child{display:none}.carouselGaleryThumbs .productImagesThumbsSwiperContainer{padding:47.21px 0;position:static}.carouselGaleryThumbs .productImagesThumb{margin-bottom:11.86px;height:100% !important}.carouselGaleryThumbs .productImagesThumb.productImagesThumbActive{border:1px solid #fff4b3;overflow:hidden}.carouselGaleryThumbs .productImagesThumb .figure{margin:0 auto;width:100%;height:100%}.carouselGaleryThumbs .productImagesThumb .figure--product-page--video{position:relative;height:100%}.carouselGaleryThumbs .productImagesThumb .figure--product-page--video::after{display:inline-flex;content:"";font-size:41.54px;font-family:"fantasticon";font-style:normal;font-weight:400;line-height:1;color:#fff;position:absolute;bottom:50%;transform:translateY(50%);right:0;left:0;justify-content:center}.carouselGaleryThumbs .productImagesThumb .figure .thumbImg{height:100%;width:100%}.productImagesThumbCaret{background:#fff;height:35px;width:35px;transition:300ms;pointer-events:initial;padding:0;right:0;left:0;margin:0 auto;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .4s;opacity:1;top:50%;transform:translateY(-50%)}.productImagesThumbCaret:hover{background:#ffda00 !important}.productImagesThumbCaret::after{content:"";width:35px;height:35px;background:rgba(255,255,255,.5);position:absolute;display:block;display:none}.productImagesThumbCaret .caretIcon{width:14px;height:14px;color:#2d2926;transition:all .4s;z-index:1}.productImagesThumbCaret:hover::after{background:#ffda00}.productImagesThumbCaret:hover .caretIcon{color:#2d2926}.productVideo{height:497px}.productVideo .videoContainer{height:100%}.productImageTag{max-height:unset !important;-o-object-fit:cover !important;object-fit:cover !important}.subscriberContainer .title{margin-bottom:12px;font-size:0;text-align:center}.subscriberContainer .title::after{content:"Avise-me";font-family:"Open Sans",sans-serif;font-style:normal;font-weight:bold;font-size:18px;line-height:25px;text-align:center;color:#000;width:100%;text-transform:unset}.subscriberContainer .subscribeLabel{margin:0 auto;margin-bottom:1rem;font-size:0;text-align:center;max-width:340px}.subscriberContainer .subscribeLabel::after{text-align:center;content:"Quer ser informado quando esse produto estiver disponível? Preencha os dados abaixo que nós te avisamos ;)";font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:12px;line-height:14px;color:#000;text-transform:unset}.subscriberContainer .form{margin:0}.subscriberContainer .form .content{max-width:40rem;margin:0 auto;flex-direction:column}.subscriberContainer .form .content .input{margin:0 0 16px}.subscriberContainer .form .content .input.inputName::before{content:"Seu Nome"}.subscriberContainer .form .content .input.inputEmail::before{content:"Seu E-mail"}.subscriberContainer .form .content .input::before{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:700;font-size:14px;line-height:20px;color:#000;margin-bottom:2px;display:block;text-align:left;text-transform:unset}.subscriberContainer .form .content .input :global(.vtex-input-prefix__group){border:.5px solid #aba9a8;box-sizing:border-box;border-radius:7px;height:46px}.subscriberContainer .form .content .input :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input){padding:0 14px;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:17px;color:#3e3e3e}.subscriberContainer .form .content .input :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder{color:#aba9a8}.subscriberContainer .form .content .input :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder{color:#aba9a8}.subscriberContainer .form .content .input :global(.vtex-input__error){font-family:"Open Sans",sans-serif;font-style:normal;font-weight:700;font-size:12px;line-height:14px;color:#d83613;margin-top:4px}.subscriberContainer .form .content .submit :global(.vtex-button){width:100%;height:45px;background:#2d2926;border:1px solid #2d2926;box-sizing:border-box;border-radius:5px;cursor:pointer;transition:all .4s}.subscriberContainer .form .content .submit :global(.vtex-button) :global(.vtex-button__label){font-size:0}.subscriberContainer .form .content .submit :global(.vtex-button) :global(.vtex-button__label)::after{content:"Avise-me quando chegar";font-family:"Open Sans",sans-serif;font-style:normal;font-weight:bold;font-size:16px;line-height:19px;text-align:center;color:#fff;transition:all .4s;text-transform:unset;text-transform:none}.subscriberContainer .form .content .submit :global(.vtex-button):hover{background:#575451}.subscriberContainer .form .content .submit :global(.vtex-button):disabled{border-color:#817f7d;background-color:#817f7d;cursor:not-allowed}.subscriberContainer .form .error{color:#d83613;font-size:14px;font-weight:700;text-align:center}.subscriberContainer .form .success{color:#44b32e;font-size:14px;font-weight:700;text-align:center}.searchBarContainer .searchBarInnerContainer--page-search-empty{max-height:33px}.searchBarContainer .searchBarInnerContainer--page-search-empty :global(.vtex-input-prefix__group){justify-content:start;padding-left:10px}.searchBarContainer .searchBarInnerContainer--page-search-empty :global(.vtex-input-prefix__group)::after{content:none}.searchBarContainer .searchBarInnerContainer--page-search-empty :global(.vtex-styleguide-9-x-input)::-moz-placeholder{font-size:12px !important}.searchBarContainer .searchBarInnerContainer--page-search-empty :global(.vtex-styleguide-9-x-input)::placeholder{font-size:12px !important}.searchBarIcon--search{justify-content:start}.container{padding:0}@media screen and (max-width: 1024px){.searchBarIcon .searchIcon{width:28px;height:28px}.resultsList{margin:0;position:initial}.searchBarContainer{overflow:visible;height:52px;max-width:initial !important;margin:0;padding:4px 0;z-index:1}.searchBarContainer .searchBarInnerContainer{width:100%;height:100%;background-color:rgba(0,0,0,0);box-shadow:none;border-radius:7px;z-index:9999;position:static;padding:0}.searchBarContainer .autoCompleteOuterContainer,.searchBarContainer .compactMode{height:100%}.searchBarContainer :global(.vtex-input-prefix__group){border:none;position:relative;height:100%;border-radius:0;margin:0 auto;justify-content:center;padding-bottom:14px;padding-top:10px}.searchBarContainer :global(.vtex-input-prefix__group)::after{content:"";position:absolute;width:100%;height:1px;bottom:0;background-color:rgba(37,37,37,.5)}.searchBarContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input){opacity:1;height:100%;padding:0 0 0 10px;max-width:calc(100% - 112px);text-align:center;font-size:12px;font-family:inherit}.searchBarContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder{font-size:12px;color:#817f7d;font-family:inherit}.searchBarContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder{font-size:12px;color:#817f7d;font-family:inherit}.searchBarContainer .searchBarIcon{height:100%;width:28px;top:-10px;margin-right:-1px;right:16px;position:absolute}.searchBarContainer .searchBarIcon .searchIcon{color:#2d2926}.searchBarContainer .searchBarIcon::after{content:unset}.searchBarContainer .resultsList{display:block;background:#fff;width:100%;left:50%;right:0;transform:translateX(-50%)}.productImagesContainer{margin-bottom:30px}.carouselGaleryCursor{padding-left:0;margin:0 auto}.carouselGaleryThumbs .productImagesThumbsSwiperContainer{padding:0 41.29px}.carouselGaleryThumbs{margin-left:auto;margin-right:auto;max-width:425.53px;max-height:initial}.carouselGaleryThumbs .productImagesThumb{margin:auto 5px;width:77px !important}.carouselGaleryThumbs .productImagesThumb.productImagesThumbActive{border:none}.carouselGaleryThumbs .productImagesThumb.productImagesThumbActive .figure{border:1px solid #ffda00}.productImagesThumbCaret.gradientBaseRight{right:-1px;left:initial}.productImagesThumbCaret.gradientBaseLeft{left:-1px;right:initial}.autoCompleteOuterContainer--not-found .searchBarIcon--not-found{position:unset !important}}@media screen and (max-width: 1024px)and (max-width: 1024px){.searchBarContainer :global(.vtex-input-prefix__group){max-width:480px}.searchBarContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input){padding:0 !important}.searchBarContainer .searchBarIcon{top:0;right:24px}.searchBarContainer .resultsList{transform:none;max-width:none}}@media screen and (max-width: 1024px)and (max-width: 640px){.searchBarContainer :global(.vtex-input-prefix__group){max-width:284px}}@media screen and (max-width: 638px){.carouselGaleryThumbs{display:block}}
+.searchBarInnerContainer {
+    padding: 8px 4px;
+    position: absolute;
+    right: 33px;
+    overflow: hidden;
+    width: 368px;
+    top: -26px
+}
+
+.searchBarInnerContainer--filled {
+    background-color: #fff
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) {
+    overflow: visible;
+    max-width: 368px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    height: 49px;
+    border: none
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-input__suffix) {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+    border: none !important;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0) !important;
+    opacity: 0;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 19px;
+    color: #2d2926 !important
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder {
+    font-size: 12px;
+    font-weight: normal
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+    font-size: 12px;
+    font-weight: normal
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder {
+    color: #3e3e3e
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: #3e3e3e
+}
+
+.searchBarIcon {
+    padding: 0;
+    margin-top: -1px;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 104px;
+    height: 49px;
+    justify-content: center
+}
+
+.searchBarIcon .searchIcon {
+    color: #2d2926;
+    width: 20px;
+    height: 20px
+}
+
+.searchBarIcon::after {
+    content: "Buscar";
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #2d2926;
+    margin-left: 10px
+}
+
+.resultsList {
+    background-color: #fff;
+    border: none;
+    width: 360px;
+    margin: 5px 0 0 0;
+    padding: 0 0 3.9px 0;
+    max-height: 277px;
+    overflow-y: auto;
+    padding: 0;
+    display: none;
+    position: absolute
+}
+
+.resultsList::-webkit-scrollbar {
+    width: 5px;
+    height: 5px
+}
+
+.resultsList::-webkit-scrollbar-track {
+    background: #ede8ec;
+    border-radius: 100px
+}
+
+.resultsList ::-moz-scrollbar-button,
+.resultsList ::-webkit-scrollbar-button {
+    width: 0px
+}
+
+.resultsList::-webkit-scrollbar-thumb {
+    background: #3e3e3e;
+    border-radius: 100px
+}
+
+.resultsList::-webkit-scrollbar-thumb:hover {
+    background: #585858
+}
+
+.resultsList .resultsItem {
+    padding: 0;
+    font-size: 0;
+    background: rgba(0, 0, 0, 0);
+    align-items: center
+}
+
+.resultsList .resultsItem:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #3e3e3e
+}
+
+.resultsList .resultsItem .searchTerm {
+    display: none
+}
+
+.resultsList .resultsItem .resultsItemImage {
+    border-radius: 10px;
+    margin-right: 2px;
+    margin-left: 8px
+}
+
+.resultsList .resultsItem .resultsItemName {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2d2926;
+    padding-left: 11px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden
+}
+
+.searchBarContainer {
+    position: relative;
+    min-width: 84px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 20px;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 26px
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found {
+    width: 100%;
+    height: 100%;
+    max-height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    border-radius: 7px;
+    position: static;
+    padding: 0
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found .autoCompleteOuterContainer,
+.searchBarContainer .searchBarInnerContainer--not-found .compactMode {
+    height: 100%
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) {
+    border: none;
+    height: 100%;
+    max-width: 284px;
+    border-radius: 0;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-input__prefix) {
+    display: none
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+    opacity: 1;
+    height: 100%;
+    padding: 0 0 0 10px;
+    max-width: 206px;
+    font-size: 12px;
+    line-height: 14px;
+    opacity: 1
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder {
+    font-size: 16px
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+    font-size: 16px
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found .searchBarIcon {
+    height: 100%;
+    width: 20px
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found .searchBarIcon .searchIcon {
+    color: #2d2926
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found .searchBarIcon::after {
+    content: unset
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found .resultsList {
+    display: none
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) {
+    transform: none !important;
+    top: 0px
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer {
+    overflow: visible
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer {
+    background-color: #fff
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--opened {
+    height: 340px
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) {
+    width: 368px;
+    border-radius: 7px
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) :global(.vtex-input-prefix__group) {
+    border: 1px solid #c0bfbe;
+    border-right: none;
+    background-color: #fff
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+    opacity: 1;
+    padding: 0 0 0 45.85px
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon {
+    background: #ffe133
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon--search {
+    justify-content: center
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon .searchIcon {
+    color: #2d2926
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon::after {
+    color: #2d2926 !important
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .resultsList {
+    display: block
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) :global(.vtexarg-speech-to-text-1-x-audioSearchContainer) {
+    opacity: 1;
+    pointer-events: auto
+}
+
+.productImage--product-quick-view {
+    overflow: hidden;
+    cursor: zoom-in
+}
+
+.productImageTag--product-quick-view {
+    -o-object-fit: contain !important;
+    object-fit: contain !important;
+    aspect-ratio: 1/1 !important
+}
+
+.carouselGaleryCursor {
+    width: 100%;
+    max-width: 530.32px;
+    padding-left: 33.08px;
+    margin: 0
+}
+
+.carouselGaleryThumbs {
+    max-width: 91.92px;
+    position: relative;
+    max-height: 497px
+}
+
+.carouselGaleryThumbs:first-child {
+    display: none
+}
+
+.carouselGaleryThumbs .productImagesThumbsSwiperContainer {
+    padding: 47.21px 0;
+    position: static
+}
+
+.carouselGaleryThumbs .productImagesThumb {
+    margin-bottom: 11.86px;
+    height: 100% !important
+}
+
+.carouselGaleryThumbs .productImagesThumb.productImagesThumbActive {
+    border: 1px solid #fff4b3;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+.carouselGaleryThumbs .productImagesThumb .figure {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 11px
+}
+
+.carouselGaleryThumbs .productImagesThumb .figure--product-page--video {
+    position: relative;
+    height: 100%
+}
+
+.carouselGaleryThumbs .productImagesThumb .figure--product-page--video::after {
+    display: inline-flex;
+    content: "";
+    font-size: 41.54px;
+    font-family: "fantasticon";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 0;
+    left: 0;
+    justify-content: center
+}
+
+.carouselGaleryThumbs .productImagesThumb .figure .thumbImg {
+    height: 100%;
+    width: 100%;
+    border-radius: 11px
+}
+
+.productImagesThumbCaret {
+    background: #fff;
+    height: 35px;
+    width: 35px;
+    transition: 300ms;
+    pointer-events: initial;
+    padding: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .4s;
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.productImagesThumbCaret:hover {
+    background: #ffda00 !important
+}
+
+.productImagesThumbCaret::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, .5);
+    position: absolute;
+    display: block;
+    display: none
+}
+
+.productImagesThumbCaret .caretIcon {
+    width: 14px;
+    height: 14px;
+    color: #2d2926;
+    transition: all .4s;
+    z-index: 1
+}
+
+.productImagesThumbCaret:hover::after {
+    background: #ffda00
+}
+
+.productImagesThumbCaret:hover .caretIcon {
+    color: #2d2926
+}
+
+.productVideo {
+    height: 497px
+}
+
+.productVideo .videoContainer {
+    height: 100%
+}
+
+.productImageTag {
+    max-height: unset !important;
+    -o-object-fit: cover !important;
+    object-fit: cover !important
+}
+
+.subscriberContainer .title {
+    margin-bottom: 12px;
+    font-size: 0;
+    text-align: center
+}
+
+.subscriberContainer .title::after {
+    content: "Avise-me";
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    text-transform: unset
+}
+
+.subscriberContainer .subscribeLabel {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 0;
+    text-align: center;
+    max-width: 340px
+}
+
+.subscriberContainer .subscribeLabel::after {
+    text-align: center;
+    content: "Quer ser informado quando esse produto estiver disponível? Preencha os dados abaixo que nós te avisamos ;)";
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    text-transform: unset
+}
+
+.subscriberContainer .form {
+    margin: 0
+}
+
+.subscriberContainer .form .content {
+    max-width: 40rem;
+    margin: 0 auto;
+    flex-direction: column
+}
+
+.subscriberContainer .form .content .input {
+    margin: 0 0 16px
+}
+
+.subscriberContainer .form .content .input.inputName::before {
+    content: "Seu Nome"
+}
+
+.subscriberContainer .form .content .input.inputEmail::before {
+    content: "Seu E-mail"
+}
+
+.subscriberContainer .form .content .input::before {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    margin-bottom: 2px;
+    display: block;
+    text-align: left;
+    text-transform: unset
+}
+
+.subscriberContainer .form .content .input :global(.vtex-input-prefix__group) {
+    border: .5px solid #aba9a8;
+    box-sizing: border-box;
+    border-radius: 7px;
+    height: 46px
+}
+
+.subscriberContainer .form .content .input :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+    padding: 0 14px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #3e3e3e
+}
+
+.subscriberContainer .form .content .input :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder {
+    color: #aba9a8
+}
+
+.subscriberContainer .form .content .input :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: #aba9a8
+}
+
+.subscriberContainer .form .content .input :global(.vtex-input__error) {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #d83613;
+    margin-top: 4px
+}
+
+.subscriberContainer .form .content .submit :global(.vtex-button) {
+    width: 100%;
+    height: 45px;
+    background: #2d2926;
+    border: 1px solid #2d2926;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s
+}
+
+.subscriberContainer .form .content .submit :global(.vtex-button) :global(.vtex-button__label) {
+    font-size: 0
+}
+
+.subscriberContainer .form .content .submit :global(.vtex-button) :global(.vtex-button__label)::after {
+    content: "Avise-me quando chegar";
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    transition: all .4s;
+    text-transform: unset;
+    text-transform: none
+}
+
+.subscriberContainer .form .content .submit :global(.vtex-button):hover {
+    background: #575451
+}
+
+.subscriberContainer .form .content .submit :global(.vtex-button):disabled {
+    border-color: #817f7d;
+    background-color: #817f7d;
+    cursor: not-allowed
+}
+
+.subscriberContainer .form .error {
+    color: #d83613;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center
+}
+
+.subscriberContainer .form .success {
+    color: #44b32e;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center
+}
+
+.searchBarContainer .searchBarInnerContainer--page-search-empty {
+    max-height: 33px
+}
+
+.searchBarContainer .searchBarInnerContainer--page-search-empty :global(.vtex-input-prefix__group) {
+    justify-content: start;
+    padding-left: 10px
+}
+
+.searchBarContainer .searchBarInnerContainer--page-search-empty :global(.vtex-input-prefix__group)::after {
+    content: none
+}
+
+.searchBarContainer .searchBarInnerContainer--page-search-empty :global(.vtex-styleguide-9-x-input)::-moz-placeholder {
+    font-size: 12px !important
+}
+
+.searchBarContainer .searchBarInnerContainer--page-search-empty :global(.vtex-styleguide-9-x-input)::placeholder {
+    font-size: 12px !important
+}
+
+.searchBarIcon--search {
+    justify-content: start
+}
+
+.container {
+    padding: 0
+}
+
+@media screen and (max-width: 1024px) {
+    .searchBarIcon .searchIcon {
+        width: 28px;
+        height: 28px
+    }
+
+    .resultsList {
+        margin: 0;
+        position: initial
+    }
+
+    .searchBarContainer {
+        overflow: visible;
+        height: 52px;
+        max-width: initial !important;
+        margin: 0;
+        padding: 4px 0;
+        z-index: 1
+    }
+
+    .searchBarContainer .searchBarInnerContainer {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        border-radius: 7px;
+        z-index: 9999;
+        position: static;
+        padding: 0
+    }
+
+    .searchBarContainer .autoCompleteOuterContainer,
+    .searchBarContainer .compactMode {
+        height: 100%
+    }
+
+    .searchBarContainer :global(.vtex-input-prefix__group) {
+        border: none;
+        position: relative;
+        height: 100%;
+        border-radius: 0;
+        margin: 0 auto;
+        justify-content: center;
+        padding-bottom: 14px;
+        padding-top: 10px
+    }
+
+    .searchBarContainer :global(.vtex-input-prefix__group)::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        background-color: rgba(37, 37, 37, .5)
+    }
+
+    .searchBarContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+        opacity: 1;
+        height: 100%;
+        padding: 0 0 0 10px;
+        max-width: calc(100% - 112px);
+        text-align: center;
+        font-size: 12px;
+        font-family: inherit
+    }
+
+    .searchBarContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder {
+        font-size: 12px;
+        color: #817f7d;
+        font-family: inherit
+    }
+
+    .searchBarContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+        font-size: 12px;
+        color: #817f7d;
+        font-family: inherit
+    }
+
+    .searchBarContainer .searchBarIcon {
+        height: 100%;
+        width: 28px;
+        top: -10px;
+        margin-right: -1px;
+        right: 16px;
+        position: absolute
+    }
+
+    .searchBarContainer .searchBarIcon .searchIcon {
+        color: #2d2926
+    }
+
+    .searchBarContainer .searchBarIcon::after {
+        content: unset
+    }
+
+    .searchBarContainer .resultsList {
+        display: block;
+        background: #fff;
+        width: 100%;
+        left: 50%;
+        right: 0;
+        transform: translateX(-50%)
+    }
+
+    .productImagesContainer {
+        margin-bottom: 30px
+    }
+
+    .carouselGaleryCursor {
+        padding-left: 0;
+        margin: 0 auto
+    }
+
+    .carouselGaleryThumbs .productImagesThumbsSwiperContainer {
+        padding: 0 41.29px
+    }
+
+    .carouselGaleryThumbs {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 425.53px;
+        max-height: initial
+    }
+
+    .carouselGaleryThumbs .productImagesThumb {
+        margin: auto 5px;
+        width: 77px !important
+    }
+
+    .carouselGaleryThumbs .productImagesThumb.productImagesThumbActive {
+        border: none
+    }
+
+    .carouselGaleryThumbs .productImagesThumb.productImagesThumbActive .figure {
+        border: 1px solid #ffda00
+    }
+
+    .productImagesThumbCaret.gradientBaseRight {
+        right: -1px;
+        left: initial
+    }
+
+    .productImagesThumbCaret.gradientBaseLeft {
+        left: -1px;
+        right: initial
+    }
+
+    .autoCompleteOuterContainer--not-found .searchBarIcon--not-found {
+        position: unset !important
+    }
+}
+
+@media screen and (max-width: 1024px)and (max-width: 1024px) {
+    .searchBarContainer :global(.vtex-input-prefix__group) {
+        max-width: 480px
+    }
+
+    .searchBarContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+        padding: 0 !important
+    }
+
+    .searchBarContainer .searchBarIcon {
+        top: 0;
+        right: 24px
+    }
+
+    .searchBarContainer .resultsList {
+        transform: none;
+        max-width: none
+    }
+}
+
+@media screen and (max-width: 1024px)and (max-width: 640px) {
+    .searchBarContainer :global(.vtex-input-prefix__group) {
+        max-width: 284px
+    }
+}
+
+@media screen and (max-width: 638px) {
+    .carouselGaleryThumbs {
+        display: block
+    }
+}

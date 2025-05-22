@@ -1,0 +1,55 @@
+// Banner expandido mobile - destaque produto ou marca
+{
+    "container#custom-block__banner-fulfill-mob": {
+        "title": "Banner Tela Completa Mobile",
+        "children": [
+            "list-context.image-list#banner-fulfill-mob"
+        ],
+        "props": {
+            "blockClass": ["custom-block__banner-fulfill", "custom-block__banner-fulfill-mob"]
+        }
+    },
+
+    "list-context.image-list#banner-fulfill-mob": {
+        "title": "Imagens",
+        "props": {
+            "preload": false,
+            "height": "480px",
+            "experimentalSetExplicitDimensions": true,
+            "images": [
+                {
+                    //"image": "https://dummyimage.com/383x680",
+                    "mobileImage": "https://dummyimage.com/376x480",
+                    "width": "376px",
+                    "description": "atributo alt",
+                    "loading": "lazy"
+                },
+                {
+                    //"image": "https://dummyimage.com/383x680",
+                    "mobileImage": "https://dummyimage.com/376x480",
+                    "width": "376px",
+                    "description": "atributo alt",
+                    "loading": "lazy"
+                }
+            ]
+        },
+        "children": ["slider-layout#banner-fulfill-mob"]
+    },
+    "slider-layout#banner-fulfill-mob": {
+        "title": "Configurações Carrossel Imagens",
+        "props": {
+            "itemsPerPage": {
+                "phone": 1
+            },
+            "showNavigationArrows": "never",
+            "usePagination": true, // - Propriedade interessante para criar 'slides' para mobile, mais leves e sem o classico slick carousel - usar em outros elemementos
+            "showPaginationDots": "mobileOnly",
+            "infinite": true,
+            "autoplay": {
+                "timeout": 3000,
+                "stopOnHover": true
+            },
+            "blockClass": ["slider-custom", "slider__custom-photo-grid"] // ver se da pra reaproveitar essas classes
+        }
+    }
+}
