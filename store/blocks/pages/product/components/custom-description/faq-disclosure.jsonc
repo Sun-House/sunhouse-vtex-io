@@ -66,7 +66,7 @@
     "rich-text#faq-disclosure-line-1__title": {
         "title": "Linha 1 - Título",
         "props": {
-            "text": "### Título da pergunta 1 da FAQ - Máximo 1 linha",
+            "text": "## Título da pergunta 1 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -110,7 +110,7 @@
     "rich-text#faq-disclosure-line-2__title": {
         "title": "Linha 2 - Título",
         "props": {
-            "text": "### Título da pergunta 2 da FAQ - Máximo 1 linha",
+            "text": "## Título da pergunta 2 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -154,7 +154,7 @@
     "rich-text#faq-disclosure-line-3__title": {
         "title": "Linha 3 - Título",
         "props": {
-            "text": "### Título da pergunta 3 da FAQ - Máximo 1 linha",
+            "text": "## Título da pergunta 3 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -198,7 +198,7 @@
     "rich-text#faq-disclosure-line-4__title": {
         "title": "Linha 4 - Título",
         "props": {
-            "text": "### Título da pergunta 4 da FAQ - Máximo 1 linha",
+            "text": "## Título da pergunta 4 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -242,7 +242,7 @@
     "rich-text#faq-disclosure-line-5__title": {
         "title": "Linha 5 - Título",
         "props": {
-            "text": "### Título da pergunta 5 da FAQ - Máximo 1 linha",
+            "text": "## Título da pergunta 5 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -286,7 +286,7 @@
     "rich-text#faq-disclosure-line-6__title": {
         "title": "Linha 6 - Título",
         "props": {
-            "text": "### Título da pergunta 6 da FAQ - Máximo 1 linha",
+            "text": "## Título da pergunta 6 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -330,7 +330,7 @@
     "rich-text#faq-disclosure-line-7__title": {
         "title": "Linha 7 - Título",
         "props": {
-            "text": "### Título da pergunta 7 da FAQ - Máximo 1 linha",
+            "text": "## Título da pergunta 7 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },

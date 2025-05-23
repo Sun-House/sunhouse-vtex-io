@@ -101,4 +101,14 @@
         font-size: 24px
     }
 
+    /* FAQ*/
+    .wrapper--faq-disclosure-line__title .heading {
+        font-size: 15px;
+        margin-top: 12px;
+        margin-bottom: 12px
+    }
+    
+    .wrapper--faq-disclosure-line__text .paragraph {
+        font-size: 15px
+    }
 }
