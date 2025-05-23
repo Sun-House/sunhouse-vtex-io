@@ -28,11 +28,11 @@
     },
     "container#custom-block__faq-disclosure": {
         "children": [
-            "disclosure-layout#faq-disclosure-line-1", // Texto normal
-            "disclosure-layout#faq-disclosure-line-2", // Mais de um paragrafo com quebra de linha
-            "disclosure-layout#faq-disclosure-line-3", // com topicos
-            "disclosure-layout#faq-disclosure-line-4", // com links
-            "disclosure-layout#faq-disclosure-line-5", // com fotos??
+            "disclosure-layout#faq-disclosure-line-1",
+            "disclosure-layout#faq-disclosure-line-2",
+            "disclosure-layout#faq-disclosure-line-3",
+            "disclosure-layout#faq-disclosure-line-4",
+            "disclosure-layout#faq-disclosure-line-5",
             "disclosure-layout#faq-disclosure-line-6",
             "disclosure-layout#faq-disclosure-line-7"
         ],
@@ -66,7 +66,7 @@
     "rich-text#faq-disclosure-line-1__title": {
         "title": "Linha 1 - Título",
         "props": {
-            "text": "### Título da pergunta da FAQ - Máximo 1 linha",
+            "text": "### Título da pergunta 1 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -81,7 +81,7 @@
     "rich-text#faq-disclosure-line-1__text": {
         "title": "Linha 1 - Texto",
         "props": {
-            "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. Quisque ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci. \n \n Nunc vitae nunc purus. Nam tincidunt enim neque, quis ultrices felis convallis sit amet. Nullam dapibus laoreet venenatis. Vestibulum ullamcorper a massa vel convallis. Donec congue libero sed tortor varius tincidunt.",
+            "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. [Quisque](#) ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci. \n \n Nunc vitae nunc purus. Nam tincidunt enim neque, quis ultrices felis convallis sit amet. Nullam dapibus laoreet venenatis. Vestibulum ullamcorper a massa vel convallis. Donec congue libero sed tortor varius tincidunt.",
             "blockClass": "faq-disclosure-line__text"
         }
     },
@@ -110,7 +110,7 @@
     "rich-text#faq-disclosure-line-2__title": {
         "title": "Linha 2 - Título",
         "props": {
-            "text": "### Título da pergunta da FAQ - Máximo 1 linha",
+            "text": "### Título da pergunta 2 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -154,7 +154,7 @@
     "rich-text#faq-disclosure-line-3__title": {
         "title": "Linha 3 - Título",
         "props": {
-            "text": "### Título da pergunta da FAQ - Máximo 1 linha",
+            "text": "### Título da pergunta 3 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -198,7 +198,7 @@
     "rich-text#faq-disclosure-line-4__title": {
         "title": "Linha 4 - Título",
         "props": {
-            "text": "### Título da pergunta da FAQ - Máximo 1 linha",
+            "text": "### Título da pergunta 4 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -242,7 +242,7 @@
     "rich-text#faq-disclosure-line-5__title": {
         "title": "Linha 5 - Título",
         "props": {
-            "text": "### Título da pergunta da FAQ - Máximo 1 linha",
+            "text": "### Título da pergunta 5 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -286,7 +286,7 @@
     "rich-text#faq-disclosure-line-6__title": {
         "title": "Linha 6 - Título",
         "props": {
-            "text": "### Título da pergunta da FAQ - Máximo 1 linha",
+            "text": "### Título da pergunta 6 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },
@@ -330,7 +330,7 @@
     "rich-text#faq-disclosure-line-7__title": {
         "title": "Linha 7 - Título",
         "props": {
-            "text": "### Título da pergunta da FAQ - Máximo 1 linha",
+            "text": "### Título da pergunta 7 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
         }
     },

@@ -3,12 +3,17 @@
 }
 
 .heading,
-.paragraph,
-.link {
+/* .link, */
+.paragraph {
     margin: 0;
     padding: 0;
     line-height: 1;
     color: #2d2926
+}
+
+/* Setando padrao essa cor para todos os links do site */
+.link {
+    color: #F90041
 }
 
 :global(.vtex-store__template) {

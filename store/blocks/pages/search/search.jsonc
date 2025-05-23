@@ -1,4 +1,3 @@
-// ver https://developers.vtex.com/docs/apps/vtex.search-result para aplicar infinite scroll nas categorias e afins
 {
   "store.search": {
     "blocks": [

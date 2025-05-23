@@ -3,7 +3,8 @@
     border: none;
     background-color: transparent;
     padding: 0;
-    height: 59px;
+    min-height: 59px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
