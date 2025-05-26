@@ -1,0 +1,12 @@
+{
+    "routes": {
+        "store.product": {
+            "path": "/:slug/p",
+            "render": "server"
+        }
+    },
+
+    "store.product": {
+        "render": "server"
+    }
+}
