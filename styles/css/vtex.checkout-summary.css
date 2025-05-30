@@ -21,7 +21,8 @@
 }*/
 
 .summaryItemContainer .summaryItemLabel {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -37,10 +38,16 @@
 }*/
 
 .summaryItemContainer .summaryItemPrice {
-    font-family: "Open Sans", sans-serif;
+    /* EM TESTES */
+        /* font-family: "Open Sans", sans-serif; */
+        font-family: "Bebas Neue", "Montserrat", "Open Sans", sans-serif;
+        /* font-size: 14px; */
+        font-size: 20px;
+    /* EM TESTES */
+
     font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
+    /* font-weight: bold; */
+    /* FONT-SIZE VAI AQUI */
     line-height: 20px;
     display: flex;
     align-items: center;

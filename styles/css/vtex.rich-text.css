@@ -304,7 +304,8 @@
 }
 
 .paragraph--top-header {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -324,7 +325,8 @@
 }
 
 .paragraph--login-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -346,7 +348,8 @@
     width: 100%;
     text-align: center;
     margin: 0 0 15px 0;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -376,7 +379,8 @@
 }
 
 .paragraph--minicart-title {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -386,7 +390,8 @@
 }
 
 .paragraph--minicart-remove {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -395,7 +400,7 @@
 }
 
 .paragraph--footer-quantity {
-    font-family: #ffe133;
+    font-family: #ffe133; /* AJUSTAR */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -406,7 +411,8 @@
 }
 
 .strong--top-header {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -417,7 +423,8 @@
 
 .link--text-unlogged {
     display: block;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -486,7 +493,8 @@
 }
 
 .headingLevel3--common-title {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -496,7 +504,8 @@
 }
 
 .paragraph--common-title {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-size: 14px;
     line-height: 17px;
@@ -505,7 +514,8 @@
 }
 
 .paragraph--shelf-product-unavailable {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
@@ -521,7 +531,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
@@ -529,8 +540,26 @@
     margin-bottom: 10px
 }
 
+/* Unavailable CTA Block */
+.wrapper--unavailable-cta_text {
+    margin-top: 24px
+}
+
+.wrapper--unavailable-cta_text .heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center
+}
+
+.paragraph--unavailable-cta_text {
+    text-align: justify;
+    line-height: 1.35
+}
+
 .paragraph--quick-view {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -539,7 +568,8 @@
 }
 
 .paragraph--shelf-banner-button-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -805,7 +835,8 @@
 }
 
 .paragraph--diferentials-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -814,7 +845,8 @@
 }
 
 .paragraph--categories-title {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-size: 25px;
     line-height: 29px;
@@ -990,7 +1022,8 @@
 }
 
 .paragraph--product-zoom-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -1000,7 +1033,8 @@
 }
 
 .paragraph--installments-trigger {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1011,7 +1045,8 @@
 }
 
 .paragraph--product-security-buy-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -1021,7 +1056,8 @@
 }
 
 .paragraph--shipping-calculate {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1033,7 +1069,8 @@
 
 .paragraph--product-description-title,
 .paragraph--product-specs-title {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1042,7 +1079,8 @@
 }
 
 .paragraph--measurement-guide {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1053,7 +1091,8 @@
 }
 
 .paragraph--measurement-guide-informations-bottom {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-size: 12px;
     line-height: 14px;
@@ -1061,7 +1100,8 @@
 }
 
 .strong--measurement-guide-informations-bottom .link {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-size: 12px;
     line-height: 14px;
@@ -1071,7 +1111,8 @@
 
 .headingLevel4--measurement-guide-title {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -1117,7 +1158,8 @@
 }
 
 .paragraph--not-found-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1127,7 +1169,8 @@
 }
 
 .paragraph--not-found-text-bottom {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1143,6 +1186,12 @@
     line-height: 19px;
     color: #2d2926;
     opacity: .8
+}
+
+.list--search-seo {
+    font-size: 14px;
+    color: #2d2926;
+    margin-left: 0
 }
 
 .paragraph--seo-result-text {
@@ -1183,7 +1232,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

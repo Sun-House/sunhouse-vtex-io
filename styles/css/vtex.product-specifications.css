@@ -1,1 +1,37 @@
-.specificationName{padding:10px 20px;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:700;font-size:14px;line-height:19px;text-transform:unset;text-align:left}.specificationValue{padding:10px 20px;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:19px;text-transform:unset;text-align:left}.specificationValue--measurement-guide-value{font-size:12px;line-height:14px}.specificationValue--measurement-guide-value[data-specification-name*=Titulo]{font-weight:700;margin-bottom:5px}.specificationValue--measurement-guide-value:not([data-specification-name*=Titulo]){margin-bottom:11px}
+.specificationName {
+    padding: 10px 20px;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: unset;
+    text-align: left
+}
+
+.specificationValue {
+    padding: 10px 20px;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: unset;
+    text-align: left
+}
+
+.specificationValue--measurement-guide-value {
+    font-size: 12px;
+    line-height: 14px
+}
+
+.specificationValue--measurement-guide-value[data-specification-name*=Titulo] {
+    font-weight: 700;
+    margin-bottom: 5px
+}
+
+.specificationValue--measurement-guide-value:not([data-specification-name*=Titulo]) {
+    margin-bottom: 11px
+}

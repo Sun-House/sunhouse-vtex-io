@@ -195,7 +195,11 @@
 }
 
 .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem .skuSelectorInternalBox .valueWrapper {
-    font-family: "Open Sans", sans-serif;
+    /* EM TESTES */
+        /* font-family: "Open Sans", sans-serif; */
+        font-family: "Bebas Neue", "Montserrat", "Open Sans", sans-serif;
+    /* EM TESTES */
+
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -236,14 +240,21 @@
     padding: 3px 0;
     background-color: rgba(249, 0, 65, .8);
     border: none;
-    font-weight: 700 !important;
+    /* font-weight: 700 !important; */
     text-transform: uppercase !important;
     box-sizing: border-box;
     border-radius: 5px;
-    font-family: "Open Sans", sans-serif;
+    
+    /* EM TESTES */
+        /* font-family: "Open Sans", sans-serif; */
+        font-family: "Bebas Neue", "Montserrat", "Open Sans", sans-serif;
+        /* font-size: 14px; */
+        font-size: 18px;
+    /* EM TESTES */
+    
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    /* FONT-SIZE VAI AQUI */
     line-height: 19px;
     text-align: center;
     color: #fff;
@@ -380,7 +391,8 @@
 }
 
 .productBrandContainer .productBrandName {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     text-decoration: none;
     font-style: normal;
     font-size: 12px;
@@ -498,7 +510,8 @@
 }
 
 .productDescriptionText {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

@@ -406,7 +406,8 @@
 }
 
 .flexRowContent--go-top-product :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonText) {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

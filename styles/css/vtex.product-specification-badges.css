@@ -1,1 +1,53 @@
-.groupContainer{height:31px;margin:0;flex-direction:row;align-items:center;width:100%}.groupContainer--seal-shelf{margin-top:-31px}.groupContainer--product-page{-moz-column-gap:20px;column-gap:20px;padding-top:15px}.groupContainer--product-page .badgeContainer{max-width:215.09px}.groupContainer .badgeContainer{height:31px;margin:0;width:100%;justify-content:center;align-items:center}.groupContainer .badgeContainer--product-composition .badgeText--product-composition{color:#252525 !important}.groupContainer .badgeContainer--selo-editavel-1{background-color:#ffe133}.groupContainer .badgeContainer--selo-editavel-2{background-color:#000}.groupContainer .badgeContainer .badgeText{margin:0;font-family:"Open Sans",sans-serif;text-transform:uppercase;font-style:normal;font-weight:400;font-size:14px;line-height:17px;color:#fff}
+.groupContainer {
+    height: 31px;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    width: 100%
+}
+
+.groupContainer--seal-shelf {
+    margin-top: -31px
+}
+
+.groupContainer--product-page {
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    padding-top: 15px
+}
+
+.groupContainer--product-page .badgeContainer {
+    max-width: 215.09px
+}
+
+.groupContainer .badgeContainer {
+    height: 31px;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center
+}
+
+.groupContainer .badgeContainer--product-composition .badgeText--product-composition {
+    color: #252525 !important
+}
+
+.groupContainer .badgeContainer--selo-editavel-1 {
+    background-color: #ffe133
+}
+
+.groupContainer .badgeContainer--selo-editavel-2 {
+    background-color: #000
+}
+
+.groupContainer .badgeContainer .badgeText {
+    margin: 0;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff
+}

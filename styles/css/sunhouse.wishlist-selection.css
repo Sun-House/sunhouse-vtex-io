@@ -1,1 +1,283 @@
-.wishlistSelectionNavbar{position:relative;justify-content:flex-start;gap:20px}.wishlistSelectionCheckbox :global(.vtex-checkbox__inner-container){border:1px solid #998300;border-radius:3px;margin-right:4.64px}.wishlistSelectionCheckbox :global(.vtex-checkbox__label){font-family:"Open Sans",sans-serif;font-style:normal;text-transform:uppercase;font-weight:400;font-size:14px;line-height:17px;color:#2d2926;white-space:nowrap}.wishlistAddToCart{background-color:#44b32e;color:#fff;border-radius:50%;padding:7px 8.5px;display:flex;align-items:center;cursor:pointer;max-width:35px;height:35px;overflow:hidden;transition:max-width .4s}.wishlistAddToCart.wishlistAddToCartDisabled{pointer-events:none;background-color:#2d2926}.wishlistAddToCart .cartIcon{width:18px;height:18px}.wishlistAddToCart :global(.vtex-button){min-height:initial;border:none;background-color:rgba(0,0,0,0);color:inherit;width:0;overflow:hidden}.wishlistAddToCart :global(.vtex-button) :global(.vtex-button__label){padding:0 !important;text-transform:none;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:400;font-size:12px;line-height:17px;text-transform:uppercase;white-space:nowrap}.wishlistAddToCart :global(.vtex-button) :hover{border:none;background-color:rgba(0,0,0,0);color:inherit}.wishlistAddToCart:hover{max-width:254.03px;width:145%;border-radius:20px 4px 4px 20px}.wishlistAddToCart:hover :global(.vtex-button){width:initial;margin-left:5.48px}.wishlistProductSelect{position:absolute}.wishlistProductSelect .wishlistProductSelectButton{width:36px;height:36px;display:none;align-items:center;justify-content:end;padding:0}.wishlistProductSelect .wishlistProductSelectButton .checkIcon{margin:0 auto}.wishlistSelectionNavbar{position:relative;justify-content:flex-start;gap:20px}.wishlistSelectionCheckbox :global(.vtex-checkbox__inner-container){border:1px solid #998300;border-radius:3px;margin-right:4.64px}.wishlistSelectionCheckbox :global(.vtex-checkbox__label){font-family:"Open Sans",sans-serif;font-style:normal;text-transform:uppercase;font-weight:400;font-size:14px;line-height:17px;color:#2d2926;white-space:nowrap}.wishlistAddToCart{background-color:#44b32e;color:#fff;border-radius:50%;padding:7px 8.5px;display:flex;align-items:center;cursor:pointer;max-width:35px;height:35px;overflow:hidden;transition:max-width .4s}.wishlistAddToCart.wishlistAddToCartDisabled{pointer-events:none;background-color:#2d2926}.wishlistAddToCart .cartIcon{width:18px;height:18px}.wishlistAddToCart :global(.vtex-button){min-height:initial;border:none;background-color:rgba(0,0,0,0);color:inherit;width:0;overflow:hidden}.wishlistAddToCart :global(.vtex-button) :global(.vtex-button__label){padding:0 !important;text-transform:none;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:400;font-size:12px;line-height:17px;text-transform:uppercase;white-space:nowrap}.wishlistAddToCart :global(.vtex-button) :hover{border:none;background-color:rgba(0,0,0,0);color:inherit}.wishlistAddToCart:hover{max-width:254.03px;width:145%;border-radius:20px 4px 4px 20px}.wishlistAddToCart:hover :global(.vtex-button){width:initial;margin-left:5.48px}.wishlistProductSelect{position:absolute}.wishlistProductSelect .wishlistProductSelectButton{width:36px;height:36px;display:flex;align-items:center;justify-content:end;padding:0}.wishlistProductSelect .wishlistProductSelectButton .checkIcon{margin:0 auto}@media screen and (max-width: 1024px){.wishlistSelectionCheckbox{margin-right:10px}.wishlistAddToCart{position:static;max-width:225px;min-width:225px;width:100%;border-radius:20px 4px 4px 20px}.wishlistAddToCart .cartIcon{width:16px;height:16px}.wishlistAddToCart :global(.vtex-button){width:initial;margin-left:5.48px}.wishlistAddToCart :global(.vtex-button) :global(.vtex-button__label){font-size:11px;line-height:16px}.wishlistSelectionCheckbox{margin-right:10px}.wishlistAddToCart{position:static;max-width:225px;min-width:225px;width:100%;border-radius:20px 4px 4px 20px}.wishlistAddToCart .cartIcon{width:16px;height:16px}.wishlistAddToCart :global(.vtex-button){width:initial;margin-left:5.48px}.wishlistAddToCart :global(.vtex-button) :global(.vtex-button__label){font-size:11px;line-height:16px}}@media screen and (max-width: 440px){.wishlistSelectionNavbar{flex-direction:column;align-items:flex-start}.wishlistSelectionCheckbox{margin:0 0 10px}.wishlistSelectionNavbar{flex-direction:column;align-items:flex-start}.wishlistSelectionCheckbox{margin:0 0 10px}}
+.wishlistSelectionNavbar {
+    position: relative;
+    justify-content: flex-start;
+    gap: 20px
+}
+
+.wishlistSelectionCheckbox :global(.vtex-checkbox__inner-container) {
+    border: 1px solid #998300;
+    border-radius: 3px;
+    margin-right: 4.64px
+}
+
+.wishlistSelectionCheckbox :global(.vtex-checkbox__label) {
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2d2926;
+    white-space: nowrap
+}
+
+.wishlistAddToCart {
+    background-color: #44b32e;
+    color: #fff;
+    border-radius: 50%;
+    padding: 7px 8.5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    max-width: 35px;
+    height: 35px;
+    overflow: hidden;
+    transition: max-width .4s
+}
+
+.wishlistAddToCart.wishlistAddToCartDisabled {
+    pointer-events: none;
+    background-color: #2d2926
+}
+
+.wishlistAddToCart .cartIcon {
+    width: 18px;
+    height: 18px
+}
+
+.wishlistAddToCart :global(.vtex-button) {
+    min-height: initial;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: inherit;
+    width: 0;
+    overflow: hidden
+}
+
+.wishlistAddToCart :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0 !important;
+    text-transform: none;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+    white-space: nowrap
+}
+
+.wishlistAddToCart :global(.vtex-button) :hover {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: inherit
+}
+
+.wishlistAddToCart:hover {
+    max-width: 254.03px;
+    width: 145%;
+    border-radius: 20px 4px 4px 20px
+}
+
+.wishlistAddToCart:hover :global(.vtex-button) {
+    width: initial;
+    margin-left: 5.48px
+}
+
+.wishlistProductSelect {
+    position: absolute
+}
+
+.wishlistProductSelect .wishlistProductSelectButton {
+    width: 36px;
+    height: 36px;
+    display: none;
+    align-items: center;
+    justify-content: end;
+    padding: 0
+}
+
+.wishlistProductSelect .wishlistProductSelectButton .checkIcon {
+    margin: 0 auto
+}
+
+.wishlistSelectionNavbar {
+    position: relative;
+    justify-content: flex-start;
+    gap: 20px
+}
+
+.wishlistSelectionCheckbox :global(.vtex-checkbox__inner-container) {
+    border: 1px solid #998300;
+    border-radius: 3px;
+    margin-right: 4.64px
+}
+
+.wishlistSelectionCheckbox :global(.vtex-checkbox__label) {
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2d2926;
+    white-space: nowrap
+}
+
+.wishlistAddToCart {
+    background-color: #44b32e;
+    color: #fff;
+    border-radius: 50%;
+    padding: 7px 8.5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    max-width: 35px;
+    height: 35px;
+    overflow: hidden;
+    transition: max-width .4s
+}
+
+.wishlistAddToCart.wishlistAddToCartDisabled {
+    pointer-events: none;
+    background-color: #2d2926
+}
+
+.wishlistAddToCart .cartIcon {
+    width: 18px;
+    height: 18px
+}
+
+.wishlistAddToCart :global(.vtex-button) {
+    min-height: initial;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: inherit;
+    width: 0;
+    overflow: hidden
+}
+
+.wishlistAddToCart :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0 !important;
+    text-transform: none;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+    white-space: nowrap
+}
+
+.wishlistAddToCart :global(.vtex-button) :hover {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: inherit
+}
+
+.wishlistAddToCart:hover {
+    max-width: 254.03px;
+    width: 145%;
+    border-radius: 20px 4px 4px 20px
+}
+
+.wishlistAddToCart:hover :global(.vtex-button) {
+    width: initial;
+    margin-left: 5.48px
+}
+
+.wishlistProductSelect {
+    position: absolute
+}
+
+.wishlistProductSelect .wishlistProductSelectButton {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0
+}
+
+.wishlistProductSelect .wishlistProductSelectButton .checkIcon {
+    margin: 0 auto
+}
+
+@media screen and (max-width: 1024px) {
+    .wishlistSelectionCheckbox {
+        margin-right: 10px
+    }
+
+    .wishlistAddToCart {
+        position: static;
+        max-width: 225px;
+        min-width: 225px;
+        width: 100%;
+        border-radius: 20px 4px 4px 20px
+    }
+
+    .wishlistAddToCart .cartIcon {
+        width: 16px;
+        height: 16px
+    }
+
+    .wishlistAddToCart :global(.vtex-button) {
+        width: initial;
+        margin-left: 5.48px
+    }
+
+    .wishlistAddToCart :global(.vtex-button) :global(.vtex-button__label) {
+        font-size: 11px;
+        line-height: 16px
+    }
+
+    .wishlistSelectionCheckbox {
+        margin-right: 10px
+    }
+
+    .wishlistAddToCart {
+        position: static;
+        max-width: 225px;
+        min-width: 225px;
+        width: 100%;
+        border-radius: 20px 4px 4px 20px
+    }
+
+    .wishlistAddToCart .cartIcon {
+        width: 16px;
+        height: 16px
+    }
+
+    .wishlistAddToCart :global(.vtex-button) {
+        width: initial;
+        margin-left: 5.48px
+    }
+
+    .wishlistAddToCart :global(.vtex-button) :global(.vtex-button__label) {
+        font-size: 11px;
+        line-height: 16px
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .wishlistSelectionNavbar {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .wishlistSelectionCheckbox {
+        margin: 0 0 10px
+    }
+
+    .wishlistSelectionNavbar {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .wishlistSelectionCheckbox {
+        margin: 0 0 10px
+    }
+}

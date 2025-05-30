@@ -11,7 +11,8 @@
 }
 
 .productName {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -54,7 +55,8 @@
     border: none;
     width: 100%;
     flex: 1;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Montserrat", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -66,10 +68,17 @@
 }
 
 .price--minicart-price {
-    font-family: "Open Sans", sans-serif;
+    /* EM TESTES */
+        /* font-family: "Open Sans", sans-serif; */
+        /* font-family: "Montserrat", "Open Sans", sans-serif; */
+        font-family: "Bebas Neue", "Montserrat", "Open Sans", sans-serif;
+        /* font-size: 16px; */
+        font-size: 22px;
+    /* EM TESTES */
+
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    /* FONT-SIZE VAI AQUI */
     line-height: 20px;
     display: flex;
     align-items: center
@@ -81,10 +90,17 @@
 }
 
 .productPriceCurrency--minicart-price .currencyContainer {
-    font-family: "Open Sans", sans-serif;
+    /* EM TESTES */
+        /* font-family: "Open Sans", sans-serif; */
+        /* font-family: "Montserrat", "Open Sans", sans-serif; */
+        font-family: "Bebas Neue", "Montserrat", "Open Sans", sans-serif;
+        /* font-size: 14px; */
+        font-size: 22px;
+    /* EM TESTES */
+
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    /* FONT-SIZE VAI AQUI */
     line-height: 15px;
     text-decoration: line-through
 }
