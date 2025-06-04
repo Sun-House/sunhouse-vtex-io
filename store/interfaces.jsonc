@@ -1,4 +1,10 @@
 // Arquivo nao funciona se for .jsonc
 // Ainda em testes, para carregar pagina do produto sem JS
 // Pelo que entendi, muito possivelmente, esse ajuste precisara ser feito diretamente nos apps em React
-{}
+{
+    "store": {
+        "allowConditions": true,
+        "component": "*",
+        "render": "server"
+    }
+}

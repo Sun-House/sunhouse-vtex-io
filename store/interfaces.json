@@ -1,0 +1,8 @@
+{
+    "store": {
+        "allowConditions": true,
+        "allowed": ["product", "store.product"],
+        "component": "*",
+        "render": "server"
+    }
+}
