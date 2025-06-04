@@ -7,5 +7,3 @@ styles/iconpacks/icons
 **/*.Identifier
 
 checkout-ui-custom/resources
-
-store/interfaces.jsonc

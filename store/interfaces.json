@@ -1,7 +1,0 @@
-{
-    "store.product": {
-        "allowConditions": true,
-        "allowed": "*",
-        "render": "server"
-    }
-}
