@@ -1,0 +1,41 @@
+.flexRow--priceBlock_line__first {
+    margin-top: 0 !important
+}
+
+.flexRow--priceBlock_line {
+    margin-top: 8px
+}
+
+.flexRow--priceBlock_line :global(.vtex-button) {
+    background-color: #44b32e;
+    color: #fff;
+    padding: 18px 0;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    transition: .2s ease;
+    font-size: 0
+}
+
+.flexRow--priceBlock_line :global(.vtex-button)::after {
+    content: "Comprar agora";
+    font-size: 1rem !important
+}
+
+.flexRow--priceBlock_line :global(.vtex-button):hover {
+    background-color: #2a9620 !important
+}
+
+.flexRow--priceBlock_line :global(.vtex-button__label) {
+    height: 0 !important
+}
+
+.flexCol--pix-price-divider {
+    border-top: 1px solid #2d373ba6;
+    margin-top: 20px;
+    width: 5%;
+}
+
+.flexRowContent--priceBlock_line-pix-hl {
+    align-items: center
+}

@@ -42,7 +42,13 @@
   },
 
   "stack-layout#product-image-swiper-desktop": {
-    "children": ["product-medias#product-medias", "product-price-savings"],
+    "children": [
+      "product-medias#product-medias",
+      "product-price-savings",
+      
+      // Criar flag visual - especialmente para os designers - teste abaixo
+      "container#product-highlights-image-flags"
+    ],
     "props": {
       "blockClass": "product-image-swiper"
     }

@@ -1,12 +1,11 @@
-.productHighlightText {
-    flex: 1;
-    font-size: 14px;
-    line-height: 31px;
-    font-weight: 700;
-    text-align: center
+.productHighlightText--image-flags {
+    padding: 3px 10px;
+    margin-right: 8px;
+    text-transform: uppercase !important; /* ver se mantem isso */
+    border-radius: 5px
 }
 
-.productHighlightText[data-highlight-id="218"] {
+/*.productHighlightText[data-highlight-id="218"] {
     color: #fff;
     background-color: #00b700 !important;
     color: #fff !important
@@ -25,4 +24,4 @@
 .productHighlightText:nth-child(even) {
     color: #fff;
     background-color: #f90041
-}
+} */

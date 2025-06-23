@@ -1,0 +1,30 @@
+.paragraph--discount-pix-highlight {
+    font-size: 18px
+}
+
+.strong--discount-pix-highlight {
+    color: #000;
+    font-weight: 600 !important
+}
+
+.strong--discount-pix-highlight::after {
+    display: inline-flex;
+    content: "";
+    font-size: 18px;
+    font-family: fantasticon;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #4db6ac;
+    margin-left: 4px
+}
+
+.container--price-block_safe-buy {
+    position: unset !important;
+    transform: unset !important;
+    margin-top: 8px
+}
+
+.link--price-block_safe-buy {
+    color: #817f7d
+}

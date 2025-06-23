@@ -1,0 +1,38 @@
+{
+    // testando para transferir destaques como Pronta Entrega, Lançamentos e Outros
+    // para ao lado da flag de desconto na foto do produto na PDP
+    "container#product-highlights-image-flags": {
+        "title": "Bloco - Flags na Imagem do Produto",
+        "children": ["sunhouse.product-highlights@2.x:product-highlights#image-flags"],
+        "props": {
+            "blockClass": "product-highlights-medias"
+        }
+    },
+
+    "sunhouse.product-highlights@2.x:product-highlights#image-flags": {
+        "props": {
+            "filter": {
+                "type": "show",
+                "highlightNames": [
+                    "Pronta Entrega",
+                    "Lançamento",
+                    "Charles e Ray Eames",
+                    "Harry Bertóia",
+                    "Xavier Pauchard",
+                    "Eero Saarinen",
+                    "Andre Cruz",
+                    "Nem tudo é igual",
+                    "Estúdio Galho",
+                    "Theo Egami"
+                ]
+            }
+        },
+        "children": ["product-highlight-text#image-flags"]
+    },
+    "product-highlight-text#image-flags": {
+        "props": {
+            "message": "{highlightName}",
+            "blockClass": "image-flags"
+        }
+    }
+}

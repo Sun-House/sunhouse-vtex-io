@@ -257,7 +257,12 @@
     }
   },
   "flex-layout.row#footer-images-bottom": {
-    "children": ["link#vtex", "link#eplus"],
+    "children": [
+      "link#vtex",
+      "link#eplus",
+      //teste
+      "trustvox-true-review"
+    ],
     "props": {
       "blockClass": "footer-images-bottom",
       "preventHorizontalStretch": true,

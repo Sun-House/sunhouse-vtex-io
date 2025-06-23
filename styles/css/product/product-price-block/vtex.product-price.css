@@ -1,0 +1,24 @@
+.listPrice--price-from {
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #f90041
+}
+
+.installments--price-installments-line {
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-size: 18px;
+    text-align: start;
+    line-height: 1.35
+}
+
+.installments-bold--price-installments-line {
+    font-weight: 600 !important
+}
+
+.savings--discount-seal-from {
+    margin-left: 6px;
+    margin-right: 6px;
+    padding: 2px;
+    width: 60px
+}

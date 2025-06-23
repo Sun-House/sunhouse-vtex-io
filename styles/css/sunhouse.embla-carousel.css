@@ -165,7 +165,8 @@
     line-height: 16px;
     display: flex;
     align-items: center;
-    color: #fff
+    /* color: #fff -> nao sei pq estava nessa cor, mas esta em producao e os textos simplemente nao podem ser lidos no slider de destaques de blog */
+    color: #2d2926
 }
 
 .container--by-category {
@@ -277,6 +278,9 @@
 .container--product-medias {
     position: relative;
     width: 100%;
+    /*  */
+    min-height: 500px;
+    /*  */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,13 +305,11 @@
 
 .container--product-medias .emblaInnerSlide {
     padding: 10px;
-
-    /**/
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%
-    /**/
+    min-height: 500px;
+    min-width: 500px
 }
 
 .container--product-medias .prevButton,

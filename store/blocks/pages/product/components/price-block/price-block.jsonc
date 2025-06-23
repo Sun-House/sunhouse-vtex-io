@@ -1,0 +1,208 @@
+{
+    "container#wrapper-price-block": {
+        "props": {
+            "wrapper": true,
+            "blockClass": ["wrapper__product-prices"]
+        },
+        "children": [
+            "flex-layout.col#wrapper__product-prices"
+        ]
+    },
+    "flex-layout.col#wrapper__product-prices": {
+        "children": [
+            "flex-layout.row#product-price-from",
+            "flex-layout.row#product-price-pix",
+            "flex-layout.row#product-price-pix-infos",
+            //
+            "flex-layout.col#divider",
+            //
+            "flex-layout.row#product-price-installments-line",
+            "flex-layout.row#product-price-installments",
+            "flex-layout.row#product-oc-buy-button",
+            "flex-layout.row#product-safe-buy"
+            // A principio esse bloco nao sera utilizado
+            // "flex-layout.row#product-price-savings-line"
+        ],
+        "props": {
+            "blockClass": "priceBlock_wrapper-col"
+        }
+    },
+
+    // Abaixo organiza as linhas pelo flex box
+    "flex-layout.row#product-price-from": {
+        "children": [
+            "product-list-price#price-from"
+        ],
+        "props": {
+            "blockClass": ["priceBlock_line", "priceBlock_line__first"]
+        }
+    },
+    "flex-layout.row#product-price-pix": {
+        "children": [
+            "discount-price#price-pix"
+        ],
+        "props": {
+            "blockClass": "priceBlock_line"
+        }
+    },
+    "flex-layout.row#product-price-pix-infos": {
+        "children": [
+            //"rich-text#discount-pix-highlight"
+            // teste abaixo
+            "rich-text#discount-pix-highlight1",
+            "product-price-savings#price-from",
+            "rich-text#discount-pix-highlight2"
+        ],
+        "props": {
+            "blockClass": ["priceBlock_line", "priceBlock_line-pix-hl"],
+            "preventHorizontalStretch": "true"
+        }
+    },
+    "flex-layout.row#product-price-installments-line": {
+        "children": [
+            "product-installments#price-installments-line"
+        ],
+        "props": {
+            "blockClass": "priceBlock_line"
+        }
+    },
+    "flex-layout.row#product-price-installments": {
+        "children": [
+            // Link para abrir modal - ainda nao iniciada a DEV
+            // Provavelmente ficara para outra versao - reaproveitar a atual para lancar o app
+            // Conforme mencionado acima, ficara para outra versao - como paliativo mantive o modelo pronto
+            "container#product-installments"
+        ],
+        "props": {
+            "blockClass": "priceBlock_line"
+        }
+    },
+    "flex-layout.row#product-price-savings-line": {
+        "children": [
+            "product-price-savings#savings"
+        ],
+        "props": {
+            "blockClass": "priceBlock_line"
+        }
+    },
+    "flex-layout.row#product-oc-buy-button": {
+        "children": [
+            //"add-to-cart-button#product-oc-buy-button"
+            "buy-button#product"
+        ],
+        "props": {
+            "blockClass": "priceBlock_line"
+        }
+    },
+    
+    "flex-layout.row#product-safe-buy": {
+        "children": [
+            "rich-text#safe-buy"
+        ],
+        "props": {
+            "blockClass": "priceBlock_line"
+        }
+    },
+
+    // Blocos que vao nas linhas acima declaradas
+    // Blocos de texto Textos e demais blocos START
+    // "rich-text#discount-pix-highlight": {
+    //     "props": {
+    //         "blockClass": "discount-pix-highlight",
+    //         "text": "à vista no PIX **· Desconto de 7%**"
+    //     }
+    // },
+    "rich-text#discount-pix-highlight1": {
+        "props": {
+            "blockClass": "discount-pix-highlight",
+            "text": "Desconto de"
+        }
+    },
+
+    "rich-text#discount-pix-highlight2": {
+        "props": {
+            "blockClass": "discount-pix-highlight",
+            //"text": "&#43; **7% à vista no PIX** → Até 39% OFF" // aqui precisa ajustar para calcular desconto automaticamente
+            "text": "&#43; **7% à vista no PIX**"
+        }
+    },
+
+    //
+    "flex-layout.col#divider": {
+        "props": {
+            "blockClass": "pix-price-divider",
+            "width": "10%"
+        }
+    },
+    // Textos e demais blocos END
+    
+    // Renderiza os blocks de precos START
+    "product-list-price#price-from": {
+        "props": {
+            "blockClass": "price-from",
+            "message": "{listPriceValue}"
+        }
+    },
+    // Cria selo de desconto ao lado do preço DE
+    "product-price-savings#price-from": {
+        "props": {
+            "percentageStyle": "compact",
+            "message": "{savingsPercentage}",
+            "blockClass": ["discount-seal", "discount-seal-from"]
+        }
+    },
+    // Usa o componente externo DiscountPrice - ver na pasta apps START
+    "discount-price#price-pix": {
+        "props": {
+            // "hideWithoutDiscount": true, - esse atributo oculta o preco caso ele nao tenha recebido o desconto, unico teste valido pra ver acontecendo foi com o JS desativado no navegador
+            "hideWithoutDiscount": false,
+            "message": "{priceValue}",
+            "blockClass": "price-pix",
+            "promotionName": "Desconto Pagamento à Vista (7%)"
+        }
+    },
+    // Usa o componente externo DiscountPrice - ver na pasta apps END
+    "product-installments#price-installments-line": {
+        "props": {
+            "blockClass": "price-installments-line",
+            "installmentsCriteria": "max-quantity",
+            "markers": ["bold"],
+            "message": "ou <bold>{installmentsTotalValue}</bold> em até {installmentsNumber}x de <bold>{installmentValue}</bold> sem juros no Cartão de Crédito"
+        }
+    },
+    "product-price-savings#savings": {
+        "props": {
+            "message": "Economia de {savingsValue}",
+            "alwaysShow": false
+        }
+    },
+    // Renderiza os blocks de precos END
+
+    // Renderiza botao de comprar
+    "add-to-cart-button#product-oc-buy-button": {
+        "props": {
+            "isOneClickBuy": true,
+            "text": "Comprar agora",
+            "blockClass": "buy-now-button"
+        }
+    },
+
+    //
+    "buy-button#product": {
+        "props": {
+            "isOneClickBuy": true,
+            "showTooltipOnSkuNotSelected": true,
+            "showToast": false
+        }
+    },
+    //
+
+    // Safe buy link
+    "rich-text#safe-buy": {
+        "props": {
+            "blockClass": ["safe-purchase", "price-block_safe-buy"],
+            "text": "Compra 100% segura · [Saiba mais](/institucional/compra-segura)"
+            //"text": "Compra 100% segura · <a href='/institucional/compra-segura' target='_blank' rel='noopener noreferrer' class>Saiba mais</a>"
+        }
+    }
+}

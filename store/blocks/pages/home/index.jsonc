@@ -17,6 +17,8 @@
       // "container#spacing-default",
       "container#banner-infos",
       "container#spacing-default"
+      // TESTE TRUSTVOX
+      //,"trustvox-review-carrousel" // renderizou mas puxou so teste e bem antigos
     ]
   }
 }
