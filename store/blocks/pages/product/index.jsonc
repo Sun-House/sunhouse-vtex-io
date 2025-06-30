@@ -4,6 +4,10 @@
       "productWrapper": "productWrapper"
     },
     "children": [
+      //
+      // header fixo de compra vai aqui - ficar sobre posto no menu a principio
+      "sticky-layout#buy-button",
+      //
       "responsive-layout.desktop#product-main",
       "responsive-layout.mobile#product-main",
       "container#product__related-grid",
@@ -14,6 +18,34 @@
       "product-rating-summary"
     ]
   },
+
+
+  //
+  "sticky-layout#buy-button": {
+    "props": {
+      "position": "bottom"
+    },
+    "children": [
+      "flex-layout.col#buy-button",
+      "rich-text#tester"
+    ]
+  },
+  "rich-text#tester": {
+    "props": {
+      "text": "TESTE ELEMENTO FLUTUANTE"
+      //"blockClass": "product-zoom-text"
+    }
+  },
+  // "flex-layout.row#buy-button": {
+  //   "props": {
+  //     "marginTop": 4,
+  //     "marginBottom": 7,
+  //     "paddingBottom": 2
+  //   },
+  //   "children": ["buy-button"]
+  // }
+  //
+
 
   "container#trustvox": {
     "props": {
