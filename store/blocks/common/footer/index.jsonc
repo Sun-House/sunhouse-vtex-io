@@ -153,9 +153,20 @@
     }
   },
   "flex-layout.row#footer-content-about": {
-    "children": ["rich-text#footer-about-text"],
+    "children": [
+      "container#footer-about-text"
+    ],
     "props": {
       "blockClass": "footer-content-about"
+    }
+  },
+  "container#footer-about-text": {
+    "title": "Texto Sobre Nós - Apenas Home",
+    "children": [
+      "rich-text#footer-about-text"
+    ],
+    "props": {
+      "blockClass": "container-footer-about-text"
     }
   },
   "rich-text#footer-about-text": {
