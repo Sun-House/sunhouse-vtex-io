@@ -1,0 +1,28 @@
+{
+    "super-menu#html-seo-mobile-category-menu": {
+        "title": "*Oculto via CSS* - Menu de categorias (SEO)",
+        "props": {
+            "withCategoryTree": true,
+            "blockClass": "html-seo_mobile-category-menu",
+            "maxDepth": 4,
+            "categorySortMethod": "DEFAULT",
+            "showCustomItemsOnly": true,
+            "customItems": [
+                {
+                    "id": "lancamentos",
+                    "__editorItemTitle": "Lançamentos",
+                    "name": "Lançamentos",
+                    "href": "#",
+                    "highlight": true
+                },
+                {
+                    "id": "pronta-entrega",
+                    "__editorItemTitle": "Pronta Entrega",
+                    "name": "Pronta Entrega",
+                    "href": "#",
+                    "highlight": true
+                }
+            ]
+        }
+    }
+}

@@ -51,7 +51,10 @@
         "header--mobile__controls--left"
       ]
     },
-    "children": ["drawer#menu-mobile"]
+    "children": [
+      "drawer#menu-mobile",
+      "super-menu#html-seo-mobile-category-menu"
+    ]
   },
 
   "logo#logo-mobile": {

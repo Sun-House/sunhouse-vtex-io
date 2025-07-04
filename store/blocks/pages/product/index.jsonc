@@ -205,7 +205,10 @@
       
       // Esse abaixo sera substituido por links rapidos, como ir para descricao do produto
       "container#product-highlights--product-page",
-      //"container#product-quick-links",
+      // "container#product-quick-links",
+      // Em desenvolvimento:
+      "product-availability",
+      //
 
       "condition-layout.product#product-availability"
       //"flex-layout.row#product-page-informations"
@@ -217,6 +220,20 @@
       "preventVerticalStretch": true
     }
   },
+
+
+  // TESTANDO
+  "product-availability": {
+    "props": {
+      "threshold": "10",
+      "lowStockMessage": "Apenas {quantity} no Estoque, corre!",
+      //"highStockMessage": "Estoque Disponível!",
+      "blockClass": "container_product-availability"
+    }
+  },
+  //
+
+
   "flex-layout.row#breadcrumb-product": {
     "children": ["breadcrumb#product-page"],
     "props": {

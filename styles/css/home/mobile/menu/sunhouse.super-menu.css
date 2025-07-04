@@ -1,0 +1,5 @@
+@media screen and (max-width: 1024px) {
+    .navWrapper--html-seo_mobile-category-menu {
+        display: none !important
+    }
+}
