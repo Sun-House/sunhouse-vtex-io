@@ -166,7 +166,11 @@
     "props": {
       "defaultGalleryLayout": "grid",
       "blockClass": "search-result",
-      "pagination": "paged",
+      //"pagination": "paged",
+      //
+      "pagination": "show-more",
+      "preventRouteChange": true, // nao sei o que faz - ver documentacao
+      //
       "showProductsCount": true,
       "showFacetQuantity": true,
       "hiddenFacets": {
