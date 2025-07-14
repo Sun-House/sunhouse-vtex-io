@@ -1,0 +1,23 @@
+/*
+controlsContainer
+fallbackContainer
+fallbackImage
+fullscreenButton
+playButton
+trackBar
+trackContainer
+trackTimer
+videoContainer
+videoElement
+volumeContainer
+volumeButton
+volumeSlider
+*/
+
+.controlsContainer--lp_footer-highlight_video {
+    display: none !important
+}
+
+.fullscreenButton--lp_footer-highlight_video {
+    display: none !important
+}

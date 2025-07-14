@@ -1,0 +1,12 @@
+.flexRow--background-line {
+    background: #a6ffc1
+}
+
+.flexRow--footer-line {
+    background: #a6ffc1
+}
+
+/* Grid-5 */
+.flexCol--lp_grid_col {
+    gap: 28px
+}
