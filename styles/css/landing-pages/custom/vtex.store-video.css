@@ -1,0 +1,39 @@
+/* tentando esconder os controles do video */
+/*
+controlsContainer
+fallbackContainer
+fallbackImage
+fullscreenButton
+playButton
+trackBar
+trackContainer
+trackTimer
+videoContainer
+videoElement
+volumeContainer
+volumeButton
+volumeSlider
+*/
+
+.controlsContainer--lp_footer-highlight_video {
+    display: none !important
+}
+
+.fullscreenButton--lp_footer-highlight_video {
+    display: none !important
+}
+/* tentando esconder os controles do video */
+
+/* Video Highlight */
+/* .relative.vtex-store-video-1-x-videoContainer.vtex-store-video-1-x-videoContainer--lp_video-highlight { */
+.videoContainer--lp_video-highlight {
+    pointer-events: none
+}
+
+/* Video Footer */
+/* .relative.vtex-store-video-1-x-videoContainer.vtex-store-video-1-x-videoContainer--lp_footer-highlight_video { */
+.videoContainer--lp_footer-highlight_video {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
