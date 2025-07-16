@@ -6,16 +6,27 @@
 }
 
 /* Banner Tela Completa */
-.imageElement--lp-banner-hero {
+.imageElement--lp_banner-hero {
     margin-top: -6px;
     border-radius: unset !important
 }
 
-/* Grid-5 Categ #1 */
+/* Grid-5 Geral */
+.imageElement--grid-cadeiras_image {
+    border: 4px solid #fff;
+    transition: .3s
+}
 
-/* Grid banner mais vendidos */
+.imageElement--grid-cadeiras_image:hover {
+    border: 4px solid #4f549b
+}
+
+/* Grid-5 Cadeiras */
+
+/* Grid Most Selling */
 .wrapper--lp_mais-vendidas-images {
-    max-height: unset !important
+    max-height: unset !important;
+    margin-top: 52px
 }
 
 .imageElement--lp_mais-vendidas-images {
@@ -32,21 +43,25 @@
     all: unset !important;
 }
 
-.container--lp-most-selling {
+.container--lp_most-selling {
     /* cor teste: */
-    background-color: #a6ffc1;
+    background-color: #4f549b;
     /* cor correta: background-color: #d4d1d2 */
-    margin: 0 auto
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 98px
 }
 
 /* Video Highlight */
 
 /* Certificates Block */
-.container--lp-wide-highlights {
-    background-color: #323232
+.container--lp_wide-highlights {
+    background-color: #323232;
+    padding-top: 62px;
+    padding-bottom: 86px
 }
 
-.imageElement--lp-wide-highlights-certificates {
+.imageElement--lp_wide-highlights-certificates {
     width: initial !important;
     margin: 0 auto;
     border-radius: unset !important
@@ -62,6 +77,16 @@
 
 .wrapper--lp_grow-block-mosaic-banners-grid .container--lp_grow-block-mosaic-banners-grid {
     display: grid
+}
+
+/* Grid-5 Categ */
+.container--lp_grid-category {
+    margin: 28px 0
+}
+
+/* Footer Block */
+.container--lp_footer-highlight {
+    height: 550px
 }
 
 /* Desktop force */
@@ -129,5 +154,3 @@
         grid-template-columns: 1fr
     }
 }
-
-/* Grid-5 Categ #2 */

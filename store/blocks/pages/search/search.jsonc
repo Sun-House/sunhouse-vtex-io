@@ -166,11 +166,17 @@
     "props": {
       "defaultGalleryLayout": "grid",
       "blockClass": "search-result",
+      
+      // Ajustes liveSEO INICIO
+      // ::
       //"pagination": "paged",
       //
       "pagination": "show-more",
       "preventRouteChange": true, // nao sei o que faz - ver documentacao
       //
+      // Ajustes liveSEO FIM
+      // ::
+      
       "showProductsCount": true,
       "showFacetQuantity": true,
       "hiddenFacets": {

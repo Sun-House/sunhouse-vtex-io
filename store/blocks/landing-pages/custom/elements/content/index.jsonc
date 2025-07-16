@@ -1,54 +1,54 @@
 {
     // Wrapper Linhas Full Body
-    "flex-layout.row#lp-wrapper-row-1": {
+    "flex-layout.row#lp_wrapper-row-1": {
         "title": "",
         "children": [
-            "flex-layout.col#lp-wrapper-row-1"
+            "flex-layout.col#lp_wrapper-row-1"
         ],
         "props": {
-            "blockClass": "full-body"
+            "blockClass": ["full-body", "wrapper-row"]
         }
     },
-    "flex-layout.row#lp-wrapper-row-2": {
+    "flex-layout.row#lp_wrapper-row-2": {
         "title": "",
         "children": [
-            "flex-layout.col#lp-wrapper-row-2"
+            "flex-layout.col#lp_wrapper-row-2"
         ],
         "props": {
-            "blockClass": "full-body"
+            "blockClass": ["full-body", "wrapper-row"]
         }
     },
-    "flex-layout.row#lp-wrapper-row-3": {
+    "flex-layout.row#lp_wrapper-row-3": {
         "title": "",
         "children": [
-            "flex-layout.col#lp-wrapper-row-3"
+            "flex-layout.col#lp_wrapper-row-3"
         ],
         "props": {
-            "blockClass": "full-body"
+            "blockClass": ["full-body", "wrapper-row"]
         }
     },
-    "flex-layout.row#lp-wrapper-row-4": {
+    "flex-layout.row#lp_wrapper-row-4": {
         "title": "",
         "children": [
-            "flex-layout.col#lp-wrapper-row-4"
+            "flex-layout.col#lp_wrapper-row-4"
         ],
         "props": {
             "blockClass": ["full-body", "background-line"]
         }
     },
-    "flex-layout.row#lp-wrapper-row-5": {
+    "flex-layout.row#lp_wrapper-row-5": {
         "title": "",
         "children": [
-            "flex-layout.col#lp-wrapper-row-5"
+            "flex-layout.col#lp_wrapper-row-5"
         ],
         "props": {
             "blockClass": "full-body"
         }
     },
-    "flex-layout.row#lp-wrapper-row-6": {
+    "flex-layout.row#lp_wrapper-row-6": {
         "title": "",
         "children": [
-            "flex-layout.col#lp-wrapper-row-6"
+            "flex-layout.col#lp_wrapper-row-6"
         ],
         "props": {
             "blockClass": ["full-body", "footer-line"]
@@ -56,7 +56,7 @@
     },
 
     // Wrapper Colunas Full Body
-    "flex-layout.col#lp-wrapper-row-1": {
+    "flex-layout.col#lp_wrapper-row-1": {
         "title": "",
         "children": [
             "container#lp_grid-cadeiras"
@@ -65,7 +65,7 @@
             "blockClass": "full-body"
         }
     },
-    "flex-layout.col#lp-wrapper-row-2": {
+    "flex-layout.col#lp_wrapper-row-2": {
         "title": "",
         "children": [
             "container#lp_grow-block-image-highlight"
@@ -74,7 +74,7 @@
             "blockClass": "full-body"
         }
     },
-    "flex-layout.col#lp-wrapper-row-3": {
+    "flex-layout.col#lp_wrapper-row-3": {
         "title": "",
         "children": [
             "container#lp_grow-block-mosaic"
@@ -83,7 +83,7 @@
             "blockClass": "full-body"
         }
     },
-    "flex-layout.col#lp-wrapper-row-4": {
+    "flex-layout.col#lp_wrapper-row-4": {
         "title": "",
         "children": [
             "container#lp_grid-category"
@@ -92,7 +92,7 @@
             "blockClass": "full-body"
         }
     },
-    "flex-layout.col#lp-wrapper-row-5": {
+    "flex-layout.col#lp_wrapper-row-5": {
         "title": "",
         "children": [
             "container#lp_footer-highlight"
@@ -101,7 +101,7 @@
             "blockClass": "full-body"
         }
     },
-    "flex-layout.col#lp-wrapper-row-6": {
+    "flex-layout.col#lp_wrapper-row-6": {
         "title": "",
         "children": [
             "rich-text#lp_footer-highlight_text-highlight"
@@ -111,35 +111,35 @@
         }
     },
     
+
     // Blocos:
 
     // Block-Banner-Full - "Imagem única - tela inteira"
-    "container#lp-banner-hero": {
+    "container#lp_banner-hero": {
         "title": "Bloco Banner Tela Completa",
         "children": [
-            "list-context.image-list#lp-banner-hero"
+            "list-context.image-list#lp_banner-hero"
         ],
         "props": {
-            "blockClass": "lp-banner-hero"
+            "blockClass": "lp_banner-hero"
         }
     },
-    "list-context.image-list#lp-banner-hero": {
+    "list-context.image-list#lp_banner-hero": {
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1920x710",
                 "mobileImage": "https://dummyimage.com/360x640" // validar resolucao mobile
             }],
             //"blockClass": "banner-fulfill"
-            "blockClass": ["lp_image", "lp-banner-hero"]
+            "blockClass": ["lp_image", "lp_banner-hero"]
         },
         "children": [
-            "container.list-render#lp-banner-hero"
+            "container.list-render#lp_banner-hero"
         ]
     },
-    "container.list-render#lp-banner-hero": {
+    "container.list-render#lp_banner-hero": {
         "props": {
-            //"blockClass": ["custom-description-banner", "banner-fulfill"]
-            "blockClass": ["lp_image", "lp-banner-hero"]
+            "blockClass": ["lp_image", "lp_banner-hero"]
         }
     },
 
@@ -147,20 +147,20 @@
     "container#lp_grid-cadeiras": {
         "title": "Grid Cadeiras Destaque",
         "children": [
-            "rich-text#lp_grid-cadeiras-text",
+            "rich-text#lp_grid-cadeiras_text",
             "slider-layout#lp_grid-cadeiras"
         ],
         "props": {
             "blockClass": "lp_grid-cadeiras"
         }
     },
-    "rich-text#lp_grid-cadeiras-text": {
+    "rich-text#lp_grid-cadeiras_text": {
         "title": "Texto",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título 1 Padrão \n ## Título 2 - Estilizado \n Texto subtítulo, ou breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
-            "blockClass": ["lp_text-block", "lp_text", "lp_title-1"]
+            "text": "# Título H1 \n breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo). \n ## Título H2",
+            "blockClass": ["lp_text-block", "lp_grid-cadeiras_text"]
         }
     },
     
@@ -201,8 +201,7 @@
         "title": "",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/254x343"
-                //,"mobileImage": "https://dummyimage.com/383x255"
+                "image": "https://dummyimage.com/223x300"
             }],
             "blockClass": ["lp_image"]
         },
@@ -210,7 +209,7 @@
     },
     "container.list-render#grid-cadeiras_col-1": {
         "props": {
-            "blockClass": ["lp_image"]
+            "blockClass": ["lp_image", "grid-cadeiras_image"]
         }
     },
     "rich-text#grid-cadeiras_col-1": {
@@ -218,8 +217,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "### CATEGORIA",
-            "blockClass": ""
+            "text": "#### CATEGORIA",
+            "blockClass": "grid_image-text"
         }
     },
     // Col-2
@@ -236,8 +235,7 @@
         "title": "",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/254x343"
-                //,"mobileImage": "https://dummyimage.com/383x255"
+                "image": "https://dummyimage.com/223x300"
             }],
             "blockClass": ["lp_image"]
         },
@@ -245,7 +243,7 @@
     },
     "container.list-render#grid-cadeiras_col-2": {
         "props": {
-            "blockClass": ["lp_image"]
+            "blockClass": ["lp_image", "grid-cadeiras_image"]
         }
     },
     "rich-text#grid-cadeiras_col-2": {
@@ -253,8 +251,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "### CATEGORIA",
-            "blockClass": ""
+            "text": "#### CATEGORIA",
+            "blockClass": "grid_image-text"
         }
     },
     // Col-3
@@ -271,8 +269,7 @@
         "title": "",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/254x343"
-                //,"mobileImage": "https://dummyimage.com/383x255"
+                "image": "https://dummyimage.com/223x300"
             }],
             "blockClass": ["lp_image"]
         },
@@ -280,7 +277,7 @@
     },
     "container.list-render#grid-cadeiras_col-3": {
         "props": {
-            "blockClass": ["lp_image"]
+            "blockClass": ["lp_image", "grid-cadeiras_image"]
         }
     },
     "rich-text#grid-cadeiras_col-3": {
@@ -288,8 +285,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "### CATEGORIA",
-            "blockClass": ""
+            "text": "#### CATEGORIA",
+            "blockClass": "grid_image-text"
         }
     },
     // Col-4
@@ -306,8 +303,7 @@
         "title": "",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/254x343"
-                //,"mobileImage": "https://dummyimage.com/383x255"
+                "image": "https://dummyimage.com/223x300"
             }],
             "blockClass": ["lp_image"]
         },
@@ -315,7 +311,7 @@
     },
     "container.list-render#grid-cadeiras_col-4": {
         "props": {
-            "blockClass": ["lp_image"]
+            "blockClass": ["lp_image", "grid-cadeiras_image"]
         }
     },
     "rich-text#grid-cadeiras_col-4": {
@@ -323,8 +319,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "### CATEGORIA",
-            "blockClass": ""
+            "text": "#### CATEGORIA",
+            "blockClass": "grid_image-text"
         }
     },
     // Col-5
@@ -341,8 +337,7 @@
         "title": "",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/254x343"
-                //,"mobileImage": "https://dummyimage.com/383x255"
+                "image": "https://dummyimage.com/223x300"
             }],
             "blockClass": ["lp_image"]
         },
@@ -350,7 +345,7 @@
     },
     "container.list-render#grid-cadeiras_col-5": {
         "props": {
-            "blockClass": ["lp_image"]
+            "blockClass": ["lp_image", "grid-cadeiras_image"]
         }
     },
     "rich-text#grid-cadeiras_col-5": {
@@ -358,59 +353,59 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "### CATEGORIA",
-            "blockClass": ""
+            "text": "#### CATEGORIA",
+            "blockClass": "grid_image-text"
         }
     },
     
     // Bloco Grid de Mais Vendidas
-    "container#lp-most-selling": {
+    "container#lp_most-selling": {
         "title": "",
         "children": [
-            "rich-text#lp-most-selling-title",
-            "list-context.image-list#lp-most-selling-images"
+            "rich-text#lp_most-selling-title",
+            "list-context.image-list#lp_most-selling-images"
         ],
         "props": {
-            "blockClass": "lp-most-selling" // -> cor de fundo: #d4d1d2
+            "blockClass": "lp_most-selling" // -> cor de fundo: #d4d1d2
         }
     },
-    "rich-text#lp-most-selling-title": {
+    "rich-text#lp_most-selling-title": {
         "title": "Texto",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título 2 - Estilizado",
-            "blockClass": ["lp_text-block", "lp_text", "lp_title-2"]
+            "text": "## Título H2",
+            "blockClass": ["lp_most-selling-title"]
         }
     },
-    "list-context.image-list#lp-most-selling-images": {
+    "list-context.image-list#lp_most-selling-images": {
         "title": "",
         "children": [
-            "container.list-render#lp-most-selling-images"
+            "container.list-render#lp_most-selling-images"
         ],
         "props": {
             "images": [{
-                    "image": "https://dummyimage.com/643x886",
-                    // "image": "https://dummyimage.com/596x630",
+                    "image": "https://dummyimage.com/596x821",
+                    // "image": "https://dummyimage.com/596x630", // validar medida mobile
                     "mobileImage": "",
                     "link": {}
                 },
                 {
                     "image": "https://dummyimage.com/596x396",
-                    // "image": "https://dummyimage.com/596x301",
+                    // "image": "https://dummyimage.com/596x301", // validar medida mobile
                     "mobileImage": "",
                     "link": {}
                 },
                 {
                     "image": "https://dummyimage.com/596x396",
-                    // "image": "https://dummyimage.com/596x301",
+                    // "image": "https://dummyimage.com/596x301", // validar medida mobile
                     "mobileImage": "",
                     "link": {}
                 }
             ]
         }
     },
-    "container.list-render#lp-most-selling-images": {
+    "container.list-render#lp_most-selling-images": {
         "props": {
             "blockClass": ["lp_image", "lp_mais-vendidas-images", "banner-grid"],
             "wrapper": true
@@ -418,28 +413,28 @@
     },
 
     // Wide-Block - "Titulo2" + "Subtitulo" + "Button" + "Video"
-    "container#lp-video-highlight": {
+    "container#lp_video-highlight": {
         "title": "",
         "children": [
-            "rich-text#lp-video-highlight",
-            "video#lp-video-highlight-video"
+            "rich-text#lp_video-highlight_text",
+            "video#lp_video-highlight-video"
         ],
         "props": {
-            "blockClass": "lp-video-highlight"
+            "blockClass": "lp_video-highlight"
         }
     },
     // texto flutuante sobre o video
-    "rich-text#lp-video-highlight": {
+    "rich-text#lp_video-highlight_text": {
         "title": "Texto",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título 2 - Estilizado \n ## Subtitulo \n [Botão](#)",
-            "blockClass": ["lp_text-block", "lp_text", "lp_title-2", "lp_subtitulo", "lp-video-highlight"]
+            "text": "## Título H2 \n ### Subtitulo H3 \n [Botão](#)",
+            "blockClass": ["lp_text-block", "lp_button", "lp_video-highlight_text"]
         }
     },
     // video playback sem controles
-    "video#lp-video-highlight-video": {
+    "video#lp_video-highlight-video": {
         "props": {
             "name": "", // SEO and accessibility
             "description": "", // SEO and accessibility
@@ -452,7 +447,7 @@
             "playsInline": true,
             "muted": true,
             "src": "https://www.youtube.com/watch?v=U_TsfCE3d2M",
-            "blockClass": "lp-video-highlight"
+            "blockClass": "lp_video-highlight"
         }
     },
 
@@ -460,7 +455,7 @@
     "container#lp_grow-block-image-highlight": {
         "title": "",
         "children": [
-            "rich-text#lp_grow-block-image-highlight-text",
+            "rich-text#lp_grow-block-image-highlight_text",
             "list-context.image-list#lp_grow-block-image-highlight-image",
             "rich-text#lp_grow-block-image-highlight-button"
         ],
@@ -468,19 +463,19 @@
             "blockClass": "lp_grow-block-image-highlight"
         }
     },
-    "rich-text#lp_grow-block-image-highlight-text": {
+    "rich-text#lp_grow-block-image-highlight_text": {
         "title": "Texto",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título 2 - Estilizado \n ## Subtitulo \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
-            "blockClass": ["lp_text-block", "lp_text", "lp_title-2", "lp_subtitulo", "lp_grow-block-image-highlight-text"]
+            "text": "## Título H2 \n ### Subtitulo H3 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "blockClass": ["lp_text-block", "lp_grow-block-image-highlight_text"]
         }
     },
     "list-context.image-list#lp_grow-block-image-highlight-image": {
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/1410x1132",
+                "image": "https://dummyimage.com/1220x979",
                 "mobileImage": "https://dummyimage.com/360x640" // Ver resolucao mobile
             }],
             "blockClass": ["lp_image", "lp_grow-block-image-highlight-image"]
@@ -505,40 +500,40 @@
     },
     
     // Extra-Wide-Block - "Text-Block" + "Certificados"
-    "container#lp-wide-highlights": {
+    "container#lp_wide-highlights": {
         "title": "",
         "children": [
-            "rich-text#lp-wide-highlights-text",
-            "list-context.image-list#lp-wide-highlights-certificates"
+            "rich-text#lp_wide-highlights_text",
+            "list-context.image-list#lp_wide-highlights-certificates"
         ],
         "props": {
-            "blockClass": "lp-wide-highlights"
+            "blockClass": "lp_wide-highlights"
         }
     },
-    "rich-text#lp-wide-highlights-text": {
+    "rich-text#lp_wide-highlights_text": {
         "title": "Texto",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título 2 - Estilizado \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
-            "blockClass": ["lp_text-block", "lp_text", "lp_title-2", "lp-wide-highlights-text"]
+            "text": "## Título H2 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "blockClass": ["lp_text-block", "lp_wide-highlights_text"]
         }
     },
-    "list-context.image-list#lp-wide-highlights-certificates": {
+    "list-context.image-list#lp_wide-highlights-certificates": {
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/350x70"
                 //"mobileImage": "https://dummyimage.com/360x640" -> usar a mesma do desktop
             }],
-            "blockClass": ["lp_image", "lp-wide-highlights-certificates"]
+            "blockClass": ["lp_image", "lp_wide-highlights-certificates"]
         },
         "children": [
-            "container.list-render#lp-wide-highlights-certificates"
+            "container.list-render#lp_wide-highlights-certificates"
         ]
     },
-    "container.list-render#lp-wide-highlights-certificates": {
+    "container.list-render#lp_wide-highlights-certificates": {
         "props": {
-            "blockClass": ["lp_image", "lp-wide-highlights-certificates"]
+            "blockClass": ["lp_image", "lp_wide-highlights-certificates"]
         }
     },
 
@@ -547,7 +542,7 @@
         "title": "",
         "children": [
             //texto
-            "rich-text#lp_grow-block-mosaic-text",
+            "rich-text#lp_grow-block-mosaic_text",
             "list-context.image-list#lp_grow-block-mosaic-banner-1", // imagem unica
             "list-context.image-list#lp_grow-block-mosaic-banners-grid", // esquema de tres imagens
             "list-context.image-list#lp_grow-block-mosaic-banner-2" // imagem unica
@@ -557,20 +552,20 @@
         }
     },
     // texto
-    "rich-text#lp_grow-block-mosaic-text": {
+    "rich-text#lp_grow-block-mosaic_text": {
         "title": "Texto",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título \n ## Text-Block-Title \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
-            "blockClass": ["lp_text-block", "lp_text", "lp_title", "lp_title-2", "lp_grow-block-mosaic-text"]
+            "text": "## Título H2 \n ### Título H3 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "blockClass": ["lp_text-block", "lp_grow-block-mosaic_text"]
         }
     },
     // banner 1
     "list-context.image-list#lp_grow-block-mosaic-banner-1": {
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/1410x515",
+                "image": "https://dummyimage.com/1220x445",
                 "mobileImage": "https://dummyimage.com/360x640" // ver medidas mobile
             }],
             "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-1"]
@@ -602,7 +597,7 @@
                     "link": {}
                 },
                 {
-                    "image": "https://dummyimage.com/643x886",
+                    "image": "https://dummyimage.com/596x821",
                     "mobileImage": "",
                     "link": {}
                 }
@@ -619,7 +614,7 @@
     "list-context.image-list#lp_grow-block-mosaic-banner-2": {
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/1410x515",
+                "image": "https://dummyimage.com/1220x445",
                 "mobileImage": "https://dummyimage.com/360x640" // ver medidas mobile
             }],
             "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-2"]
@@ -652,8 +647,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título 2 - Estilizado",
-            "blockClass": ["lp_text-block", "lp_text", "lp_title-2"]
+            "text": "## Título H2",
+            "blockClass": ["lp_text-block", "lp_grid-category_text"]
         }
     },
     // Slider
@@ -692,7 +687,7 @@
         "title": "",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/254x343"
+                "image": "https://dummyimage.com/223x300"
             }],
             "blockClass": ["lp_image"]
         },
@@ -700,7 +695,7 @@
     },
     "container.list-render#lp_grid-category_col-1": {
         "props": {
-            "blockClass": ["lp_image"]
+            "blockClass": ["lp_image", "grid-category_image"]
         }
     },
     "rich-text#lp_grid-category_col-1": {
@@ -708,8 +703,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "### CATEGORIA",
-            "blockClass": ""
+            "text": "#### CATEGORIA",
+            "blockClass": "grid_image-text"
         }
     },
     
@@ -727,7 +722,7 @@
         "title": "",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/254x343"
+                "image": "https://dummyimage.com/223x300"
             }],
             "blockClass": ["lp_image"]
         },
@@ -735,7 +730,7 @@
     },
     "container.list-render#lp_grid-category_col-2": {
         "props": {
-            "blockClass": ["lp_image"]
+            "blockClass": ["lp_image", "grid-category_image"]
         }
     },
     "rich-text#lp_grid-category_col-2": {
@@ -743,8 +738,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "### CATEGORIA",
-            "blockClass": ""
+            "text": "#### CATEGORIA",
+            "blockClass": "grid_image-text"
         }
     },
     
@@ -762,7 +757,7 @@
         "title": "",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/254x343"
+                "image": "https://dummyimage.com/223x300"
             }],
             "blockClass": ["lp_image"]
         },
@@ -770,7 +765,7 @@
     },
     "container.list-render#lp_grid-category_col-3": {
         "props": {
-            "blockClass": ["lp_image"]
+            "blockClass": ["lp_image", "grid-category_image"]
         }
     },
     "rich-text#lp_grid-category_col-3": {
@@ -778,8 +773,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "### CATEGORIA",
-            "blockClass": ""
+            "text": "#### CATEGORIA",
+            "blockClass": "grid_image-text"
         }
     },
     
@@ -797,7 +792,7 @@
         "title": "",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/254x343"
+                "image": "https://dummyimage.com/223x300"
             }],
             "blockClass": ["lp_image"]
         },
@@ -805,7 +800,7 @@
     },
     "container.list-render#lp_grid-category_col-4": {
         "props": {
-            "blockClass": ["lp_image"]
+            "blockClass": ["lp_image", "grid-category_image"]
         }
     },
     "rich-text#lp_grid-category_col-4": {
@@ -813,8 +808,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "### CATEGORIA",
-            "blockClass": ""
+            "text": "#### CATEGORIA",
+            "blockClass": "grid_image-text"
         }
     },
     
@@ -832,7 +827,7 @@
         "title": "",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/254x343"
+                "image": "https://dummyimage.com/223x300"
             }],
             "blockClass": ["lp_image"]
         },
@@ -840,7 +835,7 @@
     },
     "container.list-render#lp_grid-category_col-5": {
         "props": {
-            "blockClass": ["lp_image"]
+            "blockClass": ["lp_image", "grid-category_image"]
         }
     },
     "rich-text#lp_grid-category_col-5": {
@@ -848,8 +843,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "### CATEGORIA",
-            "blockClass": ""
+            "text": "#### CATEGORIA",
+            "blockClass": "grid_image-text"
         }
     },
 
@@ -870,8 +865,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título 2 - Estilizado \n ## Título padrao \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
-            "blockClass": ["lp_text-block", "lp_text", "lp_title-2", "lp_titulo", "lp_footer-highlight_text"]
+            "text": "## Título H2 \n ### Título H3 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "blockClass": ["lp_text-block", "lp_footer-highlight_text"]
         }
     },
     // video com controles
@@ -881,8 +876,8 @@
             "description": "", // SEO and accessibility
             "poster": "", // Imagem que vai sobrepor o video
             "controlsType": "custom-vtex",
-            "width": "950px",
-            "height": "545px",
+            "width": "960px",
+            "height": "540px",
             "loop": false,
             "autoPlay": false,
             "playsInline": true,
@@ -901,14 +896,14 @@
         }
     },
 
-    // Footer - "CTA"
+    // Footer - "CTA" - criar um wrapper com link para google maps
     "rich-text#lp_footer-highlight_text-highlight": {
         "title": "Texto",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título Unico - Estilizado \n ### H3 unico",
-            "blockClass": ["lp_text-block", "lp_text", "lp_footer-highlight_text-highlight"]
+            "text": "## Título H2 \n ### Título H3",
+            "blockClass": ["lp_text-block", "lp_footer-highlight_text-highlight"]
         }
     }
 }

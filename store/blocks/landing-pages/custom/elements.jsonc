@@ -1,16 +1,16 @@
 {
 	"store.custom#custom-landing-page": {
 		"children": [
-			"container#lp-banner-hero",
-			"flex-layout.row#lp-wrapper-row-1",
-			"container#lp-most-selling",
-			"container#lp-video-highlight",
-			"flex-layout.row#lp-wrapper-row-2",
-			"container#lp-wide-highlights",
-			"flex-layout.row#lp-wrapper-row-3",
-			"flex-layout.row#lp-wrapper-row-4",
-			"flex-layout.row#lp-wrapper-row-5",
-			"flex-layout.row#lp-wrapper-row-6"
+			"container#lp_banner-hero",
+			"flex-layout.row#lp_wrapper-row-1",
+			"container#lp_most-selling",
+			"container#lp_video-highlight",
+			"flex-layout.row#lp_wrapper-row-2",
+			"container#lp_wide-highlights",
+			"flex-layout.row#lp_wrapper-row-3",
+			"flex-layout.row#lp_wrapper-row-4",
+			"flex-layout.row#lp_wrapper-row-5",
+			"flex-layout.row#lp_wrapper-row-6"
 		]
 	}
 }

@@ -1,9 +1,22 @@
-.flexRow--background-line {
-    background: #a6ffc1
+/* General */
+.flexRow--wrapper-row {
+    /* margin-bottom: 28px */
+    margin-bottom: 48px
 }
 
+/* BG Row Wrapper */
+.flexRow--background-line {
+    background: #4f549b
+}
+
+/* Footer Row Wrapper */
 .flexRow--footer-line {
-    background: #a6ffc1
+    /* cor teste: */
+    background-color: #4f549b;
+    /* cor correta: background-color: ##f1f1f1 */
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse
 }
 
 /* Grid-5 */
