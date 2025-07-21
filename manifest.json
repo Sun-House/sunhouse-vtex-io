@@ -54,6 +54,7 @@
     "vtex.store-image": "0.x",
     "vtex.product-price": "1.x",
     "vtex.product-specifications": "1.x",
+    "vtex.store-video": "1.x",
     "sunhouse.menu": "2.x",
     "sunhouse.store-components": "4.x",
     "sunhouse.auth-utils": "2.x",

@@ -1,0 +1,42 @@
+.container--lp_grid_carousel {
+    display: flex;
+    justify-content: center
+}
+
+.imageItem--lp_grid_carousel {
+    border-radius: 32px;
+    border: 4px solid #fff;
+    padding: 3px;
+    transition: .3s
+}
+
+.link--lp_grid_carousel:hover .imageItem--lp_grid_carousel {
+    border: 4px solid #4f549b
+}
+
+.text--lp_grid_carousel {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000;
+    transition: .3s
+}
+
+.link--lp_grid_carousel {
+    text-decoration: none
+}
+
+.link--lp_grid_carousel:hover .text--lp_grid_carousel {
+    color: #4f549b
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+    .container--lp_grid_carousel .emblaSlide--lp_grid_carousel {
+        min-width: min-content !important;
+        margin: 0 7px
+    }
+}
+
+/* Mobile */

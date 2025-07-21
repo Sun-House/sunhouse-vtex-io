@@ -148,7 +148,7 @@
         "title": "Grid Cadeiras Destaque",
         "children": [
             "rich-text#lp_grid-cadeiras_text",
-            "slider-layout#lp_grid-cadeiras"
+            "flex-layout.row#lp_grid-cadeiras"
         ],
         "props": {
             "blockClass": "lp_grid-cadeiras"
@@ -165,196 +165,72 @@
     },
     
     // Bloco Grid de Imagens
-    // Slider
-    "slider-layout#lp_grid-cadeiras": {
+    "flex-layout.row#lp_grid-cadeiras": {
         "title": "",
+        "children": [
+            "flex-layout.col#lp_grid-cadeiras"
+        ],
         "props": {
-            "itemsPerPage": {
-                "desktop": 5,
-                "phone": 2
+            "colSizing": "equal",
+            "preventVerticalStretch": true,
+            "blockClass": "lp_grid"
+        }
+    },
+    "flex-layout.col#lp_grid-cadeiras": {
+        "title": "",
+        "children": [
+            "image-text-list#lp_grid-cadeiras_images"
+        ],
+        "props": {
+            "width": "grow",
+            "blockClass": "lp_grid"
+        }
+    },
+
+    "image-text-list#lp_grid-cadeiras_images": {
+        "children": [
+            "embla-carousel#lp_grid-cadeiras_carousel"
+        ],
+        "props": {
+            "imageTextArray": [{
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                }
+            ],
+            "blockClass": "lp_grid_images"
+        }
+    },
+    "embla-carousel#lp_grid-cadeiras_carousel": {
+        "props": {
+            "options": {
+                "navigation": false,
+                "dots": false,
+                "draggable": true,
+                "loop": false,
+                "align": "center"
             },
-            "showNavigationArrows": "desktopOnly",
-            "dots": true,
-            "infinite": true,
-            "blockClass": "lp_grid-slider"
-        },
-        "children": [
-            "flex-layout.col#grid-cadeiras_col-1",
-            "flex-layout.col#grid-cadeiras_col-2",
-            "flex-layout.col#grid-cadeiras_col-3",
-            "flex-layout.col#grid-cadeiras_col-4",
-            "flex-layout.col#grid-cadeiras_col-5"
-        ]
-    },
-    // Colunas
-    // Col-1
-    "flex-layout.col#grid-cadeiras_col-1": {
-        "children": [
-            "list-context.image-list#grid-cadeiras_col-1",
-            "rich-text#grid-cadeiras_col-1"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#grid-cadeiras_col-1": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#grid-cadeiras_col-1"]
-    },
-    "container.list-render#grid-cadeiras_col-1": {
-        "props": {
-            "blockClass": ["lp_image", "grid-cadeiras_image"]
-        }
-    },
-    "rich-text#grid-cadeiras_col-1": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    // Col-2
-    "flex-layout.col#grid-cadeiras_col-2": {
-        "children": [
-            "list-context.image-list#grid-cadeiras_col-2",
-            "rich-text#grid-cadeiras_col-2"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#grid-cadeiras_col-2": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#grid-cadeiras_col-2"]
-    },
-    "container.list-render#grid-cadeiras_col-2": {
-        "props": {
-            "blockClass": ["lp_image", "grid-cadeiras_image"]
-        }
-    },
-    "rich-text#grid-cadeiras_col-2": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    // Col-3
-    "flex-layout.col#grid-cadeiras_col-3": {
-        "children": [
-            "list-context.image-list#grid-cadeiras_col-3",
-            "rich-text#grid-cadeiras_col-3"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#grid-cadeiras_col-3": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#grid-cadeiras_col-3"]
-    },
-    "container.list-render#grid-cadeiras_col-3": {
-        "props": {
-            "blockClass": ["lp_image", "grid-cadeiras_image"]
-        }
-    },
-    "rich-text#grid-cadeiras_col-3": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    // Col-4
-    "flex-layout.col#grid-cadeiras_col-4": {
-        "children": [
-            "list-context.image-list#grid-cadeiras_col-4",
-            "rich-text#grid-cadeiras_col-4"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#grid-cadeiras_col-4": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#grid-cadeiras_col-4"]
-    },
-    "container.list-render#grid-cadeiras_col-4": {
-        "props": {
-            "blockClass": ["lp_image", "grid-cadeiras_image"]
-        }
-    },
-    "rich-text#grid-cadeiras_col-4": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    // Col-5
-    "flex-layout.col#grid-cadeiras_col-5": {
-        "children": [
-            "list-context.image-list#grid-cadeiras_col-5",
-            "rich-text#grid-cadeiras_col-5"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#grid-cadeiras_col-5": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#grid-cadeiras_col-5"]
-    },
-    "container.list-render#grid-cadeiras_col-5": {
-        "props": {
-            "blockClass": ["lp_image", "grid-cadeiras_image"]
-        }
-    },
-    "rich-text#grid-cadeiras_col-5": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
+            "blockClass": "lp_grid_carousel"
         }
     },
     
@@ -386,21 +262,24 @@
         "props": {
             "images": [{
                     "image": "https://dummyimage.com/596x821",
-                    // "image": "https://dummyimage.com/596x630", // validar medida mobile
-                    "mobileImage": "",
-                    "link": {}
+                    "mobileImage": "", // validar medida mobile
+                    "link": {
+                        "url": "#"
+                    }
                 },
                 {
                     "image": "https://dummyimage.com/596x396",
-                    // "image": "https://dummyimage.com/596x301", // validar medida mobile
-                    "mobileImage": "",
-                    "link": {}
+                    "mobileImage": "", // validar medida mobile
+                    "link": {
+                        "url": "#"
+                    }
                 },
                 {
                     "image": "https://dummyimage.com/596x396",
-                    // "image": "https://dummyimage.com/596x301", // validar medida mobile
-                    "mobileImage": "",
-                    "link": {}
+                    "mobileImage": "", // validar medida mobile
+                    "link": {
+                        "url": "#"
+                    }
                 }
             ]
         }
@@ -566,7 +445,10 @@
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1220x445",
-                "mobileImage": "https://dummyimage.com/360x640" // ver medidas mobile
+                "mobileImage": "", // ver medidas mobile
+                "link": {
+                    "url": "#"
+                }
             }],
             "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-1"]
         },
@@ -588,18 +470,24 @@
         "props": {
             "images": [{
                     "image": "https://dummyimage.com/596x396",
-                    "mobileImage": "",
-                    "link": {}
+                    "mobileImage": "", // validar medida mobile
+                    "link": {
+                        "url": "#"
+                    }
                 },
                 {
                     "image": "https://dummyimage.com/596x396",
-                    "mobileImage": "",
-                    "link": {}
+                    "mobileImage": "", // validar medida mobile
+                    "link": {
+                        "url": "#"
+                    }
                 },
                 {
                     "image": "https://dummyimage.com/596x821",
-                    "mobileImage": "",
-                    "link": {}
+                    "mobileImage": "", // validar medida mobile
+                    "link": {
+                        "url": "#"
+                    }
                 }
             ]
         }
@@ -615,7 +503,10 @@
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1220x445",
-                "mobileImage": "https://dummyimage.com/360x640" // ver medidas mobile
+                "mobileImage": "", // ver medidas mobile
+                "link": {
+                    "url": "#"
+                }
             }],
             "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-2"]
         },
@@ -634,13 +525,13 @@
         "title": "Grid Categorias Destaque",
         "children": [
             "rich-text#lp_grid-category_text",
-            "slider-layout#lp_grid-category_slider"
+            "flex-layout.row#lp_grid-category"
         ],
         "props": {
             "blockClass": "lp_grid-category"  // -> cor de fundo: #f1f1f1
         }
-    },    
-    // Bloco Grid de Imagens
+    },
+    
     // text
     "rich-text#lp_grid-category_text": {
         "title": "Texto",
@@ -651,200 +542,74 @@
             "blockClass": ["lp_text-block", "lp_grid-category_text"]
         }
     },
-    // Slider
-    "slider-layout#lp_grid-category_slider": {
+
+    // Bloco Grid de Imagens
+    "flex-layout.row#lp_grid-category": {
         "title": "",
+        "children": [
+            "flex-layout.col#lp_grid-category"
+        ],
         "props": {
-            "itemsPerPage": {
-                "desktop": 5,
-                "phone": 2
+            "colSizing": "equal",
+            "preventVerticalStretch": true,
+            "blockClass": "lp_grid"
+        }
+    },
+    "flex-layout.col#lp_grid-category": {
+        "title": "",
+        "children": [
+            "image-text-list#lp_grid-category_images"
+        ],
+        "props": {
+            "width": "grow",
+            "blockClass": "lp_grid"
+        }
+    },
+
+    "image-text-list#lp_grid-category_images": {
+        "children": [
+            "embla-carousel#lp_grid-category_carousel"
+        ],
+        "props": {
+            "imageTextArray": [{
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                }
+            ],
+            "blockClass": "lp_grid_images"
+        }
+    },
+    "embla-carousel#lp_grid-category_carousel": {
+        "props": {
+            "options": {
+                "navigation": false,
+                "dots": false,
+                "draggable": true,
+                "loop": false,
+                "align": "center"
             },
-            "showNavigationArrows": "desktopOnly",
-            "dots": true,
-            "infinite": true,
-            "blockClass": "lp_grid-slider"
-        },
-        "children": [
-            "flex-layout.col#lp_grid-category_col-1",
-            "flex-layout.col#lp_grid-category_col-2",
-            "flex-layout.col#lp_grid-category_col-3",
-            "flex-layout.col#lp_grid-category_col-4",
-            "flex-layout.col#lp_grid-category_col-5"
-        ]
-    },
-    // Colunas
-    // Col-1
-    "flex-layout.col#lp_grid-category_col-1": {
-        "children": [
-            "list-context.image-list#lp_grid-category_col-1",
-            "rich-text#lp_grid-category_col-1"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#lp_grid-category_col-1": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#lp_grid-category_col-1"]
-    },
-    "container.list-render#lp_grid-category_col-1": {
-        "props": {
-            "blockClass": ["lp_image", "grid-category_image"]
-        }
-    },
-    "rich-text#lp_grid-category_col-1": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    
-    // Col-2
-    "flex-layout.col#lp_grid-category_col-2": {
-        "children": [
-            "list-context.image-list#lp_grid-category_col-2",
-            "rich-text#lp_grid-category_col-2"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#lp_grid-category_col-2": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#lp_grid-category_col-2"]
-    },
-    "container.list-render#lp_grid-category_col-2": {
-        "props": {
-            "blockClass": ["lp_image", "grid-category_image"]
-        }
-    },
-    "rich-text#lp_grid-category_col-2": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    
-    // Col-3
-    "flex-layout.col#lp_grid-category_col-3": {
-        "children": [
-            "list-context.image-list#lp_grid-category_col-3",
-            "rich-text#lp_grid-category_col-3"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#lp_grid-category_col-3": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#lp_grid-category_col-3"]
-    },
-    "container.list-render#lp_grid-category_col-3": {
-        "props": {
-            "blockClass": ["lp_image", "grid-category_image"]
-        }
-    },
-    "rich-text#lp_grid-category_col-3": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    
-    // Col-4
-    "flex-layout.col#lp_grid-category_col-4": {
-        "children": [
-            "list-context.image-list#lp_grid-category_col-4",
-            "rich-text#lp_grid-category_col-4"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#lp_grid-category_col-4": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#lp_grid-category_col-4"]
-    },
-    "container.list-render#lp_grid-category_col-4": {
-        "props": {
-            "blockClass": ["lp_image", "grid-category_image"]
-        }
-    },
-    "rich-text#lp_grid-category_col-4": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    
-    // Col-5
-    "flex-layout.col#lp_grid-category_col-5": {
-        "children": [
-            "list-context.image-list#lp_grid-category_col-5",
-            "rich-text#lp_grid-category_col-5"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#lp_grid-category_col-5": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#lp_grid-category_col-5"]
-    },
-    "container.list-render#lp_grid-category_col-5": {
-        "props": {
-            "blockClass": ["lp_image", "grid-category_image"]
-        }
-    },
-    "rich-text#lp_grid-category_col-5": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
+            "blockClass": "lp_grid_carousel"
         }
     },
 

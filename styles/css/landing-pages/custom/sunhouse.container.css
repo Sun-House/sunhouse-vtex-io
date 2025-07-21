@@ -12,14 +12,6 @@
 }
 
 /* Grid-5 Geral */
-.imageElement--grid-cadeiras_image {
-    border: 4px solid #fff;
-    transition: .3s
-}
-
-.imageElement--grid-cadeiras_image:hover {
-    border: 4px solid #4f549b
-}
 
 /* Grid-5 Cadeiras */
 
@@ -34,14 +26,14 @@
 }
 
 .imageElementLink--lp_mais-vendidas-images {
-    max-height: unset !important;
-    cursor: default;
-    pointer-events: none !important
+    max-height: unset !important
+    /* cursor: default;
+    pointer-events: none !important */
 }
 
-.imageElementLink--lp_mais-vendidas-images:hover {
+/* .imageElementLink--lp_mais-vendidas-images:hover {
     all: unset !important;
-}
+} */
 
 .container--lp_most-selling {
     /* cor teste: */
@@ -101,13 +93,14 @@
     .imageElementLink--lp_grow-block-mosaic-banners-grid {
         width: 100%;
         height: auto;
-        cursor: default;
-        pointer-events: none !important
+        /* cursor: default;
+        pointer-events: none !important */
     
     }
-    .imageElementLink--lp_grow-block-mosaic-banners-grid:hover {
+
+    /* .imageElementLink--lp_grow-block-mosaic-banners-grid:hover {
         all: unset !important;
-    }
+    } */
 
     .imageElementLink--lp_grow-block-mosaic-banners-grid:last-child {
         grid-column: 2 / 3;
