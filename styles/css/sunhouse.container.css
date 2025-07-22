@@ -242,7 +242,8 @@
 }
 
 .container--header--desktop {
-    height: 152px
+    /* height: 152px */
+    height: 0 !important
 }
 
 .container--search-bar-content {
