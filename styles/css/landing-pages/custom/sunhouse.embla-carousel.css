@@ -10,6 +10,10 @@
     transition: .3s
 }
 
+.imageItem--lp_grid-category_carousel {
+    border: 4px solid #f1f1f1
+}
+
 .link--lp_grid_carousel:hover .imageItem--lp_grid_carousel {
     border: 4px solid #4f549b
 }

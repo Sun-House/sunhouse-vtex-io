@@ -104,6 +104,7 @@
     "flex-layout.col#lp_wrapper-row-6": {
         "title": "",
         "children": [
+            "list-context.image-list#lp_footer-highlight_icon",
             "rich-text#lp_footer-highlight_text-highlight"
         ],
         "props": {
@@ -242,7 +243,7 @@
             "list-context.image-list#lp_most-selling-images"
         ],
         "props": {
-            "blockClass": "lp_most-selling" // -> cor de fundo: #d4d1d2
+            "blockClass": "lp_most-selling"
         }
     },
     "rich-text#lp_most-selling-title": {
@@ -286,7 +287,7 @@
     },
     "container.list-render#lp_most-selling-images": {
         "props": {
-            "blockClass": ["lp_image", "lp_mais-vendidas-images", "banner-grid"],
+            "blockClass": ["lp_image", "lp_banners-grid", "lp_mais-vendidas-images"],
             "wrapper": true
         }
     },
@@ -450,7 +451,7 @@
                     "url": "#"
                 }
             }],
-            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-1"]
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
         },
         "children": [
             "container.list-render#lp_grow-block-mosaic-banner-1"
@@ -458,7 +459,7 @@
     },
     "container.list-render#lp_grow-block-mosaic-banner-1": {
         "props": {
-            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-1"]
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
         }
     },
     // banner grid
@@ -494,7 +495,7 @@
     },
     "container.list-render#lp_grow-block-mosaic-banners-grid": {
         "props": {
-            "blockClass": ["lp_image", "lp_grow-block-mosaic-banners-grid"],
+            "blockClass": ["lp_image", "lp_banners-grid", "lp_grow-block-mosaic-banners-grid"],
             "wrapper": true
         }
     },
@@ -508,7 +509,7 @@
                     "url": "#"
                 }
             }],
-            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-2"]
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
         },
         "children": [
             "container.list-render#lp_grow-block-mosaic-banner-2"
@@ -516,7 +517,7 @@
     },
     "container.list-render#lp_grow-block-mosaic-banner-2": {
         "props": {
-            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-2"]
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
         }
     },
 
@@ -528,7 +529,7 @@
             "flex-layout.row#lp_grid-category"
         ],
         "props": {
-            "blockClass": "lp_grid-category"  // -> cor de fundo: #f1f1f1
+            "blockClass": "lp_grid-category"
         }
     },
     
@@ -609,7 +610,7 @@
                 "loop": false,
                 "align": "center"
             },
-            "blockClass": "lp_grid_carousel"
+            "blockClass": ["lp_grid_carousel", "lp_grid-category_carousel"]
         }
     },
 
@@ -662,6 +663,27 @@
     },
 
     // Footer - "CTA" - criar um wrapper com link para google maps
+    "list-context.image-list#lp_footer-highlight_icon": {
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/100x149",
+                "mobileImage": "https://dummyimage.com/100x149",
+                "link": {
+                    "url": "#" // link do google maps vai aqui
+                }
+            }],
+            "blockClass": ["lp_image", "lp_footer-highlight_icon"]
+        },
+        "children": [
+            "container.list-render#lp_footer-highlight_icon"
+        ]
+    },
+    "container.list-render#lp_footer-highlight_icon": {
+        "props": {
+            "blockClass": ["lp_image", "lp_footer-highlight_icon"]
+        }
+    },
+
     "rich-text#lp_footer-highlight_text-highlight": {
         "title": "Texto",
         "props": {

@@ -119,10 +119,14 @@
     background: #4f549b;
     font-size: 24px;
     border-radius: 14px;
-    /* box-shadow: 2px 3px 5px #ccc; */
     text-decoration: none;
     color: #fff;
-    font-weight: 600
+    font-weight: 600;
+    transition: .3s
+}
+
+.link--lp_button:hover {
+    background: #62669c
 }
 
 /* Certificates Block */

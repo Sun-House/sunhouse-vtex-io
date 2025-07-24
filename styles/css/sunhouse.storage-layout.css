@@ -44,4 +44,8 @@
         gap: 10px;
         bottom: 0
     }
+
+    .storageLayout--cookies {
+        border-radius: 0
+    }
 }
