@@ -619,6 +619,7 @@
         "title": "",
         "children": [
             "rich-text#lp_footer-highlight_text",
+            // "sandbox#instagram" -> sera validado numa versao futura de atualizacao
             "video#lp_footer-highlight_video"
         ],
         "props": {
@@ -635,6 +636,21 @@
             "blockClass": ["lp_text-block", "lp_footer-highlight_text"]
         }
     },
+    
+
+
+    // Bloco 'video' - sendo testado com o component Sandbox da VTEX
+
+    // Sandbox
+    // "sandbox#instagram": {
+    //     "props": {
+    //         "width": "1500px",
+    //         "height": "1500px",
+    //         "allowCookies": false,
+    //         "initialContent": "<div id='curator-feed-sun-house-feed-layout'><a href='https://curator.io' target='_blank' class='crt-logo crt-tag'>Powered by Curator.io</a></div><script type='text/javascript'>(function(){ var i, e, d = document, s = 'script';i = d.createElement('script');i.async = 1;i.src = 'https://cdn.curator.io/published/e2b35fe0-4c78-44ff-89c9-28c7a9b32f1a.js';e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e); })();</script>"
+    //     }
+    // },
+    
     // video com controles
     "video#lp_footer-highlight_video": {
         "props": {
@@ -662,12 +678,16 @@
         }
     },
 
+    // Bloco 'video' - sendo testado com o component Sandbox da VTEX
+
+
+
     // Footer - "CTA" - criar um wrapper com link para google maps
     "list-context.image-list#lp_footer-highlight_icon": {
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/100x149",
-                "mobileImage": "https://dummyimage.com/100x149",
+                "image": "https://dummyimage.com/76x113",
+                "mobileImage": "https://dummyimage.com/76x113",
                 "link": {
                     "url": "#" // link do google maps vai aqui
                 }

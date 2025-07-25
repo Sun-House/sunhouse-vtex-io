@@ -6,8 +6,16 @@
 
 /* Banner Tela Completa */
 .imageElement--lp_banner-hero {
-    margin-top: -6px;
+    /* margin-top: -6px; */
     border-radius: unset !important
+}
+
+/* Desktop force */
+/* Ajuste para remocao ta top bar */
+@media screen and (min-width: 1025px) {
+    .imageElement--lp_banner-hero {
+        margin-top: -42px
+    }
 }
 
 /* Grid Most Selling */
@@ -124,8 +132,8 @@
 
 /* Footer Location Highlight */
 .container--lp_footer-highlight_icon {
-    max-width: 100px;
-    margin: 12px auto
+    max-width: 76px;
+    margin: 32px auto
 }
 
 /* Mobile 1 - PRECISA AJUSTAR TUDO BASICAMENTE */
