@@ -7,7 +7,7 @@
 }
 
 .container--institucional-landing {
-    margin-top: 136px
+    margin-top: 136px !important
 }
 
 @media screen and (max-width: 1024px) {
@@ -17,5 +17,9 @@
 
     .container--institutional {
         margin-top: 0
+    }
+
+    .container--institucional-landing {
+        margin-top: 0 !important
     }
 }
