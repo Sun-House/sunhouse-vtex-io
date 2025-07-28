@@ -165,7 +165,8 @@
     line-height: 16px;
     display: flex;
     align-items: center;
-    color: #fff
+    /* color: #fff */
+    color: #2d2926
 }
 
 .container--by-category {

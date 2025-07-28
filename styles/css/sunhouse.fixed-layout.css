@@ -1,1 +1,68 @@
-.fixedLayout--sticky-header{z-index:4;--header-logo-left: 50%;--header-logo-transform: translateX(-50%);--header-left-controls-visibility: visible;--header-left-controls-opacity: 100%;--header-right-wishlist-visibility: hidden;--header-right-wishlist-opacity: 0%;--header-right-controls-gap: 38px;--header-menu-transform: translate(0, 0);--header-menu-width: 100%;--header-menu-wrapper-size: 40px;--header-menu-item-padding-inline: 16px;--header-menu-border-color: #c0bfbe;--header-department-content-left-offset: 0px;--header-department-content-top-offset: 42px;transition:all .2s;background-color:var(--header-background-color);--header-left-controls-display: block}.fixedLayout--sticky-header:hover{--header-background-color: white;--header-text-color: $textColor;--header-menu-item-highlight-color: #f90041;--header-menu-border-color: transparent}.fixedLayout--sticky-header--scrolledPast{--header-background-color: white;--header-text-color: $textColor;--header-logo-left: 0px;--header-logo-transform: none;--header-left-controls-visibility: hidden;--header-left-controls-opacity: 0%;--header-right-wishlist-visibility: visible;--header-right-wishlist-opacity: 100%;--header-right-controls-gap: 38px;--header-menu-transform: translate(130px, -56px);--header-menu-width: min( calc(1220px - 400px), calc(100vw - 400px) );--header-menu-wrapper-size: 0px;--header-menu-item-padding-inline: 8px;--header-menu-item-highlight-color: #f90041;--header-department-content-left-offset: 78px;--header-department-content-top-offset: 60px;--micro-header-box-shadow: -3px 4px 11px -2px rgba(0, 0, 0, 0.15);--header-logo-visible: hidden;--header-logo-opacity: 0%;--header-inverted-logo-visible: visible;--header-inverted-logo-opacity: 100%;--header-logo-height: 46px;--header-left-controls-display: none;--header-menu-border-color: transparent}@media screen and (max-width: 1024px){.fixedLayout--sticky-header{position:relative}}
+.fixedLayout--sticky-header {
+    z-index: 4;
+    --header-logo-left: 50%;
+    --header-logo-transform: translateX(-50%);
+    --header-left-controls-visibility: visible;
+    --header-left-controls-opacity: 100%;
+    --header-right-wishlist-visibility: hidden;
+    --header-right-wishlist-opacity: 0%;
+    --header-right-controls-gap: 38px;
+    --header-menu-transform: translate(0, 0);
+    --header-menu-width: 100%;
+    --header-menu-wrapper-size: 40px;
+    --header-menu-item-padding-inline: 16px;
+    --header-menu-border-color: #c0bfbe;
+    --header-department-content-left-offset: 0px;
+    --header-department-content-top-offset: 42px;
+    transition: all .2s;
+    background-color: var(--header-background-color);
+    --header-left-controls-display: block
+}
+
+.fixedLayout--sticky-header:hover {
+    --header-background-color: white;
+    --header-text-color: $textColor;
+    --header-menu-item-highlight-color: #f90041;
+    --header-menu-border-color: transparent
+}
+
+.fixedLayout--sticky-header:hover {
+    box-shadow: -3px 4px 11px -2px rgba(0, 0, 0, 0.15)
+}
+
+.fixedLayout--sticky-header--scrolledPast {
+    --header-background-color: white;
+    --header-text-color: $textColor;
+    --header-logo-left: 0px;
+    --header-logo-transform: none;
+    --header-left-controls-visibility: hidden;
+    --header-left-controls-opacity: 0%;
+    --header-right-wishlist-visibility: visible;
+    --header-right-wishlist-opacity: 100%;
+    --header-right-controls-gap: 38px;
+    --header-menu-transform: translate(130px, -56px);
+    --header-menu-width: min(calc(1220px - 400px), calc(100vw - 400px));
+    --header-menu-wrapper-size: 0px;
+    --header-menu-item-padding-inline: 8px;
+    --header-menu-item-highlight-color: #f90041;
+    --header-department-content-left-offset: 78px;
+    --header-department-content-top-offset: 60px;
+    --micro-header-box-shadow: -3px 4px 11px -2px rgba(0, 0, 0, 0.15);
+    --header-logo-visible: hidden;
+    --header-logo-opacity: 0%;
+    --header-inverted-logo-visible: visible;
+    --header-inverted-logo-opacity: 100%;
+    --header-logo-height: 46px;
+    --header-left-controls-display: none;
+    --header-menu-border-color: transparent
+}
+
+@media screen and (max-width: 1024px) {
+    .fixedLayout--sticky-header {
+        position: relative
+    }
+
+    .fixedLayout--sticky-header:hover {
+        box-shadow: unset
+    }
+}
