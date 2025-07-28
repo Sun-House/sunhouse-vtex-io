@@ -1,9 +1,9 @@
-/* Oculta o Menu apenas para SEO no desktop */
+/* Force Hide menu for SEO in Desktop */
 .navWrapper--html-seo_mobile-category-menu {
     display: none !important
 }
 
-/* Oculta o Menu apenas para SEO no mobile */
+/* Force Hide menu for SEO in Mobile */
 @media screen and (max-width: 1024px) {
     .navWrapper--html-seo_mobile-category-menu {
         display: none !important

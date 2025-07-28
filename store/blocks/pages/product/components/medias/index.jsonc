@@ -26,7 +26,6 @@
 
   "rich-text#zoom-text-desktop": {
     "title": "Mensagem de zoom",
-
     "props": {
       "text": "Posicione o mouse sob a imagem para dar zoom",
       "blockClass": "zoom-text"

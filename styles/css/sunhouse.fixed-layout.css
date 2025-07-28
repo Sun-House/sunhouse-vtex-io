@@ -23,8 +23,11 @@
     --header-background-color: white;
     --header-text-color: $textColor;
     --header-menu-item-highlight-color: #f90041;
-    --header-menu-border-color: transparent;
-    box-shadow: 1px 1px 10px #c0bfbe
+    --header-menu-border-color: transparent
+}
+
+.fixedLayout--sticky-header:hover {
+    box-shadow: -3px 4px 11px -2px rgba(0, 0, 0, 0.15)
 }
 
 .fixedLayout--sticky-header--scrolledPast {
@@ -57,5 +60,9 @@
 @media screen and (max-width: 1024px) {
     .fixedLayout--sticky-header {
         position: relative
+    }
+
+    .fixedLayout--sticky-header:hover {
+        box-shadow: unset
     }
 }

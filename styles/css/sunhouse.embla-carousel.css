@@ -165,7 +165,7 @@
     line-height: 16px;
     display: flex;
     align-items: center;
-    /* color: #fff -> nao sei pq estava nessa cor, mas esta em producao e os textos simplemente nao podem ser lidos no slider de destaques de blog */
+    /* color: #fff */
     color: #2d2926
 }
 
