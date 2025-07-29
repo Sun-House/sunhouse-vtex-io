@@ -10,14 +10,6 @@
     border-radius: unset !important
 }
 
-/* Desktop force */
-/* Ajuste para remocao ta top bar */
-@media screen and (min-width: 1025px) {
-    .imageElement--lp_banner-hero {
-        margin-top: -42px
-    }
-}
-
 /* Grid Most Selling */
 .wrapper--lp_mais-vendidas-images {
     max-height: unset !important;

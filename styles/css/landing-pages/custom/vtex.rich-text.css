@@ -3,13 +3,20 @@
     margin: 28px 0
 }
 
+.container--lp_text-block .paragraph {
+    line-height: 24px
+}
+
+.container--lp_text-block .headingLevel1,
+.container--lp_text-block .headingLevel3 {
+    line-height: 34px
+}
+
 .wrapper--lp_text-block {
     gap: 28px;
     display: flex;
     flex-direction: column
 }
-
-
 
 
 /* ORGANIZACAO DOS TEXTOS */
@@ -23,6 +30,13 @@
     font-size: 1.7rem
 }
 
+.headingLevel1--lp_grid-cadeiras_text,
+.headingLevel3--lp_grow-block-mosaic_text,
+.headingLevel3--lp_footer-highlight_text {
+    max-width: 650px;
+    margin: 0 auto
+}
+
 /* titulo especial italico */ 
 .headingLevel2--lp_grid-cadeiras_text,
 .headingLevel2--lp_most-selling-title,
@@ -34,7 +48,8 @@
 .headingLevel2--lp_footer-highlight_text-highlight {
     text-transform: uppercase;
     font-style: italic;
-    font-weight: 400
+    font-weight: 400;
+    letter-spacing: 8px
 }
 
 /* titulo especial italico colorido */
@@ -60,13 +75,36 @@
 
 /* titulo h4 das grid-5 */
 
-/* texto normal / {
+/* texto normal p */
+.paragraph--lp_grow-block-image-highlight_text {
+    max-width: 600px
+}
 
-} */
+.paragraph--lp_wide-highlights_text {
+    max-width: 850px
+}
+
+.paragraph--lp_grow-block-mosaic_text,
+.paragraph--lp_footer-highlight_text {
+    max-width: 700px
+}
 
 /* texto maior footer / {
 
 } */
+
+
+/* FUNCIONOU NO AMBIENTE DE DEV PROD
+.vtex-rich-text-0-x-container--lp_text-block p {
+    line-height: 24px
+}
+
+.vtex-rich-text-0-x-container--lp_text-block h1,
+.vtex-rich-text-0-x-container--lp_text-block h3 {
+    line-height: 34px
+}
+*/
+
 
 /* ORGANIZACAO DOS TEXTOS */
 
