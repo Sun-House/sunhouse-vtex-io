@@ -1,5 +1,9 @@
-.flexRow--product-main {
+/* .flexRow--product-main { -> removido por conta da faixa de desconto da pdp
     margin-top: 112px
+} */
+
+.flexRow--wrapper__highlight-pdp {
+    margin-top: 145px
 }
 
 .flexRow--wishlist-content {
