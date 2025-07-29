@@ -1261,6 +1261,10 @@
     margin-top: 64px
 }
 
+.wrapper--text__coupon-info {
+    margin: 0 auto
+}
+
 @media screen and (max-width: 1250px) {
     .wrapper--common-title {
         padding-left: 15px;

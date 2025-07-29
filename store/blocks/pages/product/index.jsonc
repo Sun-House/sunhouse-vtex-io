@@ -41,7 +41,7 @@
   "responsive-layout.desktop#product-main": {
     "title": "Produto",
     "children": [
-      "container#wrapper__highlight-coupon",
+      "flex-layout.row#product-highlight-coupon",
       "flex-layout.row#product-main",
       //"flex-layout.row#product-infos-wrapper",
       //"tab-layout#product-infos-tab"
@@ -52,6 +52,14 @@
     "children": [
       "flex-layout.row#product-main-mobile"
     ]
+  },
+  "flex-layout.row#product-highlight-coupon": {
+    "children": [
+      "container#wrapper__highlight-coupon"
+    ],
+    "props": {
+      "blockClass": "product-highlight-coupon"
+    }
   },
   "flex-layout.row#product-main": {
     "children": [
