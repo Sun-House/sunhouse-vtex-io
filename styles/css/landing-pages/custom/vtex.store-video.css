@@ -9,3 +9,8 @@
     align-items: center;
     flex-direction: column
 }
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+}

@@ -5,15 +5,18 @@
 
 /* BG Row Wrapper */
 .flexRow--background-line {
-    /* cor teste:
-    background-color: #4f549b; */
     background-color: #f1f1f1
 }
 
 /* Footer Row Wrapper */
 .flexRow--footer-line {
     background: #4f549b;
-    height: 500px;
+    height: 745px;
     display: flex;
     flex-direction: column-reverse
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
 }

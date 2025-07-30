@@ -19,8 +19,8 @@
 }
 
 
-/* ORGANIZACAO DOS TEXTOS */
 
+/* ORGANIZACAO DOS TEXTOS */
 /* titulo normal */
 .headingLevel1--lp_grid-cadeiras_text,
 .headingLevel2--lp_wide-highlights_text,
@@ -35,6 +35,16 @@
 .headingLevel3--lp_footer-highlight_text {
     max-width: 650px;
     margin: 0 auto
+}
+
+.headingLevel2--lp_grid-cadeiras_text {
+    padding-bottom: 14px
+}
+
+.headingLevel2--lp_grow-block-mosaic_text,
+.headingLevel2--lp_footer-highlight_text {
+    margin-top: 28px;
+    margin-bottom: 18px
 }
 
 /* titulo especial italico */ 
@@ -69,15 +79,11 @@
     color: #000
 }
 
-/* titulo especial com barra footer / {
-
-} */
-
-/* titulo h4 das grid-5 */
-
 /* texto normal p */
 .paragraph--lp_grow-block-image-highlight_text {
-    max-width: 600px
+    max-width: 600px;
+    padding-bottom: 28px;
+    margin: 0 auto
 }
 
 .paragraph--lp_wide-highlights_text {
@@ -86,44 +92,26 @@
 
 .paragraph--lp_grow-block-mosaic_text,
 .paragraph--lp_footer-highlight_text {
-    max-width: 700px
+    max-width: 700px;
+    margin-top: 14px;
+    padding-bottom: 28px
 }
-
-/* texto maior footer / {
-
-} */
-
-
-/* FUNCIONOU NO AMBIENTE DE DEV PROD
-.vtex-rich-text-0-x-container--lp_text-block p {
-    line-height: 24px
-}
-
-.vtex-rich-text-0-x-container--lp_text-block h1,
-.vtex-rich-text-0-x-container--lp_text-block h3 {
-    line-height: 34px
-}
-*/
-
-
 /* ORGANIZACAO DOS TEXTOS */
-
 
 
 
 /* Grid Most Selling */
 .container--lp_most-selling-title {
-    margin-top: 28px
+    margin-top: 28px;
+    padding-bottom: 42px
 }
 
 /* Video Highlight */
-/* .container--lp_video-highlight { */
 .container--lp_video-highlight_text {
     height: 0;
     margin: unset !important
 }
 
-/* .container--lp_video-highlight { */
 .container--lp_video-highlight_text {
     position: absolute;
     z-index: 1;
@@ -132,12 +120,10 @@
     height: 684px
 }
 
-/* .heading--lp_video-highlight { */
 .heading--lp_video-highlight_text {
     color: #fff
 }
 
-/* .paragraph--lp_video-highlight { */
 .paragraph--lp_video-highlight_text {
     color: #fff
 }
@@ -147,9 +133,9 @@
 }
 
 /* Button General */
-/* .container--lp_grow-block-image-highlight-button { */
 .container--lp_button {
-    margin-top: 38px
+    margin-top: 42px;
+    padding-bottom: 42px
 }
 
 .link--lp_button {
@@ -173,8 +159,23 @@
     color: #fff
 }
 
+/* Grid-5 Categories */
+.container--lp_grid-category_text {
+    margin-top: 36px;
+    padding-bottom: 36px
+}
+
 /* Footer Block */
+.container--lp_footer-highlight_text-highlight {
+    padding-bottom: 86px
+}
+
 .heading--lp_footer-highlight_text-highlight,
 .paragraph--lp_footer-highlight_text-highlight {
     color: #fff
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
 }

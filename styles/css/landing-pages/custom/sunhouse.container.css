@@ -4,9 +4,8 @@
     border-radius: 32px
 }
 
-/* Banner Tela Completa */
+/* Banner Hero */
 .imageElement--lp_banner-hero {
-    /* margin-top: -6px; */
     border-radius: unset !important
 }
 
@@ -25,8 +24,6 @@
 }
 
 .container--lp_most-selling {
-    /* cor teste:
-    background-color: #4f549b; */
     background-color: #d4d1d2;
     margin: 0 auto;
     padding-top: 28px;
@@ -128,26 +125,22 @@
     margin: 32px auto
 }
 
-/* Mobile 1 - PRECISA AJUSTAR TUDO BASICAMENTE */
+/* Mobile 1 - PRECISA AJUSTAR TUDO MOBILE ABAIXO BASICAMENTE */
 @media screen and (max-width: 1024px) {
-    /* .wrapper--lp_grow-block-mosaic-banners-grid */
     .wrapper--lp_banners-grid {
         max-height: initial
     }
 
-    /* .wrapper--lp_grow-block-mosaic-banners-grid .container--lp_grow-block-mosaic-banners-grid */
     .wrapper--lp_banners-grid .container--lp_banners-grid {
         padding-inline: 20px;
         grid-template-columns: repeat(1, 3fr);
         gap: .75rem
     }
 
-    /* .wrapper--lp_grow-block-mosaic-banners-grid .container--lp_grow-block-mosaic-banners-grid .imageElementLink */
     .wrapper--lp_banners-grid .container--lp_banners-grid .imageElementLink {
         width: 100%
     }
 
-    /* .wrapper--lp_grow-block-mosaic-banners-grid .container--lp_grow-block-mosaic-banners-grid .imageElementLink .imageElement */
     .wrapper--lp_banners-grid .container--lp_banners-grid .imageElementLink .imageElement {
         width: 100%;
         -o-object-fit: cover;
@@ -160,7 +153,6 @@
 
 /* Mobile 2 - PRECISA AJUSTAR */
 @media screen and (max-width: 640px) {
-    /* .wrapper--lp_grow-block-mosaic-banners-grid .container--lp_grow-block-mosaic-banners-grid */
     .wrapper--lp_banners-grid .container--lp_banners-grid {
         grid-template-columns: 1fr
     }

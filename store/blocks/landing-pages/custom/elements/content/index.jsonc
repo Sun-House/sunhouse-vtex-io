@@ -1,7 +1,7 @@
 {
-    // Wrapper Linhas Full Body
+    // Wrapper Linhas e Colunas Full Body
     "flex-layout.row#lp_wrapper-row-1": {
-        "title": "",
+        "title": "Linha 1 - Carrossel Categorias 1",
         "children": [
             "flex-layout.col#lp_wrapper-row-1"
         ],
@@ -10,7 +10,7 @@
         }
     },
     "flex-layout.row#lp_wrapper-row-2": {
-        "title": "",
+        "title": "Linha 2 - Imagem Destaque",
         "children": [
             "flex-layout.col#lp_wrapper-row-2"
         ],
@@ -19,7 +19,7 @@
         }
     },
     "flex-layout.row#lp_wrapper-row-3": {
-        "title": "",
+        "title": "Linha 3 - Grid Mosaico",
         "children": [
             "flex-layout.col#lp_wrapper-row-3"
         ],
@@ -28,7 +28,7 @@
         }
     },
     "flex-layout.row#lp_wrapper-row-4": {
-        "title": "",
+        "title": "Linha 4 - Carrossel Categorias 2",
         "children": [
             "flex-layout.col#lp_wrapper-row-4"
         ],
@@ -37,7 +37,7 @@
         }
     },
     "flex-layout.row#lp_wrapper-row-5": {
-        "title": "",
+        "title": "Linha 5 - Pre-Footer 1",
         "children": [
             "flex-layout.col#lp_wrapper-row-5"
         ],
@@ -46,7 +46,7 @@
         }
     },
     "flex-layout.row#lp_wrapper-row-6": {
-        "title": "",
+        "title": "Linha 6 - Pre-Footer 2",
         "children": [
             "flex-layout.col#lp_wrapper-row-6"
         ],
@@ -55,9 +55,8 @@
         }
     },
 
-    // Wrapper Colunas Full Body
     "flex-layout.col#lp_wrapper-row-1": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "container#lp_grid-cadeiras"
         ],
@@ -66,7 +65,7 @@
         }
     },
     "flex-layout.col#lp_wrapper-row-2": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "container#lp_grow-block-image-highlight"
         ],
@@ -75,7 +74,7 @@
         }
     },
     "flex-layout.col#lp_wrapper-row-3": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "container#lp_grow-block-mosaic"
         ],
@@ -84,7 +83,7 @@
         }
     },
     "flex-layout.col#lp_wrapper-row-4": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "container#lp_grid-category"
         ],
@@ -93,7 +92,7 @@
         }
     },
     "flex-layout.col#lp_wrapper-row-5": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "container#lp_footer-highlight"
         ],
@@ -102,7 +101,7 @@
         }
     },
     "flex-layout.col#lp_wrapper-row-6": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "list-context.image-list#lp_footer-highlight_icon",
             "rich-text#lp_footer-highlight_text-highlight"
@@ -112,12 +111,9 @@
         }
     },
     
-
-    // Blocos:
-
-    // Block-Banner-Full - "Imagem única - tela inteira"
+    // Banner Hero
     "container#lp_banner-hero": {
-        "title": "Bloco Banner Tela Completa",
+        "title": "Banner Hero",
         "children": [
             "list-context.image-list#lp_banner-hero"
         ],
@@ -126,12 +122,12 @@
         }
     },
     "list-context.image-list#lp_banner-hero": {
+        "title": "Imagem Única",
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1920x710",
-                "mobileImage": "https://dummyimage.com/360x640" // validar resolucao mobile
+                "mobileImage": "https://dummyimage.com/360x640" // Resolucao Mobile Validada - OK
             }],
-            //"blockClass": "banner-fulfill"
             "blockClass": ["lp_image", "lp_banner-hero"]
         },
         "children": [
@@ -144,9 +140,9 @@
         }
     },
 
-    // Grid-Block - "Text-Block" + "Titulo" + "Grid-5"
+    // Carrossel Categorias 1
     "container#lp_grid-cadeiras": {
-        "title": "Grid Cadeiras Destaque",
+        "title": "Carrossel Categorias 1",
         "children": [
             "rich-text#lp_grid-cadeiras_text",
             "flex-layout.row#lp_grid-cadeiras"
@@ -156,18 +152,16 @@
         }
     },
     "rich-text#lp_grid-cadeiras_text": {
-        "title": "Texto",
+        "title": "Texto Acima",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "# Título H1 \n breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo). \n ## Título H2",
+            "text": "# Título H1 \nbreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo). \n## Título H2",
             "blockClass": ["lp_text-block", "lp_grid-cadeiras_text"]
         }
     },
-    
-    // Bloco Grid de Imagens
     "flex-layout.row#lp_grid-cadeiras": {
-        "title": "",
+        "title": "Wrapper Linha",
         "children": [
             "flex-layout.col#lp_grid-cadeiras"
         ],
@@ -178,7 +172,7 @@
         }
     },
     "flex-layout.col#lp_grid-cadeiras": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "image-text-list#lp_grid-cadeiras_images"
         ],
@@ -187,8 +181,8 @@
             "blockClass": "lp_grid"
         }
     },
-
     "image-text-list#lp_grid-cadeiras_images": {
+        "title": "Cards",
         "children": [
             "embla-carousel#lp_grid-cadeiras_carousel"
         ],
@@ -237,7 +231,7 @@
     
     // Bloco Grid de Mais Vendidas
     "container#lp_most-selling": {
-        "title": "",
+        "title": "Grid Mosaico - Mais Vendidas",
         "children": [
             "rich-text#lp_most-selling-title",
             "list-context.image-list#lp_most-selling-images"
@@ -256,7 +250,7 @@
         }
     },
     "list-context.image-list#lp_most-selling-images": {
-        "title": "",
+        "title": "Imagens",
         "children": [
             "container.list-render#lp_most-selling-images"
         ],
@@ -292,9 +286,9 @@
         }
     },
 
-    // Wide-Block - "Titulo2" + "Subtitulo" + "Button" + "Video"
+    // Bloco Video Dinamico
     "container#lp_video-highlight": {
-        "title": "",
+        "title": "Video Dinamico",
         "children": [
             "rich-text#lp_video-highlight_text",
             "video#lp_video-highlight-video"
@@ -303,22 +297,19 @@
             "blockClass": "lp_video-highlight"
         }
     },
-    // texto flutuante sobre o video
     "rich-text#lp_video-highlight_text": {
-        "title": "Texto",
+        "title": "Wrapper Texto + Botão",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n ### Subtitulo H3 \n [Botão](#)",
+            "text": "## Título H2 \n### Subtitulo H3 \n[Botão](#)",
             "blockClass": ["lp_text-block", "lp_button", "lp_video-highlight_text"]
         }
     },
-    // video playback sem controles
     "video#lp_video-highlight-video": {
         "props": {
             "name": "", // SEO and accessibility
             "description": "", // SEO and accessibility
-            "poster": "", // Imagem que vai sobrepor o video -> nesse caso nao sei se vai precisar
             "controlsType": "none",
             "width": "100%",
             "height": "684px",
@@ -331,9 +322,9 @@
         }
     },
 
-    // Grow-Block - "Titulo2" + "Subtitulo" + "Text-Block" + "Imagem destaque" + "Button"
+    // Imagem Destaque
     "container#lp_grow-block-image-highlight": {
-        "title": "",
+        "title": "Wrapper Imagem Destaque",
         "children": [
             "rich-text#lp_grow-block-image-highlight_text",
             "list-context.image-list#lp_grow-block-image-highlight-image",
@@ -344,15 +335,16 @@
         }
     },
     "rich-text#lp_grow-block-image-highlight_text": {
-        "title": "Texto",
+        "title": "Texto Acima",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n ### Subtitulo H3 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "text": "## Título H2 \n### Subtitulo H3 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
             "blockClass": ["lp_text-block", "lp_grow-block-image-highlight_text"]
         }
     },
     "list-context.image-list#lp_grow-block-image-highlight-image": {
+        "title": "Imagem Única",
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1220x979",
@@ -370,7 +362,7 @@
         }
     },
     "rich-text#lp_grow-block-image-highlight-button": {
-        "title": "Botão",
+        "title": "Botão CTA",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
@@ -379,9 +371,9 @@
         }
     },
     
-    // Extra-Wide-Block - "Text-Block" + "Certificados"
+    // Bloco Informações Extras
     "container#lp_wide-highlights": {
-        "title": "",
+        "title": "Bloco Informações Extras",
         "children": [
             "rich-text#lp_wide-highlights_text",
             "list-context.image-list#lp_wide-highlights-certificates"
@@ -395,15 +387,16 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "text": "## Título H2 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
             "blockClass": ["lp_text-block", "lp_wide-highlights_text"]
         }
     },
     "list-context.image-list#lp_wide-highlights-certificates": {
+        "title": "Imagem Pequena",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/350x70"
-                //"mobileImage": "https://dummyimage.com/360x640" -> usar a mesma do desktop
+                "image": "https://dummyimage.com/350x70",
+                "mobileImage": "https://dummyimage.com/350x70" // Confirmar se é correto, mas a ideia é usar a mesma do desktop aqui
             }],
             "blockClass": ["lp_image", "lp_wide-highlights-certificates"]
         },
@@ -417,32 +410,30 @@
         }
     },
 
-    // Grow-Block - "Titulo" + "Text-Block" + "Images"
+    // Grid Mosaic
     "container#lp_grow-block-mosaic": {
-        "title": "",
+        "title": "Grid Mosaico",
         "children": [
-            //texto
             "rich-text#lp_grow-block-mosaic_text",
-            "list-context.image-list#lp_grow-block-mosaic-banner-1", // imagem unica
-            "list-context.image-list#lp_grow-block-mosaic-banners-grid", // esquema de tres imagens
-            "list-context.image-list#lp_grow-block-mosaic-banner-2" // imagem unica
+            "list-context.image-list#lp_grow-block-mosaic-banner-1",
+            "list-context.image-list#lp_grow-block-mosaic-banners-grid",
+            "list-context.image-list#lp_grow-block-mosaic-banner-2"
         ],
         "props": {
             "blockClass": ""
         }
     },
-    // texto
     "rich-text#lp_grow-block-mosaic_text": {
         "title": "Texto",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n ### Título H3 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "text": "## Título H2 \n### Título H3 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
             "blockClass": ["lp_text-block", "lp_grow-block-mosaic_text"]
         }
     },
-    // banner 1
     "list-context.image-list#lp_grow-block-mosaic-banner-1": {
+        "title": "Banner 1 - Wide",
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1220x445",
@@ -462,12 +453,8 @@
             "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
         }
     },
-    // banner grid
     "list-context.image-list#lp_grow-block-mosaic-banners-grid": {
-        "title": "",
-        "children": [
-            "container.list-render#lp_grow-block-mosaic-banners-grid"
-        ],
+        "title": "Wrapper Banners - Grid",
         "props": {
             "images": [{
                     "image": "https://dummyimage.com/596x396",
@@ -491,7 +478,10 @@
                     }
                 }
             ]
-        }
+        },
+        "children": [
+            "container.list-render#lp_grow-block-mosaic-banners-grid"
+        ]
     },
     "container.list-render#lp_grow-block-mosaic-banners-grid": {
         "props": {
@@ -499,8 +489,8 @@
             "wrapper": true
         }
     },
-    // banner 2
     "list-context.image-list#lp_grow-block-mosaic-banner-2": {
+        "title": "Banner 2 - Wide",
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1220x445",
@@ -521,9 +511,9 @@
         }
     },
 
-    // Grid-Block - "Titulo" + "Grid-5"
+    // Carrossel Categorias 2
     "container#lp_grid-category": {
-        "title": "Grid Categorias Destaque",
+        "title": "Carrossel Categorias 2",
         "children": [
             "rich-text#lp_grid-category_text",
             "flex-layout.row#lp_grid-category"
@@ -532,8 +522,6 @@
             "blockClass": "lp_grid-category"
         }
     },
-    
-    // text
     "rich-text#lp_grid-category_text": {
         "title": "Texto",
         "props": {
@@ -543,10 +531,8 @@
             "blockClass": ["lp_text-block", "lp_grid-category_text"]
         }
     },
-
-    // Bloco Grid de Imagens
     "flex-layout.row#lp_grid-category": {
-        "title": "",
+        "title": "Wrapper Linha",
         "children": [
             "flex-layout.col#lp_grid-category"
         ],
@@ -557,7 +543,7 @@
         }
     },
     "flex-layout.col#lp_grid-category": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "image-text-list#lp_grid-category_images"
         ],
@@ -566,8 +552,8 @@
             "blockClass": "lp_grid"
         }
     },
-
     "image-text-list#lp_grid-category_images": {
+        "title": "Cards",
         "children": [
             "embla-carousel#lp_grid-category_carousel"
         ],
@@ -614,45 +600,28 @@
         }
     },
 
-    // Footer - "Titulo" + "Text-Block" + "Video-Block"
+    // Pre-Footer 1
     "container#lp_footer-highlight": {
-        "title": "",
+        "title": "Wrapper Pre-Footer 1",
         "children": [
             "rich-text#lp_footer-highlight_text",
-            // "sandbox#instagram" -> sera validado numa versao futura de atualizacao
             "video#lp_footer-highlight_video"
         ],
         "props": {
             "blockClass": "lp_footer-highlight"
         }
     },
-    // text
     "rich-text#lp_footer-highlight_text": {
-        "title": "Texto",
+        "title": "Texto Acima",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n ### Título H3 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "text": "## Título H2 \n### Título H3 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
             "blockClass": ["lp_text-block", "lp_footer-highlight_text"]
         }
     },
-    
-
-
-    // Bloco 'video' - sendo testado com o component Sandbox da VTEX
-
-    // Sandbox
-    // "sandbox#instagram": {
-    //     "props": {
-    //         "width": "1500px",
-    //         "height": "1500px",
-    //         "allowCookies": false,
-    //         "initialContent": "<div id='curator-feed-sun-house-feed-layout'><a href='https://curator.io' target='_blank' class='crt-logo crt-tag'>Powered by Curator.io</a></div><script type='text/javascript'>(function(){ var i, e, d = document, s = 'script';i = d.createElement('script');i.async = 1;i.src = 'https://cdn.curator.io/published/e2b35fe0-4c78-44ff-89c9-28c7a9b32f1a.js';e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e); })();</script>"
-    //     }
-    // },
-    
-    // video com controles
     "video#lp_footer-highlight_video": {
+        "title": "Video Institucional",
         "props": {
             "name": "", // SEO and accessibility
             "description": "", // SEO and accessibility
@@ -666,30 +635,18 @@
             "muted": false,
             "src": "https://www.youtube.com/watch?v=U_TsfCE3d2M",
             "blockClass": "lp_footer-highlight_video"
-            
-            // teste:
-            // ,
-            // "controlsType": "custom-vtex",
-            // "PlayIcon": "none",
-            // "PauseIcon": "none",
-            // "VolumeOnIcon": "none",
-            // "VolumeOffIcon": "none",
-            // "FullscreenIcon": "none"
         }
     },
-
-    // Bloco 'video' - sendo testado com o component Sandbox da VTEX
-
-
-
-    // Footer - "CTA" - criar um wrapper com link para google maps
+    
+    // Pre-Footer 2
     "list-context.image-list#lp_footer-highlight_icon": {
+        "title": "Imagem Icone",
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/76x113",
-                "mobileImage": "https://dummyimage.com/76x113",
+                "mobileImage": "https://dummyimage.com/76x113", // Usar mesma do desktop
                 "link": {
-                    "url": "#" // link do google maps vai aqui
+                    "url": "#"
                 }
             }],
             "blockClass": ["lp_image", "lp_footer-highlight_icon"]
@@ -703,13 +660,12 @@
             "blockClass": ["lp_image", "lp_footer-highlight_icon"]
         }
     },
-
     "rich-text#lp_footer-highlight_text-highlight": {
-        "title": "Texto",
+        "title": "Texto Destaque",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n ### Título H3",
+            "text": "## Título H2 \n### Título H3",
             "blockClass": ["lp_text-block", "lp_footer-highlight_text-highlight"]
         }
     }
