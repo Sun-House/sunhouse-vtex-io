@@ -1,7 +1,7 @@
 {
   "vendor": "sunhouse",
   "name": "sunhouse",
-  "version": "0.6.2-beta.0",
+  "version": "0.6.3-beta.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
