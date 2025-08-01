@@ -18,7 +18,7 @@
   },
   "disclosure-layout-group#footer-mobile": {
     "children": [
-      "disclosure-layout#footer-about",
+      //"disclosure-layout#footer-about",
       "flex-layout.col#footer-schedules",
       "disclosure-layout#footer-for-you",
       "disclosure-layout#footer-institutional",
@@ -39,6 +39,19 @@
   },
 
   //about
+  
+  //
+  "container#footer-about-button-mobile": {
+    "title": "Mobile - Botão Leia Mais (Texto Sobre Nós)",
+    "children": [
+      "disclosure-layout#footer-about"
+    ],
+    "props": {
+      "blockClass": "container-footer-about-text_mobile"
+    }
+  },
+  //
+
   "disclosure-layout#footer-about": {
     "title": "Footer Sobre Nos",
     "children": [
