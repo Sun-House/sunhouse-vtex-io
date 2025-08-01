@@ -1,6 +1,7 @@
 {
   "store.search": {
     "blocks": [
+      "head-tag-handler",
       "sunhouse.search-result:search-result-layout#cluster-and-search"
     ],
     "props": {
@@ -12,8 +13,23 @@
       }
     }
   },
+  
+  
+  // TESTE - PRECISO IMPLEMENTAR ESSE PARA FICAR MAIS DRY - MAS PRECISO REVER O TAGEADO ABAIXO
+  // "sunhouse.search-result:search-page-layout": {
+  //   "blocks": [
+  //     "head-tag-handler",
+  //     "sunhouse.search-result:search-result-layout" // TAGGED
+  //   ]
+  // },
+  //
+
+
   "store.search#department": {
-    "blocks": ["sunhouse.search-result:search-result-layout"],
+    "blocks": [
+      "head-tag-handler",
+      "sunhouse.search-result:search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL_AVAILABLE",
@@ -24,7 +40,10 @@
     }
   },
   "store.search#category": {
-    "blocks": ["sunhouse.search-result:search-result-layout"],
+    "blocks": [
+      "head-tag-handler",
+      "sunhouse.search-result:search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL_AVAILABLE",
@@ -35,7 +54,10 @@
     }
   },
   "store.search#brand": {
-    "blocks": ["sunhouse.search-result:search-result-layout"],
+    "blocks": [
+      "head-tag-handler",
+      "sunhouse.search-result:search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL_AVAILABLE",
@@ -46,7 +68,10 @@
     }
   },
   "store.search#subcategory": {
-    "blocks": ["sunhouse.search-result:search-result-layout"],
+    "blocks": [
+      "head-tag-handler",
+      "sunhouse.search-result:search-result-layout"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL_AVAILABLE",
