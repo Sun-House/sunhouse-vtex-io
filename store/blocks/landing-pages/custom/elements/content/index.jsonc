@@ -1,0 +1,667 @@
+{
+    // Wrapper Linhas e Colunas Full Body
+    "flex-layout.row#lp_wrapper-row-1": {
+        "title": "Linha 1 - Carrossel Categorias 1",
+        "children": [
+            "flex-layout.col#lp_wrapper-row-1"
+        ],
+        "props": {
+            "blockClass": ["full-body", "wrapper-row"]
+        }
+    },
+    "flex-layout.row#lp_wrapper-row-2": {
+        "title": "Linha 2 - Imagem Destaque",
+        "children": [
+            "flex-layout.col#lp_wrapper-row-2"
+        ],
+        "props": {
+            "blockClass": ["full-body", "wrapper-row"]
+        }
+    },
+    "flex-layout.row#lp_wrapper-row-3": {
+        "title": "Linha 3 - Grid Mosaico",
+        "children": [
+            "flex-layout.col#lp_wrapper-row-3"
+        ],
+        "props": {
+            "blockClass": ["full-body", "wrapper-row"]
+        }
+    },
+    "flex-layout.row#lp_wrapper-row-4": {
+        "title": "Linha 4 - Carrossel Categorias 2",
+        "children": [
+            "flex-layout.col#lp_wrapper-row-4"
+        ],
+        "props": {
+            "blockClass": ["full-body", "background-line"]
+        }
+    },
+    "flex-layout.row#lp_wrapper-row-5": {
+        "title": "Linha 5 - Pre-Footer 1",
+        "children": [
+            "flex-layout.col#lp_wrapper-row-5"
+        ],
+        "props": {
+            "blockClass": "full-body"
+        }
+    },
+    "flex-layout.row#lp_wrapper-row-6": {
+        "title": "Linha 6 - Pre-Footer 2",
+        "children": [
+            "flex-layout.col#lp_wrapper-row-6"
+        ],
+        "props": {
+            "blockClass": ["full-body", "footer-line"]
+        }
+    },
+
+    "flex-layout.col#lp_wrapper-row-1": {
+        "title": "Wrapper Coluna",
+        "children": [
+            "container#lp_grid-cadeiras"
+        ],
+        "props": {
+            "blockClass": "full-body"
+        }
+    },
+    "flex-layout.col#lp_wrapper-row-2": {
+        "title": "Wrapper Coluna",
+        "children": [
+            "container#lp_grow-block-image-highlight"
+        ],
+        "props": {
+            "blockClass": "full-body"
+        }
+    },
+    "flex-layout.col#lp_wrapper-row-3": {
+        "title": "Wrapper Coluna",
+        "children": [
+            "container#lp_grow-block-mosaic"
+        ],
+        "props": {
+            "blockClass": "full-body"
+        }
+    },
+    "flex-layout.col#lp_wrapper-row-4": {
+        "title": "Wrapper Coluna",
+        "children": [
+            "container#lp_grid-category"
+        ],
+        "props": {
+            "blockClass": "full-body"
+        }
+    },
+    "flex-layout.col#lp_wrapper-row-5": {
+        "title": "Wrapper Coluna",
+        "children": [
+            "container#lp_footer-highlight"
+        ],
+        "props": {
+            "blockClass": "full-body"
+        }
+    },
+    "flex-layout.col#lp_wrapper-row-6": {
+        "title": "Wrapper Coluna",
+        "children": [
+            "list-context.image-list#lp_footer-highlight_icon",
+            "rich-text#lp_footer-highlight_text-highlight"
+        ],
+        "props": {
+            "blockClass": "full-body"
+        }
+    },
+    
+    // Banner Hero
+    "container#lp_banner-hero": {
+        "title": "Banner Hero",
+        "children": [
+            "list-context.image-list#lp_banner-hero"
+        ],
+        "props": {
+            "blockClass": "lp_banner-hero"
+        }
+    },
+    "list-context.image-list#lp_banner-hero": {
+        "title": "Imagem Única",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/1920x710",
+                "mobileImage": "https://dummyimage.com/360x640"
+            }],
+            "blockClass": ["lp_image", "lp_banner-hero"]
+        },
+        "children": [
+            "container.list-render#lp_banner-hero"
+        ]
+    },
+    "container.list-render#lp_banner-hero": {
+        "props": {
+            "blockClass": ["lp_image", "lp_banner-hero"]
+        }
+    },
+
+    // Carrossel Categorias 1
+    "container#lp_grid-cadeiras": {
+        "title": "Carrossel Categorias 1",
+        "children": [
+            "rich-text#lp_grid-cadeiras_text",
+            "flex-layout.row#lp_grid-cadeiras"
+        ],
+        "props": {
+            "blockClass": "lp_grid-cadeiras"
+        }
+    },
+    "rich-text#lp_grid-cadeiras_text": {
+        "title": "Texto Acima",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "# Título H1 \nbreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo). \n## Título H2",
+            "blockClass": ["lp_text-block", "lp_grid-cadeiras_text"]
+        }
+    },
+    "flex-layout.row#lp_grid-cadeiras": {
+        "title": "Wrapper Linha",
+        "children": [
+            "flex-layout.col#lp_grid-cadeiras"
+        ],
+        "props": {
+            "colSizing": "equal",
+            "preventVerticalStretch": true,
+            "blockClass": "lp_grid"
+        }
+    },
+    "flex-layout.col#lp_grid-cadeiras": {
+        "title": "Wrapper Coluna",
+        "children": [
+            "image-text-list#lp_grid-cadeiras_images"
+        ],
+        "props": {
+            "width": "grow",
+            "blockClass": "lp_grid"
+        }
+    },
+    "image-text-list#lp_grid-cadeiras_images": {
+        "title": "Cards",
+        "children": [
+            "embla-carousel#lp_grid-cadeiras_carousel"
+        ],
+        "props": {
+            "imageTextArray": [{
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                }
+            ],
+            "blockClass": "lp_grid_images"
+        }
+    },
+    "embla-carousel#lp_grid-cadeiras_carousel": {
+        "props": {
+            "options": {
+                "navigation": false,
+                "dots": false,
+                "draggable": true,
+                "loop": false,
+                "align": "center"
+            },
+            "blockClass": "lp_grid_carousel"
+        }
+    },
+    
+    // Bloco Grid de Mais Vendidas
+    "container#lp_most-selling": {
+        "title": "Grid Mosaico - Mais Vendidas",
+        "children": [
+            "rich-text#lp_most-selling-title",
+            "list-context.image-list#lp_most-selling-images"
+        ],
+        "props": {
+            "blockClass": "lp_most-selling"
+        }
+    },
+    "rich-text#lp_most-selling-title": {
+        "title": "Texto",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2",
+            "blockClass": ["lp_most-selling-title"]
+        }
+    },
+    "list-context.image-list#lp_most-selling-images": {
+        "title": "Imagens",
+        "children": [
+            "container.list-render#lp_most-selling-images"
+        ],
+        "props": {
+            "images": [{
+                    "image": "https://dummyimage.com/596x821",
+                    "mobileImage": "",
+                    "link": {
+                        "url": "#"
+                    }
+                },
+                {
+                    "image": "https://dummyimage.com/596x396",
+                    "mobileImage": "",
+                    "link": {
+                        "url": "#"
+                    }
+                },
+                {
+                    "image": "https://dummyimage.com/596x396",
+                    "mobileImage": "",
+                    "link": {
+                        "url": "#"
+                    }
+                }
+            ]
+        }
+    },
+    "container.list-render#lp_most-selling-images": {
+        "props": {
+            "blockClass": ["lp_image", "lp_banners-grid", "lp_mais-vendidas-images"],
+            "wrapper": true
+        }
+    },
+
+    // Bloco Video Dinamico
+    "container#lp_video-highlight": {
+        "title": "Video Dinamico",
+        "children": [
+            "rich-text#lp_video-highlight_text",
+            "video#lp_video-highlight-video"
+        ],
+        "props": {
+            "blockClass": "lp_video-highlight"
+        }
+    },
+    "rich-text#lp_video-highlight_text": {
+        "title": "Wrapper Texto + Botão",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2 \n### Subtitulo H3 \n[Botão](#)",
+            "blockClass": ["lp_text-block", "lp_button", "lp_video-highlight_text"]
+        }
+    },
+    "video#lp_video-highlight-video": {
+        "props": {
+            "controlsType": "none",
+            "width": "100%",
+            "height": "684px",
+            "loop": true,
+            "autoPlay": true,
+            "playsInline": true,
+            "muted": true,
+            "src": "https://www.youtube.com/watch?v=U_TsfCE3d2M",
+            "blockClass": "lp_video-highlight"
+        }
+    },
+
+    // Imagem Destaque
+    "container#lp_grow-block-image-highlight": {
+        "title": "Wrapper Imagem Destaque",
+        "children": [
+            "rich-text#lp_grow-block-image-highlight_text",
+            "list-context.image-list#lp_grow-block-image-highlight-image",
+            "rich-text#lp_grow-block-image-highlight-button"
+        ],
+        "props": {
+            "blockClass": "lp_grow-block-image-highlight"
+        }
+    },
+    "rich-text#lp_grow-block-image-highlight_text": {
+        "title": "Texto Acima",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2 \n### Subtitulo H3 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "blockClass": ["lp_text-block", "lp_grow-block-image-highlight_text"]
+        }
+    },
+    "list-context.image-list#lp_grow-block-image-highlight-image": {
+        "title": "Imagem Única",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/1220x979",
+                "mobileImage": "https://dummyimage.com/360x640"
+            }],
+            "blockClass": ["lp_image", "lp_grow-block-image-highlight-image"]
+        },
+        "children": [
+            "container.list-render#lp_grow-block-image-highlight-image"
+        ]
+    },
+    "container.list-render#lp_grow-block-image-highlight-image": {
+        "props": {
+            "blockClass": ["lp_image", "lp_grow-block-image-highlight-image"]
+        }
+    },
+    "rich-text#lp_grow-block-image-highlight-button": {
+        "title": "Botão CTA",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "[Botão](#)",
+            "blockClass": ["lp_button", "lp_grow-block-image-highlight-button"]
+        }
+    },
+    
+    // Bloco Informações Extras
+    "container#lp_wide-highlights": {
+        "title": "Bloco Informações Extras",
+        "children": [
+            "rich-text#lp_wide-highlights_text",
+            "list-context.image-list#lp_wide-highlights-certificates"
+        ],
+        "props": {
+            "blockClass": "lp_wide-highlights"
+        }
+    },
+    "rich-text#lp_wide-highlights_text": {
+        "title": "Texto",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "blockClass": ["lp_text-block", "lp_wide-highlights_text"]
+        }
+    },
+    "list-context.image-list#lp_wide-highlights-certificates": {
+        "title": "Imagem Pequena",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/350x70",
+                "mobileImage": "https://dummyimage.com/350x70"
+            }],
+            "blockClass": ["lp_image", "lp_wide-highlights-certificates"]
+        },
+        "children": [
+            "container.list-render#lp_wide-highlights-certificates"
+        ]
+    },
+    "container.list-render#lp_wide-highlights-certificates": {
+        "props": {
+            "blockClass": ["lp_image", "lp_wide-highlights-certificates"]
+        }
+    },
+
+    // Grid Mosaic
+    "container#lp_grow-block-mosaic": {
+        "title": "Grid Mosaico",
+        "children": [
+            "rich-text#lp_grow-block-mosaic_text",
+            "list-context.image-list#lp_grow-block-mosaic-banner-1",
+            "list-context.image-list#lp_grow-block-mosaic-banners-grid",
+            "list-context.image-list#lp_grow-block-mosaic-banner-2"
+        ],
+        "props": {
+            "blockClass": ""
+        }
+    },
+    "rich-text#lp_grow-block-mosaic_text": {
+        "title": "Texto",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2 \n### Título H3 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "blockClass": ["lp_text-block", "lp_grow-block-mosaic_text"]
+        }
+    },
+    "list-context.image-list#lp_grow-block-mosaic-banner-1": {
+        "title": "Banner 1 - Wide",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/1220x445",
+                "mobileImage": "",
+                "link": {
+                    "url": "#"
+                }
+            }],
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
+        },
+        "children": [
+            "container.list-render#lp_grow-block-mosaic-banner-1"
+        ]
+    },
+    "container.list-render#lp_grow-block-mosaic-banner-1": {
+        "props": {
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
+        }
+    },
+    "list-context.image-list#lp_grow-block-mosaic-banners-grid": {
+        "title": "Wrapper Banners - Grid",
+        "props": {
+            "images": [{
+                    "image": "https://dummyimage.com/596x396",
+                    "mobileImage": "",
+                    "link": {
+                        "url": "#"
+                    }
+                },
+                {
+                    "image": "https://dummyimage.com/596x396",
+                    "mobileImage": "",
+                    "link": {
+                        "url": "#"
+                    }
+                },
+                {
+                    "image": "https://dummyimage.com/596x821",
+                    "mobileImage": "",
+                    "link": {
+                        "url": "#"
+                    }
+                }
+            ]
+        },
+        "children": [
+            "container.list-render#lp_grow-block-mosaic-banners-grid"
+        ]
+    },
+    "container.list-render#lp_grow-block-mosaic-banners-grid": {
+        "props": {
+            "blockClass": ["lp_image", "lp_banners-grid", "lp_grow-block-mosaic-banners-grid"],
+            "wrapper": true
+        }
+    },
+    "list-context.image-list#lp_grow-block-mosaic-banner-2": {
+        "title": "Banner 2 - Wide",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/1220x445",
+                "mobileImage": "",
+                "link": {
+                    "url": "#"
+                }
+            }],
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
+        },
+        "children": [
+            "container.list-render#lp_grow-block-mosaic-banner-2"
+        ]
+    },
+    "container.list-render#lp_grow-block-mosaic-banner-2": {
+        "props": {
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
+        }
+    },
+
+    // Carrossel Categorias 2
+    "container#lp_grid-category": {
+        "title": "Carrossel Categorias 2",
+        "children": [
+            "rich-text#lp_grid-category_text",
+            "flex-layout.row#lp_grid-category"
+        ],
+        "props": {
+            "blockClass": "lp_grid-category"
+        }
+    },
+    "rich-text#lp_grid-category_text": {
+        "title": "Texto",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2",
+            "blockClass": ["lp_text-block", "lp_grid-category_text"]
+        }
+    },
+    "flex-layout.row#lp_grid-category": {
+        "title": "Wrapper Linha",
+        "children": [
+            "flex-layout.col#lp_grid-category"
+        ],
+        "props": {
+            "colSizing": "equal",
+            "preventVerticalStretch": true,
+            "blockClass": "lp_grid"
+        }
+    },
+    "flex-layout.col#lp_grid-category": {
+        "title": "Wrapper Coluna",
+        "children": [
+            "image-text-list#lp_grid-category_images"
+        ],
+        "props": {
+            "width": "grow",
+            "blockClass": "lp_grid"
+        }
+    },
+    "image-text-list#lp_grid-category_images": {
+        "title": "Cards",
+        "children": [
+            "embla-carousel#lp_grid-category_carousel"
+        ],
+        "props": {
+            "imageTextArray": [{
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                }
+            ],
+            "blockClass": "lp_grid_images"
+        }
+    },
+    "embla-carousel#lp_grid-category_carousel": {
+        "props": {
+            "options": {
+                "navigation": false,
+                "dots": false,
+                "draggable": true,
+                "loop": false,
+                "align": "center"
+            },
+            "blockClass": ["lp_grid_carousel", "lp_grid-category_carousel"]
+        }
+    },
+
+    // Pre-Footer 1
+    "container#lp_footer-highlight": {
+        "title": "Wrapper Pre-Footer 1",
+        "children": [
+            "rich-text#lp_footer-highlight_text",
+            "video#lp_footer-highlight_video"
+        ],
+        "props": {
+            "blockClass": "lp_footer-highlight"
+        }
+    },
+    "rich-text#lp_footer-highlight_text": {
+        "title": "Texto Acima",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2 \n### Título H3 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "blockClass": ["lp_text-block", "lp_footer-highlight_text"]
+        }
+    },
+    "video#lp_footer-highlight_video": {
+        "title": "Video Institucional",
+        "props": {
+            "controlsType": "custom-vtex",
+            "width": "960px",
+            "height": "540px",
+            "loop": false,
+            "autoPlay": false,
+            "playsInline": true,
+            "muted": false,
+            "src": "https://www.youtube.com/watch?v=U_TsfCE3d2M",
+            "blockClass": "lp_footer-highlight_video"
+        }
+    },
+    
+    // Pre-Footer 2
+    "list-context.image-list#lp_footer-highlight_icon": {
+        "title": "Imagem Icone",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/76x113",
+                "mobileImage": "https://dummyimage.com/76x113",
+                "link": {
+                    "url": "#"
+                }
+            }],
+            "blockClass": ["lp_image", "lp_footer-highlight_icon"]
+        },
+        "children": [
+            "container.list-render#lp_footer-highlight_icon"
+        ]
+    },
+    "container.list-render#lp_footer-highlight_icon": {
+        "props": {
+            "blockClass": ["lp_image", "lp_footer-highlight_icon"]
+        }
+    },
+    "rich-text#lp_footer-highlight_text-highlight": {
+        "title": "Texto Destaque",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2 \n### Título H3",
+            "blockClass": ["lp_text-block", "lp_footer-highlight_text-highlight"]
+        }
+    }
+}

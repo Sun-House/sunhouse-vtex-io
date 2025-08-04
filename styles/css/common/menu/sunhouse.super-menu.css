@@ -1,11 +1,11 @@
-/* Force Hide menu for SEO in Mobile */
+/* Oculta menu do mobile */
 @media screen and (max-width: 1024px) {
     .navWrapper--html-seo_mobile-category-menu {
         display: none !important
     }
 }
 
-/* Force Hide menu for SEO in Desktop */
+/* Oculta menu do desktop */
 .navWrapper--html-seo_mobile-category-menu {
     display: none !important
 }

@@ -1,0 +1,27 @@
+/* General */
+.flexRow--wrapper-row {
+    margin-bottom: 48px
+}
+
+/* BG Row Wrapper */
+.flexRow--background-line {
+    background-color: #f1f1f1
+}
+
+/* Footer Row Wrapper */
+.flexRow--footer-line {
+    background: #4f549b;
+    height: 745px;
+    display: flex;
+    flex-direction: column-reverse
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    /* Footer Row Wrapper */
+    .flexRow--footer-line {
+        height: 900px
+    }
+
+}

@@ -1,0 +1,20 @@
+/* Video Highlight */
+.videoContainer--lp_video-highlight {
+    pointer-events: none
+}
+
+/* Video Footer */
+.videoContainer--lp_footer-highlight_video {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+    .videoContainer--lp_footer-highlight_video {
+        display: flex;
+        align-items: unset;
+        flex-direction: unset
+    }
+}
