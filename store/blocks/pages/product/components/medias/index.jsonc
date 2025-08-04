@@ -41,28 +41,11 @@
   },
 
   "stack-layout#product-image-swiper-desktop": {
-    "children": [
-      "product-medias#product-medias",
-      
-      // Wrap de componentes para configurar posicionamento
-      "container#media-highlights"
-    ],
+    "children": ["product-medias#product-medias", "product-price-savings"],
     "props": {
       "blockClass": "product-image-swiper"
     }
   },
-  
-  //
-  "container#media-highlights": {
-    "children": [
-      "product-price-savings",
-      "container#product-highlights-image-flags"
-    ],
-    "props": {
-      "blockClass": "wrapper_media-highlights"
-    }
-  },
-  //
 
   "product-medias#product-medias": {
     "props": {

@@ -85,8 +85,7 @@
 
 .minicartEmptyStateContainer :global(.vtex-rich-text-0-x-paragraph) {
     margin: 0;
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -176,8 +175,7 @@
     font-size: 12px;
     line-height: 15px;
     font-weight: 400;
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     color: var(--header-text-color)
@@ -209,8 +207,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #fff;
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     width: 100%;
     justify-content: flex-start
 }
@@ -222,8 +219,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #fff;
-    /* font-family: "Open Sans", sans-serif */
-    font-family: "Montserrat", "Open Sans", sans-serif
+    font-family: "Open Sans", sans-serif
 }
 
 .minicartQuantityBadge--minicart-sidebar:not(.minicartQuantityBadgeOut)::before {
@@ -233,8 +229,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #fff;
-    /* font-family: "Open Sans", sans-serif */
-    font-family: "Montserrat", "Open Sans", sans-serif
+    font-family: "Open Sans", sans-serif
 }
 
 :global(.vtex-flex-layout-0-x-flexRow) .minicartQuantityBadge {
@@ -244,8 +239,7 @@
 }
 
 .minicartQuantityBadgeOut--header-quantity {
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -302,8 +296,7 @@
 }
 
 .minicartQuantityBadgeOut--footer-quantity {
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -333,8 +326,7 @@
 }
 
 .minicartCheckoutButton :global(.vtex-button) :global(.vtex-button__label) {
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: none;
     font-size: 0;
     display: flex;

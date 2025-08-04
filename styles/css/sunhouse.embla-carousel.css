@@ -278,9 +278,6 @@
 .container--product-medias {
     position: relative;
     width: 100%;
-    /*  */
-    min-height: 500px;
-    /*  */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,11 +302,13 @@
 
 .container--product-medias .emblaInnerSlide {
     padding: 10px;
+
+    /**/
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 500px;
-    min-width: 500px
+    height: 100%
+    /**/
 }
 
 .container--product-medias .prevButton,

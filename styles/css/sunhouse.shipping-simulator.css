@@ -34,8 +34,7 @@
     box-sizing: border-box;
     border-radius: 7px;
     padding: 0 19px;
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -44,8 +43,7 @@
 }
 
 .shippingContainer .shippingFormContainer .shippingForm :global(.vtex-input__error) {
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -67,8 +65,7 @@
 }
 
 .shippingContainer .shippingFormContainer .shippingForm :global(.vtex-button) :global(.vtex-button__label) {
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -105,8 +102,7 @@
 }
 
 .shippingContainer .shippingFormContainer .shippingUnknownPostalWrapper .shippingUnknownPostalLink {
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -126,8 +122,7 @@
 
 .shippingContainer .shippingTable .shippingTableCell,
 .shippingContainer .shippingTable .shippingTableLabel {
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

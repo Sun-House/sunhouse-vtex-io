@@ -10,15 +10,41 @@
     }
   },
   "flex-layout.col#footer-content-mobile": {
-    "children": ["disclosure-layout-group#footer-mobile"],
+    "children": [
+      //
+      "image#logo-mobile-footer",
+      "container#wrapper-teste",
+      //
+      "disclosure-layout-group#footer-mobile"
+    ],
     "props": {
       "blockClass": "footer-content-mobile",
       "width": "100%"
     }
   },
+  //
+  "container#wrapper-teste": {
+    "title": "Footer boom",
+    "children": [
+      // "disclosure-layout#footer-about"
+      "disclosure-layout-group#footer-mobile_about"
+    ],
+    "props": {
+      "blockClass": [""]
+    }
+  },
+  "disclosure-layout-group#footer-mobile_about": {
+    "children": [
+      "disclosure-layout#footer-about"
+    ],
+    "props": {
+      "blockClass": "footer-mobile_about"
+    }
+  },
+  //
   "disclosure-layout-group#footer-mobile": {
     "children": [
-      "disclosure-layout#footer-about",
+      // "disclosure-layout#footer-about",
       "flex-layout.col#footer-schedules",
       "disclosure-layout#footer-for-you",
       "disclosure-layout#footer-institutional",
@@ -47,6 +73,7 @@
     ],
     "props": {
       "animated": true,
+      // "initialVisibility": "hidden",
       "initialVisibility": "visible",
       "blockClass": "footer-disclosure"
     }
@@ -60,7 +87,7 @@
   "disclosure-content#footer-about": {
     "children": [
       //"logo#logo-footer",
-      "image#logo-mobile-footer",
+      // "image#logo-mobile-footer",
       "flex-layout.row#footer-content-about"
     ],
     "props": {

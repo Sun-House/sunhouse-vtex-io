@@ -166,17 +166,7 @@
     "props": {
       "defaultGalleryLayout": "grid",
       "blockClass": "search-result",
-      
-      // Ajustes liveSEO INICIO
-      // ::
-      //"pagination": "paged",
-      //
-      "pagination": "show-more",
-      "preventRouteChange": true, // nao sei o que faz - ver documentacao
-      //
-      // Ajustes liveSEO FIM
-      // ::
-      
+      "pagination": "paged",
       "showProductsCount": true,
       "showFacetQuantity": true,
       "hiddenFacets": {
@@ -256,30 +246,12 @@
       "flex-layout.row#paged-controls-top",
       "flex-layout.row#search-content.desktop",
       "flex-layout.row#paged-controls-bottom"
-      
-      //
-      ,"flex-layout.row#fetch-more"
+      // "flex-layout.row#fetch-more"
     ],
     "props": {
       "blockClass": "search-result"
     }
   },
-  
-  
-  //
-  "flex-layout.row#fetch-more": {
-    "children": [
-      "sunhouse.search-result:search-fetch-more"
-    ]
-  },
-  "sunhouse.search-result:search-fetch-more": {  //"search-fetch-more"
-    "props": {
-      "htmlElementForButton": "a"
-    }
-  },
-  //
-
-
   "flex-layout.row#search-result.mobile": {
     "children": ["flex-layout.col#search-result.mobile"],
     "props": {
@@ -402,7 +374,7 @@
     }
   },
   "flex-layout.row#paged-controls-bottom": {
-    "children": ["paged-controls#bottom", "flex-layout.row#fetch-more"],
+    "children": ["paged-controls#bottom"],
     "props": {
       "blockClass": "paged-controls-bottom",
       "preventHorizontalStretch": true,

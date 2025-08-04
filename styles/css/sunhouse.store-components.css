@@ -33,8 +33,7 @@
     opacity: 0;
     box-sizing: border-box;
     border-radius: 50px;
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 700 !important;
     font-size: 14px !important;
@@ -80,8 +79,7 @@
 
 .searchBarIcon::after {
     content: "Buscar";
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -151,8 +149,7 @@
 }
 
 .resultsList .resultsItem .resultsItemName {
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -452,8 +449,7 @@
 
 .subscriberContainer .title::after {
     content: "Avise-me";
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -475,8 +471,7 @@
 .subscriberContainer .subscribeLabel::after {
     text-align: center;
     content: "Quer ser informado quando esse produto estiver disponível? Preencha os dados abaixo que nós te avisamos ;)";
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -508,8 +503,7 @@
 }
 
 .subscriberContainer .form .content .input::before {
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -530,8 +524,7 @@
 
 .subscriberContainer .form .content .input :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
     padding: 0 14px;
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -548,8 +541,7 @@
 }
 
 .subscriberContainer .form .content .input :global(.vtex-input__error) {
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -575,8 +567,7 @@
 
 .subscriberContainer .form .content .submit :global(.vtex-button) :global(.vtex-button__label)::after {
     content: "Avise-me quando chegar";
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;

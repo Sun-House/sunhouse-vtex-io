@@ -4,48 +4,18 @@
       "productWrapper": "productWrapper"
     },
     "children": [
-      //
-      // header fixo de compra vai aqui - ficar sobre posto no menu a principio
-      "sticky-layout#buy-button",
-      //
       "responsive-layout.desktop#product-main",
       "responsive-layout.mobile#product-main",
       "container#product__related-grid",
       // "condition-layout.user#buy-together",
+      //
       "container#trustvox",
       "flex-layout.row#also-seen",
       "container#spacing-default",
+      //
       "product-rating-summary"
     ]
   },
-
-
-  //
-  "sticky-layout#buy-button": {
-    "props": {
-      "position": "bottom"
-    },
-    "children": [
-      "flex-layout.col#buy-button",
-      "rich-text#tester"
-    ]
-  },
-  "rich-text#tester": {
-    "props": {
-      "text": "TESTE ELEMENTO FLUTUANTE"
-      //"blockClass": "product-zoom-text"
-    }
-  },
-  // "flex-layout.row#buy-button": {
-  //   "props": {
-  //     "marginTop": 4,
-  //     "marginBottom": 7,
-  //     "paddingBottom": 2
-  //   },
-  //   "children": ["buy-button"]
-  // }
-  //
-
 
   "container#trustvox": {
     "props": {
@@ -71,7 +41,7 @@
   "responsive-layout.desktop#product-main": {
     "title": "Produto",
     "children": [
-      "container#wrapper__highlight-coupon",
+      "flex-layout.row#product-highlight-coupon",
       "flex-layout.row#product-main",
       //"flex-layout.row#product-infos-wrapper",
       //"tab-layout#product-infos-tab"
@@ -82,6 +52,14 @@
     "children": [
       "flex-layout.row#product-main-mobile"
     ]
+  },
+  "flex-layout.row#product-highlight-coupon": {
+    "children": [
+      "container#wrapper__highlight-coupon"
+    ],
+    "props": {
+      "blockClass": "product-highlight-coupon"
+    }
   },
   "flex-layout.row#product-main": {
     "children": [
@@ -202,14 +180,7 @@
       "flex-layout.row#breadcrumb-product",
       "container#product-top-infos",
       "vtex.store-components:product-name",
-      
-      // Esse abaixo sera substituido por links rapidos, como ir para descricao do produto
       "container#product-highlights--product-page",
-      // "container#product-quick-links",
-      // Em desenvolvimento:
-      "product-availability",
-      //
-
       "condition-layout.product#product-availability"
       //"flex-layout.row#product-page-informations"
     ],
@@ -220,20 +191,6 @@
       "preventVerticalStretch": true
     }
   },
-
-
-  // TESTANDO
-  "product-availability": {
-    "props": {
-      "threshold": "10",
-      "lowStockMessage": "Apenas {quantity} no Estoque, corre!",
-      //"highStockMessage": "Estoque Disponível!",
-      "blockClass": "container_product-availability"
-    }
-  },
-  //
-
-
   "flex-layout.row#breadcrumb-product": {
     "children": ["breadcrumb#product-page"],
     "props": {
@@ -270,10 +227,9 @@
   },
   "vtex.store-components:product-brand#product-brand": {
     "props": {
-      // "withLink": "none",
-      "withLink": "text",
-      "displayMode": "text",
-      "blockClass": "product-brand"
+      "withLink": "none",
+      "blockClass": "product-brand",
+      "displayMode": "text"
     }
   },
   "product-identifier.product#product-reference": {
@@ -314,12 +270,9 @@
   },
   "flex-layout.row#product-page-price": {
     "children": [
-      // "container#shelf-product-listPrice",
-      // "flex-layout.col#installments-content",
-      // "container#product-installments"
-
-      // Price Block
-      "container#wrapper-price-block"
+      "container#shelf-product-listPrice",
+      "flex-layout.col#installments-content",
+      "container#product-installments"
     ],
     "props": {
       "blockClass": "product-page-price",
@@ -438,9 +391,7 @@
   "flex-layout.col#product-unavailable": {
     "children": [
       "condition-layout.product#product-sku",
-      // "sunhouse.store-components:availability-subscriber"
-      /* Bloco botao WhatsApp vai aqui */
-      "flex-layout.row#unavailable-cta"
+      "sunhouse.store-components:availability-subscriber"
     ],
     "props": {
       "blockClass": "product-unavailable",
@@ -474,57 +425,6 @@
       "visibleVariations": ["tamanho"]
     }
   },
-
-  //Produto Esgotado Aviso WhatsApp
-  "flex-layout.row#unavailable-cta": {
-    "children": [
-      "container#unavailable-cta"
-    ],
-    "props": {
-      "blockClass": "unavailable-cta_row"
-    }
-  },
-
-  "container#unavailable-cta": {
-    "children": [
-      "rich-text#unavailable-cta",
-      "link#unavailable-cta-wpp"
-    ],
-    "props": {
-      "blockClass": "unavailable-cta_container"
-    }
-  },
-  "rich-text#unavailable-cta": {
-    "props": {
-      //"text": "## Produto Esgotado \n Deseja saber sobre a disponibilidade ou opções similares deste produto? Nos chame no WhatsApp clicando no botão abaixo! \n [ENTRE EM CONTATO](https://api.whatsapp.com/send?phone=5511994877664)",
-      //"text": "## Produto Esgotado \n Deseja saber sobre a disponibilidade ou opções similares deste produto? Nos chame no WhatsApp clicando no botão abaixo! \n <a href='https://api.whatsapp.com/send?phone=5511994877664' target='_blank' rel='noopener noreferrer'>ENTRE EM CONTATO</a> \n [ENTRE EM CONTATO](https://api.whatsapp.com/send?phone=5511994877664)",
-      "text": "## Produto Indispon&iacute;vel \n Deseja saber sobre a **disponibilidade** ou **opções similares** deste produto? Nos chame no **WhatsApp** clicando no botão abaixo!",
-      "blockClass": "unavailable-cta_text"
-    }
-  },
-
-  "link#unavailable-cta-wpp": {
-    "title": "",
-    "children": [
-      "icon#unavailable-cta-wpp"
-    ],
-    "props": {
-      "label": "ENTRE EM CONTATO",
-      "href": "https://api.whatsapp.com/send?phone=5511994877664",
-      "target": "_blank",
-      "blockClass": "unavailable-cta-wpp_link"
-    }
-  },
-  "icon#unavailable-cta-wpp": {
-    "props": {
-      "id": "inf-whatsapp-white",
-      "size": 20,
-      //"activeClassName": "vtex-store-components-3-x-storesIcon"
-      "activeClassName": "vtex-store-components-3-x-inf-whatsapp-white"
-    }
-  },
-
-  //
 
   //Compre junto
   "condition-layout.user#buy-together": {
