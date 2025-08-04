@@ -18,9 +18,6 @@
   "footer-layout.mobile#without-seo-info": {
     "children": [
       "container#newsletter",
-      //
-      "container#footer-about-button-mobile",
-      //
       "flex-layout.row#footer-content-mobile",
       "container#social-medias-mobile",
       "flex-layout.row#footer-payments-title",
@@ -43,9 +40,6 @@
     "title": "Footer Mobile",
     "children": [
       "container#newsletter",
-      //
-      "container#footer-about-button-mobile",
-      //
       "flex-layout.row#footer-content-mobile",
       "container#social-medias-mobile",
       "flex-layout.row#footer-payments-title",
@@ -170,7 +164,6 @@
     "title": "Texto Sobre Nós - Apenas Home",
     "children": [
       "rich-text#footer-about-text"
-      // AQUI
     ],
     "props": {
       "blockClass": "container-footer-about-text"

@@ -230,4 +230,8 @@
         max-height: unset;
         margin-bottom: 24px
     }
+
+    .trigger--footer-about {
+        width: -webkit-fill-available /* Pode ocorrer erros em alguns navegadores mobile */
+    }
 }
