@@ -10,8 +10,12 @@
     margin-top: 136px !important
 }
 
-.imageElement--lp_banner-hero {
+/* .imageElement--lp_banner-hero {
     margin-top: -42px
+} */
+
+.imageElement--lp_banner-hero {
+    margin-top: 112px
 }
 
 @media screen and (max-width: 1024px) {
