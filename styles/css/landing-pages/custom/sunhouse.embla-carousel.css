@@ -45,5 +45,10 @@
 
 /* Mobile */
 @media screen and (max-width: 1024px) {
-
+    /* Correcao temporaria - Apenas para poder lancar a pagina */
+    /* Carrossel mobile precisara de varios ajustes */
+    .imageContainer--lp_grid_carousel {
+        display: flex;
+        justify-content: center
+    }
 }

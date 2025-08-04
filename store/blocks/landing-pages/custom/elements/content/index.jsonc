@@ -126,7 +126,7 @@
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1920x710",
-                "mobileImage": "https://dummyimage.com/360x640" // Resolucao Mobile Validada - OK
+                "mobileImage": "https://dummyimage.com/360x640"
             }],
             "blockClass": ["lp_image", "lp_banner-hero"]
         },
@@ -257,21 +257,21 @@
         "props": {
             "images": [{
                     "image": "https://dummyimage.com/596x821",
-                    "mobileImage": "", // validar medida mobile
+                    "mobileImage": "",
                     "link": {
                         "url": "#"
                     }
                 },
                 {
                     "image": "https://dummyimage.com/596x396",
-                    "mobileImage": "", // validar medida mobile
+                    "mobileImage": "",
                     "link": {
                         "url": "#"
                     }
                 },
                 {
                     "image": "https://dummyimage.com/596x396",
-                    "mobileImage": "", // validar medida mobile
+                    "mobileImage": "",
                     "link": {
                         "url": "#"
                     }
@@ -308,8 +308,6 @@
     },
     "video#lp_video-highlight-video": {
         "props": {
-            "name": "", // SEO and accessibility
-            "description": "", // SEO and accessibility
             "controlsType": "none",
             "width": "100%",
             "height": "684px",
@@ -348,7 +346,7 @@
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1220x979",
-                "mobileImage": "https://dummyimage.com/360x640" // Ver resolucao mobile
+                "mobileImage": "https://dummyimage.com/360x640"
             }],
             "blockClass": ["lp_image", "lp_grow-block-image-highlight-image"]
         },
@@ -396,7 +394,7 @@
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/350x70",
-                "mobileImage": "https://dummyimage.com/350x70" // Confirmar se é correto, mas a ideia é usar a mesma do desktop aqui
+                "mobileImage": "https://dummyimage.com/350x70"
             }],
             "blockClass": ["lp_image", "lp_wide-highlights-certificates"]
         },
@@ -437,7 +435,7 @@
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1220x445",
-                "mobileImage": "", // ver medidas mobile
+                "mobileImage": "",
                 "link": {
                     "url": "#"
                 }
@@ -458,21 +456,21 @@
         "props": {
             "images": [{
                     "image": "https://dummyimage.com/596x396",
-                    "mobileImage": "", // validar medida mobile
+                    "mobileImage": "",
                     "link": {
                         "url": "#"
                     }
                 },
                 {
                     "image": "https://dummyimage.com/596x396",
-                    "mobileImage": "", // validar medida mobile
+                    "mobileImage": "",
                     "link": {
                         "url": "#"
                     }
                 },
                 {
                     "image": "https://dummyimage.com/596x821",
-                    "mobileImage": "", // validar medida mobile
+                    "mobileImage": "",
                     "link": {
                         "url": "#"
                     }
@@ -494,7 +492,7 @@
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1220x445",
-                "mobileImage": "", // ver medidas mobile
+                "mobileImage": "",
                 "link": {
                     "url": "#"
                 }
@@ -623,9 +621,6 @@
     "video#lp_footer-highlight_video": {
         "title": "Video Institucional",
         "props": {
-            "name": "", // SEO and accessibility
-            "description": "", // SEO and accessibility
-            "poster": "", // Imagem que vai sobrepor o video
             "controlsType": "custom-vtex",
             "width": "960px",
             "height": "540px",
@@ -644,7 +639,7 @@
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/76x113",
-                "mobileImage": "https://dummyimage.com/76x113", // Usar mesma do desktop
+                "mobileImage": "https://dummyimage.com/76x113",
                 "link": {
                     "url": "#"
                 }

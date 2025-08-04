@@ -19,4 +19,9 @@
 /* Mobile */
 @media screen and (max-width: 1024px) {
 
+    /* Footer Row Wrapper */
+    .flexRow--footer-line {
+        height: 900px
+    }
+
 }

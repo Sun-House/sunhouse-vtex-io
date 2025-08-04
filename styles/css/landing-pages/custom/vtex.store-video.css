@@ -12,5 +12,9 @@
 
 /* Mobile */
 @media screen and (max-width: 1024px) {
-
+    .videoContainer--lp_footer-highlight_video {
+        display: flex;
+        align-items: unset;
+        flex-direction: unset
+    }
 }

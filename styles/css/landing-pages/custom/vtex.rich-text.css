@@ -178,4 +178,33 @@
 /* Mobile */
 @media screen and (max-width: 1024px) {
 
+    .headingLevel2--lp_grid-cadeiras_text,
+    .headingLevel2--lp_grow-block-mosaic_text,
+    .headingLevel2--lp_grid-category_text,
+    .headingLevel2--lp_footer-highlight_text {
+        font-size: 32px
+    }
+
+    .headingLevel2--lp_most-selling-title,
+    .headingLevel3--lp_grow-block-image-highlight_text,
+    .headingLevel2--lp_footer-highlight_text-highlight {
+        font-size: 28px
+    }
+
+    .headingLevel3--lp_video-highlight_text,
+    .headingLevel3--lp_grow-block-image-highlight_text,
+    .headingLevel3--lp_footer-highlight_text-highlight {
+        font-size: 24px
+    }
+
+    /* Footer 1 */
+    .container--lp_footer-highlight_text-highlight {
+        padding-bottom: 52px
+    }
+
+    /* Footer 2 */
+    .headingLevel2--lp_footer-highlight_text-highlight {
+        line-height: 42px
+    }
+
 }

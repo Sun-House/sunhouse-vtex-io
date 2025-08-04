@@ -125,8 +125,9 @@
     margin: 32px auto
 }
 
-/* Mobile 1 - PRECISA AJUSTAR TUDO MOBILE ABAIXO BASICAMENTE */
+/* Mobile 1 */
 @media screen and (max-width: 1024px) {
+    /* Grid Setup */
     .wrapper--lp_banners-grid {
         max-height: initial
     }
@@ -149,9 +150,25 @@
         height: 100%;
         max-height: 300px
     }
+    /* Grid Setup */
+
+    .container--lp_grow-block-mosaic-banner {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: .75rem
+    }
+
+    .container--lp_grow-block-mosaic-banner:last-child {
+        padding-top: .75rem;
+        padding-bottom: unset
+    }
+
+    .imageElement--lp_image {
+        border-radius: 24px
+    }
 }
 
-/* Mobile 2 - PRECISA AJUSTAR */
+/* Mobile 2 */
 @media screen and (max-width: 640px) {
     .wrapper--lp_banners-grid .container--lp_banners-grid {
         grid-template-columns: 1fr
