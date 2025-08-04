@@ -3,6 +3,15 @@
     margin: 28px 0
 }
 
+.container--lp_text-block .paragraph {
+    line-height: 24px
+}
+
+.container--lp_text-block .headingLevel1,
+.container--lp_text-block .headingLevel3 {
+    line-height: 34px
+}
+
 .wrapper--lp_text-block {
     gap: 28px;
     display: flex;
@@ -11,9 +20,7 @@
 
 
 
-
 /* ORGANIZACAO DOS TEXTOS */
-
 /* titulo normal */
 .headingLevel1--lp_grid-cadeiras_text,
 .headingLevel2--lp_wide-highlights_text,
@@ -21,6 +28,23 @@
 .headingLevel3--lp_footer-highlight_text {
     text-transform: uppercase;
     font-size: 1.7rem
+}
+
+.headingLevel1--lp_grid-cadeiras_text,
+.headingLevel3--lp_grow-block-mosaic_text,
+.headingLevel3--lp_footer-highlight_text {
+    max-width: 650px;
+    margin: 0 auto
+}
+
+.headingLevel2--lp_grid-cadeiras_text {
+    padding-bottom: 14px
+}
+
+.headingLevel2--lp_grow-block-mosaic_text,
+.headingLevel2--lp_footer-highlight_text {
+    margin-top: 28px;
+    margin-bottom: 18px
 }
 
 /* titulo especial italico */ 
@@ -34,7 +58,8 @@
 .headingLevel2--lp_footer-highlight_text-highlight {
     text-transform: uppercase;
     font-style: italic;
-    font-weight: 400
+    font-weight: 400;
+    letter-spacing: 8px
 }
 
 /* titulo especial italico colorido */
@@ -54,44 +79,39 @@
     color: #000
 }
 
-/* titulo especial com barra footer / {
-
-} */
-
-/* titulo h4 das grid-5 */
-.headingLevel4--grid_image-text {
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000
+/* texto normal p */
+.paragraph--lp_grow-block-image-highlight_text {
+    max-width: 600px;
+    padding-bottom: 28px;
+    margin: 0 auto
 }
 
-/* texto normal / {
+.paragraph--lp_wide-highlights_text {
+    max-width: 850px
+}
 
-} */
-
-/* texto maior footer / {
-
-} */
-
+.paragraph--lp_grow-block-mosaic_text,
+.paragraph--lp_footer-highlight_text {
+    max-width: 700px;
+    margin-top: 14px;
+    padding-bottom: 28px
+}
 /* ORGANIZACAO DOS TEXTOS */
-
 
 
 
 /* Grid Most Selling */
 .container--lp_most-selling-title {
-    margin-top: 28px
+    margin-top: 28px;
+    padding-bottom: 42px
 }
 
 /* Video Highlight */
-/* .container--lp_video-highlight { */
 .container--lp_video-highlight_text {
     height: 0;
     margin: unset !important
 }
 
-/* .container--lp_video-highlight { */
 .container--lp_video-highlight_text {
     position: absolute;
     z-index: 1;
@@ -100,12 +120,10 @@
     height: 684px
 }
 
-/* .heading--lp_video-highlight { */
 .heading--lp_video-highlight_text {
     color: #fff
 }
 
-/* .paragraph--lp_video-highlight { */
 .paragraph--lp_video-highlight_text {
     color: #fff
 }
@@ -115,9 +133,9 @@
 }
 
 /* Button General */
-/* .container--lp_grow-block-image-highlight-button { */
 .container--lp_button {
-    margin-top: 38px
+    margin-top: 42px;
+    padding-bottom: 42px
 }
 
 .link--lp_button {
@@ -125,10 +143,14 @@
     background: #4f549b;
     font-size: 24px;
     border-radius: 14px;
-    /* box-shadow: 2px 3px 5px #ccc; */
     text-decoration: none;
     color: #fff;
-    font-weight: 600
+    font-weight: 600;
+    transition: .3s
+}
+
+.link--lp_button:hover {
+    background: #62669c
 }
 
 /* Certificates Block */
@@ -137,8 +159,52 @@
     color: #fff
 }
 
+/* Grid-5 Categories */
+.container--lp_grid-category_text {
+    margin-top: 36px;
+    padding-bottom: 36px
+}
+
 /* Footer Block */
+.container--lp_footer-highlight_text-highlight {
+    padding-bottom: 86px
+}
+
 .heading--lp_footer-highlight_text-highlight,
 .paragraph--lp_footer-highlight_text-highlight {
     color: #fff
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    .headingLevel2--lp_grid-cadeiras_text,
+    .headingLevel2--lp_grow-block-mosaic_text,
+    .headingLevel2--lp_grid-category_text,
+    .headingLevel2--lp_footer-highlight_text {
+        font-size: 32px
+    }
+
+    .headingLevel2--lp_most-selling-title,
+    .headingLevel3--lp_grow-block-image-highlight_text,
+    .headingLevel2--lp_footer-highlight_text-highlight {
+        font-size: 28px
+    }
+
+    .headingLevel3--lp_video-highlight_text,
+    .headingLevel3--lp_grow-block-image-highlight_text,
+    .headingLevel3--lp_footer-highlight_text-highlight {
+        font-size: 24px
+    }
+
+    /* Footer 1 */
+    .container--lp_footer-highlight_text-highlight {
+        padding-bottom: 52px
+    }
+
+    /* Footer 2 */
+    .headingLevel2--lp_footer-highlight_text-highlight {
+        line-height: 42px
+    }
+
 }

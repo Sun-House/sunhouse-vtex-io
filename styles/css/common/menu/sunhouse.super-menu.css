@@ -1,0 +1,11 @@
+/* Oculta menu do mobile */
+@media screen and (max-width: 1024px) {
+    .navWrapper--html-seo_mobile-category-menu {
+        display: none !important
+    }
+}
+
+/* Oculta menu do desktop */
+.navWrapper--html-seo_mobile-category-menu {
+    display: none !important
+}

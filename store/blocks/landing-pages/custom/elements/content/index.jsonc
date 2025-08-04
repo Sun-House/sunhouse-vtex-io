@@ -1,7 +1,7 @@
 {
-    // Wrapper Linhas Full Body
+    // Wrapper Linhas e Colunas Full Body
     "flex-layout.row#lp_wrapper-row-1": {
-        "title": "",
+        "title": "Linha 1 - Carrossel Categorias 1",
         "children": [
             "flex-layout.col#lp_wrapper-row-1"
         ],
@@ -10,7 +10,7 @@
         }
     },
     "flex-layout.row#lp_wrapper-row-2": {
-        "title": "",
+        "title": "Linha 2 - Imagem Destaque",
         "children": [
             "flex-layout.col#lp_wrapper-row-2"
         ],
@@ -19,7 +19,7 @@
         }
     },
     "flex-layout.row#lp_wrapper-row-3": {
-        "title": "",
+        "title": "Linha 3 - Grid Mosaico",
         "children": [
             "flex-layout.col#lp_wrapper-row-3"
         ],
@@ -28,7 +28,7 @@
         }
     },
     "flex-layout.row#lp_wrapper-row-4": {
-        "title": "",
+        "title": "Linha 4 - Carrossel Categorias 2",
         "children": [
             "flex-layout.col#lp_wrapper-row-4"
         ],
@@ -37,7 +37,7 @@
         }
     },
     "flex-layout.row#lp_wrapper-row-5": {
-        "title": "",
+        "title": "Linha 5 - Pre-Footer 1",
         "children": [
             "flex-layout.col#lp_wrapper-row-5"
         ],
@@ -46,7 +46,7 @@
         }
     },
     "flex-layout.row#lp_wrapper-row-6": {
-        "title": "",
+        "title": "Linha 6 - Pre-Footer 2",
         "children": [
             "flex-layout.col#lp_wrapper-row-6"
         ],
@@ -55,9 +55,8 @@
         }
     },
 
-    // Wrapper Colunas Full Body
     "flex-layout.col#lp_wrapper-row-1": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "container#lp_grid-cadeiras"
         ],
@@ -66,7 +65,7 @@
         }
     },
     "flex-layout.col#lp_wrapper-row-2": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "container#lp_grow-block-image-highlight"
         ],
@@ -75,7 +74,7 @@
         }
     },
     "flex-layout.col#lp_wrapper-row-3": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "container#lp_grow-block-mosaic"
         ],
@@ -84,7 +83,7 @@
         }
     },
     "flex-layout.col#lp_wrapper-row-4": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "container#lp_grid-category"
         ],
@@ -93,7 +92,7 @@
         }
     },
     "flex-layout.col#lp_wrapper-row-5": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
             "container#lp_footer-highlight"
         ],
@@ -102,8 +101,9 @@
         }
     },
     "flex-layout.col#lp_wrapper-row-6": {
-        "title": "",
+        "title": "Wrapper Coluna",
         "children": [
+            "list-context.image-list#lp_footer-highlight_icon",
             "rich-text#lp_footer-highlight_text-highlight"
         ],
         "props": {
@@ -111,12 +111,9 @@
         }
     },
     
-
-    // Blocos:
-
-    // Block-Banner-Full - "Imagem única - tela inteira"
+    // Banner Hero
     "container#lp_banner-hero": {
-        "title": "Bloco Banner Tela Completa",
+        "title": "Banner Hero",
         "children": [
             "list-context.image-list#lp_banner-hero"
         ],
@@ -125,12 +122,12 @@
         }
     },
     "list-context.image-list#lp_banner-hero": {
+        "title": "Imagem Única",
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1920x710",
-                "mobileImage": "https://dummyimage.com/360x640" // validar resolucao mobile
+                "mobileImage": "https://dummyimage.com/360x640"
             }],
-            //"blockClass": "banner-fulfill"
             "blockClass": ["lp_image", "lp_banner-hero"]
         },
         "children": [
@@ -143,230 +140,104 @@
         }
     },
 
-    // Grid-Block - "Text-Block" + "Titulo" + "Grid-5"
+    // Carrossel Categorias 1
     "container#lp_grid-cadeiras": {
-        "title": "Grid Cadeiras Destaque",
+        "title": "Carrossel Categorias 1",
         "children": [
             "rich-text#lp_grid-cadeiras_text",
-            "slider-layout#lp_grid-cadeiras"
+            "flex-layout.row#lp_grid-cadeiras"
         ],
         "props": {
             "blockClass": "lp_grid-cadeiras"
         }
     },
     "rich-text#lp_grid-cadeiras_text": {
-        "title": "Texto",
+        "title": "Texto Acima",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "# Título H1 \n breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo). \n ## Título H2",
+            "text": "# Título H1 \nbreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo). \n## Título H2",
             "blockClass": ["lp_text-block", "lp_grid-cadeiras_text"]
         }
     },
-    
-    // Bloco Grid de Imagens
-    // Slider
-    "slider-layout#lp_grid-cadeiras": {
-        "title": "",
+    "flex-layout.row#lp_grid-cadeiras": {
+        "title": "Wrapper Linha",
+        "children": [
+            "flex-layout.col#lp_grid-cadeiras"
+        ],
         "props": {
-            "itemsPerPage": {
-                "desktop": 5,
-                "phone": 2
+            "colSizing": "equal",
+            "preventVerticalStretch": true,
+            "blockClass": "lp_grid"
+        }
+    },
+    "flex-layout.col#lp_grid-cadeiras": {
+        "title": "Wrapper Coluna",
+        "children": [
+            "image-text-list#lp_grid-cadeiras_images"
+        ],
+        "props": {
+            "width": "grow",
+            "blockClass": "lp_grid"
+        }
+    },
+    "image-text-list#lp_grid-cadeiras_images": {
+        "title": "Cards",
+        "children": [
+            "embla-carousel#lp_grid-cadeiras_carousel"
+        ],
+        "props": {
+            "imageTextArray": [{
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                }
+            ],
+            "blockClass": "lp_grid_images"
+        }
+    },
+    "embla-carousel#lp_grid-cadeiras_carousel": {
+        "props": {
+            "options": {
+                "navigation": false,
+                "dots": false,
+                "draggable": true,
+                "loop": false,
+                "align": "center"
             },
-            "showNavigationArrows": "desktopOnly",
-            "dots": true,
-            "infinite": true,
-            "blockClass": "lp_grid-slider"
-        },
-        "children": [
-            "flex-layout.col#grid-cadeiras_col-1",
-            "flex-layout.col#grid-cadeiras_col-2",
-            "flex-layout.col#grid-cadeiras_col-3",
-            "flex-layout.col#grid-cadeiras_col-4",
-            "flex-layout.col#grid-cadeiras_col-5"
-        ]
-    },
-    // Colunas
-    // Col-1
-    "flex-layout.col#grid-cadeiras_col-1": {
-        "children": [
-            "list-context.image-list#grid-cadeiras_col-1",
-            "rich-text#grid-cadeiras_col-1"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#grid-cadeiras_col-1": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#grid-cadeiras_col-1"]
-    },
-    "container.list-render#grid-cadeiras_col-1": {
-        "props": {
-            "blockClass": ["lp_image", "grid-cadeiras_image"]
-        }
-    },
-    "rich-text#grid-cadeiras_col-1": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    // Col-2
-    "flex-layout.col#grid-cadeiras_col-2": {
-        "children": [
-            "list-context.image-list#grid-cadeiras_col-2",
-            "rich-text#grid-cadeiras_col-2"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#grid-cadeiras_col-2": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#grid-cadeiras_col-2"]
-    },
-    "container.list-render#grid-cadeiras_col-2": {
-        "props": {
-            "blockClass": ["lp_image", "grid-cadeiras_image"]
-        }
-    },
-    "rich-text#grid-cadeiras_col-2": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    // Col-3
-    "flex-layout.col#grid-cadeiras_col-3": {
-        "children": [
-            "list-context.image-list#grid-cadeiras_col-3",
-            "rich-text#grid-cadeiras_col-3"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#grid-cadeiras_col-3": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#grid-cadeiras_col-3"]
-    },
-    "container.list-render#grid-cadeiras_col-3": {
-        "props": {
-            "blockClass": ["lp_image", "grid-cadeiras_image"]
-        }
-    },
-    "rich-text#grid-cadeiras_col-3": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    // Col-4
-    "flex-layout.col#grid-cadeiras_col-4": {
-        "children": [
-            "list-context.image-list#grid-cadeiras_col-4",
-            "rich-text#grid-cadeiras_col-4"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#grid-cadeiras_col-4": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#grid-cadeiras_col-4"]
-    },
-    "container.list-render#grid-cadeiras_col-4": {
-        "props": {
-            "blockClass": ["lp_image", "grid-cadeiras_image"]
-        }
-    },
-    "rich-text#grid-cadeiras_col-4": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    // Col-5
-    "flex-layout.col#grid-cadeiras_col-5": {
-        "children": [
-            "list-context.image-list#grid-cadeiras_col-5",
-            "rich-text#grid-cadeiras_col-5"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#grid-cadeiras_col-5": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#grid-cadeiras_col-5"]
-    },
-    "container.list-render#grid-cadeiras_col-5": {
-        "props": {
-            "blockClass": ["lp_image", "grid-cadeiras_image"]
-        }
-    },
-    "rich-text#grid-cadeiras_col-5": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
+            "blockClass": "lp_grid_carousel"
         }
     },
     
     // Bloco Grid de Mais Vendidas
     "container#lp_most-selling": {
-        "title": "",
+        "title": "Grid Mosaico - Mais Vendidas",
         "children": [
             "rich-text#lp_most-selling-title",
             "list-context.image-list#lp_most-selling-images"
         ],
         "props": {
-            "blockClass": "lp_most-selling" // -> cor de fundo: #d4d1d2
+            "blockClass": "lp_most-selling"
         }
     },
     "rich-text#lp_most-selling-title": {
@@ -379,42 +250,45 @@
         }
     },
     "list-context.image-list#lp_most-selling-images": {
-        "title": "",
+        "title": "Imagens",
         "children": [
             "container.list-render#lp_most-selling-images"
         ],
         "props": {
             "images": [{
                     "image": "https://dummyimage.com/596x821",
-                    // "image": "https://dummyimage.com/596x630", // validar medida mobile
                     "mobileImage": "",
-                    "link": {}
+                    "link": {
+                        "url": "#"
+                    }
                 },
                 {
                     "image": "https://dummyimage.com/596x396",
-                    // "image": "https://dummyimage.com/596x301", // validar medida mobile
                     "mobileImage": "",
-                    "link": {}
+                    "link": {
+                        "url": "#"
+                    }
                 },
                 {
                     "image": "https://dummyimage.com/596x396",
-                    // "image": "https://dummyimage.com/596x301", // validar medida mobile
                     "mobileImage": "",
-                    "link": {}
+                    "link": {
+                        "url": "#"
+                    }
                 }
             ]
         }
     },
     "container.list-render#lp_most-selling-images": {
         "props": {
-            "blockClass": ["lp_image", "lp_mais-vendidas-images", "banner-grid"],
+            "blockClass": ["lp_image", "lp_banners-grid", "lp_mais-vendidas-images"],
             "wrapper": true
         }
     },
 
-    // Wide-Block - "Titulo2" + "Subtitulo" + "Button" + "Video"
+    // Bloco Video Dinamico
     "container#lp_video-highlight": {
-        "title": "",
+        "title": "Video Dinamico",
         "children": [
             "rich-text#lp_video-highlight_text",
             "video#lp_video-highlight-video"
@@ -423,22 +297,17 @@
             "blockClass": "lp_video-highlight"
         }
     },
-    // texto flutuante sobre o video
     "rich-text#lp_video-highlight_text": {
-        "title": "Texto",
+        "title": "Wrapper Texto + Botão",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n ### Subtitulo H3 \n [Botão](#)",
+            "text": "## Título H2 \n### Subtitulo H3 \n[Botão](#)",
             "blockClass": ["lp_text-block", "lp_button", "lp_video-highlight_text"]
         }
     },
-    // video playback sem controles
     "video#lp_video-highlight-video": {
         "props": {
-            "name": "", // SEO and accessibility
-            "description": "", // SEO and accessibility
-            "poster": "", // Imagem que vai sobrepor o video -> nesse caso nao sei se vai precisar
             "controlsType": "none",
             "width": "100%",
             "height": "684px",
@@ -451,9 +320,9 @@
         }
     },
 
-    // Grow-Block - "Titulo2" + "Subtitulo" + "Text-Block" + "Imagem destaque" + "Button"
+    // Imagem Destaque
     "container#lp_grow-block-image-highlight": {
-        "title": "",
+        "title": "Wrapper Imagem Destaque",
         "children": [
             "rich-text#lp_grow-block-image-highlight_text",
             "list-context.image-list#lp_grow-block-image-highlight-image",
@@ -464,19 +333,20 @@
         }
     },
     "rich-text#lp_grow-block-image-highlight_text": {
-        "title": "Texto",
+        "title": "Texto Acima",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n ### Subtitulo H3 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "text": "## Título H2 \n### Subtitulo H3 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
             "blockClass": ["lp_text-block", "lp_grow-block-image-highlight_text"]
         }
     },
     "list-context.image-list#lp_grow-block-image-highlight-image": {
+        "title": "Imagem Única",
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1220x979",
-                "mobileImage": "https://dummyimage.com/360x640" // Ver resolucao mobile
+                "mobileImage": "https://dummyimage.com/360x640"
             }],
             "blockClass": ["lp_image", "lp_grow-block-image-highlight-image"]
         },
@@ -490,7 +360,7 @@
         }
     },
     "rich-text#lp_grow-block-image-highlight-button": {
-        "title": "Botão",
+        "title": "Botão CTA",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
@@ -499,9 +369,9 @@
         }
     },
     
-    // Extra-Wide-Block - "Text-Block" + "Certificados"
+    // Bloco Informações Extras
     "container#lp_wide-highlights": {
-        "title": "",
+        "title": "Bloco Informações Extras",
         "children": [
             "rich-text#lp_wide-highlights_text",
             "list-context.image-list#lp_wide-highlights-certificates"
@@ -515,15 +385,16 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "text": "## Título H2 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
             "blockClass": ["lp_text-block", "lp_wide-highlights_text"]
         }
     },
     "list-context.image-list#lp_wide-highlights-certificates": {
+        "title": "Imagem Pequena",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/350x70"
-                //"mobileImage": "https://dummyimage.com/360x640" -> usar a mesma do desktop
+                "image": "https://dummyimage.com/350x70",
+                "mobileImage": "https://dummyimage.com/350x70"
             }],
             "blockClass": ["lp_image", "lp_wide-highlights-certificates"]
         },
@@ -537,38 +408,39 @@
         }
     },
 
-    // Grow-Block - "Titulo" + "Text-Block" + "Images"
+    // Grid Mosaic
     "container#lp_grow-block-mosaic": {
-        "title": "",
+        "title": "Grid Mosaico",
         "children": [
-            //texto
             "rich-text#lp_grow-block-mosaic_text",
-            "list-context.image-list#lp_grow-block-mosaic-banner-1", // imagem unica
-            "list-context.image-list#lp_grow-block-mosaic-banners-grid", // esquema de tres imagens
-            "list-context.image-list#lp_grow-block-mosaic-banner-2" // imagem unica
+            "list-context.image-list#lp_grow-block-mosaic-banner-1",
+            "list-context.image-list#lp_grow-block-mosaic-banners-grid",
+            "list-context.image-list#lp_grow-block-mosaic-banner-2"
         ],
         "props": {
             "blockClass": ""
         }
     },
-    // texto
     "rich-text#lp_grow-block-mosaic_text": {
         "title": "Texto",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n ### Título H3 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "text": "## Título H2 \n### Título H3 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
             "blockClass": ["lp_text-block", "lp_grow-block-mosaic_text"]
         }
     },
-    // banner 1
     "list-context.image-list#lp_grow-block-mosaic-banner-1": {
+        "title": "Banner 1 - Wide",
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1220x445",
-                "mobileImage": "https://dummyimage.com/360x640" // ver medidas mobile
+                "mobileImage": "",
+                "link": {
+                    "url": "#"
+                }
             }],
-            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-1"]
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
         },
         "children": [
             "container.list-render#lp_grow-block-mosaic-banner-1"
@@ -576,48 +448,56 @@
     },
     "container.list-render#lp_grow-block-mosaic-banner-1": {
         "props": {
-            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-1"]
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
         }
     },
-    // banner grid
     "list-context.image-list#lp_grow-block-mosaic-banners-grid": {
-        "title": "",
-        "children": [
-            "container.list-render#lp_grow-block-mosaic-banners-grid"
-        ],
+        "title": "Wrapper Banners - Grid",
         "props": {
             "images": [{
                     "image": "https://dummyimage.com/596x396",
                     "mobileImage": "",
-                    "link": {}
+                    "link": {
+                        "url": "#"
+                    }
                 },
                 {
                     "image": "https://dummyimage.com/596x396",
                     "mobileImage": "",
-                    "link": {}
+                    "link": {
+                        "url": "#"
+                    }
                 },
                 {
                     "image": "https://dummyimage.com/596x821",
                     "mobileImage": "",
-                    "link": {}
+                    "link": {
+                        "url": "#"
+                    }
                 }
             ]
-        }
+        },
+        "children": [
+            "container.list-render#lp_grow-block-mosaic-banners-grid"
+        ]
     },
     "container.list-render#lp_grow-block-mosaic-banners-grid": {
         "props": {
-            "blockClass": ["lp_image", "lp_grow-block-mosaic-banners-grid"],
+            "blockClass": ["lp_image", "lp_banners-grid", "lp_grow-block-mosaic-banners-grid"],
             "wrapper": true
         }
     },
-    // banner 2
     "list-context.image-list#lp_grow-block-mosaic-banner-2": {
+        "title": "Banner 2 - Wide",
         "props": {
             "images": [{
                 "image": "https://dummyimage.com/1220x445",
-                "mobileImage": "https://dummyimage.com/360x640" // ver medidas mobile
+                "mobileImage": "",
+                "link": {
+                    "url": "#"
+                }
             }],
-            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-2"]
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
         },
         "children": [
             "container.list-render#lp_grow-block-mosaic-banner-2"
@@ -625,23 +505,21 @@
     },
     "container.list-render#lp_grow-block-mosaic-banner-2": {
         "props": {
-            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner-2"]
+            "blockClass": ["lp_image", "lp_grow-block-mosaic-banner"]
         }
     },
 
-    // Grid-Block - "Titulo" + "Grid-5"
+    // Carrossel Categorias 2
     "container#lp_grid-category": {
-        "title": "Grid Categorias Destaque",
+        "title": "Carrossel Categorias 2",
         "children": [
             "rich-text#lp_grid-category_text",
-            "slider-layout#lp_grid-category_slider"
+            "flex-layout.row#lp_grid-category"
         ],
         "props": {
-            "blockClass": "lp_grid-category"  // -> cor de fundo: #f1f1f1
+            "blockClass": "lp_grid-category"
         }
-    },    
-    // Bloco Grid de Imagens
-    // text
+    },
     "rich-text#lp_grid-category_text": {
         "title": "Texto",
         "props": {
@@ -651,206 +529,78 @@
             "blockClass": ["lp_text-block", "lp_grid-category_text"]
         }
     },
-    // Slider
-    "slider-layout#lp_grid-category_slider": {
-        "title": "",
+    "flex-layout.row#lp_grid-category": {
+        "title": "Wrapper Linha",
+        "children": [
+            "flex-layout.col#lp_grid-category"
+        ],
         "props": {
-            "itemsPerPage": {
-                "desktop": 5,
-                "phone": 2
+            "colSizing": "equal",
+            "preventVerticalStretch": true,
+            "blockClass": "lp_grid"
+        }
+    },
+    "flex-layout.col#lp_grid-category": {
+        "title": "Wrapper Coluna",
+        "children": [
+            "image-text-list#lp_grid-category_images"
+        ],
+        "props": {
+            "width": "grow",
+            "blockClass": "lp_grid"
+        }
+    },
+    "image-text-list#lp_grid-category_images": {
+        "title": "Cards",
+        "children": [
+            "embla-carousel#lp_grid-category_carousel"
+        ],
+        "props": {
+            "imageTextArray": [{
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/223x300",
+                    "link": "#"
+                }
+            ],
+            "blockClass": "lp_grid_images"
+        }
+    },
+    "embla-carousel#lp_grid-category_carousel": {
+        "props": {
+            "options": {
+                "navigation": false,
+                "dots": false,
+                "draggable": true,
+                "loop": false,
+                "align": "center"
             },
-            "showNavigationArrows": "desktopOnly",
-            "dots": true,
-            "infinite": true,
-            "blockClass": "lp_grid-slider"
-        },
-        "children": [
-            "flex-layout.col#lp_grid-category_col-1",
-            "flex-layout.col#lp_grid-category_col-2",
-            "flex-layout.col#lp_grid-category_col-3",
-            "flex-layout.col#lp_grid-category_col-4",
-            "flex-layout.col#lp_grid-category_col-5"
-        ]
-    },
-    // Colunas
-    // Col-1
-    "flex-layout.col#lp_grid-category_col-1": {
-        "children": [
-            "list-context.image-list#lp_grid-category_col-1",
-            "rich-text#lp_grid-category_col-1"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#lp_grid-category_col-1": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#lp_grid-category_col-1"]
-    },
-    "container.list-render#lp_grid-category_col-1": {
-        "props": {
-            "blockClass": ["lp_image", "grid-category_image"]
-        }
-    },
-    "rich-text#lp_grid-category_col-1": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    
-    // Col-2
-    "flex-layout.col#lp_grid-category_col-2": {
-        "children": [
-            "list-context.image-list#lp_grid-category_col-2",
-            "rich-text#lp_grid-category_col-2"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#lp_grid-category_col-2": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#lp_grid-category_col-2"]
-    },
-    "container.list-render#lp_grid-category_col-2": {
-        "props": {
-            "blockClass": ["lp_image", "grid-category_image"]
-        }
-    },
-    "rich-text#lp_grid-category_col-2": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    
-    // Col-3
-    "flex-layout.col#lp_grid-category_col-3": {
-        "children": [
-            "list-context.image-list#lp_grid-category_col-3",
-            "rich-text#lp_grid-category_col-3"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#lp_grid-category_col-3": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#lp_grid-category_col-3"]
-    },
-    "container.list-render#lp_grid-category_col-3": {
-        "props": {
-            "blockClass": ["lp_image", "grid-category_image"]
-        }
-    },
-    "rich-text#lp_grid-category_col-3": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    
-    // Col-4
-    "flex-layout.col#lp_grid-category_col-4": {
-        "children": [
-            "list-context.image-list#lp_grid-category_col-4",
-            "rich-text#lp_grid-category_col-4"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#lp_grid-category_col-4": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#lp_grid-category_col-4"]
-    },
-    "container.list-render#lp_grid-category_col-4": {
-        "props": {
-            "blockClass": ["lp_image", "grid-category_image"]
-        }
-    },
-    "rich-text#lp_grid-category_col-4": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
-        }
-    },
-    
-    // Col-5
-    "flex-layout.col#lp_grid-category_col-5": {
-        "children": [
-            "list-context.image-list#lp_grid-category_col-5",
-            "rich-text#lp_grid-category_col-5"
-        ],
-        "props": {
-            "blockClass": "lp_grid_col"
-        }
-    },
-    "list-context.image-list#lp_grid-category_col-5": {
-        "title": "",
-        "props": {
-            "images": [{
-                "image": "https://dummyimage.com/223x300"
-            }],
-            "blockClass": ["lp_image"]
-        },
-        "children": ["container.list-render#lp_grid-category_col-5"]
-    },
-    "container.list-render#lp_grid-category_col-5": {
-        "props": {
-            "blockClass": ["lp_image", "grid-category_image"]
-        }
-    },
-    "rich-text#lp_grid-category_col-5": {
-        "title": "",
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "#### CATEGORIA",
-            "blockClass": "grid_image-text"
+            "blockClass": ["lp_grid_carousel", "lp_grid-category_carousel"]
         }
     },
 
-    // Footer - "Titulo" + "Text-Block" + "Video-Block"
+    // Pre-Footer 1
     "container#lp_footer-highlight": {
-        "title": "",
+        "title": "Wrapper Pre-Footer 1",
         "children": [
             "rich-text#lp_footer-highlight_text",
             "video#lp_footer-highlight_video"
@@ -859,22 +609,18 @@
             "blockClass": "lp_footer-highlight"
         }
     },
-    // text
     "rich-text#lp_footer-highlight_text": {
-        "title": "Texto",
+        "title": "Texto Acima",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n ### Título H3 \n Breve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "text": "## Título H2 \n### Título H3 \nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
             "blockClass": ["lp_text-block", "lp_footer-highlight_text"]
         }
     },
-    // video com controles
     "video#lp_footer-highlight_video": {
+        "title": "Video Institucional",
         "props": {
-            "name": "", // SEO and accessibility
-            "description": "", // SEO and accessibility
-            "poster": "", // Imagem que vai sobrepor o video
             "controlsType": "custom-vtex",
             "width": "960px",
             "height": "540px",
@@ -884,25 +630,37 @@
             "muted": false,
             "src": "https://www.youtube.com/watch?v=U_TsfCE3d2M",
             "blockClass": "lp_footer-highlight_video"
-            
-            // teste:
-            // ,
-            // "controlsType": "custom-vtex",
-            // "PlayIcon": "none",
-            // "PauseIcon": "none",
-            // "VolumeOnIcon": "none",
-            // "VolumeOffIcon": "none",
-            // "FullscreenIcon": "none"
         }
     },
-
-    // Footer - "CTA" - criar um wrapper com link para google maps
+    
+    // Pre-Footer 2
+    "list-context.image-list#lp_footer-highlight_icon": {
+        "title": "Imagem Icone",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/76x113",
+                "mobileImage": "https://dummyimage.com/76x113",
+                "link": {
+                    "url": "#"
+                }
+            }],
+            "blockClass": ["lp_image", "lp_footer-highlight_icon"]
+        },
+        "children": [
+            "container.list-render#lp_footer-highlight_icon"
+        ]
+    },
+    "container.list-render#lp_footer-highlight_icon": {
+        "props": {
+            "blockClass": ["lp_image", "lp_footer-highlight_icon"]
+        }
+    },
     "rich-text#lp_footer-highlight_text-highlight": {
-        "title": "Texto",
+        "title": "Texto Destaque",
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "## Título H2 \n ### Título H3",
+            "text": "## Título H2 \n### Título H3",
             "blockClass": ["lp_text-block", "lp_footer-highlight_text-highlight"]
         }
     }

@@ -1,0 +1,33 @@
+.wrapper--top-bar {
+    display: none !important
+}
+
+.container--institutional {
+    margin-top: 136px
+}
+
+.container--institucional-landing {
+    margin-top: 136px !important
+}
+
+.imageElement--lp_banner-hero {
+    margin-top: -42px
+}
+
+@media screen and (max-width: 1024px) {
+    .container--header {
+        height: 102px
+    }
+
+    .container--institutional {
+        margin-top: 0
+    }
+
+    .container--institucional-landing {
+        margin-top: 0 !important
+    }
+
+    .imageElement--lp_banner-hero {
+        margin-top: 0
+    }
+}

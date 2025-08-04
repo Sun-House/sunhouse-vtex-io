@@ -1,25 +1,27 @@
 /* General */
 .flexRow--wrapper-row {
-    /* margin-bottom: 28px */
     margin-bottom: 48px
 }
 
 /* BG Row Wrapper */
 .flexRow--background-line {
-    background: #4f549b
+    background-color: #f1f1f1
 }
 
 /* Footer Row Wrapper */
 .flexRow--footer-line {
-    /* cor teste: */
-    background-color: #4f549b;
-    /* cor correta: background-color: ##f1f1f1 */
-    height: 500px;
+    background: #4f549b;
+    height: 745px;
     display: flex;
     flex-direction: column-reverse
 }
 
-/* Grid-5 */
-.flexCol--lp_grid_col {
-    gap: 28px
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    /* Footer Row Wrapper */
+    .flexRow--footer-line {
+        height: 900px
+    }
+
 }

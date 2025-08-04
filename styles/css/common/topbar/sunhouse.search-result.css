@@ -1,0 +1,9 @@
+.container--layout {
+    margin-top: 112px
+}
+
+@media screen and (max-width: 1024px) {
+    .container--layout {
+        margin-top: 0
+    }
+}
