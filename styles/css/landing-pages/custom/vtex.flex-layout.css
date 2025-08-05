@@ -11,7 +11,8 @@
 /* Footer Row Wrapper */
 .flexRow--footer-line {
     background: #4f549b;
-    height: 745px;
+    /* height: 745px; */
+    height: 860px;
     display: flex;
     flex-direction: column-reverse
 }
@@ -21,7 +22,8 @@
 
     /* Footer Row Wrapper */
     .flexRow--footer-line {
-        height: 900px
+        /* height: 900px */
+        height: 1048px
     }
 
 }

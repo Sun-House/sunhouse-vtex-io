@@ -7,7 +7,6 @@
       "context": {
         "skusFilter": "ALL_AVAILABLE",
         "orderByField": "OrderByTopSaleDESC",
-        //"maxItemsPerPage": 16
         "maxItemsPerPage": 28
       }
     }

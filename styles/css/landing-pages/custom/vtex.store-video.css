@@ -7,14 +7,18 @@
 .videoContainer--lp_footer-highlight_video {
     display: flex;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    box-shadow: 1px 240px 50px -200px #000
 }
 
 /* Mobile */
 @media screen and (max-width: 1024px) {
+    
     .videoContainer--lp_footer-highlight_video {
         display: flex;
         align-items: unset;
-        flex-direction: unset
+        flex-direction: unset;
+        box-shadow: 1px 80px 50px -35px #000 !important
     }
+
 }
