@@ -1,1 +1,757 @@
-.searchResultContainer--search-result{max-width:initial !important;padding:0 !important}.galleryTitle--layout{margin:0;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:24px;text-align:center;font-weight:700;color:#2d2926;margin-left:5px;display:flex;align-items:flex-end}.galleryTitle--layout::before{content:'"'}.galleryTitle--layout::after{content:'"'}.notFound--layout :global(.vtex-flex-layout-0-x-flexRow--shelf-suggestions){margin-bottom:60px}.showingProducts{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:12px;line-height:12px;color:#575451;padding:0;display:flex;align-items:center}.filters{height:100%}.filtersWrapper{display:flex;flex-wrap:wrap;align-items:center;row-gap:.5rem;height:100%;position:relative;padding-left:30px}.filtersWrapper .filter__container{border:none;position:relative;display:none}.filtersWrapper .filter__container--title,.filtersWrapper .filter__container--selectedFilters{display:none !important}.filtersWrapper .filter__container:not(.filtersWrapper .filter__container--priceRange){order:2}.filtersWrapper .filter__container--priceRange{order:1}.filtersWrapper .filter__container--priceRange .filterWrapperOptions .filterContent{padding:0 7px}.filtersWrapper .filter__container--priceRange .filterWrapperOptions .filterContent :global(.vtex-slider__left-value),.filtersWrapper .filter__container--priceRange .filterWrapperOptions .filterContent :global(.vtex-slider__right-value){font-family:"Open Sans",sans-serif;font-style:normal;font-weight:400;font-size:12px;line-height:14px;color:#2d2926}.filtersWrapper .filter__container .filter{padding:0 8px}.filtersWrapper .filter__container .filter .filterIcon::before{transform:rotate(180deg)}.filtersWrapper .filter__container .filter.filterIsOpen .filterIcon::before{transform:rotate(0deg) !important}.filtersWrapper .filter__container .filter .filterTitle{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:12px;line-height:1.2;color:#2d2926;text-transform:unset}.filtersWrapper .filter__container .filter .filterIcon{padding:0 0 0 7px;color:#2d2926;width:11px;height:11px}.filtersWrapper .filter__container .filter .filterIcon::before{display:inline-flex;content:"";font-size:11px;font-family:"fantasticon";font-style:normal;font-weight:400;line-height:1;color:#2d2926;transition:all .3s}.filtersWrapper .filter__container .filterWrapperOptions{position:absolute;top:calc(100% + 17px);z-index:10;left:50%;transform:translateX(-50%);margin:0;pointer-events:none}.filtersWrapper .filter__container .filterWrapperOptions.filterIsOpen{pointer-events:initial}.filtersWrapper .filter__container .filterWrapperOptions.filterIsOpen .filterTemplateOverflow{opacity:1;visibility:visible;border:1px solid rgba(186,186,186,.5)}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow{background:#f8f8f8;box-sizing:border-box;width:200px;max-width:200px;padding:9px 10px;transition:opacity .4s;opacity:0;visibility:hidden}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent{max-height:102px;overflow-y:auto;overflow-x:hidden}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent::-webkit-scrollbar{width:4px;height:4px}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent::-webkit-scrollbar-track{background:#d5d4d4;border-radius:10px}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent ::-moz-scrollbar-button,.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent ::-webkit-scrollbar-button{width:0px}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent::-webkit-scrollbar-thumb{background:#817f7d;border-radius:10px}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent::-webkit-scrollbar-thumb:hover{background:#9a9997}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem:not(:last-child){margin-bottom:8px}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__container){margin-right:10.63px}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container){margin:0;border:1.5px solid #ffda00;border-radius:50%;width:13.75px;height:13.75px;background-color:rgba(0,0,0,0)}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__container) :global(.vtex-checkbox__box){width:13.75px;height:13.75px}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__container) :global(.vtex__icon-check){color:#ffda00;width:8px;height:8px;border-radius:50%;background:#ffda00}.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__label){font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:14px;color:#2d2926;margin-left:5px}.orderByDropdown{padding:0}.orderByDropdown .orderByButton{border:none;padding:0;background-color:rgba(0,0,0,0);text-transform:unset}.orderByDropdown .orderByButton .orderByText,.orderByDropdown .orderByButton .filterPopupTitle{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:400;font-size:12px;line-height:14px;color:#2d2926;text-transform:unset}.orderByDropdown .orderByButton .orderByText{margin-right:50px;font-weight:700}.orderByDropdown .orderByButton .orderByText::after{content:":"}.orderByDropdown .orderByButton .filterPopupArrowIcon{padding:0 0 0 7px}.orderByDropdown .orderByButton .filterPopupArrowIcon .caretIcon{color:#2d2926;width:10px;height:10px}.orderByDropdown .orderByOptionsContainerOpen{padding:9px 10px;border:1px solid rgba(186,186,186,.5);top:calc(100% + 14px);box-sizing:border-box;box-shadow:none;max-width:127px;z-index:4}.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent{overflow-y:auto;overflow-x:hidden;max-height:120px}.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent::-webkit-scrollbar{width:4px;height:4px}.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent::-webkit-scrollbar-track{background:#dadada;border-radius:10px}.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent ::-moz-scrollbar-button,.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent ::-webkit-scrollbar-button{width:0px}.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent::-webkit-scrollbar-thumb{background:#fb668d;border-radius:10px}.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent::-webkit-scrollbar-thumb:hover{background:#fc98b2}.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent .orderByOptionItem{padding:0;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:14px;color:#2d2926;display:flex;align-items:center;margin-bottom:9px;text-transform:unset}.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent .orderByOptionItem:hover{background-color:rgba(0,0,0,0)}.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent .orderByOptionItem::before{content:"";border:1.5px solid #ffe133;border-radius:50%;width:6.75px;height:6.75px;padding:2px;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0px 0 2px #fff;margin-right:10.63px}.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent .orderByOptionItem--selected{background-color:rgba(0,0,0,0)}.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent .orderByOptionItem--selected::before{background-color:#ffe133}.pagedControlsContainer{display:flex;align-items:center}.pagedControlsContainer .previousPage,.pagedControlsContainer .nextPage{cursor:pointer;background-color:rgba(0,0,0,0);border:none;display:flex;align-items:center;padding:0}.pagedControlsContainer .previousPage .nextPageText,.pagedControlsContainer .previousPage .previousPageText,.pagedControlsContainer .nextPage .nextPageText,.pagedControlsContainer .nextPage .previousPageText{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:12px;line-height:14px;color:#2d2926;padding:0 15px;text-transform:unset}.pagedControlsContainer .previousPage .previousPageIconContainer,.pagedControlsContainer .previousPage .nextPageIconContainer,.pagedControlsContainer .nextPage .previousPageIconContainer,.pagedControlsContainer .nextPage .nextPageIconContainer{width:27px;height:27px;display:flex;align-items:center;justify-content:center;transition:background-color .2s}.pagedControlsContainer .previousPage .previousPageIconContainer :global(.vtex-store-components-3-x-nextIcon),.pagedControlsContainer .previousPage .previousPageIconContainer :global(.vtex-store-components-3-x-prevIcon),.pagedControlsContainer .previousPage .nextPageIconContainer :global(.vtex-store-components-3-x-nextIcon),.pagedControlsContainer .previousPage .nextPageIconContainer :global(.vtex-store-components-3-x-prevIcon),.pagedControlsContainer .nextPage .previousPageIconContainer :global(.vtex-store-components-3-x-nextIcon),.pagedControlsContainer .nextPage .previousPageIconContainer :global(.vtex-store-components-3-x-prevIcon),.pagedControlsContainer .nextPage .nextPageIconContainer :global(.vtex-store-components-3-x-nextIcon),.pagedControlsContainer .nextPage .nextPageIconContainer :global(.vtex-store-components-3-x-prevIcon){color:#2d2926;width:11px;height:11px}.pagedControlsContainer .previousPage:hover .previousPageIconContainer,.pagedControlsContainer .previousPage:hover .nextPageIconContainer,.pagedControlsContainer .nextPage:hover .previousPageIconContainer,.pagedControlsContainer .nextPage:hover .nextPageIconContainer{background-color:#ffda00}.pagedControlsContainer .pageButton{cursor:pointer;background-color:rgba(0,0,0,0);border:none;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:12px;line-height:14px;color:#2d2926;padding:0 10px}.pagedControlsContainer .pageButton--current{font-weight:bold;font-size:18px;line-height:25px;color:#f90041}.pagedControlsContainer .lastPage,.pagedControlsContainer .firstPage{cursor:pointer;background-color:rgba(0,0,0,0);border:none;font-style:normal;font-weight:normal;font-size:12px;line-height:14px;padding:0 10px;display:flex;gap:20px}.gallery{padding:0;margin:20px 0 0;-moz-column-gap:15px;column-gap:15px;row-gap:40px;margin-bottom:40px}.gallery .galleryItem{padding:0}.gallery .galleryItem :global(.vtex-product-summary-2-x-container--main-shelf){margin:0}.buttonShowMore{margin-bottom:20px}.buttonShowMore :global(.vtex-button){background:#ffe133;border:1px solid #ffda00;border-radius:7px;height:46px;transition:all .4s}.buttonShowMore :global(.vtex-button):disabled{pointer-events:none;opacity:.5}.buttonShowMore :global(.vtex-button) :global(.vtex-button__label){font-family:"Open Sans",sans-serif;font-style:normal;font-weight:bold;font-size:16px;line-height:20px;text-align:center;color:#fff;transition:all .4s}.buttonShowMore :global(.vtex-button):hover{background:#fff}.buttonShowMore :global(.vtex-button):hover :global(.vtex-button__label){color:#ffda00}.filtersWrapperMobile{justify-content:flex-start}.filtersWrapperMobile .filterPopupButton{padding:0;height:initial}.filtersWrapperMobile .filterPopupButton .filterPopupTitle{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:700;font-size:12px;line-height:14px;color:#2d2926}.filtersWrapperMobile .filterPopupButton .filterIcon{color:#2d2926}.filterOutterBox{background-color:#000;opacity:.5}.sidebar .closeIconButton{width:57px;height:48px;padding:0;background-color:#fff;line-height:0;display:flex;flex-direction:column;justify-content:center;align-items:center;position:absolute;top:0;right:100%}.sidebar .closeIconButton .closeIcon{color:#2d2926}.sidebar .closeIconButton::after{content:"Fechar";color:#2d2926;font-size:12px;line-height:14px;font-family:"Open Sans",sans-serif}.sidebar .accordionFilter .filterAccordionBreadcrumbs .filterBreadcrumbsText,.sidebar .accordionFilter .filterAccordionBreadcrumbs .filterBreadcrumbsItem .filterBreadcrumbsItemName{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:700;font-size:20px;line-height:24px;color:#2d2926;text-transform:unset}.sidebar .accordionFilter .filterAccordionBreadcrumbs .filterBreadcrumbsItem .caretIcon{padding:0 .5rem}.sidebar .accordionFilter .filterAccordionBreadcrumbs .filterBreadcrumbsItem .filterBreadcrumbsItemName{padding:0}.sidebar .accordionFilter .accordionFilterContainer{padding:0 8px}.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem{padding-right:0;display:flex;align-items:center;border-color:#d5d4d4}.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem .accordionFilterContent{padding:0;display:flex;align-items:center;width:100%}.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem .accordionFilterContent .accordionFilterItemTitle{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:19px;color:#2d2926;text-transform:unset}.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem .accordionFilterContent .accordionFilterItemTag :global(.vtex-tag){background-color:#252525;color:#fff}.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem .accordionFilterContent .accordionFilterItemIcon{margin-left:auto;display:flex;align-items:center}.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem .accordionFilterContent .accordionFilterItemIcon .caretIcon{color:#2d2926;width:14px;height:14px}.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox,.sidebar .accordionFilter .accordionFilterItemOptions .filterItem{padding:0;border-color:#252525}.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__container),.sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__container){margin-right:10.63px}.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container),.sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container){margin:0;border:1.5px solid #ffe133;border-radius:50%;width:13.75px;height:13.75px;background-color:#fff}.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__container) :global(.vtex-checkbox__box),.sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__container) :global(.vtex-checkbox__box){width:13.75px;height:13.75px}.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__container) :global(.vtex__icon-check),.sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__container) :global(.vtex__icon-check){color:#ffe133;width:8px;height:8px;border-radius:50%;background:#ffe133}.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__label),.sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__label){font-family:"Open Sans",sans-serif;font-style:normal;font-weight:normal;font-size:12px;line-height:14px;color:#2d2926;white-space:nowrap}.sidebar .accordionFilter .accordionFilterItemOptions .filterItem:not(:first-child){margin-top:5px}.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterAvailable{display:none}.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow{padding:0}.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow :global(.vtex-slider__base-internal),.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow :global(.vtex-slider__selector){background-color:#ffe133}.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow :global(.vtex-slider__left-value),.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow :global(.vtex-slider__right-value){font-family:"Open Sans",sans-serif;font-style:normal;font-weight:400;font-size:12px;line-height:14px;color:#2d2926}.sidebar .filterButtonsBox{border-color:#aba9a8}.sidebar .filterButtonsBox .filterClearButtonWrapper :global(.vtex-button){border:1px solid #252525;background-color:#fff}.sidebar .filterButtonsBox .filterClearButtonWrapper :global(.vtex-button) :global(.vtex-button__label){color:#252525;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:bold;font-size:16px;line-height:19px;text-align:center;padding:0 !important;align-items:center}.sidebar .filterButtonsBox .filterApplyButtonWrapper :global(.vtex-button){border:1px solid #ffda00;background-color:#ffe133}.sidebar .filterButtonsBox .filterApplyButtonWrapper :global(.vtex-button) :global(.vtex-button__label){color:#2d2926;font-family:"Open Sans",sans-serif;font-style:normal;font-weight:bold;font-size:16px;line-height:19px;text-align:center;padding:0 !important;align-items:center}@media screen and (min-width: 541px)and (max-width: 1024px){.gallery .galleryItem{max-width:calc(50% - 7.5px) !important}}@media screen and (min-width: 1025px){.gallery .galleryItem{max-width:calc(25% - 11.25px) !important}}@media screen and (max-width: 1024px){.galleryTitle--layout{margin:0;width:100%}.showingProducts{justify-content:center}.pagedControlsContainer{width:100%;justify-content:center}.gallery .galleryItem :global(.vtex-product-summary-2-x-container--main-shelf){margin:0 auto}.sidebar{width:80%}.sidebar .accordionFilter .accordionFilterContainer:last-child{margin-bottom:none}.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__label),.sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__label){font-size:14px}}@media screen and (max-width: 768px){.galleryTitle--layout{justify-content:center}}@media screen and (max-width: 640px){.orderByDropdown .orderByButton .orderByText{margin:0}}@media screen and (max-width: 540px){.gallery .galleryItem{max-width:100% !important}}
+.searchResultContainer--search-result {
+    max-width: initial !important;
+    padding: 0 !important
+}
+
+.galleryTitle--layout {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: #2d2926;
+    margin-left: 5px;
+    display: flex;
+    align-items: flex-end
+}
+
+.galleryTitle--layout::before {
+    content: '"'
+}
+
+.galleryTitle--layout::after {
+    content: '"'
+}
+
+.notFound--layout :global(.vtex-flex-layout-0-x-flexRow--shelf-suggestions) {
+    margin-bottom: 60px
+}
+
+.showingProducts {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: #575451;
+    padding: 0;
+    display: flex;
+    align-items: center
+}
+
+.filters {
+    height: 100%
+}
+
+.filtersWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: .5rem;
+    height: 100%;
+    position: relative;
+    padding-left: 30px
+}
+
+.filtersWrapper .filter__container {
+    border: none;
+    position: relative;
+    display: none
+}
+
+.filtersWrapper .filter__container--title,
+.filtersWrapper .filter__container--selectedFilters {
+    display: none !important
+}
+
+.filtersWrapper .filter__container:not(.filtersWrapper .filter__container--priceRange) {
+    order: 2
+}
+
+.filtersWrapper .filter__container--priceRange {
+    order: 1
+}
+
+.filtersWrapper .filter__container--priceRange .filterWrapperOptions .filterContent {
+    padding: 0 7px
+}
+
+.filtersWrapper .filter__container--priceRange .filterWrapperOptions .filterContent :global(.vtex-slider__left-value),
+.filtersWrapper .filter__container--priceRange .filterWrapperOptions .filterContent :global(.vtex-slider__right-value) {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2d2926
+}
+
+.filtersWrapper .filter__container .filter {
+    padding: 0 8px
+}
+
+.filtersWrapper .filter__container .filter .filterIcon::before {
+    transform: rotate(180deg)
+}
+
+.filtersWrapper .filter__container .filter.filterIsOpen .filterIcon::before {
+    transform: rotate(0deg) !important
+}
+
+.filtersWrapper .filter__container .filter .filterTitle {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #2d2926;
+    text-transform: unset
+}
+
+.filtersWrapper .filter__container .filter .filterIcon {
+    padding: 0 0 0 7px;
+    color: #2d2926;
+    width: 11px;
+    height: 11px
+}
+
+.filtersWrapper .filter__container .filter .filterIcon::before {
+    display: inline-flex;
+    content: "";
+    font-size: 11px;
+    font-family: "fantasticon";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #2d2926;
+    transition: all .3s
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions {
+    position: absolute;
+    top: calc(100% + 17px);
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    pointer-events: none
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions.filterIsOpen {
+    pointer-events: initial
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions.filterIsOpen .filterTemplateOverflow {
+    opacity: 1;
+    visibility: visible;
+    border: 1px solid rgba(186, 186, 186, .5)
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow {
+    background: #f8f8f8;
+    box-sizing: border-box;
+    width: 200px;
+    max-width: 200px;
+    padding: 9px 10px;
+    transition: opacity .4s;
+    opacity: 0;
+    visibility: hidden
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent {
+    max-height: 102px;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent::-webkit-scrollbar {
+    width: 4px;
+    height: 4px
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent::-webkit-scrollbar-track {
+    background: #d5d4d4;
+    border-radius: 10px
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent ::-moz-scrollbar-button,
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent ::-webkit-scrollbar-button {
+    width: 0px
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent::-webkit-scrollbar-thumb {
+    background: #817f7d;
+    border-radius: 10px
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent::-webkit-scrollbar-thumb:hover {
+    background: #9a9997
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem:not(:last-child) {
+    margin-bottom: 8px
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__container) {
+    margin-right: 10.63px
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container) {
+    margin: 0;
+    border: 1.5px solid #ffda00;
+    border-radius: 50%;
+    width: 13.75px;
+    height: 13.75px;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__container) :global(.vtex-checkbox__box) {
+    width: 13.75px;
+    height: 13.75px
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__container) :global(.vtex__icon-check) {
+    color: #ffda00;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffda00
+}
+
+.filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__label) {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #2d2926;
+    margin-left: 5px
+}
+
+.orderByDropdown {
+    padding: 0
+}
+
+.orderByDropdown .orderByButton {
+    border: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    text-transform: unset
+}
+
+.orderByDropdown .orderByButton .orderByText,
+.orderByDropdown .orderByButton .filterPopupTitle {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2d2926;
+    text-transform: unset
+}
+
+.orderByDropdown .orderByButton .orderByText {
+    margin-right: 50px;
+    font-weight: 700
+}
+
+.orderByDropdown .orderByButton .orderByText::after {
+    content: ":"
+}
+
+.orderByDropdown .orderByButton .filterPopupArrowIcon {
+    padding: 0 0 0 7px
+}
+
+.orderByDropdown .orderByButton .filterPopupArrowIcon .caretIcon {
+    color: #2d2926;
+    width: 10px;
+    height: 10px
+}
+
+.orderByDropdown .orderByOptionsContainerOpen {
+    padding: 9px 10px;
+    border: 1px solid rgba(186, 186, 186, .5);
+    top: calc(100% + 14px);
+    box-sizing: border-box;
+    box-shadow: none;
+    max-width: 127px;
+    z-index: 4
+}
+
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 120px
+}
+
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent::-webkit-scrollbar {
+    width: 4px;
+    height: 4px
+}
+
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent::-webkit-scrollbar-track {
+    background: #dadada;
+    border-radius: 10px
+}
+
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent ::-moz-scrollbar-button,
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent ::-webkit-scrollbar-button {
+    width: 0px
+}
+
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent::-webkit-scrollbar-thumb {
+    background: #fb668d;
+    border-radius: 10px
+}
+
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent::-webkit-scrollbar-thumb:hover {
+    background: #fc98b2
+}
+
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent .orderByOptionItem {
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #2d2926;
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+    text-transform: unset
+}
+
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent .orderByOptionItem:hover {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent .orderByOptionItem::before {
+    content: "";
+    border: 1.5px solid #ffe133;
+    border-radius: 50%;
+    width: 6.75px;
+    height: 6.75px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0px 0 2px #fff;
+    margin-right: 10.63px
+}
+
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent .orderByOptionItem--selected {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent .orderByOptionItem--selected::before {
+    background-color: #ffe133
+}
+
+.pagedControlsContainer {
+    display: flex;
+    align-items: center
+}
+
+.pagedControlsContainer .previousPage,
+.pagedControlsContainer .nextPage {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0
+}
+
+.pagedControlsContainer .previousPage .nextPageText,
+.pagedControlsContainer .previousPage .previousPageText,
+.pagedControlsContainer .nextPage .nextPageText,
+.pagedControlsContainer .nextPage .previousPageText {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2d2926;
+    padding: 0 15px;
+    text-transform: unset
+}
+
+.pagedControlsContainer .previousPage .previousPageIconContainer,
+.pagedControlsContainer .previousPage .nextPageIconContainer,
+.pagedControlsContainer .nextPage .previousPageIconContainer,
+.pagedControlsContainer .nextPage .nextPageIconContainer {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s
+}
+
+.pagedControlsContainer .previousPage .previousPageIconContainer :global(.vtex-store-components-3-x-nextIcon),
+.pagedControlsContainer .previousPage .previousPageIconContainer :global(.vtex-store-components-3-x-prevIcon),
+.pagedControlsContainer .previousPage .nextPageIconContainer :global(.vtex-store-components-3-x-nextIcon),
+.pagedControlsContainer .previousPage .nextPageIconContainer :global(.vtex-store-components-3-x-prevIcon),
+.pagedControlsContainer .nextPage .previousPageIconContainer :global(.vtex-store-components-3-x-nextIcon),
+.pagedControlsContainer .nextPage .previousPageIconContainer :global(.vtex-store-components-3-x-prevIcon),
+.pagedControlsContainer .nextPage .nextPageIconContainer :global(.vtex-store-components-3-x-nextIcon),
+.pagedControlsContainer .nextPage .nextPageIconContainer :global(.vtex-store-components-3-x-prevIcon) {
+    color: #2d2926;
+    width: 11px;
+    height: 11px
+}
+
+.pagedControlsContainer .previousPage:hover .previousPageIconContainer,
+.pagedControlsContainer .previousPage:hover .nextPageIconContainer,
+.pagedControlsContainer .nextPage:hover .previousPageIconContainer,
+.pagedControlsContainer .nextPage:hover .nextPageIconContainer {
+    background-color: #ffda00
+}
+
+.pagedControlsContainer .pageButton {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2d2926;
+    padding: 0 10px
+}
+
+.pagedControlsContainer .pageButton--current {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #f90041
+}
+
+.pagedControlsContainer .lastPage,
+.pagedControlsContainer .firstPage {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0 10px;
+    display: flex;
+    gap: 20px
+}
+
+.gallery {
+    padding: 0;
+    margin: 20px 0 0;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    row-gap: 40px;
+    margin-bottom: 40px
+}
+
+.gallery .galleryItem {
+    padding: 0
+}
+
+.gallery .galleryItem :global(.vtex-product-summary-2-x-container--main-shelf) {
+    margin: 0
+}
+
+.filtersWrapperMobile {
+    justify-content: flex-start
+}
+
+.filtersWrapperMobile .filterPopupButton {
+    padding: 0;
+    height: initial
+}
+
+.filtersWrapperMobile .filterPopupButton .filterPopupTitle {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2d2926
+}
+
+.filtersWrapperMobile .filterPopupButton .filterIcon {
+    color: #2d2926
+}
+
+.filterOutterBox {
+    background-color: #000;
+    opacity: .5
+}
+
+.sidebar .closeIconButton {
+    width: 57px;
+    height: 48px;
+    padding: 0;
+    background-color: #fff;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 100%
+}
+
+.sidebar .closeIconButton .closeIcon {
+    color: #2d2926
+}
+
+.sidebar .closeIconButton::after {
+    content: "Fechar";
+    color: #2d2926;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "Open Sans", sans-serif
+}
+
+.sidebar .accordionFilter .filterAccordionBreadcrumbs .filterBreadcrumbsText,
+.sidebar .accordionFilter .filterAccordionBreadcrumbs .filterBreadcrumbsItem .filterBreadcrumbsItemName {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2d2926;
+    text-transform: unset
+}
+
+.sidebar .accordionFilter .filterAccordionBreadcrumbs .filterBreadcrumbsItem .caretIcon {
+    padding: 0 .5rem
+}
+
+.sidebar .accordionFilter .filterAccordionBreadcrumbs .filterBreadcrumbsItem .filterBreadcrumbsItemName {
+    padding: 0
+}
+
+.sidebar .accordionFilter .accordionFilterContainer {
+    padding: 0 8px
+}
+
+.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem {
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    border-color: #d5d4d4
+}
+
+.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem .accordionFilterContent {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem .accordionFilterContent .accordionFilterItemTitle {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2d2926;
+    text-transform: unset
+}
+
+.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem .accordionFilterContent .accordionFilterItemTag :global(.vtex-tag) {
+    background-color: #252525;
+    color: #fff
+}
+
+.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem .accordionFilterContent .accordionFilterItemIcon {
+    margin-left: auto;
+    display: flex;
+    align-items: center
+}
+
+.sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem .accordionFilterContent .accordionFilterItemIcon .caretIcon {
+    color: #2d2926;
+    width: 14px;
+    height: 14px
+}
+
+.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox,
+.sidebar .accordionFilter .accordionFilterItemOptions .filterItem {
+    padding: 0;
+    border-color: #252525
+}
+
+.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__container),
+.sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__container) {
+    margin-right: 10.63px
+}
+
+.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container),
+.sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container) {
+    margin: 0;
+    border: 1.5px solid #ffe133;
+    border-radius: 50%;
+    width: 13.75px;
+    height: 13.75px;
+    background-color: #fff
+}
+
+.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__container) :global(.vtex-checkbox__box),
+.sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__container) :global(.vtex-checkbox__box) {
+    width: 13.75px;
+    height: 13.75px
+}
+
+.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__container) :global(.vtex__icon-check),
+.sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__container) :global(.vtex__icon-check) {
+    color: #ffe133;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffe133
+}
+
+.sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__label),
+.sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__label) {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2d2926;
+    white-space: nowrap
+}
+
+.sidebar .accordionFilter .accordionFilterItemOptions .filterItem:not(:first-child) {
+    margin-top: 5px
+}
+
+.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterAvailable {
+    display: none
+}
+
+.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow {
+    padding: 0
+}
+
+.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow :global(.vtex-slider__base-internal),
+.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow :global(.vtex-slider__selector) {
+    background-color: #ffe133
+}
+
+.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow :global(.vtex-slider__left-value),
+.sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow :global(.vtex-slider__right-value) {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2d2926
+}
+
+.sidebar .filterButtonsBox {
+    border-color: #aba9a8
+}
+
+.sidebar .filterButtonsBox .filterClearButtonWrapper :global(.vtex-button) {
+    border: 1px solid #252525;
+    background-color: #fff
+}
+
+.sidebar .filterButtonsBox .filterClearButtonWrapper :global(.vtex-button) :global(.vtex-button__label) {
+    color: #252525;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 0 !important;
+    align-items: center
+}
+
+.sidebar .filterButtonsBox .filterApplyButtonWrapper :global(.vtex-button) {
+    border: 1px solid #ffda00;
+    background-color: #ffe133
+}
+
+.sidebar .filterButtonsBox .filterApplyButtonWrapper :global(.vtex-button) :global(.vtex-button__label) {
+    color: #2d2926;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 0 !important;
+    align-items: center
+}
+
+@media screen and (min-width: 541px)and (max-width: 1024px) {
+    .gallery .galleryItem {
+        max-width: calc(50% - 7.5px) !important
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .gallery .galleryItem {
+        max-width: calc(25% - 11.25px) !important
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .galleryTitle--layout {
+        margin: 0;
+        width: 100%
+    }
+
+    .showingProducts {
+        justify-content: center
+    }
+
+    .pagedControlsContainer {
+        width: 100%;
+        justify-content: center
+    }
+
+    .gallery .galleryItem :global(.vtex-product-summary-2-x-container--main-shelf) {
+        margin: 0 auto
+    }
+
+    .sidebar {
+        width: 80%
+    }
+
+    .sidebar .accordionFilter .accordionFilterContainer:last-child {
+        margin-bottom: none
+    }
+
+    .sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__label),
+    .sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__label) {
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .galleryTitle--layout {
+        justify-content: center
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .orderByDropdown .orderByButton .orderByText {
+        margin: 0
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .gallery .galleryItem {
+        max-width: 100% !important
+    }
+}

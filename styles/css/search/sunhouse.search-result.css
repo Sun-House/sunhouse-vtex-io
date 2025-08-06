@@ -1,0 +1,57 @@
+/* Botoes Ver Mais e Mostrar Anteriores */
+.buttonShowMore {
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.buttonShowMore :global(.vtex-button) {
+    /* background: #ffe133;
+    border: 1px solid #ffda00; */
+    background: #FFDA00;
+    border: 1px solid #FFDA00;
+    /* border-radius: 7px; */
+    border-radius: 100px;
+    padding: 0 42px;
+    height: 46px;
+    transition: all .4s
+}
+
+.buttonShowMore :global(.vtex-button):disabled {
+    pointer-events: none;
+    opacity: .5
+}
+
+.buttonShowMore :global(.vtex-button) :global(.vtex-button__label) {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    /* color: #fff; */
+    color: #2d2926;
+    transition: all .4s
+}
+
+.buttonShowMore :global(.vtex-button):hover {
+    background: #fff
+}
+
+.buttonShowMore :global(.vtex-button):hover :global(.vtex-button__label) {
+    /* color: #ffda00 */
+    /* color: #ffd901 -> Amarelo site so que mais escuro */
+    color: #FFDA00
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* Botoes Ver Mais e Mostrar Anteriores */
+    .buttonShowMore :global(.vtex-button) {
+        padding: 0 20px
+    }
+
+    .buttonShowMore :global(.vtex-button) :global(.vtex-button__label) {
+        font-size: 18px
+    }
+    
+}

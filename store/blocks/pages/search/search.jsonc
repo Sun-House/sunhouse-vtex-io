@@ -1,8 +1,6 @@
 {
   "store.search": {
-    "blocks": [
-      "sunhouse.search-result:search-result-layout#cluster-and-search"
-    ],
+    "blocks": ["sunhouse.search-result:search-result-layout#cluster-and-search"],
     "props": {
       "context": {
         "skusFilter": "ALL_AVAILABLE",
@@ -137,9 +135,9 @@
   "flex-layout.col#search-result-desktop-cluster-and-search": {
     "children": [
       "flex-layout.row#filters-container.desktop",
-      "flex-layout.row#paged-controls-top",
-      "flex-layout.row#search-content.desktop",
-      "flex-layout.row#paged-controls-bottom"
+      // "flex-layout.row#paged-controls-top", -> For Paged Controls
+      "flex-layout.row#search-content.desktop"
+      // "flex-layout.row#paged-controls-bottom" -> For Paged Controls
     ],
     "props": {
       "blockClass": "search-result"
@@ -161,7 +159,9 @@
     "props": {
       "defaultGalleryLayout": "grid",
       "blockClass": "search-result",
-      "pagination": "paged",
+      // "pagination": "paged", -> For Paged Controls
+      "pagination": "show-more",
+      "preventRouteChange": true, // Impede recarregar a pagina quando filtros sao aplicados
       "showProductsCount": true,
       "showFacetQuantity": true,
       "hiddenFacets": {
@@ -191,7 +191,7 @@
       "container#spacing-default",
       "container#banner-infos",
       "container#spacing-default"
-      //"flex-layout.row#banners-slider"
+      // "flex-layout.row#banners-slider"
     ],
     "props": {
       "defaultGalleryLayout": "grid",
@@ -238,10 +238,11 @@
   "flex-layout.col#search-result.desktop": {
     "children": [
       "flex-layout.row#filters-container.desktop",
-      "flex-layout.row#paged-controls-top",
+      // "flex-layout.row#paged-controls-top", -> For Paged Controls
+      "flex-layout.row#fetch-less",
       "flex-layout.row#search-content.desktop",
-      "flex-layout.row#paged-controls-bottom"
-      // "flex-layout.row#fetch-more"
+      // "flex-layout.row#paged-controls-bottom" -> For Paged Controls
+      "flex-layout.row#fetch-more"
     ],
     "props": {
       "blockClass": "search-result"
@@ -256,10 +257,11 @@
   "flex-layout.col#search-result.mobile": {
     "children": [
       "flex-layout.row#filters-container.mobile",
-      "flex-layout.row#paged-controls-top",
+      // "flex-layout.row#paged-controls-top", -> For Paged Controls
+      "flex-layout.row#fetch-less",
       "flex-layout.row#search-content.mobile",
-      "flex-layout.row#paged-controls-bottom"
-      // "flex-layout.row#fetch-more"
+      // "flex-layout.row#paged-controls-bottom" -> For Paged Controls
+      "flex-layout.row#fetch-more"
     ],
     "props": {
       "preserveLayoutOnMobile": true,
@@ -369,7 +371,10 @@
     }
   },
   "flex-layout.row#paged-controls-bottom": {
-    "children": ["paged-controls#bottom"],
+    "children": [
+      "paged-controls#bottom"
+      // "flex-layout.row#fetch-more" -> Esse duplicava o botao de Ver Mais
+    ],
     "props": {
       "blockClass": "paged-controls-bottom",
       "preventHorizontalStretch": true,
@@ -408,6 +413,27 @@
       "id": "nav-caret--right",
       "size": 11,
       "activeClassName": "vtex-store-components-3-x-nextIcon"
+    }
+  },
+  // Botao Ver mais e Ver menos
+  "flex-layout.row#fetch-more": {
+    "children": [
+      "sunhouse.search-result:search-fetch-more"
+    ]
+  },
+  "flex-layout.row#fetch-less": {
+    "children": [
+      "sunhouse.search-result:search-fetch-previous"
+    ]
+  },
+  "sunhouse.search-result:search-fetch-more": {
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  },
+  "sunhouse.search-result:search-fetch-previous": {
+    "props": {
+      "htmlElementForButton": "a"
     }
   },
   "flex-layout.row#search-content.desktop": {
