@@ -136,8 +136,10 @@
     "children": [
       "flex-layout.row#filters-container.desktop",
       // "flex-layout.row#paged-controls-top", -> For Paged Controls
-      "flex-layout.row#search-content.desktop"
+      "flex-layout.row#fetch-less",
+      "flex-layout.row#search-content.desktop",
       // "flex-layout.row#paged-controls-bottom" -> For Paged Controls
+      "flex-layout.row#fetch-more"
     ],
     "props": {
       "blockClass": "search-result"
