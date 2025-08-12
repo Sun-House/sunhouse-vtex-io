@@ -205,7 +205,10 @@
 .container--by-category .viewport .link--by-category .imageContainer {
     border-radius: 50%;
     border: 2px solid #aba9a8;
-    transition: border-color .2s
+    transition: border-color .2s;
+    /*  */
+    width: 89px;
+    height: 89px
 }
 
 .container--by-category .viewport .link--by-category .imageContainer .imageItem {
