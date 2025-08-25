@@ -1397,6 +1397,7 @@
         line-height: 14px
     }
 
+    .headingLevel1--categories-title,
     .headingLevel2--categories-title {
         font-size: 24px;
         line-height: 33px;

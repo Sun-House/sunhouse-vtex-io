@@ -105,7 +105,10 @@
       "title": "Logo",
       "href": "/",
       "url": "assets/images/logo-white.svg",
-      "width": "110",
+      "width": "62",
+      "height": "62",
+      // "width": 62,
+      // "height": 62,
       "blockClass": ["logo-image--desktop", "logo-white"]
     }
   }

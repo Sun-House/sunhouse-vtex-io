@@ -64,6 +64,9 @@
       "href": "/",
       "url": "assets/images/logo-white.svg",
       "width": "52",
+      "height": "52",
+      // "width": 52,
+      // "height": 52,
       "blockClass": ["logo-image", "logo-image--mobile"]
     }
   },
