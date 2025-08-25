@@ -1,6 +1,6 @@
 {    
     "container#wrapper__highlight-coupon": {
-        "title": "Faixa Destaque de Cupom",
+        "title": "Promo Highlight Bar",
         "children": [
             "flex-layout.row#highlight-coupon"
         ],
@@ -26,8 +26,10 @@
         }
     },
 
+    
+    // Em restruturacao
     "container#wrapper__highlight-coupon-mobile": {
-        "title": "Faixa Destaque de Cupom Mobile",
+        "title": "Promo Highlight Bar Mobile",
         "children": [
             "flex-layout.row#highlight-coupon-mobile"
         ],
@@ -36,20 +38,51 @@
             "blockClass": ["wrapper__highlight-coupon-mobile", "highlight--coupon-mobile"]
         }
     },
-
     "flex-layout.row#highlight-coupon-mobile": {
         "props" : {
             "blockClass": "wrapper__highlight-pdp-mobile"
         },
         "children": [
-            "rich-text#highlight-text-mobile"
+            "modal-trigger#promo-bar_info-modal"
+        ]
+    },
+
+    "modal-trigger#promo-bar_info-modal": {
+        "children": [
+            "rich-text#highlight-text-mobile",
+            "modal-layout#promo-bar_info-modal"
         ]
     },
     "rich-text#highlight-text-mobile": {
         "title": "Texto da Faixa",
         "props": {
-            "blockClass": "text__coupon-info",
+            "blockClass": "text__coupon-info-mobile",
             "text": "Desconto garantido! Aproveite o cupom SUNHOUSE10 em qualquer valor de compra! Corre que é por tempo limitado!"
+        }
+    },
+    "modal-layout#promo-bar_info-modal": {
+        "title": "Wrapper Modal",
+        "children": [
+            "modal-header#promo-bar_info-modal",
+            "rich-text#modal_info-text"
+        ],
+        "props": {
+            "scroll": "content", // precisa testar certinho
+            "blockClass": "modal-test"
+        }
+    },
+    "modal-header#promo-bar_info-modal": {
+        "title": "Header do Modal",
+        "props": {
+            "showCloseButton": true,
+            "iconCloseSize": "16"
+        }
+    },
+    "rich-text#modal_info-text": {
+        "title": "Informação do Modal",
+        "props": {
+            "text": "### header 3\n#### header 4\nTexto normal 1, lorem ipsum atmet nunstad quyrim bocum danuts.",
+            "blockClass": "modal_info-text"
         }
     }
 }

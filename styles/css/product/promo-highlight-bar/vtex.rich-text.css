@@ -1,0 +1,38 @@
+/* Mobile */
+@media screen and (max-width:1250px) {
+
+    .wrapper--text__coupon-info-mobile {
+        white-space: nowrap;
+        /* animation: andar 15s linear infinite; */
+        animation: andar 18s linear infinite;
+        animation-play-state: running
+    }
+
+    /* Pausa quando o mouse passa por cima */
+    .wrapper--text__coupon-info-mobile:hover {
+        animation-play-state: paused
+    }
+
+    /* Pausa também se clicar/segurar */
+    .wrapper--text__coupon-info-mobile:active {
+        animation-play-state: paused
+    }
+
+    @keyframes andar {
+        0% {
+            transform: translateX(100vw);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /* Modal Info */
+    .container--modal_info-text {
+        padding-top: 24px;
+        padding-right: 18px;
+        padding-bottom: 36px;
+        padding-left: 18px
+    }
+
+}
