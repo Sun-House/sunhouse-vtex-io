@@ -1,0 +1,19 @@
+.paragraph--blog-card__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #2d2926;
+    margin-top: 22px
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    .container--banner-infos .wrapper {
+        align-items: flex-start
+    }
+
+}

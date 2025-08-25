@@ -1,0 +1,20 @@
+.imageElement--blog-card__image {
+    /* width: 260px;
+    height: 165px; */
+    max-width: 100%;
+    border-radius: 8px
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    /* .imageElement--blog-card__image {
+        width: 260px;
+        height: 165px
+    } */
+
+    .container--blog-cards {
+        margin-bottom: 32px
+    }
+    
+}

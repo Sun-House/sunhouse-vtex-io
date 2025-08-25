@@ -1,0 +1,14 @@
+.flexRowContent--blog-card__Row {
+    position: relative; /* Não sei ate aonde esse é relevante */
+    padding: 0px 58px
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    .flexRowContent--blog-card__Row {
+        padding: unset;
+        /* padding-right: 45px */
+    }
+    
+}

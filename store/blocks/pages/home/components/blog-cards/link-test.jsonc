@@ -1,0 +1,32 @@
+// Usar esse arquivo como referencia para esse componente de 'info-card'
+{
+    "info-card#blog-cards": {
+        "props": {
+            "id": "info-card-example",
+            "isFullModeStyle": true,
+            "textPosition": "center",
+            "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+            "headline": "Clearance Sale",
+            "callToActionText": "DISCOVER",
+            "callToActionUrl": "#",
+            "textAlignment": "center",
+            "fetchpriority": "low",
+            "preload": false,
+
+            "blockClass": "info-card-example"
+        }
+    },
+
+    // funciona criar um link com children, e colocar um bloco pronto dentro
+    // ou seja, posso criar todo o sistema de slider-layout com loading lazy
+    // e colocar dentro de um Link conforme abaixo
+    // Funciona perfeitamente no site editor para adicionar customizações
+    "link#boom": {
+        "children": [
+            "info-card#blog-cards"
+        ],
+        "props": {
+            "href": "/bunda"
+        }
+    }
+}

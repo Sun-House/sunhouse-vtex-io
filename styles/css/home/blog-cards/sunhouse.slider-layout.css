@@ -1,0 +1,22 @@
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    .sliderTrackContainer--slider-blog-cards {
+        overflow: visible
+    }
+
+    .slide--slider-blog-cards {
+        transition: .3s
+    }
+
+    .slide--slider-blog-cards--hidden {
+        opacity: .5
+    }
+
+    .paginationDotsContainer--slider-blog-cards {
+        /* display: none */
+        /* left: 45px; */
+        bottom: -28px
+    }
+
+}

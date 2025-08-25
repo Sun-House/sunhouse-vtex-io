@@ -1,0 +1,286 @@
+{
+    "container#blog-cards": {
+        "title": "Blog Cards Footer",
+        "children": [
+            "flex-layout.row#blog-card__title-row",
+            "responsive-layout.desktop#blog-cards",
+            "responsive-layout.phone#blog-cards_mob"
+        ],
+        "props": {
+            "blockClass": "blog-cards"
+        }
+    },
+
+    "flex-layout.row#blog-card__title-row": {
+        "children": [
+            "rich-text#blog-card__title-row"
+        ],
+        "props": {
+            "blockClass": "blog-card__title"
+        }
+    },
+    "rich-text#blog-card__title-row": {
+        "title": "Título do Bloco",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Dicas no Blog da Sun House\nInspire-se com ideias criativas para deixar sua casa mais aconchegante",
+            "blockClass": ["common-title", "banner-infos"]
+        }
+    },
+
+    "responsive-layout.desktop#blog-cards": {
+        "title": "Display Responsivo - Desktop",
+        "children": ["flex-layout.row#blog-card-row_desktop"]
+    },
+
+    "responsive-layout.phone#blog-cards_mob": {
+        "title": "Display Responsivo - Mobile",
+        "children": ["flex-layout.row#blog-card-row_mobile"]
+    },
+
+    // Wrapper - Sem o .row o componente nao renderiza (.col sozinho nao funciona)
+    "flex-layout.row#blog-card-row_desktop": {
+        "children": [
+            "link#blog-card__row-ColOne",
+            "link#blog-card__row-ColTwo",
+            "link#blog-card__row-ColThree",
+            "link#blog-card__row-ColFour"
+        ],
+        "props": {
+            "blockClass": ["blog-card-row_desk", "blog-card__Row"]
+        }
+    },
+
+    "flex-layout.row#blog-card-row_mobile": {
+        "children": [
+            "slider-layout#slider-blog-cards"
+        ],
+        "props": {
+            "blockClass": ["blog-card-row_mob", "blog-card__Row"]
+        }
+    },
+    "slider-layout#slider-blog-cards": {
+        "title": "Configurações do Carrossel",
+        "props": {
+            "showNavigationArrows": "mobileOnly",
+            "dots": true,
+            "infinite": true,
+            "autoplay": {
+                "timeout": "4000",
+                "stopOnHover": true
+            },
+            "itemsPerPage": {
+                "desktop": 4,
+                "phone": 1
+            },
+            "blockClass": "slider-blog-cards"
+        },
+        "children": [
+            "link#blog-card__row-ColOne",
+            "link#blog-card__row-ColTwo",
+            "link#blog-card__row-ColThree",
+            "link#blog-card__row-ColFour"
+        ]
+    },
+
+    // Card 1
+    "link#blog-card__row-ColOne": {
+        "title": "Card 1 - Link",
+        "children": [
+            "flex-layout.col#blog-card__row-ColOne"
+        ],
+        "props": {
+            "href": "https://blog.sunhouse.com.br/moveis-estilo-industrial/",
+            "target": "_blank",
+            "blockClass": ["blog-card__row-ColOne", "blog-card__link"]
+        }
+    },
+    "flex-layout.col#blog-card__row-ColOne": {
+        "children": [
+            "list-context.image-list#blog-card__row-ColOne_image",
+            "rich-text#blog-card__row-ColOne_text"
+        ],
+        "props": {
+            "blockClass": "blog-card__row-ColOne"
+        }
+    },
+    "list-context.image-list#blog-card__row-ColOne_image": {
+        "title": "Card 1 - Imagem",
+        "props": {
+            "images": [{
+                "image": "assets/images/banner-infos/blog-1.png",
+                "loading": "lazy",
+                "title": "Dicas de móveis industriais para decorar sua casa | Blog Sun House",
+                "alt": "Sala decorada com mesa e cadeiras no estilo industrial",
+                "height": "162px",
+                "width": "256px",
+                "experimentalSetExplicitDimensions": true // Vai evitar que ocorra bugs de carregamento como carregar sem tamanho
+            }],
+            "blockClass": "blog-card__row-ColOne_image"
+        },
+        "children": ["container.list-render#blog-card__row-ColOne_image"]
+    },
+    "container.list-render#blog-card__row-ColOne_image": {
+        "props": {
+            "blockClass": "blog-card__image"
+        }
+    },
+    "rich-text#blog-card__row-ColOne_text": {
+        "title": "Card 1 - Texto",
+        "props": {
+            "text": "Móveis estilo industrial: incorpore-os na sua decoração!",
+            "blockClass": ["blog-card__row-ColOne_text", "blog-card__text"]
+        }
+    },
+
+    // Card 2
+    "link#blog-card__row-ColTwo": {
+        "title": "Card 2 - Link",
+        "children": [
+            "flex-layout.col#blog-card__row-ColTwo"
+        ],
+        "props": {
+            "href": "https://blog.sunhouse.com.br/8-inspiracoes-de-decoracao-para-a-sua-sala-de-estar/",
+            "target": "_blank",
+            "blockClass": ["blog-card__row-ColTwo", "blog-card__link"]
+        }
+    },
+    "flex-layout.col#blog-card__row-ColTwo": {
+        "children": [
+            "list-context.image-list#blog-card__row-ColTwo_image",
+            "rich-text#blog-card__row-ColTwo_text"
+        ],
+        "props": {
+            "blockClass": "blog-card__row-ColTwo"
+        }
+    },
+    "list-context.image-list#blog-card__row-ColTwo_image": {
+        "title": "Card 2 - Imagem",
+        "props": {
+            "images": [{
+                "image": "assets/images/banner-infos/blog-2.png",
+                "loading": "lazy",
+                "title": "Inspirações de decoração para você e sua família | Blog Sun House",
+                "alt": "Sofá e mesa de centro modernos para decoração da sala de estar",
+                "height": "162px",
+                "width": "256px",
+                "experimentalSetExplicitDimensions": true // Vai evitar que ocorra bugs de carregamento como carregar sem tamanho
+            }],
+            "blockClass": "blog-card__row-ColTwo_image"
+        },
+        "children": ["container.list-render#blog-card__row-ColTwo_image"]
+    },
+    "container.list-render#blog-card__row-ColTwo_image": {
+        "props": {
+            "blockClass": "blog-card__image"
+        }
+    },
+    "rich-text#blog-card__row-ColTwo_text": {
+        "title": "Card 2 - Texto",
+        "props": {
+            "text": "8 Inspirações de decoração para a sua sala de estar!",
+            "blockClass": ["blog-card__row-ColTwo_text", "blog-card__text"]
+        }
+    },
+
+    // Card 3
+    "link#blog-card__row-ColThree": {
+        "title": "Card 3 - Link",
+        "children": [
+            "flex-layout.col#blog-card__row-ColThree"
+        ],
+        "props": {
+            "href": "https://blog.sunhouse.com.br/estilos-de-decoracao-para-se-inspirar/",
+            "target": "_blank",
+            "blockClass": ["blog-card__row-ColThree", "blog-card__link"]
+        }
+    },
+    "flex-layout.col#blog-card__row-ColThree": {
+        "children": [
+            "list-context.image-list#blog-card__row-ColThree_image",
+            "rich-text#blog-card__row-ColThree_text"
+        ],
+        "props": {
+            "blockClass": "blog-card__row-ColThree"
+        }
+    },
+    "list-context.image-list#blog-card__row-ColThree_image": {
+        "title": "Card 3 - Imagem",
+        "props": {
+            "images": [{
+                "image": "assets/images/banner-infos/blog-3.png",
+                "loading": "lazy",
+                "title": "Duas mesas de centro sobrepostas, inspiração para decoração",
+                "alt": "Estilo e tendências de decoração no Blog da Sun | Confira!",
+                "height": "162px",
+                "width": "256px",
+                "experimentalSetExplicitDimensions": true // Vai evitar que ocorra bugs de carregamento como carregar sem tamanho
+            }],
+            "blockClass": "blog-card__row-ColThree_image"
+        },
+        "children": ["container.list-render#blog-card__row-ColThree_image"]
+    },
+    "container.list-render#blog-card__row-ColThree_image": {
+        "props": {
+            "blockClass": "blog-card__image"
+        }
+    },
+    "rich-text#blog-card__row-ColThree_text": {
+        "title": "Card 3 - Texto",
+        "props": {
+            "text": "Estilos de decoração: descubra 13 ideias para se inspirar",
+            "blockClass": ["blog-card__row-ColThree_text", "blog-card__text"]
+        }
+    },
+
+    // Card 4
+    "link#blog-card__row-ColFour": {
+        "title": "Card 4 - Link",
+        "children": [
+            "flex-layout.col#blog-card__row-ColFour"
+        ],
+        "props": {
+            "href": "https://blog.sunhouse.com.br/palha-indiana/",
+            "target": "_blank",
+            "blockClass": ["blog-card__row-ColFour", "blog-card__link"]
+        }
+    },
+    "flex-layout.col#blog-card__row-ColFour": {
+        "children": [
+            "list-context.image-list#blog-card__row-ColFour_image",
+            "rich-text#blog-card__row-ColFour_text"
+        ],
+        "props": {
+            "blockClass": "blog-card__row-ColFour"
+        }
+    },
+    "list-context.image-list#blog-card__row-ColFour_image": {
+        "title": "Card 4 - Imagem",
+        "props": {
+            "images": [{
+                "image": "assets/images/banner-infos/blog-4.png",
+                "loading": "lazy",
+                "title": "Palha indiana: ideias para decorar sua casa | Blog Sun House",
+                "alt": "Rack com portas de palha indiana, destacando o acabamento artesanal",
+                "height": "162px",
+                "width": "256px",
+                "experimentalSetExplicitDimensions": true // Vai evitar que ocorra bugs de carregamento como carregar sem tamanho
+            }],
+            "blockClass": "blog-card__row-ColFour_image"
+        },
+        "children": ["container.list-render#blog-card__row-ColFour_image"]
+    },
+    "container.list-render#blog-card__row-ColFour_image": {
+        "props": {
+            "blockClass": "blog-card__image"
+        }
+    },
+    "rich-text#blog-card__row-ColFour_text": {
+        "title": "Card 4 - Texto",
+        "props": {
+            "text": "Palha Indiana: conheça os detalhes deste acabamento único",
+            "blockClass": ["blog-card__row-ColFour_text", "blog-card__text"]
+        }
+    }
+}
