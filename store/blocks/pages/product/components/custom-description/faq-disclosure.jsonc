@@ -26,6 +26,8 @@
             "blockClass": "wrapper__custom-description-title"
         }
     },
+
+    // FAQ padrao - LP Elements e demais LPs
     "container#custom-block__faq-disclosure": {
         "children": [
             "disclosure-layout#faq-disclosure-line-1",
@@ -34,7 +36,53 @@
             "disclosure-layout#faq-disclosure-line-4",
             "disclosure-layout#faq-disclosure-line-5",
             "disclosure-layout#faq-disclosure-line-6",
-            "disclosure-layout#faq-disclosure-line-7"
+            // "disclosure-layout#faq-disclosure-line-7"
+            "disclosure-layout#faq-disclosure-line-last"
+        ],
+        "props": {
+            "blockClass": "custom-block__faq-disclosure"
+        }
+    },
+    
+    // FAQs por quantidade de linhas - demais paginas que usam FAQ structures
+    "container#custom-block__faq-5-disclosure": {
+        "children": [
+            "disclosure-layout#faq-disclosure-line-1",
+            "disclosure-layout#faq-disclosure-line-2",
+            "disclosure-layout#faq-disclosure-line-3",
+            "disclosure-layout#faq-disclosure-line-4",
+            "disclosure-layout#faq-disclosure-line-last"
+        ],
+        "props": {
+            "blockClass": "custom-block__faq-disclosure"
+        }
+    },
+    "container#custom-block__faq-7-disclosure": {
+        "children": [
+            "disclosure-layout#faq-disclosure-line-1",
+            "disclosure-layout#faq-disclosure-line-2",
+            "disclosure-layout#faq-disclosure-line-3",
+            "disclosure-layout#faq-disclosure-line-4",
+            "disclosure-layout#faq-disclosure-line-5",
+            "disclosure-layout#faq-disclosure-line-6",
+            "disclosure-layout#faq-disclosure-line-last"
+        ],
+        "props": {
+            "blockClass": "custom-block__faq-disclosure"
+        }
+    },
+    "container#custom-block__faq-10-disclosure": {
+        "children": [
+            "disclosure-layout#faq-disclosure-line-1",
+            "disclosure-layout#faq-disclosure-line-2",
+            "disclosure-layout#faq-disclosure-line-3",
+            "disclosure-layout#faq-disclosure-line-4",
+            "disclosure-layout#faq-disclosure-line-5",
+            "disclosure-layout#faq-disclosure-line-6",
+            "disclosure-layout#faq-disclosure-line-7",
+            "disclosure-layout#faq-disclosure-line-8",
+            "disclosure-layout#faq-disclosure-line-9",
+            "disclosure-layout#faq-disclosure-line-last"
         ],
         "props": {
             "blockClass": "custom-block__faq-disclosure"
@@ -324,7 +372,7 @@
             "disclosure-state-indicator#product-page-informations"
         ],
         "props": {
-            "blockClass": ["faq-disclosure-line", "faq-disclosure-line-last"]
+            "blockClass": "faq-disclosure-line"
         }
     },
     "rich-text#faq-disclosure-line-7__title": {
@@ -339,11 +387,144 @@
             "rich-text#faq-disclosure-line-7__text"
         ],
         "props": {
-            "blockClass": ["faq-disclosure-line", "faq-disclosure-line-last"]
+            "blockClass": "faq-disclosure-line"
         }
     },
     "rich-text#faq-disclosure-line-7__text": {
         "title": "Linha 7 - Texto",
+        "props": {
+            "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. Quisque ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci.",
+            "blockClass": "faq-disclosure-line__text"
+        }
+    },
+
+
+    // Linha 8
+    "disclosure-layout#faq-disclosure-line-8": {
+        "children": [
+            "disclosure-trigger#faq-disclosure-line-8",
+            "disclosure-content#faq-disclosure-line-8"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line",
+            //"animated": true,
+            "initialVisibility": "hidden"
+        }
+    },
+    "disclosure-trigger#faq-disclosure-line-8": {
+        "children": [
+            "rich-text#faq-disclosure-line-8__title",
+            "disclosure-state-indicator#product-page-informations"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+    "rich-text#faq-disclosure-line-8__title": {
+        "title": "Linha 8 - Título",
+        "props": {
+            "text": "## Título da pergunta 8 da FAQ - Máximo 1 linha",
+            "blockClass": "faq-disclosure-line__title"
+        }
+    },
+    "disclosure-content#faq-disclosure-line-8": {
+        "children": [
+            "rich-text#faq-disclosure-line-8__text"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+    "rich-text#faq-disclosure-line-8__text": {
+        "title": "Linha 8 - Texto",
+        "props": {
+            "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. Quisque ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci.",
+            "blockClass": "faq-disclosure-line__text"
+        }
+    },
+
+    // Linha 9
+    "disclosure-layout#faq-disclosure-line-9": {
+        "children": [
+            "disclosure-trigger#faq-disclosure-line-9",
+            "disclosure-content#faq-disclosure-line-9"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line",
+            //"animated": true,
+            "initialVisibility": "hidden"
+        }
+    },
+    "disclosure-trigger#faq-disclosure-line-9": {
+        "children": [
+            "rich-text#faq-disclosure-line-9__title",
+            "disclosure-state-indicator#product-page-informations"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+    "rich-text#faq-disclosure-line-9__title": {
+        "title": "Linha 9 - Título",
+        "props": {
+            "text": "## Título da pergunta 9 da FAQ - Máximo 1 linha",
+            "blockClass": "faq-disclosure-line__title"
+        }
+    },
+    "disclosure-content#faq-disclosure-line-9": {
+        "children": [
+            "rich-text#faq-disclosure-line-9__text"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+    "rich-text#faq-disclosure-line-9__text": {
+        "title": "Linha 9 - Texto",
+        "props": {
+            "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. Quisque ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci.",
+            "blockClass": "faq-disclosure-line__text"
+        }
+    },
+
+    // Linha Final - usada sempre no final de uma FAQ independente da quantidade de linhas da mesma
+    "disclosure-layout#faq-disclosure-line-last": {
+        "children": [
+            "disclosure-trigger#faq-disclosure-line-last",
+            "disclosure-content#faq-disclosure-line-last"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line",
+            //"animated": true,
+            "initialVisibility": "hidden"
+        }
+    },
+    "disclosure-trigger#faq-disclosure-line-last": {
+        "children": [
+            "rich-text#faq-disclosure-line-last__title",
+            "disclosure-state-indicator#product-page-informations"
+        ],
+        "props": {
+            "blockClass": ["faq-disclosure-line", "faq-disclosure-line-last"]
+        }
+    },
+    "rich-text#faq-disclosure-line-last__title": {
+        "title": "Linha Final - Título",
+        "props": {
+            "text": "## Título da última pergunta da FAQ - Máximo 1 linha",
+            "blockClass": "faq-disclosure-line__title"
+        }
+    },
+    "disclosure-content#faq-disclosure-line-last": {
+        "children": [
+            "rich-text#faq-disclosure-line-last__text"
+        ],
+        "props": {
+            "blockClass": ["faq-disclosure-line", "faq-disclosure-line-last"]
+        }
+    },
+    "rich-text#faq-disclosure-line-last__text": {
+        "title": "Linha Final - Texto",
         "props": {
             "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. Quisque ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci.",
             "blockClass": "faq-disclosure-line__text"

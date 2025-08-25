@@ -1,0 +1,9 @@
+.flexRow--home-faq-block {
+    /* background: #d9d9d9; -> Para contraste */
+    background: #eaeae9;
+    padding: 38px 0
+}
+
+.flexColChild--home-faq-block {
+    margin-right: 12px
+}

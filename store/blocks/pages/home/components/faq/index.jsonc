@@ -1,0 +1,99 @@
+{
+    "container#home-faq-5-block": {
+        "title": "Wrapper FAQ 5 Linhas",
+        "children": [
+            "flex-layout.row#home-faq-5-block"
+        ],
+        "props": {
+            "blockClass": "home-faq-block"
+        }
+    },
+    "container#home-faq-7-block": {
+        "title": "Wrapper FAQ 7 Linhas",
+        "children": [
+            "flex-layout.row#home-faq-7-block"
+        ],
+        "props": {
+            "blockClass": "home-faq-block"
+        }
+    },
+    "container#home-faq-10-block": {
+        "title": "Wrapper FAQ 10 Linhas",
+        "children": [
+            "flex-layout.row#home-faq-10-block"
+        ],
+        "props": {
+            "blockClass": "home-faq-block"
+        }
+    },
+
+    "flex-layout.row#home-faq-5-block": {
+        "title": "FAQ Linha",
+        "children": [
+            "flex-layout.col#home-faq-5-block"
+        ],
+        "props": {
+            "blockClass": "home-faq-block"
+        }
+    },
+    "flex-layout.col#home-faq-5-block": {
+        "title": "FAQ Col",
+        "children": [
+            "rich-text#home-faq__title-row",
+            "container#custom-block__faq-5-disclosure"
+        ],
+        "props": {
+            "blockClass": "home-faq-block"
+        }
+    },
+
+    "flex-layout.row#home-faq-7-block": {
+        "title": "FAQ Linha",
+        "children": [
+            "flex-layout.col#home-faq-7-block"
+        ],
+        "props": {
+            "blockClass": "home-faq-block"
+        }
+    },
+    "flex-layout.col#home-faq-7-block": {
+        "title": "FAQ Col",
+        "children": [
+            "rich-text#home-faq__title-row",
+            "container#custom-block__faq-7-disclosure"
+        ],
+        "props": {
+            "blockClass": "home-faq-block"
+        }
+    },
+
+    "flex-layout.row#home-faq-10-block": {
+        "title": "FAQ Linha",
+        "children": [
+            "flex-layout.col#home-faq-10-block"
+        ],
+        "props": {
+            "blockClass": "home-faq-block"
+        }
+    },
+    "flex-layout.col#home-faq-10-block": {
+        "title": "FAQ Col",
+        "children": [
+            "rich-text#home-faq__title-row",
+            "container#custom-block__faq-10-disclosure"
+        ],
+        "props": {
+            "blockClass": "home-faq-block"
+        }
+    },
+
+    "rich-text#home-faq__title-row": {
+        "title": "Título da FAQ",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Perguntas frequentes",
+            "blockClass": "home-faq-title"
+        }
+    }
+}
