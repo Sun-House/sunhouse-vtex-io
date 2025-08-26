@@ -651,13 +651,15 @@
 }
 
 .flexCol--product-buy-button :global(.vtex-button) {
-    background-color: #44b32e;
+    /* background-color: #44b32e; */
+    background-color: #2d2926;
     color: #fff;
     border: none
 }
 
 .flexCol--product-buy-button :global(.vtex-button):hover {
-    background-color: #2a9620 !important
+    /* background-color: #2a9620 !important */
+    background-color: #575451 !important
 }
 
 .flexCol--product-buy-button :global(.vtex-button) :global(.vtex-button__label) {

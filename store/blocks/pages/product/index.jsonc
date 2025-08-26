@@ -260,6 +260,7 @@
       "condition-layout.product#product-sku",
       "condition-layout.product#product-measurement-guide",
       "flex-layout.row#product-buy-container",
+      "flex-layout.row#whatsapp-button_normal-product",
       "container#similars",
       "flex-layout.row#shipping-simulator-wrapper"
     ],

@@ -1,0 +1,36 @@
+{
+	"flex-layout.row#whatsapp-button_normal-product": {
+		"children": ["link#unavailable-cta-wpp"],
+		"props": {
+			// Validar essas props
+      		//"colJustify": "between",
+      		//"preventVerticalStretch": true,
+      		// "colGap": 0,
+      		// "preserveLayoutOnMobile": true
+			// Validar essas props
+
+			"blockClass": ""
+    	}
+	},
+
+	"link#unavailable-cta-wpp": {
+		"title": "",
+		"children": [
+			"icon#unavailable-cta-wpp"
+		],
+		"props": {
+			"label": "Compre por WhatsApp",
+			// "href": "https://api.whatsapp.com/send?phone=5511994877664",
+			"href": "https://wa.me/5511994877664",
+			"target": "_blank",
+			"blockClass": "unavailable-cta-wpp_link"
+		}
+	},
+	"icon#unavailable-cta-wpp": {
+		"props": {
+			"id": "inf-whatsapp-white",
+			"size": 20,
+			"activeClassName": "vtex-store-components-3-x-inf-whatsapp-white"
+		}
+	}
+}
