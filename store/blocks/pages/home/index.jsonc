@@ -3,7 +3,13 @@
     "blocks": [
       "list-context.image-list#banner-main",
       "container#differentials",
+      //
+      "__fold__.mobile",
+      //
       "flex-layout.row#categories-slider",
+      //
+      "__fold__.desktop",
+      //
       "container#spacing-default",
       "list-context.image-list#image-double",
       "container#spacing-default",

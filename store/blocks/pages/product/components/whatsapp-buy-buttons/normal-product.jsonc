@@ -2,25 +2,17 @@
 	"flex-layout.row#whatsapp-button_normal-product": {
 		"children": ["link#unavailable-cta-wpp"],
 		"props": {
-			// Validar essas props
-      		//"colJustify": "between",
-      		//"preventVerticalStretch": true,
-      		// "colGap": 0,
-      		// "preserveLayoutOnMobile": true
-			// Validar essas props
-
-			"blockClass": ""
+			"blockClass": "whatsapp-button_normal-product"
     	}
 	},
 
 	"link#unavailable-cta-wpp": {
-		"title": "",
+		"title": "Botão - WhatsApp",
 		"children": [
 			"icon#unavailable-cta-wpp"
 		],
 		"props": {
 			"label": "Compre por WhatsApp",
-			// "href": "https://api.whatsapp.com/send?phone=5511994877664",
 			"href": "https://wa.me/5511994877664",
 			"target": "_blank",
 			"blockClass": "unavailable-cta-wpp_link"

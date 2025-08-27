@@ -529,19 +529,6 @@
     display: grid
 }
 
-.wrapper--differentials--home {
-    margin: 0px 0;
-    background-color: #ffe133
-}
-
-.container--differentials-container {
-    width: 100%;
-    height: 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-
 .container--images-double {
     max-width: 1220px;
     width: calc(100% - 2.5rem);
