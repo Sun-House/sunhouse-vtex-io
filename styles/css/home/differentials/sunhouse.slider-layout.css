@@ -1,0 +1,28 @@
+.sliderLayoutContainer--diferentials {
+    height: 35px
+}
+
+.sliderLayoutContainer--diferentials .sliderTrackContainer,
+.sliderLayoutContainer--diferentials .sliderTrack {
+    height: 100%
+}
+
+.sliderLayoutContainer--diferentials .sliderLeftArrow:hover,
+.sliderLayoutContainer--diferentials .sliderRightArrow:hover {
+    background-color: #ffda00 !important
+}
+
+.sliderLayoutContainer--diferentials .sliderLeftArrow:hover .caretIcon,
+.sliderLayoutContainer--diferentials .sliderRightArrow:hover .caretIcon {
+    color: #2d2926 !important
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+    
+    .sliderLayoutContainer--diferentials {
+        /* height: 52px */
+        height: 80px
+    }
+
+}

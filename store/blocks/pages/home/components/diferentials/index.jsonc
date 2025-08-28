@@ -56,10 +56,15 @@
         "mobile": 1,
         "phone": 1,
         "tablet": 2,
-        "desktop": 4
+        // "desktop": 4
+        "desktop": 5
       },
       "showPaginationDots": "never",
       "infinite": true,
+      "autoplay": {
+        "timeout": "3000",
+        "stopOnHover": true
+      },
       "blockClass": ["diferentials", "diferentials-mobile"]
     }
   }

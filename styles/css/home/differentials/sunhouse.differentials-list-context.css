@@ -9,8 +9,14 @@
 
 .differentialContainer--home .icon {
     margin-right: 18px !important;
-    height: 30px !important;
-    width: auto
+    /* height: 30px !important; */
+    /* width: auto */
+    height: 65px !important;
+    width: 65px
+}
+
+.differentialIcon--home {
+    width: 65px
 }
 
 .differentialContainer--home .paragraph {
@@ -22,10 +28,6 @@
     /* color: #2d2926
     color: #FFDA00 */
     color: #fff
-}
-
-.differentialIcon--home {
-    width: 65px
 }
 
 /* Mobile */
