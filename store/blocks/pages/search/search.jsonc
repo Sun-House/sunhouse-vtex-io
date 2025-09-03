@@ -50,19 +50,46 @@
     }
   },
   "container#banner-department-desktop": {
-    "title": "Banner-Departamento/Categoria",
-    "children": ["image#search-result"],
+    "title": "Banner Departamento/Categoria",
+    "children": [
+      // "image#search-result"
+      "list-context.image-list#category-banner3"
+    ],
     "props": {
+      "height": "210px",
       "blockClass": "search-banner"
     }
   },
-  "image#search-result": {
-    "title": "Banner Departamento",
+  // "image#search-result": {
+  //   "title": "Banner Departamento",
+  //   "props": {
+  //     "src": "assets/images/search/banner.png",
+  //     "blockClass": "search-result"
+  //   }
+  // },
+  "list-context.image-list#category-banner3": {
+    "title": "Imagem do Banner",
     "props": {
-      "src": "assets/images/search/banner.png",
-      "blockClass": "search-result"
+      "images": [{
+        "image": "assets/images/search/dummyBanner.png",
+        "loading": "eager",
+        "title": "Atributo title da imagem",
+        "alt": "Atributo alt da imagem",
+        "width": "1920px",
+        "height": "210px",
+        "experimentalSetExplicitDimensions": true // Esse atributo é o que pontencializa a eficacia em CLS do elememnto ao browser
+      }],
+      "blockClass": "category-banner"
+    },
+    "children": ["container.list-render#category-banner"]
+  },
+  "container.list-render#category-banner": {
+    "props": {
+      "blockClass": "category-banner"
     }
   },
+  //
+  
   "sunhouse.search-result:search-result-layout#cluster-and-search": {
     "blocks": [
       "sunhouse.search-result:search-result-layout.desktop#cluster-and-search",
@@ -210,18 +237,23 @@
   },
   "container#banner-department-mobile": {
     "title": "Banner Mobile - Mobile.",
-    "children": ["image#department-banner-mobile"],
+    "children": [
+      // "image#department-banner-mobile"
+      
+      // Validar se não vai quebrar o visual:
+      // "list-context.image-list#category-banner"
+    ],
     "props": {
       "blockClass": "banner-department-mobile"
     }
   },
-  "image#department-banner-mobile": {
-    "props": {
-      "alt": "banner-mobile",
-      "title": "banner-mobile",
-      "src": "assets/images/search/banner.png"
-    }
-  },
+  // "image#department-banner-mobile": {
+  //   "props": {
+  //     "alt": "banner-mobile",
+  //     "title": "banner-mobile",
+  //     "src": "assets/images/search/banner.png"
+  //   }
+  // },
   "flex-layout.row#search-breadcrumb": {
     "children": ["breadcrumb.search#search-result"],
     "props": {
