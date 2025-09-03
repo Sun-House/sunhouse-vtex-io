@@ -1,0 +1,13 @@
+.container--exclusive-cta_container {
+    box-sizing: border-box;
+    width: min(880px, 100%);
+    background: #FFF6C2;
+    border: 2px solid #F9D7E0;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px #00000014;
+    /* padding: clamp(20px, 3vw, 36px); */
+    padding: 12px 36px;
+    overflow: hidden;
+    position: relative;
+    isolation: isolate
+}

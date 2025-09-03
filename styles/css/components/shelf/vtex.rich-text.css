@@ -1,0 +1,40 @@
+/* Exclusive Shelf Product */
+.wrapper--shelf-product-exclusive-button {
+    width: 100%
+}
+
+.paragraph--shelf-product-exclusive-button {
+    background-color: #FFF6C2;
+    box-sizing: border-box;
+    border: 2px solid #F9D7E0;
+    border-radius: 5px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2d2926;
+    margin-bottom: 10px
+}
+
+/* Unavailable Shelf Product */
+.wrapper--shelf-product-unavailable-cta {
+    width: 100%
+}
+
+.paragraph--shelf-product-unavailable-cta {
+    background-color: #2d2926;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    margin-bottom: 10px
+}

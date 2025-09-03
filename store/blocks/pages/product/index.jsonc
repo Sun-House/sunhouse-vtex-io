@@ -182,11 +182,9 @@
       "vtex.store-components:product-name",
       "container#product-highlights--product-page",
       "condition-layout.product#product-availability"
-      //"flex-layout.row#product-page-informations"
     ],
     "props": {
       "width": "43%",
-      // "paddingLeft": 8,
       "blockClass": "product-main-right",
       "preventVerticalStretch": true
     }
@@ -241,16 +239,45 @@
   },
 
   "condition-layout.product#product-availability": {
+    "title": "Condicional - Disponibilidade do Produto",
     "props": {
       "conditions": [
         {
           "subject": "isProductAvailable"
         }
       ],
-      "Then": "flex-layout.col#product-available",
+      // "Then": "flex-layout.col#product-available",
+      "Then": "condition-layout.product#elf-checker",
       "Else": "flex-layout.col#product-unavailable"
-      // "Else": "flex-layout.col#product-available",
-      // "Then": "flex-layout.col#product-unavailable"
+    }
+  },
+
+  //
+  "condition-layout.product#elf-checker": {
+    "title": "Condicional - Produto Exclusivo",
+    "props": {
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            // "id": "300" -> Antiga colecao ELF
+            "id": "427" // Colecao nova, para incluir produtos conforme necessidade
+          }
+        }
+      ],
+      // "matchType": "all",
+      "Then": "flex-layout.col#product-exclusive", // Aqui vai o bloco Produto Exclusivo Loja Fisca
+      "Else": "flex-layout.col#product-available"
+    }
+  },
+  
+  "flex-layout.col#product-exclusive": {
+    "children": [
+      "container#product-exclusive"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "product-exclusive"
     }
   },
 
@@ -284,6 +311,7 @@
     }
   },
   "condition-layout.product#product-has-list-price": {
+    "title": "Condicional - Produto tem Preço de Lista",
     "props": {
       "conditions": [
         {
@@ -391,15 +419,18 @@
 
   "flex-layout.col#product-unavailable": {
     "children": [
-      "condition-layout.product#product-sku",
-      "sunhouse.store-components:availability-subscriber"
+      // "condition-layout.product#product-sku",
+      // "sunhouse.store-components:availability-subscriber"
+      "container#product-unavailable"
     ],
     "props": {
       "blockClass": "product-unavailable",
       "preventVerticalStretch": true
     }
   },
+  
   "condition-layout.product#product-sku": {
+    "title": "Condicional - SKU",
     "props": {
       "conditions": [
         {
@@ -443,6 +474,7 @@
   },
 
   "condition-layout.product#product-content-availability": {
+    "title": "Condicional - Compre Junto",
     "props": {
       "conditions": [
         {

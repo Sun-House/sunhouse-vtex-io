@@ -1,54 +1,47 @@
-// AINDA NAO AJUSTADO
-// MAS USAR CODIGO ORIGINAL ABAIXO COMO BASE
-
 {
-    
-// 	"flex-layout.row#unavailable-cta": {
-// 		"children": [
-// 			"container#unavailable-cta"
-// 		],
-// 		"props": {
-// 			"blockClass": "unavailable-cta_row"
-// 		}
-// 	},
+    "container#product-unavailable": {
+		"title": "Wrapper - Produto Indisponível",
+		"children": [
+			"rich-text#unavailable-cta_line-1",
+			"rich-text#unavailable-cta_line-2",
+            "link#unavailable-cta-wpp"
+		],
+		"props": {
+			"blockClass": "unavailable-cta_container"
+		}
+	},
+	"rich-text#unavailable-cta_line-1": {
+		"title": "Paragrafo 1 - Produto Indisponível",
+		"props": {
+			"text": "## Produto Indispon&iacute;vel\nDeseja saber sobre a **disponibilidade** ou **op&ccedil;&otilde;es similares** deste produto? Nos chame no **WhatsApp** clicando no bot&atilde;o abaixo!",
+			"blockClass": "unavailable-cta_text"
+		}
+	},
+	"rich-text#unavailable-cta_line-2": {
+		"title": "Paragrafo 2 - Produto Indisponível",
+		"props": {
+			"text": "Ou venha nos visitar: **Rua Teodoro Sampaio, 1749 - Pinheiros - (11) 2503-2996**",
+			"blockClass": ["unavailable-cta_text", "unavailable-cta_line-2"]
+		}
+	},
 
-// 	"container#unavailable-cta": {
-// 		"children": [
-// 			"rich-text#unavailable-cta",
-// 			"link#unavailable-cta-wpp"
-// 		],
-// 		"props": {
-// 			"blockClass": "unavailable-cta_container"
-// 		}
-// 	},
-// 	"rich-text#unavailable-cta": {
-// 		"props": {
-// 			//"text": "## Produto Esgotado \n Deseja saber sobre a disponibilidade ou opções similares deste produto? Nos chame no WhatsApp clicando no botão abaixo! \n [ENTRE EM CONTATO](https://api.whatsapp.com/send?phone=5511994877664)",
-// 			//"text": "## Produto Esgotado \n Deseja saber sobre a disponibilidade ou opções similares deste produto? Nos chame no WhatsApp clicando no botão abaixo! \n <a href='https://api.whatsapp.com/send?phone=5511994877664' target='_blank' rel='noopener noreferrer'>ENTRE EM CONTATO</a> \n [ENTRE EM CONTATO](https://api.whatsapp.com/send?phone=5511994877664)",
-// 			"text": "## Produto Indispon&iacute;vel \n Deseja saber sobre a **disponibilidade** ou **opções similares** deste produto? Nos chame no **WhatsApp** clicando no botão abaixo!",
-// 			"blockClass": "unavailable-cta_text"
-// 		}
-// 	},
-
-// 	"link#unavailable-cta-wpp": {
-// 		"title": "",
-// 		"children": [
-// 			"icon#unavailable-cta-wpp"
-// 		],
-// 		"props": {
-// 			"label": "ENTRE EM CONTATO",
-// 			"href": "https://api.whatsapp.com/send?phone=5511994877664",
-// 			"target": "_blank",
-// 			"blockClass": "unavailable-cta-wpp_link"
-// 		}
-// 	},
-// 	"icon#unavailable-cta-wpp": {
-// 		"props": {
-// 			"id": "inf-whatsapp-white",
-// 			"size": 20,
-// 			//"activeClassName": "vtex-store-components-3-x-storesIcon"
-// 			"activeClassName": "vtex-store-components-3-x-inf-whatsapp-white"
-// 		}
-// 	}
-
+	"link#unavailable-cta-wpp": {
+		"title": "Botão - WhatsApp",
+		"children": [
+			"icon#unavailable-cta-wpp"
+		],
+		"props": {
+			"label": "Compre por WhatsApp",
+			"href": "https://wa.me/5511994877664",
+			"target": "_blank",
+			"blockClass": "unavailable-cta-wpp_link"
+		}
+	},
+	"icon#unavailable-cta-wpp": {
+		"props": {
+			"id": "inf-whatsapp-white",
+			"size": 20,
+			"activeClassName": "vtex-store-components-3-x-inf-whatsapp-white"
+		}
+	}
 }

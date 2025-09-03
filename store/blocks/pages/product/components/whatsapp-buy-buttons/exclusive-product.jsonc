@@ -1,3 +1,27 @@
 {
-    
+    "container#product-exclusive": {
+        "title": "Wrapper - Produto Exclusivo",
+		"children": [
+            "rich-text#exclusive-cta_line-1",
+            "rich-text#exclusive-cta_line-2",
+            "link#unavailable-cta-wpp"
+		],
+		"props": {
+			"blockClass": "exclusive-cta_container"
+		}
+	},
+	"rich-text#exclusive-cta_line-1": {
+        "title": "Texto 1 - Info Produto Exclusivo",
+		"props": {
+			"text": "## &#10024; Produto Exclusivo\nEste item **n&atilde;o est&aacute; dispon&iacute;vel para compra online**. A aquisi&ccedil;&atilde;o &eacute; realizada **somente nas nossas lojas f&iacute;sicas** ou via **atendimento personalizado por telefone ou WhatsApp.**",
+			"blockClass": ["unavailable-cta_text", "exclusive-cta_text"]
+		}
+	},
+    "rich-text#exclusive-cta_line-2": {
+        "title": "Texto 2 - Card Loja",
+		"props": {
+            "text": "&#128205;Rua Teodoro Sampaio 1749, Pinheiros - São Paulo/SP",
+			"blockClass": ["unavailable-cta_text", "exclusive-cta_line-2"]
+		}
+	}
 }

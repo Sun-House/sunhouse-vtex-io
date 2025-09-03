@@ -86,7 +86,8 @@
       "vtex.store-components:product-name",
       "flex-layout.row#product-page-price--quick-view",
       "container#above-buy",
-      "link.product#product-page"
+      "link.product#product-page",
+      "link#unavailable-cta-wpp"
     ]
   },
 

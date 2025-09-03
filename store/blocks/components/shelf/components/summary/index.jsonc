@@ -90,11 +90,66 @@
           "subject": "isProductAvailable"
         }
       ],
-      "Then": "flex-layout.col#shelf-product-available",
+      // "Then": "flex-layout.col#shelf-product-available",
+      "Then": "condition-layout.product#shelf-elf-checker",
       "Else": "flex-layout.col#shelf-product-unavailable"
     }
   },
 
+  "condition-layout.product#shelf-elf-checker": {
+    "title": "Condicional - Produto Exclusivo",
+    "props": {
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            "id": "427"
+          }
+        }
+      ],
+      "Then": "flex-layout.col#shelf-product-exclusive", // Aqui vai o bloco Produto Exclusivo Loja Fisca
+      "Else": "flex-layout.col#shelf-product-available"
+    }
+  },
+
+  "flex-layout.col#shelf-product-exclusive": {
+    "title": "Produto vitrine indisponível",
+    "children": [
+      "container#shelf-product-exclusive-button",
+      "rich-text#know-more-cta"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "blockClass": "shelf-product-exclusive"
+    }
+  },
+
+  "container#shelf-product-exclusive-button": {
+    "children": [
+      "rich-text#shelf-product-exclusive-button"
+    ],
+    "props": {
+      "blockClass": "shelf-product-exclusive-button"
+    }
+  },
+  "rich-text#shelf-product-exclusive-button": {
+    "title": "Botão Produto Exclusivo vitrine",
+    "props": {
+      "text": "__Produto Exclusivo__",
+      "blockClass": "shelf-product-exclusive-button"
+    }
+  },
+  "rich-text#know-more-cta": {
+    "title": "Texto Saiba Mais - Vitrine",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Clique e saiba mais",
+      "blockClass": "quick-view"
+    }
+  },
+  
   "flex-layout.col#shelf-product-available": {
     "title": "Produto vitrine disponível",
     "children": [
@@ -180,7 +235,9 @@
     "title": "Produto vitrine indisponível",
     "children": [
       "rich-text#shelf-product-unavailable",
-      "hover-container#shelf-product-unavailable-button"
+      "container#shelf-product-unavailable-cta",
+      "rich-text#know-more-cta"
+      // "hover-container#shelf-product-unavailable-button"
     ],
     "props": {
       "preventVerticalStretch": true,
@@ -195,6 +252,24 @@
       "blockClass": "shelf-product-unavailable"
     }
   },
+  
+  "container#shelf-product-unavailable-cta": {
+    "children": [
+      "rich-text#shelf-product-unavailable-cta"
+      // "link#unavailable-cta-wpp" -> Nao deu certo pois ao clicar ele acessa o produto
+    ],
+    "props": {
+      "blockClass": "shelf-product-unavailable-cta"
+    }
+  },
+  "rich-text#shelf-product-unavailable-cta": {
+    "title": "CTA Produto Indisponível - Vitrine",
+    "props": {
+      "text": "__Veja mais detalhes__",
+      "blockClass": "shelf-product-unavailable-cta"
+    }
+  },
+  
   "hover-container#shelf-product-unavailable-button": {
     "title": "Hover botão avise-me prateleira",
     "children": ["container#shelf-product-unavailable-button"],
