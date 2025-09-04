@@ -4,7 +4,8 @@
 		"children": [
 			"rich-text#unavailable-cta_line-1",
 			"rich-text#unavailable-cta_line-2",
-            "link#unavailable-cta-wpp"
+            // "link#unavailable-cta-wpp"
+			"whatsapp-dynamic-button#wpp-button-unavailable"
 		],
 		"props": {
 			"blockClass": "unavailable-cta_container"
@@ -25,23 +26,36 @@
 		}
 	},
 
-	"link#unavailable-cta-wpp": {
-		"title": "Botão - WhatsApp",
-		"children": [
-			"icon#unavailable-cta-wpp"
-		],
+	// Todo esse bloco sera desabilitado e excluido 
+	// "link#unavailable-cta-wpp": {
+	// 	"title": "Botão - WhatsApp",
+	// 	"children": [
+	// 		"icon#unavailable-cta-wpp"
+	// 	],
+	// 	"props": {
+	// 		"label": "Compre por WhatsApp",
+	// 		"href": "https://wa.me/5511994877664",
+	// 		"target": "_blank",
+	// 		"blockClass": "unavailable-cta-wpp_link"
+	// 	}
+	// },
+	// "icon#unavailable-cta-wpp": {
+	// 	"props": {
+	// 		"id": "inf-whatsapp-white",
+	// 		"size": 20,
+	// 		"activeClassName": "vtex-store-components-3-x-inf-whatsapp-white"
+	// 	}
+	// },
+	// Todo esse bloco sera desabilitado e excluido 
+
+	// Custom WhatsApp Button App
+	"whatsapp-dynamic-button#wpp-button-unavailable": {
+		"title": "Botão WhatsApp - Esgotado",
 		"props": {
-			"label": "Compre por WhatsApp",
-			"href": "https://wa.me/5511994877664",
-			"target": "_blank",
-			"blockClass": "unavailable-cta-wpp_link"
-		}
-	},
-	"icon#unavailable-cta-wpp": {
-		"props": {
-			"id": "inf-whatsapp-white",
-			"size": 20,
-			"activeClassName": "vtex-store-components-3-x-inf-whatsapp-white"
-		}
+			"phone": "5511994877664", // Ja vem com o numero do site como padrao, mas pode ser alterado via site editor e aqui
+			"text": "Falar com um Especialista", // Texto alteravel via site editor e aqui
+			"showIcon": true, // Bool que define se mostra ou nao o icone de whatsapp - icone inalteravel, ja definido no app react
+			"blockClass": "wpp-button-unavailable" // Ainda nao sei se vai funcionar esse
+    	}
 	}
 }

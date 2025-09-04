@@ -1,9 +1,23 @@
 {
 	"flex-layout.row#whatsapp-button_normal-product": {
 		"title": "",
-		"children": ["link#unavailable-cta-wpp"],
+		"children": [
+			// "link#unavailable-cta-wpp",
+			"whatsapp-dynamic-button#wpp-button-normal"
+		],
 		"props": {
 			"blockClass": "whatsapp-button_normal-product"
+    	}
+	},
+
+	// Custom WhatsApp Button App
+	"whatsapp-dynamic-button#wpp-button-normal": {
+		"title": "Botão WhatsApp",
+		"props": {
+			"phone": "5511994877664", // Ja vem com o numero do site como padrao, mas pode ser alterado via site editor e aqui
+			"text": "Comprar por WhatsApp", // Texto alteravel via site editor e aqui
+			"showIcon": true, // Bool que define se mostra ou nao o icone de whatsapp - icone inalteravel, ja definido no app react
+			"blockClass": "wpp-button-normal" // Ainda nao sei se vai funcionar esse
     	}
 	}
 }

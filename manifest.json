@@ -95,7 +95,8 @@
     "sunhouse.wishlist-selection": "0.x",
     "sunhouse.list-grid": "0.x",
     "sunhouse.product-dimensions": "0.x",
-    "sunhouse.slider-layout": "0.x"
+    "sunhouse.slider-layout": "0.x",
+    "sunhouse.whatsapp-dynamic-btn": "0.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",

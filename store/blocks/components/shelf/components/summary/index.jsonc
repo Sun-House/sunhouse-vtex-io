@@ -8,7 +8,8 @@
       // "container#shelf-specification-badges",
       // "container#shelf-reviews",
       "product-summary-name",
-      "condition-layout.product#shelf-product-availability"
+      // "condition-layout.product#shelf-product-availability"
+      "condition-layout.product#shelf-elf-checker"
     ],
     "props": {
       "blockClass": "main-shelf"
@@ -83,19 +84,6 @@
     }
   },
 
-  "condition-layout.product#shelf-product-availability": {
-    "props": {
-      "conditions": [
-        {
-          "subject": "isProductAvailable"
-        }
-      ],
-      // "Then": "flex-layout.col#shelf-product-available",
-      "Then": "condition-layout.product#shelf-elf-checker",
-      "Else": "flex-layout.col#shelf-product-unavailable"
-    }
-  },
-
   "condition-layout.product#shelf-elf-checker": {
     "title": "Condicional - Produto Exclusivo",
     "props": {
@@ -107,11 +95,22 @@
           }
         }
       ],
-      "Then": "flex-layout.col#shelf-product-exclusive", // Aqui vai o bloco Produto Exclusivo Loja Fisca
-      "Else": "flex-layout.col#shelf-product-available"
+      "Then": "flex-layout.col#shelf-product-exclusive",
+      "Else": "condition-layout.product#shelf-product-availability"
     }
   },
-
+  "condition-layout.product#shelf-product-availability": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.col#shelf-product-available",
+      "Else": "flex-layout.col#shelf-product-unavailable"
+    }
+  },
+  
   "flex-layout.col#shelf-product-exclusive": {
     "title": "Produto vitrine indisponível",
     "children": [

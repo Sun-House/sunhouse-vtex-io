@@ -85,7 +85,8 @@
       "product-dimensions",
       "container#product-top-infos",
       "container#product-highlights--product-page",
-      "condition-layout.product#product-availability",
+      // "condition-layout.product#product-availability",
+      "condition-layout.product#elf-checker",
       //"flex-layout.row#product-page-informations"
       //"flex-layout.row#product-infos-wrapper"
       "flex-layout.col#product-description-wrapper-mobile"
@@ -181,7 +182,8 @@
       "container#product-top-infos",
       "vtex.store-components:product-name",
       "container#product-highlights--product-page",
-      "condition-layout.product#product-availability"
+      // "condition-layout.product#product-availability"
+      "condition-layout.product#elf-checker"
     ],
     "props": {
       "width": "43%",
@@ -238,6 +240,22 @@
     }
   },
 
+  "condition-layout.product#elf-checker": {
+    "title": "Condicional - Produto Exclusivo",
+    "props": {
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            "id": "427"
+          }
+        }
+      ],
+      "Then": "flex-layout.col#product-exclusive",
+      "Else": "condition-layout.product#product-availability"
+    }
+  },
+
   "condition-layout.product#product-availability": {
     "title": "Condicional - Disponibilidade do Produto",
     "props": {
@@ -246,28 +264,8 @@
           "subject": "isProductAvailable"
         }
       ],
-      // "Then": "flex-layout.col#product-available",
-      "Then": "condition-layout.product#elf-checker",
+      "Then": "flex-layout.col#product-available",
       "Else": "flex-layout.col#product-unavailable"
-    }
-  },
-
-  //
-  "condition-layout.product#elf-checker": {
-    "title": "Condicional - Produto Exclusivo",
-    "props": {
-      "conditions": [
-        {
-          "subject": "productClusters",
-          "arguments": {
-            // "id": "300" -> Antiga colecao ELF
-            "id": "427" // Colecao nova, para incluir produtos conforme necessidade
-          }
-        }
-      ],
-      // "matchType": "all",
-      "Then": "flex-layout.col#product-exclusive", // Aqui vai o bloco Produto Exclusivo Loja Fisca
-      "Else": "flex-layout.col#product-available"
     }
   },
   

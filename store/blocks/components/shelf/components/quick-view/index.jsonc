@@ -87,7 +87,8 @@
       "flex-layout.row#product-page-price--quick-view",
       "container#above-buy",
       "link.product#product-page",
-      "link#unavailable-cta-wpp"
+      // "link#unavailable-cta-wpp"
+      "whatsapp-dynamic-button#wpp-button-normal"
     ]
   },
 
