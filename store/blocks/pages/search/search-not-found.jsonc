@@ -11,7 +11,7 @@
       "container#spacing-default",
       "flex-layout.row#shelf-home01",
       "container#spacing-default",
-      "container#banner-infos",
+      "container#blog-cards",
       "container#spacing-default"
     ]
   },

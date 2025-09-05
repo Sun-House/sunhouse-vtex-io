@@ -85,7 +85,7 @@
       "flex-layout.row#search-result-cluster-and-search",
       "container#search-seo",
       "container#spacing-default",
-      "container#banner-infos",
+      "container#blog-cards",
       "container#spacing-default"
     ],
     "props": {
@@ -100,7 +100,7 @@
       "container#search-seo",
       // "flex-layout.row#banners-slider"
       "container#spacing-default",
-      "container#banner-infos",
+      "container#blog-cards",
       "container#spacing-default"
     ],
     "props": {
@@ -155,7 +155,7 @@
       "container#search-seo",
       // "flex-layout.row#banners-slider",
       "container#spacing-default",
-      "container#banner-infos",
+      "container#blog-cards",
       "container#spacing-default"
     ],
     "props": {
@@ -191,7 +191,7 @@
       "flex-layout.row#search-result.mobile",
       "container#search-seo",
       "container#spacing-default",
-      "container#banner-infos",
+      "container#blog-cards",
       "container#spacing-default"
       // "flex-layout.row#banners-slider"
     ],

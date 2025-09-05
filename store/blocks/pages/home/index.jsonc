@@ -3,9 +3,7 @@
     "blocks": [
       "list-context.image-list#banner-main",
       "container#differentials",
-      // "__fold__.mobile", -> Precisa ser pensado junto a liveSEO
       "flex-layout.row#categories-slider",
-      // "__fold__.desktop", -> Precisa ser pensado junto a liveSEO
       "container#spacing-default",
       "list-context.image-list#image-double",
       "container#spacing-default",
@@ -15,8 +13,10 @@
       "container#spacing-default",
       "flex-layout.row#shelf-home02",
       "container#spacing-default",
+      // Esse bloco precisa de ajustes visuais e aprovação da diretoria
       // "flex-layout.row#shelf-banner-desktop",
       // "container#spacing-default",
+      //
       "container#blog-cards",
       "container#spacing-default"
     ]
