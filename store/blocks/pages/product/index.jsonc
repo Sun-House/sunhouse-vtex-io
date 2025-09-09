@@ -8,12 +8,17 @@
       "responsive-layout.mobile#product-main",
       "container#product__related-grid",
       // "condition-layout.user#buy-together",
+      
+      // in Dev
+      // "container#trustvox",
+      "container#ra-trustvox",
       //
-      "container#trustvox",
+
       "flex-layout.row#also-seen",
-      "container#spacing-default",
-      //
-      "product-rating-summary"
+      "container#spacing-default"
+      
+      // Esse era algum tipo de testes da eplus - remover depois de configurar o RATrustvox novo:
+      // "product-rating-summary"
     ]
   },
 
@@ -24,6 +29,18 @@
     },
     "children": ["trustvox-review-widget"]
   },
+
+  //
+  "container#ra-trustvox": {
+    "children": [
+      "product-reviews"
+    ],
+    "props": {
+      "wrapper": true,
+      "blockClass": ["trustvox", "container-center"] // Pode ser que nao funcionem direito essas css class
+    }
+  },
+  //
 
   "productWrapper": {
     "props": {
