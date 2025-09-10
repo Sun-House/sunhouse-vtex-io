@@ -1,1 +1,26 @@
-.container{margin-block:40px;max-width:1240px;padding-inline:10px}.summaryContainer{display:flex;align-items:center;margin:0;margin-right:auto;margin-left:14px}.summaryContainer .summaryButtonContainer{display:none}.container .loginLink{font-size:14px}
+/* Esse componente nao deveria ser renderizado */
+/* mas pelo que entendi, nao pode ser removido pois é padrão */
+.container {
+    display: none;
+    margin-block: 40px;
+    max-width: 1240px;
+    padding-inline: 10px;
+}
+
+.summaryContainer {
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    margin: 0;
+    margin-right: auto;
+    margin-left: 14px;
+}
+
+.summaryContainer .summaryButtonContainer {
+    display: none;
+}
+
+.container .loginLink {
+    display: none;
+    font-size: 14px;
+}

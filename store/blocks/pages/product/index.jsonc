@@ -1,59 +1,41 @@
 {
   "store.product": {
-    "parent": {
-      "productWrapper": "productWrapper"
-    },
+    // "parent": {
+    //   "productWrapper": "productWrapper" -> Estava sendo utilizado pelo trustvox antigo
+    // },
     "children": [
       "responsive-layout.desktop#product-main",
       "responsive-layout.mobile#product-main",
       "container#product__related-grid",
       // "condition-layout.user#buy-together",
-      
-      // in Dev
-      // "container#trustvox",
       "container#ra-trustvox",
-      //
-
       "flex-layout.row#also-seen",
       "container#spacing-default"
-      
-      // Esse era algum tipo de testes da eplus - remover depois de configurar o RATrustvox novo:
-      // "product-rating-summary"
     ]
   },
 
-  "container#trustvox": {
-    "props": {
-      "blockClass": ["trustvox", "container-center"],
-      "wrapper": true
-    },
-    "children": ["trustvox-review-widget"]
-  },
-
-  //
   "container#ra-trustvox": {
     "children": [
       "product-reviews"
     ],
     "props": {
       "wrapper": true,
-      "blockClass": ["trustvox", "container-center"] // Pode ser que nao funcionem direito essas css class
-    }
-  },
-  //
-
-  "productWrapper": {
-    "props": {
-      "CustomContext": "trustvox-context"
+      "blockClass": "container-ra-pdp"
     }
   },
 
-  "trustvox-context": {
-    "props": {
-      "id": 91,
-      "limit": 10
-    }
-  },
+  // "productWrapper": {
+  //   "props": {
+  //     "CustomContext": "trustvox-context"
+  //   }
+  // },
+
+  // "trustvox-context": {
+  //   "props": {
+  //     "id": 91,
+  //     "limit": 10
+  //   }
+  // },
 
   "responsive-layout.desktop#product-main": {
     "title": "Produto",
@@ -104,8 +86,8 @@
       "container#product-highlights--product-page",
       // "condition-layout.product#product-availability",
       "condition-layout.product#elf-checker",
-      //"flex-layout.row#product-page-informations"
-      //"flex-layout.row#product-infos-wrapper"
+      // "flex-layout.row#product-page-informations"
+      // "flex-layout.row#product-infos-wrapper"
       "flex-layout.col#product-description-wrapper-mobile"
     ],
     "props": {
@@ -136,7 +118,7 @@
       "contentOrder": "videos-first",
       "displayThumbnailsArrows": true,
       "thumbnailsOrientation": "horizontal",
-      //"showNavigationArrows": false,
+      // "showNavigationArrows": false,
       "showNavigationArrows": true,
       "showPaginationDots": false,
       "blockClass": "product-page"
@@ -216,8 +198,9 @@
   },
   "container#product-top-infos": {
     "children": [
-      "flex-layout.row#product-code-brand",
-      "trustvox-starts",
+      "flex-layout.row#product-code-brand",      
+      // "trustvox-starts",
+      "product-rating-summary",
       "add-to-list-btn#product-page"
     ],
     "props": {
@@ -473,7 +456,7 @@
     }
   },
 
-  //Compre junto
+  // Compre junto
   "condition-layout.user#buy-together": {
     "props": {
       "conditions": [
@@ -506,7 +489,7 @@
     }
   },
 
-  //Quem Viu Comprou Tambem
+  // Quem Viu Comprou Tambem
   "flex-layout.row#shelf-buy-too": {
     "children": ["shelf.relatedProducts#shelf-buy-too"],
     "props": {

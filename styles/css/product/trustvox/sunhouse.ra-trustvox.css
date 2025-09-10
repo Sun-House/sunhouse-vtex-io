@@ -1,0 +1,22 @@
+.rating-click-here {
+    display: none !important /* Não esta funcionando por alguma razao - resolvido via runtime do app ratrustvox */
+}
+
+/* Estilo sendo aplicado no arquivo sunhouse.container.css */
+/* :global(.vtex-render__container-id-ra-trustvox) {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: #eaeae9
+}
+
+@media screen and (max-width: 1250px) {
+    :global(.vtex-render__container-id-ra-trustvox) {
+        width: auto;
+        border-radius: 0;
+        margin-top: 24px;
+        margin-left: 12px;
+        margin-right: 12px
+    }
+} */

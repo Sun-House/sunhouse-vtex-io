@@ -9,11 +9,6 @@
       "container#spacing-default",
       "flex-layout.row#shelf-home01",
       "container#spacing-default",
-      // Trustvox:
-      "certificate-ratrustvox",
-      "colt-ratrustvox",
-      "container#spacing-default",
-      //
       "list-context.image-list#banner-grid",
       "container#spacing-default",
       "flex-layout.row#shelf-home02",
@@ -21,6 +16,10 @@
       // Esse bloco precisa de ajustes visuais e aprovação da diretoria
       // "flex-layout.row#shelf-banner-desktop",
       // "container#spacing-default",
+      //
+      // Trustvox:
+      "flex-layout.row#trustvox-colt-highlight",
+      "container#spacing-default",
       //
       "container#blog-cards",
       "container#spacing-default"

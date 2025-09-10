@@ -1,0 +1,14 @@
+.container--container-ra-pdp {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f6f6f4
+}
+
+@media screen and (max-width:1024px) {
+    
+    .container--container-ra-pdp {
+        padding-left: 12px;
+        padding-right: 12px
+    }
+
+}

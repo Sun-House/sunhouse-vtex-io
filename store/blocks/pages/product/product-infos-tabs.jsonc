@@ -49,7 +49,7 @@
         "title": "Avaliações Trustvox",
         "props": {
             "tabId": "rates-tab",
-            "label": "Perguntas e Avaliações - <a href='#trustvox-reviews' style='padding: 10px 15px; background-color: blue; color: white; text-decoration: none; border-radius: 5px;'>Clique aqui</a>",
+            "label": "Perguntas e Avaliações",
             "defaultActiveTab": false,
             "blockClass": ["product-tab", "rates-tab"]
         }
@@ -81,8 +81,8 @@
     "tab-content.item#product-rates-tab": {
         "children": [
             // Bloco de avaliacoes do trust
-            // Testar posteriormente na versão de testes em producao. Neste versao ira como gambiarra
-            //"container#trustvox"
+            // Nao funciona - possivelmente algum erro do proprio trust pois nao acha o product context neste componente
+            // "container#ra-trustvox"
         ],
         "props": {
             "tabId": "rates-tab"

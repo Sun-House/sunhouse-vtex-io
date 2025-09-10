@@ -12,10 +12,6 @@
       "container#header--desktop--home",
       "container#float-elements",
       "link#whatsapp-float"
-      
-      // in Dev
-      ,"certificate-ratrustvox"
-      //
     ]
   },
 
@@ -24,10 +20,6 @@
       "container#header--mobile",
       "container#float-elements",
       "link#whatsapp-float"
-
-      // in Dev
-      ,"certificate-ratrustvox"
-      //
     ]
   }
 }

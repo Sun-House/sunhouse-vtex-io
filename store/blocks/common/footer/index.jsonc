@@ -52,7 +52,11 @@
   },
   "container#footer-selo-mobile": {
     "title": "Footer Selos Mobile",
-    "children": ["link#vtex", "link#eplus"],
+    "children": [
+      "link#vtex",
+      "link#eplus",
+      "certificate-ratrustvox"
+    ],
     "props": {
       "blockClass": ["footer-selos-mobile"]
     }
