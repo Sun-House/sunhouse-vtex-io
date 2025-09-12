@@ -1,18 +1,34 @@
-// Banner expandido - destaque produto ou marca
 {
+    "flex-layout.row#line-wrapper-3": {
+        "title": "Bloco 3",
+        "children": [
+            "flex-layout.col#col-wrapper-3"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper", "line-wrapper-odd"]
+        }
+    },
+    "flex-layout.col#col-wrapper-3": {
+        "children": [
+            "container#custom-block__banner-fulfill"
+        ]
+    },
+    //
+
+
     "container#custom-block__banner-fulfill": {
         "title": "Banner Tela Completa Desktop",
         "children": [
             "list-context.image-list#banner-fulfill"
         ],
         "props": {
-            "blockClass": "custom-block__banner-fulfill"
+            "blockClass": ["custom-block__container", "custom-block__banner-fulfill"]
         }
     },
     "list-context.image-list#banner-fulfill": {
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/1174x643",
+                "image": "https://dummyimage.com/1174x643/6c757d",
                 "mobileImage": "https://dummyimage.com/376x480"
             }],
             "blockClass": "banner-fulfill"

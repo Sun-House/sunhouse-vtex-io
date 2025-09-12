@@ -1,6 +1,40 @@
-// Todos Blocos Titulo com Subtitulo
 {
-    // Bloco Titulo com Subtitulo 1
+    "flex-layout.row#line-wrapper-2": {
+        "title": "Bloco 2",
+        "children": [
+            "flex-layout.col#col-wrapper-2"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper"]
+        }
+    },
+    "flex-layout.col#col-wrapper-2": {
+        "children": [
+            "container#custom-block__text-summary"
+        ]
+    },
+    //
+
+    "flex-layout.row#line-wrapper-6": {
+        "title": "Line Wrapper 6 - ",
+        "children": [
+            "flex-layout.col#col-wrapper-6"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper"]
+        }
+    },
+    "flex-layout.col#col-wrapper-6": {
+        "title": "", // Acredito que aqui nao precisa
+        "children": [
+            "container#custom-block__text-summary2"
+        ],
+        "props": {
+            "blockClass": ""
+        }
+    },
+    //
+
     "container#custom-block__text-summary": {
         "title": "Titulo e Texto entre Blocos",
         "children": [
@@ -8,7 +42,7 @@
             "container#wrapper__text-summary"
         ],
         "props": {
-            "blockClass": "custom-block__text-summary"
+            "blockClass": ["custom-block__container", "custom-block__text-summary"]
         }
     },
 
@@ -43,7 +77,7 @@
             "container#wrapper__text-summary2"
         ],
         "props": {
-            "blockClass": "custom-block__text-summary"
+            "blockClass": ["custom-block__container", "custom-block__text-summary"]
         }
     },
 

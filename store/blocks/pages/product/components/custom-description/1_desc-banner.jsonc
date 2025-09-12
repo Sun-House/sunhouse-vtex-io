@@ -1,12 +1,27 @@
-// Bloco Descrição produto resumida - Text esquerda e foto na direita
 {
+    "flex-layout.row#line-wrapper-1": {
+        "title": "Bloco 1",
+        "children": [
+            "flex-layout.col#col-wrapper-1"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper", "desc-banner"]
+        }
+    },
+    "flex-layout.col#col-wrapper-1": {
+        "children": [
+            "container#custom-block__desc-banner"
+        ]
+    },
+    //
+
     "container#custom-block__desc-banner": {
         "title": "Descricao com Banner",
         "children": [
             "flex-layout.row#desc-banner__row"
         ],
         "props": {
-            "blockClass": "custom-block__desc-banner"
+            "blockClass": ["custom-block__container", "custom-block__desc-banner"]
         }
     },
     "flex-layout.row#desc-banner__row": {

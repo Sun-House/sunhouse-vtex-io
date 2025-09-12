@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#line-wrapper-x2": {
+        "title": "[TESTES] Bloco x2",
+        "children": [
+            "flex-layout.col#col-wrapper-x2"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper", "banner-fulfill_v2"]
+        }
+    },
+    "flex-layout.col#col-wrapper-x2": {
+        "children": [
+            "container#lp_banner-fulfill_v2"
+        ]
+    },
+
+    // Banner Fulfill
+    "container#lp_banner-fulfill_v2": {
+        "title": "Banner Fulfill v2",
+        "children": [
+            "list-context.image-list#lp_banner-fulfill_v2"
+        ],
+        "props": {
+            "blockClass": "lp_banner-fulfill_v2"
+        }
+    },
+    "list-context.image-list#lp_banner-fulfill_v2": {
+        "title": "Imagem Única",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/1920x599",
+                "mobileImage": "https://dummyimage.com/360x640" // OK Manter
+            }],
+            "blockClass": "banner-fulfill_v2"
+        },
+        "children": [
+            "container.list-render#lp_banner-fulfill_v2"
+        ]
+    },
+    "container.list-render#lp_banner-fulfill_v2": {
+        "props": {
+            "blockClass": "banner-fulfill_v2"
+        }
+    }
+}

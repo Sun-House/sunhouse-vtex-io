@@ -90,6 +90,15 @@
     border: none
 }
 
+/* Novos Blocos Edson */
+.headingLevel2--desc-banner_v2_text {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #000
+}
+/**/
+
 @media screen and (max-width: 1024px) {
     /* Titulo Bloco Descricao com Foto */
     .wrapper--wrapper__textoDescricao-esquerda .heading {

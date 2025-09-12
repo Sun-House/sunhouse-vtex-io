@@ -24,3 +24,42 @@
     margin-top: 12px;
     margin-left: 24px
 }
+
+
+/* In DEV */
+.flexRow--line-wrapper {
+    width: 100vw; /* ocupa 100% da viewport */
+    margin-left: calc(-50vw + 50%); /* "compensa" o container centralizado */
+    padding: 32px 0
+    /* DEBUG: */
+    ;background: #0000ff69
+}
+
+/* DEBUG */
+.flexRow--line-wrapper-white {
+    background: #fff !important
+}
+/* DEBUG */
+
+.flexRow--line-wrapper-odd {
+    /* DEBUG:
+    background: #ffaaa4e7 */
+    background: #c9c8c8
+}
+
+.flexRow--text-highlight {
+    background: #323232
+}
+
+.flexRow--banner-fulfill_v2 {
+    padding: 0 !important
+}
+
+/* Force Desktop */
+@media screen and (min-width: 1025px) {
+
+    .flexRow--banner-fulfill-mobile {
+        display: none
+    }
+
+}

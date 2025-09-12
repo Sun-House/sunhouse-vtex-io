@@ -3,7 +3,10 @@
         "title": "Informações do Produto (Nav Tabs)",
         "children": [
             "tab-layout#product-infos-tab"
-        ]
+        ],
+        "props": {
+            "blockClass": "product-infos_tab-layout"
+        }
     },
 
     "tab-layout#product-infos-tab": {

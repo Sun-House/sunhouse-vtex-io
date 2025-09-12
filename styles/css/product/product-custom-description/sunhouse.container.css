@@ -108,8 +108,28 @@
     border-radius: 8px
 }
 
+/* Novos Blocos Edson */
+.imageElement--banner-fulfill_v2 {
+    max-height: unset !important
+}
+/**/
+
+/* Force Desktop */
+@media screen and (min-width: 1025px) {
+
+    /* In DEV - For all Containers components in this block */
+    /* .sunhouse-container-1-x-container.sunhouse-container-1-x-container--custom-block__desc-banner.vtex-container-container.vtex-container-container--custom-block__desc-banner { */
+    .container--custom-block__container {
+        max-width: 1220px;
+        margin: 0 auto
+    }
+    /* In DEV */
+
+}
+
 /* Mobile Geral */
 @media screen and (max-width: 1024px) {
+
     /* Bloco Descricao com Foto */
     .imageElement--container_desc-banner__imagemDescricao {
         height: auto
@@ -145,4 +165,5 @@
         margin-left: 12px;
         padding: 20px 30px
     }
+    
 }

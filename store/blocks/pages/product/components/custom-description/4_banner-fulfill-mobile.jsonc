@@ -1,11 +1,27 @@
-// Banner expandido mobile - destaque produto ou marca
 {
+    "flex-layout.row#line-wrapper-4": {
+        "title": "Bloco 3 - Apenas Mobile",
+        "children": [
+            "flex-layout.col#col-wrapper-4"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper", "banner-fulfill-mobile"]
+        }
+    },
+    "flex-layout.col#col-wrapper-4": {
+        "children": [
+            "container#custom-block__banner-fulfill-mob"
+        ]
+    },
+    //
+
     "container#custom-block__banner-fulfill-mob": {
         "title": "Banner Tela Completa Mobile",
         "children": [
             "list-context.image-list#banner-fulfill-mob"
         ],
         "props": {
+            // "blockClass": ["custom-block__container", "custom-block__banner-fulfill", "custom-block__banner-fulfill-mob"]
             "blockClass": ["custom-block__banner-fulfill", "custom-block__banner-fulfill-mob"]
         }
     },

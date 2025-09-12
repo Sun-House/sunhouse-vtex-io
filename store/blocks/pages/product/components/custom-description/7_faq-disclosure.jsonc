@@ -1,5 +1,20 @@
-// Bloco FAQ Completo
 {
+    "flex-layout.row#line-wrapper-8": {
+        "title": "Bloco 7",
+        "children": [
+            "flex-layout.col#col-wrapper-8"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper"]
+        }
+    },
+    "flex-layout.col#col-wrapper-8": {
+        "children": [
+            "container#custom-block__wrapper-faq-disclosure"
+        ]
+    },
+    //
+
     "container#custom-block__wrapper-faq-disclosure": {
         "title": "FAQ - Perguntas Frequentes PDP",
         "children": [
@@ -7,7 +22,7 @@
             "container#custom-block__faq-disclosure"
         ],
         "props": {
-            "blockClass": "custom-block__wrapper-faq-disclosure"
+            "blockClass": ["custom-block__container", "custom-block__wrapper-faq-disclosure"]
         }
     },
 

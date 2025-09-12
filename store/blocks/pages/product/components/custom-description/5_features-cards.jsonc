@@ -1,5 +1,20 @@
-// Bloco caracteristicas do produto - modelo bootstrap cards
 {
+    "flex-layout.row#line-wrapper-5": {
+        "title": "Bloco 4",
+        "children": [
+            "flex-layout.col#col-wrapper-5"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper"]
+        }
+    },
+    "flex-layout.col#col-wrapper-5": {
+        "children": [
+            "container#custom-block__feature-cards"
+        ]
+    },
+    //
+
     "container#custom-block__feature-cards": {
         "title": "Cards - Características em Destaque",
         "children": [
@@ -8,7 +23,7 @@
             "slider-layout#slider-feature-cards"
         ],
         "props": {
-            "blockClass": "custom-block__feature-cards"
+            "blockClass": ["custom-block__container", "custom-block__feature-cards"]
         }
     },
 

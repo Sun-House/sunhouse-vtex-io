@@ -1,0 +1,16 @@
+{
+    "flex-layout.row#line-wrapper-x1": {
+        "title": "[TESTES] Bloco x1",
+        "children": [
+            "flex-layout.col#col-wrapper-x1"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper", "text-highlight"]
+        }
+    },
+    "flex-layout.col#col-wrapper-x1": {
+        "children": [
+            "container#lp_wide-highlights"
+        ]
+    }
+}

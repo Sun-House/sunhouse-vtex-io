@@ -1,5 +1,4 @@
 {
-    // Bloco principal contendo as informacoes
     "flex-layout.row#product-infos-wrapper": {
         "children": [
             "flex-layout.col#product-description-wrapper"
@@ -13,6 +12,8 @@
         "children": [
             "container#product-description-simple",
             "container#product-description-custom"
+            // In DEV
+            // ,"container#product-description-custom_v2"
         ],
         "props": {
             "blockClass": "product-description-wrapper"
@@ -28,7 +29,7 @@
         }
     },
 
-    // Descricao basica praticada com texto e SEO - Originada do Sistema Movelsoft
+    // Normal Description Wrapper
     "container#product-description-simple": {
         "title": "Descrição Normal (Movelsoft)",
         "children": [
@@ -39,76 +40,88 @@
         }
     },
 
-    // Descricao do produto customizada - blocos em DEV
+    // Custom Description v1 - Wrapper
     "container#product-description-custom": {
         "title": "Descrição Customizada",
         "children": [
-            "flex-layout.col#product-description-custom"
+            "flex-layout.row#product-description-custom"
         ],
         "props": {
             "blockClass": "product-description-custom"
         }
     },
-    "flex-layout.col#product-description-custom": {
+    
+    "flex-layout.row#product-description-custom": {
         "title": "Blocos Customizaveis",
         "children": [
-            "container#custom-block__desc-banner", // Descricao ao lado do banner (esquerda texto - direita imagem) - colunas iguais em tamanho - IMPORTANTE mas nao obrigatorio
-            // Tamanho imagem desse bloco: 581x 499
-
-            "container#custom-block__text-summary", // Bloco Titulo com Subtitulo - Um titulo, igual ao titulo de caracteristicas, porem, com um subtitulo embaixo, para quebrar o gelo de tanta imagem e separar blocos.
-            // Bloco podera se repetir mais uma ou duas vezes
-
-            "container#custom-block__banner-fulfill", // Banner expandido para destaque produto (estilo cadeira Siggy Elements) - OPICIONAL mas pode ficar agradavel visualmente
-            // Tamanho imagem desse bloco: 1174x643
-
-            "container#custom-block__banner-fulfill-mob", // Igual o bloco acima, mas com algumas configs especificas para o Mobile - Padrao com dois slides, mas podem ter mais
-            // Tamanho imagem desse bloco: 376x480
-
-            "container#custom-block__feature-cards", // Ate quatro cards, dois para cada coluna, informando caracteristicas destaque do produto - IMPORTANTE mas nao obrigatorio
-            // Tamanho imagens desse bloco: 383x255
-            
-            // Banner ou imagem destaque a esquerda (com carrossel) e a direita, tres cards de beneficios, diferenciais ou caracteristicas destaque do produto
-            //"container#custom-block__highlights-grid",
-            // Tamanho imagem desse bloco: 581x 499 (igual em tamanho do elemento desc-banner - mas ver se muda - deixa mais quadrado)
-            
-            // "A DEFINIR - Ver no Figma - O bloco abaixo ficara no lugar ate definicao posterior no Figma
-            "container#custom-block__text-summary2", // Bloco Titulo com Subtitulo 2 - Um titulo, igual ao titulo de caracteristicas, porem, com um subtitulo embaixo, para quebrar o gelo de tanta imagem e separar blocos.
-            // Bloco podera se repetir mais uma ou duas vezes
-
-            "container#custom-block__slider-photo-grid", // Tres fotos, destaques, ou links, do fornecedor, produto ou linha - OPICIONAL mas muito relevante visualmente
-            // Tamanho imagens desse bloco: 383x680
-
-            "container#custom-block__wrapper-faq-disclosure" // 7 linhas de Perguntas Frequentes, gera SEO - OPICIONAL mas muito relevante para SEO e infos para o cliente
-            //sem fotos, apenas os disclosures de FAQ
+            "flex-layout.col#product-description-custom"
         ],
         "props": {
-            "blockClass": "blocks__product-description-custom"
+            "blockClass": "product-custom-description_line-wrapper"
+        }
+    },
+    "flex-layout.col#product-description-custom": {
+        "children": [
+            "flex-layout.row#line-wrapper-1", // "container#custom-block__desc-banner",
+            
+            // novo bloco edson #1
+            "flex-layout.row#line-wrapper-x3", // "container#custom-block__desc-banner_v2", --> CRIAR
+            // Usando o bloco da LP Elements -> lp_grow-block-image-highlight -> DEU CERTO!!
+            //
+
+            "flex-layout.row#line-wrapper-2", //"container#custom-block__text-summary",
+            "flex-layout.row#line-wrapper-3", // "container#custom-block__banner-fulfill",
+            "flex-layout.row#line-wrapper-4", // "container#custom-block__banner-fulfill-mob",
+            
+            // novo bloco edson #2
+            "flex-layout.row#line-wrapper-x", // "container#custom-block__mosaic-w-text", --> CRIAR
+            //
+
+            // novo bloco edson #3
+            "flex-layout.row#line-wrapper-x", // "container#custom-block__photo-grid-mosaic_1", --> CRIAR
+            //
+
+            "flex-layout.row#line-wrapper-5", // "container#custom-block__feature-cards",
+            
+            // novo bloco edson #4
+            "flex-layout.row#line-wrapper-x", // "container#custom-block__feature-cards_v2", --> TENTAR COPIAR A BASE DO FEATURE-CARDS ORIGINAL
+            //
+
+            "flex-layout.row#line-wrapper-6", // "container#custom-block__text-summary2",
+            "flex-layout.row#line-wrapper-7", // "container#custom-block__slider-photo-grid",
+            
+            // novo bloco edson #5
+            "flex-layout.row#line-wrapper-x1", // "container#custom-block__text-summary_v2", --> TENTAR COPIAR A BASE DO TEXT-SUMMARY ORIGINAL
+            // "container#lp_wide-highlights" -> Ver se esse vai se encaixar certinho -> DEU CERTO!!
+            //
+
+            // novo bloco edson #6
+            "flex-layout.row#line-wrapper-x2", // "container#custom-block__banner-fulfill_v2", --> TENTAR COPIAR A BASE DO BANNER-FULFILL ORIGINAL
+            // "container#lp_banner-hero" -> Ver se esse vai se encaixar certinho -> DEU CERTO!!
+            //
+
+            // novo bloco edson #7
+            "flex-layout.row#line-wrapper-x", // "container#custom-block__photo-grid-mosaic_2", --> CRIAR
+            //
+
+            "flex-layout.row#line-wrapper-8" // "container#custom-block__wrapper-faq-disclosure"
+            
+            // esse bloco ainda esta em DEV:
+            // ,"flex-layout.row#line-wrapper-9"
+        ],
+        "props": {
+            "blockClass": ["blocks__product-description-custom", "product-custom-description_col-wrapper"]
+        }
+    },
+
+    // DEBUG (Apagar daqui depois):
+    "flex-layout.row#line-wrapper-x": {
+        "title": "Bloco X",
+        "children": [],
+        "props": {
+            "blockClass": ""
         }
     }
+    //
 
-    // Descricao do produto customizada - Blocos abaixo foram movidos para arquivos proprios em components/custom-description
-    
-    // Bloco Descrição produto resumida - Text esquerda e foto na direita
-    // > MOVIDO PARA ARQUIVO PROPRIO
-
-    // Bloco Titulo com Subtitulo
-    // > MOVIDO PARA ARQUIVO PROPRIO
-    
-    // Banner expandido - destaque produto ou marca
-    // > MOVIDO PARA ARQUIVO PROPRIO
-
-    // Bloco caracteristicas do produto - modelo bootstrap cards
-    // > MOVIDO PARA ARQUIVO PROPRIO
-
-    // Bloco Destaques em Grade
-    // > MOVIDO PARA ARQUIVO PROPRIO
-
-    // Bloco Titulo com Subtitulo 2
-    // > MOVIDO PARA ARQUIVO PROPRIO
-    
-    // Bloco fotos destaque - esilo pichau - produto Cadeira Gamer Mancer Tyr Pro
-    // > MOVIDO PARA ARQUIVO PROPRIO
-
-    // Bloco FAQ
-    // > MOVIDO PARA ARQUIVO PROPRIO
 }

@@ -1,12 +1,28 @@
-// Bloco Destaques em Grade
+// Ainda nao finalizado o DEV deste bloco
 {
+    "flex-layout.row#line-wrapper-9": {
+        "title": "Bloco 8",
+        "children": [
+            "flex-layout.col#col-wrapper-9"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper"]
+        }
+    },
+    "flex-layout.col#col-wrapper-9": {
+        "children": [
+            "container#custom-block__highlights-grid"
+        ]
+    },
+    //
+
     "container#custom-block__highlights-grid": {
         "title": "Grid - Sub Destaques",
         "children": [
             "flex-layout.row#highlights-grid__row"
         ],
         "props": {
-            "blockClass": "highlights-grid"
+            "blockClass": ["custom-block__container", "highlights-grid"]
         }
     },
 
