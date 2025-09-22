@@ -1,19 +1,29 @@
 {
-    "flex-layout.row#line-wrapper-7": {
-        "title": "Bloco 6",
+    // Wrapper START
+    "container#line-wrapper-11": {
+        "title": "Bloco 11",
         "children": [
-            "flex-layout.col#col-wrapper-7"
+            "flex-layout.row#line-wrapper-11"
         ],
         "props": {
-            "blockClass": ["line-wrapper", "line-wrapper-odd"]
+            "blockClass": "line-wrapper"
         }
     },
-    "flex-layout.col#col-wrapper-7": {
+    "flex-layout.row#line-wrapper-11": {
+        "children": [
+            "flex-layout.col#col-wrapper-11"
+        ],
+        "props": {
+            "blockClass": "line-wrapper"
+            // "blockClass": ["line-wrapper", "line-wrapper-odd"]
+        }
+    },
+    "flex-layout.col#col-wrapper-11": {
         "children": [
             "container#custom-block__slider-photo-grid"
         ]
     },
-    //
+    // Wrapper END
 
     "container#custom-block__slider-photo-grid": {
         "title": "Grid - Fotos Ambientadas",
@@ -32,22 +42,22 @@
             "height": "680px",
             "experimentalSetExplicitDimensions": true,
             "images": [{
-                    "image": "https://dummyimage.com/383x680/6c757d",
-                    "mobileImage": "https://dummyimage.com/383x680/6c757d", // Ver dimensão do banner mobile
+                    "image": "https://dummyimage.com/383x680",
+                    "mobileImage": "https://dummyimage.com/383x680",
                     "width": "383px",
                     "description": "atributo alt",
                     "loading": "lazy"
                 },
                 {
-                    "image": "https://dummyimage.com/383x680/6c757d",
-                    "mobileImage": "https://dummyimage.com/383x680/6c757d", // Ver dimensão do banner mobile
+                    "image": "https://dummyimage.com/383x680",
+                    "mobileImage": "https://dummyimage.com/383x680",
                     "width": "383px",
                     "description": "atributo alt",
                     "loading": "lazy"
                 },
                 {
-                    "image": "https://dummyimage.com/383x680/6c757d",
-                    "mobileImage": "https://dummyimage.com/383x680/6c757d", // Ver dimensão do banner mobile
+                    "image": "https://dummyimage.com/383x680",
+                    "mobileImage": "https://dummyimage.com/383x680",
                     "width": "383px",
                     "description": "atributo alt",
                     "loading": "lazy"
@@ -64,7 +74,6 @@
                 "phone": 1
             },
             "showNavigationArrows": "desktopOnly",
-            //"usePagination": false, - Propriedade interessante para criar 'slides' para mobile, mais leves e sem o classico slick carousel - usar em outros elemementos
             "dots": true,
             "infinite": true,
             "blockClass": ["slider-custom", "slider__custom-photo-grid"]

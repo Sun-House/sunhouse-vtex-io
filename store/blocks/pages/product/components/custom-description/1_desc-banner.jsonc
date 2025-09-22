@@ -1,11 +1,21 @@
 {
-    "flex-layout.row#line-wrapper-1": {
+    // Wrapper START
+    "container#line-wrapper-1": {
         "title": "Bloco 1",
+        "children": [
+            "flex-layout.row#line-wrapper-1"
+        ],
+        "props": {
+            "blockClass": "line-wrapper"
+        }
+    },
+    "flex-layout.row#line-wrapper-1": {
         "children": [
             "flex-layout.col#col-wrapper-1"
         ],
         "props": {
-            "blockClass": ["line-wrapper", "desc-banner"]
+            "blockClass": "line-wrapper"
+            // "blockClass": ["line-wrapper", "line-wrapper-odd"]
         }
     },
     "flex-layout.col#col-wrapper-1": {
@@ -13,7 +23,7 @@
             "container#custom-block__desc-banner"
         ]
     },
-    //
+    // Wrapper END
 
     "container#custom-block__desc-banner": {
         "title": "Descricao com Banner",
@@ -55,8 +65,8 @@
     "rich-text#desc-banner__textoDescricao": {
         "title": "Descricao Texto",
         "props": {
-            "text": "## Nome do Produto \n **Texto em Negrito** e [link exemplo](https://www.example.com). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab!",
-            "blockClass": ["wrapper__textoDescricao-esquerda"]
+            "text": "## Nome do Produto\n**Texto em Negrito** e [link exemplo](https://www.example.com). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit!",
+            "blockClass": ["wrapper__textoDescricao-esquerda", "pdp-h2-title"]
         }
     },
     "list-context.image-list#desc-banner__imagemDescricao": {

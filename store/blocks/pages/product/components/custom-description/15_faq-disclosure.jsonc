@@ -1,19 +1,29 @@
 {
-    "flex-layout.row#line-wrapper-8": {
-        "title": "Bloco 7",
+    // Wrapper START
+    "container#line-wrapper-15": {
+        "title": "Bloco 15",
         "children": [
-            "flex-layout.col#col-wrapper-8"
+            "flex-layout.row#line-wrapper-15"
         ],
         "props": {
-            "blockClass": ["line-wrapper"]
+            "blockClass": "line-wrapper"
         }
     },
-    "flex-layout.col#col-wrapper-8": {
+    "flex-layout.row#line-wrapper-15": {
+        "children": [
+            "flex-layout.col#col-wrapper-15"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper", "faq-disclosure"]
+            // "blockClass": ["line-wrapper", "line-wrapper-odd"]
+        }
+    },
+    "flex-layout.col#col-wrapper-15": {
         "children": [
             "container#custom-block__wrapper-faq-disclosure"
         ]
     },
-    //
+    // Wrapper END
 
     "container#custom-block__wrapper-faq-disclosure": {
         "title": "FAQ - Perguntas Frequentes PDP",
@@ -65,7 +75,6 @@
         ],
         "props": {
             "blockClass": "faq-disclosure-line",
-            //"animated": true,
             "initialVisibility": "hidden"
         }
     },
@@ -109,7 +118,6 @@
         ],
         "props": {
             "blockClass": "faq-disclosure-line",
-            //"animated": true,
             "initialVisibility": "hidden"
         }
     },
@@ -153,7 +161,6 @@
         ],
         "props": {
             "blockClass": "faq-disclosure-line",
-            //"animated": true,
             "initialVisibility": "hidden"
         }
     },
@@ -197,7 +204,6 @@
         ],
         "props": {
             "blockClass": "faq-disclosure-line",
-            //"animated": true,
             "initialVisibility": "hidden"
         }
     },
@@ -241,7 +247,6 @@
         ],
         "props": {
             "blockClass": "faq-disclosure-line",
-            //"animated": true,
             "initialVisibility": "hidden"
         }
     },
@@ -285,7 +290,6 @@
         ],
         "props": {
             "blockClass": "faq-disclosure-line",
-            //"animated": true,
             "initialVisibility": "hidden"
         }
     },
@@ -329,7 +333,6 @@
         ],
         "props": {
             "blockClass": "faq-disclosure-line",
-            //"animated": true,
             "initialVisibility": "hidden"
         }
     },

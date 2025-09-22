@@ -177,10 +177,10 @@
     max-height: 1000px
 }
 
-.content--product-page-description--visible:nth-child(odd),
+/* .content--product-page-description--visible:nth-child(odd),
 .content--product-page-specifications--visible:nth-child(odd) {
     background-color: #f7f7f7
-}
+} */
 
 .content--installments {
     border-radius: 10px;
@@ -216,7 +216,9 @@
     margin-top: 10px
 }
 
+/* Mobile */
 @media screen and (max-width: 1024px) {
+
     .content--footer-about {
         padding: 0 42px
     }
@@ -227,11 +229,16 @@
 
     .content--product-page-description--visible,
     .content--product-page-specifications--visible {
-        max-height: unset;
-        margin-bottom: 24px
+        max-height: unset
+        /* margin-bottom: 24px */
     }
 
     .trigger--footer-about {
         width: -webkit-fill-available /* Pode ocorrer erros em alguns navegadores mobile */
     }
+
+    .content--product-page-specs {
+        margin-bottom: 24px
+    }
+
 }

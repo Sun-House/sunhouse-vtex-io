@@ -1,20 +1,30 @@
 {
-    "flex-layout.row#line-wrapper-x2": {
-        "title": "[TESTES] Bloco x2",
+    // Wrapper START
+    "container#line-wrapper-13": {
+        "title": "Bloco 13",
         "children": [
-            "flex-layout.col#col-wrapper-x2"
+            "flex-layout.row#line-wrapper-13"
+        ],
+        "props": {
+            "blockClass": "line-wrapper"
+        }
+    },
+    "flex-layout.row#line-wrapper-13": {
+        "children": [
+            "flex-layout.col#col-wrapper-13"
         ],
         "props": {
             "blockClass": ["line-wrapper", "banner-fulfill_v2"]
+            // "blockClass": ["line-wrapper", "line-wrapper-odd", "banner-fulfill_v2"]
         }
     },
-    "flex-layout.col#col-wrapper-x2": {
+    "flex-layout.col#col-wrapper-13": {
         "children": [
             "container#lp_banner-fulfill_v2"
         ]
     },
+    // Wrapper END
 
-    // Banner Fulfill
     "container#lp_banner-fulfill_v2": {
         "title": "Banner Fulfill v2",
         "children": [
@@ -28,10 +38,10 @@
         "title": "Imagem Única",
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/1920x599",
-                "mobileImage": "https://dummyimage.com/360x640" // OK Manter
+                "image": "https://dummyimage.com/1920x599/6c757d/343a40",
+                "mobileImage": "https://dummyimage.com/360x640/6c757d/343a40"
             }],
-            "blockClass": "banner-fulfill_v2"
+            "blockClass": ["custom-pdp_image", "banner-fulfill_v2"]
         },
         "children": [
             "container.list-render#lp_banner-fulfill_v2"
@@ -39,7 +49,7 @@
     },
     "container.list-render#lp_banner-fulfill_v2": {
         "props": {
-            "blockClass": "banner-fulfill_v2"
+            "blockClass": ["custom-pdp_image", "banner-fulfill_v2"]
         }
     }
 }

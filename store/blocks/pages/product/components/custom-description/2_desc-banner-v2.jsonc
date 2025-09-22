@@ -1,0 +1,49 @@
+{
+    // Wrapper START
+    "container#line-wrapper-2": {
+        "title": "Bloco 2",
+        "children": [
+            "flex-layout.row#line-wrapper-2"
+        ],
+        "props": {
+            "blockClass": "line-wrapper"
+        }
+    },
+
+    "flex-layout.row#line-wrapper-2": {
+        "children": [
+            "flex-layout.col#col-wrapper-2"
+        ],
+        "props": {
+            "blockClass": "line-wrapper"
+            // "blockClass": ["line-wrapper", "line-wrapper-odd"]
+        }
+    },
+    "flex-layout.col#col-wrapper-2": {
+        "children": [
+            "container#desc-banner_v2"
+        ]
+    },
+    // Wrapper END
+
+    "container#desc-banner_v2": {
+        "title": "Wrapper Imagem Destaque",
+        "children": [
+            "rich-text#desc-banner_v2_text",
+            "list-context.image-list#lp_grow-block-image-highlight-image" // Herda da LP Elements -> Esta com um border-radius de 32px - Pode ser necessario alterar, e se for, precisara recriar o elemento
+        ],
+        "props": {
+            "blockClass": ["custom-block__container", "desc-banner_v2", "lp_grow-block-image-highlight"]
+        }
+    },
+
+    "rich-text#desc-banner_v2_text": {
+        "title": "Texto Acima",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2\nBreve texto explicativo de até três linhas (mas ideal manter até duas linhas de conteúdo).",
+            "blockClass": ["pdp-h2-title", "lp_text-block"]
+        }
+    }
+}

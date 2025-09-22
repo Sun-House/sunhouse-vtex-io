@@ -1,0 +1,13 @@
+/* Force Desktop */
+@media screen and (min-width: 1025px) {
+
+    /* Ajusta imagens para caberem dentro do quadrante padrao da PDP */
+    /* Sem quebrar posicionamento ou tamanho do frame de imagem */
+    .container--product-medias {
+        display: flex;
+        justify-content: center;
+        min-width: 500px;
+        min-height: 500px
+    }
+
+}

@@ -1,0 +1,132 @@
+{
+    // Wrapper START
+    "container#line-wrapper-6": {
+        "title": "Bloco 6",
+        "children": [
+            "flex-layout.row#line-wrapper-6"
+        ],
+        "props": {
+            "blockClass": "line-wrapper"
+        }
+    },
+    "flex-layout.row#line-wrapper-6": {
+        "children": [
+            "flex-layout.col#col-wrapper-6"
+        ],
+        "props": {
+            // "blockClass": "line-wrapper"
+            "blockClass": ["line-wrapper", "line-wrapper-odd"]
+        }
+    },
+    "flex-layout.col#col-wrapper-6": {
+        "children": [
+            "container#mosaic-w-text"
+        ]
+    },
+    // Wrapper END
+    
+    "container#mosaic-w-text": {
+        "title": "Mosaico com Textos",
+        "children": [
+            "rich-text#mosaic-upper-text",
+            "list-context.image-list#mosaic-w-text_image-1-wide",
+            "flex-layout.row#mosaic-w-text-wrapper"
+        ],
+        "props": {
+            "blockClass": ["custom-block__container", "mosaic-w-text"]
+        }
+    },
+
+    "rich-text#mosaic-upper-text": {
+        "title": "Texto Acima",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2\nBreve texto explicativo de um linha (ideal manter até duas linhas de conteúdo máximo).",
+            "blockClass": ["pdp-h2-title", "lp_text-block"]
+        }
+    },
+
+    "list-context.image-list#mosaic-w-text_image-1-wide": {
+        "title": "Imagem Única",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/1220x559/343a40/6c757d", 
+                "mobileImage": "https://dummyimage.com/1220x559/343a40/6c757d" // Validar medida mobile
+            }],
+            "blockClass": ["custom-pdp_image"]
+        },
+        "children": [
+            "container.list-render#mosaic-w-text_image-1-wide"
+        ]
+    },
+    "container.list-render#mosaic-w-text_image-1-wide": {
+        "props": {
+            "blockClass": ["custom-pdp_image"]
+        }
+    },
+
+    // Sistema de flex col com divisão ambigua entre as colunas
+    "flex-layout.row#mosaic-w-text-wrapper": {
+        "title": "Wrapper Linha",
+        "children": [
+            "flex-layout.col#mosaic-w-text_col-1",
+            "flex-layout.col#mosaic-w-text_col-2"
+        ],
+        "props": {
+            "colSizing": "equal",
+            "preventVerticalStretch": true,
+            "blockClass": "mosaic-w-text-wrapper"
+        }
+    },
+
+    "flex-layout.col#mosaic-w-text_col-1": {
+        "title": "Wrapper Coluna 1",
+        "children": [
+            "rich-text#mosaic-w-text_col-1_text"
+        ],
+        "props": {
+            "width": "40%",
+            "verticalAlign": "middle",
+            "blockClass": "mosaic-w-text_col-1_text"
+        }
+    },
+    "rich-text#mosaic-w-text_col-1_text": {
+        "title": "Texto Esquerda",
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER",
+            "text": "### Título H3\nBreve texto explicativo de até duas linhas\n- Lista item 1;\n- Lista item 2;\n- Lista item 3.",
+            "blockClass": ["pdp-h3-title", "mosaic-w-text_col-1_text", "lp_text-block"]
+        }
+    },
+
+    "flex-layout.col#mosaic-w-text_col-2": {
+        "title": "Wrapper Coluna 2",
+        "children": [
+            "list-context.image-list#mosaic-w-text_image-2-normal"
+        ],
+        "props": {
+            "width": "grow",
+            "blockClass": ""
+        }
+    },
+    "list-context.image-list#mosaic-w-text_image-2-normal": {
+        "title": "Imagem Direita",
+        "props": {
+            "images": [{
+                "image": "https://dummyimage.com/732x522/343a40/6c757d",
+                "mobileImage": "https://dummyimage.com/732x522/343a40/6c757d"
+            }],
+            "blockClass": ["custom-pdp_image"]
+        },
+        "children": [
+            "container.list-render#mosaic-w-text_image-2-normal"
+        ]
+    },
+    "container.list-render#mosaic-w-text_image-2-normal": {
+        "props": {
+            "blockClass": ["custom-pdp_image"]
+        }
+    }
+}

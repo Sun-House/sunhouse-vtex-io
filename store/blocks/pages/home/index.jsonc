@@ -11,13 +11,11 @@
       "container#spacing-default",
       "list-context.image-list#banner-grid",
       "container#spacing-default",
-      "flex-layout.row#shelf-home02",
+      "container#shelf-home02",
+      "container#shelf-home03",
       "container#spacing-default",
-      // Esse bloco precisa de ajustes visuais e aprovação da diretoria
       // "flex-layout.row#shelf-banner-desktop",
       // "container#spacing-default",
-      //
-      // Trustvox:
       "flex-layout.row#trustvox-colt-highlight",
       "container#spacing-default",
       //

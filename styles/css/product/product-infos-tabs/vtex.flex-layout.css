@@ -1,3 +1,8 @@
-.flexRow--product-tab-specs-table:nth-child(odd) {
-    background-color: #f7f7f7
+/* Force Desktop */
+@media screen and (min-width: 1025px) {
+    
+    .flexRow--product-tab-specs-table:nth-child(odd) {
+        background-color: #f7f7f7
+    }
+
 }

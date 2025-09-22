@@ -1,0 +1,140 @@
+{
+    // Wrapper START
+    "container#line-wrapper-7": {
+        "title": "Bloco 7",
+        "children": [
+            "flex-layout.row#line-wrapper-7"
+        ],
+        "props": {
+            "blockClass": "line-wrapper"
+        }
+    },
+    "flex-layout.row#line-wrapper-7": {
+        "children": [
+            "flex-layout.col#col-wrapper-7"
+        ],
+        "props": {
+            "blockClass": "line-wrapper"
+            // "blockClass": ["line-wrapper", "line-wrapper-odd"]
+        }
+    },
+    "flex-layout.col#col-wrapper-7": {
+        "children": [
+            "container#photo-grid-mosaic_1"
+        ]
+    },
+    // Wrapper END
+
+    "container#photo-grid-mosaic_1": {
+        "title": "Photo Grid Mosaico 1",
+        "children": [
+            "rich-text#photo-grid-mosaic_1-text",
+            "flex-layout.row#photo-grid-mosaic-wrapper"
+        ],
+        "props": {
+            "blockClass": ["custom-block__container", "custom-block__photo-grid-mosaic", "custom-block__photo-grid-mosaic_1"]
+        }
+    },
+    
+    "rich-text#photo-grid-mosaic_1-text": {
+        "title": "Texto Acima",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2\nBreve texto explicativo de um linha (ideal manter até duas linhas de conteúdo máximo).",
+            "blockClass": ["photo-grid-mosaic-text", "photo-grid-mosaic_1-text", "pdp-h2-title", "lp_text-block"]
+        }
+    },
+
+    // Sistema de flex col com divisão ambigua entre as colunas
+    "flex-layout.row#photo-grid-mosaic-wrapper": {
+        "title": "Wrapper Linha",
+        "children": [
+            "flex-layout.col#photo-grid-mosaic_col-1",
+            "flex-layout.col#photo-grid-mosaic_col-2"
+        ],
+        "props": {
+            "blockClass": "photo-grid-mosaic-wrapper"
+        }
+    },
+
+    // Col 1
+    "flex-layout.col#photo-grid-mosaic_col-1": {
+        "title": "Wrapper Coluna 1",
+        "children": [
+            "list-context.image-list#photo-grid-mosaic_1"
+        ],
+        "props": {
+            "width": "55%",
+            "blockClass": "photo-grid-mosaic_col-1"
+        }
+    },
+    "list-context.image-list#photo-grid-mosaic_1": {
+        "title": "Imagens Grid",
+        "props": {
+            "images": [
+                {
+                    "image": "https://dummyimage.com/220x220",
+                    "mobileImage": "https://dummyimage.com/220x220",
+                    "link": {
+                        "url": "#"
+                    }
+                },
+                {
+                    "image": "https://dummyimage.com/220x220",
+                    "mobileImage": "https://dummyimage.com/220x220",
+                    "link": {
+                        "url": "#"
+                    }
+                },
+                {
+                    "image": "https://dummyimage.com/468x223",
+                    "mobileImage": "https://dummyimage.com/468x223",
+                    "link": {
+                        "url": "#"
+                    }
+                }
+            ]
+        },
+        "children": [
+            "container.list-render#photo-grid-mosaic_1"
+        ]
+    },
+    "container.list-render#photo-grid-mosaic_1": {
+        "props": {
+            "wrapper": true,
+            "blockClass": ["custom-pdp_image", "photo-grid-mosaic", "photo-grid-mosaic_col-1"]
+        }
+    },
+
+    // Col 2
+    "flex-layout.col#photo-grid-mosaic_col-2": {
+        "title": "Wrapper Coluna 2",
+        "children": [
+            "list-context.image-list#photo-grid-mosaic_image-2-larger"
+        ],
+        "props": {
+            "marginLeft": "7",
+            "blockClass": "photo-grid-mosaic_col-2"
+        }
+    },
+    "list-context.image-list#photo-grid-mosaic_image-2-larger": {
+        "title": "Imagem Única",
+        "props": {
+            "images": [
+                {
+                "image": "https://dummyimage.com/351x473",
+                "mobileImage": "https://dummyimage.com/351x473" // Validar medida mobile
+                }
+            ]
+        },
+        "children": [
+            "container.list-render#photo-grid-mosaic_image-2-larger"
+        ]
+    },
+    "container.list-render#photo-grid-mosaic_image-2-larger": {
+        "props": {
+            "blockClass": ["custom-pdp_image", "photo-grid-mosaic", "photo-grid-mosaic_col-2"]
+        }
+    }
+}

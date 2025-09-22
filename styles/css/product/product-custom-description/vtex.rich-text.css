@@ -17,12 +17,13 @@
 
 .wrapper--wrapper__textoDescricao-esquerda .heading {
     margin-bottom: 25px !important;
-    text-transform: uppercase;
-    font-size: 1.75rem
+    /* text-transform: uppercase;
+    font-size: 1.75rem */
 }
 
 .wrapper--wrapper__textoDescricao-esquerda .paragraph {
-    line-height: 1.25;
+    /* line-height: 1.25; */
+    line-height: 1.5;
     text-align: justify
 }
 
@@ -43,7 +44,7 @@
 }
 
 .wrapper--text-summary__text .paragraph {
-    line-height: 1.35;
+    line-height: 1.5;
     font-size: 20px
 }
 
@@ -58,7 +59,11 @@
     max-width: 520px;
     margin: 0 auto;
     margin-bottom: 18px !important;
-    font-size: 38px
+    /* font-size: 38px; */
+    font-size: 2.3rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000
 }
 
 .wrapper--wrapper__custom-description-title .paragraph {
@@ -70,12 +75,17 @@
 }
 
 .wrapper--wrapper__custom-description-text .heading {
-    font-size: 1.6rem;
-    margin-bottom: 12px !important
+    /* font-size: 1.6rem;
+    margin-bottom: 12px !important */
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    line-height: 40px;
+    margin-top: 28px;
+    margin-bottom: 28px
 }
 
 .wrapper--wrapper__custom-description-text .paragraph {
-    line-height: 1.35
+    line-height: 1.5
 }
 
 /* FAQ */
@@ -86,28 +96,79 @@
 
 .wrapper--faq-disclosure-line__text .paragraph {
     margin-top: 18px;
-    line-height: 1.35;
+    /* line-height: 1.35; */
+    line-height: 1.5;
     border: none
 }
 
-/* Novos Blocos Edson */
-.headingLevel2--desc-banner_v2_text {
+/* Novos Blocos Edson START */
+.headingLevel2--pdp-h2-title,
+.headingLevel3--pdp-h3-title {
     text-transform: uppercase;
-    font-size: 2.3rem;
     font-weight: 700;
     color: #000
 }
-/**/
+
+.headingLevel3--pdp-h3-subtitle {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #323232
+}
+
+.headingLevel2--pdp-h2-title {
+    font-size: 2.3rem
+}
+
+.headingLevel3--pdp-h3-title {
+    font-size: 1.84rem
+}
+
+.headingLevel3--pdp-h3-subtitle {
+    font-size: 2.1rem;
+    line-height: 40px;
+    margin-bottom: 28px
+}
+
+.list--mosaic-w-text_col-1_text {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    padding-left: 18px !important
+}
+
+.wrapper--photo-grid-mosaic-text {
+    max-width: 740px
+}
+
+.headingLevel2--photo-grid-mosaic-text {
+    line-height: 44px
+}
+
+.wrapper--feature-card-v2_text {
+    margin: 0 30px
+}
+
+.paragraph--feature-card-v2_text {
+    line-height: 1.5
+}
+/* Novos Blocos Edson END */
+
 
 @media screen and (max-width: 1024px) {
+
     /* Titulo Bloco Descricao com Foto */
     .wrapper--wrapper__textoDescricao-esquerda .heading {
-        font-size: 26px
+        /* font-size: 26px; */
+        text-align: center;
+        line-height: 40px
     }
 
     /* Titulo solto para Blocos */
     .wrapper--wrapper__custom-description-title .heading {
-        font-size: 24px
+        font-size: 24px;
+        text-align: center
     }
 
     /* FAQ*/
@@ -120,4 +181,20 @@
     .wrapper--faq-disclosure-line__text .paragraph {
         font-size: 15px !important
     }
+
+    /* Novos Blocos Edson START */
+    .headingLevel3--mosaic-w-text_col-1_text,
+    .paragraph--mosaic-w-text_col-1_text {
+        text-align: center
+    }
+    
+    /* Pode bugar em alguns casos, mas eu preferi manter a lista mais para a esquerda
+    .list--mosaic-w-text_col-1_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 !important
+    } */
+    /* Novos Blocos Edson END */
+
 }

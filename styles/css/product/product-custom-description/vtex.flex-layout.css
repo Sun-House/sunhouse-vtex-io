@@ -25,25 +25,18 @@
     margin-left: 24px
 }
 
+.flexRow--text-summary2 {
+    padding-bottom: 0 !important
+}
 
-/* In DEV */
+/* Novos Blocos Edson START */
 .flexRow--line-wrapper {
-    width: 100vw; /* ocupa 100% da viewport */
-    margin-left: calc(-50vw + 50%); /* "compensa" o container centralizado */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     padding: 32px 0
-    /* DEBUG: */
-    ;background: #0000ff69
 }
-
-/* DEBUG */
-.flexRow--line-wrapper-white {
-    background: #fff !important
-}
-/* DEBUG */
 
 .flexRow--line-wrapper-odd {
-    /* DEBUG:
-    background: #ffaaa4e7 */
     background: #c9c8c8
 }
 
@@ -55,11 +48,85 @@
     padding: 0 !important
 }
 
+.flexRow--mosaic-w-text-wrapper {
+    margin-top: 32px
+}
+
+.flexCol--mosaic-w-text_col-1_text {
+    /* max-width: 70%; */
+    padding: 0px 72px
+}
+
+.flexRow--text-highlight {
+    padding: 0 !important
+}
+
+.flexCol--photo-grid-mosaic_col-2 {
+    max-height: 669px
+}
+/* Novos Blocos Edson END */
+
 /* Force Desktop */
 @media screen and (min-width: 1025px) {
 
     .flexRow--banner-fulfill-mobile {
         display: none
     }
+
+    .flexRow--photo-grid-mosaic_2 {
+        margin-bottom: -48px
+    }
+
+    .flexRow--faq-disclosure {
+        margin-top: 48px
+    }
+
+    /* Novos Blocos Edson START */
+    .flexRow--photo-grid-mosaic-wrapper {
+        /* padding-bottom: 56px; */
+        margin: 0 184px;
+        height: 473px;
+        overflow: hidden
+    }
+    /* Novos Blocos Edson END */
+
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    .flexRow--banner-fulfill-desk {
+        display: none
+    }
+
+    .flexRow--text-summary2 {
+        padding-top: 0 !important
+    }
+    
+    /* Novos Blocos Edson START */
+    /* .vtex-flex-layout-0-x-flexRow--line-wrapper { */
+    .flexRow--line-wrapper {
+        /* DEBUG */
+        /* background: #088700 !important; */
+        /* DEBUG */
+        
+        width: 103vw;
+        padding-left: 18px;
+        padding-right: 18px
+    }
+
+    .flexCol--mosaic-w-text_col-1_text {
+        padding: 0px 28px
+    }
+
+    .flexRow--text-highlight {
+        padding: 0 28px !important
+    }
+
+    .flexCol--photo-grid-mosaic_col-2 {
+        margin: 0 auto;
+        padding-top: 12px
+    }
+    /* Novos Blocos Edson END */
 
 }

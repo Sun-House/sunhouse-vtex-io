@@ -1,7 +1,7 @@
 {
   // shelf home01
   "flex-layout.row#shelf-home01": {
-    "title": "Prateleira 01 container",
+    "title": "Prateleira 1 - Container",
     "children": ["flex-layout.col#shelf-home01"],
     "props": {
       "blockClass": ["shelf-home01", "shelf-container"],
@@ -10,7 +10,7 @@
   },
 
   "flex-layout.col#shelf-home01": {
-    "title": "Prateleira 01",
+    "title": "Prateleira 1",
     "children": ["rich-text#shelf-home01", "hover-container#shelf-home01"],
     "props": {
       "blockClass": "shelf-home01"
@@ -18,7 +18,7 @@
   },
 
   "rich-text#shelf-home01": {
-    "title": "Prateleira 01 título",
+    "title": "Prateleira 1 - Título",
     "props": {
       "text": "## Os mais vendidos\nUma seleção dos queridinhos",
       "blockClass": ["shelf-home01", "common-title"]
@@ -33,7 +33,7 @@
   },
 
   "list-context.product-list#shelf-home01": {
-    "title": "Lista de produto 01",
+    "title": "Lista de Produtos 1",
     "blocks": ["product-summary.shelf#main-product"],
     "children": [
       "responsive-layout.desktop#shelf-slider",
@@ -44,10 +44,22 @@
     }
   },
 
-  // shelf home02
+  // Shelf Home 2
+  "container#shelf-home02": {
+    "title": "Wrapper - Prateleira 2",
+    "children": [
+      "flex-layout.row#shelf-home02"
+    ],
+    "props": {
+      "blockClass": "wrapper__shelf-home02"
+    }
+  },
+
   "flex-layout.row#shelf-home02": {
-    "title": "Prateleira 02 container",
-    "children": ["flex-layout.col#shelf-home02"],
+    "title": "Prateleira 2 - Container",
+    "children": [
+      "flex-layout.col#shelf-home02"
+    ],
     "props": {
       "blockClass": ["shelf-home02", "shelf-container"],
       "fullWidth": true
@@ -55,30 +67,35 @@
   },
 
   "flex-layout.col#shelf-home02": {
-    "title": "Prateleira 02",
-    "children": ["rich-text#shelf-home02", "hover-container#shelf-home02"],
+    "title": "Prateleira 2",
+    "children": [
+      "rich-text#shelf-home02",
+      "hover-container#shelf-home02"
+    ],
     "props": {
       "blockClass": "shelf-home02"
     }
   },
 
   "rich-text#shelf-home02": {
-    "title": "Prateleira 02 título",
+    "title": "Prateleira 2 - Título",
     "props": {
-      "text": "## Novidades\nFique por dentro das tendências",
+      "text": "## Pronta Entrega\nCompre agora e receba super rápido!",
       "blockClass": ["shelf-home02", "common-title"]
     }
   },
 
   "hover-container#shelf-home02": {
-    "children": ["list-context.product-list#shelf-home02"],
+    "children": [
+      "list-context.product-list#shelf-home02"
+    ],
     "props": {
       "blockClass": ["shelf-home02", "hover-shelf-list"]
     }
   },
 
   "list-context.product-list#shelf-home02": {
-    "title": "Lista de produto 02",
+    "title": "Lista de Produtos 2",
     "blocks": ["product-summary.shelf#main-product"],
     "children": [
       "responsive-layout.desktop#shelf-slider",
@@ -90,13 +107,12 @@
   },
 
   // shelf slider
-
   "responsive-layout.desktop#shelf-slider": {
     "children": ["slider-layout#main-shelf"]
   },
 
   "slider-layout#main-shelf": {
-    "title": "Carossel das prateleiras ",
+    "title": "Carossel das Prateleiras",
     "props": {
       "itemsPerPage": {
         "desktop": 4
@@ -139,6 +155,67 @@
         "align": "start"
       },
       "blockClass": ["shelf", "banner-shelf", "shelf--mobile"]
+    }
+  },
+
+  // Shelf Home 3
+  "container#shelf-home03": {
+    "title": "Wrapper - Prateleira 3",
+    "children": [
+      "flex-layout.row#shelf-home03"
+    ],
+    "props": {
+      "blockClass": "wrapper__shelf-home03"
+    }
+  },
+
+  "flex-layout.row#shelf-home03": {
+    "title": "Prateleira 3 - Container",
+    "children": [
+      "flex-layout.col#shelf-home03"
+    ],
+    "props": {
+      "blockClass": ["shelf-home03", "shelf-container"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#shelf-home03": {
+    "title": "Prateleira 3",
+    "children": [
+      "rich-text#shelf-home03",
+      "hover-container#shelf-home03"
+    ],
+    "props": {
+      "blockClass": "shelf-home03"
+    }
+  },
+
+  "rich-text#shelf-home03": {
+    "title": "Prateleira 3 - Título",
+    "props": {
+      "text": "## Lançamentos\nDescubra as novidades da Sun House",
+      "blockClass": ["shelf-home03", "common-title"]
+    }
+  },
+
+  "hover-container#shelf-home03": {
+    "children": [
+      "list-context.product-list#shelf-home03"
+    ],
+    "props": {
+      "blockClass": ["shelf-home03", "hover-shelf-list"]
+    }
+  },
+
+  "list-context.product-list#shelf-home03": {
+    "title": "Lista de Produtos 3",
+    "blocks": ["product-summary.shelf#main-product"],
+    "children": [
+      "responsive-layout.desktop#shelf-slider",
+      "responsive-layout.mobile#shelf-slider"
+    ],
+    "props": {
+      "maxItems": 10
     }
   }
 }

@@ -12,8 +12,6 @@
         "children": [
             "container#product-description-simple",
             "container#product-description-custom"
-            // In DEV
-            // ,"container#product-description-custom_v2"
         ],
         "props": {
             "blockClass": "product-description-wrapper"
@@ -62,52 +60,22 @@
     },
     "flex-layout.col#product-description-custom": {
         "children": [
-            "flex-layout.row#line-wrapper-1", // "container#custom-block__desc-banner",
-            
-            // novo bloco edson #1
-            "flex-layout.row#line-wrapper-x3", // "container#custom-block__desc-banner_v2", --> CRIAR
-            // Usando o bloco da LP Elements -> lp_grow-block-image-highlight -> DEU CERTO!!
-            //
-
-            "flex-layout.row#line-wrapper-2", //"container#custom-block__text-summary",
-            "flex-layout.row#line-wrapper-3", // "container#custom-block__banner-fulfill",
-            "flex-layout.row#line-wrapper-4", // "container#custom-block__banner-fulfill-mob",
-            
-            // novo bloco edson #2
-            "flex-layout.row#line-wrapper-x", // "container#custom-block__mosaic-w-text", --> CRIAR
-            //
-
-            // novo bloco edson #3
-            "flex-layout.row#line-wrapper-x", // "container#custom-block__photo-grid-mosaic_1", --> CRIAR
-            //
-
-            "flex-layout.row#line-wrapper-5", // "container#custom-block__feature-cards",
-            
-            // novo bloco edson #4
-            "flex-layout.row#line-wrapper-x", // "container#custom-block__feature-cards_v2", --> TENTAR COPIAR A BASE DO FEATURE-CARDS ORIGINAL
-            //
-
-            "flex-layout.row#line-wrapper-6", // "container#custom-block__text-summary2",
-            "flex-layout.row#line-wrapper-7", // "container#custom-block__slider-photo-grid",
-            
-            // novo bloco edson #5
-            "flex-layout.row#line-wrapper-x1", // "container#custom-block__text-summary_v2", --> TENTAR COPIAR A BASE DO TEXT-SUMMARY ORIGINAL
-            // "container#lp_wide-highlights" -> Ver se esse vai se encaixar certinho -> DEU CERTO!!
-            //
-
-            // novo bloco edson #6
-            "flex-layout.row#line-wrapper-x2", // "container#custom-block__banner-fulfill_v2", --> TENTAR COPIAR A BASE DO BANNER-FULFILL ORIGINAL
-            // "container#lp_banner-hero" -> Ver se esse vai se encaixar certinho -> DEU CERTO!!
-            //
-
-            // novo bloco edson #7
-            "flex-layout.row#line-wrapper-x", // "container#custom-block__photo-grid-mosaic_2", --> CRIAR
-            //
-
-            "flex-layout.row#line-wrapper-8" // "container#custom-block__wrapper-faq-disclosure"
-            
-            // esse bloco ainda esta em DEV:
-            // ,"flex-layout.row#line-wrapper-9"
+            "container#line-wrapper-1",
+            "container#line-wrapper-2",
+            "container#line-wrapper-3",
+            "container#line-wrapper-4",
+            "container#line-wrapper-5",
+            "container#line-wrapper-6",
+            "container#line-wrapper-7",
+            "container#line-wrapper-8",
+            "container#line-wrapper-9",
+            "container#line-wrapper-10",
+            "container#line-wrapper-11",
+            "container#line-wrapper-12",
+            "container#line-wrapper-13",
+            "container#line-wrapper-14",
+            "container#line-wrapper-15" // Bloco da FAQ - conforme task da liveSEO, preciso mover esse para outra parte da PDP e desvincular da custom description, pois será para todos os produtos
+            // "container#line-wrapper-16"
         ],
         "props": {
             "blockClass": ["blocks__product-description-custom", "product-custom-description_col-wrapper"]

@@ -5,7 +5,8 @@
 }
 
 .imageElement--slider__custom-photo-grid {
-    border-radius: 8px
+    /* border-radius: 8px */
+    border-radius: 32px
 }
 .imageElement--slider-custom {
     transition: .2s ease
@@ -40,8 +41,14 @@
 
 /* Mobile */
 @media screen and (max-width: 1024px) {
+
     .sliderLayoutContainer--slider__custom-photo-grid {
-        margin-top: 24px
+        margin-top: 24px;
+        margin-left: 0
+    }
+
+    .slideChildrenContainer--slider__feature-cards_text {
+        margin-bottom: 28px
     }
 
     .paginationDotsContainer--slider__feature-cards_text {
@@ -52,4 +59,15 @@
         margin-right: unset;
         margin-bottom: 24px
     }
+
+    /* Novos Blocos Edson START */
+    .sliderTrackContainer--slider__feature-cards {
+        margin-left: 12px
+    }
+
+    .sliderTrackContainer--slider__feature-cards-v2 {
+        margin-right: 12px !important
+    }
+    /* Novos Blocos Edson END */
+
 }

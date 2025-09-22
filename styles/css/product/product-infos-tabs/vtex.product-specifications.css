@@ -1,0 +1,8 @@
+/* Mobile */
+@media screen and (max-width: 1024px) {
+    
+    .specificationName {
+        background-color: #f7f7f7
+    }
+
+}

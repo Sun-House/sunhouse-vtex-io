@@ -1,21 +1,30 @@
 {
-    "flex-layout.row#line-wrapper-3": {
-        "title": "Bloco 3",
+    // Wrapper START
+    "container#line-wrapper-4": {
+        "title": "Bloco 4",
         "children": [
-            "flex-layout.col#col-wrapper-3"
+            "flex-layout.row#line-wrapper-4"
         ],
         "props": {
-            "blockClass": ["line-wrapper", "line-wrapper-odd"]
+            "blockClass": "line-wrapper"
         }
     },
-    "flex-layout.col#col-wrapper-3": {
+    "flex-layout.row#line-wrapper-4": {
+        "children": [
+            "flex-layout.col#col-wrapper-4"
+        ],
+        "props": {
+            // "blockClass": "line-wrapper"
+            "blockClass": ["line-wrapper", "line-wrapper-odd", "banner-fulfill-desk"]
+        }
+    },
+    "flex-layout.col#col-wrapper-4": {
         "children": [
             "container#custom-block__banner-fulfill"
         ]
     },
-    //
-
-
+    // Wrapper END
+    
     "container#custom-block__banner-fulfill": {
         "title": "Banner Tela Completa Desktop",
         "children": [
@@ -28,8 +37,8 @@
     "list-context.image-list#banner-fulfill": {
         "props": {
             "images": [{
-                "image": "https://dummyimage.com/1174x643/6c757d",
-                "mobileImage": "https://dummyimage.com/376x480"
+                "image": "https://dummyimage.com/1174x643/343a40/6c757d",
+                "mobileImage": "https://dummyimage.com/376x480/343a40/6c757d"
             }],
             "blockClass": "banner-fulfill"
         },

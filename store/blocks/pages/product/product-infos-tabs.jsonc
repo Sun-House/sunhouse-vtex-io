@@ -24,6 +24,7 @@
         "children": [
             "tab-list.item#description-tab",
             "tab-list.item#specs-tab",
+            // "tab-list.item#faq-tab",
             "tab-list.item#rates-tab"
         ],
         "props": {
@@ -48,11 +49,21 @@
             "blockClass": ["product-tab", "specs-tab"]
         }
     },
+    // "tab-list.item#faq-tab": {
+    //     "title": "FAQ",
+    //     "props": {
+    //         "tabId": "faq-tab",
+    //         "label": "Perguntas Frequentes",
+    //         "defaultActiveTab": false,
+    //         "blockClass": ["product-tab", "faq-tab"]
+    //     }
+    // },
     "tab-list.item#rates-tab": {
         "title": "Avaliações Trustvox",
         "props": {
             "tabId": "rates-tab",
-            "label": "Perguntas e Avaliações",
+            // "label": "Perguntas e Avaliações",
+            "label": "Avaliações",
             "defaultActiveTab": false,
             "blockClass": ["product-tab", "rates-tab"]
         }
@@ -62,6 +73,7 @@
         "children": [
             "tab-content.item#product-description-tab",
             "tab-content.item#product-specs-tab",
+            // "tab-content.item#product-faq-tab",
             "tab-content.item#product-rates-tab"
         ]
     },
@@ -81,6 +93,18 @@
             "tabId": "specs-tab"
         }
     },
+    //
+    // "tab-content.item#product-faq-tab": {
+    //     "children": [
+    //         // Aqui vai o(s) componente(s) da FAQ
+    //         // Futuramente será ajustado para ser algo mais 
+    //         "container#line-wrapper-15"
+    //     ],
+    //     "props": {
+    //         "tabId": "faq-tab"
+    //     }
+    // },
+    //
     "tab-content.item#product-rates-tab": {
         "children": [
             // Bloco de avaliacoes do trust

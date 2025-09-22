@@ -1,20 +1,30 @@
 // Ainda nao finalizado o DEV deste bloco
 {
-    "flex-layout.row#line-wrapper-9": {
-        "title": "Bloco 8",
+    // Wrapper START
+    "container#line-wrapper-16": {
+        "title": "[DEV] Bloco 16",
         "children": [
-            "flex-layout.col#col-wrapper-9"
+            "flex-layout.row#line-wrapper-16"
         ],
         "props": {
-            "blockClass": ["line-wrapper"]
+            "blockClass": ["line-wrapper", "line-wrapper-16"]
         }
     },
-    "flex-layout.col#col-wrapper-9": {
+    "flex-layout.row#line-wrapper-16": {
+        "children": [
+            "flex-layout.col#col-wrapper-16"
+        ],
+        "props": {
+            // "blockClass": "line-wrapper"
+            // "blockClass": ["line-wrapper", "line-wrapper-odd"]
+        }
+    },
+    "flex-layout.col#col-wrapper-16": {
         "children": [
             "container#custom-block__highlights-grid"
         ]
     },
-    //
+    // Wrapper END
 
     "container#custom-block__highlights-grid": {
         "title": "Grid - Sub Destaques",

@@ -8,7 +8,8 @@
     max-width: calc(100% - 12px);
     max-height: calc(100% - 24px);
     box-sizing: border-box;
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    border-radius: 32px;
     transition: .2s ease
 }
 
@@ -22,7 +23,13 @@
     max-height: unset !important;
     width: 581px;
     height: 499px
+    /* transition: none !important;
+    opacity: 1 !important */
 }
+
+/* .imageElement--container_desc-banner__imagemDescricao:hover {
+    opacity: 1 !important
+} */
 
 /* Bloco Titulo e Texto Breve */
 .container--custom-block__text-summary {
@@ -45,7 +52,6 @@
 }
 
 /* Bloco Banner Wide */
-/*.imageElement--main-banner-wide {*/
 .imageElement--banner-fulfill {
     margin-bottom: 12px;
     width: 1174px;
@@ -67,7 +73,8 @@
 .container--highlights-grid__container {
     height: 100%;
     border: 1px solid;
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    border-radius: 32px;
     padding: 24px
 }
 
@@ -76,15 +83,11 @@
     max-height: unset !important
 }
 
-/*.container--highlights-grid__container-image {
-    width: fit-content !important
-}*/
-
 .imageElement--highlights-grid__container-image {
     width: auto !important;
     height: 135px;
-    border-radius: 8px
-    /*min-height: 135px;*/
+    /* border-radius: 8px */
+    border-radius: 32px
 }
 
 /* Bloco Tres Colunas Fotos Destaque */
@@ -105,41 +108,151 @@
     margin: 24px 150px 12px 150px;
     background: #eaeae9;
     padding: 25px 50px;
-    border-radius: 8px
+    /* border-radius: 8px */
+    border-radius: 32px
 }
 
+
 /* Novos Blocos Edson */
-.imageElement--banner-fulfill_v2 {
-    max-height: unset !important
+.imageElement--custom-pdp_image {
+    max-height: unset !important;
+    /* border-radius: 8px */
+    border-radius: 32px;
+    transition: opacity .2s
 }
-/**/
+
+.imageElement--custom-pdp_image:hover {
+    opacity: .8
+}
+
+.imageElement--photo-grid-mosaic_col-1 {
+    height: 223px
+}
+
+.container--photo-grid-mosaic_col-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.imageElementLink--photo-grid-mosaic_col-1:last-child, /* Aqui ele nunca vai aplicar os dois juntos, pois ou tera um link com uma imagem dentro, ou tera somente uma imagem */
+.imageElement--photo-grid-mosaic_col-1:last-child {
+    grid-column: 1 / -1
+}
+
+.imageElement--banner-fulfill_v2 {
+    border-radius: 0;
+    transition: none !important;
+    opacity: 1 !important
+}
+
+.imageElement--banner-fulfill_v2:hover {
+    opacity: 1 !important
+}
+
+.imageElement--photo-grid-mosaic {
+    max-height: initial !important
+}
+
+/* Aplica esse atributo em ambos blocos photo-grid-mosaic */
+.container--custom-block__photo-grid-mosaic {
+    padding-bottom: 48px;
+}
+/* Aplica esse atributo em ambos blocos photo-grid-mosaic */
+
+.imageElement--feature-card-v2__image {
+    margin-bottom: 28px
+}
+/* Novos Blocos Edson */
+
 
 /* Force Desktop */
 @media screen and (min-width: 1025px) {
 
-    /* In DEV - For all Containers components in this block */
-    /* .sunhouse-container-1-x-container.sunhouse-container-1-x-container--custom-block__desc-banner.vtex-container-container.vtex-container-container--custom-block__desc-banner { */
     .container--custom-block__container {
         max-width: 1220px;
         margin: 0 auto
     }
+    
+    .container--custom-block__feature-cards-v2 {
+        padding: 23px 0
+    }
+
+    /* A ajustar medida correta */
+    .imageElement--feature-card-v2__image {
+        /* width: 383px;
+        height: 383px */
+        max-height: unset
+    }
+    /* A ajustar medida correta */
+
     /* In DEV */
+    /* .wrapper--photo-grid-mosaic_2 {
+        display: grid -> So bugou tudo
+    } */
+    
+    .container--photo-grid-mosaic_2 {
+        display: grid;
+        gap: 28px;
+        margin: 28px 0;
+        height: 100%
+        /* max-height: 886px; */
+        /* overflow: hidden; */
+    }
+
+    .wrapper--photo-grid-mosaic_2 {
+        width: fit-content;
+        margin: 0 auto
+    }
+
+    .imageElement--photo-grid-mosaic_col-2 {
+        height: 473px
+    }
+
+    .imageElement--photo-grid-mosaic_2 {
+        display: block;
+        /* width: 100%; */
+        height: 100%;
+        /* object-fit: cover; */
+    }
+
+    /* .imageElementLink--photo-grid-mosaic_2 { -> Pode bugar nao ativar essa, pois nao vai aplicar o sistema de grid em alguns casos
+        display: grid
+    } */
+    
+    .imageElementLink--photo-grid-mosaic_2:first-child,  /* Aqui ele nunca vai aplicar os dois juntos, pois ou tera um link com uma imagem dentro, ou tera somente uma imagem */
+    .imageElement--photo-grid-mosaic_2:first-child {
+        grid-area: 1 / 1 / 3 / 2
+    }
+
+    .imageElementLink--photo-grid-mosaic_2:last-child,  /* Aqui ele nunca vai aplicar os dois juntos, pois ou tera um link com uma imagem dentro, ou tera somente uma imagem */
+    .imageElement--photo-grid-mosaic_2:last-child {
+        grid-area: 2 / 2 / 3 / 3
+    }
+    /* In DEV */
+    /* Novos Blocos Edson END */
 
 }
 
 /* Mobile Geral */
 @media screen and (max-width: 1024px) {
 
+    /* Imagens Geral*/
+    .imageElement--custom-description-banner {
+        margin-left: unset;
+        max-width: unset
+    }
+
     /* Bloco Descricao com Foto */
     .imageElement--container_desc-banner__imagemDescricao {
         height: auto
     }
 
-    /* Bloco Banner Wide - nao sera exibido no mobile a principio */
-    .imageElement--banner-fulfill {
+    /* Bloco Banner Wide - nao sera exibido no mobile a principio - ver se buga deixar comentado a aplicacao abaixo */
+    /* .imageElement--banner-fulfill {
         width: 376px !important;
         height: 480px
-    }
+    } */
 
     /* Bloco Feature Cards */
     .imageElement--feature-card__image {
@@ -162,8 +275,24 @@
         margin-top: unset;
         margin-right: unset;
         margin-bottom: unset;
-        margin-left: 12px;
+        /* margin-left: 12px; */
+        margin-left: 0;
         padding: 20px 30px
     }
+
+    /* Novos Blocos Edson START */
+    .container--photo-grid-mosaic_col-1 {
+        gap: 12px
+    }
+
+    .imageElement--photo-grid-mosaic_col-1 {
+        height: auto
+    }
+
+    .container--photo-grid-mosaic_2 {
+        display: grid;
+        gap: 12px
+    }
+    /* Novos Blocos Edson END */
     
 }

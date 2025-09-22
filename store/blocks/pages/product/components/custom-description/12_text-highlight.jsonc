@@ -1,0 +1,26 @@
+{
+    // Wrapper START
+    "container#line-wrapper-12": {
+        "title": "Bloco 12",
+        "children": [
+            "flex-layout.row#line-wrapper-12"
+        ],
+        "props": {
+            "blockClass": "line-wrapper"
+        }
+    },
+    "flex-layout.row#line-wrapper-12": {
+        "children": [
+            "flex-layout.col#col-wrapper-12"
+        ],
+        "props": {
+            "blockClass": ["line-wrapper", "text-highlight"]
+        }
+    },
+    "flex-layout.col#col-wrapper-12": {
+        "children": [
+            "container#lp_wide-highlights"
+        ]
+    }
+    // Wrapper END
+}

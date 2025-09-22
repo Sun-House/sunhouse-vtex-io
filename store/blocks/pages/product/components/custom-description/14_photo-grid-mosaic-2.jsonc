@@ -1,0 +1,86 @@
+{
+    // Wrapper START
+    "container#line-wrapper-14": {
+        "title": "Bloco 14",
+        "children": [
+            "flex-layout.row#line-wrapper-14"
+        ],
+        "props": {
+            "blockClass": "line-wrapper"
+        }
+    },
+    "flex-layout.row#line-wrapper-14": {
+        "children": [
+            "flex-layout.col#col-wrapper-14"
+        ],
+        "props": {
+            // "blockClass": "line-wrapper"
+            "blockClass": ["line-wrapper", "line-wrapper-odd", "photo-grid-mosaic_2"]
+        }
+    },
+    "flex-layout.col#col-wrapper-14": {
+        "children": [
+            "container#photo-grid-mosaic_2"
+        ]
+    },
+    // Wrapper END
+
+    "container#photo-grid-mosaic_2": {
+        "title": "Photo Grid Mosaico 2",
+        "children": [
+            "rich-text#photo-grid-mosaic_2_upper-text",
+            "list-context.image-list#photo-grid-mosaic_2"
+        ],
+        "props": {
+            "blockClass": ["custom-block__container", "custom-block__photo-grid-mosaic", "custom-block__photo-grid-mosaic_2"]
+        }
+    },
+    
+    "rich-text#photo-grid-mosaic_2_upper-text": {
+        "title": "Texto Acima",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Título H2\nBreve texto explicativo de um linha (ideal manter até duas linhas de conteúdo máximo).",
+            "blockClass": ["pdp-h2-title", "lp_text-block"]
+        }
+    },
+    
+    "list-context.image-list#photo-grid-mosaic_2": {
+        "title": "Mosaico de Imagens",
+        "props": {
+            "images": [
+                {
+                    "image": "https://dummyimage.com/643x886/343a40/6c757d",
+                    "mobileImage": "https://dummyimage.com/643x886/343a40/6c757d",
+                    "link": {
+                        "url": "#"
+                    }
+                },
+                {
+                    "image": "https://dummyimage.com/426x426/343a40/6c757d",
+                    "mobileImage": "https://dummyimage.com/426x426/343a40/6c757d",
+                    "link": {
+                        "url": "#"
+                    }
+                },
+                {
+                    "image": "https://dummyimage.com/426x426/343a40/6c757d",
+                    "mobileImage": "https://dummyimage.com/426x426/343a40/6c757d",
+                    "link": {
+                        "url": "#"
+                    }
+                }
+            ]
+        },
+        "children": [
+            "container.list-render#photo-grid-mosaic_2"
+        ]
+    },
+    "container.list-render#photo-grid-mosaic_2": {
+        "props": {
+            "wrapper": true,
+            "blockClass": ["custom-pdp_image", "photo-grid-mosaic", "photo-grid-mosaic_2"]
+        }
+    }
+}
