@@ -80,16 +80,5 @@
         "props": {
             "blockClass": ["blocks__product-description-custom", "product-custom-description_col-wrapper"]
         }
-    },
-
-    // DEBUG (Apagar daqui depois):
-    "flex-layout.row#line-wrapper-x": {
-        "title": "Bloco X",
-        "children": [],
-        "props": {
-            "blockClass": ""
-        }
     }
-    //
-
 }

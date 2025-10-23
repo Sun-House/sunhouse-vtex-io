@@ -1,0 +1,7 @@
+/* Atraves desse arquivo é possivel customizar o header por namekey de template */
+:global(.render-container.render-route-vtex-store-2-x-store-custom-black-friday) {
+	--header-background-color: transparent;
+    --header-text-color: #fff;
+    --header-menu-item-highlight-color: #fff;
+	--header-menu-border-color: transparent
+}

@@ -1,0 +1,23 @@
+.flexColChild--bf-search-content_col {
+    height: auto !important
+}
+
+.flexRowContent--post-header-line {
+    align-items: center
+}
+
+.flexCol--post-header-line_orderby {
+    align-items: flex-end
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+    
+    .flexRowContent--post-header-line_mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px
+    }
+
+}

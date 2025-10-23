@@ -1,0 +1,22 @@
+{
+	"store.custom#black-friday-plp": {
+		"blocks": [
+			"flex-layout.row#bf_info-card__wrapper",
+			"vtex.search-result:search-result-layout.customQuery#black-friday"
+		],
+		"props": {
+			"context": { // Configs nao refletem, mas usar como base para configurar manualmente no Site Editor
+				"skusFilter": "FIRST_AVAILABLE",
+				"orderByField": "OrderByTopSaleDESC",
+				"maxItemsPerPage": 12
+			}
+		}
+	},
+	"vtex.search-result:search-result-layout.customQuery#black-friday": {
+    	"title": "Configurações da Vitrine",
+    	"blocks": [
+            "vtex.search-result:search-result-layout.desktop#black-friday",
+			"vtex.search-result:search-result-layout.mobile#black-friday"
+    	]
+  	}
+}

@@ -275,7 +275,6 @@
   "flex-layout.row#filters-container.desktop": {
     "children": [
       // "sunhouse.search-result:search-products-count-per-page",
-      // "container#filter-content",
       "flex-layout.col#order-content"
     ],
     "props": {
@@ -303,7 +302,6 @@
   },
   "flex-layout.row#filters-container-top.mobile": {
     "children": [
-      // "container#filter-content",
       "flex-layout.col#order-content"
     ],
     "props": {
@@ -321,29 +319,29 @@
       "blockClass": "filters-container-bottom"
     }
   },
-  "container#filter-content": {
-    "children": [
-      "condition-layout.user#unlogged",
-      "sunhouse.search-result:filter-navigator.v3"
-    ],
-    "props": {
-      "blockClass": "filter-content",
-      "width": "grow"
-    }
-  },
-  "sunhouse.search-result:filter-navigator.v3": {
-    "blocks": ["sunhouse.search-result:sidebar-close-button"],
-    "props": {
-      "navigationTypeOnMobile": "collapsible",
-      "initiallyCollapsed": true,
-      "appliedFiltersOverview": "hide",
-      "closeOnOutsideClick": true,
-      "openFiltersMode": "one",
-      "priceRangeToggle": true,
-      "scrollToTop": "smooth",
-      "fullWidthOnMobile": true
-    }
-  },
+  // "container#filter-content": {
+  //   "children": [
+  //     "condition-layout.user#unlogged"
+  //     // "sunhouse.search-result:filter-navigator.v3"
+  //   ],
+  //   "props": {
+  //     "blockClass": "filter-content",
+  //     "width": "grow"
+  //   }
+  // },
+  // "sunhouse.search-result:filter-navigator.v3": {
+  //   "blocks": ["sunhouse.search-result:sidebar-close-button"],
+  //   "props": {
+  //     "navigationTypeOnMobile": "collapsible",
+  //     "initiallyCollapsed": true,
+  //     "appliedFiltersOverview": "hide",
+  //     "closeOnOutsideClick": true,
+  //     "openFiltersMode": "one",
+  //     "priceRangeToggle": true,
+  //     "scrollToTop": "smooth",
+  //     "fullWidthOnMobile": true
+  //   }
+  // },
   "sunhouse.search-result:sidebar-close-button": {
     "props": {
       "type": "filled",
@@ -480,8 +478,10 @@
           }
         }
       ],
-      "GridSummary": "product-summary.shelf#main-product",
-      "ListSummary": "product-summary.shelf#main-product"
+      // "GridSummary": "product-summary.shelf#main-product",
+      // "ListSummary": "product-summary.shelf#main-product"
+      "GridSummary": "product-summary.shelf#main-product-new", // Novo modelo de Shelf
+      "ListSummary": "product-summary.shelf#main-product-new" // Novo modelo de Shelf
     }
   },
   "container#search-seo": {

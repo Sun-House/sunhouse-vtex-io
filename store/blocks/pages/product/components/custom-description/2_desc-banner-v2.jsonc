@@ -27,7 +27,7 @@
     // Wrapper END
 
     "container#desc-banner_v2": {
-        "title": "Wrapper Imagem Destaque",
+        "title": "Imagem Destaque",
         "children": [
             "rich-text#desc-banner_v2_text",
             "list-context.image-list#lp_grow-block-image-highlight-image" // Herda da LP Elements -> Esta com um border-radius de 32px - Pode ser necessario alterar, e se for, precisara recriar o elemento

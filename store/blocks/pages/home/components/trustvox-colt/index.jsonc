@@ -1,4 +1,15 @@
 {
+    "container#trustvox-colt-highlight": {
+        "title": "Wrapper Colt RA Trustvox",
+        "children": [
+            "flex-layout.row#trustvox-colt-highlight"
+        ],
+        "props": {
+            "wrapper": true,
+            "blockClass": "wrapper__trustvox-colt-highlight"
+        }
+    },
+
     "flex-layout.row#trustvox-colt-highlight": {
         "title": "Carrossel Opiniões RA Trustvox",
         "children": [

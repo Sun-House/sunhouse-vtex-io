@@ -1,0 +1,325 @@
+{
+    "vtex.search-result:search-result-layout.desktop#black-friday": {
+		"title": "PLP Vitrine Produtos",
+		"children": [
+			"flex-layout.row#search-result-black-friday",
+			"container#search-seo",
+			"container#spacing-default",
+			"container#blog-cards",
+			"container#spacing-default"
+		],
+		"props": {
+			"defaultGalleryLayout": "grid",
+			"pagination": "show-more",
+			"preventRouteChange": true, // Impede recarregar a pagina quando filtros sao aplicados
+			"showProductsCount": true,
+			"showFacetQuantity": true,
+			"hiddenFacets": {
+				"specificationFilters": {
+					"hiddenFilters": [{ "name": "Marca" }]
+				}
+			},
+			// "blockClass": ["search-result", "bf-search-result"]
+			"blockClass": "search-result"
+		}
+	},
+	
+	"vtex.search-result:search-result-layout.mobile#black-friday": {
+		"title": "Search Mobile",
+		"children": [
+			"flex-layout.row#search-breadcrumb",
+			"flex-layout.row#search-result-black-friday.mobile",
+			"container#search-seo",
+			"container#spacing-default",
+			"container#blog-cards",
+			"container#spacing-default"
+		],
+		"props": {
+			"defaultGalleryLayout": "grid",
+			"pagination": "show-more",
+			"preventRouteChange": true, // Impede recarregar a pagina quando filtros sao aplicados
+			"showProductsCount": true,
+			"showFacetQuantity": true,
+			"hiddenFacets": {
+				"specificationFilters": {
+					"hiddenFilters": [{ "name": "Marca" }]
+				}
+			},
+			// "blockClass": ["search-result", "bf-search-result", "bf-search-result_mobile"]
+			"blockClass": "search-result"
+		}
+	},
+	
+	"flex-layout.row#search-result-black-friday": {
+		"children": [
+			"flex-layout.col#search-result-desktop-black-friday"
+		],
+		"props": {
+			"blockClass": "search-result",
+			"fullWidth": true
+		}
+	},
+	"flex-layout.col#search-result-desktop-black-friday": {
+		"children": [
+			"flex-layout.row#fetch-less",
+			"flex-layout.row#black-friday_search-content.desktop",
+			"flex-layout.row#fetch-more"
+		],
+		"props": {
+			// "blockClass": "search-result"
+			"blockClass": ["search-result", "bf-search-result"]
+		}
+	},
+
+	"flex-layout.row#wrapper_post-header-line.desktop": {
+		"children": [
+			"flex-layout.col#post-header-line_breadcrumb",
+			"flex-layout.col#post-header-line_orderby"
+		],
+		"props": {
+			"blockClass": ["search-content", "post-header-line"]
+		}
+	},
+	"flex-layout.col#post-header-line_breadcrumb": {
+		"children": [
+			"breadcrumb.search#search-result"
+		],
+		"props": {
+			"blockClass": "post-header-line_breadcrumb"
+		}
+	},
+	"flex-layout.col#post-header-line_orderby": {
+		"children": [
+			"vtex.search-result:order-by.v2#black-friday"
+		],
+		"props": {
+			"blockClass": "post-header-line_orderby"
+		}
+	},
+	"vtex.search-result:order-by.v2#black-friday": {
+		"props": {
+			"hiddenOptions": [
+				"OrderByNameDESC",
+				"OrderByNameASC"
+			],
+			"blockClass": "orderby-bf"
+		}
+	},
+	
+	"flex-layout.row#search-result-black-friday.mobile": {
+		"children": [
+			"flex-layout.row#wrapper_post-header-line.mobile",
+			"flex-layout.col#search-result-black-friday.mobile"
+		],
+		"props": {
+			// "blockClass": "search-result"
+			"blockClass": ["search-result", "bf-search-result", "bf-search-result_mobile"]
+		}
+	},
+	"flex-layout.col#search-result-black-friday.mobile": {
+		"children": [
+			"flex-layout.row#fetch-less",
+			"flex-layout.row#search-content.mobile",
+			"flex-layout.row#fetch-more"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventVerticalStretch": true,
+			"fullWidth": true,
+			"blockClass": "search-result-mobile"
+		}
+	},
+
+	"flex-layout.row#wrapper_post-header-line.mobile": {
+		"children": [
+			"flex-layout.col#post-header-line_filters.mobile",
+			"flex-layout.col#post-header-line_orderby.mobile"
+		],
+		"props": {
+			// "blockClass": ["search-content", "post-header-line", "post-header-line_mobile"]
+			"blockClass": "post-header-line_mobile"
+		}
+	},
+	"flex-layout.col#post-header-line_filters.mobile": {
+		"children": [
+			"vtex.search-result:filter-navigator.v3"
+		],
+		"props": {
+			"blockClass": "post-header-line_filters-mobile"
+		}
+	},
+	"flex-layout.col#post-header-line_orderby.mobile": {
+		"children": [
+			"vtex.search-result:order-by.v2#black-friday"
+		],
+		"props": {
+			// "blockClass": ["post-header-line_orderby", "post-header-line_orderby-mobile"]
+			"blockClass": "post-header-line_orderby-mobile"
+		}
+	},
+
+	// Filters - Right Side Sidebar
+	"vtex.search-result:filter-navigator.v3": {
+		"props": {
+			"categoryFiltersMode": "href",
+			// "layout": "desktop",
+			"layout": "responsive", // Ideal para puxar esse mesmo componente para o layout mobile (precisa testar)
+			// Nao esta funcionando START
+			"maxItemsDepartment": 1,
+			"maxItemsCategory": 1,
+			"maxItemsSubcategory": 1,
+			// Nao esta funcionando END
+			"initiallyCollapsed": false,
+			"openFiltersMode": "many",
+			"filtersTitleHtmlTag": "h4",
+			"scrollToTop": "none", // Nao esta funcionando no mobile
+			"truncateFilters": true,
+			"closeOnOutsideClick": true, // Util para mobile -> true (precisa testar)
+			// Nao esta funcionando START
+			"appliedFiltersOverview": "hide",
+			// Nao esta funcionando END
+			// "fullWidthOnMobile": true,
+			"fullWidthOnMobile": false,
+			"navigationTypeOnMobile": "collapsible",
+			// "navigationTypeOnMobile": "page",
+			"updateOnFilterSelectionOnMobile": true,
+			"drawerDirectionMobile": "drawerLeft",
+			"showClearByFilter": true,
+			"showClearAllFiltersOnDesktop": true,
+			"priceRangeLayout": "slider",
+			// "priceRangeToggle": true,
+			"showQuantityBadgeOnMobile": false, // Nao esta funcionando
+			"facetOrdering": [
+				{
+					"key": "category-1",
+					"orderBy": "quantity",
+					"order": "ASC"
+				}
+				// Abaixo, é possivel organizar os filtros por nome do tipo de filtro.
+				// Ideal configurar apos virada do site:
+				// , 
+				// {
+				// 	"key": "",
+				// 	"orderBy": "",
+				// 	"order": ""
+				// }
+			],
+			"blockClass": "filter-bf"
+		}
+	},
+	
+	"flex-layout.row#black-friday_search-content.desktop": {
+		"children": [
+			"flex-layout.col#search-content.desktop",
+			"flex-layout.col#filter-content.desktop"
+		],
+		"props": {
+			"blockClass": "search-content"
+		}
+	},
+	"flex-layout.col#search-content.desktop": {
+		"children": [
+			"flex-layout.row#wrapper_post-header-line.desktop",
+			"hover-container#black-friday_search-content"
+		],
+		"props": {
+			"blockClass": "bf-search-content_col"
+		}
+	},
+	"flex-layout.col#filter-content.desktop": {
+		"children": [
+			"vtex.search-result:filter-navigator.v3"
+		],
+		"props": {
+            "width": "25%",
+			"marginLeft": "5",
+			"blockClass": "bf-search-content_col"
+		}
+	},
+
+	"hover-container#black-friday_search-content": {
+		"title": "Lista de Produtos",
+		"children": [
+            "vtex.search-result:search-content#black-friday"
+		],
+		"props": {
+			"blockClass": "hover-search-content"
+		}
+	},
+    "vtex.search-result:search-content#black-friday": {
+        "blocks": [
+            "vtex.search-result:gallery#black-friday",
+            "vtex.search-result:not-found#black-friday"
+        ]
+    },
+    "vtex.search-result:gallery#black-friday": {
+        "props": {
+			"layouts": [
+				{
+					"name": "list",
+					"component": "ListSummary",
+					"itemsPerRow": 1
+				},
+				{
+					"name": "grid",
+					"component": "GridSummary",
+					"itemsPerRow": {
+						"desktop": 3,
+						"tablet": 2,
+						"mobile": 1
+					}
+				}
+			],
+			"GridSummary": "product-summary.shelf#black-friday",
+			"ListSummary": "product-summary.shelf#black-friday",
+			"blockClass": "bf-gallery"
+        }
+    },
+    
+	"vtex.search-result:not-found#black-friday": {
+        "props": {
+            "blockClass": "not-found-black-friday"
+        }
+    },
+
+	"flex-layout.row#bf_info-card__wrapper": {
+		"title": "Banner Destaque - Line Wrapper",
+		"children": [
+			"container#custom_banner-department-desktop"
+		],
+		"props": {
+			"fullWidth": true,
+			"blockClass": "bf_info-card__wrapper"
+		}
+	},
+	"container#custom_banner-department-desktop": {
+		"title": "Banner - InfoCard",
+		"children": [
+			"info-card#black-friday"
+		],
+		"props": {
+			"blockClass": ["search-banner", "info-card_lp-banner"]
+		}
+	},
+	"info-card#black-friday": {
+		"title": "InfoCard Configs",
+    	"props": {
+			"id": "info-card--black-friday",
+			"imageAltText": "Black Friday de 2025 da Sun House",
+			"isFullModeStyle": true,
+			"textMode": "rich-text",
+			"textPosition": "center",
+			"imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/b1f45028-b458-4da7-8e81-3e5e61d2ba70___de403d1ef6b0607d772a7beccd0d79ce.jpg",
+			"mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/b1f45028-b458-4da7-8e81-3e5e61d2ba70___de403d1ef6b0607d772a7beccd0d79ce.jpg",
+			// "imageActionUrl": "/black-friday", -> Ta querbrando a acao do botao de CTA
+			"headline": "# Black Friday da Sun",
+			"subhead": "## Está começando a __maior Black Friday__ já vista na Sun House!",
+			"callToActionText": "Ver os produtos em oferta",
+			"callToActionUrl": "#gallery-layout-container",
+			"textAlignment": "center",
+			"fetchpriority": "auto",
+			"preload": true,
+			"blockClass": "info-card_lp-black-friday"
+    	}
+  	}
+}

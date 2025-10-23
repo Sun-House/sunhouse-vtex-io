@@ -16,7 +16,8 @@
       "container#spacing-default",
       // "flex-layout.row#shelf-banner-desktop",
       // "container#spacing-default",
-      "flex-layout.row#trustvox-colt-highlight",
+      // "flex-layout.row#trustvox-colt-highlight",
+      "container#trustvox-colt-highlight",
       "container#spacing-default",
       //
       "container#blog-cards",

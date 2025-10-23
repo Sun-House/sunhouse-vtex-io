@@ -1,12 +1,19 @@
-.container--layout {
+/* .container--layout {
     margin-top: 112px
 }
 
 .notFound--layout {
     margin-top: 112px
+} */
+
+.container--layout,
+.notFound--layout {
+    margin-top: 112px
 }
 
+/* Mobile */
 @media screen and (max-width: 1024px) {
+
     .container--layout {
         margin-top: 0
     }
@@ -14,4 +21,5 @@
     .notFound--layout {
         margin-top: 0
     }
+    
 }

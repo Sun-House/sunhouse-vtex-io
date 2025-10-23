@@ -239,7 +239,8 @@
     font-weight: 700 !important;
     text-transform: uppercase !important;
     box-sizing: border-box;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    border-radius: 50px;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;

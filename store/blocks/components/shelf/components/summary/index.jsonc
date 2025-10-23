@@ -16,6 +16,24 @@
     }
   },
 
+  // Novo sistema de Shelf padrao
+  "product-summary.shelf#main-product-new": {
+		"children": [
+			"stack-layout#bf-shelf-product-image",
+      "container#product-highlights",
+			"product-summary-name#bf-shelf",
+      
+      // "container#bf-price-block", // Price wrapper
+      // "hover-container#actions"
+      // aqui vai o condition layout:
+      "condition-layout.product#shelf-elf-checker"
+		],
+		"props": {
+			"blockClass": ["black-friday", "main-shelf-new"]
+		}
+	},
+  //
+
   "product-summary-name": {
     "props": {
       "blockClass": "main-shelf"
@@ -152,10 +170,16 @@
   "flex-layout.col#shelf-product-available": {
     "title": "Produto vitrine disponível",
     "children": [
-      "container#shelf-product-listPrice",
-      "product-installments#shelf-installments",
+      // Desativado - layout antigo
+      // "container#shelf-product-listPrice",
+      // "product-installments#shelf-installments",
+      // "hover-container#actions"
+      //
+      
+      // "flex-layout.col#shelf-product-with-variation" -> Validar o que isso faz
+
+      "container#bf-price-block", // Price wrapper
       "hover-container#actions"
-      // "flex-layout.col#shelf-product-with-variation"
     ],
     "props": {
       "blockClass": "shelf-product-available"

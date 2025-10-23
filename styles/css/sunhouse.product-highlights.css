@@ -1,1 +1,46 @@
-.productHighlightText{flex:1;font-size:14px;line-height:31px;font-weight:700;text-align:center}.productHighlightText[data-highlight-id="218"]{color:#fff;background-color:#00b700 !important;color:#fff !important}.productHighlightText[data-highlight-id="252"]{color:#fff;background-color:rgba(249,0,65,.5)}.productHighlightText:nth-child(odd){color:#2d2926;background-color:rgba(255,218,0,.5)}.productHighlightText:nth-child(even){color:#fff;background-color:#f90041}
+.productHighlightText {
+	flex: 1;
+	/* font-size: 14px; */
+    font-size: 12px;
+    font-family: 'Montserrat';
+	line-height: 31px;
+	font-weight: 700;
+	text-align: center;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin: 0 2px
+}
+
+.productHighlightText[data-highlight-id="218"] {
+	color: #fff;
+	background-color: #00b700 !important;
+	color: #fff !important;
+}
+
+.productHighlightText[data-highlight-id="252"] {
+	color: #fff;
+	background-color: rgba(249, 0, 65, 0.5);
+}
+
+/* Flag OUTLET */
+/* .sunhouse-product-highlights-2-x-productHighlightText[data-highlight-id="414"] { */
+.productHighlightText[data-highlight-id="414"] {
+    background-color: #F25005 !important
+}
+
+/* Flag BF */
+/* .sunhouse-product-highlights-2-x-productHighlightText[data-highlight-id="262"] { */
+.productHighlightText[data-highlight-id="262"] {
+    background-color: #000 !important;
+    color: #FFDA00 !important
+}
+
+.productHighlightText:nth-child(odd) {
+	color: #2d2926;
+	background-color: rgba(255, 218, 0, .5);
+}
+
+.productHighlightText:nth-child(even) {
+	color: #fff;
+	background-color: #f90041;
+}

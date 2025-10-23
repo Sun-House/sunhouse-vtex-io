@@ -1,0 +1,61 @@
+.infoCardContainer--info-card_lp-black-friday {
+    width: 100vw;
+    height: 101vh
+}
+
+/* InfoCard Texts */
+.headingLevel1--info-card_lp-black-friday,
+.headingLevel2--info-card_lp-black-friday {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 4px 4px 8px #2d2926;
+    color: #fff /* Esse pode ser ajustado de acordo com o banner - validar possibilidade de usar standalone app para essa customizacao no Site Editor */
+}
+
+.headingLevel1--info-card_lp-black-friday {
+    font-size: 3.8rem;
+    text-align: center
+}
+
+.headingLevel2--info-card_lp-black-friday {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.28
+}
+
+/* CTA Button */
+.infoCardCallActionContainer--info-card_lp-black-friday :global(.vtex-button) {
+    background-color: #FFDA00;
+    color: #2d2926;
+    font-weight: 700;
+    border: 0;
+    border-radius: 50px;
+    padding: 10px 28px;
+    font-size: 1.2rem;
+    box-shadow: 4px 4px 8px 0 #2d2926;
+    transition: background-color .2s
+}
+
+.infoCardCallActionContainer--info-card_lp-black-friday:hover :global(.vtex-button) {
+    background-color: #e4c400;
+    box-shadow: 4px 4px 8px 0 #2d2926b3;
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    .headingLevel1--info-card_lp-black-friday {
+        white-space: nowrap
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    .headingLevel1--info-card_lp-black-friday {
+        font-size: 2.5rem;
+        text-align: center
+    }
+
+}

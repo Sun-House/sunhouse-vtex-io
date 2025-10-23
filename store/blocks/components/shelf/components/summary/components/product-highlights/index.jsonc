@@ -14,10 +14,17 @@
   },
 
   "sunhouse.product-highlights@2.x:product-highlights": {
+    "title": "Flags Destaque",
     "props": {
       "filter": {
         "type": "show",
-        "highlightNames": ["Pronta Entrega", "Vitrine Home - Lancamento"]
+        // "highlightNames": ["Pronta Entrega", "Vitrine Home - Lancamento"]
+        "highlightNames": [
+          "Pronta Entrega",
+          "Lançamento",
+          "Outlet",
+          "Black Friday"
+        ]
       }
     },
     "children": ["product-highlight-text"]

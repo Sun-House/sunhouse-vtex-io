@@ -34,7 +34,10 @@
 
   "list-context.product-list#shelf-home01": {
     "title": "Lista de Produtos 1",
-    "blocks": ["product-summary.shelf#main-product"],
+    "blocks": [
+      // "product-summary.shelf#main-product"
+      "product-summary.shelf#main-product-new"
+    ],
     "children": [
       "responsive-layout.desktop#shelf-slider",
       "responsive-layout.mobile#shelf-slider"
@@ -96,7 +99,10 @@
 
   "list-context.product-list#shelf-home02": {
     "title": "Lista de Produtos 2",
-    "blocks": ["product-summary.shelf#main-product"],
+    "blocks": [
+      // "product-summary.shelf#main-product"
+      "product-summary.shelf#main-product-new"
+    ],
     "children": [
       "responsive-layout.desktop#shelf-slider",
       "responsive-layout.mobile#shelf-slider"
@@ -119,7 +125,8 @@
       },
       "showPaginationDots": "always",
       "showNavigationArrows": "desktopOnly",
-      "infinite": false,
+      // "infinite": false,
+      "infinite": true,
       "blockClass": ["shelf", "main-shelf"]
     }
   },
@@ -209,7 +216,10 @@
 
   "list-context.product-list#shelf-home03": {
     "title": "Lista de Produtos 3",
-    "blocks": ["product-summary.shelf#main-product"],
+    "blocks": [
+      // "product-summary.shelf#main-product"
+      "product-summary.shelf#main-product-new"
+    ],
     "children": [
       "responsive-layout.desktop#shelf-slider",
       "responsive-layout.mobile#shelf-slider"
