@@ -23,13 +23,12 @@
 }
 
 /* Flag OUTLET */
-/* .sunhouse-product-highlights-2-x-productHighlightText[data-highlight-id="414"] { */
 .productHighlightText[data-highlight-id="414"] {
-    background-color: #F25005 !important
+    background-color: #F25005 !important;
+	color: #fff !important
 }
 
 /* Flag BF */
-/* .sunhouse-product-highlights-2-x-productHighlightText[data-highlight-id="262"] { */
 .productHighlightText[data-highlight-id="262"] {
     background-color: #000 !important;
     color: #FFDA00 !important

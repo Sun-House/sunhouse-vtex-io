@@ -23,6 +23,11 @@
     line-height: 1.28
 }
 
+.paragraph--info-card_lp-black-friday {
+    color: #fff;
+    text-align: center
+}
+
 /* CTA Button */
 .infoCardCallActionContainer--info-card_lp-black-friday :global(.vtex-button) {
     background-color: #FFDA00;
@@ -38,24 +43,34 @@
 
 .infoCardCallActionContainer--info-card_lp-black-friday:hover :global(.vtex-button) {
     background-color: #e4c400;
-    box-shadow: 4px 4px 8px 0 #2d2926b3;
+    box-shadow: 4px 4px 8px 0 #2d2926b3
 }
 
 /* Desktop Force */
-@media screen and (min-width: 1025px) {
+/* @media screen and (min-width: 1025px) {
 
     .headingLevel1--info-card_lp-black-friday {
         white-space: nowrap
     }
 
-}
+} */
 
 /* Mobile */
 @media screen and (max-width: 1024px) {
 
+    .container--info-card_lp-black-friday:first-child {
+        max-width: 100%
+    }
+    
+    .wrapper--info-card_lp-black-friday {
+        width: auto;
+        max-width: 100%
+    }
+    
     .headingLevel1--info-card_lp-black-friday {
         font-size: 2.5rem;
-        text-align: center
+        overflow: hidden
+        /* text-align: center */
     }
 
 }
