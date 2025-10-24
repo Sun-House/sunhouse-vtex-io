@@ -5,3 +5,26 @@
     --header-menu-item-highlight-color: #fff;
 	--header-menu-border-color: transparent
 }
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+    body:has(:global(.render-route-vtex-store-2-x-store-custom-black-friday)) {
+        overflow: hidden !important
+    }
+
+    /* Altera o background color do site por Store Template */
+    /* Testei e deu para alterar para outras paginas como Home tambem */
+    /* :global(.render-route-vtex-store-2-x-store-custom-black-friday .render-provider .vtex-store__template) {
+        background-color: #262d26
+    } */
+    
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body:has(:global(.render-route-vtex-store-2-x-store-custom-black-friday)) {
+        overflow: hidden !important;
+        height: 100%;
+        position: fixed
+    }
+}
