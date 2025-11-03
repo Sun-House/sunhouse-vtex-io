@@ -290,14 +290,15 @@
     flex-direction: column
 }
 
-/* .container--product-highlights {
+.container--product-highlights {
     min-height: 31px;
     display: flex
-} */
+}
 
 /* Para quando tiver mais de 3 Flags - Perido de Black */
 /* Se aplica corretamente no mobile tambem */
-.container--product-highlights {
+/* Se aplica somente em templates de vitrine - Categoria, busca e afins */
+.container--product-highlights:not(.container--product-highlights--product-page) {
     min-height: 31px;
     display: flex;
     flex-direction: column;
