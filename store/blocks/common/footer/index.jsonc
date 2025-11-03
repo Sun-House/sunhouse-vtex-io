@@ -54,7 +54,7 @@
     "title": "Footer Selos Mobile",
     "children": [
       "link#vtex",
-      "link#eplus",
+      // "link#eplus",
       "certificate-ratrustvox"
     ],
     "props": {

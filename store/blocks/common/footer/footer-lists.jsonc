@@ -245,7 +245,7 @@
   },
   "flex-layout.row#footer-security-content": {
     "children": [
-      "link#letsencrypt",
+      // "link#letsencrypt",
       "image#pci-vtex"
     ],
     "props": {
@@ -262,7 +262,7 @@
   "flex-layout.row#footer-images-bottom": {
     "children": [
       "link#vtex",
-      "link#eplus",
+      // "link#eplus",
       "certificate-ratrustvox"
     ],
     "props": {

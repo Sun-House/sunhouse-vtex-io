@@ -49,22 +49,22 @@
       "blockClass": ["logo-image", "logo-footer"]
     }
   },
-  "link#letsencrypt": {
-    "children": ["icon#letsencrypt"],
-    "props": {
-      "href": "https://letsencrypt.org/",
-      "target": "_blank",
-      "blockClass": ["footer-link", "letsencrypt-link"]
-    }
-  },
-  "link#eplus": {
-    "children": ["icon#eplus"],
-    "props": {
-      "href": "https://www.agenciaeplus.com.br/",
-      "target": "_blank",
-      "blockClass": ["footer-link", "eplus-link"]
-    }
-  },
+  // "link#letsencrypt": {
+  //   "children": ["icon#letsencrypt"],
+  //   "props": {
+  //     "href": "https://letsencrypt.org/",
+  //     "target": "_blank",
+  //     "blockClass": ["footer-link", "letsencrypt-link"]
+  //   }
+  // },
+  // "link#eplus": {
+  //   "children": ["icon#eplus"],
+  //   "props": {
+  //     "href": "https://www.agenciaeplus.com.br/",
+  //     "target": "_blank",
+  //     "blockClass": ["footer-link", "eplus-link"]
+  //   }
+  // },
   "link#vtex": {
     "children": ["icon#vtex"],
     "props": {
@@ -73,20 +73,20 @@
       "blockClass": ["footer-link", "vtex-link"]
     }
   },
-  "icon#letsencrypt": {
-    "props": {
-      "id": "bnd-letsencrypt",
-      "size": 53,
-      "activeClassName": "vtex-store-components-3-x-letsencryptIcon"
-    }
-  },
-  "icon#eplus": {
-    "props": {
-      "id": "bnd-agenciaeplus",
-      "size": 111,
-      "activeClassName": "vtex-store-components-3-x-eplusIcon"
-    }
-  },
+  // "icon#letsencrypt": {
+  //   "props": {
+  //     "id": "bnd-letsencrypt",
+  //     "size": 53,
+  //     "activeClassName": "vtex-store-components-3-x-letsencryptIcon"
+  //   }
+  // },
+  // "icon#eplus": {
+  //   "props": {
+  //     "id": "bnd-agenciaeplus",
+  //     "size": 111,
+  //     "activeClassName": "vtex-store-components-3-x-eplusIcon"
+  //   }
+  // },
   "icon#vtex": {
     "props": {
       "id": "bnd-vtex",
