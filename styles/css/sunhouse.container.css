@@ -295,16 +295,6 @@
     display: flex
 }
 
-/* Para quando tiver mais de 3 Flags - Perido de Black */
-/* Se aplica corretamente no mobile tambem */
-/* Se aplica somente em templates de vitrine - Categoria, busca e afins */
-.container--product-highlights:not(.container--product-highlights--product-page) {
-    min-height: 31px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap
-}
-
 .container--product-highlights--product-page {
     margin-top: 8px;
     margin-bottom: 2px;
@@ -700,6 +690,21 @@
     padding-block: 88px 107px
 }
 
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* Para quando tiver mais de 3 Flags - Perido de Black */
+    /* Se aplica corretamente no mobile tambem */
+    /* Se aplica somente em templates de vitrine - Categoria, busca e afins */
+    .container--product-highlights:not(.container--product-highlights--product-page) {
+        min-height: 31px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+    
+}
+
 @media screen and (min-width: 1025px) {
     .wrapper--banner-grid .container--banner-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -736,6 +741,7 @@
     }
 }
 
+/* Mobile */
 @media screen and (max-width: 1024px) {
     /* liveseo */
     .wrapper--newsletter {
@@ -941,6 +947,13 @@
         align-items: flex-start;
         height: auto;
         gap: .25rem
+    }
+
+    /**/
+    /* .sunhouse-container-1-x-container--product-highlights--product-page { */
+    .container--product-highlights--product-page {
+        gap: 0 !important;
+        white-space: nowrap
     }
 }
 

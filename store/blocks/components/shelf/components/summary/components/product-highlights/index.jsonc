@@ -1,13 +1,17 @@
 {
   "container#product-highlights": {
-    "children": ["sunhouse.product-highlights@2.x:product-highlights"],
+    "children": [
+      "sunhouse.product-highlights@2.x:product-highlights"
+    ],
     "props": {
       "blockClass": "product-highlights"
     }
   },
 
   "container#product-highlights--product-page": {
-    "children": ["sunhouse.product-highlights@2.x:product-highlights"],
+    "children": [
+      "sunhouse.product-highlights@2.x:product-highlights#pdp"
+    ],
     "props": {
       "blockClass": ["product-highlights", "product-highlights--product-page"]
     }
@@ -15,10 +19,12 @@
 
   "sunhouse.product-highlights@2.x:product-highlights": {
     "title": "Flags Destaque",
+    "children": [
+      "product-highlight-text"
+    ],
     "props": {
       "filter": {
         "type": "show",
-        // "highlightNames": ["Pronta Entrega", "Vitrine Home - Lancamento"]
         "highlightNames": [
           "Pronta Entrega",
           "Lançamento",
@@ -26,12 +32,36 @@
           "Black Friday"
         ]
       }
-    },
-    "children": ["product-highlight-text"]
+    }
   },
   "product-highlight-text": {
     "props": {
       "message": "{highlightName}"
+    }
+  },
+
+  // 
+  "sunhouse.product-highlights@2.x:product-highlights#pdp": {
+    "title": "Flags Destaque",
+    "children": [
+      "product-highlight-text#pdp"
+    ],
+    "props": {
+      "filter": {
+        "type": "show",
+        "highlightNames": [
+          "Pronta Entrega",
+          "Lançamento",
+          "Outlet",
+          "Black Friday"
+        ]
+      }
+    }
+  },
+  "product-highlight-text#pdp": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": "highlights_product-page"
     }
   }
 }

@@ -11,6 +11,11 @@
     margin: 0 2px
 }
 
+.productHighlightText--highlights_product-page {
+	padding-left: 8px;
+	padding-right: 8px
+} 
+
 .productHighlightText[data-highlight-id="218"] {
 	color: #fff;
 	background-color: #00b700 !important;
@@ -42,4 +47,14 @@
 .productHighlightText:nth-child(even) {
 	color: #fff;
 	background-color: #f90041;
+}
+
+/* Mobile - APENAS PARA A BLACK FRIDAY */
+@media screen and (max-width: 1024px) {
+
+	/* Flag OUTLET */
+	.productHighlightText[data-highlight-id="414"]:not(.productHighlightText--highlights_product-page) {
+		display: none
+	}
+
 }
