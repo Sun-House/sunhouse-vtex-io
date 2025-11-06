@@ -3,15 +3,26 @@
 }
 
 .flexRow--product-highlight-coupon {
-    margin-top: 145px
+    /* margin-top: 145px */
+    margin-top: 182px
 }
 
 .flexRow--wishlist-content {
-    margin-top: 64px
+    /* margin-top: 64px */
+    margin-top: 105px
 }
 
+/* Mobile */
 @media screen and (max-width: 1024px) {
+
     .flexRow--wishlist-content {
-        margin-top: -32px
+        /* margin-top: -32px */
+        margin-top: 20px
     }
+
+    /* .vtex-flex-layout-0-x-flexRow--product-main-mobile { */
+    .flexRow--product-main-mobile {
+        margin-top: 65px
+    }
+
 }

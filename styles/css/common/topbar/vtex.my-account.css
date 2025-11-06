@@ -1,9 +1,15 @@
 :global(.vtex-account) {
-    margin-top: 112px
+    /* margin-top: 112px */
+    /* margin-top: 136px */
+    margin-top: 165px
 }
 
+/* Mobile */
 @media screen and (max-width: 1024px) {
+
     :global(.vtex-account) {
-        margin-top: 38px
+        /* margin-top: 38px */
+        margin-top: 105px
     }
+
 }

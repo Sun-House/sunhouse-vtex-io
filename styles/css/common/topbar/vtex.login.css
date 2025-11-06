@@ -1,9 +1,19 @@
 .content {
-    margin-top: 112px
+    /* margin-top: 112px */
+    /* margin-top: 136px */
+    margin-top: 165px
 }
 
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .vtex-render__container-id-black-friday) {
+    margin-top: -165px
+}
+
+/* Mobile */
 @media screen and (max-width: 1024px) {
+
     .content {
-        margin-top: 0
+        /* margin-top: 0 */
+        margin-top: 65px
     }
+
 }

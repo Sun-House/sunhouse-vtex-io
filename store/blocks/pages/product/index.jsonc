@@ -15,11 +15,12 @@
   },
 
   "container#ra-trustvox": {
+    "title": "Bloco: Avaliações Trustvox",
     "children": [
       "product-reviews"
     ],
     "props": {
-      "wrapper": true,
+      "wrapper": true, // Não sei para que serve - esse componente nao tem documentacao
       "blockClass": "container-ra-pdp"
     }
   },
