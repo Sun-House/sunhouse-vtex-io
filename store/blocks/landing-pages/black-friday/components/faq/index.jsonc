@@ -1,0 +1,42 @@
+{
+    "container#bf__wrapper-faq-disclosure": {
+        "title": "FAQ - Black Friday",
+        "children": [
+            "flex-layout.row#bf__faq-disclosure__title-row",
+            "container#bf__faq-disclosure"
+        ],
+        "props": {
+            "blockClass": ["custom-block__container", "custom-block__wrapper-faq-disclosure", "bf__wrapper-faq-disclosure"]
+        }
+    },
+
+    "flex-layout.row#bf__faq-disclosure__title-row": {
+        "children": [
+            "rich-text#bf__faq-disclosure__title-row"
+        ],
+        "props": {
+            "blockClass": ["feature-card__title", "feature-card__title"]
+        }
+    },
+    "rich-text#bf__faq-disclosure__title-row": {
+        "title": "Texto - Titulo FAQ",
+        "props": {
+            "text": "## Perguntas Frequentes",
+            "blockClass": "wrapper__custom-description-title"
+        }
+    },
+    "container#bf__faq-disclosure": {
+        "children": [
+            "disclosure-layout#faq-disclosure-line-1",
+            "disclosure-layout#faq-disclosure-line-2",
+            "disclosure-layout#faq-disclosure-line-3",
+            "disclosure-layout#faq-disclosure-line-4",
+            "disclosure-layout#faq-disclosure-line-5",
+            "disclosure-layout#faq-disclosure-line-6",
+            "disclosure-layout#faq-disclosure-line-7"
+        ],
+        "props": {
+            "blockClass": ["custom-block__faq-disclosure", "bf__faq-disclosure"]
+        }
+    }
+}

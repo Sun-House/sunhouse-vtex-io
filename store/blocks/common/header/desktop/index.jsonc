@@ -1,42 +1,48 @@
 {
   "container#header--desktop--home": {
+    "children": [
+      "fixed-layout#desktop-header--home"
+    ],
     "props": {
       "blockClass": ["header", "header--desktop", "header--desktop--home"]
-    },
-    "children": ["fixed-layout#desktop-header--home"]
+    }
   },
 
   "fixed-layout#desktop-header--home": {
+    "children": [
+      "container#header--desktop__content"
+    ],
     "props": {
       "threshold": 50,
       "thresholdByRouteId": {
         "store.home": 50
       },
       "blockClass": ["sticky-header", "sticky-header--home"]
-    },
-    "children": ["container#header--desktop__content"]
+    }
   },
 
   "fixed-layout#desktop-header": {
+    "children": [
+      "container#header--desktop__content"
+    ],
     "props": {
       "threshold": 100,
       "thresholdByRouteId": {
         "store.home": 500
       },
       "blockClass": "sticky-header"
-    },
-    "children": ["container#header--desktop__content"]
+    }
   },
 
   "container#header--desktop__content": {
     "title": "Cabeçalho desktop",
-    "props": {
-      "blockClass": "header--desktop__content"
-    },
     "children": [
       "container#header__top-bar",
       "container#header--desktop__main",
       "container#header--desktop__menu"
-    ]
+    ],
+    "props": {
+      "blockClass": "header--desktop__content"
+    }
   }
 }

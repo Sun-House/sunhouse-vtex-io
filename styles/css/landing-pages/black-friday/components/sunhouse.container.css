@@ -1,0 +1,13 @@
+.container--bf__wrapper-faq-disclosure {
+    border-top: 1px solid #d5d4d4;
+    padding-top: 72px
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    .container--bf__wrapper-faq-disclosure {
+        margin: 0;
+    }
+
+}

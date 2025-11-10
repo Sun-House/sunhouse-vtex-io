@@ -21,7 +21,11 @@
         "header--desktop__controls--left"
       ]
     },
-    "children": ["link#stores", "link#wishlist--left"]
+    "children": [
+      "link#stores",
+      "link#wishlist--left",
+      "overlay-trigger#login"
+    ]
   },
 
   "link#stores": {
@@ -79,7 +83,7 @@
     },
     "children": [
       "link#wishlist--right",
-      "overlay-trigger#login",
+      // "overlay-trigger#login",
       "overlay-trigger#search-bar",
       "minicart.v2"
     ]

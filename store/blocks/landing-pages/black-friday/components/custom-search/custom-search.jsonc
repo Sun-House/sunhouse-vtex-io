@@ -3,6 +3,9 @@
 		"title": "PLP Vitrine Produtos",
 		"children": [
 			"flex-layout.row#search-result-black-friday",
+			"container#spacing-default",
+			"container#bf__wrapper-faq-disclosure",
+			"container#spacing-default",
 			"container#search-seo",
 			"container#spacing-default",
 			"container#blog-cards",
@@ -29,6 +32,9 @@
 		"children": [
 			"flex-layout.row#search-breadcrumb",
 			"flex-layout.row#search-result-black-friday.mobile",
+			"container#spacing-default",
+			"container#bf__wrapper-faq-disclosure",
+			"container#spacing-default",
 			"container#search-seo",
 			"container#spacing-default",
 			"container#blog-cards",
