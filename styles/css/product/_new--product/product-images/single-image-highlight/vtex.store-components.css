@@ -1,0 +1,22 @@
+/* COMPONENTE TEMPORARIO - A SER SUBSTITUIDO POR UM NOVO ELEMENTO STANDALONE DE IMAGEM A SER CRIADO */
+/* .vtex-store-components-3-x-imageElement--image-highlight { */
+.imageElement--image-highlight {
+    /* filter: brightness(70%); */
+    /* filter: brightness(90%); - Para imagem cinza padrao usado no desenvolvimento - e/ou DEBUG */
+    /* object-fit: cover;
+    width: 100%; */
+    /* height: 115vh; - Talvez precise alterar apos finalizar de personalizar os sub-componentes do novo componente de foto do produto */
+    /* height: auto; - Pode ser necessario alterar
+    min-height: 1124px; - Pode ser necessario alterar
+    max-height: 1124px; - Pode ser necessario alterar
+    position: absolute;
+    z-index: -1; */
+
+    filter: brightness(90%); /* Esse seria para o componente de imagem - ALTERAR O PERCENTUAL DE ACORDO COM A IDEIA FINAL */
+    object-fit: cover;
+    
+    width: 100vw;
+    max-width: unset;
+    margin-left: 50%;
+    transform: translateX(-50vw)
+}

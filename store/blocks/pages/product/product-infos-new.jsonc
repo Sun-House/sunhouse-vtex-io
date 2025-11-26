@@ -10,8 +10,20 @@
 
     "flex-layout.col#product-description-wrapper": {
         "children": [
+            "container#product-description-pure-text",
             "container#product-description-simple",
-            "container#product-description-custom"
+            "container#product-description-ms",
+
+            // Novos blocos de informações do produto:
+            "container#product-description-benefits",
+            "container#product-description-video",
+            "container#product-description-additional-infos",
+            "container#product-description-important-text",
+            "container#product-description-brand-text",
+
+            // A principio ficara melhor por ultimo - mas ao fim do projeto podera mudar
+            "container#product-description-custom",
+            "container#product-faq"
         ],
         "props": {
             "blockClass": "product-description-wrapper"
@@ -24,61 +36,6 @@
         ],
         "props": {
             "blockClass": "product-description-wrapper-mobile"
-        }
-    },
-
-    // Normal Description Wrapper
-    "container#product-description-simple": {
-        "title": "Descrição Normal (Movelsoft)",
-        "children": [
-            "flex-layout.row#product-description"
-        ],
-        "props": {
-            "blockClass": "product-description-simple"
-        }
-    },
-
-    // Custom Description v1 - Wrapper
-    "container#product-description-custom": {
-        "title": "Descrição Customizada",
-        "children": [
-            "flex-layout.row#product-description-custom"
-        ],
-        "props": {
-            "blockClass": "product-description-custom"
-        }
-    },
-    
-    "flex-layout.row#product-description-custom": {
-        "title": "Blocos Customizaveis",
-        "children": [
-            "flex-layout.col#product-description-custom"
-        ],
-        "props": {
-            "blockClass": "product-custom-description_line-wrapper"
-        }
-    },
-    "flex-layout.col#product-description-custom": {
-        "children": [
-            "container#line-wrapper-1",
-            "container#line-wrapper-2",
-            "container#line-wrapper-3",
-            "container#line-wrapper-4",
-            "container#line-wrapper-5",
-            "container#line-wrapper-6",
-            "container#line-wrapper-7",
-            "container#line-wrapper-8",
-            "container#line-wrapper-9",
-            "container#line-wrapper-10",
-            "container#line-wrapper-11",
-            "container#line-wrapper-12",
-            "container#line-wrapper-13",
-            "container#line-wrapper-14",
-            "container#line-wrapper-15" // Bloco da FAQ - conforme task da liveSEO, preciso mover esse para outra parte da PDP e desvincular da custom description, pois será para todos os produtos
-            // "container#line-wrapper-16"
-        ],
-        "props": {
-            "blockClass": ["blocks__product-description-custom", "product-custom-description_col-wrapper"]
         }
     }
 }

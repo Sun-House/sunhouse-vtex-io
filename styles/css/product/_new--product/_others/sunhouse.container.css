@@ -1,0 +1,9 @@
+/*
+    PRECISA REMOVER ESSE CSS DO OUTRO ARQUIVO E MANTER APENAS AQUI
+    E MOVER ELE PARA A PASTA CORRETA TAMBEM - Sera uma pasta geral para todos os arquivos de header a footer
+*/
+
+/* .sunhouse-container-1-x-wrapper--top-bar { */
+.wrapper--top-bar {
+    background-color: #161413 /* Cor final Refresh validada */
+}

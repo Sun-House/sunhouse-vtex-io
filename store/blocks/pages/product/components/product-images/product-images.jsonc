@@ -1,0 +1,35 @@
+{
+    "flex-layout.col#product-main-left": {
+        "children": [
+            "vtex.store-components:product-images#product-images",
+            "breadcrumb#product-page"
+        ],
+        "props": {
+            // "width": "43%",
+            "width": "50%",
+            "preventVerticalStretch": true,
+            "blockClass": "product-main-left"
+        }
+    },
+
+    "vtex.store-components:product-images#product-images": {
+        "title": "Fotos do Produto",
+        "props": {
+            "contentType": "all",
+            "contentOrder": "images-first",
+            // "displayMode": , - Nao vou usar ainda pois acredito que o nativo ja me atenda
+            "displayThumbnailsArrows": true,
+            "showPaginationDots": false,
+            "maxHeight": 1000, // Esse valor deve ficar ideal ja que a vtex nao renderiza muito mais do que isso para as imagens de produto
+            "thumbnailsOrientation": "horizontal",
+            "thumbnailAspectRatio": "10:10",
+            // "thumbnailMaxHeight": 231, - Não funciona a principio, mas usar de base para tamanho de imagem maximo para ter 3 por visualizacao
+            "aspectRatio": {
+                "desktop": "1:1",
+                "phone": "1:1"
+            },
+            
+            "blockClass": "product-images-v2" // ver se ha a necessidade de manter esse v2 - ACREDITO QUE NESSE BLOCO SUPORTA APENAS UMA CLASSE
+        }
+    }
+}

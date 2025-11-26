@@ -1,0 +1,44 @@
+{
+    // Custom Description v2
+    "container#product-description-custom": {
+        "title": "Descrição Customizada",
+        "children": [
+            "flex-layout.row#product-description-custom"
+        ],
+        "props": {
+            "blockClass": "product-description-custom"
+        }
+    },
+    
+    "flex-layout.row#product-description-custom": {
+        "title": "Blocos Customizaveis",
+        "children": [
+            "flex-layout.col#product-description-custom"
+        ],
+        "props": {
+            "blockClass": "product-custom-description_line-wrapper"
+        }
+    },
+    "flex-layout.col#product-description-custom": {
+        "children": [
+            "container#line-wrapper-1",
+            "container#line-wrapper-2",
+            "container#line-wrapper-3",
+            "container#line-wrapper-4",
+            "container#line-wrapper-5",
+            "container#line-wrapper-6",
+            "container#line-wrapper-7",
+            "container#line-wrapper-8",
+            "container#line-wrapper-9",
+            "container#line-wrapper-10",
+            "container#line-wrapper-11",
+            "container#line-wrapper-12",
+            "container#line-wrapper-13",
+            "container#line-wrapper-14"
+            // Bloco da FAQ que ficava aqui, agora ficara fixo no template da PDP
+        ],
+        "props": {
+            "blockClass": ["blocks__product-description-custom", "product-custom-description_col-wrapper"]
+        }
+    }
+}

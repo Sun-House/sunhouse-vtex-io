@@ -1,0 +1,77 @@
+{
+	"container#sku-variation-selector": {
+		"title": "Seletor de Variação de SKU",
+		"children": [
+			"enhanced-sku-selector#wrapper",
+			// "overlay-trigger#thumb-view", - Esse ainda nao sei se vou usar, seria para ver um "zoom" na imagem da variação selecionada, mas nao da pra fazer nativo, teria que desenvolver, e não sei se sera viavel para a entrega do projeto, talvez seja melhor deixar para um update futuro
+			"product-sku-attributes#sku-variation-data"
+		],
+		"props": {
+			"blockClass": "sku-selector_container"
+		}
+	},
+
+	"enhanced-sku-selector#wrapper": { // - nome correto para quando o app estiver standalone
+	// "sku-selector#wrapper": {
+		"props": {
+			"displayMode": "select", // Precisa manter assim para aparecer o dropdown de variações quando nao tiver thumbnailImage
+			"imageHeight": { 
+				// "desktop": 60, // 300 ideal para o popover
+				// "mobile": 60 // 300 ideal para o popover
+				"desktop": 300, // 300 ideal para o popover
+				"mobile": 300 // 300 ideal para o popover
+			},
+			"imageWidth": {
+				// "desktop": 60, // 300 ideal para o popover
+				// "mobile": 60 // 300 ideal para o popover
+				"desktop": 300, // 300 ideal para o popover
+				"mobile": 300 // 300 ideal para o popover
+			},
+			"hideImpossibleCombinations": false,
+			"showVariationsErrorMessage": false,
+			"blockClass": ["sku-selector_default", "sku-selector_acabamento"]
+		}
+	},
+
+	// Resumo da variação de SKU final selecionada
+	"product-sku-attributes#sku-variation-data": {
+		"props": {
+			"blockClass": "sku-variation-data_wrapper"
+		}
+	},
+
+	// Popover de Thumb View - porem ainda nao entendi como aplicar a logica para aparecer para cada variação
+	"overlay-trigger#thumb-view": {
+    	"children": [
+			"rich-text#thumb-view",
+			"overlay-layout#thumb-view"
+		],
+    	"props": {
+			"trigger": "hover",
+			"blockClass": "sku-selector-popover"
+		}
+	},
+	"rich-text#thumb-view": {
+		"props": {
+			"text": "Visualizar",
+			"blockClass": "sku-selector-popover"
+		}
+	},
+	"overlay-layout#thumb-view": {
+    	"children": [
+			"image#thumb-view"
+		],
+		"props": {
+			// "placement": "top"
+			"blockClass": "sku-selector-popover"
+		}
+	},
+	"image#thumb-view": {
+		"props": {
+			"src": "https://sunhouse.vteximg.com.br/arquivos/ids/248109/AA097C4",
+			"maxHeight": 120,
+			"maxWidth": 120,
+			"blockClass": "sku-selector-popover"
+		}
+	}
+}

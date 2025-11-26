@@ -1,0 +1,31 @@
+/* .sunhouse-product-dimensions-0-x-dimensionsContainer--product-dimensions-assembled { */
+.dimensionsContainer--product-dimensions-assembled {
+    margin: 24px 62px 0 62px
+}
+
+/* .sunhouse-product-dimensions-0-x-dimension--product-dimensions-assembled { */
+.dimension--product-dimensions-assembled {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #2d2926a1 /* Alterar conforme padrao Refresh Edson */
+}
+
+/* .sunhouse-product-dimensions-0-x-label--product-dimensions-assembled { */
+.label--product-dimensions-assembled {
+    color: #2d2926a1; /* Alterar conforme padrao Refresh Edson */
+    font-weight: normal !important;
+}
+
+/* .sunhouse-product-dimensions-0-x-value--product-dimensions-assembled { */
+.value--product-dimensions-assembled {
+    font-weight: 700 !important;
+    color: #2d2926 /* Alterar conforme padrao Refresh Edson */
+}
+
+/* Correcao para erro de estrutura do JSON da dimensao de Peso */
+/* .sunhouse-product-dimensions-0-x-dimension--product-dimensions-assembled:last-child { */
+.dimension--product-dimensions-assembled:last-child {
+    font-weight: 700;
+    border-bottom: unset
+}

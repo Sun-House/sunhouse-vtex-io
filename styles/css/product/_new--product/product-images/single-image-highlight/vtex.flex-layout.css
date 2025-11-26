@@ -1,0 +1,13 @@
+/* .vtex-flex-layout-10-x-flexRow--product-image-highlight-wrapper { */
+.flexRow--product-image-highlight-wrapper {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden; /* Ideal para nao gerar scroll horizontal - que é gerado por conta da regra de estourar a largura do container */
+    width: 100%;
+    height: auto;
+    /* min-height: 1124px;
+    max-height: 1124px; */
+    min-height: 1036px;
+    max-height: 1036px;
+    background-color: #ededed /* Cor final Refresh validada */
+}

@@ -9,6 +9,7 @@
     padding: 0
 }
 
+/* Movido para common/footer/vtex.store-components.css
 .imageElementLink--logo-footer {
     justify-content: center
 }
@@ -19,7 +20,7 @@
 
 .logoImage--logo-footer {
     width: 145px
-}
+} */
 
 .imageElement--paymentIcon {
     margin-top: -8px;
@@ -155,11 +156,13 @@
     flex-direction: column
 }
 
-.skuSelectorContainer .skuSelectorSubcontainer .skuSelectorTextContainer {
-    display: none
-}
+/* Transferido para product-sku-selector/vtex.store-components.css START */
 
-.skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList {
+/* .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorTextContainer {
+    display: none
+} */
+
+/* .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList {
     margin: 0;
     margin-bottom: 8px;
     display: flex;
@@ -216,7 +219,9 @@
 
 .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem--selected .valueWrapper {
     color: #fff !important
-}
+} */
+
+/* Transferido para product-sku-selector/vtex.store-components.css END */
 
 .eyesightIcon {
     color: #2d2926;
@@ -361,6 +366,7 @@
     border-radius: 5px
 }
 
+/* Transferido para product/new--product/vtex.store-components.css
 .productNameContainer {
     padding-top: 6px
 }
@@ -373,8 +379,9 @@
     font-weight: 700;
     line-height: normal;
     color: #2d2926
-}
+} */
 
+/* Transferido para product/new--product/vtex.store-components.css
 .productBrandContainer {
     display: flex;
     margin-left: 5px
@@ -393,7 +400,7 @@
 .productBrandContainer .productBrandName::before {
     content: "| Marca:";
     margin-right: 5px
-}
+} */
 
 .skuSelectorContainer--product-page .skuSelectorTextContainer {
     display: flex !important;
@@ -498,6 +505,7 @@
     max-height: 12px
 }
 
+/* Transferido para product/new--product/product-descriptions/vtex.store-components.css
 .productDescriptionText {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
@@ -507,7 +515,7 @@
     color: #2d2926;
     text-transform: unset;
     padding-bottom: 1.5rem
-}
+} */
 
 .imageElement--search-result {
     width: 100%;
@@ -553,6 +561,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+    /* Movido para common/footer/vtex.store-components.css
     .imageElementLink--logo-footer {
         padding: 0;
         margin-block: 6px 18px;
@@ -564,7 +573,7 @@
         width: 120px;
         margin-bottom: 16px;
         justify-content: center
-    }
+    } */
 
     .logoImage--pci-image {
         width: 15%

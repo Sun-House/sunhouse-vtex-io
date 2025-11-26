@@ -1,6 +1,6 @@
 {
     "container#product-exclusive": {
-        "title": "Wrapper - Produto Exclusivo",
+        "title": "SE: Produto Exclusivo",
 		"children": [
             "rich-text#exclusive-cta_line-1",
             "rich-text#exclusive-cta_line-2",

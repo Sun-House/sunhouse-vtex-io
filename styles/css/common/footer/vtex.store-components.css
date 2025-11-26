@@ -1,0 +1,30 @@
+.imageElementLink--logo-footer {
+    justify-content: center;
+    width: fit-content
+}
+
+/* .imageElementLink--logo-footer .imageElement {
+    margin: 0 auto
+} */
+
+/* .logoImage--logo-footer {
+    width: 145px
+} */
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    .imageElementLink--logo-footer {
+        padding: 0;
+        margin-block: 6px 18px;
+        display: flex !important;
+        justify-content: center
+    }
+
+    .logoImage--logo-footer {
+        width: 120px;
+        margin-bottom: 16px;
+        justify-content: center
+    }
+
+}

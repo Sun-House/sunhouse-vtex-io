@@ -1,9 +1,10 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#banner-main",
-      "container#differentials",
-      "flex-layout.row#categories-slider",
+      "info-card#banner-main",
+      // "list-context.image-list#banner-main", - Vai sair no novo layout Refresh
+      // "container#differentials", - Vai sair no novo layout Refresh
+      "flex-layout.row#categories-slider", // Precisara ser recriado no novo layout Refresh
       "container#spacing-default",
       "list-context.image-list#image-double",
       "container#spacing-default",
@@ -19,9 +20,9 @@
       // "flex-layout.row#trustvox-colt-highlight",
       "container#trustvox-colt-highlight",
       "container#spacing-default",
-      //
       "container#blog-cards",
-      "container#spacing-default"
+      "container#spacing-default",
+      "container#pre-footer-about"
     ]
   }
 }

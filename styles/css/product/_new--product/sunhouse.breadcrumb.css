@@ -1,0 +1,7 @@
+/* .sunhouse-breadcrumb-1-x-container--product-page { */
+.container--product-page {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 168px /* Pode ser necessario ajustar apos troca de fontes e outros ajustes da pagina */
+}

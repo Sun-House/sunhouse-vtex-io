@@ -1,0 +1,22 @@
+{
+    "container#share-block": {
+		"title": "Compartilhar nas Redes - Wrapper",
+		"children": [
+			"share#native-default"
+		],
+		"props": {
+			"blockClass": "share-block_container"
+		}
+	},
+
+    "share#native-default": {
+        "props": {
+            "social": {
+                "Facebook": true,
+                "WhatsApp": true,
+                "Twitter": true,
+                "Pinterest": true
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "info-card#banner-main": {
+        "title": "Banner Principal",
+        "props": {
+            "isFullModeStyle": true,
+			"textMode": "rich-text",
+            "textPosition": "center",
+            "textAlignment": "center",
+            "headline": "# Banner Principal",
+            "subhead": "## Subtítulo do banner", // Pode nao ser usado por conta de regras de SEO - a validar
+            "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting.",
+            "callToActionMode": "button",
+            "callToActionText": "Aproveitar",
+            "callToActionUrl": "/", // A ser definido pelo Site Editor
+			"imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+			"mobileImageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.pn",
+			// "imageActionUrl": "/", // Ta quebrando algumas questoes visuais, ideal nao usar nem aqui nem no Site Editor
+            "imageAltText": "Texto ALT para SEO",
+			"fetchpriority": "auto",
+			"preload": true,
+            "blockClass": "main-banner-home" // Acredito que esse componente suporte apenas uma classe
+        }
+    },
+
+    // Para funcionar o slider e ter mais de um banner, preciso recriar o componente de info-card para receber
+    // varias imagens e textos, como no componente de imagem nativo da vtex.
+    // Nesse caso, o info-card receberia o slider-layout como children.
+    // A principio nao irei fazer isso, mas caso precise, deixarei no roadmap.
+    "slider-layout#banner-main-slider": {
+        "title": "Slider Banner Principal",
+        "props": {
+            "itemsPerPage": 1,
+            "infinite": true,
+            "autoplay": {
+                "timeout": 4000,
+                "stopOnHover": true
+            },
+            "blockClass": ["banner", "banner-main"]
+        }
+    }
+}

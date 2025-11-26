@@ -1,0 +1,14 @@
+/* Atraves desse arquivo é possivel customizar o header por namekey de template */
+:global(.render-container.render-route-store-product) {
+	--header-background-color: transparent;
+    --header-text-color: #fff;
+    --header-menu-item-highlight-color: #fff;
+	--header-menu-border-color: transparent
+}
+
+:global(.render-route-store-product .render-provider .vtex-store__template) {
+    background-color: unset
+}
+
+/* Desktop Force */
+/* @media screen and (min-width: 1025px) { ... } */

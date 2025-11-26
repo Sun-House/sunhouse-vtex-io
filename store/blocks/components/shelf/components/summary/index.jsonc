@@ -18,20 +18,68 @@
 
   // Novo sistema de Shelf padrao
   "product-summary.shelf#main-product-new": {
+    "title": "Vitrine de Produtos",
 		"children": [
 			"stack-layout#bf-shelf-product-image",
+
+      //
+      "product-summary-space", // a principio nao esta gerando nenhum espaco — mas vou manter para continuar testando
+      // "rich-text#balai",
+      "product-summary-sku-selector#default-shelf",
+      //
+
       "container#product-highlights",
 			"product-summary-name#bf-shelf",
-      
-      // "container#bf-price-block", // Price wrapper
-      // "hover-container#actions"
-      // aqui vai o condition layout:
       "condition-layout.product#shelf-elf-checker"
 		],
 		"props": {
 			"blockClass": ["black-friday", "main-shelf-new"]
 		}
 	},
+
+  //
+  "rich-text#balai": {
+    "props": {
+      "text": "Olá!"
+    }
+  },
+
+  "product-summary-sku-selector#default-shelf": {
+    "props":{
+      "displayMode": "slider",
+      //
+      "sliderArrowSize": 10,
+      "sliderDisplayThreshold": 1,
+      "sliderItemsPerPage": {
+        "desktop": 6,
+        // "tablet": 2,
+        "phone": 4
+      },
+      // "maxItems": 6,
+      //
+			"hideImpossibleCombinations": false,
+			"visibility": "always",
+			"initialSelection": "empty",
+			"showVariationsErrorMessage": true, // Nao entendi o funcionamento — nao esta funcionando a principio
+			"showVariationsLabels": ["none"],
+			"thumbnailImage": "tampo",
+			"imageHeight": {
+        "desktop": 5,
+        "phone": 5
+      },
+			"imageWidth": {
+        "desktop": 5,
+        "phone": 5
+      },
+			"visibleVariations": [
+				// "Medida",
+				"Tampo (acabamento)"
+				// "Base (acabamento)"
+			],
+
+			"blockClass": "sku-selector_default-shelf"
+    }
+  },
   //
 
   "product-summary-name": {
@@ -216,6 +264,8 @@
       "blockClass": "actions"
     }
   },
+
+  // Old Price Block - Shelf - Sendo usada? Nao sei, mas vou manter por aqui a principio START
   "container#shelf-product-listPrice": {
     "title": "Preço (com preço de lista) produto vitrine",
     "children": [
@@ -253,6 +303,7 @@
       "blockClass": "product-shelf-price"
     }
   },
+  // Old Price Block - Shelf - Sendo usada? Nao sei, mas vou manter por aqui a principio END
 
   "flex-layout.col#shelf-product-unavailable": {
     "title": "Produto vitrine indisponível",
@@ -398,7 +449,10 @@
   },
 
   "flex-layout.col#shelf-buy-button": {
-    "children": ["add-to-cart-button#shelf-buy"],
+    "children": [
+      // "add-to-cart-button#shelf-buy"
+      "vtex.add-to-cart-button:add-to-cart-button#shelf-buy"
+    ],
     "props": {
       "blockClass": ["shelf-buy-button", "buy-button"],
       "width": "grow"
@@ -415,7 +469,8 @@
     }
   },
 
-  "add-to-cart-button#shelf-buy": {
+  // "add-to-cart-button#shelf-buy": {
+  "vtex.add-to-cart-button:add-to-cart-button#shelf-buy": {
     "title": "Botão comprar produto vitrine",
     "props": {
       "customPixelEventId": "addToCart",

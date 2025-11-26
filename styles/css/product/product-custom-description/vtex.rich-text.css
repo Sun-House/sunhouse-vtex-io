@@ -6,7 +6,8 @@
 }
 
 .wrapper--wrapper__textoDescricao-esquerda {
-    margin: 32px
+    /* margin: 32px */
+    margin: 62px /* Ajuste para o Refresh */
 }
 
 .container--wrapper__textoDescricao-esquerda {

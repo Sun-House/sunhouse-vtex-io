@@ -35,6 +35,7 @@
     }
   },
   "rich-text#shipping-calculate": {
+    "title": "Texto - Simular Frete",
     "props": {
       "text": "Consulte o frete e prazo de entrega",
       "blockClass": "shipping-calculate"

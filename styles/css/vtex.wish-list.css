@@ -1,1 +1,68 @@
-.wishlistIconContainer :global(.vtex-button){background-color:rgba(0,0,0,0);border:none;padding:10px;min-height:initial}.wishlistIconContainer :global(.vtex-button) :global(.vtex-button__label){padding:0 !important}.wishlistIconContainer .wishlistIcon{background:rgba(0,0,0,0)}.wishlistIconContainer .wishlistIcon.outline::after{display:inline-flex;content:"";font-size:27.88px;font-family:"fantasticon";font-style:normal;font-weight:400;line-height:1;color:#2d2926}.wishlistIconContainer .wishlistIcon.fill::after{display:inline-flex;content:"";font-size:26.88px;font-family:"fantasticon";font-style:normal;font-weight:400;line-height:1;color:#f90041}.wishlistIconContainer .iconSize{width:27.88px;height:24.35px}.wishlistIconContainer .iconSize--product-page{width:21.08px;height:18.41px}@media screen and (max-width: 1024px){.wishlistIconContainer--product-page{position:absolute;right:0;top:50%;transform:translateY(-50%);margin-right:-10px;margin-top:-10px}}
+/* NAO mover esse arquivo!
+   Será mais pratico estilizar por aqui mesmo */
+
+.wishlistIconContainer :global(.vtex-button) {
+    /* background-color: #00000000; */
+    border: none;
+    padding: 10px;
+    min-height: initial
+}
+
+.wishlistIconContainer--product-page :global(.vtex-button) {
+    background-color: transparent;
+    right: -35px /* Ajuste para o novo layout Refresh */
+}
+
+.wishlistIconContainer :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0 !important;
+}
+
+.wishlistIconContainer .wishlistIcon {
+    background: rgba(0,0,0,0);
+}
+
+.wishlistIconContainer .wishlistIcon.outline::after {
+    display: inline-flex;
+    content: "";
+    font-size: 27.88px;
+    font-family: "fantasticon";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #2d2926;
+}
+
+.wishlistIconContainer .wishlistIcon.fill::after {
+    display: inline-flex;
+    content: "";
+    font-size: 26.88px;
+    font-family: "fantasticon";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #f90041;
+}
+
+.wishlistIconContainer .iconSize {
+    width: 27.88px;
+    height: 24.35px;
+}
+
+.wishlistIconContainer .iconSize--product-page {
+    width: 21.08px;
+    height: 18.41px;
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    .wishlistIconContainer--product-page {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: -10px;
+        margin-top: -10px;
+    }
+
+}

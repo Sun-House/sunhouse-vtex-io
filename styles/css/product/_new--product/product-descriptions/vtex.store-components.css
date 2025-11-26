@@ -1,0 +1,18 @@
+/* Descricao do Produto - Herdada do Movelsoft */
+/* .vtex-store-components-3-x-productDescriptionText--product-description_right-text { */
+.productDescriptionText--product-description_right-text {
+    /* margin: 62px */
+    margin: 0 62px 0 62px
+}
+
+/* Descricao do produto geral - Normalmente cadastrada manualmente na VTEX */
+.productDescriptionText {
+    /* font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px; */
+    line-height: 1.35;
+    color: #2d2926;
+    /* text-transform: unset; */
+    padding-bottom: 1.5rem
+}

@@ -5,7 +5,7 @@
       "quantityDisplay": "always",
       "alwaysTwoDigits": "not-empty",
       "maxDrawerWidth": 500,
-      "customPixelEventName": "addToCart",
+      "customPixelEventName": "addToCart", // Desabilitado ele permite o prop do botao da PDP de addToCart "isOneClickBuy" funcionar corretamente
       "itemCountMode": "total",
       "blockClass": ["minicart", "minicart-main"]
     },

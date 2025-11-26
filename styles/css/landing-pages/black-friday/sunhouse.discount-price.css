@@ -1,7 +1,9 @@
+/* Manual import for Oswald fallback font style */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
 .container--lp_pix-price-shelf {
     text-align: left;
     font-weight: normal;
-    /* font-family: bebas neue; */
-    font-family: "bebas neue", "impact", sans-serif;
+    font-family: "bebas neue", "oswald", sans-serif;
     font-size: 36px
 }

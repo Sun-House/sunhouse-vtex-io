@@ -1,3 +1,4 @@
+/* Movido para o arquivo common/footer/vtex.flex-layout.css
 .flexRow--footer-newsletter {
     padding: 28px 0 24px;
     background-color: #aba9a8
@@ -92,7 +93,7 @@
     padding-top: 12px;
     display: flex;
     flex-direction: column
-}
+} */
 
 .flexRow--header-mobile-bottom {
     max-height: 53px;
@@ -434,6 +435,7 @@
     width: 50%
 }
 
+/* Movido para o arquivo product/new--product/vtex.flex-layout.css
 .flexCol--buy-button :global(.vtex-button) {
     border: none;
     box-sizing: border-box;
@@ -442,27 +444,28 @@
     transition: all .2s;
     background: #fff;
     border: solid 1px #2d2926
-}
+} */
 
-.flexCol--buy-button :global(.vtex-button) :global(.vtex-button__label) {
+/* Movido para o arquivo product/new--product/vtex.flex-layout.css
+/* .flexCol--buy-button :global(.vtex-button) :global(.vtex-button__label) {
     font-size: 16px;
     font-weight: 700;
     font-style: normal;
     color: #2d2926;
     text-transform: none
-}
+} */
 
-/**/
+/* Movido para o arquivo product/new--product/vtex.flex-layout.css
 /*.flexCol--buy-button :global(.vtex-button) {
     background: #ffe133 !important;
     border-color: #ffda00 !important
 }*/
 
-.flexCol--buy-button :global(.vtex-button):hover {
+/* Movido para o arquivo product/new--product/vtex.flex-layout.css
+/* .flexCol--buy-button :global(.vtex-button):hover {
     background: #ffe133 !important;
     border-color: #ffda00 !important
-}
-/**/
+} */
 
 .flexCol--shelf-quantity {
     border: solid 1px #575451;
@@ -537,9 +540,10 @@
     background-color: #252525
 }
 
+/* Movido para o arquivo home/_new--home/category-grid/vtex.flex-layout.css
 .flexRow--categories-slider {
     margin-top: 30px
-}
+} */
 
 .flexRow--grid-banners-desktop {
     margin-top: 54px
@@ -574,9 +578,10 @@
     padding: 75px 50px
 }
 
+/* Nao sera mais necessario no novo layout Refresh
 .flexCol--categories-title {
     padding-bottom: 24px
-}
+} */
 
 .flexCol--double-banners-mobile {
     max-width: 500px
@@ -586,14 +591,16 @@
     margin-top: 0 !important
 }
 
+/* Movido para o arquivo product/new--product/product-descriptions/vtex.flex-layout.css
 .flexRow--product-main {
     padding: 64px 0
-}
+} */
 
+/* Movido para o arquivo product/new--product/product-descriptions/vtex.flex-layout.css
 .flexRow--product-infos-wrapper {
     max-width: 1200px;
     margin: 0 auto
-}
+} */
 
 .flexRow--product-description-main-title {
     width: 100%;
@@ -626,11 +633,12 @@
     margin-bottom: 0
 }
 
+/* Movido para o arquivo product/new--product/vtex.flex-layout.css
 .flexRowContent--buy-container {
     justify-content: space-between;
     padding-top: 38px;
     padding-bottom: 44px
-}
+} */
 
 .flexRowContent--product-top-infos {
     position: relative;
@@ -675,14 +683,16 @@
     height: fit-content
 }
 
+/* Movido para o arquivo product/new--product/vtex.flex-layout.css
 .flexCol--product-main-right {
     max-width: 500px
 }
 
 .flexCol--product-main-right::-webkit-scrollbar {
     display: none
-}
+} */
 
+/* Movido para o arquivo product/new--product/vtex.flex-layout.css
 .flexCol--product-available,
 .flexCol--product-unavailable {
     padding-top: 24px;
@@ -692,7 +702,7 @@
 
 .flexCol--product-unavailable {
     margin-bottom: 20px
-}
+} */
 
 .flexCol--buy-together-info {
     border-radius: 5px;
@@ -936,6 +946,7 @@
 }
 
 @media screen and (max-width:1024px) {
+    /* Movido para o arquivo common/footer/vtex.flex-layout.css
     .flexRow--footer-newsletter {
         padding: 53px 0 30px;
         background-repeat: repeat
@@ -994,7 +1005,7 @@
 
     .flexCol--footer-payments {
         height: auto
-    }
+    } */
 
     .flexRow--header-mobile-bottom .flexRowContent--header-mobile-bottom {
         width: 100%;
@@ -1173,9 +1184,10 @@
 }
 
 @media screen and (max-width:768px) {
+    /* Movido para o arquivo common/footer/vtex.flex-layout.css
     .flexRow--footer-newsletter .flexRowContent--footer-newsletter {
         padding-bottom: 20px
-    }
+    } */
 
     .flexRowContent--minicart-quantity-price {
         flex-direction: column

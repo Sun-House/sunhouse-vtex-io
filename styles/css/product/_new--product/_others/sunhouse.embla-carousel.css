@@ -1,0 +1,19 @@
+/* .sunhouse-embla-carousel-1-x-container--info-carousel
+.sunhouse-embla-carousel-1-x-container
+.sunhouse-embla-carousel-1-x-wrapper
+.sunhouse-embla-carousel-1-x-paragraph,
+
+.sunhouse-embla-carousel-1-x-container--info-carousel
+.sunhouse-embla-carousel-1-x-container
+.sunhouse-embla-carousel-1-x-wrapper
+.sunhouse-embla-carousel-1-x-link */
+
+.container--info-carousel .container .wrapper .paragraph,
+.container--info-carousel .container .wrapper .link {
+    /* margin: 0;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400; */
+    color: #eaeae9 /* Unico ajuste aplicado para validar o refresh - migrar para o arquivo de embla-carousel.css do header correto */
+}

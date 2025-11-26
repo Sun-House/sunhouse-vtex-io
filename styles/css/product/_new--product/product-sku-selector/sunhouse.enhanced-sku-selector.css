@@ -1,0 +1,136 @@
+/* Estilo do container das opcoes de variações START */
+.skuSelectorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+/* Estilizacao das 'bolinhas' das variações START */
+/* .sunhouse-enhanced-sku-selector-1-x-skuSelectorItem--sku-selector_default { */
+.skuSelectorItem--sku-selector_default {
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 100%
+}
+
+.skuSelectorItemImage--sku-selector_default {
+    background: unset !important; /* Usei background simples pois nao sei qual tipo de bg esta sendo aplicado */
+    border-radius: 50px
+}
+
+/* .sunhouse-enhanced-sku-selector-1-x-skuSelectorInternalBox--sku-selector_default { */
+.skuSelectorInternalBox--sku-selector_default {
+    border-radius: 100%
+}
+
+.valueWrapper--sku-selector_default {
+    /* width: 60px;
+    height: 60px; */
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid #000; */
+    /* border-radius: 50px; */
+    /* padding: 3px !important */
+    padding: 2px !important
+}
+
+.skuSelectorItemImageValue--sku-selector_default {
+    width: 35px;
+    height: 35px;
+    max-width: 100%;
+    max-height: 100%;
+    /* border-radius: 50px */
+    border-radius: 100%
+}
+/* Estilizacao das 'bolinhas' das variações END */
+
+
+/**/
+.skuSelectorContainer .skuSelectorSubcontainer {
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 12px !important
+}
+
+/* .sunhouse-enhanced-sku-selector-1-x-skuSelectorName { */
+.skuSelectorName {
+    font-weight: bold;
+    color: #2d2926
+}
+
+.skuSelectorNameContainer {
+    width: 100%
+}
+
+.skuSelectorSelectContainer {
+    width: 100%;
+}
+
+.skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList {
+    /* margin: 20px 0; */
+    margin: 8px 0;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* gap: 8px 5px */
+    gap: 8px 12px
+}
+
+/* Seletor sem thumbnails */
+.skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem {
+    margin: 0 2.5px;
+    width: 44px;
+    height: 23px;
+    /* outline: 2px solid #2d2926; */
+    outline: 1px solid #2d2926;
+    background-color: #eee;
+    transition: outline-color .3s
+    /* transition: .3s */
+}
+
+.skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem:hover {
+    /* outline-color: #ffe133 */
+    outline-color: #F90041;
+    outline-width: 2px;
+}
+
+/*  VER O QUE SAO ABAIXO: */
+.skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem .frameAround {
+    display: none
+}
+
+.skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem .skuSelectorInternalBox {
+    border: none
+}
+
+/* .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem .skuSelectorInternalBox .diagonalCross {
+    display: none
+} */
+
+.skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem .skuSelectorInternalBox .valueWrapper {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2d2926;
+    padding: 0
+}
+
+.skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem .skuSelectorInternalBox .valueWrapper--product-page--unavailable {
+    color: #c8c8c8
+}
+
+.skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem--selected {
+    /* HOMOLOG: background: green !important */
+    outline-color: #F90041;
+    outline-width: 2px
+}
+
+/* .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem--selected .valueWrapper {
+    color: #fff !important
+} */
+/**/
+
+/* Estilo do container das opcoes de variações END */

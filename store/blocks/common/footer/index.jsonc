@@ -8,38 +8,24 @@
       "footer-layout.mobile#without-seo-info"
     ]
   },
-  "footer-layout.desktop#without-seo-info": {
-    "children": [
-      "container#newsletter",
-      "flex-layout.row#footer-content",
-      "flex-layout.row#footer-bottom"
-    ]
-  },
-  "footer-layout.mobile#without-seo-info": {
-    "children": [
-      "container#newsletter",
-      "flex-layout.row#footer-content-mobile",
-      "container#social-medias-mobile",
-      "flex-layout.row#footer-payments-title",
-      "flex-layout.row#footer-payments-content",
-      "flex-layout.row#footer-security-title",
-      "flex-layout.row#footer-security-content",
-      "container#footer-selo-mobile",
-      "flex-layout.row#footer-bottom"
-    ]
-  },
+  
   "footer-layout.desktop": {
     "title": "Footer Desktop",
     "children": [
-      "container#newsletter",
+      // "container#newsletter", - Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
+      "flex-layout.row#footer-logo",
       "flex-layout.row#footer-content",
+      "flex-layout.row#footer-social",
       "flex-layout.row#footer-bottom"
-    ]
+    ],
+    "props": {
+      "blockClass": ["global-footer", "footer-wrapper-desktop"]
+    }
   },
   "footer-layout.mobile": {
     "title": "Footer Mobile",
     "children": [
-      "container#newsletter",
+      // "container#newsletter", - Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
       "flex-layout.row#footer-content-mobile",
       "container#social-medias-mobile",
       "flex-layout.row#footer-payments-title",
@@ -48,7 +34,36 @@
       "flex-layout.row#footer-security-content",
       "container#footer-selo-mobile",
       "flex-layout.row#footer-bottom"
-    ]
+    ],
+    "props": {
+      "blockClass": ["global-footer", "footer-wrapper-mobile"]
+    }
+  },
+  "footer-layout.desktop#without-seo-info": {
+    "children": [
+      // "container#newsletter", - Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
+      "flex-layout.row#footer-content",
+      "flex-layout.row#footer-bottom"
+    ],
+    "props": {
+      "blockClass": ["global-footer", "footer-wrapper-desktop_wsi"]
+    }
+  },
+  "footer-layout.mobile#without-seo-info": {
+    "children": [
+      // "container#newsletter", - Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
+      "flex-layout.row#footer-content-mobile",
+      "container#social-medias-mobile",
+      "flex-layout.row#footer-payments-title",
+      "flex-layout.row#footer-payments-content",
+      "flex-layout.row#footer-security-title",
+      "flex-layout.row#footer-security-content",
+      "container#footer-selo-mobile",
+      "flex-layout.row#footer-bottom"
+    ],
+    "props": {
+      "blockClass": ["global-footer", "footer-wrapper-mobile_wsi"]
+    }
   },
   "container#footer-selo-mobile": {
     "title": "Footer Selos Mobile",
@@ -72,7 +87,9 @@
     }
   },
   "container#social-medias-mobile-text": {
-    "children": ["rich-text#social-medias-mobile-text"],
+    "children": [
+      "rich-text#social-medias-mobile-text"
+    ],
     "props": {
       "blockClass": "title-social-medias"
     }
@@ -81,7 +98,7 @@
     "title": "Social Media Texto",
     "props": {
       "text": "#### Redes Sociais",
-      "blockClass": ["footer-title", "footer-right-title"]
+      "blockClass": ["footer", "footer-title", "footer-right-title"]
     }
   },
   "container#social-medias-mobile-icons-container": {
@@ -111,9 +128,12 @@
   "flex-layout.col#footer-content-left": {
     "title": "Footer Content Esquerda",
     "children": [
-      "flex-layout.row#footer-logo",
+      // "flex-layout.row#footer-logo",
       "flex-layout.row#footer-schedules",
-      "flex-layout.row#footer-social"
+      // "flex-layout.row#footer-social"
+      "flex-layout.row#footer-phone",
+      "flex-layout.row#footer-email",
+      "flex-layout.row#footer-address"
     ],
     "props": {
       "blockClass": "footer-content-left",
@@ -121,33 +141,72 @@
     }
   },
   "flex-layout.row#footer-logo": {
-    "children": ["image#logo-desktop-footer"],
+    "children": [
+      "image#logo-desktop-footer"
+    ],
     "props": {
       "blockClass": "footer-logo"
     }
   },
   "flex-layout.row#footer-schedules": {
-    "children": ["rich-text#footer-schedules-content"],
+    "children": [
+      "rich-text#footer-schedules-content"
+    ],
     "props": {
       "blockClass": "footer-schedules"
     }
   },
+
+  //
+  "flex-layout.row#footer-phone": {
+    "children": [
+      "rich-text#footer-phone"
+    ],
+    "props": {
+      "blockClass": "footer-phone"
+    }
+  },
+  "flex-layout.row#footer-email": {
+    "children": [
+      "rich-text#footer-email"
+    ],
+    "props": {
+      "blockClass": "footer-email"
+    }
+  },
+  "flex-layout.row#footer-address": {
+    "children": [
+      "rich-text#footer-address"
+    ],
+    "props": {
+      "blockClass": "footer-address"
+    }
+  },
+  //
+
   "flex-layout.row#footer-social": {
-    "children": ["flex-layout.col#footer-social"],
+    "children": [
+      // "flex-layout.col#footer-social"
+      "rich-text#footer-social",
+      "list-context.image-list#social"
+    ],
     "props": {
       "blockClass": "footer-social"
     }
   },
-  "flex-layout.col#footer-social": {
-    "children": ["rich-text#footer-social", "list-context.image-list#social"],
-    "props": {
-      "blockClass": "footer-social"
-    }
-  },
+  // "flex-layout.col#footer-social": {
+  //   "children": [
+  //     "rich-text#footer-social",
+  //     "list-context.image-list#social"
+  //   ],
+  //   "props": {
+  //     "blockClass": "footer-social"
+  //   }
+  // },
   "flex-layout.col#footer-content-right": {
     "title": "Footer Content Direita",
     "children": [
-      "flex-layout.row#footer-content-about",
+      // "flex-layout.row#footer-content-about", - Movido permanentemente para home.jsonc - a principio precisa repensar nesse bloco da home
       "flex-layout.row#footer-content-lists",
       "flex-layout.row#footer-images-bottom"
     ],
@@ -156,6 +215,41 @@
       "preventVerticalStretch": true
     }
   },
+
+  //
+  "container#pre-footer-about": {
+    "children": [
+      "responsive-layout.desktop#pre-footer-about",
+      "responsive-layout.mobile#pre-footer-about"
+    ],
+    "props": {
+      "blockClass": "footer-content-about"
+    }
+  },
+
+  "responsive-layout.desktop#pre-footer-about": {
+    "children": [
+      // "container#footer-about-text"
+      "flex-layout.row#footer-content-about",
+      "container#home-faq"
+    ],
+    "props": {
+      "blockClass": "render-block_pre-footer-about"
+    }
+  },
+  "responsive-layout.mobile#pre-footer-about": {
+    "children": [
+      "disclosure-content#footer-about"
+
+      // USAR ESSE (QUE AINDA PRECISA SER CRIADO):
+      // "container#wrapper_footer-about-mobile"
+      ,"container#home-faq"
+    ],
+    "props": {
+      "blockClass": "render-block_pre-footer-about_mobile"
+    }
+  },
+
   "flex-layout.row#footer-content-about": {
     "children": [
       "container#footer-about-text"
@@ -177,25 +271,123 @@
     "title": "Texto Sobre-Nos",
     "props": {
       "text": "### Sobre a Sun House \n\n A Sun House é uma loja de móveis online e física que oferece aos nossos clientes os melhores móveis e itens de decoração para quartos, salas, cozinhas, banheiros e muito mais.\n\nAqui você encontra uma variedade enorme de produtos, como também o sofá perfeito para sua sala, a cama mais confortável e as mesas de cabeceiras mais duradouras para complementar o seu quarto.\n\nSe você está precisando de uma cadeira nova, com certeza encontrará os mais diversos estilos e designs, ou se estiver em busca de uma mesa de trabalho para seu ambiente corporativo, terá o melhor aproveitamento em nossas seções do site.\n\nIncrível, não é mesmo? Além de oferecermos os melhores móveis e artigos para decoração, aqui na loja online você tem a oportunidade de comprar durante todo o ano com ofertas incríveis! Tudo isso para te oferecer o melhor custo-benefício e decorar a sua casa com muita facilidade, sem abrir mão da qualidade.",
-      "blockClass": "footer-about-text"
+      "blockClass": ["footer", "footer-about-text"]
     }
   },
+
+  "container#home-faq": {
+      "title": "FAQ - Perguntas Frequentes Home",
+      "children": [
+          "flex-layout.row#footer-faq-disclosure__title-row",
+          "container#custom-block__faq-disclosure"
+      ],
+      "props": {
+          "blockClass": ["custom-block__container", "custom-block__wrapper-faq-disclosure", "home-faq"]
+      }
+  },
+
+  "flex-layout.row#footer-faq-disclosure__title-row": {
+        "children": [
+            "rich-text#footer-faq-disclosure__title-row"
+        ],
+        "props": {
+            "blockClass": ["feature-card__title", "feature-card__title", "footer-faq-title_row"]
+        }
+    },
+    "rich-text#footer-faq-disclosure__title-row": {
+        "title": "Texto - Titulo FAQ",
+        "props": {
+            "text": "## Perguntas Frequentes",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            // "blockClass": ["wrapper__custom-description-title", "footer-faq-title"]
+            "blockClass": "footer-faq-title"
+        }
+    },
+  //
+
+
+  //
   "flex-layout.row#footer-bottom": {
-    "title": "Footer Baixo",
-    "children": ["rich-text#footer-bottom-text"],
+    // "title": "Footer Baixo",
+    "title": "Footer Linhas",
+    "children": [
+      "flex-layout.col#footer-bottom-left",
+      "flex-layout.col#footer-bottom-right"
+    ],
     "props": {
-      "blockClass": "footer-bottom",
-      "horizontalAlign": "center",
-      "colJustify": "around",
-      "preventHorizontalStretch": true
+      // "horizontalAlign": "center",
+      // "colJustify": "around",
+      // "preventHorizontalStretch": true,
+      "blockClass": "footer-bottom"
     }
   },
+  "flex-layout.col#footer-bottom-left": {
+    "children": [
+      "rich-text#footer-bottom-text"
+    ],
+    "props": {
+      "blockClass": "footer-bottom-left"
+    }
+  },
+  "flex-layout.col#footer-bottom-right": {
+    "children": [
+      "flex-layout.row#footer-payments-content"
+    ],
+    "props": {
+      "blockClass": "footer-bottom-right"
+    }
+  },
+
+  // O bloco em si foi descontinuado, reutilizado apenas a linha das bandeiras de pagamento
+  "flex-layout.col#footer-payments": {
+    "title": "Pagamentos",
+    "children": [
+      "rich-text#footer-payments",
+      "flex-layout.row#footer-payments-content"
+    ],
+    "props": {
+      // "preventVerticalStretch": true,
+      // "width": "grow",
+      "blockClass": "footer-payments"
+    }
+  },
+  "rich-text#footer-payments": {
+    "title": "Titulo Pagamentos",
+    "props": {
+      "text": "#### Pagamentos",
+      "blockClass": ["footer", "footer-payments", "footer-title", "footer-right-title"]
+    }
+  },
+  "flex-layout.row#footer-payments-content": {
+    "title": "Icones Pagamentos",
+    "children": [
+      "image#mastercard",
+      "image#visa",
+      "image#elo",
+      "image#diners",
+      "image#amex",
+      "image#paypal",
+      "image#pix"
+      // "image#boleto"
+    ],
+    "props": {
+      // "colSizing": "auto",
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true,
+      // "preserveLayoutOnMobile": true,
+      "blockClass": ["footer-payments-content", "footer-list", "footer-payments-list"]
+    }
+  },
+  
   "rich-text#footer-bottom-text": {
     "props": {
-      "text": "©Sun House - Todos os direitos reservados\nCNPJ: 14.234.441/0001-62 - IE: 146.455.109.119 | Rua Teodoro Sampaio, 1.749 - Pinheiros - SP - Cep - 05405-150",
-      "blockClass": "footer-bottom-text"
+      "text": "© Sun House - Todos os direitos reservados\nConcept Móveis e Decorações Ltda CNPJ 14.234.441/0001-62 IE: 146.455.109.119",
+      "blockClass": ["footer", "footer-bottom-text"]
     }
   },
+  //
+
 
   "icon#arrow-line": {
     "props": {
@@ -218,7 +410,7 @@
     "props": {
       "alt": "Logo Sun House",
       "title": "Logo Sun House",
-      "src": "assets/images/logo-white.svg",
+      "src": "assets/images/logo-white.svg", // Imagem final definida via Site Editor
       "blockClass": ["logo-footer"],
       "maxWidth": "145px",
       "link": {

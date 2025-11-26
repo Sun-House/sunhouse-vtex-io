@@ -56,6 +56,7 @@
     "vtex.product-specifications": "1.x",
     "vtex.store-video": "1.x",
     "vtex.sandbox": "0.x",
+    "vtex.add-to-cart-button": "0.x",
     "sunhouse.menu": "2.x",
     "sunhouse.store-components": "4.x",
     "sunhouse.auth-utils": "2.x",
@@ -97,7 +98,8 @@
     "sunhouse.product-dimensions": "0.x",
     "sunhouse.slider-layout": "0.x",
     "sunhouse.whatsapp-dynamic-btn": "1.x",
-    "sunhouse.ra-trustvox": "0.x"
+    "sunhouse.ra-trustvox": "0.x",
+    "sunhouse.enhanced-sku-selector": "1.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",

@@ -1,0 +1,10 @@
+/* .sunhouse-container-1-x-container--shelf-product-listPrice */
+.container--shelf-product-listPrice {
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden;
+    height: 42px */
+    height: auto;
+    margin-bottom: 12px;
+    gap: 4px
+}

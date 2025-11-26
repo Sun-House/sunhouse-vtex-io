@@ -1,13 +1,10 @@
 {
   "store.product": {
-    // "parent": {
-    //   "productWrapper": "productWrapper" -> Estava sendo utilizado pelo trustvox antigo
-    // },
     "children": [
       "responsive-layout.desktop#product-main",
       "responsive-layout.mobile#product-main",
       "container#product__related-grid",
-      // "condition-layout.user#buy-together",
+      // "condition-layout.user#buy-together", // Ainda em DEV
       "container#ra-trustvox",
       "flex-layout.row#also-seen",
       "container#spacing-default"
@@ -25,27 +22,30 @@
     }
   },
 
-  // "productWrapper": {
-  //   "props": {
-  //     "CustomContext": "trustvox-context"
-  //   }
-  // },
-
-  // "trustvox-context": {
-  //   "props": {
-  //     "id": 91,
-  //     "limit": 10
-  //   }
-  // },
-
   "responsive-layout.desktop#product-main": {
-    "title": "Produto",
+    // "title": "Produto",
+    "title": "Configurações do Produto",
     "children": [
+      // Display absolute BG de imagem de destaque do produto (first image) - Ainda em DEV
+      // "vtex.store-components:product-images#image-highlight", - Sera substituido por um novo componente custom controlado pelo Site Editor por produto
+      
+      "flex-layout.row#product-image-highlight",
+      //
+
       "flex-layout.row#product-highlight-coupon",
       "flex-layout.row#product-main",
-      //"flex-layout.row#product-infos-wrapper",
-      //"tab-layout#product-infos-tab"
-      "flex-layout.row#product-infos-tabs"
+      
+      // Wrapper das duas opções de descrição do produto - Simple e Custom - e tambem de todos os blocos de informações do produto (beneficios, especificações, video, etc)
+      "flex-layout.row#product-infos-wrapper"
+      //
+
+      // Criar aqui o bloco do Rodapé do Produto - Texto da Sun House (mas que pode ser customizado pelo Site Editor por produto e mudar o texto caso necessario)
+      // block-here#block,
+      //
+
+      // Bloco da FAQ
+      // "container#line-wrapper-15" // Ajustar nome e blocagem do componente - Nao sei se sera necessario
+      //
     ]
   },
   "responsive-layout.mobile#product-main": {
@@ -63,7 +63,12 @@
   },
   "flex-layout.row#product-main": {
     "children": [
-      "container#product-medias",
+      //"container#product-medias", - Bloco antigo de fotos do Produto
+      
+      // New product images - IN TESTS
+      "flex-layout.col#product-main-left",
+      //
+
       "flex-layout.col#product-main-right"
     ],
     "props": {
@@ -80,15 +85,15 @@
     "children": [
       "flex-layout.row#breadcrumb-product",
       "container#wrapper__highlight-coupon-mobile",
-      "vtex.store-components:product-name",
+      // "vtex.store-components:product-name",
+      "condition-layout.product#product-title",
+      "vtex.store-components:product-brand#product-brand", // Precisa ficar logo abaixo do nome do produto
       "flex-layout.row#product-mobile-images",
       "product-dimensions",
       "container#product-top-infos",
       "container#product-highlights--product-page",
       // "condition-layout.product#product-availability",
       "condition-layout.product#elf-checker",
-      // "flex-layout.row#product-page-informations"
-      // "flex-layout.row#product-infos-wrapper"
       "flex-layout.col#product-description-wrapper-mobile"
     ],
     "props": {
@@ -178,19 +183,56 @@
   },
   "flex-layout.col#product-main-right": {
     "children": [
-      "flex-layout.row#breadcrumb-product",
+      // "flex-layout.row#breadcrumb-product",
       "container#product-top-infos",
-      "vtex.store-components:product-name",
+
+      // Criar condicional para mostrar o nome do produto ou o nome do SKU
+      "condition-layout.product#product-title",
+      "vtex.store-components:product-brand#product-brand", // Precisa ficar logo abaixo do nome do produto
+      // "vtex.store-components:product-name",
+      // "vtex.store-components:product-name#sku-name",
+      //
+      
       "container#product-highlights--product-page",
       // "condition-layout.product#product-availability"
       "condition-layout.product#elf-checker"
     ],
     "props": {
-      "width": "43%",
+      // "width": "43%",
+      "width": "50%",
       "blockClass": "product-main-right",
       "preventVerticalStretch": true
     }
   },
+  
+  // New product title structure
+	"condition-layout.product#product-title": {
+    "title": "Condicional - Nome do Produto",
+		"props": {
+			"conditions": [
+				{
+					"subject": "specificationProperties",
+					"arguments": {
+						"name": "Tem variação de SKU",
+						"value": "Sim"
+					}
+				}
+			],
+			"Then": "vtex.store-components:product-name#sku-name",
+			"Else": "vtex.store-components:product-name"
+		}
+	},
+	"vtex.store-components:product-name#sku-name": {
+		"title": "Nome SKU - Variação",
+		"props": {
+			"showBrandName": false,
+			"showProductReference": false,
+			"showSku": true,
+			"tag": "h1",
+			"blockClass": "sku-name_container"
+		}
+	},
+
   "flex-layout.row#breadcrumb-product": {
     "children": ["breadcrumb#product-page"],
     "props": {
@@ -199,7 +241,7 @@
   },
   "container#product-top-infos": {
     "children": [
-      "flex-layout.row#product-code-brand",      
+      // "flex-layout.row#product-code-brand",      
       // "trustvox-starts",
       "product-rating-summary",
       "add-to-list-btn#product-page"
@@ -242,7 +284,8 @@
   },
 
   "condition-layout.product#elf-checker": {
-    "title": "Condicional - Produto Exclusivo",
+    // "title": "Condicional - Produto Exclusivo",
+    "title": "Condicional - Status Produto",
     "props": {
       "conditions": [
         {
@@ -283,8 +326,14 @@
   "flex-layout.col#product-available": {
     "children": [
       "flex-layout.row#product-page-price",
-      "condition-layout.product#product-sku",
-      "condition-layout.product#product-measurement-guide",
+      
+      // Seletor de Variacao de SKUs:
+      "container#sku-variation-selector",
+      //
+      
+      // Bloco nativo de compartilhamento:
+      "container#share-block",
+      // "condition-layout.product#product-measurement-guide",
       "flex-layout.row#product-buy-container",
       "flex-layout.row#whatsapp-button_normal-product",
       "container#similars",
@@ -297,9 +346,10 @@
   },
   "flex-layout.row#product-page-price": {
     "children": [
-      "container#shelf-product-listPrice",
-      "flex-layout.col#installments-content",
-      "container#product-installments"
+      // "container#shelf-product-listPrice",
+      "container#product-listPrice-new", // No arquivo product-prices.jsonc
+      "flex-layout.col#installments-content" // No arquivo product-prices.jsonc
+      // "container#product-installments" // No arquivo installments.jsonc - Inativado conforme novo layout Refresh
     ],
     "props": {
       "blockClass": "product-page-price",
@@ -356,104 +406,79 @@
       "blockClass": "product-page-price"
     }
   },
-  "flex-layout.col#installments-content": {
-    "children": ["product-installments#page-product"],
-    "props": {
-      "blockClass": "installments-content"
-    }
-  },
-  "product-installments#page-product": {
-    "props": {
-      "blockClass": "product-page",
-      "installmentsCriteria": "max-quantity",
-      "markers": ["bold"],
-      "message": "Ou <bold>{installmentsTotalValue}</bold> em até <bold>{installmentsNumber}x</bold> de <bold>{installmentValue}</bold> sem juros no cartão de crédito"
-    }
-  },
   "flex-layout.row#product-buy-container": {
-    "children": ["flex-layout.col#buy-quantity", "flex-layout.col#buy-button"],
+    "children": [
+      "flex-layout.col#buy-quantity",
+      "flex-layout.col#buy-button"
+    ],
     "props": {
       "blockClass": "buy-container",
-      "colJustify": "between",
+      // "colJustify": "between",
       "preventVerticalStretch": true,
       "colGap": 0,
       "preserveLayoutOnMobile": true
     }
   },
   "flex-layout.col#buy-quantity": {
-    "children": ["product-quantity#product-page"],
+    "children": [
+      "product-quantity#product-page"
+    ],
     "props": {
       "blockClass": "buy-quantity",
-      "width": "41%"
+      // "width": "41%"
+      "width": "30%"
     }
   },
   "product-quantity#product-page": {
     "props": {
       "size": "small",
-      "showLabel": true,
+      // "showLabel": true,
+      "showLabel": false,
       "blockClass": "product-page-quantity"
     }
   },
   "flex-layout.col#buy-button": {
-    "children": ["add-to-cart-button#product-page", "rich-text#safe-purchase"],
+    "children": [
+      // "add-to-cart-button#product-page",
+      "vtex.add-to-cart-button:add-to-cart-button#product-page"
+      // "rich-text#safe-purchase"
+    ],
     "props": {
-      "blockClass": ["product-buy-button", "buy-button"],
-      "width": "52%"
+      // "width": "52%"
+      "blockClass": ["product-buy-button", "buy-button"]
     }
   },
 
+  /* Desabilitado */
   "rich-text#safe-purchase": {
+    "title": "Texto - Compra Segura",
     "props": {
       "blockClass": "safe-purchase",
       "text": "Compra 100% segura"
     }
   },
 
-  "add-to-cart-button#product-page": {
+  // "add-to-cart-button#product-page": {
+  "vtex.add-to-cart-button:add-to-cart-button#product-page": {
     "props": {
       "onClickBehavior": "add-to-cart",
-      "text": "Comprar"
+      // "isOneClickBuy": true, // Funciona se desabilitar a prop do minicart "customPixelEventName"
+      // "onClickEventPropagation": "disabled", // Esta funcionando em conjunto com o minicart - la tem um evento de propagacao que causa o efeito de abrir o minicart
+      // "text": "Comprar" // Valor antigo-anterior
+      "text": "Adicionar ao Carrinho",
+      // "customPixelEventId": "?" // Pode ser util para ferramentas externas e outros apps
+      "blockClass": "add-to-cart_button"
     }
   },
 
   "flex-layout.col#product-unavailable": {
     "children": [
-      // "condition-layout.product#product-sku",
       // "sunhouse.store-components:availability-subscriber"
       "container#product-unavailable"
     ],
     "props": {
       "blockClass": "product-unavailable",
       "preventVerticalStretch": true
-    }
-  },
-  
-  "condition-layout.product#product-sku": {
-    "title": "Condicional - SKU",
-    "props": {
-      "conditions": [
-        {
-          "subject": "isUniqueSku"
-        }
-      ],
-      "Else": "flex-layout.row#product-sku-selector"
-    }
-  },
-  "flex-layout.row#product-sku-selector": {
-    "children": ["sku-selector#product-page"],
-    "props": {
-      "blockClass": "product-sku-selector",
-      "marginBottom": 5,
-      "marginTop": 2
-    }
-  },
-  "sku-selector#product-page": {
-    "props": {
-      "visibility": "more-than-one",
-      "maxItems": 17,
-      "sortVariationsByLabel": false,
-      "blockClass": "product-page",
-      "visibleVariations": ["tamanho"]
     }
   },
 

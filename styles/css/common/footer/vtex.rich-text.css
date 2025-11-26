@@ -1,0 +1,265 @@
+.container--footer .paragraph,
+.container--footer .heading,
+.container--footer .list .link {
+    color: #e1dede
+}
+
+.container--footer .list .link {
+    line-height: 1.5 !important
+}
+
+.container--footer .heading {
+    font-weight: 500 !important /* Acredito que esse seja o peso correto para o heading - mas validar apos corrigir no font-faces.css */
+}
+
+.container--footer-schedules-content .paragraph {
+    line-height: 1.3 !important
+}
+/* Realocar na posicao certa os acima */
+
+
+.container--footer-title {
+    padding-bottom: 4px;
+    /* border-bottom: solid 1px #d5d4d4; */
+    min-width: 122px
+}
+
+.container--footer-title .heading {
+    display: block;
+    width: 100%;
+    /* font-size: 14px; */
+    font-style: normal;
+    font-weight: 700
+}
+
+.container--footer-social {
+    text-align: center;
+    align-items: center
+    /* display: block */
+}
+
+.container--footer-right-title {
+    margin-bottom: 14px
+}
+
+.container--footer-schedules-content {
+    display: block
+}
+
+.container--footer-schedules-content .paragraph {
+    /* font-size: 12px; */
+    font-size: 16px;
+    font-style: normal;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: left;
+    /* color: #e1dede; */
+    margin-bottom: 16px
+}
+
+.container--footer-schedules-content .paragraph:last-child {
+    margin-bottom: 0
+}
+
+/**/
+.paragraph--footer-phone,
+.paragraph--footer-email,
+.paragraph--footer-address {
+    line-height: 1.8
+}
+
+.paragraph--footer-email .link {
+    text-decoration: none;
+    color: #e1dede
+}
+
+.paragraph--footer-phone::before,
+.paragraph--footer-email::before,
+.paragraph--footer-address::before {
+    font-family: "Bootstrap-Icons";
+    font-size: 16px; /* Tamanho do ícone */
+    margin-right: 12px    
+}
+
+.paragraph--footer-phone::before {
+    content: "\F5C1"
+}
+
+.paragraph--footer-email::before {
+    content: "\F32F"
+}
+
+.paragraph--footer-address::before {
+    content: "\F3E8"
+}
+/**/
+
+/* Texto Redes Sociais */
+/* .vtex-rich-text-0-x-paragraph--footer-social { */
+.paragraph--footer-social {
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: .6
+}
+/**/
+
+.container--footer-bottom-text .paragraph {
+    /* font-size: 12px; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    /* text-align: center */
+    text-align: left
+}
+
+.container--footer-list .list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.container--footer-list .list .link {
+    /* font-size: 12px; */
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    /* color: #e1dede */
+}
+
+/* .vtex-rich-text-0-x-container--footer-list .vtex-rich-text-0-x-list .vtex-rich-text-0-x-link::before { */
+.container--footer-list .list .link::before {
+    content: "\F144";
+    font-family: "Bootstrap-Icons";
+    font-size: 12px;
+    margin-right: 12px;
+    color: #FFDA00
+}
+
+.container--footer-list .list .link:hover {
+    /* text-decoration: underline */
+    text-decoration: none
+}
+
+.container--footer-about {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.container--footer-about .paragraph {
+    font-weight: 700
+}
+
+.container--footer-about-text .heading {
+    /* font-size: 18px; */
+    /* font-size: 24px; */
+    font-size: 32px;
+    /* line-height: 25px; */
+    /* font-weight: 700; */
+    font-weight: 500; /* 500 nao esta refletindo, mas apos corrigir no font-faces.css, validar como esse aqui vai ficar */
+    color: #161413;
+    /* margin-bottom: 16px */
+    margin-bottom: 28px
+}
+
+.container--footer-about-text .paragraph {
+    /* font-size: 14px; */
+    /* line-height: 19px; */
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-weight: 400;
+    color: #161413
+}
+
+.container--footer-about-text .paragraph:last-child {
+    margin-bottom: 0
+}
+
+/* .container--footer-about-text .heading--footer-faq-title { */
+.container--footer-faq-title .heading--footer-faq-title {
+    font-size: 32px;
+    font-weight: 500; /* 500 nao esta refletindo, mas apos corrigir no font-faces.css, validar como esse aqui vai ficar */
+    color: #161413;
+    margin-bottom: 28px
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* Animação das linhas do sistema de lista do footer - REPLICAR PARA O MENU DO HEADER
+       Ideal esse sistema visual funcionar apenas para desktop - mobile nao precisa e nao tera esse efeito visual */
+    /* START */
+    .container--footer .list .link {
+        position: relative;
+        transition: color .3s ease
+    }
+
+    .container--footer .list .link::after {
+        /* Conteúdo vazio é obrigatório para que o pseudo-elemento seja exibido */
+        content: ''; 
+        
+        /* Posicionamento absoluto para que a linha fique abaixo do texto */
+        position: absolute;
+        
+        /* Define o alinhamento da linha: 'bottom: 0' para baixo e 'left: 0' para a esquerda */
+        bottom: 0;
+        /* left: 0; */
+        left: 24px; /* Ajuste para meu cenario */
+        
+        /* Altura da linha (espessura) */
+        height: 1px;
+        bottom: -3px;
+        
+        /* Cor da linha */
+        background-color: #FFDA00; 
+        
+        /* **Ponto Chave 1:** A linha começa com largura 0 */
+        width: 0;
+        
+        /* **Ponto Chave 2:** Aplica a transição à propriedade 'width' */
+        transition: width 0.3s ease-out
+    }
+
+    .container--footer .list .link:hover::after {
+        /* **Ponto Chave 3:** Ao passar o mouse, a largura da linha muda para 100% */
+        /* width: 100%; */
+        /* width: calc(100% - 24px) /* Ajuste meu cenario 1: linha completa */
+        width: calc(100% - 52px) /* Ajuste meu cenario 2: linha media */
+    }
+    /* END */
+
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    .container--footer-title {
+        border-bottom: none;
+        padding-bottom: 0
+    }
+
+    .container--footer-title .heading {
+        border-bottom: none;
+        font-size: 16px;
+        line-height: 22px
+    }
+
+    .container--footer-right-title {
+        margin-bottom: 0
+    }
+
+    .container--footer-schedules-content {
+        margin-bottom: 38px;
+        padding-inline: 22px;
+        text-align: left
+    }
+
+    .container--footer-about-text {
+        text-align: center
+    }
+
+}

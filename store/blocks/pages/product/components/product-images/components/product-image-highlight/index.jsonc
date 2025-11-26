@@ -1,0 +1,22 @@
+// NAO ESTA EM USO
+{
+    // "flex-layout.row#product-image-highlight": {
+    //     "title": "Wrapper Imagem Destaque do Produto",
+    //     "children": [
+    //         "container#product-image-highlight"
+    //     ],
+    //     "props": {
+    //         "blockClass": "product-image-highlight-wrapper"
+    //     }
+    // },
+
+    // "container#product-image-highlight": {
+    //     "title": "Imagem Destaque do Produto",
+    //     "children": [
+    //         "image#single-image-highlight"
+    //     ],
+    //     "props": {
+    //         "blockClass": "product-image-highlight"
+    //     }
+    // }
+}

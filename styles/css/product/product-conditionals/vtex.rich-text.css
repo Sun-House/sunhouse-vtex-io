@@ -1,0 +1,29 @@
+.wrapper--unavailable-cta_text {
+    margin-top: 24px
+}
+
+.wrapper--unavailable-cta_text .heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    text-align: center
+}
+
+.paragraph--unavailable-cta_text {
+    text-align: justify;
+    line-height: 1.35
+}
+
+.container--exclusive-cta_line-2 {
+    display: block;
+    width: 100%
+}
+
+.paragraph--exclusive-cta_line-2 {
+    margin: 16px 0 0;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: hsla(0, 0%, 100%, .6);
+    border: 1px dashed #f9d7e0;
+    font-size: clamp(13px, 2vw, 15px)
+}

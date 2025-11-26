@@ -1,0 +1,113 @@
+.quantitySelectorContainer {
+    margin: 0
+}
+
+.quantitySelectorStepper {
+    width: 100%;
+    /* border-radius: 5px; */
+    border-radius: 50px;
+    border: 1px solid #2d2926;
+    /* height: 45px; */
+    height: 52px;
+    overflow: hidden;
+    /* padding: 0 5px; */
+    width: 100%
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) {
+    /* height: 43px */
+    height: 52px
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__input) {
+    padding: 0;
+    border: none;
+    width: 100%;
+    flex: 1;
+    /* font-family: "Open Sans", sans-serif; - Devera receber a fonte nova configurada globalmente */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2d2926; /* Cor do texto do input - Ajustar posteriormente para padrao Edson */
+    background-color: unset;
+    height: 100%
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button) {
+    padding: 0;
+    width: initial !important;
+    /* border: none; */
+    background-color: #00000000;
+    color: #2d2926;
+    width: 32.4px !important;
+    height: 100%;
+    border: 0
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button):hover,
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button):hover {
+    background-color: #00000000
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button__text) {
+    font-size: 0
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button__text)::after {
+    display: inline-flex;
+    content: "";
+    font-size: 16.2px;
+    font-family: "fantasticon";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #2d2926
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button__text) {
+    font-size: 0
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button__text)::after {
+    display: inline-flex;
+    content: "";
+    font-size: 18.9px;
+    font-family: "fantasticon";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #2d2926;
+    padding-top: 3px
+}
+
+.quantitySelectorContainer--product-page-quantity {
+    flex-direction: row;
+    align-items: center
+}
+
+.quantitySelectorContainer--product-page-quantity .quantitySelectorTitle {
+    font-size: 0;
+    margin: 0 12px 0 0
+}
+
+.quantitySelectorContainer--product-page-quantity .quantitySelectorTitle::after {
+    content: "Selecione a quantidade:";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #2d2926
+}
+
+@media screen and (max-width: 1024px) {
+    .quantitySelectorContainer--product-page-quantity {
+        flex-direction: column
+    }
+    .quantitySelectorContainer--product-page-quantity .quantitySelectorTitle {
+        margin: 0 0 10px
+    }
+}

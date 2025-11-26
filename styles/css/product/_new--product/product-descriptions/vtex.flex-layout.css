@@ -1,0 +1,35 @@
+/* .flexRow--product-main { - a principio estava aplicando apenas para o padding-bottom, e os containers abaixo ja estao aplicando essa distancia
+   padding: 64px 0
+} */
+
+.flexRow--product-infos-wrapper {
+   max-width: 1200px;
+   margin: 0 auto
+}
+
+/* .vtex-flex-layout-0-x-flexCol--col_desc-banner_ColText_simple { */
+.flexCol--col_desc-banner_ColText_simple {
+    /* Esse atributos sao para ajustar o espaço util da coluna,
+       mas o ideal é que o conteudo de texto tenha uma quantidade
+       maxima de linhas para evitar quebra de layout 
+       Será desenvolvido assim a principio — futuramente posso rever 
+
+       Da forma que esta agora, o texto pode ser enorme que se adaptara ao tamanho da coluna,
+       mas o ideal é que o texto tenha uma quantidade maxima de linhas para evitar quebra de layout,
+       pois dessa forma atual, o layou nao quebra totalmente, mas fica relativamente feio!
+    START */
+    
+    min-height: 600px; /* Tamanho ideal conforme imagem da coluna ao lado */
+    justify-content: space-between;
+    /* height: 600px; - Esse e max-height apenas fazer com que textos grandes quebrem o tamanho maximo da coluna */
+    /* overflow: hidden; - Para caso queira esconder o conteudo que extrapola o tamanho da coluna - o que é visualmente feio */
+
+    /* END */
+}
+
+/* .vtex-flex-layout-0-x-flexColChild--col_desc-banner_ColText_simple { */
+.flexColChild--col_desc-banner_ColText_simple {
+   height: auto !important;
+   flex-grow: 0;
+   flex-shrink: 0
+}

@@ -1,0 +1,64 @@
+{
+	// List Price Block - PDP
+	// "container#shelf-product-listPrice": {
+    "container#product-listPrice-new": {
+		"title": "Preço (com preço de lista) produto vitrine",
+		"children": [
+			"product-list-price#product-page", // Preço DE
+			"discount-price#product-page", // Preço PIX
+			"product-selling-price#product-page" // Preço POR - Só vai aparecer no caso de nao renderizar o Installments Block (confirmar se é isso mesmo)
+		],
+		"props": {
+			"blockClass": "shelf-product-listPrice"
+		}
+	},
+
+    "product-list-price#product-page": {
+		// "title": "Preço de lista produto vitrine",
+		"props": {
+			"message": "{listPriceValue}",
+			"blockClass": "product-shelf-price"
+		}
+	},
+
+	"discount-price#product-page": {
+		// "title": "Preço PIX produto vitrine",
+		"props": {
+			"hideWithoutDiscount": true,
+			"message": "{priceValue}",
+			"blockClass": "shelf-default",
+			"promotionName": "Desconto Pagamento à Vista (7%)"
+		}
+	},
+
+	"product-selling-price#product-page": {
+		// "title": "Preço (com preço de lista) produto vitrine",
+		"props": {
+			"message": "<bold>{sellingPriceValue}</bold>",
+			"markers": ["bold"],
+			"blockClass": "product-shelf-price"
+		}
+	},
+	// List Price Block - PDP
+
+    
+    // Installments Block - PDP
+    "flex-layout.col#installments-content": {
+        "children": [
+            "product-installments#page-product"
+        ],
+        "props": {
+            "blockClass": "installments-content"
+        }
+    },
+    "product-installments#page-product": {
+        "props": {
+            "installmentsCriteria": "max-quantity",
+            "markers": ["bold"],
+            // "message": "Ou <bold>{installmentsTotalValue}</bold> em até <bold>{installmentsNumber}x</bold> de <bold>{installmentValue}</bold> sem juros no cartão de crédito",
+            "message": "À vista no <bold>PIX</bold>, Ou em até <bold>{installmentsNumber}x de {installmentValue}</bold>",
+            "blockClass": "product-page"
+        }
+    }
+    // Installments Block - PDP
+}

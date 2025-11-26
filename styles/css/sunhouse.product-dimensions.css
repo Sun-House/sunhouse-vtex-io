@@ -1,4 +1,5 @@
-.dimensionsContainer {
+/* Deprecated - Nao sera mais usado */
+/* .dimensionsContainer {
     margin-top: 24px;
     display: flex;
     gap: 16px;
@@ -31,7 +32,7 @@
 
 .dimensionsContainer .dimension {
     color: #2d2926;
-    /*min-width: 120px;*/
+    / min-width: 120px; /
     min-width: 112px;
     max-width: 120px;
     font-size: 16px;
@@ -65,7 +66,7 @@
         gap: 12px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        /*margin-top: 18px;*/
+        / margin-top: 18px; /
         margin-top: 34px;
         margin-bottom: 24px
     }
@@ -79,4 +80,4 @@
         margin-top: -25px;
         width: auto
     }
-}
+} */

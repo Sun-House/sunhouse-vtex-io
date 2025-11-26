@@ -1,0 +1,102 @@
+/* .vtex-flex-layout-0-x-flexRow--product-main { */
+.flexRow--product-main {
+    padding-top: 0 !important /* Precisa remover esse padding top do arquivo original */
+}
+
+/* .vtex-flex-layout-0-x-flexCol--product-main-right { */
+.flexCol--product-main-right {
+    background-color: #f6f6f6; /* Cor final */
+    /* padding: 20px; */
+    padding: 18px 52px;
+    border-radius: 4px 30px 4px 4px
+}
+
+.flexCol--product-main-right {
+    /* max-width: 500px */
+    margin-left: 20px;
+}
+
+.flexCol--product-main-right::-webkit-scrollbar {
+    display: none
+}
+
+/* Todo o conteudo da coluna da direita START */
+.flexCol--product-available,
+.flexCol--product-unavailable {
+    /* padding-top: 24px; - SENDO AJUSTADO AGORA */
+    /* margin-top: 12px */
+    margin-top: 24px
+    /* border-top: 1px solid #d5d4d4 */
+}
+
+.flexCol--product-unavailable {
+    margin-bottom: 20px
+}
+
+/* .vtex-flex-layout-0-x-flexRowContent--buy-container { */
+.flexRowContent--buy-container {
+    /* justify-content: space-between; */
+    /* padding-top: 38px; */
+    padding-top: 24px;
+    /* padding-bottom: 44px; */
+    padding-bottom: 8px; /* Esse foi alterado */
+    gap: 20px
+    
+    /* DEBUG */
+    /* ;background: #ff000075; */
+    /* DEBUG */
+}
+
+/* .vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--product-page-price { */
+.flexRow--product-page-price {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #2d2926;
+    margin-bottom: 24px
+}
+
+/* Add to cart button */
+/* .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button */
+.flexCol--buy-button :global(.vtex-button) {
+    border: none;
+    box-sizing: border-box;
+    /* border-radius: 5px; */
+    border-radius: 50px;
+    /* height: 48px; */
+    height: 52px;
+    transition: all .2s;
+    /* background: #fff; */
+    /* border: solid 1px #2d2926 */
+}
+
+.flexCol--buy-button :global(.vtex-button) :global(.vtex-button__label) {
+    font-size: 16px;
+    /* font-weight: 700; */
+    font-style: normal;
+    /* color: #2d2926; */
+    color: #fff;
+    /* text-transform: none */
+    text-transform: uppercase
+}
+
+/* Confirmar se essa regra deve ser aplicada */
+/* .flexCol--buy-button :global(.vtex-button) {
+    background: #ffe133 !important;
+    border-color: #ffda00 !important
+} */
+
+/* .flexCol--buy-button :global(.vtex-button):hover {
+    background: #ffe133 !important;
+    border-color: #ffda00 !important
+} */
+
+/* Linha wrapper do botão WhatsApp */
+/* .vtex-flex-layout-0-x-flexRow--whatsapp-button_normal-product { */
+.flexRow--whatsapp-button_normal-product {
+    border-bottom: 1px solid #2d2926 /* Ajustar cor para padrao Edson */
+}
+
+/* Linha wrapper do Shipping Simulator */
+/* .vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--shipping-simulator-wrapper { */
+.flexRow--shipping-simulator-wrapper {
+    margin-top: 24px
+}

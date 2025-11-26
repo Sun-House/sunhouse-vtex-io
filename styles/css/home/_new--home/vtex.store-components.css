@@ -1,0 +1,138 @@
+/* TESTE DE BOOTSTRAP ICONS
+   Validar se isso vai funcionar em ambiente de teste em producao,
+   caso nao, precisa retirar e repensar no que fazer com os icones novos do Refresh */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+/* Funcionou no ambiente de desenvolvimento */
+
+/* .vtex-store-components-3-x-infoCardContainer--main-banner-home { */
+.infoCardContainer--main-banner-home {
+    height: 100vh
+}
+
+/**/
+/* Gera backdrop para criar efeito de opacidade no banner */
+.infoCardContainer--main-banner-home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.4
+}
+
+/* .vtex-store-components-3-x-infoCardTextContainer--main-banner-home { */
+.infoCardTextContainer--main-banner-home {
+    z-index: 2;
+    /* position: relative; */
+    margin-top: 152px;
+    width: 100%;
+    max-width: unset
+}
+
+/* .vtex-store-components-3-x-container--main-banner-home:first-child .vtex-store-components-3-x-heading--main-banner-home:before,
+.vtex-store-components-3-x-container--main-banner-home:first-child .vtex-store-components-3-x-heading--main-banner-home:after { */
+.container--main-banner-home:first-child .heading--main-banner-home::before,
+.container--main-banner-home:first-child .heading--main-banner-home::after {
+    content: "/";
+    color: #FFDA00;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+/* .vtex-store-components-3-x-heading--main-banner-home,
+.vtex-store-components-3-x-paragraph--main-banner-home { */
+.heading--main-banner-home,
+.paragraph--main-banner-home {
+    color: #fff
+}
+
+/* .vtex-store-components-3-x-heading--main-banner-home { */
+.heading--main-banner-home {
+    text-transform: uppercase;
+    /* text-align: center; */
+    font-size: 5rem; /* Precisa ser ajudado para o tamanho correto ideal */
+    /* margin: 0 */
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+/* .vtex-store-components-3-x-paragraph--main-banner-home { */
+.paragraph--main-banner-home {
+    font-size: 22px;
+    text-align: center;
+    /* width: 70%; */
+    width: 55%;
+    margin-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 12px
+}
+
+
+/* BOTAO - Replicar para todos botoes de CTA possiveis do site START */
+/* .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-home .vtex-button { */
+.infoCardCallActionContainer--main-banner-home :global(.vtex-button) {
+    background-color: unset;
+    border-color: #fff;
+    border-radius: 50px;
+    padding: 12px 18px;
+
+    /* Propriedades base do botão animado */
+    position: relative; /* Essencial para posicionar o ::before */
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: transparent; /* Cor de fundo inicial transparente */
+    color: #fff; /* Cor do texto inicial */
+    cursor: pointer;
+    overflow: hidden; /* Corta o ::before fora da área do botão */
+    z-index: 1; /* Garante que o texto fique acima do ::before */
+  
+    /* Transição para a cor do texto (opcional, mas melhora o efeito) */
+    transition: color 0.4s ease-in-out;
+    /* Propriedades base do botão animado */
+}
+
+/* .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-home .vtex-button::before { */
+.infoCardCallActionContainer--main-banner-home :global(.vtex-button)::before {
+    content: "";
+    /* Posicionamento e tamanho iniciais do preenchimento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0; /* Largura inicial zero */
+    
+    background-color: #ffda0078; /* Cor que preencherá o botão - MUDAR DE ACORDO COM O IDEAL PARA O REFRESH */
+    z-index: -1; /* Coloca o preenchimento por trás do texto */
+  
+    /* transform: skewX(-15deg); */ /* Inclina o pseudo-elemento em -45 graus */
+    /* transform-origin: top left; */ /* Garante que a inclinação comece do canto superior esquerdo */
+  
+    /* AQUI ESTÁ A CHAVE DA ANIMAÇÃO: */
+    transition: width 0.5s ease-in-out;
+}
+  
+  /* Estado de HOVER (Passar o mouse) */
+/* .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-home .vtex-button:hover { */
+.infoCardCallActionContainer--main-banner-home :global(.vtex-button):hover {
+    color: #ffffff; /* Muda a cor do texto para branco */
+}
+  
+/* .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-home .vtex-button:hover::before { */
+.infoCardCallActionContainer--main-banner-home :global(.vtex-button):hover::before {
+    width: 100%; /* A largura aumenta de 0% para 100%, preenchendo o botão */
+    /* width: 150%; */ /* Para quando usar o skew */
+}
+/* BOTAO - Replicar para todos botoes de CTA possiveis do site END */
+
+
+/* .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-home .vtex-button__label::after { */
+.infoCardCallActionContainer--main-banner-home :global(.vtex-button__label)::after {
+    content: "\F134";
+    font-family: "Bootstrap-Icons";
+    margin-left: 12px
+}
+/**/

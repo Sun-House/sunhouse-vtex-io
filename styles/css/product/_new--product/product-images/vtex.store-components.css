@@ -1,0 +1,35 @@
+/* .vtex-store-components-3-x-productImageTag--product-images-v2 {
+    border-radius: 4px
+}
+
+.vtex-store-components-13-x-productImage--product-images-v2 {
+    border-radius: 4px
+} */
+
+.productImage--product-images-v2,
+.productImageTag--product-images-v2 {
+    border-radius: 4px
+}
+
+/* Swiper configs START */
+
+/* .swiper-slide
+.swiper-slide-visible
+.swiper-slide-active
+.vtex-store-components-3-x-productImagesThumb */
+
+/* .vtex-store-components-3-x-productImagesThumb--product-images-v2 { */
+/* .productImagesThumb--product-images-v2 {
+    width: 30% !important
+} */
+
+/* Swiper configs END */
+
+/* Oculta primeira imagem no caso de ter o titulo alvo - para o app custom da imagem highlight image que sera desenvolvido
+   O mesmo devera atribuir um titulo dinamicamente a primeira imagem no caso de ter imagem de destaque cadastrada no Site Editor por produto 
+   OU uma probabilidade é esse custom app puxar a primeira imagem cadastrada diretamente no Catalog - Vou analisar melhor essa possibilidade */
+/* .vtex-store-components-3-x-productImagesGallerySlide--product-images-v2:first-child { */
+.productImagesGallerySlide--product-images-v2:first-child {
+    visibility: hidden;
+    pointer-events: none
+}

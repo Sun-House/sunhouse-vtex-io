@@ -1,0 +1,7 @@
+{
+    "container#debug-container": {
+        "props": {
+            "blockClass": "debug-container"
+        }
+    }
+}
