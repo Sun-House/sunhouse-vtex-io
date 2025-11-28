@@ -1,11 +1,78 @@
-/* Oculta menu do mobile */
+/* Oculta menu do desktop START */
+.navWrapper--html-seo_mobile-category-menu {
+    display: none !important
+}
+/* Oculta menu do desktop END */
+
+.navWrapper--header-category-menu .paragraph {
+    margin: 0;
+    white-space: nowrap;
+    /* font-size: 14px; */
+    font-size: 16px;
+    font-weight: 500 /* 500 deve ser o ideal, mas preciso validar apos corrigir o font-faces.css */
+}
+
+/* .sunhouse-super-menu-2-x-navWrapper--header-category-menu .sunhouse-super-menu-2-x-list[data-depth] .sunhouse-super-menu-2-x-item[data-depth] .sunhouse-super-menu-2-x-wrapper[data-depth] { */
+.navWrapper--header-category-menu .list[data-depth] .item[data-depth] .wrapper[data-depth] {
+    border-radius: 4px
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* .navWrapper--header-category-menu .list[data-depth="1"] .item[data-depth="1"]:hover .titleLink[data-depth="1"] {
+        border-top-color: #ffda00;
+        background-color: #fff4b3
+    } */
+
+    /* Animação das linhas do sistema de lista do footer
+       Ideal esse sistema visual funcionar apenas para desktop - mobile nao precisa e nao tera esse efeito visual */
+    /* START */
+    .navWrapper--header-category-menu .list[data-depth="1"] .item[data-depth="1"] .paragraph {
+        position: relative;
+        transition: color .3s ease
+    }
+
+    .navWrapper--header-category-menu .list[data-depth="1"] .item[data-depth="1"] .paragraph::after {
+        /* Conteúdo vazio é obrigatório para que o pseudo-elemento seja exibido */
+        content: ''; 
+        
+        /* Posicionamento absoluto para que a linha fique abaixo do texto */
+        position: absolute;
+        
+        /* Define o alinhamento da linha: 'bottom: 0' para baixo e 'left: 0' para a esquerda */
+        bottom: 0;
+        left: 0;
+        
+        /* Altura da linha (espessura) */
+        height: 2px;
+        bottom: -3px;
+        
+        /* Cor da linha */
+        background-color: #FFDA00; 
+        
+        /* **Ponto Chave 1:** A linha começa com largura 0 */
+        width: 0;
+        
+        /* **Ponto Chave 2:** Aplica a transição à propriedade 'width' */
+        transition: width 0.3s ease-out
+    }
+
+    .navWrapper--header-category-menu .list[data-depth="1"] .item[data-depth="1"] .paragraph:hover::after {
+        /* **Ponto Chave 3:** Ao passar o mouse, a largura da linha muda para 100% */
+        width: 100%        
+    }
+    /* END */
+
+}
+
+/* Mobile */
 @media screen and (max-width: 1024px) {
+
+    /* Oculta menu do mobile START */
     .navWrapper--html-seo_mobile-category-menu {
         display: none !important
     }
-}
+    /* Oculta menu do mobile END */
 
-/* Oculta menu do desktop */
-.navWrapper--html-seo_mobile-category-menu {
-    display: none !important
 }

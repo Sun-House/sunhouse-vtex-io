@@ -98,6 +98,7 @@
     display: none
 }
 
+/* Movido para common/header/vtex.store-components.css
 .logoLink--logo-image--desktop {
     position: absolute;
     top: 8px;
@@ -140,7 +141,7 @@
     max-width: initial;
     max-height: initial;
     min-width: initial
-}
+} */
 
 .skuSelectorContainer {
     width: 100%

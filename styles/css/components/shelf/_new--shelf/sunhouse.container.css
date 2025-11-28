@@ -1,0 +1,7 @@
+.container--shelf-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    /* gap: 16px - A principio desnecessario, mas pode ser usado para ajustar o espaçamento entre os produtos */
+}

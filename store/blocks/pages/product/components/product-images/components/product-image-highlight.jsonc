@@ -1,24 +1,20 @@
+// Componente finalizado - pronto para lançamento no Refresh
 {
-    // elemento pai com atributos de tamanho correto para a imagem de destaque do produto
     "flex-layout.row#product-image-highlight": {
-        // "title": "Imagem Destaque do Produto",
         "children": [
             "container#single-image-highlight"
         ],
         "props": {
-            // "blockClass": "product-image-highlight"
             "blockClass": "product-image-highlight-wrapper"
         }
     },
 
-    // container para receber a imagem de destaque do produto se tiver - se nao tiver, nao sera exibido
     "container#single-image-highlight": {
         "title": "Imagem Destaque do Produto",
         "children": [
             "image#single-image-highlight"
         ],
         "props": {
-            //"blockClass": "wrapper-single-image-highlight"
             "blockClass": "product-image-highlight"
         }
     },

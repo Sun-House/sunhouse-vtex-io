@@ -1,4 +1,12 @@
-/* Sticky Header START
+/* .sunhouse-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast { */
+.fixedLayout--sticky-header--scrolledPast :global(.vtex-container-container--menu) {
+    height: 0px !important;
+}
+
+
+
+
+/* Sticky Header START */
 .fixedLayout--sticky-header {
     z-index: 4;
     --header-logo-left: 50%;
@@ -20,16 +28,16 @@
     --header-left-controls-display: block
 }
 
-.fixedLayout--sticky-header:hover {
+/* .fixedLayout--sticky-header:hover {
     --header-background-color: white;
     --header-text-color: $textColor;
     --header-menu-item-highlight-color: #f90041;
     --header-menu-border-color: transparent
-}
+} */
 
-.fixedLayout--sticky-header:hover {
+/* .fixedLayout--sticky-header:hover {
     box-shadow: -3px 4px 11px -2px rgba(0, 0, 0, 0.15)
-}
+} */
 
 .fixedLayout--sticky-header--scrolledPast {
     --header-background-color: white;
@@ -58,7 +66,7 @@
     --header-menu-border-color: transparent
 }
 
-/ Mobile /
+/* Mobile */
 @media screen and (max-width: 1024px) {
 
     .fixedLayout--sticky-header {
@@ -70,4 +78,4 @@
     }
 
 }
-Sticky Header END */
+/* Sticky Header END */

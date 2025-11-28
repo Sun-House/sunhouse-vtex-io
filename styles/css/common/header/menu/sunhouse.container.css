@@ -1,0 +1,73 @@
+.container--menu {
+    border-bottom: 1px solid var(--header-menu-border-color);
+    /* height: var(--header-menu-wrapper-size); */
+    height: 70px;
+    transition: all .2s
+}
+
+.container--menu .wrapper--department-content {
+    width: 100vw;
+    position: fixed;
+    left: calc(50% + var(--header-department-content-left-offset));
+    translate: -50%;
+    background-color: #fff;
+    transition: all .2s;
+    align-items: center;
+    transition-delay: .2s;
+    opacity: 0;
+    visibility: hidden;
+    top: var(--header-department-content-top-offset)
+}
+
+.container--menu .wrapper--department-content .container--department-content {
+    display: flex;
+    border-top: solid 1px #575451
+}
+
+.container--menu .container--department-image {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+
+/* Link Store START */
+
+/* Link Store END */
+
+
+/* Link Wishlist START */
+
+/* Link Wishlist END */
+
+
+/* Link da Search Bar START */
+
+/* Link da Search Bar END */
+
+
+/* Link Login e Boas-Vindas START */
+.container--greeting {
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px
+}
+
+.container--greeting::before {
+    display: inline-flex;
+    content: "";
+    font-size: 18px;
+    font-family: "fantasticon";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #2d2926
+}
+
+.container--greeting--title::before {
+    /* color: var(--header-text-color) */
+    color: #FFDA00
+}
+/* Link Login e Boas-Vindas END */

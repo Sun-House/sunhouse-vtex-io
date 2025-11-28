@@ -2,26 +2,46 @@
   "store.home": {
     "blocks": [
       "info-card#banner-main",
-      // "list-context.image-list#banner-main", - Vai sair no novo layout Refresh
-      // "container#differentials", - Vai sair no novo layout Refresh
-      "flex-layout.row#categories-slider", // Precisara ser recriado no novo layout Refresh
+      
+      // Em processo de remodelagem visual
+      "flex-layout.row#categories-slider",
       "container#spacing-default",
-      "list-context.image-list#image-double",
+      //
+      
+      // Banner duplo - Sera descontinuado no Refresh
+      // "list-context.image-list#image-double",
+      // "container#spacing-default",
+      //
+      
+      // Sera descontinuada no Refresh
+      // "flex-layout.row#shelf-home01",
+      // "container#spacing-default",
+      //
+
+      // Banner grid - Sera descontinuado no Refresh
+      // "list-context.image-list#banner-grid",
+      // "container#spacing-default",
+      //
+
+      "container#shelf-home02", // Essa manter em sistema de slider, mudar o visual, reaproveitar para usar na PDP, porem, será ocultada da home no Refresh (a principio, mas pode ser reativada)
+      "container#shelf-home03", // Essa sera a nova prateleira grid, sera usada para a home no Refresh
       "container#spacing-default",
-      "flex-layout.row#shelf-home01",
-      "container#spacing-default",
-      "list-context.image-list#banner-grid",
-      "container#spacing-default",
-      "container#shelf-home02",
-      "container#shelf-home03",
-      "container#spacing-default",
+
+      // Esse preciso testar - sera util para o Refresh
       // "flex-layout.row#shelf-banner-desktop",
       // "container#spacing-default",
-      // "flex-layout.row#trustvox-colt-highlight",
+      //
+
+      // Possivelmente sera descontinuado no Refresh - vou manter por hora
       "container#trustvox-colt-highlight",
       "container#spacing-default",
+      //
+
+      // Precisara ser completamente recriado no Refresh - manter por hora
       "container#blog-cards",
       "container#spacing-default",
+      //
+
       "container#pre-footer-about"
     ]
   }

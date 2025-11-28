@@ -23,15 +23,17 @@
     /* justify-content: center */
 }
 
-/* REMOVER APOS FINALIZAR O FOOTER
-.container--footer-social-content .imageElementLink .imageElement {
-    max-height: 26px
-} */
+
 
 /* .sunhouse-container-1-x-container--footer-social-content .sunhouse-container-1-x-imageElement { */
 .container--footer-social-content .imageElement {
     max-height: 20px !important;
-    max-width: 20px !important
+    max-width: 20px !important;
+    transition: filter .3s ease-in-out
+}
+
+.container--footer-social-content .imageElement:hover {
+    filter: invert(77%) sepia(92%) saturate(1782%) hue-rotate(45deg) brightness(170%) contrast(104%)
 }
 
 /* Mobile */

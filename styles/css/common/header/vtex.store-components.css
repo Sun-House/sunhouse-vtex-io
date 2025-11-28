@@ -1,0 +1,45 @@
+/* Logo START */
+.logoLink--logo-image--desktop {
+    position: absolute;
+    top: 8px;
+    left: var(--header-logo-left);
+    transform: var(--header-logo-transform);
+    transition: all .2s
+}
+
+.logoLink--logo-image--desktop .logoContainer {
+    display: flex;
+    align-items: center;
+    height: var(--header-logo-height) !important;
+    padding: 0;
+    max-width: initial;
+    max-height: initial;
+    min-width: initial
+}
+
+.logoLink--logo-image--desktop .logoContainer .logoImage {
+    opacity: var(--header-logo-opacity);
+    visibility: var(--header-logo-visible);
+    max-height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.logoLink--logo-image--desktop .logoContainer::after {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-image: url("assets/images/logo.svg");
+    opacity: var(--header-inverted-logo-opacity);
+    visibility: var(--header-inverted-logo-visible)
+}
+
+.logoLink--logo-image--mobile .logoContainer {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    max-width: initial;
+    max-height: initial;
+    min-width: initial
+}
+/* Logo END */

@@ -89,9 +89,32 @@
     content: "\F32F"
 }
 
-.paragraph--footer-address::before {
-    content: "\F3E8"
+/**/
+/* Talvez precise desse no display flex ou width 100% para funcionar o proximo
+.vtex-rich-text-0-x-container--footer-address {
+    / display: flex; /
+    / width: 100%; /
+    / flex-direction: row; /
+} */
+
+/* .vtex-rich-text-0-x-wrapper--footer-address { */
+.wrapper--footer-address {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
 }
+
+/* .vtex-rich-text-0-x-wrapper--footer-address::before { */
+.wrapper--footer-address::before {
+    content: "\F3E8";
+    font-family: "Bootstrap-Icons";
+    color: #e1dede;
+    margin-top: 6px
+}
+
+/* .paragraph--footer-address::before {
+    content: "\F3E8"
+} */
 /**/
 
 /* Texto Redes Sociais */
@@ -190,7 +213,7 @@
 /* Desktop Force */
 @media screen and (min-width: 1025px) {
 
-    /* Animação das linhas do sistema de lista do footer - REPLICAR PARA O MENU DO HEADER
+    /* Animação das linhas do sistema de lista do footer
        Ideal esse sistema visual funcionar apenas para desktop - mobile nao precisa e nao tera esse efeito visual */
     /* START */
     .container--footer .list .link {

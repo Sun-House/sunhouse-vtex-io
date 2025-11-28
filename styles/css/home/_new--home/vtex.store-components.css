@@ -82,7 +82,8 @@
     /* Propriedades base do botão animado */
     position: relative; /* Essencial para posicionar o ::before */
     display: inline-block;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    padding: 10px 0px;
     border: 2px solid #fff;
     background-color: transparent; /* Cor de fundo inicial transparente */
     color: #fff; /* Cor do texto inicial */
@@ -91,7 +92,7 @@
     z-index: 1; /* Garante que o texto fique acima do ::before */
   
     /* Transição para a cor do texto (opcional, mas melhora o efeito) */
-    transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out
     /* Propriedades base do botão animado */
 }
 
@@ -112,7 +113,7 @@
     /* transform-origin: top left; */ /* Garante que a inclinação comece do canto superior esquerdo */
   
     /* AQUI ESTÁ A CHAVE DA ANIMAÇÃO: */
-    transition: width 0.5s ease-in-out;
+    transition: width 0.4s ease-in-out
 }
   
   /* Estado de HOVER (Passar o mouse) */
@@ -133,6 +134,7 @@
 .infoCardCallActionContainer--main-banner-home :global(.vtex-button__label)::after {
     content: "\F134";
     font-family: "Bootstrap-Icons";
+    font-size: 24px;
     margin-left: 12px
 }
 /**/
