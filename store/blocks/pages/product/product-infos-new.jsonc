@@ -10,18 +10,33 @@
 
     "flex-layout.col#product-description-wrapper": {
         "children": [
+            "container#product-description-spacing-default",
             "container#product-description-pure-text",
             "container#product-description-simple",
             "container#product-description-ms",
 
             // Novos blocos de informações do produto:
+            // Beneficios
+            "container#product-description-spacing-default",
             "container#product-description-benefits",
+            
+            // Video
+            "container#product-description-spacing-default",
             "container#product-description-video",
+            
+            // Informacoes Adicionais
+            "container#product-description-spacing-default",
             "container#product-description-additional-infos",
+            
+            // Informacoes Adicionais
+            "container#product-description-spacing-default",
             "container#product-description-important-text",
+
+            // Texto da Marca
             "container#product-description-brand-text",
 
             // A principio ficara melhor por ultimo - mas ao fim do projeto podera mudar
+            // TESTAR SE VAI FALTAR O CONTAINER DE ESPACAMENTO AQUI
             "container#product-description-custom",
             "container#product-faq"
         ],

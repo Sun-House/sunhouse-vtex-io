@@ -463,10 +463,11 @@
     align-items: center
 }
 
+/* Movido para o arquivo components/shelf/_new--shelf/vtex.rich-text.css
 .container--common-title {
     margin-bottom: 20px;
     text-align: center
-}
+} */
 
 .container--wishlist-title {
     border-bottom: none;
@@ -478,13 +479,14 @@
     width: 100%
 }
 
+/* Movido para o arquivo components/shelf/_new--shelf/vtex.rich-text.css
 .wrapper--common-title {
     width: 100%;
     max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
     padding: 0
-}
+} */
 
 .headingLevel3--common-title {
     font-family: "Open Sans", sans-serif;
@@ -849,11 +851,12 @@
     color: #fff
 }
 
+/* Movido para o arquivo components/shelf/_new--shelf/vtex.rich-text.css
 .headingLevel2--common-title {
     font-size: 24px;
     line-height: 33px;
     margin-bottom: 0
-}
+} */
 
 .headingLevel2--opinion-title {
     font-size: 25px;

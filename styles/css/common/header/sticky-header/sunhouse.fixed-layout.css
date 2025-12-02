@@ -1,9 +1,20 @@
 /* .sunhouse-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast { */
+
+/* Validar se impacta o mobile - mas acredito que essas alteracoes serao somente para desktop */
 .fixedLayout--sticky-header--scrolledPast :global(.vtex-container-container--menu) {
     height: 0px !important;
+    border-bottom: unset !important /* Fix para alternancia de cor do header quando não existe nenhum .hideFirstImage no documento - vide vtex.login.css da raiz das estilizacoes do Header */
 }
 
+.fixedLayout--sticky-header--scrolledPast :global(.vtex-container-container--header--desktop__main) {
+    height: 70px !important
+}
+/* Validar se impacta o mobile - mas acredito que essas alteracoes serao somente para desktop */
 
+/* ACIMA, esta ajustando a altura do menu quando o sticky header esta scrolledPast (ou seja, quando o usuario rola a pagina para baixo)
+   Essa forma de aplicacao pode ser util para varias partes do site
+   CUIDADO com o segundo seletor, pois ele é generico e pode se repetir na pagina, afetando outros elementos
+*/
 
 
 /* Sticky Header START */

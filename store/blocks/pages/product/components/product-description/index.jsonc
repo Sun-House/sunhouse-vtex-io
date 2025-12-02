@@ -4,7 +4,8 @@
 
     // Description - Pure Text
     "container#product-description-pure-text": {
-        "title": "Descrição Pura (Texto)",
+        // "title": "Descrição Pura (Texto)",
+        "title": "Descrição Texto (Simples)",
         "children": [
             "product-description",
             "product-dimensions#assembled-dimensions"
@@ -28,7 +29,7 @@
 
     // Normal Description - Simple
     "container#product-description-simple": {
-        "title": "Descrição Normal",
+        "title": "Descrição Normal (Custom)",
         "children": [
             "flex-layout.row#product-description-simple"
         ],
@@ -72,7 +73,7 @@
 
     // Normal Description - Inherited from MS
     "container#product-description-ms": {
-        "title": "Descrição Normal (Herdada do Movelsoft)",
+        "title": "Descrição Normal (Herdada do Catalog/ERP)",
         "children": [
             "flex-layout.row#product-description-ms"
         ],
@@ -233,7 +234,7 @@
     // TEXTO - PARA INFORMACOES IMPORTANTES E NOTAS DE REGISTRO (COMO GARANTIA, PRODUT MONTADO E ETC)
 
     // Important Text Block
-    "container#product-description-important-text" :{
+    "container#product-description-important-text": {
         "title": "Texto para Informações Importantes",
         "children": [
             "rich-text#product-description-important-text"

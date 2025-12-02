@@ -157,6 +157,8 @@
     color: var(--header-text-color)
 } */
 
+
+/* Movido para common/header/sunhouse.container.css
 .container--header--desktop__main {
     position: relative;
     height: 70px;
@@ -180,7 +182,7 @@
 .container--header--desktop__controls--right {
     gap: var(--header-right-controls-gap);
     transition: all .2s
-}
+} */
 
 /* Movido para common/header/menu/sunhouse.container.css
 .container--menu {
@@ -275,6 +277,10 @@
 
 .container--spacing-default {
     height: 40px
+}
+
+.container--product-description-spacing-default {
+    height: 48px
 }
 
 .container--debug-container {

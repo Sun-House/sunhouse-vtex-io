@@ -1,47 +1,50 @@
 {
   "store.home": {
     "blocks": [
+      // Main Banner
       "info-card#banner-main",
       
-      // Em processo de remodelagem visual
+      // Category Grid
+      // Em processo de remodelagem visual - RAW Concluido!
       "flex-layout.row#categories-slider",
       "container#spacing-default",
-      //
-      
-      // Banner duplo - Sera descontinuado no Refresh
-      // "list-context.image-list#image-double",
-      // "container#spacing-default",
-      //
-      
-      // Sera descontinuada no Refresh
-      // "flex-layout.row#shelf-home01",
-      // "container#spacing-default",
-      //
 
-      // Banner grid - Sera descontinuado no Refresh
-      // "list-context.image-list#banner-grid",
-      // "container#spacing-default",
-      //
+      // Shelfs - PRECISA SER REALOCADA AS POSICOES
+      "container#shelf-home02", // Mudar nome posteriormente - Essa manter em sistema de slider, mudar o visual, reaproveitar para usar na PDP, porem, será ocultada da home no Refresh (a principio, mas pode ser reativada)
+      "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
 
-      "container#shelf-home02", // Essa manter em sistema de slider, mudar o visual, reaproveitar para usar na PDP, porem, será ocultada da home no Refresh (a principio, mas pode ser reativada)
-      "container#shelf-home03", // Essa sera a nova prateleira grid, sera usada para a home no Refresh
-      "container#spacing-default",
+      // Product Highlight Grid
+      // A SER IMPLEMENTADO
 
+      // Fullwidth Static Banner
+      // A SER IMPLEMENTADO
+
+      // Shelf Grid
+      "container#shelf-home03", // Mudar nome posteriormente
+      "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
+
+      // Fullwidth Shelf Banner
+      // A SER IMPLEMENTADO - Usar o abaixo como base:
       // Esse preciso testar - sera util para o Refresh
       // "flex-layout.row#shelf-banner-desktop",
       // "container#spacing-default",
       //
 
-      // Possivelmente sera descontinuado no Refresh - vou manter por hora
+      // Instagram Block - Estudar se será possivel para lançamento no Refresh
+      // A SER IMPLEMENTADO
+
+      // Blog Grid
+      // Precisara ser completamente recriado no Refresh
+      // "container#blog-cards",
+      // "container#spacing-default",
+      //
+
+      // Trustvox Colt Reviews - Concluido!
+      // Não ficará visivel no Refresh, mas sera mantido para backup
       "container#trustvox-colt-highlight",
       "container#spacing-default",
-      //
 
-      // Precisara ser completamente recriado no Refresh - manter por hora
-      "container#blog-cards",
-      "container#spacing-default",
-      //
-
+      // About Text with FAQ
       "container#pre-footer-about"
     ]
   }

@@ -50,17 +50,18 @@
 
   // Shelf 2 - Sera reaproveitado para o novo layout Refresh
   "container#shelf-home02": {
-    "title": "Prateleira 2",
+    // "title": "Prateleira 2",
+    "title": "Prateleira 1",
     "children": [
       "flex-layout.row#shelf-home02"
     ],
     "props": {
-      "blockClass": "wrapper__shelf-home02"
+      "blockClass": ["wrapper__shelf-home02", "shelf-inline"]
     }
   },
 
   "flex-layout.row#shelf-home02": {
-    "title": "Prateleira 2 - Container",
+    // "title": "Prateleira 1 - Container",
     "children": [
       "flex-layout.col#shelf-home02"
     ],
@@ -71,7 +72,7 @@
   },
 
   "flex-layout.col#shelf-home02": {
-    "title": "Prateleira 2",
+    // "title": "Prateleira 1",
     "children": [
       "rich-text#shelf-home02",
       "hover-container#shelf-home02"
@@ -84,12 +85,13 @@
   "rich-text#shelf-home02": {
     "title": "Prateleira 2 - Título",
     "props": {
-      "text": "## Pronta Entrega\nCompre agora e receba super rápido!",
+      "text": "## Lançamentos Elements", // Texto padrao para o Refresh - Será alterado via Site Editor dependendo do conteudo da prateleira
       "blockClass": ["shelf-home02", "common-title"]
     }
   },
 
   "hover-container#shelf-home02": {
+    "title": "Configurações do Hover",
     "children": [
       "list-context.product-list#shelf-home02"
     ],
@@ -99,7 +101,8 @@
   },
 
   "list-context.product-list#shelf-home02": {
-    "title": "Lista de Produtos 2",
+    // "title": "Lista de Produtos 2",
+    "title": "Configurações da Lista de Produtos",
     "blocks": [
       // "product-summary.shelf#main-product"
       "product-summary.shelf#main-product-new"
@@ -109,7 +112,8 @@
       "responsive-layout.mobile#shelf-slider"
     ],
     "props": {
-      "maxItems": 10
+      // "maxItems": 10
+      "maxItems": 9 // Quantidade ideal para o fluxo do slider ser agradavel
     }
   },
   //
@@ -155,7 +159,8 @@
   },
 
   "hover-container#shelf-home03": {
-    "title": "Prateleira Grid - Hover Container",
+    // "title": "Prateleira Grid - Hover Container",
+    "title": "Configurações do Hover",
     "children": [
       "list-context.product-list#shelf-home03"
     ],
@@ -167,7 +172,8 @@
   // Lista de Produtos 3 - sem slider
   // Será usada de base para o sistema de Shelf Grid do Refresh (da home apenas)
   "list-context.product-list#shelf-home03": {
-    "title": "Lista de Produtos - em Grid",
+    // "title": "Lista de Produtos - em Grid",
+    "title": "Configurações da Lista de Produtos",
     "blocks": [
       // "product-summary.shelf#main-product"
       "product-summary.shelf#main-product-new"
@@ -207,9 +213,9 @@
       "itemsPerPage": {
         "desktop": 4
       },
-      "showPaginationDots": "always",
-      "showNavigationArrows": "desktopOnly",
-      // "infinite": false,
+      // "showPaginationDots": "always",
+      "showPaginationDots": "mobileOnly", // Acredito que será o ideal ter apenas no Mobile - validar conforme prop abaixo
+      "showNavigationArrows": "desktopOnly", // Talvez precise mudar para o Refresh - a definir Mobile
       "infinite": true,
       "blockClass": ["shelf", "main-shelf"]
     }

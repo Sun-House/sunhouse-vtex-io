@@ -1,0 +1,32 @@
+/* VALIDAR SE PRECISO REMOVER OS ATRIBUTOS ABAIXO DE OUTROS ARQUIVOS ANTERIORES */
+
+
+/* .vtex-product-summary-2-x-nameContainer--new-shelf { */
+.nameContainer--new-shelf {
+    text-align:left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* .vtex-product-summary-2-x-nameContainer--new-shelf .vtex-product-summary-2-x-productBrand--new-shelf,
+.vtex-product-summary-2-x-nameContainer--new-shelf .vtex-product-summary-2-x-brandName--new-shelf { */
+.nameContainer--new-shelf .productBrand--new-shelf,
+.nameContainer--new-shelf .brandName--new-shelf {
+    font-weight: 600 /* Validar apos correcao do font-faces.css se o 500 não é melhor */
+}
+
+/* .vtex-product-summary-2-x-productBrand--new-shelf,
+.vtex-product-summary-2-x-brandName--new-shelf { */
+.productBrand--new-shelf,
+.brandName--new-shelf {
+    display: block;
+    height: 38px
+}
+
+/* .vtex-product-summary-2-x-SKUSelectorContainer { */
+.SKUSelectorContainer {
+    min-height: 52px; /* Podem bugar algumas coisas, ficar de olho */
+    max-height: 52px; /* Podem bugar algumas coisas, ficar de olho */
+    overflow: hidden
+}

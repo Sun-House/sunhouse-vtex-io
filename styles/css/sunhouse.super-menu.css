@@ -1,3 +1,5 @@
+/* A principio vou manter as atualizações do Refresh aqui */
+
 .navWrapper--header-category-menu {
     transform: var(--header-menu-transform);
     max-width: var(--header-menu-width);
@@ -35,7 +37,7 @@
 
 .navWrapper--header-category-menu .list[data-depth="1"] .item[data-depth="1"] .titleLink[data-depth="1"] {
     padding-block: 8px 9px;
-    padding-inline: var(--header-menu-item-padding-inline);
+    /* padding-inline: var(--header-menu-item-padding-inline); */
     border-top: 2px solid rgba(0,0,0,0);
     background-color: rgba(0,0,0,0);
     transition: all .2s;
@@ -63,7 +65,7 @@
 }
 
 .navWrapper--header-category-menu .item[data-depth="1"] .titleLink[data-depth="1"] {
-    padding: 8px 24px;
+    /* padding: 8px 24px; */
     display: flex;
     justify-content: space-between;
     align-items: center;

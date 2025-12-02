@@ -1,0 +1,13 @@
+/* Ajustar para classe correta */
+/* START */
+/* .sunhouse-container-1-x-container--bf_price-block { */
+.container--bf_price-block {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: auto;
+    /* height: 0; - Pode dar alguns bugs visuais */
+    justify-content: flex-end
+}
+/* Ajustar para classe correta */
+/* END */

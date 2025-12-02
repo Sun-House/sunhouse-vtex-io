@@ -1,0 +1,93 @@
+// ESTRUTURAR AQUI TUDO QUE FIZ NA LP DA BLACK FRIDAY,
+// MAS REPLICAR DIRETAMENTE NA ESTRUTURA ORIGINAL DO SEARCH
+
+// NAO ESQUECER de testar a busca na paginacao: recarregar a pagina na page 2 por exemplo e ver como fica
+
+{
+    // Header da busca - apos banner infocard
+    "flex-layout.row#wrapper_post-header-line.desktop": {
+		"children": [
+			"flex-layout.col#post-header-line_breadcrumb",
+			"flex-layout.col#post-header-line_orderby"
+		],
+		"props": {
+			"blockClass": ["search-content", "post-header-line"]
+		}
+	},
+	"flex-layout.col#post-header-line_breadcrumb": {
+		"children": [
+			"breadcrumb.search#search-result"
+		],
+		"props": {
+			"blockClass": "post-header-line_breadcrumb"
+		}
+	},
+	"flex-layout.col#post-header-line_orderby": {
+		"children": [
+			"vtex.search-result:order-by.v2#search-result-new"
+		],
+		"props": {
+			"blockClass": "post-header-line_orderby"
+		}
+	},
+	"vtex.search-result:order-by.v2#search-result-new": {
+		"props": {
+			"hiddenOptions": [
+				"OrderByNameDESC",
+				"OrderByNameASC"
+			],
+            // "blockClass": "orderby-bf" - Ajustar estilo que esta nesse key para o novo key abaixo
+			"blockClass": "orderby-new"
+		}
+	},
+
+    // Filtros - Right Sidebar
+    "vtex.search-result:filter-navigator.v3": {
+		"props": {
+			"categoryFiltersMode": "href",
+			
+			"layout": "responsive", // Ideal para puxar esse mesmo componente para o layout mobile (precisa testar)
+			// Nao esta funcionando - Se nao mudar nada conforme comentei os componente abaixo, excluir linhas
+            // START
+			// "maxItemsDepartment": 1,
+			// "maxItemsCategory": 1,
+			// "maxItemsSubcategory": 1,
+			// Nao esta funcionando END
+			"initiallyCollapsed": false,
+			"openFiltersMode": "many",
+			"filtersTitleHtmlTag": "h4",
+			"scrollToTop": "none", // Nao esta funcionando no mobile
+			"truncateFilters": true,
+			"closeOnOutsideClick": true, // Util para mobile -> true (precisa testar)
+			// Nao esta funcionando - Se nao mudar nada conforme comentei os componente abaixo, excluir linhas
+            // START
+			// "appliedFiltersOverview": "hide",
+			// Nao esta funcionando END
+			"fullWidthOnMobile": false,
+			"navigationTypeOnMobile": "collapsible",
+			"updateOnFilterSelectionOnMobile": true,
+			"drawerDirectionMobile": "drawerLeft",
+			"showClearByFilter": true,
+			"showClearAllFiltersOnDesktop": true,
+			"priceRangeLayout": "slider",
+			// "showQuantityBadgeOnMobile": false, // Nao esta funcionando - Se nao mudar nada conforme comentei os componente abaixo, excluir linha
+			"facetOrdering": [
+				{
+					"key": "category-1",
+					"orderBy": "quantity",
+					"order": "ASC"
+				}
+				// Abaixo, é possivel organizar os filtros por nome do tipo de filtro.
+				// Ideal configurar apos virada do site:
+				// , 
+				// {
+				// 	"key": "",
+				// 	"orderBy": "",
+				// 	"order": ""
+				// }
+			],
+			// "blockClass": "filter-bf" - Ajustar estilo que esta nesse key para o novo key abaixo
+            "blockClass": "filters-new"
+		}
+	}
+}

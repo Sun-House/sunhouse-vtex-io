@@ -2,6 +2,11 @@
    padding: 64px 0
 } */
 
+/* .vtex-flex-layout-0-x-flexRow--product-main { */
+.flexRow--product-main {
+   margin-top: 48px
+}
+
 .flexRow--product-infos-wrapper {
    max-width: 1200px;
    margin: 0 auto

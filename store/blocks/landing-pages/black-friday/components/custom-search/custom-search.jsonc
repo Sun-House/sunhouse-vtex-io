@@ -77,6 +77,9 @@
 		}
 	},
 
+	// MOVIDO PARA O NOVO SEARCH - search-result-new.jsonc
+	// Excluir apos testes das paginas de busca e categorias
+	// START
 	"flex-layout.row#wrapper_post-header-line.desktop": {
 		"children": [
 			"flex-layout.col#post-header-line_breadcrumb",
@@ -111,6 +114,7 @@
 			"blockClass": "orderby-bf"
 		}
 	},
+	// END
 	
 	"flex-layout.row#search-result-black-friday.mobile": {
 		"children": [
@@ -164,6 +168,9 @@
 		}
 	},
 
+	// MOVIDO PARA O NOVO SEARCH - search-result-new.jsonc
+	// Excluir apos testes das paginas de busca e categorias
+	// START
 	// Filters - Right Side Sidebar
 	"vtex.search-result:filter-navigator.v3": {
 		"props": {
@@ -213,6 +220,7 @@
 			"blockClass": "filter-bf"
 		}
 	},
+	// END
 	
 	"flex-layout.row#black-friday_search-content.desktop": {
 		"children": [
@@ -276,8 +284,10 @@
 					}
 				}
 			],
-			"GridSummary": "product-summary.shelf#black-friday",
-			"ListSummary": "product-summary.shelf#black-friday",
+			// "GridSummary": "product-summary.shelf#black-friday",
+			// "ListSummary": "product-summary.shelf#black-friday",
+			"GridSummary": "product-summary.shelf#main-product-new",
+      		"ListSummary": "product-summary.shelf#main-product-new",
 			"blockClass": "bf-gallery"
         }
     },
@@ -287,6 +297,10 @@
             "blockClass": "not-found-black-friday"
         }
     },
+	//
+
+
+
 
 	"flex-layout.row#bf_info-card__wrapper": {
 		"title": "Banner Destaque - Line Wrapper",

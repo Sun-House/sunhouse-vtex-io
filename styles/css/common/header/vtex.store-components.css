@@ -1,7 +1,7 @@
 /* Logo START */
 .logoLink--logo-image--desktop {
     position: absolute;
-    top: 8px;
+    /* top: 8px; */
     left: var(--header-logo-left);
     transform: var(--header-logo-transform);
     transition: all .2s
@@ -20,9 +20,10 @@
 .logoLink--logo-image--desktop .logoContainer .logoImage {
     opacity: var(--header-logo-opacity);
     visibility: var(--header-logo-visible);
-    max-height: 100%;
-    -o-object-fit: contain;
-    object-fit: contain
+    height: 110px; /* Validar se nao é melhor definir a altura pelo blocks.json */
+    /* max-height: 100%; */
+    /* -o-object-fit: contain;
+    object-fit: contain */
 }
 
 .logoLink--logo-image--desktop .logoContainer::after {

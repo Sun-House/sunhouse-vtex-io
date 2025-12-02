@@ -1,0 +1,13 @@
+/* Aplica globalmente as alteracoes do esquema de cor do header quando não existe nenhum .hideFirstImage no documento. 
+   O hideFirstImage é um classe que é aplicada na primeira imagem do produto quando existe imagem de destaque na PDP.
+   Portanto, estilos abaixo deverao funcionar somente na PDP sob as condicoes acima */
+
+/* body:not(:has(:global(.hideFirstImage))) * { */
+:global(.render-route-store-product):not(:has(:global(.hideFirstImage))) * {
+    --header-text-color: #161413
+}
+
+/* body:not(:has(:global(.hideFirstImage))) :global(.sunhouse-container-1-x-container--menu) { */
+:global(.render-route-store-product):not(:has(:global(.hideFirstImage))) :global(.sunhouse-container-1-x-container--menu) {
+    border-bottom: 1px solid #161413
+}

@@ -478,10 +478,8 @@
           }
         }
       ],
-      // "GridSummary": "product-summary.shelf#main-product",
-      // "ListSummary": "product-summary.shelf#main-product"
-      "GridSummary": "product-summary.shelf#main-product-new", // Novo modelo de Shelf
-      "ListSummary": "product-summary.shelf#main-product-new" // Novo modelo de Shelf
+      "GridSummary": "product-summary.shelf#main-product-new",
+      "ListSummary": "product-summary.shelf#main-product-new"
     }
   },
   "container#search-seo": {

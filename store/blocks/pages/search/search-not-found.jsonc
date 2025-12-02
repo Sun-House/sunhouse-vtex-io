@@ -9,7 +9,7 @@
       "container#spacing-default",
       "list-context.image-list#banner-grid",
       "container#spacing-default",
-      "flex-layout.row#shelf-home01",
+      // "flex-layout.row#shelf-home01", - Substituir por outro componente ou shelf nova
       "container#spacing-default",
       "container#blog-cards",
       "container#spacing-default"

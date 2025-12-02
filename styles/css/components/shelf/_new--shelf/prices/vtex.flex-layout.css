@@ -1,0 +1,39 @@
+/* .vtex-flex-layout-0-x-flexCol--shelf-product-available .vtex-flex-layout-0-x-flexColChild--shelf-product-available:nth-child(2) { */
+.flexCol--shelf-product-available .flexColChild--shelf-product-available:nth-child(even) {
+    position: relative;
+    top: -70px;
+    height: 20px !important
+}
+
+.flexColChild--shelf-product-available .flexCol--buy-button :global(.vtex-button) {
+    /* border: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+    height: 52px;
+    transition: all .2s; */
+
+    /* Abaixo estilo novo */
+    width: 75%
+}
+
+.flexColChild--shelf-buy-button {
+    text-align: left
+}
+
+/* .vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button { */
+.flexColChild--shelf-product-available .flexCol--buy-button :global(.vtex-button) {
+    background-color: #161413
+}
+
+/* .vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button .vtex-button__label { */
+.flexColChild--shelf-product-available .flexCol--buy-button :global(.vtex-button) :global(.vtex-button__label) {
+    color: #e1dede
+}
+
+/* .vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button .vtex-button__label::after { */
+.flexColChild--shelf-product-available .flexCol--buy-button :global(.vtex-button) :global(.vtex-button__label)::after {
+    content: "\F243";
+    font-family: "Bootstrap-Icons";
+    font-size: 20px;
+    margin-left: 12px
+}

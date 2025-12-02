@@ -1,12 +1,12 @@
 /* Containers Gerais */
 /* .sunhouse-container-1-x-container--product-description { */
-.container--product-description {
+/* .container--product-description { */
     /* DEBUG */
     /* background: #ff000036; */
     /* DEBUG */
 
-    margin-top: 48px
-}
+    /* margin-top: 48px
+} */
 
 /* .sunhouse-container-1-x-container--product-description-simple .sunhouse-container-1-x-imageElement--container_desc-banner__imagemDescricao { */
 .container--product-description .imageElement--container_desc-banner__imagemDescricao {
