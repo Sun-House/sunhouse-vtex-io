@@ -54,7 +54,7 @@
         }
     },
     "flex-layout.col#desc-banner_ColImage": {
-        "title": "Coluna da Foto do Produto ou Marca",
+        // "title": "Coluna da Foto do Produto ou Marca",
         "children": [
             "list-context.image-list#desc-banner__imagemDescricao"
         ],

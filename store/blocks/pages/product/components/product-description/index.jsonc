@@ -39,7 +39,7 @@
     },
 
     "flex-layout.row#product-description-simple": {
-        "title": "Descrição com Foto e Texto",
+        // "title": "Descrição com Foto e Texto",
         "children": [
             "flex-layout.col#desc-banner_ColImage", // Esse herda do Custom Descritpion - acredito que nao precisara mexer em nada (TESTAR!)
             "flex-layout.col#product-description-simple"

@@ -1,113 +1,126 @@
 /* Fantasticon */
 @font-face {
   font-family: "fantasticon";
+  /* font-style: normal; */
   src: local(""), url("assets/fonts/fantasticon/fantasticon_461c62e5-dfd9-4574-959f-58d25d2adc56.woff2") format("woff2"), url("assets/fonts/fantasticon/fantasticon_461c62e5-dfd9-4574-959f-58d25d2adc56.woff") format("woff"), url("assets/fonts/fantasticon/fantasticon_461c62e5-dfd9-4574-959f-58d25d2adc56.ttf") format("truetype");
 }
 
 /* bai-jamjuree-200 - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: normal;
   font-weight: 200;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-ExtraLight.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-ExtraLight.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-ExtraLight.ttf") format("ttf");
 }
 
 /* bai-jamjuree-200-italic - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: italic;
   font-weight: 200;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-ExtraLightItalic.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-ExtraLightItalic.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-ExtraLightItalic.ttf") format("ttf");
 }
 
 /* bai-jamjuree-300 - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: normal;
   font-weight: 300;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-Light.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-Light.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-Light.ttf") format("ttf");
 }
 
 /* bai-jamjuree-300-italic - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: italic;
   font-weight: 300;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-LightItalic.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-LightItalic.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-LightItalic.ttf") format("ttf");
 }
 
 /* bai-jamjuree-400 - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: normal;
   font-weight: 400;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-Regular.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-Regular.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-Regular.ttf") format("ttf");
 }
 
 /* bai-jamjuree-400-italic - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: italic;
   font-weight: 400;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-Italic.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-Italic.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-Italic.ttf") format("ttf");
 }
 
 /* bai-jamjuree-500 - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: normal;
   font-weight: 500;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-Medium.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-Medium.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-Medium.ttf") format("ttf");
 }
 
 /* bai-jamjuree-500-italic - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: italic;
   font-weight: 500;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-MediumItalic.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-MediumItalic.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-MediumItalic.ttf") format("ttf");
 }
 
 /* bai-jamjuree-600 - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: normal;
   font-weight: 600;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-SemiBold.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-SemiBold.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-SemiBold.ttf") format("ttf");
 }
 
 /* bai-jamjuree-600-italic - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: italic;
   font-weight: 600;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-SemiBoldItalic.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-SemiBoldItalic.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-SemiBoldItalic.ttf") format("ttf");
 }
 
 /* bai-jamjuree-700 - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: normal;
   font-weight: 700;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-Bold.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-Bold.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-Bold.ttf") format("ttf");
 }
 
 /* bai-jamjuree-700-italic - latin */
 @font-face {
   font-display: swap;
-  font-family: "BaiJamjuree";
+  font-family: "Bai Jamjuree";
   font-style: italic;
   font-weight: 700;
-  src: url("assets/fonts/bai-jamjuree/BaiJamjuree-BoldItalic.ttf") format("ttf");
+  /* src: url("assets/fonts/bai-jamjuree/BaiJamjuree-BoldItalic.ttf") format("ttf"); */
+  src: local(""), url("assets/fonts/bai-jamjuree/BaiJamjuree-BoldItalic.ttf") format("ttf");
 }
