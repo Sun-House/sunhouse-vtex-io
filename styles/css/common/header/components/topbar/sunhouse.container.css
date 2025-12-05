@@ -1,6 +1,8 @@
-/* .wrapper--top-bar {
-    display: none !important
-} */
+/* .sunhouse-container-1-x-wrapper--top-bar { */
+.wrapper--top-bar {
+    /* display: none !important */
+    background-color: #161413 /* Cor final Refresh validada */
+}
 
 .container--institutional {
     /* margin-top: 136px; */

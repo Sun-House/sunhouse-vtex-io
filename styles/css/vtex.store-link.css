@@ -1,3 +1,6 @@
+/* A PRINCIPIO ESTOU APLICANDO AS ALTERACOES DO REFRESH AQUI
+   VERIFICAR SE PRECISA SER DIVIDIDO EM ARQUIVOS SEPARADOS */
+
 .link--footer-link {
     height: 28px;
     display: flex;
@@ -111,11 +114,13 @@
 
 .link--header-links .label {
     color: var(--header-text-color);
-    font-size: 12px;
+    /* font-size: 14px; */
+    font-size: 15px; /* Fonte final validada Refresh */
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-transform: uppercase;
+    /* font-weight: 300; */
+    font-weight: 400;
+    line-height: normal
+    /* text-transform: uppercase; */
 }
 
 .link--header-links--wishlist--right {
@@ -209,13 +214,13 @@
 }
 
 .link--wishlist:hover .childrenContainer--wishlist {
-    color: #a40202 !important;
+    /* color: #a40202 !important; */
     z-index: 4;
 }
 
 .link--wishlist :global(.vtex-store-components-3-x-heartFilledIcon) {
     opacity: 0;
-    color: #a40202;
+    color: #a40202; /* Ver se a necessidade de alterar essa cor para o Refresh */
     position: absolute;
     width: 18px;
     height: 18px;
@@ -230,31 +235,43 @@
     opacity: 1;
 }
 
+/* Botao Login quando deslogado START */
+/* .vtex-store-link-0-x-label--login-simple::before { */
+.label--login-simple::before {
+    display: inline-flex;
+    content: "";
+    font-size: 18px;
+    font-family: "fantasticon";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 8px;
+    /* Essa cor precisa ser movida para o css direcionado do sticky header */
+    /* START */
+    /* color: #161413 */ /* Cor final Refresh */
+    /* Essa cor precisa ser movida para o css direcionado do sticky header */
+    /* END */
+    color: #FFDA00
+}
+/* END*/
+
+/* Botao Login quando logado START */
 .link--overlay-login {
     padding: 8px 0;
     transition: all .4s;
 }
 
 .link--overlay-login:hover {
-    background-color: #ede8ec;
+    background-color: #ede8ec; /* Trocar para a cor nova Refresh */
 }
 
 .link--overlay-login:hover .label {
     font-weight: bold;
 }
 
-.label--header-links {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-}
-
 .label--overlay-login {
     width: 100%;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -265,8 +282,24 @@
     transition: all .4s;
 }
 
-.label--overlay-logout {
+/* .label--overlay-logout {
     color: #a40202;
+} */
+/* END*/
+
+.label--header-links {
+    /* font-family: "Open Sans", sans-serif; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    transition: all .2s ease-in-out
+}
+
+/* .vtex-store-link-0-x-label--header-links:hover { */
+.label--header-links:hover {
+    color: #FFDA00
 }
 
 .childrenContainer--header-links {
@@ -275,6 +308,30 @@
     justify-content: center;
     position: relative;
 }
+
+/* Aplica cor Amarela SH para todos os icones dos links do header */
+/* .vtex-store-link-0-x-childrenContainer--header-links .vtex-store-components-3-x-storesIcon,
+.vtex-store-link-0-x-childrenContainer--header-links .vtex-store-components-3-x-heartIcon { */
+.childrenContainer--header-links :global(.vtex-store-components-3-x-storesIcon),
+.childrenContainer--header-links :global(.vtex-store-components-3-x-heartIcon) {
+    color: #FFDA00
+}
+/**/
+
+/* Icone do Botao Showroom Virtual START */
+/* .vtex-store-link-0-x-label--link-showroom::before { */
+.label--link-showroom::before {
+    display: inline-flex;
+    content: "\F1C8";
+    font-family: "Bootstrap-Icons";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 12px;
+    color: #FFDA00
+}
+/* END*/
 
 .childrenContainer--our-stores {
     margin-right: 12.61px;
@@ -495,7 +552,7 @@
 }
 
 .link--not-found-back-home .label {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -563,7 +620,7 @@
     }
 
     .link--my-orders-link .label {
-        font-family: "Open Sans", sans-serif;
+        /* font-family: "Open Sans", sans-serif; */
         font-style: normal;
         font-weight: normal;
         font-size: 14px;

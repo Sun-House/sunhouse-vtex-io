@@ -1,49 +1,52 @@
 {
   "flex-layout.row#categories-slider": {
     "title": "Container categorias",
-    "children": ["flex-layout.col#categories-slider-content"],
+    "children": [
+      "flex-layout.col#categories-slider-content"
+    ],
     "props": {
       "blockClass": "categories-slider",
       "colSizing": "equal",
-      // "fullWidth": true,
       "preventVerticalStretch": true
     }
   },
   "flex-layout.col#categories-slider-content": {
     "title": "Conteúdo categorias",
     "children": [
-      "flex-layout.col#categories-title",
+      // REMOVER apos validacao do Refresh
+      // "flex-layout.col#categories-title",
       "flex-layout.col#categories-content"
     ],
     "props": {
       "blockClass": "categories-slider-content"
-      // "colSizing": "equal",
-      // "fullWidth": true,
-      // "preventVerticalStretch": true
     }
   },
 
-  "flex-layout.col#categories-title": {
-    "title": "Título categorias",
-    "children": ["rich-text#categories-title"],
-    "props": {
-      "blockClass": "categories-title",
-      "verticalAlign": "middle",
-      "width": "grow"
-    }
-  },
+  // REMOVER apos validacao do Refresh
+  // "flex-layout.col#categories-title": {
+  //   "title": "Título categorias",
+  //   "children": ["rich-text#categories-title"],
+  //   "props": {
+  //     "blockClass": "categories-title",
+  //     "verticalAlign": "middle",
+  //     "width": "grow"
+  //   }
+  // },
 
-  "rich-text#categories-title": {
-    "title": "Título categorias",
-    "props": {
-      "text": "## Móveis e decorações Sun House para sua casa",
-      "blockClass": "categories-title"
-    }
-  },
+  // REMOVER apos validacao do Refresh
+  // "rich-text#categories-title": {
+  //   "title": "Título categorias",
+  //   "props": {
+  //     "text": "## Móveis e decorações Sun House para sua casa",
+  //     "blockClass": "categories-title"
+  //   }
+  // },
 
   "flex-layout.col#categories-content": {
     "title": "Carrossel de categorias",
-    "children": ["image-text-list#categories-slider"],
+    "children": [
+      "image-text-list#categories-slider"
+    ],
     "props": {
       "blockClass": "categories-content",
       "width": "grow"
@@ -51,7 +54,9 @@
   },
 
   "image-text-list#categories-slider": {
-    "children": ["embla-carousel#by-category"],
+    "children": [
+      "embla-carousel#by-category"
+    ],
     "props": {
       "imageTextArray": [
         {
@@ -92,6 +97,7 @@
         "draggable": true,
         "loop": true,
         "align": "start"
+        // Ver se consigo reaproveitar o breakpoints para configurar o mobile
         // "breakpoints": {
         //   "(max-width: 767px)": { "align": "center" },
         //   "(min-width: 768px)": { "align": "start" }

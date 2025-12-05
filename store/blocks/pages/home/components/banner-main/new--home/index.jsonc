@@ -12,13 +12,13 @@
             "callToActionMode": "button",
             "callToActionText": "Aproveitar",
             "callToActionUrl": "/", // A ser definido pelo Site Editor
-			"imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/740938a8-8c05-455a-b7be-886c2e2812b8___9e65ca66d6444d14823a704f716db0bd.png",
-			"mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/740938a8-8c05-455a-b7be-886c2e2812b8___9e65ca66d6444d14823a704f716db0bd.png",
-			// "imageActionUrl": "/", // Ta quebrando algumas questoes visuais, ideal nao usar nem aqui nem no Site Editor
+			"imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/0a74edaf-ba4c-4a14-87cf-f8662b531cda___9adbd1dac1bb2760cb724f63cd46a53e.jpg",
+			"mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/0a74edaf-ba4c-4a14-87cf-f8662b531cda___9adbd1dac1bb2760cb724f63cd46a53e.jpg",
+			// "imageActionUrl": "/", - Ta quebrando algumas questoes visuais, ideal nao usar nem aqui nem no Site Editor
             "imageAltText": "Texto ALT para SEO",
 			"fetchpriority": "auto",
 			"preload": true,
-            "blockClass": "main-banner-home" // Acredito que esse componente suporte apenas uma classe
+            "blockClass": "main-banner-home"
         }
     },
 

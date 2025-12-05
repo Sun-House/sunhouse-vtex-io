@@ -1,0 +1,9 @@
+/* .sunhouse-container-1-x-container--minicart-container { */
+.container--minicart-container {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid #e1dede; */
+    border: 2px solid var(--header-text-color);
+    padding: 0px 24px;
+    border-radius: 50px
+}

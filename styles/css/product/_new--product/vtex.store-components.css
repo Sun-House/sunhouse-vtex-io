@@ -3,25 +3,12 @@
     padding-top: 6px
 }
 
-/* Vou configurar de outra forma
-.productNameContainer::after {
-    content: " - Sun House";
-    font-size: 24px;
-    font-style: normal;
-    / font-weight: 700; /
-    line-height: normal;
-    color: #2d2926
-} */
-
 .productNameContainer .productBrand,
 .productBrandContainer .productBrandName {
-    /* font-size: 24px; */
-    font-size: 32px; /* Para confirmar tamanho, corrigir peso da fonte - ideal ser medium - 500 da Bai Jamjuree */
+    font-size: 32px;
     font-style: normal;
-    /* font-weight: 700; */
-    font-weight: bold; /* Ideal ser medium - 500 da Bai Jamjuree */
+    font-weight: 500;
     line-height: normal;
-    /* color: #2d2926 */
     color: #161413
 }
 

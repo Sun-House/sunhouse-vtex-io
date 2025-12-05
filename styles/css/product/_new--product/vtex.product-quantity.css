@@ -6,17 +6,24 @@
     width: 100%;
     /* border-radius: 5px; */
     border-radius: 50px;
-    border: 1px solid #2d2926;
+    /* border: 1px solid #2d2926; */
+    border: 2px solid #16141361;
     /* height: 45px; */
     height: 52px;
     overflow: hidden;
     /* padding: 0 5px; */
-    width: 100%
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+/* .vtex-product-quantity-1-x-quantitySelectorStepper:hover { */
+.quantitySelectorStepper:hover {
+    border-color: #161413
 }
 
 .quantitySelectorStepper :global(.vtex-numeric-stepper-container) {
-    /* height: 43px */
-    height: 52px
+    height: 52px;
+    padding: 11px
 }
 
 .quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__input) {
@@ -66,7 +73,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1;
-    color: #2d2926
+    /* color: #2d2926 */
+    color: #16141361;
+    transition: all .2s ease-in-out
 }
 
 .quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button__text) {
@@ -81,8 +90,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1;
-    color: #2d2926;
-    padding-top: 3px
+    padding-top: 3px;
+    /* color: #2d2926 */
+    color: #16141361;
+    transition: all .2s ease-in-out
+}
+
+/* .vtex-product-quantity-1-x-quantitySelectorStepper .vtex-numeric-stepper-container .vtex-numeric-stepper__minus-button__text:hover::after,
+.vtex-product-quantity-1-x-quantitySelectorStepper .vtex-numeric-stepper-container .vtex-numeric-stepper__plus-button__text:hover::after { */
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button__text):hover::after,
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button__text):hover::after {
+    color: #161413
 }
 
 .quantitySelectorContainer--product-page-quantity {

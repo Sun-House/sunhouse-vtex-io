@@ -1,10 +1,6 @@
 {
-    // BLOCO 1:
-    // DESCRICAO PURA (TEXT ONLY)
-
     // Description - Pure Text
     "container#product-description-pure-text": {
-        // "title": "Descrição Pura (Texto)",
         "title": "Descrição Texto (Simples)",
         "children": [
             "product-description",
@@ -23,10 +19,6 @@
         }
     },
 
-
-    // BLOCO 2:
-    // DESCRICAO PADRAO
-
     // Normal Description - Simple
     "container#product-description-simple": {
         "title": "Descrição Normal (Custom)",
@@ -39,7 +31,6 @@
     },
 
     "flex-layout.row#product-description-simple": {
-        // "title": "Descrição com Foto e Texto",
         "children": [
             "flex-layout.col#desc-banner_ColImage", // Esse herda do Custom Descritpion - acredito que nao precisara mexer em nada (TESTAR!)
             "flex-layout.col#product-description-simple"
@@ -67,10 +58,6 @@
         }
     },
 
-
-    // BLOCO 3:
-    // DESCRICAO PADRAO (TEXTO HERDADO DO MOVELSOFT)
-
     // Normal Description - Inherited from MS
     "container#product-description-ms": {
         "title": "Descrição Normal (Herdada do Catalog/ERP)",
@@ -89,7 +76,7 @@
             "flex-layout.col#product-description-ms"
         ],
         "props": {
-            "blockClass": ["desc-banner__row-simple", "desc-banner__row"]
+            "blockClass": ["desc-banner__row-simple", "desc-banner__row","product-description-ms"]
         }
     },
     "flex-layout.col#product-description-ms": {
@@ -110,10 +97,6 @@
         }
     },
 
-
-    // BLOCO 4:
-    // BENEFICIONS E DIFERENCIAIS
-
     // Benefits Block
     "container#product-description-benefits": {
         "title": "Beneficios e Diferenciais",
@@ -128,8 +111,8 @@
     "flex-layout.row#product-description-benefits": {
         "title": "Descrição com Foto e Texto",
         "children": [
-            "flex-layout.col#product-description-benefits", // Esse herda do Custom Descritpion - acredito que nao precisara mexer em nada (TESTAR!)
-            "flex-layout.col#desc-banner_ColImage" // Esse herda do Custom Descritpion - acredito que nao precisara mexer em nada (TESTAR!)
+            "flex-layout.col#product-description-benefits", // Esse herda do Custom Descritpion
+            "flex-layout.col#desc-banner_ColImage" // Esse herda do Custom Descritpion
         ],
         "props": {
             "blockClass": ["desc-banner__row-benefits", "desc-banner__row"]
@@ -152,9 +135,6 @@
             "blockClass": ["wrapper__textoDescricao-esquerda", "product-description", "product-description-benefits"]
         }
     },
-
-    // BLOCO 5:
-    // VIDEO DO PRODUTO
 
     // Bloco Video Dinamico
     "container#product-description-video": {
@@ -186,10 +166,6 @@
         }
     },
 
-
-    // BLOCO 6:
-    // INFORMACOES ADICIONAIS
-
     // Additional Infos Block
     "container#product-description-additional-infos": {
         "title": "Informações Adicionais",
@@ -204,8 +180,8 @@
     "flex-layout.row#product-description-additional-infos": {
         "title": "Descrição com Foto e Texto",
         "children": [
-            "flex-layout.col#desc-banner_ColImage", // Esse herda do Custom Descritpion - acredito que nao precisara mexer em nada (TESTAR!)
-            "flex-layout.col#product-description-additional-infos" // Esse herda do Custom Descritpion - acredito que nao precisara mexer em nada (TESTAR!)
+            "flex-layout.col#desc-banner_ColImage", // Esse herda do Custom Descritpion
+            "flex-layout.col#product-description-additional-infos" // Esse herda do Custom Descritpion
         ],
         "props": {
             "blockClass": ["desc-banner__row-additional-infos", "desc-banner__row"]
@@ -229,10 +205,6 @@
         }
     },
 
-
-    // BLOCO 7:
-    // TEXTO - PARA INFORMACOES IMPORTANTES E NOTAS DE REGISTRO (COMO GARANTIA, PRODUT MONTADO E ETC)
-
     // Important Text Block
     "container#product-description-important-text": {
         "title": "Texto para Informações Importantes",
@@ -254,10 +226,6 @@
         }
     },
 
-
-    // BLOCO 8:
-    // TEXTO - A PRINCIPIO TEXTO FIXO DA MARCA SUN HOUSE (MAS PODERA SER VERSIONADO POR PAGE/PRODUTO)
-
     // Brand Text Block
     "container#product-description-brand-text": {
         "title": "Texto da Marca (Ou outro texto por produto)",
@@ -272,7 +240,7 @@
     "rich-text#product-description-brand-text": {
         "title": "Texto",
         "props": {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a luctus magna, id blandit est. Vestibulum non dignissim sapien.",
+            "text": "### Sun House Móveis\nHá mais de 35 anos no mercado de móveis e decorações, a Sun House é referência em curadoria premium.\nCom lojas físicas em Pinheiros e na Zona Norte de São Paulo, além de um e-commerce posicionado como vitrine de sofisticação, oferecemos confiança, atendimento consultivo e a melhor experiência para transformar lares e ambientes corporativos com estilo e exclusividade.",
             "textPosition": "CENTER",
             "textAlignment": "CENTER",
             "blockClass": ["product-description-text", "product-description-brand-text"]

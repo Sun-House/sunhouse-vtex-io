@@ -1,5 +1,12 @@
-/* IDEAL REAVALIAR TODO ESSE BLOCO
+/* A PRINCIPIO ESTOU APLICANDO AS ALTERACOES DO REFRESH AQUI
+   VERIFICAR SE PRECISA SER DIVIDIDO EM ARQUIVOS SEPARADOS */
+
+
+   /* IDEAL REAVALIAR TODO ESSE BLOCO
    Interessante seria ser um bloco para vitrine e outro PDP - Hoje ambos estao usando o sistema abaixo declarado */
+
+
+
 .container--shelf-default {
     /* font-weight: 700;
     font-size: 14px;
@@ -26,5 +33,17 @@
     line-height: 20px */
     font-size: 38px;
     line-height: normal;
-    font-weight: bold
+    /* font-weight: bold */
+    font-weight: 500
+}
+
+/* Para o Bloco de Preços 2 - Versao destaque para o preço em 10x */
+/* .sunhouse-discount-price-11-x-container--product-high-price--pix { */
+.container--product-high-price--pix {
+    text-transform: uppercase
+}
+
+/* .sunhouse-discount-price-1-x-currencyContainer--product-high-price--pix */
+.currencyContainer--product-high-price--pix {
+    font-weight: 600    
 }

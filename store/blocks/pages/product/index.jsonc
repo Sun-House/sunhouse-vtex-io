@@ -326,17 +326,12 @@
   "flex-layout.col#product-available": {
     "children": [
       "flex-layout.row#product-page-price",
-      
-      // Seletor de Variacao de SKUs:
-      "container#sku-variation-selector",
-      //
-      
-      // Bloco nativo de compartilhamento:
-      "container#share-block",
+      "container#sku-variation-selector", // Seletor de Variacao de SKUs
+      // "container#share-block", - Bloco nativo de compartilhamento - Nao sera mais usado
       // "condition-layout.product#product-measurement-guide",
       "flex-layout.row#product-buy-container",
       "flex-layout.row#whatsapp-button_normal-product",
-      "container#similars",
+      // "container#similars", - Inativado conforme novo layout Refresh
       "flex-layout.row#shipping-simulator-wrapper"
     ],
     "props": {
@@ -347,9 +342,16 @@
   "flex-layout.row#product-page-price": {
     "children": [
       // "container#shelf-product-listPrice",
-      "container#product-listPrice-new", // No arquivo product-prices.jsonc
-      "flex-layout.col#installments-content" // No arquivo product-prices.jsonc
-      // "container#product-installments" // No arquivo installments.jsonc - Inativado conforme novo layout Refresh
+      
+      // Padrao de preço 1 - Versao original Edson - Destaque para o preço no Pix
+      "container#product-low-price" // No arquivo product-prices.jsonc
+      //
+      ,
+      // Padrao de preço 2 - Versao destaque para o preço em 10x
+      "container#product-high-price" // No arquivo product-prices.jsonc
+      //
+
+      // "flex-layout.col#installments-content" // No arquivo product-prices.jsonc
     ],
     "props": {
       "blockClass": "product-page-price",

@@ -11,3 +11,7 @@
 :global(.render-route-store-product):not(:has(:global(.hideFirstImage))) :global(.sunhouse-container-1-x-container--menu) {
     border-bottom: 1px solid #161413
 }
+
+:global(.render-route-store-product):not(:has(:global(.hideFirstImage))) :global(.vtex-container-container--minicart-container) {
+    border-color: #161413
+}

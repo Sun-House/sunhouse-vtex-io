@@ -49,13 +49,21 @@
       }
     }
   },
+  
+  //
   "container#banner-department-desktop": {
     "title": "Banner-Departamento/Categoria",
-    "children": ["image#search-result"],
+    // "children": ["image#search-result"],
+    "children": [
+      "info-card#banner-category"
+    ],
     "props": {
       "blockClass": "search-banner"
     }
   },
+  //
+
+  // Componente desativado no Refresh - Precisa ser removido
   "image#search-result": {
     "title": "Banner Departamento",
     "props": {
@@ -63,6 +71,8 @@
       "blockClass": "search-result"
     }
   },
+  //
+
   "sunhouse.search-result:search-result-layout#cluster-and-search": {
     "blocks": [
       "sunhouse.search-result:search-result-layout.desktop#cluster-and-search",
@@ -149,7 +159,9 @@
     "title": "Search Desktop",
     "children": [
       "container#banner-department-desktop",
-      "container#categories-slider",
+      // Esse componente precisara ser recriado do zero - acredito que seja mais pratico
+      // "container#categories-slider",
+      //
       "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result.desktop",
       "container#search-seo",
@@ -161,7 +173,6 @@
     "props": {
       "defaultGalleryLayout": "grid",
       "blockClass": "search-result",
-      // "pagination": "paged", -> For Paged Controls
       "pagination": "show-more",
       "preventRouteChange": true, // Impede recarregar a pagina quando filtros sao aplicados
       "showProductsCount": true,
@@ -173,14 +184,19 @@
       }
     }
   },
+
+  // Esse componente precisara ser recriado do zero - acredito que seja mais pratico
   "container#categories-slider": {
     "title": "Carrossel de categorias",
-    "children": ["flex-layout.row#categories-slider"],
+    "children": [
+      "flex-layout.row#categories-slider"
+    ],
     "props": {
       "blockClass": "categories-slider",
       "shouldRender": false
     }
   },
+  //
 
   "sunhouse.search-result:search-result-layout.mobile": {
     "title": "Search Mobile",

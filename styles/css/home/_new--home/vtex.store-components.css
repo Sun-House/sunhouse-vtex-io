@@ -51,15 +51,15 @@
 /* .vtex-store-components-3-x-heading--main-banner-home { */
 .heading--main-banner-home {
     text-transform: uppercase;
-    /* text-align: center; */
-    font-size: 5rem; /* Precisa ser ajudado para o tamanho correto ideal */
-    /* margin: 0 */
+    font-size: 5rem;
+    font-weight: 500;
     margin-top: 0;
     margin-bottom: 0
 }
 
 /* .vtex-store-components-3-x-paragraph--main-banner-home { */
 .paragraph--main-banner-home {
+    font-family: 'Onest', sans-serif; /* Fonte final validada Refresh */
     font-size: 22px;
     text-align: center;
     /* width: 70%; */

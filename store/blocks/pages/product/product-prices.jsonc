@@ -1,15 +1,20 @@
 {
+	// Bloco de Preços 1 - Versao original Edson - Destaque para o preço no Pix
+
 	// List Price Block - PDP
-	// "container#shelf-product-listPrice": {
-    "container#product-listPrice-new": {
-		"title": "Preço (com preço de lista) produto vitrine",
+    // "container#product-listPrice-new": {
+	"container#product-low-price": {
+		// "title": "Preço (com preço de lista) produto vitrine",
+		"title": "Preço Pix Destacado",
 		"children": [
 			"product-list-price#product-page", // Preço DE
 			"discount-price#product-page", // Preço PIX
-			"product-selling-price#product-page" // Preço POR - Só vai aparecer no caso de nao renderizar o Installments Block (confirmar se é isso mesmo)
+			"product-selling-price#product-page", // Preço POR - Só vai aparecer no caso de nao renderizar o Installments Block (confirmar se é isso mesmo)
+			"flex-layout.col#installments-content" // Lista de parcelas com texto informativo de parcelamento
 		],
 		"props": {
-			"blockClass": "shelf-product-listPrice"
+			// "blockClass": "shelf-product-listPrice"
+			"blockClass": ["shelf-product-listPrice", "product-low-price"]
 		}
 	},
 
@@ -59,6 +64,77 @@
             "message": "À vista no <bold>PIX</bold>, Ou em até <bold>{installmentsNumber}x de {installmentValue}</bold>",
             "blockClass": "product-page"
         }
-    }
+    },
     // Installments Block - PDP
+
+
+	
+	
+	
+	
+	// Bloco de Preços 2 - Versao destaque para o preço em 10x
+	"container#product-high-price": {
+		"title": "Preço Parcelado Destacado",
+		"children": [
+			"product-list-price#product-high-price", // Preço DE
+			// Criar um overlay para o componente abaixo para abrir drawner à direita com lista de parcelas
+			// Esse DEV poderá nao sair no lançamento do Refresh, mas ficará em backlog prioritario
+			"flex-layout.col#installments-content-high-price", // Preço POR + parcelas
+			"discount-price#product-high-price"
+		],
+		"props": {
+			"blockClass": ["shelf-product-listPrice", "product-high-price"]
+		}
+	},
+
+
+	// PREÇO DE
+	"product-list-price#product-high-price": {
+		"title": "Preço DE",
+		"props": {
+			"message": "{listPriceValue}",
+			"blockClass": ["product-shelf-price", "product-high-price--from"]
+		}
+	},
+
+	"product-selling-price#product-high-price": {
+		"title": "Preço POR - Nao aparece sempre",
+		"props": {
+			"message": "<bold>{sellingPriceValue}</bold>",
+			"markers": ["bold"],
+			"blockClass": ["product-shelf-price", "product-high-price--selling-price"]
+		}
+	},
+    
+    // LINHA DE PARCELAS COM TEXTO INFORMATIVO DE PARCELAMENTO
+    "flex-layout.col#installments-content-high-price": {
+        "children": [
+            "product-installments#page-product-high-price"
+        ],
+        "props": {
+            "blockClass": "installments-content"
+        }
+    },
+    "product-installments#page-product-high-price": {
+        "props": {
+            "installmentsCriteria": "max-quantity",
+            "markers": [
+				"highlight",
+				"bold"
+			],
+			"message": "<highlight>{installmentsTotalValue}</highlight> em até <bold>{installmentsNumber}x</bold> de <bold>{installmentValue}</bold>",
+            "blockClass": ["product-page", "product-high-price--to-price"]
+        }
+    },
+
+	// PREÇO PIX
+	"discount-price#product-high-price": {
+		"title": "Preço PIX",
+		"props": {
+			"hideWithoutDiscount": true,
+			"message": "Ou {priceValue} à vista no PIX",
+			"promotionName": "Desconto Pagamento à Vista (7%)",
+			"blockClass": "product-high-price--pix"
+		}
+	}
 }

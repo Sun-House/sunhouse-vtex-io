@@ -1,0 +1,12 @@
+.container--info-carousel .container .wrapper .paragraph,
+.container--info-carousel .container .wrapper .link {
+    /* margin: 0;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400; */
+
+    /* Ver se ajustes acima precisam ser migrados do outro arquivo de embla-carousel.css */
+    color: #eaeae9;
+    font-family: 'Onest', sans-serif
+}

@@ -38,3 +38,8 @@
    flex-grow: 0;
    flex-shrink: 0
 }
+
+/* .vtex-flex-layout-0-x-flexRow--product-description-ms .vtex-flex-layout-0-x-flexRowContent--product-description-ms { */
+.flexRow--product-description-ms .flexRowContent--product-description-ms {
+   align-items: flex-start
+}

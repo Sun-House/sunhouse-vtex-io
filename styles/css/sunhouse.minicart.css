@@ -1,3 +1,6 @@
+/* A PRINCIPIO ESTOU APLICANDO AS ALTERACOES DO REFRESH AQUI
+   VERIFICAR SE PRECISA SER DIVIDIDO EM ARQUIVOS SEPARADOS */
+
 :global(.vtex-container-container--menu-mobile-controls) .minicartWrapperContainer {
     position: initial;
     float: unset;
@@ -56,6 +59,15 @@
     justify-content: flex-start
 }
 
+/* Widget Valor Dinamico */
+/* .sunhouse-minicart-2-x-currencyContainer--minicart-widget { */
+.currencyContainer--minicart-widget {
+    font-size: 14px;
+    font-weight: 300;
+    /* text-transform: none; */
+    color: var(--header-text-color)
+}
+
 .drawer--minicart,
 .drawerContent--minicart {
     overflow-x: hidden;
@@ -85,7 +97,7 @@
 
 .minicartEmptyStateContainer :global(.vtex-rich-text-0-x-paragraph) {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -136,12 +148,27 @@
     padding: 0;
     display: flex;
     align-items: center;
-    color: #2d2926
+    color: #161413;
+    transition: all .2s ease-in-out
+}
+
+.minicartIconContainer--minicart-main:hover::after {
+    color: #FFDA00
 }
 
 .minicartIconContainer--minicart-main :global(.vtex-store-icons-0-x-cartIcon) {
-    color: var(--header-text-color);
+    /* color: var(--header-text-color); */
+    color: #FFDA00; /* Cor nova Refresh validada */
     margin-right: 9.25px
+}
+
+/* .sunhouse-minicart-2-x-minicartIconLabel--minicart-main { */
+.minicartIconLabel--minicart-main {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: none;
+    color: var(--header-text-color);
+    margin-right: 14px
 }
 
 .minicartIconContainer--minicart-sidebar {
@@ -175,7 +202,7 @@
     font-size: 12px;
     line-height: 15px;
     font-weight: 400;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     color: var(--header-text-color)
@@ -197,7 +224,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: var(--header-text-color)
 }
 
@@ -207,7 +234,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #fff;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     width: 100%;
     justify-content: flex-start
 }
@@ -219,7 +246,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #fff;
-    font-family: "Open Sans", sans-serif
+    /* font-family: "Open Sans", sans-serif */
 }
 
 .minicartQuantityBadge--minicart-sidebar:not(.minicartQuantityBadgeOut)::before {
@@ -229,7 +256,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #fff;
-    font-family: "Open Sans", sans-serif
+    /* font-family: "Open Sans", sans-serif */
 }
 
 :global(.vtex-flex-layout-0-x-flexRow) .minicartQuantityBadge {
@@ -239,7 +266,7 @@
 }
 
 .minicartQuantityBadgeOut--header-quantity {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -296,7 +323,7 @@
 }
 
 .minicartQuantityBadgeOut--footer-quantity {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -326,8 +353,8 @@
 }
 
 .minicartCheckoutButton :global(.vtex-button) :global(.vtex-button__label) {
-    font-family: "Open Sans", sans-serif;
-    text-transform: none;
+    /* font-family: "Open Sans", sans-serif; */
+    /* text-transform: none; */
     font-size: 0;
     display: flex;
     align-items: center;
