@@ -8,6 +8,9 @@
       "customPixelEventName": "addToCart",
       "itemCountMode": "total",
       "blockClass": ["minicart", "minicart-main"]
+      
+      // Correcao de texto do carrinho - sera ajustado no Refresh
+      ,"iconLabel": " "
     },
     "children": ["flex-layout.row#minicart-header", "minicart-base-content"]
   },
