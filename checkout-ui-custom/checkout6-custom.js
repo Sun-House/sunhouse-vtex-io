@@ -1,7 +1,7 @@
 // (()=>{})();
 
 // Highlight Bar Checkout component
-const CUPOM_CODE = 'BLACKSUNHOUSE20';
+const CUPOM_CODE = 'NATAL15';
 
 // 1. Defina o bloco HTML atualizado com o botão "Usar cupom"
 const htmlBlock = `
@@ -11,11 +11,10 @@ const htmlBlock = `
             <div id="coupon-info-text-container">
                 <div>
                     <p>
-                        Seu cupom de Black Friday é 
+                        Seu carrinho merece 
+                        <span class="coupon-highlight_bold-text" id="">15% OFF</span> — Aplique
                         <span class="coupon-highlight_bold-text" id="coupon-code-display">${CUPOM_CODE}</span> 
-                        — Garanta 
-                        <span class="coupon-highlight_bold-text" id="">20% OFF</span> 
-                        nos produtos abaixo! <button id="apply-coupon-button">Usar cupom 🎁</button>
+                        abaixo e economize hoje! <button id="apply-coupon-button">Usar cupom 🎁</button>
                     </p>
                 </div>
             </div>
