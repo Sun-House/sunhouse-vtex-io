@@ -324,11 +324,7 @@
       "flex-layout.row#product-buy-container",
       "flex-layout.row#whatsapp-button_normal-product",
       // "container#similars", - Inativado conforme novo layout Refresh
-      
-      // Linha para renderizar os destaques do produto - baseados em Coleções
       "flex-layout.row#collection-highlights--product-page",
-      //
-
       "flex-layout.row#shipping-simulator-wrapper"
     ],
     "props": {

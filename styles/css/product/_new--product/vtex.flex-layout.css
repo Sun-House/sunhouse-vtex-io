@@ -142,6 +142,13 @@
     margin-bottom: 0 !important
 }
 
+/* .vtex-flex-layout-0-x-flexRow--highlight-collection-wrapper .vtex-flex-layout-0-x-stretchChildrenWidth { */
+.flexRow--highlight-collection-wrapper .stretchChildrenWidth {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
 /* Calculo de frete */
 /* Linha wrapper do Shipping Simulator */
 /* .vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--shipping-simulator-wrapper { */

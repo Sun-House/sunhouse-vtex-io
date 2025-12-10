@@ -128,6 +128,11 @@
     outline-width: 2px
 }
 
+/* .sunhouse-enhanced-sku-selector-1-x-skuSelectorOptionsList .vtex-dropdown__button { */
+.skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList :global(.vtex-dropdown__button) {
+    color: #bcbbbb /* Cor final validada Refresh */
+}
+
 /* .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem--selected .valueWrapper {
     color: #fff !important
 } */
