@@ -219,7 +219,9 @@
     "rich-text#product-description-important-text": {
         "title": "Texto",
         "props": {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a luctus magna, id blandit est. Vestibulum non dignissim sapien.",
+            // "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a luctus magna, id blandit est. Vestibulum non dignissim sapien.",
+            // Texto padrao - ideal usar de base mas nao usar para todos os produtos
+            "text": "### Importante\n__GARANTIA DE 12 MESES CONTRA DEFEITOS DE FABRICAÇÃO. O PRODUTO NECESSITA MONTAGEM.__\nImagens meramente ilustrativas: A tonalidade do tecido pode variar de acordo com a iluminação, lote ou com a configuração do monitor. Certifique-se de que seu móvel passe nas medidas da sua porta e elevador. Não nos responsabilizamos por içamentos, transportes por escadas ou desmontagem do móvel para acesso ao local. O produto necessita breve montagem. GARANTIA DE 1 ANO CONTRA DEFEITOS DE FÁBRICA.",
             "textPosition": "CENTER",
             "textAlignment": "CENTER",
             "blockClass": ["product-description-text", "product-description-important-text"]
@@ -240,7 +242,7 @@
     "rich-text#product-description-brand-text": {
         "title": "Texto",
         "props": {
-            "text": "### Sun House Móveis\nHá mais de 35 anos no mercado de móveis e decorações, a Sun House é referência em curadoria premium.\nCom lojas físicas em Pinheiros e na Zona Norte de São Paulo, além de um e-commerce posicionado como vitrine de sofisticação, oferecemos confiança, atendimento consultivo e a melhor experiência para transformar lares e ambientes corporativos com estilo e exclusividade.",
+            "text": "## Sun House Móveis\nHá mais de 35 anos no mercado de móveis e decorações, a Sun House é referência em curadoria premium.\nCom lojas físicas em Pinheiros e na Zona Norte de São Paulo, além de um e-commerce posicionado como vitrine de sofisticação, oferecemos confiança, atendimento consultivo e a melhor experiência para transformar lares e ambientes corporativos com estilo e exclusividade.",
             "textPosition": "CENTER",
             "textAlignment": "CENTER",
             "blockClass": ["product-description-text", "product-description-brand-text"]

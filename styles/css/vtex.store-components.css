@@ -234,6 +234,7 @@
     transition: all .4s
 }
 
+/* Movido para product/new--product/vtex.store-components.css
 .discountInsideContainer {
     right: initial;
     left: 8px;
@@ -245,7 +246,7 @@
     font-weight: 700 !important;
     text-transform: uppercase !important;
     box-sizing: border-box;
-    /* border-radius: 5px; */
+    / border-radius: 5px; /
     border-radius: 50px;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
@@ -256,7 +257,7 @@
     color: #fff;
     text-transform: lowercase;
     z-index: 3
-}
+} */
 
 .imageElement--banner-shelf--mobile {
     height: 196px;
@@ -485,11 +486,14 @@
     color: #f90041
 }
 
+/* Depreciado no Refresh */
 .shippingIcon {
-    width: 24px;
+    display: none
+
+    /* width: 24px;
     height: 24px;
     padding-right: 10px;
-    color: #f90041
+    color: #f90041 */
 }
 
 .plusDisclosureIcon,

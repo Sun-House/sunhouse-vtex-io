@@ -21,7 +21,14 @@
 .sliderLeftArrow--main-shelf::after,
 .sliderRightArrow--main-shelf::after {
     font-family: "Bootstrap-Icons";
-    font-size: 38px
+    font-size: 38px;
+    opacity: .5;
+    transition: all .2s ease-in-out
+}
+
+.sliderLeftArrow--main-shelf:hover::after,
+.sliderRightArrow--main-shelf:hover::after {
+    opacity: 1
 }
 
 /* .sunhouse-slider-layout-0-x-sliderLeftArrow--main-shelf::after { */

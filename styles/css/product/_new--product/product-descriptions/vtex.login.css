@@ -49,7 +49,7 @@
 }
 
 :global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) span {
-    font-family: "Onest", sans-serif;
+    font-family: "Onest", sans-serif !important;
     font-size: 16px;
     color: #161413 !important;
     line-height: 1.5

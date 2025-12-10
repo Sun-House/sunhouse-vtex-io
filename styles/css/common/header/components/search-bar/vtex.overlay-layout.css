@@ -1,0 +1,5 @@
+/* .vtex-overlay-layout-0-x-trigger--search-bar { */
+.trigger--search-bar {
+    /* position: unset */
+    position: static !important
+}

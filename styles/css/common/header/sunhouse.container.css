@@ -11,7 +11,8 @@
     display: flex;
     align-items: center;
     gap: 38px;
-    color: #2d2926
+    /* color: #2d2926 */
+    color: #161413
 }
 
 .container--header--desktop__controls--left {

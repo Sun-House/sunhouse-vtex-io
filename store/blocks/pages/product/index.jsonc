@@ -32,7 +32,7 @@
       "flex-layout.row#product-image-highlight",
       //
 
-      "flex-layout.row#product-highlight-coupon",
+      "flex-layout.row#product-highlight-coupon", // Componente descontinuado no Refresh - Mas vou manter aqui por uma questão de ajuste de CSS pendente que farei apenas apos lançar o MVP do Refresh
       "flex-layout.row#product-main",
       
       // Wrapper das duas opções de descrição do produto - Simple e Custom - e tambem de todos os blocos de informações do produto (beneficios, especificações, video, etc)
@@ -52,14 +52,6 @@
     "children": [
       "flex-layout.row#product-main-mobile"
     ]
-  },
-  "flex-layout.row#product-highlight-coupon": {
-    "children": [
-      "container#wrapper__highlight-coupon"
-    ],
-    "props": {
-      "blockClass": "product-highlight-coupon"
-    }
   },
   "flex-layout.row#product-main": {
     "children": [
@@ -84,7 +76,7 @@
   "flex-layout.col#product-main-mobile": {
     "children": [
       "flex-layout.row#breadcrumb-product",
-      "container#wrapper__highlight-coupon-mobile",
+      "container#wrapper__highlight-coupon-mobile", // Componente descontinuado no Refresh - Mas vou manter aqui por uma questão de ajuste de CSS pendente que farei apenas apos lançar o MVP do Refresh
       // "vtex.store-components:product-name",
       "condition-layout.product#product-title",
       "vtex.store-components:product-brand#product-brand", // Precisa ficar logo abaixo do nome do produto
@@ -332,6 +324,11 @@
       "flex-layout.row#product-buy-container",
       "flex-layout.row#whatsapp-button_normal-product",
       // "container#similars", - Inativado conforme novo layout Refresh
+      
+      // Linha para renderizar os destaques do produto - baseados em Coleções
+      "flex-layout.row#collection-highlights--product-page",
+      //
+
       "flex-layout.row#shipping-simulator-wrapper"
     ],
     "props": {

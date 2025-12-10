@@ -367,7 +367,7 @@
       "image#elo",
       "image#diners",
       "image#amex",
-      "image#paypal",
+      // "image#paypal",
       "image#pix"
       // "image#boleto"
     ],

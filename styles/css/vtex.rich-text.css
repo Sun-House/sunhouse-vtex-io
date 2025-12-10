@@ -1024,6 +1024,7 @@
     color: #2d2926
 }
 
+/* Movido para o arquivo product/_new--product/vtex.rich-text.css
 .paragraph--shipping-calculate {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
@@ -1033,7 +1034,7 @@
     text-align: center;
     color: #2d2926;
     text-transform: none
-}
+} */
 
 .paragraph--product-description-title,
 .paragraph--product-specs-title {

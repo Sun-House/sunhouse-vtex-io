@@ -1,3 +1,6 @@
+/* A PRINCIPIO ESTOU APLICANDO AS ALTERACOES DO REFRESH AQUI
+   VERIFICAR SE PRECISA SER DIVIDIDO EM ARQUIVOS SEPARADOS */
+
 .container {
     display: flex;
     align-items: center;
@@ -31,12 +34,15 @@
 
 .container--product-page {
     position: relative;
+    max-width: 1200px;
+    width: 100%;
     padding: 0;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
+    margin: 148px auto 0px;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    padding-bottom: 4px;
+    padding-bottom: 4px
 }
 
 .container .arrow {
@@ -52,7 +58,7 @@
 
 .container .link {
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 12px;
     font-weight: 400;
@@ -72,14 +78,14 @@
 }
 
 .container .term--product-page {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 12px;
     font-weight: 700;
     line-height: 14px;
     text-align: center;
-    padding: 0;
-    text-transform: uppercase;
+    padding: 0
+    /* text-transform: uppercase; */
 }
 
 .container .caretIcon {

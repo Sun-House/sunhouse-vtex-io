@@ -45,3 +45,18 @@
 .container--product-description .heading--product-description {
     font-size: 42px
 }
+
+/* Listas de Descricao */
+/* .vtex-rich-text-0-x-list--product-description 
+.vtex-rich-text-0-x-list--product-description */
+/* .vtex-rich-text-0-x-list--wrapper__textoDescricao-esquerda { */
+.list--wrapper__textoDescricao-esquerda {
+    padding-left: 20px;
+    line-height: 1.5
+}
+
+/* .vtex-rich-text-0-x-listItem--product-description */
+/* .vtex-rich-text-0-x-listItem--wrapper__textoDescricao-esquerda { */
+.listItem--wrapper__textoDescricao-esquerda {
+    margin-bottom: 14px
+}

@@ -1,3 +1,4 @@
+/* Movido para o arquivo common/header/components/search-bar/sunhouse.store-components.css
 .searchBarInnerContainer {
     padding: 8px 4px;
     position: absolute;
@@ -296,7 +297,7 @@
 :global(.vtex-overlay-layout-0-x-popper--search-bar) :global(.vtexarg-speech-to-text-1-x-audioSearchContainer) {
     opacity: 1;
     pointer-events: auto
-}
+} */
 
 .productImage--product-quick-view {
     overflow: hidden;

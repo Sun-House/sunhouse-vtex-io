@@ -108,8 +108,9 @@
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    color: var(--header-text-color);
-    gap: 8px;
+    /* color: var(--header-text-color); */
+    color: #FFDA00; /* Esse esta sendo ajustado para o menu fixo pelo arquivo common/header/components/sticky-header/sunhouse.fixed-layout.css */
+    gap: 8px
 }
 
 .link--header-links .label {
@@ -131,6 +132,11 @@
 
 .link--header-links--wishlist--right .childrenContainer {
     margin-right: 0;
+}
+
+/* .vtex-store-link-0-x-label--link-showroom { */
+.label--link-showroom {
+    display: flex
 }
 
 .link--mobile-logout {
@@ -211,6 +217,7 @@
     position: relative;
     z-index: 1;
     outline: none;
+    color: #FFDA00 !important
 }
 
 .link--wishlist:hover .childrenContainer--wishlist {

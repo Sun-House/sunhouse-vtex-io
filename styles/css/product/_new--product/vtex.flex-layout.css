@@ -50,7 +50,8 @@
 /* .vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--product-page-price { */
 .flexRow--product-page-price {
     padding-bottom: 24px;
-    border-bottom: 1px solid #2d2926;
+    /* border-bottom: 1px solid #2d2926; */
+    border-bottom: 1px solid #2d2926a1;
     margin-bottom: 24px
 }
 
@@ -92,11 +93,86 @@
 /* Linha wrapper do botão WhatsApp */
 /* .vtex-flex-layout-0-x-flexRow--whatsapp-button_normal-product { */
 .flexRow--whatsapp-button_normal-product {
-    border-bottom: 1px solid #2d2926 /* Ajustar cor para padrao Edson */
+    /* border-bottom: 1px solid #2d2926 - Ajustar cor para padrao Edson */
+    border-bottom: 1px solid #2d2926a1
 }
 
+/* WhatsApp Buttons */
+/* .vtex-flex-layout-0-x-flexColChild--product-available 
+   Aqui vai faltar aplicar esse margin para os outros dois tipos de botoes de WhatsApp
+   Porem, os outros dois estao no padrao container - nao vou me preocupar com eles agora */
+/* .vtex-flex-layout-0-x-flexColChild--product-available .vtex-flex-layout-0-x-flexRow--whatsapp-button_normal-product, */
+.flexColChild--product-available .flexRow--whatsapp-button_normal-product {
+    margin-bottom: 24px;
+}
+
+/* Product Buy Button */
+.flexCol--product-buy-button {
+    position: relative
+}
+
+.flexCol--product-buy-button :global(.vtex-button) {
+    background-color: #161413; /* Cor final Refresh */
+    color: #fff;
+    border: none
+}
+
+/* CRIAR SISTEMA DE ANIMAÇÃO PARA O BOTÃO - IGUAL AO DO BANNER HOME */
+/* START */
+.flexCol--product-buy-button :global(.vtex-button):hover {
+    /* background-color: #575451 !important */
+    background-color: #161413cb !important;
+}
+/* END */
+
+.flexCol--product-buy-button :global(.vtex-button) :global(.vtex-button__label) {
+    color: #fff
+}
+
+.flexCol--product-buy-button :global(.vtex-button) :global(.vtex-button__label)::after {
+    content: "\F134";
+    font-family: "Bootstrap-Icons";
+    font-size: 24px;
+    margin-left: 12px
+}
+
+/* Collection Highlights */
+/* .vtex-flex-layout-0-x-flexRowContent--highlight-collection-wrapper { */
+.flexRowContent--highlight-collection-wrapper {
+    margin-bottom: 0 !important
+}
+
+/* Calculo de frete */
 /* Linha wrapper do Shipping Simulator */
 /* .vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--shipping-simulator-wrapper { */
-.flexRow--shipping-simulator-wrapper {
+/* .flexRow--shipping-simulator-wrapper {
     margin-top: 24px
+} */
+
+/* .flexRowContent--shipping-simulator-title {
+    margin-bottom: 14px
+} */
+
+/* .vtex-flex-layout-0-x-flexRow--shipping-simulator-title { */
+.flexRow--shipping-simulator-title {
+    margin: 12px 0 24px
+}
+
+.flexCol--shipping-simulator-first-row-left {
+    /* max-width: 250px; */
+    padding: 0;
+    margin: 0
+}
+
+.flexRow--shipping-simulator-first-row-right {
+    width: 100%;
+    display: block
+}
+
+.flexRow--shipping-simulator-first-row-right .flexRowContent--shipping-simulator-first-row-right {
+    display: block
+}
+
+.flexRowContent--shipping-simulator-first-row {
+    justify-content: flex-start
 }

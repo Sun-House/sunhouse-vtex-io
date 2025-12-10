@@ -12,12 +12,6 @@
     font-weight: 500 !important /* Acredito que esse seja o peso correto para o heading - mas validar apos corrigir no font-faces.css */
 }
 
-.container--footer-schedules-content .paragraph {
-    line-height: 1.3 !important
-}
-/* Realocar na posicao certa os acima */
-
-
 .container--footer-title {
     padding-bottom: 4px;
     /* border-bottom: solid 1px #d5d4d4; */
@@ -47,13 +41,13 @@
 }
 
 .container--footer-schedules-content .paragraph {
-    /* font-size: 12px; */
+    font-family: 'Onest', sans-serif;
     font-size: 16px;
     font-style: normal;
-    line-height: 16px;
-    font-weight: 700;
+    /* line-height: 16px; */
+    line-height: 1.3;
+    font-weight: 500;
     text-align: left;
-    /* color: #e1dede; */
     margin-bottom: 16px
 }
 
@@ -112,27 +106,22 @@
     margin-top: 6px
 }
 
-/* .paragraph--footer-address::before {
-    content: "\F3E8"
-} */
-/**/
-
 /* Texto Redes Sociais */
 /* .vtex-rich-text-0-x-paragraph--footer-social { */
 .paragraph--footer-social {
+    font-family: 'Onest', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     opacity: .6
 }
-/**/
 
 .container--footer-bottom-text .paragraph {
-    /* font-size: 12px; */
-    font-size: 14px;
+    font-family: 'Onest', sans-serif;
+    /* font-size: 14px; */
+    font-size: 12px; /* Achei muito pequena, mas estou seguindo o padrao do Refresh */
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    /* text-align: center */
     text-align: left
 }
 
