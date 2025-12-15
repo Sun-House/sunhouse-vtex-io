@@ -341,10 +341,11 @@
     padding-top: 12px
 }
 
+/* Movido para o arquivo components/shelf/_new--shelf/vtex.flex-layout.css
 .flexRow--shelf-buy-button,
 .flexRow--shelf-product-buy-quantity {
     margin: 19px 1px 10px
-}
+} */
 
 .flexRowContent--wishlist-content {
     max-width: 1218px;

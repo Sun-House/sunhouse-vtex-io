@@ -1,0 +1,105 @@
+{
+    "container#product-highlight-grid": {
+        "title": "Destaque de Produto",
+        "children": [
+            "flex-layout.row#product-highlight-grid"
+        ],
+        "props": {
+            "blockClass": "product-highlight-grid"
+        }
+    },
+
+    "flex-layout.row#product-highlight-grid": {
+        "children": [
+            "flex-layout.col#product-highlight-grid_col-1",
+            "flex-layout.col#product-highlight-grid_col-2"
+        ],
+        "props": {
+            "colGap": 9,
+            "blockClass": "product-highlight-grid"
+        }
+    },
+
+    // Coluna 1 - Esquerda (menor)
+    "flex-layout.col#product-highlight-grid_col-1": {
+        "title": "Coluna 1",
+        "children": [
+            "list-context.image-list#product-highlight-image_col-1",
+            "rich-text#product-highlight-text"
+        ],
+        "props": {
+            "verticalAlign": "bottom",
+            "rowGap": 8,
+            "blockClass": "product-highlight-grid_col-1"
+        }
+    },
+
+    // Coluna 2 - Direita (maior)
+    "flex-layout.col#product-highlight-grid_col-2": {
+        "title": "Coluna 2",
+        "children": [
+            "flex-layout.row#product-highlight-shelf",
+            "list-context.image-list#product-highlight-image_col-2"
+        ],
+        "props": {
+            "verticalAlign": "bottom",
+            "blockClass": "product-highlight-grid_col-2"
+        }
+    },
+    
+    // Imagem da Coluna 1 - Destaque
+    "list-context.image-list#product-highlight-image_col-1": {
+        "title": "Imagem Coluna 1 - Destaque",
+        "props": {
+            "images": [
+                {
+                    "image": "https://dummyimage.com/546x682"
+                    // "mobileImage": "https://dummyimage.com/360x640" - A definir se vou usar
+                }
+            ],
+            "blockClass": ["product-highlight-image", "product-highlight-image_col-1"]
+        },
+        "children": [
+            "container.list-render#product-highlight-image_col-1"
+        ]
+    },
+    "container.list-render#product-highlight-image_col-1": {
+        "props": {
+            "blockClass": ["product-highlight-image", "product-highlight-image_col-1"]
+        }
+    },
+
+    "rich-text#product-highlight-text": {
+        "title": "Texto Coluna 1 - Destaque",
+        "props": {
+            "text": "Revestimento e Base __Estofado / Aço__\nEspecificações __80 (A) X 57 (L)__",
+            "blockClass": "product-highlight-text"
+        }
+    },
+
+    // Imagens da Coluna 2 - Detalhes
+    "list-context.image-list#product-highlight-image_col-2": {
+        "title": "Imagens Coluna 1 - Detalhes",
+        "props": {
+            "images": [
+                {
+                    "image": "https://dummyimage.com/289x216"
+                    // "mobileImage": "https://dummyimage.com/360x640" - A definir se vou usar
+                },
+                {
+                    "image": "https://dummyimage.com/289x289"
+                    // "mobileImage": "https://dummyimage.com/360x640" - A definir se vou usar
+                }
+            ],
+            "blockClass": ["product-highlight-image", "product-highlight-image_col-2"]
+        },
+        "children": [
+            "container.list-render#product-highlight-image_col-2"
+        ]
+    },
+    "container.list-render#product-highlight-image_col-2": {
+        "props": {
+            "blockClass": ["product-highlight-image", "product-highlight-image_col-2"]
+        }
+    }
+}

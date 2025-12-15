@@ -705,10 +705,11 @@
     object-fit: cover
 }
 
+/* Movido para o arquivo search/_new--search/sunhouse.container.css
 .wrapper--search-seo {
     border-block: 1px solid #d5d4d4;
     padding-block: 88px 107px
-}
+} */
 
 /* Desktop Force */
 @media screen and (min-width: 1025px) {

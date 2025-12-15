@@ -1,10 +1,7 @@
-.container--layout,
+/* .container--layout,
 .notFound--layout {
-    /* margin-top: 112px */
-    /* margin-top: 136px */
-    /* margin-top: 165px */
-    margin-top: 150px
-}
+    margin-top: 150px - Ajuste removido para o Refresh - Pode ser necessario ajustar novamente
+} */
 
 /* Mobile */
 @media screen and (max-width: 1024px) {

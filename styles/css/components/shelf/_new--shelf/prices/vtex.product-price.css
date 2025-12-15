@@ -1,0 +1,22 @@
+/* NAO ESQUECER DE ALINHAR O APONTAMENTO DA VITRINE PARA NAO AFETAR O CSS DA PDP */
+
+/* Esse nao precisa apontar pois a classe é unica para a shelf */
+/* .vtex-product-price-1-x-listPrice--new-list-price-shelf { */
+.listPrice--new-list-price-shelf {
+    /* font-size: 20px; */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    white-space: nowrap;
+    text-decoration: line-through;
+    color: #979797
+}
+
+/* Esse nao precisa apontar pois a classe é unica para a shelf */
+/* .vtex-product-price-1-x-installments--new-shelf-installments */
+.installments--new-shelf-installments {
+    /* font-size: 20px; */
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left
+}

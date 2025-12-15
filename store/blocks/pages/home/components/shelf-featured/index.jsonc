@@ -1,0 +1,63 @@
+{
+    "container#shelf-featured": {
+        "title": "Prateleira Destaques",
+        "children": [
+            "rich-text#shelf-home01",
+            "image-text-list#shelf-featured-images"
+        ],
+        "props": {
+            "blockClass": "shelf-featured"
+        }
+    },
+    
+    "rich-text#shelf-home01": {
+        "title": "Título",
+        "props": {
+            "text": "## Lançamentos Elements",
+            "blockClass": ["common-title", "shelf-slider-home"]
+        }
+    },
+
+    "image-text-list#shelf-featured-images": {
+        "title": "Imagens",
+        "children": [
+            "responsive-layout.desktop#shelf-slider",
+            "responsive-layout.mobile#shelf-slider"
+        ],
+        "props": {
+            "imageTextArray": [
+                {
+                    "image": "https://dummyimage.com/291x355",
+                    "imageText": "Categoria",
+                    // "mobileImage": "https://dummyimage.com/360x640" - Nao vou usar a principio
+                    "link": "/"
+                },
+                {
+                    "image": "https://dummyimage.com/291x355",
+                    "imageText": "Categoria",
+                    // "mobileImage": "https://dummyimage.com/360x640" - Nao vou usar a principio
+                    "link": "/"
+                },
+                {
+                    "image": "https://dummyimage.com/291x355",
+                    "imageText": "Categoria",
+                    // "mobileImage": "https://dummyimage.com/360x640" - Nao vou usar a principio
+                    "link": "/"
+                },
+                {
+                    "image": "https://dummyimage.com/291x355",
+                    "imageText": "Categoria",
+                    // "mobileImage": "https://dummyimage.com/360x640" - Nao vou usar a principio
+                    "link": "/"
+                },
+                {
+                    "image": "https://dummyimage.com/291x355",
+                    "imageText": "Categoria",
+                    // "mobileImage": "https://dummyimage.com/360x640" - Nao vou usar a principio
+                    "link": "/"
+                }
+            ],
+            "blockClass": "shelf-featured-images"
+        }
+    }
+}

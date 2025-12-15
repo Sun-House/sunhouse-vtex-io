@@ -2,6 +2,7 @@
    O hideFirstImage é um classe que é aplicada na primeira imagem do produto quando existe imagem de destaque na PDP.
    Portanto, estilos abaixo deverao funcionar somente na PDP sob as condicoes acima */
 
+/* PDP */
 /* body:not(:has(:global(.hideFirstImage))) * { */
 :global(.render-route-store-product):not(:has(:global(.hideFirstImage))) * {
     --header-text-color: #161413
@@ -14,4 +15,30 @@
 
 :global(.render-route-store-product):not(:has(:global(.hideFirstImage))) :global(.vtex-container-container--minicart-container) {
     border-color: #161413
+}
+
+/* Search and PLP Pages */
+:global(.render-container)[class*="render-route-store-search-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) *,
+:global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) * {
+    --header-text-color: #161413
+}
+
+:global(.render-container)[class*="render-route-store-search-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-container-1-x-container--menu),
+:global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-container-1-x-container--menu) {
+    border-bottom: 1px solid #161413
+}
+
+:global(.render-container)[class*="render-route-store-search-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.vtex-container-container--minicart-container),
+:global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.vtex-container-container--minicart-container) {
+    border-color: #161413
+}
+
+:global(.render-container)[class*="render-route-store-search-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer--search-result),
+:global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer--search-result) {
+    margin-top: 242px
+}
+
+/* Login Page */
+:global(.render-container.render-route-store-login) :global(.vtex-render__container-id-vtex\.login\:login-content) {
+    margin-top: 124px
 }

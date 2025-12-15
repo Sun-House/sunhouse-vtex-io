@@ -1,5 +1,6 @@
 {
     "flex-layout.row#product-infos-wrapper": {
+        "title": "Configurações do Produto",
         "children": [
             "flex-layout.col#product-description-wrapper"
         ],
@@ -44,6 +45,10 @@
             "blockClass": "product-description-wrapper"
         }
     },
+
+    // Esse bloco sera descontinuado no Refresh
+    // Todo o mobile sera tratato pelo "container#product-main-description" que sera configurado
+    // e ajustado seus breakpoints via CSS
     "flex-layout.col#product-description-wrapper-mobile": {
         "children": [
             "disclosure-layout#product-page-description",

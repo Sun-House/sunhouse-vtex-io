@@ -1,5 +1,5 @@
 .container {
-    color: #2d2926
+    color: #161413
 }
 
 .heading,
@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     line-height: 1;
-    color: #2d2926
+    color: #161413
 }
 
 /* Setando padrao essa cor para todos os links do site */
@@ -205,7 +205,7 @@
 }
 
 .container--mobile-login {
-    color: #2d2926
+    color: #161413
 }
 
 .container--mobile-login .heading {
@@ -226,13 +226,13 @@
 
 :global(.vtex-container--menu-mobile-controls) .container--minicart-open-button::before {
     margin-right: 11px;
-    color: #2d2926;
+    color: #161413;
     font-size: 25px
 }
 
 :global(.vtex-container--menu-mobile-controls) .container--minicart-open-button .paragraph {
     display: block;
-    color: #2d2926
+    color: #161413
 }
 
 .container--orders-link {
@@ -305,7 +305,7 @@
 }
 
 .paragraph--top-header {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -325,7 +325,7 @@
 }
 
 .paragraph--login-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -333,7 +333,7 @@
     text-align: center;
     cursor: pointer;
     margin: 0;
-    color: #2d2926;
+    color: #161413;
     display: flex;
     gap: 15px;
     align-items: center
@@ -347,13 +347,13 @@
     width: 100%;
     text-align: center;
     margin: 0 0 15px 0;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
     text-align: center;
-    color: #2d2926;
+    color: #161413;
     display: flex;
     align-items: center;
     justify-content: center
@@ -367,7 +367,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1;
-    color: #2d2926;
+    color: #161413;
     margin-right: 9px;
     font-weight: 700
 }
@@ -377,22 +377,22 @@
 }
 
 .paragraph--minicart-title {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    color: #2d2926;
+    color: #161413;
     margin: 0
 }
 
 .paragraph--minicart-remove {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: #2d2926
+    color: #161413
 }
 
 .paragraph--footer-quantity {
@@ -403,11 +403,11 @@
     line-height: 17px;
     display: flex;
     align-items: center;
-    color: #2d2926
+    color: #161413
 }
 
 .strong--top-header {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -418,14 +418,14 @@
 
 .link--text-unlogged {
     display: block;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     padding-block: 9px;
     line-height: 15px;
     text-align: center;
-    color: #2d2926;
+    color: #161413;
     text-decoration: none;
     transition: all .4s
 }
@@ -489,42 +489,42 @@
 } */
 
 .headingLevel3--common-title {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 26px;
-    color: #2d2926;
+    color: #161413;
     margin: 0 0 3px
 }
 
 .paragraph--common-title {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 14px;
     line-height: 17px;
-    color: #2d2926;
+    color: #161413;
     margin-top: 4px
 }
 
 .paragraph--shelf-product-unavailable {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
-    color: #2d2926;
+    color: #161413;
     margin-bottom: 17px
 }
 
 .paragraph--shelf-product-unavailable-button {
-    background-color: #2d2926;
+    background-color: #161413;
     box-sizing: border-box;
     border-radius: 5px;
     height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
@@ -533,7 +533,7 @@
 }
 
 .paragraph--quick-view {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -542,7 +542,7 @@
 }
 
 .paragraph--shelf-banner-button-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -581,7 +581,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    color: #2d2926;
+    color: #161413;
     margin: 0px;
     margin-bottom: 3px
 }
@@ -593,7 +593,7 @@
     line-height: 16px;
     display: flex;
     align-items: flex-end;
-    color: #2d2926
+    color: #161413
 }
 
 .container--common-title {
@@ -808,7 +808,7 @@
 }
 
 .paragraph--diferentials-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -817,11 +817,11 @@
 }
 
 .paragraph--categories-title {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 25px;
     line-height: 29px;
-    color: #2d2926;
+    color: #161413;
     white-space: nowrap
 }
 
@@ -871,7 +871,7 @@
 
 :global(.vtex-container-container--institutional-menu-trigger-mobile) .container--trigger .paragraph {
     margin: unset;
-    color: #2d2926;
+    color: #161413;
     font-weight: 700;
     text-transform: uppercase
 }
@@ -994,17 +994,17 @@
 }
 
 .paragraph--product-zoom-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     line-height: 14px;
-    color: #2d2926;
+    color: #161413;
     padding-left: 7.44px
 }
 
 .paragraph--installments-trigger {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1015,13 +1015,13 @@
 }
 
 .paragraph--product-security-buy-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
     line-height: 14px;
     text-align: center;
-    color: #2d2926
+    color: #161413
 }
 
 /* Movido para o arquivo product/_new--product/vtex.rich-text.css
@@ -1038,51 +1038,51 @@
 
 .paragraph--product-description-title,
 .paragraph--product-specs-title {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #2d2926
+    color: #161413
 }
 
 .paragraph--measurement-guide {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
     text-align: center;
-    color: #2d2926;
+    color: #161413;
     padding-left: 10px
 }
 
 .paragraph--measurement-guide-informations-bottom {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 12px;
     line-height: 14px;
-    color: #2d2926
+    color: #161413
 }
 
 .strong--measurement-guide-informations-bottom .link {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 12px;
     line-height: 14px;
-    color: #2d2926;
+    color: #161413;
     text-decoration: none
 }
 
 .headingLevel4--measurement-guide-title {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 25px;
     text-align: center;
-    color: #2d2926
+    color: #161413
 }
 
 .container--safe-purchase {
@@ -1122,23 +1122,23 @@
 }
 
 .paragraph--not-found-text {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     text-align: center;
-    color: #2d2926;
+    color: #161413;
     font-weight: 700
 }
 
 .paragraph--not-found-text-bottom {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #2d2926;
+    color: #161413;
     margin-bottom: 7px
 }
 
@@ -1146,7 +1146,7 @@
     font-style: normal;
     font-size: 14px;
     line-height: 19px;
-    color: #2d2926;
+    color: #161413;
     opacity: .8
 }
 
@@ -1188,13 +1188,13 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #2d2926
+    color: #161413
 }
 
 .list--not-found-text-bottom .listItem {
@@ -1245,7 +1245,7 @@
     font-weight: 700;
     line-height: normal;
     margin-bottom: 24px;
-    color: #2d2926
+    color: #161413
 }
 
 .headingLevel3--seo-result-text {

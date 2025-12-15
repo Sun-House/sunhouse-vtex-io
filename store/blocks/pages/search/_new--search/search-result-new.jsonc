@@ -5,6 +5,7 @@
 
 {
     // Header da busca - apos banner infocard
+	// START
     "flex-layout.row#wrapper_post-header-line.desktop": {
 		"children": [
 			"flex-layout.col#post-header-line_breadcrumb",
@@ -40,12 +41,14 @@
 			"blockClass": "orderby-new"
 		}
 	},
+	// Header da busca - apos banner infocard
+	// END
 
     // Filtros - Right Sidebar
+	// START
     "vtex.search-result:filter-navigator.v3": {
 		"props": {
 			"categoryFiltersMode": "href",
-			
 			"layout": "responsive", // Ideal para puxar esse mesmo componente para o layout mobile (precisa testar)
 			// Nao esta funcionando - Se nao mudar nada conforme comentei os componente abaixo, excluir linhas
             // START
@@ -86,8 +89,46 @@
 				// 	"order": ""
 				// }
 			],
-			// "blockClass": "filter-bf" - Ajustar estilo que esta nesse key para o novo key abaixo
+			// "blockClass": ["filter-bf", "filters-new"] // Ajustar estilo que esta nesse key para o novo key abaixo
             "blockClass": "filters-new"
 		}
-	}
+	},
+	// Filtros - Right Sidebar
+	// END
+
+	// Galeria/Shelf de produtos
+	// START
+	"vtex.search-result:gallery#new-shelf": {
+        "props": {
+			"layouts": [
+				{
+					"name": "list",
+					"component": "ListSummary",
+					"itemsPerRow": 1
+				},
+				{
+					"name": "grid",
+					"component": "GridSummary",
+					"itemsPerRow": {
+						"desktop": 3,
+						"tablet": 2,
+						"mobile": 1
+					}
+				}
+			],
+			"GridSummary": "product-summary.shelf#main-product-new",
+      		"ListSummary": "product-summary.shelf#main-product-new",
+			// "blockClass": ["bf-gallery", "new-gallery"] // Ajustar estilo que esta nesse key para o novo key abaixo
+			"blockClass": "new-gallery"
+        }
+    },
+    
+	"vtex.search-result:not-found#new-shelf": {
+        "props": {
+            // "blockClass": "not-found-black-friday" - esse acredito que podera ser removido tranquilo
+			"blockClass": "not-found-new"
+        }
+    }
+	// Galeria/Shelf de produtos
+	// END
 }

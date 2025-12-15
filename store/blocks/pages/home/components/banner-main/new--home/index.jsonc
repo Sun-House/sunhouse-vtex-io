@@ -18,7 +18,8 @@
             "imageAltText": "Texto ALT para SEO",
 			"fetchpriority": "auto",
 			"preload": true,
-            "blockClass": "main-banner-home"
+            // "blockClass": "main-banner-home"
+            "blockClass": ["main-banner", "main-banner-home"]
         }
     },
 

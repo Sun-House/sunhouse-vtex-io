@@ -1,29 +1,27 @@
-/* TESTE DE BOOTSTRAP ICONS
-   Validar se isso vai funcionar em ambiente de teste em producao,
-   caso nao, precisa retirar e repensar no que fazer com os icones novos do Refresh */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-/* Funcionou no ambiente de desenvolvimento */
-
 /* .vtex-store-components-3-x-infoCardContainer--main-banner-home { */
 .infoCardContainer--main-banner-home {
-    height: 100vh
+    height: 100vh;
+    border: 0 /* Fix para remover borda inferior do banner que vem como padrao do componente VTEX */
 }
 
 /**/
 /* Gera backdrop para criar efeito de opacidade no banner */
-.infoCardContainer--main-banner-home::after {
+.infoCardContainer--main-banner::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
     background-color: #000;
     opacity: 0.4
 }
 
-/* .vtex-store-components-3-x-infoCardTextContainer--main-banner-home { */
-.infoCardTextContainer--main-banner-home {
+.infoCardContainer--main-banner-home::after {
+    height: 100vh
+}
+
+/* .infoCardTextContainer--main-banner-home { */
+.infoCardTextContainer--main-banner {
     z-index: 2;
     /* position: relative; */
     margin-top: 152px;
@@ -41,35 +39,36 @@
     margin-right: 20px
 }
 
-/* .vtex-store-components-3-x-heading--main-banner-home,
-.vtex-store-components-3-x-paragraph--main-banner-home { */
-.heading--main-banner-home,
-.paragraph--main-banner-home {
+/* .heading--main-banner-home,
+.paragraph--main-banner-home { */
+.heading--main-banner,
+.paragraph--main-banner {
     color: #fff
 }
 
 /* .vtex-store-components-3-x-heading--main-banner-home { */
-.heading--main-banner-home {
-    text-transform: uppercase;
-    font-size: 5rem;
+.heading--main-banner {
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 0
 }
 
+.heading--main-banner-home {
+    font-size: 5rem;
+    text-transform: uppercase
+}
+
 /* .vtex-store-components-3-x-paragraph--main-banner-home { */
-.paragraph--main-banner-home {
+.paragraph--main-banner {
     font-family: 'Onest', sans-serif; /* Fonte final validada Refresh */
     font-size: 22px;
     text-align: center;
-    /* width: 70%; */
     width: 55%;
     margin-top: 24px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 12px
 }
-
 
 /* BOTAO - Replicar para todos botoes de CTA possiveis do site START */
 /* .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-home .vtex-button { */
@@ -137,4 +136,3 @@
     font-size: 24px;
     margin-left: 12px
 }
-/**/

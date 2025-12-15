@@ -9,6 +9,7 @@
     "children": ["flex-layout.col#column-spacer"]
   },
   "link#whatsapp-float": {
+    "title": "Botão WhatsApp - Flutuante",
     "children": ["icon#whatsapp"],
     "props": {
       "blockClass": "whatsapp-float",

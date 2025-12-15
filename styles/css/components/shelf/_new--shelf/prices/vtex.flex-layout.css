@@ -1,7 +1,8 @@
 /* .vtex-flex-layout-0-x-flexCol--shelf-product-available .vtex-flex-layout-0-x-flexColChild--shelf-product-available:nth-child(2) { */
 .flexCol--shelf-product-available .flexColChild--shelf-product-available:nth-child(even) {
     position: relative;
-    top: -70px;
+    /* top: -70px; */
+    top: -36px;
     height: 20px !important
 }
 
@@ -14,6 +15,12 @@
 
     /* Abaixo estilo novo */
     width: 75%
+}
+
+/* .flexRow--shelf-product-buy-quantity - Componente removido para o Refresh */
+.flexRow--shelf-buy-button {
+    /* margin: 19px 1px 10px */
+    margin: 34px 1px 10px
 }
 
 .flexColChild--shelf-buy-button {

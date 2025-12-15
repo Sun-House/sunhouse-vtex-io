@@ -5,7 +5,7 @@
       "context": {
         "skusFilter": "ALL_AVAILABLE",
         "orderByField": "OrderByTopSaleDESC",
-        "maxItemsPerPage": 28
+        "maxItemsPerPage": 12
       }
     }
   },
@@ -15,7 +15,7 @@
       "context": {
         "skusFilter": "ALL_AVAILABLE",
         "orderByField": "OrderByTopSaleDESC",
-        "maxItemsPerPage": 28
+        "maxItemsPerPage": 12
       }
     }
   },
@@ -25,7 +25,7 @@
       "context": {
         "skusFilter": "ALL_AVAILABLE",
         "orderByField": "OrderByTopSaleDESC",
-        "maxItemsPerPage": 28
+        "maxItemsPerPage": 12
       }
     }
   },
@@ -35,7 +35,7 @@
       "context": {
         "skusFilter": "ALL_AVAILABLE",
         "orderByField": "OrderByTopSaleDESC",
-        "maxItemsPerPage": 28
+        "maxItemsPerPage": 12
       }
     }
   },
@@ -45,7 +45,7 @@
       "context": {
         "skusFilter": "ALL_AVAILABLE",
         "orderByField": "OrderByTopSaleDESC",
-        "maxItemsPerPage": 28
+        "maxItemsPerPage": 12
       }
     }
   },
@@ -91,12 +91,12 @@
   "sunhouse.search-result:search-result-layout.desktop#cluster-and-search": {
     "title": "Pagina de busca desktop",
     "children": [
-      "flex-layout.row#search-breadcrumb",
+      // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result-cluster-and-search",
       "container#search-seo",
-      "container#spacing-default",
-      "container#blog-cards",
       "container#spacing-default"
+      // "container#blog-cards",
+      // "container#spacing-default"
     ],
     "props": {
       "showFacetQuantity": true
@@ -105,20 +105,22 @@
   "sunhouse.search-result:search-result-layout.mobile#cluster-and-search": {
     "title": "Pagina de busca mobile",
     "children": [
-      "flex-layout.row#search-breadcrumb",
+      // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result.mobile",
       "container#search-seo",
       // "flex-layout.row#banners-slider"
-      "container#spacing-default",
-      "container#blog-cards",
       "container#spacing-default"
+      // "container#blog-cards",
+      // "container#spacing-default"
     ],
     "props": {
       "showFacetQuantity": true
     }
   },
   "flex-layout.row#search-result-cluster-and-search": {
-    "children": ["flex-layout.col#search-result-desktop-cluster-and-search"],
+    "children": [
+      "flex-layout.col#search-result-desktop-cluster-and-search"
+    ],
     "props": {
       "blockClass": "search-result",
       "fullWidth": true
@@ -144,12 +146,14 @@
   },
   "flex-layout.col#search-result-desktop-cluster-and-search": {
     "children": [
-      "flex-layout.row#filters-container.desktop",
-      // "flex-layout.row#paged-controls-top", -> For Paged Controls
-      "flex-layout.row#fetch-less",
-      "flex-layout.row#search-content.desktop",
-      // "flex-layout.row#paged-controls-bottom" -> For Paged Controls
-      "flex-layout.row#fetch-more"
+      // Linha inicial apos o banner ou header
+      // "flex-layout.row#filters-container.desktop",
+      // "flex-layout.row#wrapper_post-header-line.desktop", - Sendo renderizada em outra estrutura neste arquivo
+      //
+
+      // "flex-layout.row#fetch-less",
+      "flex-layout.row#search-content.desktop"
+      // "flex-layout.row#fetch-more"
     ],
     "props": {
       "blockClass": "search-result"
@@ -161,14 +165,15 @@
       "container#banner-department-desktop",
       // Esse componente precisara ser recriado do zero - acredito que seja mais pratico
       // "container#categories-slider",
+      "container#plp-category-grid",
       //
-      "flex-layout.row#search-breadcrumb",
+      // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result.desktop",
       "container#search-seo",
       // "flex-layout.row#banners-slider",
-      "container#spacing-default",
-      "container#blog-cards",
       "container#spacing-default"
+      // "container#blog-cards",
+      // "container#spacing-default"
     ],
     "props": {
       "defaultGalleryLayout": "grid",
@@ -203,12 +208,12 @@
     "children": [
       "container#banner-department-mobile",
       "container#categories-slider",
-      "flex-layout.row#search-breadcrumb",
+      // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result.mobile",
       "container#search-seo",
-      "container#spacing-default",
-      "container#blog-cards",
       "container#spacing-default"
+      // "container#blog-cards",
+      // "container#spacing-default"
       // "flex-layout.row#banners-slider"
     ],
     "props": {
@@ -247,7 +252,9 @@
     }
   },
   "flex-layout.row#search-result.desktop": {
-    "children": ["flex-layout.col#search-result.desktop"],
+    "children": [
+      "flex-layout.col#search-result.desktop"
+    ],
     "props": {
       "blockClass": "search-result",
       "fullWidth": true
@@ -255,19 +262,23 @@
   },
   "flex-layout.col#search-result.desktop": {
     "children": [
-      "flex-layout.row#filters-container.desktop",
-      // "flex-layout.row#paged-controls-top", -> For Paged Controls
-      "flex-layout.row#fetch-less",
-      "flex-layout.row#search-content.desktop",
-      // "flex-layout.row#paged-controls-bottom" -> For Paged Controls
-      "flex-layout.row#fetch-more"
+      // Linha inicial apos o banner ou header
+      // "flex-layout.row#filters-container.desktop",
+      // "flex-layout.row#wrapper_post-header-line.desktop", - Sendo renderizada em outra estrutura neste arquivo
+      //
+
+      // "flex-layout.row#fetch-less",
+      "flex-layout.row#search-content.desktop"
+      // "flex-layout.row#fetch-more"
     ],
     "props": {
       "blockClass": "search-result"
     }
   },
   "flex-layout.row#search-result.mobile": {
-    "children": ["flex-layout.col#search-result.mobile"],
+    "children": [
+      "flex-layout.col#search-result.mobile"
+    ],
     "props": {
       "blockClass": "search-result"
     }
@@ -294,17 +305,19 @@
       "flex-layout.col#order-content"
     ],
     "props": {
-      "blockClass": "filters-container",
       "preserveLayoutOnMobile": true,
       "colSizing": "auto",
-      "horizontalAlign": "right"
+      "horizontalAlign": "right",
+      "blockClass": "filters-container"
     }
   },
   "flex-layout.row#filters-container.mobile": {
-    "children": ["flex-layout.col#filters-container.mobile"],
+    "children": [
+      "flex-layout.col#filters-container.mobile"
+    ],
     "props": {
-      "blockClass": "filters-container",
-      "preserveLayoutOnMobile": true
+      "preserveLayoutOnMobile": true,
+      "blockClass": "filters-container"
     }
   },
   "flex-layout.col#filters-container.mobile": {
@@ -321,43 +334,23 @@
       "flex-layout.col#order-content"
     ],
     "props": {
-      "blockClass": ["filters-container-top", "filters-container-top-mobile"],
       "preserveLayoutOnMobile": true,
       "marginBottom": 6,
       "colJustify": "between",
       "colSizing": "auto",
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "blockClass": ["filters-container-top", "filters-container-top-mobile"]
     }
   },
   "flex-layout.row#filters-container-bottom.mobile": {
-    "children": ["sunhouse.search-result:search-products-count-per-page"],
+    "children": [
+      "sunhouse.search-result:search-products-count-per-page"
+    ],
     "props": {
       "blockClass": "filters-container-bottom"
     }
   },
-  // "container#filter-content": {
-  //   "children": [
-  //     "condition-layout.user#unlogged"
-  //     // "sunhouse.search-result:filter-navigator.v3"
-  //   ],
-  //   "props": {
-  //     "blockClass": "filter-content",
-  //     "width": "grow"
-  //   }
-  // },
-  // "sunhouse.search-result:filter-navigator.v3": {
-  //   "blocks": ["sunhouse.search-result:sidebar-close-button"],
-  //   "props": {
-  //     "navigationTypeOnMobile": "collapsible",
-  //     "initiallyCollapsed": true,
-  //     "appliedFiltersOverview": "hide",
-  //     "closeOnOutsideClick": true,
-  //     "openFiltersMode": "one",
-  //     "priceRangeToggle": true,
-  //     "scrollToTop": "smooth",
-  //     "fullWidthOnMobile": true
-  //   }
-  // },
+  
   "sunhouse.search-result:sidebar-close-button": {
     "props": {
       "type": "filled",
@@ -452,30 +445,87 @@
       "htmlElementForButton": "a"
     }
   },
+
+  //
   "flex-layout.row#search-content.desktop": {
-    "children": ["hover-container#search-content"],
+    "children": [
+      "flex-layout.col#search-content.desktop",
+			"flex-layout.col#filter-content.desktop"
+    ],
     "props": {
       "blockClass": "search-content"
     }
   },
+	"flex-layout.col#search-content.desktop": {
+		"children": [
+      "container#spacing-default",
+      //
+			"flex-layout.row#wrapper_post-header-line.desktop",
+      "flex-layout.row#fetch-less",
+      "hover-container#search-content-new-shelf",
+      "flex-layout.row#fetch-more"
+		],
+		"props": {
+			// "blockClass": "bf-search-content_col"
+      "blockClass": ["search-content_col", "search-content_col-main"]
+		}
+	},
+	"flex-layout.col#filter-content.desktop": {
+		"children": [
+      "container#spacing-default",
+      //
+			"vtex.search-result:filter-navigator.v3"
+		],
+		"props": {
+      "width": "25%",
+			"marginLeft": "5",
+			// "blockClass": "bf-search-content_col"
+      "blockClass": ["search-content_col", "search-content_col-filter"]
+		}
+	},
+  //
+
+  // Esse componente precisa ser removido apos a implementacao do novo search-result
   "hover-container#search-content": {
-    "children": ["sunhouse.search-result:search-content"],
+    "children": [
+      // "sunhouse.search-result:search-content"
+      "vtex.search-result:search-content#new-shelf"
+    ],
     "props": {
       "blockClass": "hover-search-content"
     }
   },
+  //
+
+  "hover-container#search-content-new-shelf": {
+		"title": "Lista de Produtos",
+		"children": [
+      "vtex.search-result:search-content#new-shelf"
+		],
+		"props": {
+			"blockClass": "hover-search-content"
+		}
+	},
+
   "flex-layout.row#search-content.mobile": {
-    "children": ["sunhouse.search-result:search-content"],
+    "children": [
+      "sunhouse.search-result:search-content"
+    ],
     "props": {
       "blockClass": "search-content"
     }
   },
-  "sunhouse.search-result:search-content": {
+  // "sunhouse.search-result:search-content": {
+  "vtex.search-result:search-content#new-shelf": {
     "blocks": [
-      "sunhouse.search-result:gallery",
-      "sunhouse.search-result:not-found"
+      // "sunhouse.search-result:gallery",
+      // "sunhouse.search-result:not-found"
+      "vtex.search-result:gallery#new-shelf",
+      "vtex.search-result:not-found#new-shelf"
     ]
   },
+
+  // Esse precisa ser removido apos a implementacao do novo search-result
   "sunhouse.search-result:gallery": {
     "props": {
       "layouts": [
@@ -498,25 +548,28 @@
       "ListSummary": "product-summary.shelf#main-product-new"
     }
   },
+  //
+
+  // Esse se mantem intacto
   "container#search-seo": {
-    "children": ["rich-text#search-seo"],
+    "children": [
+      "rich-text#search-seo"
+    ],
     "props": {
       "wrapper": true,
-      "blockClass": ["search-seo", "container-center"],
       "colSizing": "auto",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "blockClass": ["search-seo", "container-center"]
     }
   },
-
   "rich-text#search-seo": {
     "title": "Texto Seo",
     "props": {
-      "text": "# Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!",
+      "text": "## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!",
       "blockClass": "search-seo",
       "textPosition": "CENTER"
-      // "textAlignment": "CENTER"
     }
   }
 }

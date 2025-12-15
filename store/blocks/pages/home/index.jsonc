@@ -5,19 +5,27 @@
       "info-card#banner-main",
       
       // Category Grid
-      // Em processo de remodelagem visual - RAW Concluido!
+      // Concluido! (desktop)
       "flex-layout.row#categories-slider",
       "container#spacing-default",
 
-      // Shelfs - PRECISA SER REALOCADA AS POSICOES
-      "container#shelf-home02", // Mudar nome posteriormente - Essa manter em sistema de slider, mudar o visual, reaproveitar para usar na PDP, porem, será ocultada da home no Refresh (a principio, mas pode ser reativada)
+      // Shelfs
+      // Essa vitrine abaixo sera ocultada no lançamento do Refresh
+      "container#shelf-home02", // Mudar nome posteriormente
+      
+      // Essa vitrine abaixo sera mantida no lançamento do Refresh
+      "container#shelf-featured", // Criar vitrine com fotos (semelhante as da pagina da Elements)
+      //
       "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
 
       // Product Highlight Grid
-      // A SER IMPLEMENTADO
+      // Concluido! (desktop)
+      "container#product-highlight-grid",
 
       // Fullwidth Static Banner
-      // A SER IMPLEMENTADO
+      // Concluido! (desktop)
+      "container#fullwidth-static-banner",
+      //
 
       // Shelf Grid
       "container#shelf-home03", // Mudar nome posteriormente
@@ -26,7 +34,7 @@
       // Fullwidth Shelf Banner
       // A SER IMPLEMENTADO - Usar o abaixo como base:
       // Esse preciso testar - sera util para o Refresh
-      // "flex-layout.row#shelf-banner-desktop",
+      "flex-layout.row#shelf-banner-desktop",
       // "container#spacing-default",
       //
 

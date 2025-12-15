@@ -8,7 +8,7 @@
 			"container#spacing-default",
 			"container#search-seo",
 			"container#spacing-default",
-			"container#blog-cards",
+			// "container#blog-cards",
 			"container#spacing-default"
 		],
 		"props": {
@@ -37,7 +37,7 @@
 			"container#spacing-default",
 			"container#search-seo",
 			"container#spacing-default",
-			"container#blog-cards",
+			// "container#blog-cards",
 			"container#spacing-default"
 		],
 		"props": {
@@ -172,56 +172,57 @@
 	// Excluir apos testes das paginas de busca e categorias
 	// START
 	// Filters - Right Side Sidebar
-	"vtex.search-result:filter-navigator.v3": {
-		"props": {
-			"categoryFiltersMode": "href",
-			// "layout": "desktop",
-			"layout": "responsive", // Ideal para puxar esse mesmo componente para o layout mobile (precisa testar)
-			// Nao esta funcionando START
-			"maxItemsDepartment": 1,
-			"maxItemsCategory": 1,
-			"maxItemsSubcategory": 1,
-			// Nao esta funcionando END
-			"initiallyCollapsed": false,
-			"openFiltersMode": "many",
-			"filtersTitleHtmlTag": "h4",
-			"scrollToTop": "none", // Nao esta funcionando no mobile
-			"truncateFilters": true,
-			"closeOnOutsideClick": true, // Util para mobile -> true (precisa testar)
-			// Nao esta funcionando START
-			"appliedFiltersOverview": "hide",
-			// Nao esta funcionando END
-			// "fullWidthOnMobile": true,
-			"fullWidthOnMobile": false,
-			"navigationTypeOnMobile": "collapsible",
-			// "navigationTypeOnMobile": "page",
-			"updateOnFilterSelectionOnMobile": true,
-			"drawerDirectionMobile": "drawerLeft",
-			"showClearByFilter": true,
-			"showClearAllFiltersOnDesktop": true,
-			"priceRangeLayout": "slider",
-			// "priceRangeToggle": true,
-			"showQuantityBadgeOnMobile": false, // Nao esta funcionando
-			"facetOrdering": [
-				{
-					"key": "category-1",
-					"orderBy": "quantity",
-					"order": "ASC"
-				}
-				// Abaixo, é possivel organizar os filtros por nome do tipo de filtro.
-				// Ideal configurar apos virada do site:
-				// , 
-				// {
-				// 	"key": "",
-				// 	"orderBy": "",
-				// 	"order": ""
-				// }
-			],
-			"blockClass": "filter-bf"
-		}
-	},
+	// "vtex.search-result:filter-navigator.v3": {
+	// 	"props": {
+	// 		"categoryFiltersMode": "href",
+	// 		// "layout": "desktop",
+	// 		"layout": "responsive", // Ideal para puxar esse mesmo componente para o layout mobile (precisa testar)
+	// 		// Nao esta funcionando START
+	// 		"maxItemsDepartment": 1,
+	// 		"maxItemsCategory": 1,
+	// 		"maxItemsSubcategory": 1,
+	// 		// Nao esta funcionando END
+	// 		"initiallyCollapsed": false,
+	// 		"openFiltersMode": "many",
+	// 		"filtersTitleHtmlTag": "h4",
+	// 		"scrollToTop": "none", // Nao esta funcionando no mobile
+	// 		"truncateFilters": true,
+	// 		"closeOnOutsideClick": true, // Util para mobile -> true (precisa testar)
+	// 		// Nao esta funcionando START
+	// 		"appliedFiltersOverview": "hide",
+	// 		// Nao esta funcionando END
+	// 		// "fullWidthOnMobile": true,
+	// 		"fullWidthOnMobile": false,
+	// 		"navigationTypeOnMobile": "collapsible",
+	// 		// "navigationTypeOnMobile": "page",
+	// 		"updateOnFilterSelectionOnMobile": true,
+	// 		"drawerDirectionMobile": "drawerLeft",
+	// 		"showClearByFilter": true,
+	// 		"showClearAllFiltersOnDesktop": true,
+	// 		"priceRangeLayout": "slider",
+	// 		// "priceRangeToggle": true,
+	// 		"showQuantityBadgeOnMobile": false, // Nao esta funcionando
+	// 		"facetOrdering": [
+	// 			{
+	// 				"key": "category-1",
+	// 				"orderBy": "quantity",
+	// 				"order": "ASC"
+	// 			}
+	// 			// Abaixo, é possivel organizar os filtros por nome do tipo de filtro.
+	// 			// Ideal configurar apos virada do site:
+	// 			// , 
+	// 			// {
+	// 			// 	"key": "",
+	// 			// 	"orderBy": "",
+	// 			// 	"order": ""
+	// 			// }
+	// 		],
+	// 		"blockClass": "filter-bf"
+	// 	}
+	// },
 	// END
 	
+	// REMOVER ESSA LINHA APOS LANCAMENTO DO REFRESH - Devera funcionar sem ela
 	"flex-layout.row#black-friday_search-content.desktop": {
 		"children": [
 			"flex-layout.col#search-content.desktop",
@@ -231,35 +232,35 @@
 			"blockClass": "search-content"
 		}
 	},
-	"flex-layout.col#search-content.desktop": {
-		"children": [
-			"flex-layout.row#wrapper_post-header-line.desktop",
-			"hover-container#black-friday_search-content"
-		],
-		"props": {
-			"blockClass": "bf-search-content_col"
-		}
-	},
-	"flex-layout.col#filter-content.desktop": {
-		"children": [
-			"vtex.search-result:filter-navigator.v3"
-		],
-		"props": {
-            "width": "25%",
-			"marginLeft": "5",
-			"blockClass": "bf-search-content_col"
-		}
-	},
+	// "flex-layout.col#search-content.desktop": {
+	// 	"children": [
+	// 		"flex-layout.row#wrapper_post-header-line.desktop",
+	// 		"hover-container#black-friday_search-content"
+	// 	],
+	// 	"props": {
+	// 		"blockClass": "bf-search-content_col"
+	// 	}
+	// },
+	// "flex-layout.col#filter-content.desktop": {
+	// 	"children": [
+	// 		"vtex.search-result:filter-navigator.v3"
+	// 	],
+	// 	"props": {
+    //         "width": "25%",
+	// 		"marginLeft": "5",
+	// 		"blockClass": "bf-search-content_col"
+	// 	}
+	// },
 
-	"hover-container#black-friday_search-content": {
-		"title": "Lista de Produtos",
-		"children": [
-            "vtex.search-result:search-content#black-friday"
-		],
-		"props": {
-			"blockClass": "hover-search-content"
-		}
-	},
+	// "hover-container#black-friday_search-content": {
+	// 	"title": "Lista de Produtos",
+	// 	"children": [
+    //         "vtex.search-result:search-content#black-friday"
+	// 	],
+	// 	"props": {
+	// 		"blockClass": "hover-search-content"
+	// 	}
+	// },
     "vtex.search-result:search-content#black-friday": {
         "blocks": [
             "vtex.search-result:gallery#black-friday",

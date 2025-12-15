@@ -1,15 +1,18 @@
-{
-  "store.debug-pdp": {
-    "blocks": ["debug-pdp"]
-  },
+// Bloco de debug da PDP? Nao sei, era da Eplus, e nunca o utilizei
+// Ficara aqui como backup caso necessario
 
-  "debug-pdp": {
-    "children": [
-      "responsive-layout.desktop#product-main",
-      "responsive-layout.mobile#product-main",
-      "condition-layout.product#product-content-availability",
-      "flex-layout.row#shelf-buy-too"
-      // "product-reviews"
-    ]
-  }
+{
+  // "store.debug-pdp": {
+  //   "blocks": ["debug-pdp"]
+  // },
+
+  // "debug-pdp": {
+  //   "children": [
+  //     "responsive-layout.desktop#product-main",
+  //     "responsive-layout.mobile#product-main",
+  //     "condition-layout.product#product-content-availability",
+  //     "flex-layout.row#shelf-buy-too"
+  //     // "product-reviews"
+  //   ]
+  // }
 }

@@ -4,6 +4,6 @@
 .container--lp_pix-price-shelf {
     text-align: left;
     font-weight: normal;
-    font-family: "bebas neue", "oswald", sans-serif;
+    /* font-family: "bebas neue", "oswald", sans-serif; */
     font-size: 36px
 }

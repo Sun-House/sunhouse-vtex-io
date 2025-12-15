@@ -1,0 +1,49 @@
+/* .vtex-store-components-3-x-infoCardContainer--banner-fullwidth */
+.infoCardContainer--banner-fullwidth {
+    display: flex;
+    align-items: flex-end;
+    height: 80vh;
+    margin-bottom: 60px /* 80px tambem fica bom */
+}
+
+/* .vtex-store-components-3-x-infoCardContainer--banner-fullwidth::after { */
+.infoCardContainer--banner-fullwidth::after {
+    top: inherit;
+    height: 80vh
+}
+
+/* .vtex-store-components-3-x-infoCardTextContainer--banner-fullwidth { */
+.infoCardTextContainer--banner-fullwidth {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 38px;
+    width: 100%;
+    max-width: 1200px
+}
+
+/* .vtex-store-components-3-x-container--banner-fullwidth { */
+.container--banner-fullwidth {
+    margin-left: unset
+}
+
+/* .vtex-store-components-3-x-container--banner-fullwidth:first-child .vtex-store-components-3-x-heading--banner-fullwidth::before,
+.vtex-store-components-3-x-container--banner-fullwidth:first-child .vtex-store-components-3-x-heading--banner-fullwidth::after { */
+.container--banner-fullwidth .heading--banner-fullwidth::before,
+.container--banner-fullwidth .heading--banner-fullwidth::after {
+    content: unset !important
+}
+
+/* .vtex-store-components-3-x-heading--banner-fullwidth { */
+.heading--banner-fullwidth {
+    /* font-size: 2rem; */
+    font-size: 2.8rem;
+    text-transform: none;
+    text-align: left
+}
+
+/* .vtex-store-components-3-x-infoCardCallActionContainer--banner-fullwidth .vtex-button { */
+.infoCardCallActionContainer--banner-fullwidth :global(.vtex-button) {
+    padding: 4px 0px;
+    font-size: 14px
+}

@@ -12,3 +12,13 @@
 
 /* Desktop Force */
 /* @media screen and (min-width: 1025px) { ... } */
+
+/* Mobile */
+@media (max-width: 1024px) {
+    
+    :global(.render-container.render-route-store-product .sunhouse-container-1-x-wrapper--header--mobile__main),
+    :global(.render-container.render-route-store-product .vtex-flex-layout-0-x-flexRow--header-mobile-bottom) {
+        background-color: unset !important;
+    }
+
+}

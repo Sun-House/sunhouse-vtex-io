@@ -86,7 +86,8 @@
     "title": "Prateleira 2 - Título",
     "props": {
       "text": "## Lançamentos Elements", // Texto padrao para o Refresh - Será alterado via Site Editor dependendo do conteudo da prateleira
-      "blockClass": ["shelf-home02", "common-title"]
+      // "blockClass": ["shelf-home02", "common-title", "shelf-slider-home"]
+      "blockClass": ["common-title", "shelf-slider-home"]
     }
   },
 
@@ -130,7 +131,6 @@
   },
 
   "flex-layout.row#shelf-home03": {
-    // "title": "Prateleira 3 - Container",
     "children": [
       "flex-layout.col#shelf-home03"
     ],
@@ -140,9 +140,7 @@
     }
   },
   "flex-layout.col#shelf-home03": {
-    //"title": "Prateleira 3",
     "children": [
-      // "rich-text#shelf-home03", - A principio nao tera titulo na prateleira grid
       "hover-container#shelf-home03"
     ],
     "props": {
@@ -159,7 +157,6 @@
   },
 
   "hover-container#shelf-home03": {
-    // "title": "Prateleira Grid - Hover Container",
     "title": "Configurações do Hover",
     "children": [
       "list-context.product-list#shelf-home03"
@@ -172,10 +169,8 @@
   // Lista de Produtos 3 - sem slider
   // Será usada de base para o sistema de Shelf Grid do Refresh (da home apenas)
   "list-context.product-list#shelf-home03": {
-    // "title": "Lista de Produtos - em Grid",
     "title": "Configurações da Lista de Produtos",
     "blocks": [
-      // "product-summary.shelf#main-product"
       "product-summary.shelf#main-product-new"
     ],
     "children": [

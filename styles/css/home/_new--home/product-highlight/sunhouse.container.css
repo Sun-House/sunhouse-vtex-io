@@ -1,0 +1,69 @@
+/* Container Wrapper do componente */
+.container--product-highlight-grid {
+    margin: 24px 0px 60px;
+    padding: 105px 0px;
+    border-top: 2px solid #1614134d /* Usar base para todas as linhas de borda da Home */
+}
+
+/* Imagens do Produto Destaque */
+/* .sunhouse-container-1-x-imageElement--product-highlight-image { */
+.imageElement--product-highlight-image {
+    max-height: unset !important;
+    border-radius: 4px
+}
+
+/* Imagem principal do Produto Destaque */
+/* .sunhouse-container-1-x-container--product-highlight-image_col-1 { */
+.container--product-highlight-image_col-1 {
+    border-radius: 4px;
+    /* Dimensões exatas do seu contêiner conforme fornecido */
+    width: 546px;
+    height: 682px;
+    
+    /* ESSENCIAL: Garante que o zoom da imagem não saia dos limites */
+    overflow: hidden !important
+}
+
+/* .sunhouse-container-1-x-imageElement--product-highlight-image_col-1 { */
+.imageElement--product-highlight-image_col-1 {
+    /* Garante que a imagem preencha todo o contêiner inicialmente */
+    width: 100%;
+    height: 100%;
+    /* Garante que a imagem preencha o contêiner, cortando o que for necessário */
+    object-fit: cover; 
+    
+    /* Define o ponto central de onde o zoom deve se expandir */
+    transform-origin: center center; 
+    
+    /* ESSENCIAL: Adiciona uma transição suave ao efeito */
+    transition: transform 0.3s ease-in-out
+}
+
+/* .sunhouse-container-1-x-imageElement--product-highlight-image_col-1:hover { */
+.imageElement--product-highlight-image_col-1:hover {
+    transform: scale(1.08)
+}
+
+/* Container da coluna 2 das imagens */
+/* .sunhouse-container-1-x-container--product-highlight-image_col-2 { */
+.container--product-highlight-image_col-2 {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem
+}
+
+/* .sunhouse-container-1-x-imageElement--product-highlight-image_col-2 { */
+.imageElement--product-highlight-image_col-2 {
+    max-width: 289px !important
+}
+
+/* Container da Prateleira Destaque */
+/* .sunhouse-container-1-x-container--product-highlight-shelf { */
+.container--product-highlight-shelf {
+    margin-top: 35px
+}
+
+/* .vtex-container-container--product-highlight-shelf .vtex-product-summary-2-x-element--main-shelf-new { */
+.container--product-highlight-shelf :global(.vtex-product-summary-2-x-element--main-shelf-new) {
+    gap: 35px /* Pode ser necessario ajustar */
+}

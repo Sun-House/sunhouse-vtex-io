@@ -3,6 +3,7 @@
     "children": [
       "responsive-layout.desktop#product-main",
       "responsive-layout.mobile#product-main",
+      "flex-layout.row#product-infos-wrapper",
       "container#product__related-grid",
       // "condition-layout.user#buy-together", // Ainda em DEV
       "container#ra-trustvox",
@@ -23,20 +24,20 @@
   },
 
   "responsive-layout.desktop#product-main": {
-    // "title": "Produto",
-    "title": "Configurações do Produto",
+    // "title": "Configurações do Produto",
+    "title": "Produto",
     "children": [
-      // Display absolute BG de imagem de destaque do produto (first image) - Ainda em DEV
-      // "vtex.store-components:product-images#image-highlight", - Sera substituido por um novo componente custom controlado pelo Site Editor por produto
-      
       "flex-layout.row#product-image-highlight",
+
+      // Componente descontinuado no Refresh - Mas vou manter aqui por uma questão de ajuste
+      // de CSS pendente que farei apenas apos lançar o MVP do Refresh
+      "flex-layout.row#product-highlight-coupon",
       //
 
-      "flex-layout.row#product-highlight-coupon", // Componente descontinuado no Refresh - Mas vou manter aqui por uma questão de ajuste de CSS pendente que farei apenas apos lançar o MVP do Refresh
-      "flex-layout.row#product-main",
+      "flex-layout.row#product-main"
       
       // Wrapper das duas opções de descrição do produto - Simple e Custom - e tambem de todos os blocos de informações do produto (beneficios, especificações, video, etc)
-      "flex-layout.row#product-infos-wrapper"
+      // "flex-layout.row#product-infos-wrapper"
       //
 
       // Criar aqui o bloco do Rodapé do Produto - Texto da Sun House (mas que pode ser customizado pelo Site Editor por produto e mudar o texto caso necessario)
@@ -68,25 +69,74 @@
     }
   },
   "flex-layout.row#product-main-mobile": {
-    "children": ["flex-layout.col#product-main-mobile"],
+    "children": [
+      // Em testes - Novo sistema de imagens de destaque, sendo aplicado ao mobile tambem
+      "flex-layout.row#product-image-highlight",
+      //
+
+      "flex-layout.col#product-main-mobile"
+    ],
     "props": {
       "blockClass": "product-main-mobile"
     }
   },
-  "flex-layout.col#product-main-mobile": {
+
+  //
+  "flex-layout.col#product-main-mobile_wrapper": {
     "children": [
-      "flex-layout.row#breadcrumb-product",
-      "container#wrapper__highlight-coupon-mobile", // Componente descontinuado no Refresh - Mas vou manter aqui por uma questão de ajuste de CSS pendente que farei apenas apos lançar o MVP do Refresh
-      // "vtex.store-components:product-name",
+      "flex-layout.row#product-image-highlight",
+      
+      "container#wrapper__highlight-coupon-mobile",
+            
       "condition-layout.product#product-title",
       "vtex.store-components:product-brand#product-brand", // Precisa ficar logo abaixo do nome do produto
-      "flex-layout.row#product-mobile-images",
-      "product-dimensions",
+
+      "product-images-custom#product-images"
+    ],
+    "props": {
+      "blockClass": ["product-main-mobile", "product-main-mobile_wrapper"]
+      // "blockClass": "product-main-mobile_wrapper"
+    }
+  },
+
+  //
+  "flex-layout.col#product-main-mobile": {
+    "children": [
+      // Em testes - Novo sistema de imagens de destaque, sendo aplicado ao mobile tambem
+      // "flex-layout.row#product-image-highlight",
+      //
+
+      // Componente descontinuado no Refresh - Mas vou manter aqui por uma questão de ajuste
+      // de CSS pendente que farei apenas apos lançar o MVP do Refresh
+      //"container#wrapper__highlight-coupon-mobile",
+      //
+
+      // "vtex.store-components:product-name",
+      //"condition-layout.product#product-title",
+      //"vtex.store-components:product-brand#product-brand", // Precisa ficar logo abaixo do nome do produto
+      
+      // Em testes - Novo sistema de imagens padrao, sendo aplicado ao mobile tambem
+      // "flex-layout.row#product-mobile-images",
+      //"product-images-custom#product-images",
+      //
+
+      // TESTE
+      // Acima, foram todos encapsulados nesse elemento abaixo:
+      "flex-layout.col#product-main-mobile_wrapper",
+      //
+
+      "flex-layout.row#breadcrumb-product",
+
+      // "product-dimensions",
       "container#product-top-infos",
       "container#product-highlights--product-page",
       // "condition-layout.product#product-availability",
-      "condition-layout.product#elf-checker",
-      "flex-layout.col#product-description-wrapper-mobile"
+      "condition-layout.product#elf-checker"
+      
+      // O bloco "flex-layout.col#product-description-wrapper-mobile" sera descontinuado no Refresh
+      // Todo o mobile sera tratato pelo "container#product-main-description" que sera configurado
+      // e ajustado seus breakpoints via CSS
+      //"flex-layout.col#product-description-wrapper-mobile"
     ],
     "props": {
       "blockClass": "product-main-mobile"
@@ -512,13 +562,18 @@
 
   // Quem Viu Comprou Tambem
   "flex-layout.row#shelf-buy-too": {
-    "children": ["shelf.relatedProducts#shelf-buy-too"],
+    "children": [
+      "shelf.relatedProducts#shelf-buy-too"
+    ],
     "props": {
       "blockClass": "shelf-buy-too"
     }
   },
   "shelf.relatedProducts#shelf-buy-too": {
-    "blocks": ["product-summary.shelf#main-product"],
+    "blocks": [
+      // "product-summary.shelf#main-product"
+      "product-summary.shelf#main-product-new"
+    ],
     "props": {
       "recommendation": "viewandBought",
       "productList": {

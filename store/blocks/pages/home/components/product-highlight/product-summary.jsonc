@@ -1,0 +1,12 @@
+{
+    "product-summary.shelf#product-highlight": {
+        "title": "Vitrine de Produto Destaque",
+        "children": [
+            "product-installments#new-shelf-installments", // Preço aqui
+            "flex-layout.col#shelf-buy-button" // Botao de compra aqui
+        ],
+        "props": {
+            "blockClass": "main-shelf-new" // Pode ser necessario ajustar
+        }
+    }
+}
