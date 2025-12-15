@@ -28,7 +28,8 @@
 }
 
 :global(.vtex-container-container--menu-mobile-controls) .minicartWrapperContainer .minicartContainer .openIconContainer .minicartIconContainer::before {
-    content: "Sacola ";
+    /* content: "Sacola "; */
+    content: "Meu Carrinho";
     white-space: pre;
     font-size: 14px;
     font-weight: 700;
@@ -39,13 +40,13 @@
     order: 3
 }
 
-:global(.vtex-container-container--menu-mobile-controls) .minicartWrapperContainer .minicartContainer .openIconContainer .minicartIconContainer::after {
+/* :global(.vtex-container-container--menu-mobile-controls) .minicartWrapperContainer .minicartContainer .openIconContainer .minicartIconContainer::after {
     content: " itens";
     white-space: pre;
     font-size: 14px;
     font-weight: 400;
     order: 4
-}
+} */
 
 :global(.vtex-container-container--menu-mobile-controls) .minicartWrapperContainer .minicartContainer .openIconContainer :global(.vtex-button) {
     height: 100%;

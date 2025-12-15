@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-rich-text-0-x-container--footer-bottom-text .vtex-rich-text-0-x-paragraph { */
+    .container--footer-bottom-text .paragraph {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        padding: 28px 0 38px 0
+    }
+    
+}

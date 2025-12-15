@@ -104,7 +104,8 @@
 				{
 					"name": "list",
 					"component": "ListSummary",
-					"itemsPerRow": 1
+					// "itemsPerRow": 1
+					"itemsPerRow": 3 // Correcao para listar corretamente os produtos na busca livre Desktop
 				},
 				{
 					"name": "grid",

@@ -384,17 +384,10 @@
   },
   "flex-layout.row#product-page-price": {
     "children": [
-      // "container#shelf-product-listPrice",
-      
       // Padrao de preço 1 - Versao original Edson - Destaque para o preço no Pix
-      "container#product-low-price" // No arquivo product-prices.jsonc
-      //
-      ,
+      "container#product-low-price", // No arquivo product-prices.jsonc
       // Padrao de preço 2 - Versao destaque para o preço em 10x
       "container#product-high-price" // No arquivo product-prices.jsonc
-      //
-
-      // "flex-layout.col#installments-content" // No arquivo product-prices.jsonc
     ],
     "props": {
       "blockClass": "product-page-price",
@@ -417,7 +410,9 @@
     }
   },
   "flex-layout.col#product-price": {
-    "children": ["product-selling-price#product-page-price"],
+    "children": [
+      "product-selling-price#product-page-price"
+    ],
     "props": {
       "blockClass": "product-price"
     }

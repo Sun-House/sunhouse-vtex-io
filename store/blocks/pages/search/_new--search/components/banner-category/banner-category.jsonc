@@ -12,8 +12,10 @@
             "callToActionMode": "none",
             // "callToActionText": "Aproveitar",
             // "callToActionUrl": "/", // A ser definido pelo Site Editor
-			"imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/1c19f9c1-db57-46fb-85c9-9c01948bbf14___0e0c2e46c327b6e6d64c562eeb2cc22e.png",
-			"mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/1c19f9c1-db57-46fb-85c9-9c01948bbf14___0e0c2e46c327b6e6d64c562eeb2cc22e.png",
+			// "imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/1c19f9c1-db57-46fb-85c9-9c01948bbf14___0e0c2e46c327b6e6d64c562eeb2cc22e.png",
+			// "mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/1c19f9c1-db57-46fb-85c9-9c01948bbf14___0e0c2e46c327b6e6d64c562eeb2cc22e.png",
+            "imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/b9986364-10d2-4f2f-bec6-4888402b196b___64eec9f2a5bc7ac77e8900973ade7851.png",
+			"mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/b9986364-10d2-4f2f-bec6-4888402b196b___64eec9f2a5bc7ac77e8900973ade7851.png",
             "imageAltText": "Texto ALT para SEO",
 			"fetchpriority": "auto",
 			"preload": true,

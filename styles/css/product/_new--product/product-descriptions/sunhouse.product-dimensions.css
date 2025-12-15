@@ -39,3 +39,21 @@
     font-weight: 700;
     border-bottom: unset
 }
+
+/* .sunhouse-product-dimensions-0-x-label--product-dimensions-assembled::after { */
+.label--product-dimensions-assembled::after {
+    content: "— Dimensões do Produto Montado";
+    margin-left: 12px;
+    opacity: 0;
+    transition: all .3s ease-in-out
+}
+
+/* .sunhouse-product-dimensions-0-x-dimension--product-dimensions-assembled:hover .sunhouse-product-dimensions-0-x-label--product-dimensions-assembled::after { */
+.dimension--product-dimensions-assembled:hover .label--product-dimensions-assembled::after {
+    opacity: 1
+}
+
+/* .sunhouse-product-dimensions-0-x-dimension--product-dimensions-assembled--weight .sunhouse-product-dimensions-0-x-label--product-dimensions-assembled::after { */
+.dimension--product-dimensions-assembled--weight .label--product-dimensions-assembled::after {
+    content: ""
+}

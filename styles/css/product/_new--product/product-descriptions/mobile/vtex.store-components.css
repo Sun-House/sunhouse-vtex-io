@@ -1,0 +1,18 @@
+@media screen and (max-width: 1024px) {
+
+    .productNameContainer,
+    .productBrandContainer--product-brand {
+        text-align: center
+    }
+
+    .productBrandContainer--product-brand {
+        margin-top: -10px;
+        margin-bottom: 24px
+    }
+
+    /* .vtex-store-components-3-x-productDescriptionText--product-description_right-text { */
+    .productDescriptionText--product-description_right-text {
+        margin: 28px 18px 0 18px
+    }
+    
+}

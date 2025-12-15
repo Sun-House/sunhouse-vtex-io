@@ -3,7 +3,9 @@
     "blocks": ["product-list-content-desktop"]
   },
   "product-list-content-desktop": {
-    "children": ["flex-layout.row#minicart-product.desktop"]
+    "children": [
+      "flex-layout.row#minicart-product.desktop"
+    ]
   },
   "flex-layout.row#minicart-product.desktop": {
     "children": [
@@ -19,7 +21,9 @@
     }
   },
   "flex-layout.col#minicart-image.desktop": {
-    "children": ["product-list-image"],
+    "children": [
+      "product-list-image"
+    ],
     "props": {
       "blockClass": "minicart-image",
       "verticalAlign": "middle"
@@ -29,7 +33,11 @@
     "children": [
       "flex-layout.row#minicart-name",
       "flex-layout.row#line-spacer",
-      // "flex-layout.row#minicart-sku-name",
+      
+      // Gera todas as opcoes de variacao do produto selecionadas
+      "flex-layout.row#minicart-sku-name",
+      //
+      
       "flex-layout.row#minicart-quantity-price"
     ],
     "props": {
@@ -40,13 +48,17 @@
     }
   },
   "flex-layout.row#minicart-name": {
-    "children": ["vtex.product-list:product-name"],
+    "children": [
+      "vtex.product-list:product-name"
+    ],
     "props": {
       "blockClass": "minicart-name"
     }
   },
   "flex-layout.row#minicart-sku-name": {
-    "children": ["vtex.product-list:product-variations"],
+    "children": [
+      "vtex.product-list:product-variations"
+    ],
     "props": {
       "blockClass": "minicart-sku-name"
     }
@@ -64,7 +76,9 @@
     }
   },
   "flex-layout.col#minicart-quantity.desktop": {
-    "children": ["quantity-selector#minicart-quantity"],
+    "children": [
+      "quantity-selector#minicart-quantity"
+    ],
     "props": {
       "preventHorizontalStretch": "true",
       "verticalAlign": "bottom",
@@ -78,7 +92,9 @@
     }
   },
   "flex-layout.col#minicart-price.desktop": {
-    "children": ["price#minicart-price"],
+    "children": [
+      "price#minicart-price"
+    ],
     "props": {
       "blockClass": "minicart-price",
       "preventVerticalStretch": true,
@@ -97,7 +113,10 @@
     }
   },
   "flex-layout.col#minicart-remove.desktop": {
-    "children": ["remove-button", "rich-text#minicart-remove"],
+    "children": [
+      "remove-button",
+      "rich-text#minicart-remove"
+    ],
     "props": {
       "verticalAlign": "middle",
       "horizontalAlign": "center",

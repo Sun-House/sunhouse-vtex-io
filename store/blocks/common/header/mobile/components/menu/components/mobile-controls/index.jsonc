@@ -13,7 +13,11 @@
     "props": {
       "blockClass": "menu-mobile-controls--logged"
     },
-    "children": ["link#mobile-account", "minicart.v2", "link#mobile-wishlist"]
+    "children": [
+      // "link#mobile-account",
+      "minicart.v2",
+      "link#mobile-wishlist"
+    ]
   },
 
   "container#mobile-login": {

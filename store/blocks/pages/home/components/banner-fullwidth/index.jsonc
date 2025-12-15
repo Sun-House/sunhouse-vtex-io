@@ -25,8 +25,8 @@
             "callToActionMode": "button",
             "callToActionText": "Conheça",
             "callToActionUrl": "/", // A ser definido pelo Site Editor
-			"imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/0a74edaf-ba4c-4a14-87cf-f8662b531cda___9adbd1dac1bb2760cb724f63cd46a53e.jpg",
-			"mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/0a74edaf-ba4c-4a14-87cf-f8662b531cda___9adbd1dac1bb2760cb724f63cd46a53e.jpg",
+			"imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/d1f442e3-67f8-4ee5-af54-68653a3d9a0d___1d378e446447b2f2990f5323f07e0a1d.png",
+			"mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/d1f442e3-67f8-4ee5-af54-68653a3d9a0d___1d378e446447b2f2990f5323f07e0a1d.png",
             "imageAltText": "Texto ALT para SEO",
 			"fetchpriority": "auto",
 			"preload": true,

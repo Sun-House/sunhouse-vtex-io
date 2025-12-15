@@ -97,8 +97,8 @@
   },
   "flex-layout.col#minicart-quantity": {
     "children": [
-      "rich-text#minicart-title",
-      "minicart-quantity-badge#header-quantity"
+      "rich-text#minicart-title"
+      // "minicart-quantity-badge#header-quantity"
     ],
     "props": {
       "blockClass": "header-quantity",
@@ -108,7 +108,7 @@
   "rich-text#minicart-title": {
     "title": "Texto Sacola",
     "props": {
-      "text": "Carrinho",
+      "text": "Meu Carrinho",
       "blockClass": "minicart-title"
     }
   },

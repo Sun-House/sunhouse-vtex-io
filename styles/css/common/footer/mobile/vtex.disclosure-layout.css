@@ -1,0 +1,13 @@
+@media screen and (max-width: 1024px) {
+
+    .trigger--footer-title {
+        background-color: unset;
+        height: 62px
+    }
+
+    .trigger :global(.vtex-store-components-3-x-arrowLine),
+    .trigger :global(.vtex-store-components-3-x-arrowLineRotate) {
+        color: #e1dede
+    }
+    
+}

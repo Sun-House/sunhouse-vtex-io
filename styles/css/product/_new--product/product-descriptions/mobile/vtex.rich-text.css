@@ -1,0 +1,26 @@
+@media screen and (max-width: 1024px) {
+    
+    /* Pode afetar negativamente a descricao custom da Elements */
+    .wrapper--product-description-simple,
+    .wrapper--wrapper__textoDescricao-esquerda {
+        margin: 28px 18px 0 18px
+    }
+
+    /* Aplica para todos os headings da descricao do produto Mobile */
+    .container--product-description .heading--product-description {
+        text-align: left;
+        line-height: 1.2;
+        font-size: 38px
+    }
+
+    .container--product-description-text {
+        margin: 0 18px 0 18px
+    }
+
+    /* Pode afetar negativamente outros elementos */
+    .heading--also-seen,
+    .heading--common-title {
+        margin: 0 18px 0 18px
+    }
+
+}

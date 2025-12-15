@@ -27,12 +27,13 @@
     "children": [
       // "container#newsletter", - Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
       "flex-layout.row#footer-content-mobile",
-      "container#social-medias-mobile",
-      "flex-layout.row#footer-payments-title",
-      "flex-layout.row#footer-payments-content",
+      // "container#social-medias-mobile",
+      "flex-layout.row#footer-social",
+      // "flex-layout.row#footer-payments-title",
+      // "flex-layout.row#footer-payments-content",
       "flex-layout.row#footer-security-title",
       "flex-layout.row#footer-security-content",
-      "container#footer-selo-mobile",
+      // "container#footer-selo-mobile",
       "flex-layout.row#footer-bottom"
     ],
     "props": {
@@ -51,14 +52,17 @@
   },
   "footer-layout.mobile#without-seo-info": {
     "children": [
-      // "container#newsletter", - Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
+      // Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
+      // "container#newsletter",
+      //
       "flex-layout.row#footer-content-mobile",
-      "container#social-medias-mobile",
-      "flex-layout.row#footer-payments-title",
-      "flex-layout.row#footer-payments-content",
+      // "container#social-medias-mobile",
+      "flex-layout.row#footer-social",
+      // "flex-layout.row#footer-payments-title",
+      // "flex-layout.row#footer-payments-content",
       "flex-layout.row#footer-security-title",
       "flex-layout.row#footer-security-content",
-      "container#footer-selo-mobile",
+      // "container#footer-selo-mobile",
       "flex-layout.row#footer-bottom"
     ],
     "props": {

@@ -1,0 +1,19 @@
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-flex-layout-0-x-flexRowContent--footer-security-content { */
+    .flexRowContent--footer-security-content {
+        align-items: center
+    }
+
+    /* .vtex-flex-layout-0-x-flexCol--footer-bottom-right { */
+    .flexCol--footer-bottom-right {
+        flex-direction: row;
+        justify-content: center
+    }
+
+    /* .vtex-flex-layout-0-x-flexRow--footer-payments-list { */
+    .flexRow--footer-payments-list {
+        padding-bottom: 128px !important        
+    }
+    
+}

@@ -7,7 +7,13 @@
 :global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h3,
 :global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h4,
 :global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h5,
-:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h6 {
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h6,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h1 b,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h2 b,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h3 b,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h4 b,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h5 b,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h6 b {
     font-family: "Bai Jamjuree", sans-serif !important;
     font-size: 42px;
     font-weight: 500;
@@ -23,34 +29,52 @@
     font-weight: 500 !important
 }
 
-:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h2 {
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h2,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h2 b {
     font-size: 40px !important
     /* margin: 24px 0 38px 0 */
 }
 
-:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h3 {
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h3,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h3 b {
     font-size: 37px !important;
     margin: 24px 0 38px 0
 }
 
-:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h4 {
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h4,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h4 b {
     font-size: 33px !important;
     margin: 24px 0 38px 0
 }
 
-:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h5 {
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h5,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h5 b {
     font-size: 29px !important;
     margin: 24px 0 38px 0
 }
 
-:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h6 {
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h6,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) h6 b {
     font-size: 24px !important;
     margin: 24px 0 38px 0
 }
 
-:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) span {
-    font-family: "Onest", sans-serif !important;
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) span,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) span b,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) p,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) p b,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) ul,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) ul li,
+:global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) li {
+    font-family: "Onest", sans-serif;
     font-size: 16px;
     color: #161413 !important;
     line-height: 1.5
 }
+
+/* :global(.render-route-store-product)  :global(.vtex-store-components-3-x-productDescriptionText) div {
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    color: #161413 !important;
+    line-height: 1.5
+} */

@@ -1,0 +1,17 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-super-menu-2-x-navWrapper--mobile-category-menu-all .sunhouse-super-menu-2-x-item .sunhouse-super-menu-2-x-title .sunhouse-super-menu-2-x-titleLink .sunhouse-super-menu-2-x-label .sunhouse-super-menu-2-x-paragraph { */
+    .navWrapper--mobile-category-menu-all .item .title .titleLink .label .paragraph {
+        font-size: 16px !important
+    }
+
+    /* .sunhouse-super-menu-2-x-navWrapper--mobile-category-menu-all .sunhouse-super-menu-2-x-item[data-category="outlet"] .sunhouse-super-menu-2-x-paragraph,
+    .sunhouse-super-menu-2-x-navWrapper--mobile-category-menu-all .sunhouse-super-menu-2-x-item[data-category="lancamentos"] .sunhouse-super-menu-2-x-paragraph,
+    .sunhouse-super-menu-2-x-navWrapper--mobile-category-menu-all .sunhouse-super-menu-2-x-item[data-category="pronta-entrega"] .sunhouse-super-menu-2-x-paragraph { */
+    .navWrapper--mobile-category-menu-all .item[data-category="outlet"] .paragraph,
+    .navWrapper--mobile-category-menu-all .item[data-category="lancamentos"] .paragraph,
+    .navWrapper--mobile-category-menu-all .item[data-category="pronta-entrega"] .paragraph {
+        font-weight: 600
+    }
+    
+}

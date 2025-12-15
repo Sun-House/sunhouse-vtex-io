@@ -1,9 +1,9 @@
 @media screen and (max-width: 1024px) {
 
     /* .vtex-flex-layout-0-x-flexCol--product-main-mobile_wrapper { */
-    .flexCol--product-main-mobile_wrapper {
-        /* height: 100vh */
-    }
+    /* .flexCol--product-main-mobile_wrapper {
+        height: 100vh
+    } */
 
     /* .vtex-flex-layout-0-x-flexCol--product-main-mobile_wrapper .vtex-flex-layout-0-x-flexColChild--product-main-mobile_wrapper:first-child { */
     /* .flexCol--product-main-mobile_wrapper .flexColChild--product-main-mobile_wrapper:first-child {
@@ -29,6 +29,10 @@
         max-height: 117vh;
         top: 0;
         left: 0;
+
+        /* A principio ficara oculto no mobile, ate ser corretamente desenhado para tal */
+        display: none;
+        /* A principio ficara oculto no mobile, ate ser corretamente desenhado para tal */
         
         /* DEBUG */
         /* z-index: 5;
@@ -39,7 +43,8 @@
 
     /* .vtex-flex-layout-0-x-flexRow--breadcrumb-product { */
     .flexRow--breadcrumb-product {
-        margin-top: 125px
+        /* margin-top: 125px */
+        margin-top: 28px
     }
 
 }

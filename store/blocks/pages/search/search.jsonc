@@ -50,18 +50,15 @@
     }
   },
   
-  //
   "container#banner-department-desktop": {
-    "title": "Banner-Departamento/Categoria",
-    // "children": ["image#search-result"],
+    "title": "Banner Destaque",
     "children": [
       "info-card#banner-category"
     ],
     "props": {
-      "blockClass": "search-banner"
+      "blockClass": ["search-banner", "highlight-category-banner"]
     }
   },
-  //
 
   // Componente desativado no Refresh - Precisa ser removido
   "image#search-result": {
@@ -77,14 +74,20 @@
     "blocks": [
       "sunhouse.search-result:search-result-layout.desktop#cluster-and-search",
       "sunhouse.search-result:search-result-layout.mobile#cluster-and-search",
+      
+      // Esse precisa ser reajustado para a nova Gallery
       "sunhouse.search-result:search-not-found-layout"
+      //
     ]
   },
   "sunhouse.search-result:search-result-layout": {
     "blocks": [
       "sunhouse.search-result:search-result-layout.desktop",
       "sunhouse.search-result:search-result-layout.mobile",
+
+      // Esse precisa ser reajustado para a nova Gallery
       "sunhouse.search-result:search-not-found-layout"
+      //
     ]
   },
 
@@ -459,7 +462,6 @@
 	"flex-layout.col#search-content.desktop": {
 		"children": [
       "container#spacing-default",
-      //
 			"flex-layout.row#wrapper_post-header-line.desktop",
       "flex-layout.row#fetch-less",
       "hover-container#search-content-new-shelf",
@@ -473,7 +475,6 @@
 	"flex-layout.col#filter-content.desktop": {
 		"children": [
       "container#spacing-default",
-      //
 			"vtex.search-result:filter-navigator.v3"
 		],
 		"props": {

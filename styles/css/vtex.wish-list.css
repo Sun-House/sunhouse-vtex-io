@@ -98,4 +98,14 @@
         margin-top: -10px;
     }
 
+    /* .vtex-wish-list-1-x-wishlistIconContainer--product-page .vtex-button { */
+    .wishlistIconContainer--product-page :global(.vtex-button) {
+        right: 8px !important
+    }
+
+    /* .vtex-wish-list-1-x-wishlistIconContainer .vtex-wish-list-1-x-wishlistIcon.vtex-wish-list-1-x-outline::after { */
+    .wishlistIconContainer .wishlistIcon.outline::after {
+        font-size: 32px !important
+    }
+
 }

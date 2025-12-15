@@ -7,13 +7,20 @@
     "children": [
       "flex-layout.row#not-found-container",
       "container#spacing-default",
-      "list-context.image-list#banner-grid",
+      // "list-context.image-list#banner-grid",
       "container#spacing-default",
-      // "flex-layout.row#shelf-home01", - Substituir por outro componente ou shelf nova
-      "container#spacing-default",
-      "container#blog-cards",
+      // "flex-layout.row#shelf-home01", - Sera descontinuado no Refresh
+      // "container#spacing-default",
+
+      // Substituir por novo componente de shelf category global que será criado para a Home
+      // "container#blog-cards",
+      //
+
       "container#spacing-default"
-    ]
+    ],
+    "props": {
+      "blockClass": "not-found-old"
+    }
   },
   // "responsive-layout.desktop#empty-search-bottom": {
   //   "children": [
@@ -40,7 +47,9 @@
   //   ]
   // },
   "flex-layout.row#not-found-container": {
-    "children": ["flex-layout.col#not-found-container"],
+    "children": [
+      "flex-layout.col#not-found-container"
+    ],
     "props": {
       "blockClass": "not-found-container"
     }
@@ -55,13 +64,17 @@
     }
   },
   "flex-layout.row#search-breadcrumb-not-found": {
-    "children": ["breadcrumb.search#search-not-found"],
+    "children": [
+      "breadcrumb.search#search-not-found"
+    ],
     "props": {
       "blockClass": "not-found-breadcrumb"
     }
   },
   "flex-layout.row#not-found-content": {
-    "children": ["flex-layout.col#not-found-content"],
+    "children": [
+      "flex-layout.col#not-found-content"
+    ],
     "props": {
       "blockClass": "not-found-content"
     }
@@ -102,7 +115,9 @@
     }
   },
   "flex-layout.row#not-found-content-bottom": {
-    "children": ["flex-layout.col#not-found-content-bottom"],
+    "children": [
+      "flex-layout.col#not-found-content-bottom"
+    ],
     "props": {
       "blockClass": "not-found-content-bottom"
     }
@@ -110,7 +125,7 @@
   "flex-layout.col#not-found-content-bottom": {
     "children": [
       "rich-text#not-found-text",
-      "flex-layout.row#not-found-search-bar",
+      // "flex-layout.row#not-found-search-bar",
       "link#back-to-home"
     ],
     "props": {
@@ -132,7 +147,9 @@
     }
   },
   "sunhouse.store-components:search-bar#not-found": {
-    "blocks": ["sunhouse.store-components:autocomplete-result-list"],
+    "blocks": [
+      "sunhouse.store-components:autocomplete-result-list"
+    ],
     "props": {
       "displayMode": "search-button",
       "placeholder": "Faça sua busca novamente",

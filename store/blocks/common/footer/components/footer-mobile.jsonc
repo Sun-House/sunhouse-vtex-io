@@ -119,7 +119,7 @@
 
   //schedules
   "flex-layout.col#footer-schedules": {
-    "title": "Pagamentos",
+    "title": "Footer Horarios",
     "children": [
       "flex-layout.row#footer-schedules-title",
       "flex-layout.row#footer-mobile-schedules"
