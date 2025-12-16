@@ -1,0 +1,315 @@
+{
+    "container#showcase-slider": {
+        "title": "Showcase Slider",
+        "children": [
+            "rich-text#showcase-slider-title",
+            "responsive-layout.desktop#showcase-slider",
+            "responsive-layout.mobile#showcase-slider"
+        ],
+        "props": {
+            "blockClass": "showcase-slider"
+        }
+    },
+
+    //
+    // Image Text List - Nao sendo usado agora
+    "image-text-list#showcase-slider_images": {
+        "title": "Slider Images",
+        "children": [
+            // "embla-carousel#showcase-slider"
+        ],
+        "props": {
+            "imageTextArray": [
+                {
+                    "imageText": "Categoria 1",
+                    "image": "https://dummyimage.com/600x500",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria 2",
+                    "image": "https://dummyimage.com/600x500",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria 3",
+                    "image": "https://dummyimage.com/600x500",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria 4",
+                    "image": "https://dummyimage.com/600x500",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria 5",
+                    "image": "https://dummyimage.com/600x500",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria 6",
+                    "image": "https://dummyimage.com/600x500",
+                    "link": "#"
+                }
+            ],
+            "blockClass": ""
+        }
+    },
+    //
+
+    // NAO SENDO USADO AGORA
+    // NAO MODIFICAR, USAR ESSE DE BASE PARA PROPS
+    "embla-carousel#base": {
+        "props": {
+            // Props listadas abaixo sao todas as possiveis para esse app custom
+            "options": {
+                "dots": true,
+                "navigation": true,
+                "slidesPerView": 5,
+                "loop": false,
+                "align": "start",
+                "slidesToScroll": 1,
+                "direction": "ltr",
+                "dragFree": false,
+                "alwaysShowNavigation": false,
+                "dotsAndArrowsTogether": false,
+                "selectedOnClick": false,
+                "forceLoop": false,
+                "preventClick": true,
+                "disabledPreventClick": false,
+                "pauseYoutube": false,
+                "autoplay": {
+                    "delay": 3000,
+                    "stopOnInteraction": true,
+                    "playOnInit": false
+                },
+                "breakpoints": {
+                    "(min-width: 768px)": {
+                        "slidesPerView": 3
+                    },
+                    "(min-width: 1024px)": {
+                        "slidesPerView": 5
+                    }
+                },
+                "startIndex": 0,
+                "duration": 25,
+                "axis": "x"
+            },
+            "render": "both",
+            "filterByListContexts": [],
+            "blockClass": "showcase-slider"
+        }
+    },
+    //
+    //
+
+    // Titulo do Showcase Slider
+    "rich-text#showcase-slider-title": {
+        "title": "Título do Showcase Slider",
+        "props": {
+            "text": "## Cada ambiente, uma nova história para viver",
+            "blockClass": "showcase-slider-title"
+        }
+    },
+
+    "responsive-layout.desktop#showcase-slider": {
+        "children": [
+            "embla-carousel#showcase-slider"
+        ]
+    },
+    "responsive-layout.mobile#showcase-slider": {
+        "children": [
+            "embla-carousel#showcase-slider-mobile"
+        ]
+    },
+
+    // Embla Slider Component do Showcase Slider - desktop
+    "embla-carousel#showcase-slider": {
+        "title": "Showcase Carrossel Desktop",
+        "children": [
+            "flex-layout.row#sala-estar", // sala-estar
+            "flex-layout.row#escritorio", // escritório
+            "flex-layout.row#area-externa", // área externa
+            "flex-layout.row#quarto", // quarto
+            "flex-layout.row#sala-jantar" // sala-jantar
+        ],
+        "props": {
+            "options": {
+                "align": "center",
+                "slidesPerView": 1,
+                "loop": true, // Buga ao volta para o primeiro slide
+                "forceLoop": true, // Tambem buga ao volta para o primeiro slide, mas esse buga mais, portanto, vou manter sem ele
+                "navigation": true,
+                "dots": false,
+                "slidesToScroll": 1,
+                // "dragFree": true,
+                "dragFree": false,
+                "preventClick": false,
+                "disabledPreventClick": false
+            },
+            "render": "children",
+            "blockClass": "ambientes-carousel"
+        }
+    },
+
+    // Embla Slider Component do Showcase Slider - mobile
+    "embla-carousel#showcase-slider-mobile": {
+        "title": "Showcase Carrossel Mobile",
+        "children": [
+            "flex-layout.row#sala-estar", // sala-estar
+            "flex-layout.row#escritorio", // escritório
+            "flex-layout.row#area-externa", // área externa
+            "flex-layout.row#quarto", // quarto
+            "flex-layout.row#sala-jantar" // sala-jantar
+        ],
+        "props": {
+            "options": {
+                "navigation": false,
+                "dots": true,
+                // "dots": false,
+                "draggable": true,
+                "loop": false,
+                "disabledPreventClick": true,
+                "align": "start"
+            },
+            "render": "children",
+            "blockClass": ["shelf", "banner-shelf", "shelf--mobile", "showcase-slider-mobile"]
+        }
+    },
+
+    // A ordem abaixo será definida dentro do 'children' do 'embla-carousel#showcase-slider'
+    "flex-layout.row#sala-jantar": {
+        "children": [
+            "image#sala-jantar",
+            "rich-text#label-sala-jantar"
+        ],
+        "props": {
+            "blockClass": "slide-ambiente"
+        }
+    },
+    "image#sala-jantar": {
+        "title": "Imagem da Categoria 1",
+        "props": {
+            "src": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/c1b71691-df47-4dc7-993e-cba6a49aae18___3e2efa3d880e01591071e161d8f96451.png",
+            "link": {
+                "url": "/moveis-por-ambiente/sala-de-jantar"
+            },
+            "blockClass": "slide-image"
+        }
+    },
+    "rich-text#label-sala-jantar": {
+        "title": "Label da Categoria 1",
+        "props": {
+            "text": "Sala de Jantar",
+            "blockClass": "label-vertical"
+        }
+    },
+
+    "flex-layout.row#quarto": {
+        "children": [
+            "image#quarto",
+            "rich-text#label-quarto"
+        ],
+        "props": {
+            "blockClass": "slide-ambiente"
+        }
+    },
+    "image#quarto": {
+        "title": "Imagem da Categoria 2",
+        "props": {
+            "src": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/ead671f0-33f5-4e4d-ae59-1cfcb0898dc4___bc80e793917038ccd290491753198120.png",
+            "link": {
+                "url": "/moveis-por-ambiente/dormitorios"
+            },
+            "blockClass": "slide-image"
+        }
+    },
+    "rich-text#label-quarto": {
+        "title": "Label da Categoria 2",
+        "props": {
+            "text": "Dormitório",
+            "blockClass": "label-vertical"
+        }
+    },
+
+    "flex-layout.row#sala-estar": {
+        "children": [
+            "image#sala-estar",
+            "rich-text#label-sala-estar"
+        ],
+        "props": {
+            "blockClass": "slide-ambiente"
+        }
+    },
+    "image#sala-estar": {
+        "title": "Imagem da Categoria 3",
+        "props": {
+            "src": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/98cfc171-bcec-4aba-9e74-65bd74b68cf1___f34e2048cdb266d532edda53643932c6.png",
+            "link": {
+                "url": "/moveis-por-ambiente/sala-de-estar"
+            },
+            "blockClass": "slide-image"
+        }
+    },
+    "rich-text#label-sala-estar": {
+        "title": "Label da Categoria 3",
+        "props": {
+            "text": "Sala de Estar",
+            "blockClass": "label-vertical"
+        }
+    },
+
+    "flex-layout.row#escritorio": {
+        "children": [
+            "image#escritorio",
+            "rich-text#label-escritorio"
+        ],
+        "props": {
+            "blockClass": "slide-ambiente"
+        }
+    },
+    "image#escritorio": {
+        "title": "Imagem da Categoria 4",
+        "props": {
+            "src": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/33a8309d-31d2-466b-8165-1f5d3263efd3___0e6e76cbd8e0c2d8d69b59b4b92d0c04.png",
+            "link": {
+                "url": "/moveis-por-ambiente/escritorio"
+            },
+            "blockClass": "slide-image"
+        }
+    },
+    "rich-text#label-escritorio": {
+        "title": "Label da Categoria 4",
+        "props": {
+            "text": "Escritório",
+            "blockClass": "label-vertical"
+        }
+    },
+
+    "flex-layout.row#area-externa": {
+        "children": [
+            "image#area-externa",
+            "rich-text#label-area-externa"
+        ],
+        "props": {
+            "blockClass": "slide-ambiente"
+        }
+    },
+    "image#area-externa": {
+        "title": "Imagem da Categoria 5",
+        "props": {
+            // "src": "https://dummyimage.com/500x600", // Mantive aqui para base
+            "src": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/e15f72de-c65d-49b3-9625-8206f5834e9f___f4e5b3ccda938800194e090c83a6dd51.png",
+            "link": {
+                "url": "/moveis-por-ambiente/area-externa"
+            },
+            "blockClass": "slide-image"
+        }
+    },
+    "rich-text#label-area-externa": {
+        "title": "Label da Categoria 5",
+        "props": {
+            "text": "Área Externa",
+            "blockClass": "label-vertical"
+        }
+    }
+}

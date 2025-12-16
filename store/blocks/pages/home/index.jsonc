@@ -25,7 +25,6 @@
       // Fullwidth Static Banner
       // Concluido! (desktop)
       "container#fullwidth-static-banner",
-      //
 
       // Shelf Grid
       "container#shelf-home03", // Mudar nome posteriormente
@@ -53,7 +52,13 @@
       "container#spacing-default",
 
       // About Text with FAQ
-      "container#pre-footer-about"
+      // Concluido! (desktop)
+      "container#pre-footer-about",
+
+      // Showcase Slider
+      // Concluido! (desktop)
+      "container#showcase-slider"
+      //
     ]
   }
 }

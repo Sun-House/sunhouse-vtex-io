@@ -14,7 +14,7 @@
   "flex-layout.col#footer-content-mobile": {
     "children": [
       "image#logo-mobile-footer",
-      "container#wrapper-teste",
+      // "container#wrapper-teste",
       "disclosure-layout-group#footer-mobile"
     ],
     "props": {

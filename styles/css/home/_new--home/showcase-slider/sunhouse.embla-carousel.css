@@ -1,0 +1,113 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* Cada slide */
+    /* .sunhouse-embla-carousel-1-x-emblaSlide--ambientes-carousel { */
+    .emblaSlide--ambientes-carousel {
+        min-width: 25%; /* Para 5 slides visíveis */
+        /* min-width: auto; */
+        padding: 0 0.5rem;
+        width: min-content; /* Acredito que nao esteja funcionando */
+        transition: all .3s ease-in-out;
+        
+        /* Nao sei se os keys abaixo sao necessarios e estão de fato funcionando */
+        scroll-snap-align: center;
+        scroll-snap-stop: always
+    }
+
+    /* .sunhouse-embla-carousel-1-x-emblaSlide--ambientes-carousel:hover { */
+    .emblaSlide--ambientes-carousel:hover {
+        opacity: 1 !important
+    }
+
+    /* .sunhouse-embla-carousel-1-x-emblaSlide--ambientes-carousel--isSelected { */
+    .emblaSlide--ambientes-carousel--isSelected {
+        scale: 1.1;
+        z-index: 1 /* Fix para o slide principal nao ficar rente ou abaixo dos slides laterais */
+    }
+    
+    /* Slides laterais - efeito de fade */
+    /* .sunhouse-embla-carousel-1-x-emblaSlide--ambientes-carousel:not(.sunhouse-embla-carousel-1-x-emblaSlide--ambientes-carousel--isSelected) { */
+    .emblaSlide--ambientes-carousel:not(.emblaSlide--ambientes-carousel--isSelected) {
+        opacity: 0.7
+    }
+
+    /* Nao sei se os keys abaixo sao necessarios e estão de fato funcionando */
+    /* .sunhouse-embla-carousel-1-x-emblaContainer { */
+    /* .emblaContainer {
+        scroll-snap-type: x mandatory
+    } */
+
+    /* Container do carrossel */
+    /* .sunhouse-embla-carousel-1-x-container--ambientes-carousel { */
+    .container--ambientes-carousel {
+        width: 100%;
+        overflow: visible
+    }
+    
+    /* Container interno do slide */
+    /* .sunhouse-embla-carousel-1-x-emblaInnerSlide--ambientes-carousel { */
+    .emblaInnerSlide--ambientes-carousel {
+        position: relative;
+        height: 100%
+    }
+
+    /* Slider Arrows - Precisam de melhorias, mas para o lançamento do MVP estao funcionando OK */
+    /* .sunhouse-embla-carousel-1-x-containerNavigation--ambientes-carousel { */
+    .containerNavigation--ambientes-carousel {
+        position: relative;
+        top: -538px;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 0
+    }
+
+    /* .sunhouse-embla-carousel-1-x-prevButton--ambientes-carousel,
+    .sunhouse-embla-carousel-1-x-nextButton--ambientes-carousel { */
+    .prevButton--ambientes-carousel,
+    .nextButton--ambientes-carousel {
+        width: 36%;
+        min-height: 535px;
+        height: auto;
+        background: unset;
+        border: unset;
+        font-size: 0
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    /* .emblaSlide--ambientes-carousel { */
+    .emblaSlide--showcase-slider-mobile {
+        transition: all .3s ease-in-out
+    }
+
+    .container--showcase-slider-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: visible
+    }
+
+    /* .emblaSlide--ambientes-carousel--isSelected */
+    .emblaSlide--showcase-slider-mobile--isSelected {
+        scale: 1.05;
+        z-index: 1;
+        margin-top: -20px
+    }
+
+    /* .emblaSlide--ambientes-carousel:not(.emblaSlide--ambientes-carousel--isSelected) { */
+    .emblaSlide--showcase-slider-mobile:not(.emblaSlide--showcase-slider-mobile--isSelected) {
+        opacity: 0.7
+    }
+
+    /* .sunhouse-embla-carousel-1-x-containerDots--showcase-slider-mobile { */
+    .containerDots--showcase-slider-mobile {
+        /* margin-top: 40px; */
+        padding-bottom: 48px
+    }
+
+}

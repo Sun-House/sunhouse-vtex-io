@@ -1,0 +1,85 @@
+.closeIconButton--minicart-footer-close {
+    /* background: #fff; */
+    /* border: 1px solid #161413; */
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* max-width: 228px; */
+    width: 100%;
+    /* height: 45px; */
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-family: "Open Sans", sans-serif; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #161413;
+    transition: all .3s
+}
+
+.closeIconButton--minicart-footer-close::before {
+    content: "\F12A";
+    font-family: "Bootstrap-Icons";
+    font-size: 24px;
+    margin-right: 12px;
+    color: #161413
+}
+
+/* .closeIconButton--minicart-footer-close:hover {
+    background: #ffe133;
+    border-color: #ffe133
+} */
+
+.closeIconButton--minicart-close-bottom {
+    background-color: #fff;
+    border: 1px solid #161413;
+    padding: 5px 10px;
+    color: #161413;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 45px;
+    align-items: center;
+    font-weight: 700
+}
+
+/* .closeIconButton--minicart-close-bottom:hover {
+    background-color: #ffe133;
+    border-color: #ffe133
+} */
+
+/* Mobile 1 */
+@media screen and (max-width: 1024px) {
+
+    .closeIconButton--minicart-close-button::before {
+        margin-right: 13.36px;
+        padding: 10px;
+        background-color: #fcfcfc;
+        font-size: 10px
+    }
+
+    .closeIconButton--minicart-footer-close {
+        max-width: initial;
+        width: 95%
+    }
+
+}
+
+/* Mobile 2 */
+@media screen and (max-width: 638px) {
+
+    .closeIconButton--minicart-footer-close {
+        width: 100%
+    }
+
+}

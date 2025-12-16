@@ -96,6 +96,7 @@
     "children": [
       // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result-cluster-and-search",
+      "container#showcase-slider",
       "container#search-seo",
       "container#spacing-default"
       // "container#blog-cards",
@@ -110,9 +111,10 @@
     "children": [
       // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result.mobile",
-      "container#search-seo",
+      "container#showcase-slider",
+      "container#search-seo"
       // "flex-layout.row#banners-slider"
-      "container#spacing-default"
+      // "container#spacing-default"
       // "container#blog-cards",
       // "container#spacing-default"
     ],
@@ -172,6 +174,7 @@
       //
       // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result.desktop",
+      "container#showcase-slider",
       "container#search-seo",
       // "flex-layout.row#banners-slider",
       "container#spacing-default"
@@ -210,9 +213,11 @@
     "title": "Search Mobile",
     "children": [
       "container#banner-department-mobile",
-      "container#categories-slider",
+      // "container#categories-slider",
+      "container#plp-category-grid",
       // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result.mobile",
+      "container#showcase-slider",
       "container#search-seo",
       "container#spacing-default"
       // "container#blog-cards",
@@ -234,9 +239,13 @@
   },
   "container#banner-department-mobile": {
     "title": "Banner Mobile - Mobile.",
-    "children": ["image#department-banner-mobile"],
+    "children": [
+      // "image#department-banner-mobile"
+      "info-card#banner-category"
+    ],
     "props": {
-      "blockClass": "banner-department-mobile"
+      // "blockClass": "banner-department-mobile"
+      "blockClass": ["banner-department-mobile", "highlight-category-banner"]
     }
   },
   "image#department-banner-mobile": {
@@ -288,8 +297,10 @@
   },
   "flex-layout.col#search-result.mobile": {
     "children": [
-      "flex-layout.row#filters-container.mobile",
+      // "flex-layout.row#filters-container.mobile",
       // "flex-layout.row#paged-controls-top", -> For Paged Controls
+      // "container#spacing-default",
+			"flex-layout.row#wrapper_post-header-line.mobile",
       "flex-layout.row#fetch-less",
       "flex-layout.row#search-content.mobile",
       // "flex-layout.row#paged-controls-bottom" -> For Paged Controls
@@ -510,7 +521,8 @@
 
   "flex-layout.row#search-content.mobile": {
     "children": [
-      "sunhouse.search-result:search-content"
+      // "sunhouse.search-result:search-content"
+      "vtex.search-result:search-content#new-shelf.mobile"
     ],
     "props": {
       "blockClass": "search-content"
@@ -523,6 +535,16 @@
       // "sunhouse.search-result:not-found"
       "vtex.search-result:gallery#new-shelf",
       "vtex.search-result:not-found#new-shelf"
+    ]
+  },
+
+  // Mobile
+  "vtex.search-result:search-content#new-shelf.mobile": {
+    "blocks": [
+      // "sunhouse.search-result:gallery",
+      // "sunhouse.search-result:not-found"
+      "vtex.search-result:gallery#new-shelf.mobile",
+      "vtex.search-result:not-found#new-shelf" // OK, esta de acordo para o lancamento do Refresh
     ]
   },
 

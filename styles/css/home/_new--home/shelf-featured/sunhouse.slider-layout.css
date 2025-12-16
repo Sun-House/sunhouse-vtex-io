@@ -32,5 +32,7 @@
 /* .sunhouse-container-1-x-container--shelf-featured .sunhouse-slider-layout-0-x-imageItem--main-shelf { */
 :global(.vtex-container-container--shelf-featured) .imageItem--main-shelf {
     border-radius: 4px;
-    max-height: 355px !important
+    min-height: 355px;
+    max-height: 355px !important;
+    object-fit: cover /* Esse atributo centraliza a imagem perfeitamente ao centro do slide, permitindo subir fotos de qualquer proporcao */
 }

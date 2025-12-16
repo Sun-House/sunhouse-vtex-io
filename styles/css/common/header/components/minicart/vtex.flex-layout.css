@@ -1,12 +1,14 @@
-/* Geral - mobile e desktop */
-/* .vtex-flex-layout-0-x-flexRow--minicart-sku-name { */
-/* .flexRow--minicart-sku-name {
-    margin: 16px 0 24px;
-} */
+/* .vtex-flex-layout-0-x-flexRowContent--minicart-footer-buttons { */
+.flexRowContent--minicart-footer-buttons {
+    flex-direction: column
+}
 
-/* .vtex-flex-layout-0-x-flexRow--minicart-sku-name::before { */
-/* .flexRow--minicart-sku-name::before {
-    content: "Personalização:";
-    font-size: 14px;
-    line-height: 2.4
-} */
+/* .vtex-flex-layout-0-x-flexRowContent--minicart-footer-buttons .vtex-flex-layout-0-x-stretchChildrenWidth { */
+.flexRowContent--minicart-footer-buttons .stretchChildrenWidth {
+    width: 100% !important
+}
+
+/* .vtex-flex-layout-0-x-flexRow--minicart-product:last-child { */
+.flexRow--minicart-product:last-child {
+    padding-bottom: 102px /* Fix para poder ver ultimo item do carrinho no caso de ter muitos no mesmo */
+}

@@ -123,7 +123,25 @@
 			"blockClass": "new-gallery"
         }
     },
+
+	// Galeria/Shelf de produtos - Mobile
+	"vtex.search-result:gallery#new-shelf.mobile": {
+        "props": {
+			"layouts": [
+				{
+					"name": "list",
+					"component": "ListSummary",
+					 "itemsPerRow": 1
+				}
+			],
+			"GridSummary": "product-summary.shelf#main-product-new",
+      		"ListSummary": "product-summary.shelf#main-product-new",
+			"blockClass": ["bf-gallery", "new-gallery"] // Ajustar estilo que esta nesse key para o novo key abaixo
+			// "blockClass": "new-gallery"
+        }
+    },
     
+	// Nao esta sendo usada ainda - precisa ser desenvolvido mais a fundo
 	"vtex.search-result:not-found#new-shelf": {
         "props": {
             // "blockClass": "not-found-black-friday" - esse acredito que podera ser removido tranquilo

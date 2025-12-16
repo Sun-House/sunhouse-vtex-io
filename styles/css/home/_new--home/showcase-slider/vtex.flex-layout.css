@@ -1,0 +1,34 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* Slide individual */
+    /* .vtex-flex-layout-10-x-flexRow--slide-ambiente { */
+    .flexRow--slide-ambiente {
+        position: relative;
+        width: 100%;
+        height: 100%
+    }
+
+    /* Correcoes: */
+    /* .vtex-flex-layout-0-x-flexRow--slide-ambiente,
+    .vtex-flex-layout-0-x-flexRowContent--slide-ambiente,
+    .vtex-rich-text-0-x-container--label-vertical { */
+    .flexRow--slide-ambiente,
+    .flexRowContent--slide-ambiente,
+    .container--label-vertical {
+        /* width: 600px !important; */
+        width: 100% !important
+    }
+
+    /* .vtex-flex-layout-0-x-flexRowContent--slide-ambiente .vtex-flex-layout-0-x-stretchChildrenWidth:first-child { */
+    .flexRowContent--slide-ambiente .stretchChildrenWidth:first-child {
+        /* width: 600px !important; */
+        width: max-content !important
+    }
+
+    /* .vtex-flex-layout-0-x-flexRowContent--slide-ambiente .vtex-flex-layout-0-x-stretchChildrenWidth:last-child { */
+    .flexRowContent--slide-ambiente .stretchChildrenWidth:last-child {
+        width: 0 !important
+    }
+    
+}

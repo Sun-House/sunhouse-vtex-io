@@ -1,0 +1,71 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* .vtex-rich-text-0-x-container--showcase-slider-title { */
+    .container--showcase-slider-title {
+        margin-bottom: 82px
+    }
+
+    /* Label vertical */
+    /* .vtex-rich-text-0-x-container--label-vertical { */
+    .container--label-vertical {
+        position: absolute;
+        left: 0;
+        transform: rotate(180deg);
+        bottom: 0;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        /* padding: 1rem 0.5rem; */
+        padding: 1.4rem;
+        display: flex;
+        width: 0 !important
+    }
+
+    .container--label-vertical .paragraph {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 400
+    }
+
+    /* .vtex-rich-text-0-x-link--label-vertical { */
+    .container--label-vertical .link {
+        color: #fff;
+        text-decoration: none
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-rich-text-0-x-heading--showcase-slider-title { */
+    /* .heading--showcase-slider-title { */
+    .container--showcase-slider-title {
+        /* margin: 0px 38px 62px */
+        margin: 0px 38px 12px
+    }
+
+    .container--label-vertical {
+        position: absolute;
+        left: 0;
+        transform: rotate(180deg);
+        bottom: 0;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        padding: 2.4rem;
+        display: flex;
+        width: 0 !important
+    }
+
+    .container--label-vertical .paragraph {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 400
+    }
+
+    .container--label-vertical .link {
+        color: #fff;
+        text-decoration: none
+    }
+
+}

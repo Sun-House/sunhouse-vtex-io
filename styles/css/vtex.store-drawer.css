@@ -118,6 +118,7 @@
     margin-right: 23.36px;
 }
 
+/* Movido para o arquivo common/header/components/minicart/vtex.store-drawer.css
 .closeIconButton--minicart-footer-close {
     background: #fff;
     border: 1px solid #161413;
@@ -129,7 +130,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* font-family: "Open Sans", sans-serif; */
+    / font-family: "Open Sans", sans-serif; /
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -186,4 +187,4 @@
     .closeIconButton--minicart-footer-close {
         width: 100%;
     }
-}
+} */

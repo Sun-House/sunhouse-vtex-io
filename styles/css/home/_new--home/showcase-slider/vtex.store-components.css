@@ -1,0 +1,29 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* Imagem do slide */
+    /* .vtex-store-components-13-x-imageElement--slide-image { */
+    .imageElement--slide-image {
+        min-width: 450px;
+        width: 100%;
+        min-height: 540px;
+        height: auto;
+        object-fit: cover; /* Esse atributo centraliza a imagem perfeitamente ao centro do slide, permitindo subir fotos de qualquer proporcao */
+        border-radius: 4px
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    .imageElement--slide-image {
+        min-width: 350px;
+        width: 100%;
+        min-height: 450px;
+        height: auto;
+        object-fit: cover; /* Esse atributo centraliza a imagem perfeitamente ao centro do slide, permitindo subir fotos de qualquer proporcao */
+        border-radius: 4px
+    }
+
+}

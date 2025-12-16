@@ -19,7 +19,7 @@
 
 :global(.vtex-container-container--menu-mobile-controls) .minicartWrapperContainer .minicartContainer .openIconContainer .minicartIconContainer {
     display: flex;
-    color: #2d2926
+    color: #161413
 }
 
 :global(.vtex-container-container--menu-mobile-controls) .minicartWrapperContainer .minicartContainer .openIconContainer .minicartIconContainer :global(.vtex-store-icons-0-x-cartIcon) {
@@ -63,8 +63,10 @@
 /* Widget Valor Dinamico */
 /* .sunhouse-minicart-2-x-currencyContainer--minicart-widget { */
 .currencyContainer--minicart-widget {
-    font-size: 14px;
-    font-weight: 300;
+    /* font-size: 14px;
+    font-weight: 300; */
+    font-size: 15px;
+    font-weight: 400;
     /* text-transform: none; */
     color: var(--header-text-color)
 }
@@ -93,7 +95,7 @@
 }
 
 .minicartEmptyStateContainer :global(.vtex-store-icons-0-x-cartIcon) {
-    color: #2d2926
+    color: #161413
 }
 
 .minicartEmptyStateContainer :global(.vtex-rich-text-0-x-paragraph) {
@@ -103,7 +105,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    color: #2d2926;
+    color: #161413;
     text-align: center
 }
 
@@ -115,7 +117,7 @@
 .openIconContainer--minicart-main,
 .openIconContainer--minicart-sidebar {
     padding: 0;
-    color: #2d2926
+    color: #161413
 }
 
 .openIconContainer--minicart-main :global(.vtex-button),
@@ -165,8 +167,10 @@
 
 /* .sunhouse-minicart-2-x-minicartIconLabel--minicart-main { */
 .minicartIconLabel--minicart-main {
-    font-size: 14px;
-    font-weight: 300;
+    /* font-size: 14px;
+    font-weight: 300; */
+    font-size: 15px;
+    font-weight: 400;
     text-transform: none;
     color: var(--header-text-color);
     margin-right: 14px
@@ -272,7 +276,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #2d2926;
+    color: #161413;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
@@ -331,32 +335,38 @@
     line-height: 17px;
     display: flex;
     align-items: center;
-    color: #2d2926;
+    color: #161413;
     justify-content: flex-end
 }
 
 .minicartCheckoutButton {
     margin: 0 0 0 auto;
     padding: 0;
-    max-width: 228px;
+    /* max-width: 228px; */
     width: 100%
 }
 
 .minicartCheckoutButton :global(.vtex-button) {
     padding: 0;
-    background: #44b32e;
-    border: 1px solid #44b32e;
+    /* background: #44b32e; */
+    background-color: #161413;
+    /* border: 1px solid #44b32e; */
+    border: none;
     box-sizing: border-box;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    border-radius: 50px;
     width: 100%;
-    height: 45px;
+    /* height: 45px; */
+    height: 52px;
     transition: all .4s
 }
 
 .minicartCheckoutButton :global(.vtex-button) :global(.vtex-button__label) {
     /* font-family: "Open Sans", sans-serif; */
     /* text-transform: none; */
-    font-size: 0;
+    /* font-size: 0; */
+    font-size: 16px;
+    font-weight: 500;
     display: flex;
     align-items: center;
     text-align: center;
@@ -364,16 +374,22 @@
 }
 
 .minicartCheckoutButton :global(.vtex-button) :global(.vtex-button__label)::after {
-    content: "Finalizar compra";
-    color: #fff;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700
+    /* content: "Finalizar compra"; */
+    content: "\F134";
+    font-family: "Bootstrap-Icons";
+    /* color: #fff; */
+    /* font-size: 16px; */
+    font-size: 24px;
+    /* font-style: normal; */
+    /* font-weight: 700 */
+    /* font-weight: 500 */
+    margin-left: 12px
 }
 
 .minicartCheckoutButton :global(.vtex-button):hover {
-    background: #2a9620;
-    border-color: #2a9620
+    /* background: #2a9620; */
+    background-color: #161413cb !important
+    /* border-color: #2a9620 */
 }
 
 @media screen and (max-width: 1024px) {
