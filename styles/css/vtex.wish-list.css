@@ -59,7 +59,8 @@
 .wishlistIconContainer .wishlistIcon.fill::after {
     display: inline-flex;
     content: "";
-    font-size: 26.88px;
+    /* font-size: 26.88px; */
+    font-size: 18px;
     font-family: "fantasticon";
     font-style: normal;
     font-weight: 400;
@@ -104,8 +105,10 @@
     }
 
     /* .vtex-wish-list-1-x-wishlistIconContainer .vtex-wish-list-1-x-wishlistIcon.vtex-wish-list-1-x-outline::after { */
-    .wishlistIconContainer .wishlistIcon.outline::after {
-        font-size: 32px !important
+    /* .wishlistIconContainer .wishlistIcon.outline::after { */
+    .wishlistIconContainer--product-page .wishlistIcon.outline::after {
+        font-size: 32px !important;
+        margin-top: 48px /* Pode acabar bugando em alguns casos */
     }
 
 }

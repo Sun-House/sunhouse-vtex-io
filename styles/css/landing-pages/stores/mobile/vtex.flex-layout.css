@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px) {
+    
+    .flexRowContent--stores-landing-text_details {
+        margin-bottom: 0px
+    }
+
+    .flexRowContent--stores-landing-text_details .flexCol--stores-landing-body-col {
+        margin-bottom: 48px
+    }
+    
+}

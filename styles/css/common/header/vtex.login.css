@@ -48,6 +48,19 @@
     margin-top: 124px
 }
 
+:global(.render-container.render-route-store-login):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) * {
+    --header-text-color: #161413
+}
+
+/* Wishlist Page */
+:global(.render-container.render-route-store-wishlist) :global(.vtex-render__container-id-wishlist-content) {
+    margin-top: 124px
+}
+
+:global(.render-container.render-route-store-wishlist):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) * {
+    --header-text-color: #161413
+}
+
 /* Institucional Pages */
 :global(.render-container.render-route-vtex-store-2-x-store-custom-institucional-nossas-lojas) :global(.vtex-render__container-id-institutional) {
     margin-top: 124px

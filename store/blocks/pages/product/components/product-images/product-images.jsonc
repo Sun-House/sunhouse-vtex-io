@@ -1,3 +1,6 @@
+// PROBLEMAS ao renderizar videos quando cadastrados nos produtos via Catalog -> SKU
+// Preciso revisar isso, acredito que seja algum problema no app product-images-custom
+
 {
     "flex-layout.col#product-main-left": {
         "children": [
@@ -17,17 +20,20 @@
         "props": {
             "contentType": "all",
             "contentOrder": "images-first",
-            // "displayMode": , - Nao vou usar ainda pois acredito que o nativo ja me atenda
             "displayThumbnailsArrows": true,
-            "showPaginationDots": false,
-            "maxHeight": 1000, // Esse valor deve ficar ideal ja que a vtex nao renderiza muito mais do que isso para as imagens de produto
+            "maxHeight": 1000,
             "thumbnailsOrientation": "horizontal",
-            "thumbnailAspectRatio": "10:10",
+            "thumbnailAspectRatio": "10:10", // Verificar para alterar após lançamento do MVP
             "hideFirstImage": false, // Prop nova do app custom para ocultar a primeira imagem - gerenciado por produto atraves do Site Editor para quando tiver componente de Imagem de Destaque ativo
             // "thumbnailMaxHeight": 231, - Não funciona a principio, mas usar de base para tamanho de imagem maximo para ter 3 por visualizacao
             "aspectRatio": {
                 "desktop": "1:1",
                 "phone": "1:1"
+            },
+            "showPaginationDots": {
+                "desktop": false,
+                "phone": true,
+                "tablet": true
             },
             "blockClass": "product-images-v2" // ver se ha a necessidade de manter esse v2 - ACREDITO QUE NESSE BLOCO SUPORTA APENAS UMA CLASSE
         }

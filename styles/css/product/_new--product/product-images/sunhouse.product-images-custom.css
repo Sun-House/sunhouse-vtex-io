@@ -66,13 +66,18 @@
 /* Swiper Thumbnails END */
 
 
-/* Mobile - AJUSTAR ANTES DE ATIVAR */
-/* @media screen and (max-width: 39.99em) {
+/* Mobile */
+@media screen and (max-width: 1024px) {
     
-    / Swiper Thumbnails START /
-    / .sunhouse-product-images-custom-1-x-carouselGaleryThumbs .swiper-slide { /
-    .carouselGaleryThumbs :global(.swiper-slide) {
-        min-width: 100px;
+    /* .sunhouse-product-images-custom-1-x-swiper-pagination { */
+    /* .swiper-pagination {
+        bottom: 0;
+        z-index: 1
+    } */
+    
+    /* .sunhouse-product-images-custom-1-x-productImagesGallerySwiperContainer--product-images-v2 { */
+    .productImagesGallerySwiperContainer--product-images-v2 {
+        min-height: 430px !important
     }
-
-} */
+    
+}

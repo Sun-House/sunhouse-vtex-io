@@ -1,0 +1,33 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-embla-carousel-1-x-container--plp-category-grid_carousel-mobile { */
+    /* .container--plp-category-grid_carousel-mobile {
+        overflow: hidden;
+    } */
+    
+    /* .sunhouse-embla-carousel-1-x-emblaSlide--plp-category-grid_carousel-mobile { */
+    .emblaSlide--plp-category-grid_carousel-mobile {
+        /* min-width: 80% !important */
+        min-width: 60% !important
+    }
+
+    .imageItem--plp-category-grid_carousel {
+        min-height: 150px;
+        max-height: 160px;
+        transition: all .3s ease-in-out
+    }
+
+    .text--plp-category-grid_carousel-mobile {
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #161413;
+        transition: 0.3s ease-in-out;
+        max-width: 180px /* Pode ser necessario ajustar */
+    }
+
+    .link--plp-category-grid_carousel-mobile {
+        text-decoration: none
+    }
+
+}

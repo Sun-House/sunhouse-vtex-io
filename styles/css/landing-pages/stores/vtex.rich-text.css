@@ -1,0 +1,57 @@
+/* .vtex-rich-text-0-x-heading--stores-landing-text { */
+.heading--stores-landing-text {
+    border-bottom: 1px solid #cccccc7d; /* Cor final validada - nao é igual a do Refresh, mas esta OK */
+    padding-bottom: 12px;
+    margin-bottom: 12px
+    /* width: 100%-webkit-fill-available */
+}
+
+/* .vtex-rich-text-0-x-heading--stores-landing-body-text { */
+.heading--stores-landing-body-text {
+    font-size: 42px;
+    line-height: 1.2
+}
+
+/* .vtex-rich-text-0-x-paragraph--stores-landing-text_small { */
+.paragraph--stores-landing-text_small {
+    color: #8c8c8c; /* Cor final validada - nao é igual a do Refresh, mas esta OK */
+    max-width: 65%;
+    width: auto
+}
+
+/* .vtex-rich-text-0-x-heading--stores-landing-text,
+.vtex-rich-text-0-x-paragraph--stores-landing-text { */
+.heading--stores-landing-text,
+.paragraph--stores-landing-text {
+    line-height: 2.0;
+    font-weight: 500
+}
+
+/* .vtex-rich-text-0-x-paragraph--stores-landing-text .vtex-rich-text-0-x-link { */
+.paragraph--stores-landing-text .link {
+    text-decoration: unset;
+    color: #161413
+}
+
+/* .vtex-rich-text-0-x-wrapper--stores-landing-text { */
+.wrapper--stores-landing-text {
+    /* width: -webkit-fill-available; */
+    width: 100%;
+    margin-right: 32px
+}
+
+.paragraph--stores-landing-text_phone::before {
+    content: "\F5C1"
+}
+
+.paragraph--stores-landing-text_mail::before {
+    content: "\F32F"
+}
+
+.paragraph--stores-landing-text_phone::before,
+.paragraph--stores-landing-text_mail::before {
+    font-family: "Bootstrap-Icons";
+    font-size: 18px;
+    margin-right: 12px;
+    vertical-align: middle
+}

@@ -15,6 +15,7 @@
     },
     "children": [
       // "link#mobile-account",
+      "link#stores-landing",
       "minicart.v2",
       "link#mobile-wishlist"
     ]
@@ -69,6 +70,16 @@
       "blockClass": "menu-mobile-link"
     }
   },
+  
+  // Novo - apenas mobile
+  "link#stores-landing": {
+    "props": {
+      "href": "/landing/nossas-lojas",
+      "label": "Nossas Lojas — Showroom",
+      "blockClass": "menu-mobile-stores-landing"
+    }
+  },
+  //
 
   "link#mobile-wishlist": {
     "props": {

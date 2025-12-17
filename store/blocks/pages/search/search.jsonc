@@ -168,10 +168,8 @@
     "title": "Search Desktop",
     "children": [
       "container#banner-department-desktop",
-      // Esse componente precisara ser recriado do zero - acredito que seja mais pratico
       // "container#categories-slider",
       "container#plp-category-grid",
-      //
       // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result.desktop",
       "container#showcase-slider",

@@ -1,7 +1,7 @@
 {
 	"store.custom#stores-landing-page": {
 		"children": [
-			// "container#stores-landing-page"
+			"container#stores-landing-page"
 		]
 	}
 }
