@@ -1,52 +1,22 @@
-/* Da pra usar esse tambem se precisar ser mais especifico
-   .sunhouse-embla-carousel-1-x-emblaContainer--by-category { */
 .container--by-category .viewport .emblaContainer {
-    /* width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content */
-
     width: 100%;
     display: flex;
     justify-content: space-between
 }
 
 .container--by-category .viewport .link--by-category {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-inline: 10px;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    color: #2d2926;
-    text-decoration: none */
-
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
-    /* padding-inline: 68px; */
     font-size: 24px;
     font-style: normal;
-    font-weight: 500; /* 500 é o ideal, mas validar novamente apos correcao do font-faces.css */
+    font-weight: 500;
     color: #161413;
     text-decoration: none
 }
 
-/* .container--by-category .viewport .link--by-category .imageContainer {
-    border-radius: 50%;
-    border: 2px solid #aba9a8;
-    transition: border-color .2s;
-    width: 89px;
-    height: 89px
-} */
-
 .container--by-category .viewport .link--by-category .imageContainer .imageItem {
-    /* display: block;
-    margin: 2px;
-    border-radius: 50% */
-
     display: flex;
     height: 69px;
     border-radius: 4px
@@ -56,7 +26,6 @@
     border-color: #ffda00
 }
 
-/* .sunhouse-embla-carousel-1-x-text--by-category { */
 .container--by-category .viewport .link--by-category .text--by-category {
     margin-left: 32px
 }

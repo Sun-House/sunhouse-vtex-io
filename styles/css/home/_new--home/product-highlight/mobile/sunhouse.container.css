@@ -1,0 +1,25 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-container-1-x-container--product-highlight-grid { */
+    .container--product-highlight-grid {
+        padding-bottom: 0
+    }
+
+    /* .sunhouse-container-1-x-container--product-highlight-image_col-1 { */
+    .container--product-highlight-image_col-1 {
+        width: auto;
+        height: 100%
+    }
+    
+    /* .sunhouse-container-1-x-container--product-highlight-image_col-2 { */
+    .container--product-highlight-image_col-2 {
+        justify-content: center;
+        margin-top: 56px
+    }
+    
+    /* .sunhouse-container-1-x-imageElement--product-highlight-image_col-2 { */
+    .imageElement--product-highlight-image_col-2 {
+        max-width: 45% !important
+    }
+
+}

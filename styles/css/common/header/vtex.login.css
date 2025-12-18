@@ -39,7 +39,9 @@
 :global(.render-container.render-route-store-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-notFound--layout),
 :global(.render-container.render-route-store-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer),
 :global(.render-container)[class*="render-route-store-search-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer--search-result),
-:global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer--search-result) {
+:global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer--search-result),
+:global(.render-container)[class*="render-route-store-search-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-notFound--layout),
+:global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-notFound--layout) {
     margin-top: 242px
 }
 

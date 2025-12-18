@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+
+    .heading--product-highlight-shelf {
+        max-width: unset;
+        margin-top: 56px
+    }
+
+}

@@ -1,4 +1,3 @@
-/* .sunhouse-container-1-x-container--footer-content-about { */
 .container--footer-content-about {
     background-color: #f6f6f6;
     padding: 64px 0
@@ -8,24 +7,13 @@
     border-radius: 4px
 }
 
-/* .sunhouse-container-1-x-container--container-footer-about-text { */
-.container--container-footer-about-text {
-    width: 100vw !important;
-    margin-left: -50%;
-    transform: translateX(10vw)
-}
-
 .container--footer-social-content {
     padding-block: 14px;
     display: flex;
     gap: 16px;
     align-items: center
-    /* justify-content: center */
 }
 
-
-
-/* .sunhouse-container-1-x-container--footer-social-content .sunhouse-container-1-x-imageElement { */
 .container--footer-social-content .imageElement {
     max-height: 20px !important;
     max-width: 20px !important;
@@ -34,6 +22,17 @@
 
 .container--footer-social-content .imageElement:hover {
     filter: invert(77%) sepia(92%) saturate(1782%) hue-rotate(45deg) brightness(170%) contrast(104%)
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    .container--container-footer-about-text {
+        width: 100vw !important;
+        margin-left: -50%;
+        transform: translateX(10vw)
+    }
+    
 }
 
 /* Mobile */

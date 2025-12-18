@@ -28,9 +28,10 @@
     
     /* Slides laterais - efeito de fade */
     /* .sunhouse-embla-carousel-1-x-emblaSlide--ambientes-carousel:not(.sunhouse-embla-carousel-1-x-emblaSlide--ambientes-carousel--isSelected) { */
-    .emblaSlide--ambientes-carousel:not(.emblaSlide--ambientes-carousel--isSelected) {
+    /* ESTA FICANDO MEIO ESTRANHO DEPENDENDO DO TAMANHO DA TELA */
+    /* .emblaSlide--ambientes-carousel:not(.emblaSlide--ambientes-carousel--isSelected) {
         opacity: 0.7
-    }
+    } */
 
     /* Nao sei se os keys abaixo sao necessarios e estão de fato funcionando */
     /* .sunhouse-embla-carousel-1-x-emblaContainer { */

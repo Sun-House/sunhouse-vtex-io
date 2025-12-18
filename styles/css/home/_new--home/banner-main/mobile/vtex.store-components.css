@@ -1,0 +1,25 @@
+@media screen and (max-width: 1024px) {
+
+    .infoCardContainer--main-banner-home {
+        position: relative;
+        height: 100%
+    }
+
+    .infoCardContainer--main-banner-home::after {
+        top: auto /* Pode resultar em bug */
+    }
+
+    .infoCardContainer--main-banner-home::after {
+        height: 100%
+    }
+
+    .infoCardTextContainer--main-banner-home {
+        margin-bottom: 76px
+    }
+    
+    /* .vtex-store-components-3-x-paragraph--main-banner { */
+    .paragraph--main-banner-home {
+        width: 85%
+    }
+    
+}

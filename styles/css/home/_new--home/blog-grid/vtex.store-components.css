@@ -1,0 +1,17 @@
+/* .vtex-store-components-3-x-imageElement--blog-grid-image { */
+.imageElement--blog-grid-image {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    /* width: 200px;  Ajustar medida apos finalizar estrutura do grid */
+    min-width: 250px;
+    max-width: 250px;
+    border-radius: 4px;
+    margin-bottom: 12px
+}
+
+/* .vtex-store-components-3-x-imageElement--blog-grid-image_bigger { */
+.imageElement--blog-grid-image_bigger {
+    /* width: 350px - Ajustar medida apos finalizar estrutura do grid */
+    min-width: 350px;
+    max-width: 350px
+}

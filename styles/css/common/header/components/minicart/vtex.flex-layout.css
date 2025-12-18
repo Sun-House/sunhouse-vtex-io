@@ -10,5 +10,6 @@
 
 /* .vtex-flex-layout-0-x-flexRow--minicart-product:last-child { */
 .flexRow--minicart-product:last-child {
-    padding-bottom: 102px /* Fix para poder ver ultimo item do carrinho no caso de ter muitos no mesmo */
+    /* padding-bottom: 102px - Fix para poder ver ultimo item do carrinho no caso de ter muitos no mesmo */
+    margin-bottom: 102px /* Fix para poder ver ultimo item do carrinho no caso de ter muitos no mesmo */
 }

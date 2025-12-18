@@ -1,0 +1,10 @@
+@media screen and (min-width: 1999px) {
+    
+    /* .sunhouse-embla-carousel-1-x-container--ambientes-carousel { */
+    .container--ambientes-carousel {
+        overflow-x: hidden;
+        max-width: 1740px;
+        padding: 48px 0
+    }
+    
+}

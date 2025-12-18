@@ -13,35 +13,12 @@
   "flex-layout.col#categories-slider-content": {
     "title": "Conteúdo categorias",
     "children": [
-      // REMOVER apos validacao do Refresh
-      // "flex-layout.col#categories-title",
       "flex-layout.col#categories-content"
     ],
     "props": {
       "blockClass": "categories-slider-content"
     }
   },
-
-  // REMOVER apos validacao do Refresh
-  // "flex-layout.col#categories-title": {
-  //   "title": "Título categorias",
-  //   "children": ["rich-text#categories-title"],
-  //   "props": {
-  //     "blockClass": "categories-title",
-  //     "verticalAlign": "middle",
-  //     "width": "grow"
-  //   }
-  // },
-
-  // REMOVER apos validacao do Refresh
-  // "rich-text#categories-title": {
-  //   "title": "Título categorias",
-  //   "props": {
-  //     "text": "## Móveis e decorações Sun House para sua casa",
-  //     "blockClass": "categories-title"
-  //   }
-  // },
-
   "flex-layout.col#categories-content": {
     "title": "Carrossel de categorias",
     "children": [
@@ -55,7 +32,9 @@
 
   "image-text-list#categories-slider": {
     "children": [
-      "embla-carousel#by-category"
+      // "embla-carousel#by-category",
+      "responsive-layout.desktop#categories-slider",
+      "responsive-layout.mobile#categories-slider"
     ],
     "props": {
       "imageTextArray": [
@@ -85,6 +64,26 @@
           "link": "/categoria/subcategoria"
         }
       ],
+      "blockClass": "categories-slider"
+    }
+  },
+
+  "responsive-layout.desktop#categories-slider": {
+    "title": "Slider de Categorias - Desktop",
+    "children": [
+      "embla-carousel#by-category"
+    ],
+    "props": {
+      "blockClass": "categories-slider"
+    }
+  },
+
+  "responsive-layout.mobile#categories-slider": {
+    "title": "Slider de Categorias - Mobile",
+    "children": [
+      "slider-layout#differentials"
+    ],
+    "props": {
       "blockClass": "categories-slider"
     }
   },

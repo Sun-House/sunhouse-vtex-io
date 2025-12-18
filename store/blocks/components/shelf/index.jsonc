@@ -50,7 +50,6 @@
 
   // Shelf 2 - Sera reaproveitado para o novo layout Refresh
   "container#shelf-home02": {
-    // "title": "Prateleira 2",
     "title": "Prateleira 1",
     "children": [
       "flex-layout.row#shelf-home02"
@@ -61,7 +60,6 @@
   },
 
   "flex-layout.row#shelf-home02": {
-    // "title": "Prateleira 1 - Container",
     "children": [
       "flex-layout.col#shelf-home02"
     ],
@@ -72,7 +70,6 @@
   },
 
   "flex-layout.col#shelf-home02": {
-    // "title": "Prateleira 1",
     "children": [
       "rich-text#shelf-home02",
       "hover-container#shelf-home02"
@@ -85,8 +82,8 @@
   "rich-text#shelf-home02": {
     "title": "Prateleira 2 - Título",
     "props": {
-      "text": "## Lançamentos Elements", // Texto padrao para o Refresh - Será alterado via Site Editor dependendo do conteudo da prateleira
-      // "blockClass": ["shelf-home02", "common-title", "shelf-slider-home"]
+      // "text": "## Lançamentos Elements",
+      "text": "## Lançamentos",
       "blockClass": ["common-title", "shelf-slider-home"]
     }
   },
@@ -174,15 +171,21 @@
       "product-summary.shelf#main-product-new"
     ],
     "children": [
-      // "responsive-layout.desktop#shelf-slider",
-      // "responsive-layout.mobile#shelf-slider"
-
       // Esse é o responsavel por renderizar a lista de produtos em grid
-      "container.list-render#shelf-list"
+      // "container.list-render#shelf-list"
+
+      "responsive-layout.desktop#shelf-list",
+      "responsive-layout.mobile#shelf-slider"
     ],
     "props": {
       "maxItems": 9
     }
+  },
+
+  "responsive-layout.desktop#shelf-list": {
+    "children": [
+      "container.list-render#shelf-list"
+    ]
   },
   //
 

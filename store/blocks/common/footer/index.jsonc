@@ -223,14 +223,17 @@
   //
   "container#pre-footer-about": {
     "children": [
-      "responsive-layout.desktop#pre-footer-about",
-      "responsive-layout.mobile#pre-footer-about"
+      // "responsive-layout.desktop#pre-footer-about",
+      // "responsive-layout.mobile#pre-footer-about"
+      "flex-layout.row#footer-content-about",
+      "container#home-faq"
     ],
     "props": {
       "blockClass": "footer-content-about"
     }
   },
 
+  // A principio nao vou usar sistema responsivo para esses blocos
   "responsive-layout.desktop#pre-footer-about": {
     "children": [
       // "container#footer-about-text"
@@ -253,6 +256,7 @@
       "blockClass": "render-block_pre-footer-about_mobile"
     }
   },
+  //
 
   "flex-layout.row#footer-content-about": {
     "children": [

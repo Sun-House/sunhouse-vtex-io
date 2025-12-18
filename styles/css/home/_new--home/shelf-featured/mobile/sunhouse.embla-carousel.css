@@ -1,0 +1,39 @@
+@media screen and (max-width: 1024px) {
+
+    :global(.vtex-container-container--shelf-featured) .link--shelf--mobile {
+        text-decoration: none
+    }
+    
+    :global(.vtex-container-container--shelf-featured) .textContainer--shelf--mobile {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: -92px;
+        height: 0 /* Normaliza o componente para nao esticar o slider component */
+    }
+    
+    :global(.vtex-container-container--shelf-featured) .text--shelf--mobile {
+        background-color: #fff; /* mudar para fff */
+        color: #161413;
+        width: fit-content;
+        padding: 10px 24px;
+        border-radius: 50px;
+        transition: all .3s ease-in-out
+    }
+    
+    :global(.vtex-container-container--shelf-featured) .link--shelf--mobile:hover .text--shelf--mobile {
+        background-color: #161413; /* mudar para fff */
+        color: #fff
+    }
+
+    :global(.vtex-container-container--shelf-featured) .imageItem--shelf--mobile {
+        
+        border-radius: 4px;
+        min-height: 355px;
+        max-height: 355px !important;
+        object-fit: cover /* Esse atributo centraliza a imagem perfeitamente ao centro do slide, permitindo subir fotos de qualquer proporcao */
+
+    }
+    
+}
