@@ -36,7 +36,8 @@
     ],
     "props": {
       "label": "Lojas",
-      "href": "/institucional/nossas-lojas",
+      // "href": "/institucional/nossas-lojas",
+      "href": "/landing/nossas-lojas",
       "target": "_blank",
       "blockClass": ["header-links", "header-links--stores"]
     }
@@ -54,7 +55,7 @@
     "title": "Showroom",
     "props": {
       "label": "Showroom Virtual",
-      "href": "/institucional/showroom",
+      "href": "/landing/nossas-lojas#showroom-virtual",
       "blockClass": ["header-links", "link-showroom"]
     }
   },

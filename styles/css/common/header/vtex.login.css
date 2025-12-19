@@ -45,6 +45,23 @@
     margin-top: 242px
 }
 
+/* Not Found Search Global */
+:global(.render-container.render-route-store-not-found-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) * {
+    --header-text-color: #161413
+}
+
+:global(.render-container.render-route-store-not-found-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-container-1-x-container--menu) {
+    border-bottom: 1px solid #161413
+}
+
+:global(.render-container.render-route-store-not-found-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.vtex-container-container--minicart-container) {
+    border-color: #161413
+}
+
+:global(.render-container.render-route-store-not-found-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-notFound--layout) {
+    margin-top: 242px
+}
+
 /* Login Page */
 :global(.render-container.render-route-store-login) :global(.vtex-render__container-id-vtex\.login\:login-content) {
     margin-top: 124px

@@ -1,5 +1,3 @@
-// (()=>{})();
-
 // Highlight Bar Checkout component
 const CUPOM_CODE = 'NATAL15';
 
@@ -107,3 +105,150 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // ⬆️ FIM DO LOCAL DE EXECUÇÃO ⬆️
 });
+
+
+// Whatsapp Button Floating
+(function() {
+    // --- CONFIGURAÇÕES ---
+    const whatsappLink = "https://api.whatsapp.com/send?phone=5511994877664"; 
+    
+    
+    // Coloque aqui o caminho da sua imagem/logo do WhatsApp
+    // Estou usando um ícone SVG genérico online para demonstração, substitua pelo seu arquivo.
+    const whatsappIconUrl = "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg";
+    // ---------------------
+
+    // 1. Criar o estilo CSS
+    const style = document.createElement('style');
+    style.innerHTML = `
+        /* Container principal do botão (Link) */
+        #wa-widget-container {
+            position: fixed;
+            z-index: 99999;
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-family: sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        /* --- ESTILO DESKTOP (Padrão) --- */
+        /* Fixado na esquerda, centralizado verticalmente */
+        #wa-widget-container {
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Parte do Texto "Tenho uma dúvida" */
+        .wa-text-bubble {
+            background-color: #00a884; /* Verde WhatsApp */
+            color: white;
+            padding: 12px 15px 12px 20px; /* Mais padding na esquerda */
+            /* font-weight: bold;
+            font-size: 14px; */
+            font-family: 'Bai Jamjuree', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            display: block; /* Visível no desktop */
+        }
+
+        /* Container do Ícone (Bola verde) */
+        .wa-icon-wrapper {
+            background-color: #00a884;
+            /* width: 50px;
+            height: 50px; */
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            margin-left: -10px; /* Sobrepõe levemente o texto para unir */
+            position: relative;
+            z-index: 2;
+        }
+
+        /* A imagem do logo em si */
+        .wa-icon-wrapper img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        /* Efeito Hover (Desktop) */
+        #wa-widget-container:hover {
+            filter: brightness(1.1);
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        /* --- ESTILO MOBILE (Telas menores que 768px) --- */
+        @media (max-width: 768px) {
+            /* Fixado na direita inferior */
+            #wa-widget-container {
+                left: auto; /* Remove alinhamento da esquerda */
+                top: auto;  /* Remove alinhamento do topo */
+                bottom: 20px;
+                right: 20px;
+                transform: none; /* Remove a centralização vertical */
+            }
+
+            /* Esconder o texto no mobile */
+            .wa-text-bubble {
+                display: none;
+            }
+
+            /* Ajustar o ícone para não ter margem negativa no mobile */
+            .wa-icon-wrapper {
+                margin-left: 0;
+                width: 60px; /* Um pouco maior no mobile para toque */
+                height: 60px;
+            }
+
+            .wa-icon-wrapper img {
+                width: 35px;
+                height: 35px;
+            }
+            
+            /* Hover simples no mobile */
+            #wa-widget-container:hover {
+                transform: scale(1.1);
+            }
+        }
+    `;
+
+    // 2. Criar a estrutura HTML
+    const container = document.createElement('a');
+    container.id = 'wa-widget-container';
+    container.href = whatsappLink;
+    container.target = '_blank'; // Abre em nova aba
+
+    // HTML interno (Texto + Icone)
+    container.innerHTML = `
+        <span class="wa-text-bubble">Tenho uma dúvida</span>
+        <div class="wa-icon-wrapper">
+            <img src="${whatsappIconUrl}" alt="WhatsApp Logo">
+        </div>
+    `;
+
+    // 3. Injetar na página quando carregar
+    function injectWidget() {
+        document.head.appendChild(style);
+        document.body.appendChild(container);
+    }
+
+    // Garante que o DOM esteja pronto antes de injetar
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', injectWidget);
+    } else {
+        injectWidget();
+    }
+
+})();
