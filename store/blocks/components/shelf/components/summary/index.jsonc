@@ -16,20 +16,14 @@
       "blockClass": "main-shelf"
     }
   },
-
-
-  //
+  
   // Shelf nova - Padrao para o Refresh
   "product-summary.shelf#main-product-new": {
     "title": "Vitrine de Produtos",
 		"children": [
 			"stack-layout#new-shelf-product-image",
-
-      // EM TESTES INICIAIS:
-      "product-summary-sku-selector#default",
-      //
-
-      // "container#product-highlights", - Gera as Flags de 'Lançamento' e afins - descontinuada no Refresh
+      // Versão MVP - Precisara ser melhorada posteriormente
+      "shelf-enhanced-sku-selector#default-shelf",
 			"product-summary-name#new-shelf",
       "condition-layout.product#shelf-elf-checker"
 		],
@@ -37,6 +31,15 @@
 			"blockClass": "main-shelf-new"
 		}
 	},
+
+  // Shelf Enhanced SKU Selector - pronto para o MVP do Refresh
+  "shelf-enhanced-sku-selector#default-shelf": {
+    "props": {
+      "maxItems": 8,
+      "imageWidth": 30,
+      "imageHeight": 30
+    }
+  },
 
   // Bloco da foto do produto
   "stack-layout#new-shelf-product-image": {
@@ -95,10 +98,9 @@
 		"children": [
 			"stack-layout#bf-shelf-product-image",
 
-      //
-      "product-summary-space", // a principio nao esta gerando nenhum espaco — mas vou manter para continuar testando
-      // "rich-text#balai",
-      "product-summary-sku-selector#default-shelf",
+      // Shelf SKU Selector
+      // "product-summary-sku-selector#default-shelf",
+      "shelf-enhanced-sku-selector#default-shelf",
       //
 
       "container#product-highlights",

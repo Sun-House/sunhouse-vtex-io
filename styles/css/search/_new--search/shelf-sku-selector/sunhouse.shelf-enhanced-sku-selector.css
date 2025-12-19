@@ -1,0 +1,12 @@
+/* .sunhouse-shelf-enhanced-sku-selector-0-x-shelfSKUSelectorContainer { */
+.shelfSKUSelectorContainer {
+    display: flex;
+    justify-content: flex-start
+}
+
+
+/* .sunhouse-shelf-enhanced-sku-selector-0-x-shelfSKUVariationImage { */
+.shelfSKUVariationImage {
+    border: unset !important;
+    border-radius: 50px !important
+}
