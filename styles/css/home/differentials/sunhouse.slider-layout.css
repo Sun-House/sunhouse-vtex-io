@@ -7,14 +7,15 @@
     height: 100%
 }
 
-.sliderLayoutContainer--diferentials .sliderLeftArrow:hover,
+/* .sliderLayoutContainer--diferentials .sliderLeftArrow:hover,
 .sliderLayoutContainer--diferentials .sliderRightArrow:hover {
     background-color: #ffda00 !important
-}
+} */
 
 .sliderLayoutContainer--diferentials .sliderLeftArrow:hover .caretIcon,
 .sliderLayoutContainer--diferentials .sliderRightArrow:hover .caretIcon {
-    color: #2d2926 !important
+    /* color: #2d2926 !important */
+    color: #161413 !important
 }
 
 /* Mobile */

@@ -1,0 +1,9 @@
+/* Informacoes base para customizar elementos de render nativo da VTEX.
+// .vtex-render__container-id-pre-footer-about-text { //
+:global(.vtex-render__container-id-pre-footer-about) {
+    background-color: #f6f6f6;
+    padding: 64px 0
+}
+   Acima, apenas base para customizar elementos de render nativo da VTEX.
+   Excluir apois uso efetivo do sistema acima
+*/

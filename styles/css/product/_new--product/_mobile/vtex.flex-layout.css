@@ -1,0 +1,20 @@
+@media screen and (max-width: 1024px) {
+    
+    /* .vtex-flex-layout-0-x-flexColChild--product-buy-button .vtex-add-to-cart-button-0-x-buttonText--add-to-cart_button { */
+    .flexColChild--product-buy-button :global(.vtex-add-to-cart-button-0-x-buttonText--add-to-cart_button) {
+        font-size: 0
+    }
+
+    /* .vtex-flex-layout-0-x-flexColChild--product-buy-button .vtex-add-to-cart-button-0-x-buttonText--add-to-cart_button::after { */
+    .flexColChild--product-buy-button :global(.vtex-add-to-cart-button-0-x-buttonText--add-to-cart_button)::after {
+        content: "Comprar";
+        font-size: 20px;
+        font-weight: 400
+    }
+
+    /* .vtex-flex-layout-0-x-flexRow--shipping-simulator-first-row-right { */
+    .flexRow--shipping-simulator-first-row-right {
+        min-width: 25vh
+    }
+    
+}

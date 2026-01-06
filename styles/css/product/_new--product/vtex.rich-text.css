@@ -1,0 +1,24 @@
+/* Shipping Calculator Block */
+.paragraph--shipping-calculate {
+    display: flex;
+    /* font-family: "Open Sans", sans-serif; */
+    font-style: normal;
+    /* font-weight: normal; */
+    font-weight: 500;
+    /* font-size: 14px; */
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    /* color: #2d2926; */
+    color: #161413; /* Validar a cor correta Refresh */
+    text-transform: none
+}
+
+/* .vtex-rich-text-0-x-paragraph--shipping-calculate::before { */
+.paragraph--shipping-calculate::before {
+    content: "\F1C7";
+    font-family: "Bootstrap-Icons";
+    font-size: 20px;
+    margin-right: 12px;
+    color: #161413 /* Validar a cor correta Refresh */
+}

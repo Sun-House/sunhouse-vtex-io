@@ -1,0 +1,32 @@
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-store-link-0-x-link--menu-mobile-stores-landing { */
+    .link--menu-mobile-stores-landing {
+        display: flex;
+        height: 65px;
+        border-bottom: 1px solid #aba9a8;
+        padding-inline: 25px;
+        color: #161413;
+        justify-content: start;
+        align-items: center
+    }
+
+    /* .vtex-store-link-0-x-label--menu-mobile-stores-landing { */
+    .label--menu-mobile-stores-landing {
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        align-items: center
+    }
+
+    /* .vtex-store-link-0-x-label--menu-mobile-stores-landing::before { */
+    .label--menu-mobile-stores-landing::before {
+        content: "\F3E8";
+        font-family: "Bootstrap-Icons";
+        font-size: 27px;
+        font-weight: 400;
+        margin-left: -6px;
+        margin-right: 18px
+    }
+
+}

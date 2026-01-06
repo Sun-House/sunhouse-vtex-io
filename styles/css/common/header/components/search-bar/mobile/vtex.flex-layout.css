@@ -1,0 +1,16 @@
+@media screen and (max-width: 1024px) {
+    
+    /* .vtex-flex-layout-0-x-flexRow--header-mobile-bottom .vtex-flex-layout-0-x-flexRowContent--header-mobile-bottom { */
+    .flexRow--header-mobile-bottom .flexRowContent--header-mobile-bottom {
+        max-width: 450px !important
+    }
+
+    /* .vtex-flex-layout-0-x-flexRow--header-mobile-bottom { */
+    .flexRow--header-mobile-bottom {
+        max-height: 60px !important;
+        height: 60px !important;
+        transition: unset;
+        background-color: #fff
+    }
+    
+}

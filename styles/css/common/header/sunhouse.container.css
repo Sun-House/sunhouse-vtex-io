@@ -1,0 +1,26 @@
+.container--header--desktop__main {
+    position: relative;
+    /* height: 70px; */
+    height: 124px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.container--header--desktop__controls {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    /* color: #2d2926 */
+    color: #161413
+}
+
+.container--header--desktop__controls--left {
+    visibility: var(--header-left-controls-visibility);
+    opacity: var(--header-left-controls-opacity)
+}
+
+.container--header--desktop__controls--right {
+    gap: var(--header-right-controls-gap);
+    transition: all .2s
+}

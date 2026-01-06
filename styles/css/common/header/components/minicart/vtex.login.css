@@ -1,0 +1,9 @@
+:global(.vtex-flex-layout-0-x-flexRow--minicart-sku-name):has(:global(.vtex-product-list-0-x-productVariationsContainer)) {
+    margin: 16px 0 24px
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--minicart-sku-name):has(:global(.vtex-product-list-0-x-productVariationsContainer))::before {
+    content: "Personalização:";
+    font-size: 14px;
+    line-height: 2.4
+}

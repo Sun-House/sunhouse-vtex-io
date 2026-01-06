@@ -1,0 +1,36 @@
+{
+    "container#fullwidth-static-banner": {
+        "children": [
+            "info-card#banner-fullwidth"
+        ],
+        "props": {
+            "blockClass": ["fullwidth-static-banner"]
+        }
+    },
+
+    "info-card#banner-fullwidth": {
+        "title": "Banner Estático",
+        "props": {
+            "isFullModeStyle": true,
+			"textMode": "rich-text",
+            
+            // Esses deverao ser ajustados
+            "textPosition": "center",
+            "textAlignment": "center",
+            //
+
+            "headline": "# Titulo do Banner Fullwidth Estático",
+            // "subhead": "## Subtítulo do banner",
+            // "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting.\nLorem Ipsum is simply dummy text of the.",
+            "callToActionMode": "button",
+            "callToActionText": "Conheça",
+            "callToActionUrl": "/", // A ser definido pelo Site Editor
+			"imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/d1f442e3-67f8-4ee5-af54-68653a3d9a0d___1d378e446447b2f2990f5323f07e0a1d.png",
+			"mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/d1f442e3-67f8-4ee5-af54-68653a3d9a0d___1d378e446447b2f2990f5323f07e0a1d.png",
+            "imageAltText": "Texto ALT para SEO",
+			"fetchpriority": "auto",
+			"preload": true,
+            "blockClass": ["main-banner", "main-banner-home", "banner-fullwidth"]
+        }
+    }
+}

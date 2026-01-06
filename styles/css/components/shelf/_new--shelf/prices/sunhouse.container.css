@@ -1,0 +1,9 @@
+.container--new-shelf-price {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    gap: 12px;
+    height: auto
+    /* height: 0; - Pode dar alguns bugs visuais */
+    /* justify-content: flex-end */
+}

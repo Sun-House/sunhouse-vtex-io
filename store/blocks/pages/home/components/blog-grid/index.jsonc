@@ -1,0 +1,182 @@
+{
+    "container#blog-grid": {
+        "title": "Blog Grid",
+        "children": [
+            "flex-layout.row#blog-grid"
+        ],
+        "props": {
+            "blockClass": "blog-grid"
+        }
+    },
+
+    "flex-layout.row#blog-grid": {
+        "children": [
+            "flex-layout.col#blog-grid-left",
+            "flex-layout.col#blog-grid-right"
+        ],
+        "props": {
+            "colGap": 9,
+            "blockClass": "blog-grid"
+        }
+    },
+    "flex-layout.col#blog-grid-left": {
+        "title": "Coluna Esquerda",
+        "children": [
+            "rich-text#blog-grid-main-text",
+            "rich-text#blog-grid-bullet-points"
+        ],
+        "props": {
+            "blockClass": "blog-grid-left"
+        }
+    },
+
+    "rich-text#blog-grid-main-text": {
+        "title": "Texto Principal",
+        "props": {
+            "text": "## Inspiração para transformar cada detalhe do seu lar.\nDescubra tendências, ideias de decoração e conteúdos exclusivos que elevam sua experiência de morar.",
+            "blockClass": "blog-grid-main-text"
+        }
+    },
+    "rich-text#blog-grid-bullet-points": {
+        "title": "Trends",
+        "props": {
+            "text": "- DECOR IDEAS\n- ORGANIZAÇÃO\n- TENDÊNCIAS 26\n- DESIGN TRENDS\n- HOME DECOR\n- ARQUITETURA\n- PRIMAVERA VERÃO",
+            "blockClass": "blog-grid-bullet-points"
+        }
+    },
+
+    "flex-layout.col#blog-grid-right": {
+        "title": "Coluna Direita",
+        "children": [
+            "flex-layout.row#blog-grid-right-content-1",
+            "flex-layout.row#blog-grid-right-content-2"
+        ],
+        "props": {
+            "blockClass": "blog-grid-right"
+        }
+    },
+
+    "flex-layout.row#blog-grid-right-content-1": {
+        "children": [
+            "flex-layout.col#blog-grid-right-content-1-left",
+            "flex-layout.col#blog-grid-right-content-1-right"
+        ],
+        "props": {
+            "blockClass": ["blog-grid-right-content_line", "blog-grid-right-content-1"]
+        }
+    },
+
+    "flex-layout.col#blog-grid-right-content-1-left": {
+        "children": [
+            "image#blog-grid-right-content-1-left-image",
+            "rich-text#blog-grid-right-content-1-left-text"
+        ],
+        "props": {
+            "blockClass": "blog-grid-right-content-1-left"
+        }
+    },
+    "image#blog-grid-right-content-1-left-image": {
+        "props": {
+            "src": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/166b7054-dd6f-46be-937a-ce9f8af6738d___25166cedef29ac68a1606016c2db1499.png",
+            "link": {
+                "url": "https://blog.sunhouse.com.br/banco-art-sofisticacao-e-sustentabilidade-com-exclusividade-na-sun-house/",
+                "newTab": true
+            },
+            "blockClass": ["blog-grid-image", "blog-grid-image_bigger","blog-grid-right-content-1-left-image"]
+        }
+    },
+    "rich-text#blog-grid-right-content-1-left-text": {
+        "props": {
+            "text": "5 DEZ, 2024 __HOME DECOR__\n <a href='https://blog.sunhouse.com.br/banco-art-sofisticacao-e-sustentabilidade-com-exclusividade-na-sun-house/' target='_blank'><h3>Banco Art: Sofisticação e Sustentabilidade com Exclusividade</h3></a>",
+            "blockClass": ["blog-grid-right-content_text", "blog-grid-right-content-1-left-text"]
+        }
+    },
+
+    "flex-layout.col#blog-grid-right-content-1-right": {
+        "children": [
+            "image#blog-grid-right-content-1-right-image",
+            "rich-text#blog-grid-right-content-1-right-text"
+        ],
+        "props": {
+            "blockClass": "blog-grid-right-content-1-right"
+        }
+    },
+    "image#blog-grid-right-content-1-right-image": {
+        "props": {
+            "src": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/d805afef-6446-470c-bfeb-2a272896a1bc___fdc8204063332b56da1407cc5ad39fc8.jpg",
+            "link": {
+                "url": "https://blog.sunhouse.com.br/como-escolher-um-sofa/",
+                "newTab": true
+            },
+            "blockClass": ["blog-grid-image", "blog-grid-right-content-1-left-image"]
+        }
+    },
+    "rich-text#blog-grid-right-content-1-right-text": {
+        "props": {
+            "text": "22 AGO, 2023 __HOME DECOR__\n <a href='https://blog.sunhouse.com.br/como-escolher-um-sofa/' target='_blank'><h3>Como escolher um sofá? 7 dicas para comprar o modelo certo</h3></a>",
+            "blockClass": ["blog-grid-right-content_text", "blog-grid-right-content-1-left-text"]
+        }
+    },
+
+    "flex-layout.row#blog-grid-right-content-2": {
+        "children": [
+            "flex-layout.col#blog-grid-right-content-2-left",
+            "flex-layout.col#blog-grid-right-content-2-right"
+        ],
+        "props": {
+            "blockClass": ["blog-grid-right-content_line", "blog-grid-right-content-2"]
+        }
+    },
+
+    "flex-layout.col#blog-grid-right-content-2-left": {
+        "children": [
+            "image#blog-grid-right-content-2-left-image",
+            "rich-text#blog-grid-right-content-2-left-text"
+        ],
+        "props": {
+            "blockClass": "blog-grid-right-content-2-left"
+        }
+    },
+    "image#blog-grid-right-content-2-left-image": {
+        "props": {
+            "src": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/24a897d5-5866-4b73-a049-7cd0e5efbb3b___6b3e8d1eb73994c7e08f63017c752926.jpg",
+            "link": {
+                "url": "https://blog.sunhouse.com.br/8-inspiracoes-de-decoracao-para-a-sua-sala-de-estar/",
+                "newTab": true
+            },
+            "blockClass": ["blog-grid-image", "blog-grid-right-content-2-left-image"]
+        }
+    },
+    "rich-text#blog-grid-right-content-2-left-text": {
+        "props": {
+            "text": "25 OUT, 2023 __HOME DECOR__\n <a href='https://blog.sunhouse.com.br/8-inspiracoes-de-decoracao-para-a-sua-sala-de-estar/' target='_blank'><h3>8 Inspirações de decoração para a sua sala de estar!</h3></a>",
+            "blockClass": ["blog-grid-right-content_text", "blog-grid-right-content-2-right-text"]
+        }
+    },
+
+    "flex-layout.col#blog-grid-right-content-2-right": {
+        "children": [
+            "image#blog-grid-right-content-2-right-image",
+            "rich-text#blog-grid-right-content-2-right-text"
+        ],
+        "props": {
+            "blockClass": "blog-grid-right-content-2-right"
+        }
+    },
+    "image#blog-grid-right-content-2-right-image": {
+        "props": {
+            "src": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/3f9f2b76-4df3-4b57-a8b7-53f66940c6d8___4a9038a2c465ca91f5b36d79ab06fbbd.png",
+            "link": {
+                "url": "https://blog.sunhouse.com.br/dicas-para-preparar-sua-casa-para-receber-convidados-nas-festas-de-final-de-ano/",
+                "newTab": true
+            },
+            "blockClass": ["blog-grid-image", "blog-grid-image_bigger", "blog-grid-right-content-2-right-image"]
+        }
+    },
+    "rich-text#blog-grid-right-content-2-right-text": {
+        "props": {
+            "text": "4 DEZ, 2024 __HOME DECOR__\n <a href='https://blog.sunhouse.com.br/dicas-para-preparar-sua-casa-para-receber-convidados-nas-festas-de-final-de-ano/' target='_blank'><h3>Dicas para preparar sua casa para receber convidados nas festas de final de ano</h3></a>",
+            "blockClass": ["blog-grid-right-content_text", "blog-grid-right-content-2-right-text"]
+        }
+    }
+}

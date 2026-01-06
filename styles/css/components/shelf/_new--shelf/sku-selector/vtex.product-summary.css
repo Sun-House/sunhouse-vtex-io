@@ -1,0 +1,6 @@
+/* .vtex-product-summary-2-x-SKUSelectorContainer { */
+.SKUSelectorContainer {
+    min-height: 52px; /* Podem bugar algumas coisas, ficar de olho */
+    max-height: 52px; /* Podem bugar algumas coisas, ficar de olho */
+    overflow: hidden
+}

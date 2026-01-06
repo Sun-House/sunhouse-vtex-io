@@ -1,0 +1,310 @@
+/* .vtex-search-result-3-x-gallery--new-gallery { */
+.gallery--new-gallery {
+    gap: 8px 0;
+    padding-left: 0 /* Corrige estilo automatico nativo tachyons para ocupar o espaco total do container */
+}
+
+/* .orderByText--orderby-bf { */
+.orderByText--orderby-new {
+    display: none
+}
+
+/* .orderByButton--orderby-bf { */
+.orderByButton--orderby-new {
+    width: auto;
+    padding: 14px;
+    border-width: 1px;
+    border-color: #00000057;
+    border-style: solid;
+    border-radius: 50px
+}
+
+/* OrderBy Options Menu */
+.orderByOptionsContainer {
+    margin-top: 50px;
+    min-width: 265px;
+    z-index: 9;
+    border-color: #00000057;
+    border-width: 1px;
+    border-radius: 20px
+}
+
+/* .orderByOptionItem--orderby-bf { */
+.orderByOptionItem--orderby-new {
+    white-space: nowrap
+}
+
+/* .orderByOptionItem--orderby-bf:first-child { */
+.orderByOptionItem--orderby-new:first-child {
+    border-radius: 20px 20px 0 0
+}
+
+/* .orderByOptionItem--orderby-bf:last-child { */
+.orderByOptionItem--orderby-new:last-child {
+    border-radius: 0 0 20px 20px
+}
+
+/* Filters Container */
+.filter__container--category-1, /* Oculta opcao de filtrar por Departamento */
+.filter__container--selectedFilters { /* Oculta resumo de filtros selecionados */
+    display: none
+}
+
+/* Filters block */
+.filter__container--title {
+    display: flex;
+    align-items: center;
+    background-color: #a8a8a829;
+    text-align: left;
+    border-radius: 50px;
+    border: 0;
+    padding-left: 24px;
+    height: 48px
+}
+
+.filter__container {
+    border-bottom-width: 0px
+}
+
+.filter {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: #e3e4e6;
+    padding-bottom: 0px;
+    margin-bottom: 1.5rem
+}
+
+.filterMessage {
+    font-size: 0;
+    margin: 0
+}
+
+.filterMessage::after {
+    content: "Filtros disponíveis:";
+    color: #2d2926c2;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.filterTitleSpan {
+    font-size: 24px;
+    min-height: 32px;
+    height: auto;
+    margin-bottom: 18px;
+    line-height: 1.3
+}
+
+.filterTitleSpan :global(.vtex-tag) {
+    background-color: #a8a8a829;
+    color: #2d2926c2 !important;
+    vertical-align: middle;
+    margin-left: 6px;
+    transition: .2s
+}
+
+.filterTitleSpan :global(.vtex-tag):hover {
+    background-color: red;
+    color: #fff !important
+}
+
+.filterTitleSpan :global(.vtex__icon-close) {
+    display: none
+}
+
+/* Personaliza o titulo do filtro de Faixa de Preco */
+/* .vtex-search-result-3-x-filter__container--priceRange .vtex-search-result-3-x-filterTitleSpan--filters-new { */
+.filter__container--priceRange .filterTitleSpan {
+    font-size: 0
+}
+
+/* .vtex-search-result-3-x-filter__container--priceRange .vtex-search-result-3-x-filterTitleSpan--filters-new::after { */
+.filter__container--priceRange .filterTitleSpan::after {
+    content: "Preço";
+    font-size: 24px !important;
+    min-height: 32px;
+    height: auto;
+    margin-bottom: 18px;
+    line-height: 1.3
+}
+/**/
+
+
+.filterItem {
+    margin-bottom: 12px
+}
+
+.filterItem :global(.vtex-checkbox__line-container) {
+    display: flex;
+    align-items: center
+}
+
+.seeMoreButton {
+    color: #2d292680;
+    background-color: unset;
+    font-weight: 700;
+    transition: .2s
+}
+
+.seeMoreButton:hover {
+    color: #FFDA00
+}
+
+.filter__container--clearAllFilters {
+    display: none
+}
+
+.filter__container :global(.vtex__icon-check) {
+    color: #161413;
+    background-color: #FFDA00;
+    border-color: #FFDA00;
+    border-width: 2px;
+    border-style: solid
+}
+
+.filter__container :global(.vtex-slider__selector),
+.filter__container :global(.vtex-slider__base-internal) {
+    /* background-color: #FFDA00 */
+    background-color: #161413
+}
+
+.filter__container :global(.vtex-slider__selector-tooltip) {
+    background-color: #FFDA00;
+    border-color: #FFDA00;
+    color: #161413
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    /* Filters Container */
+    .accordionFilterContainer--departamento, /* Oculta opcao de filtrar por Departamento - titulo-botao do accordion */
+    .accordionFilterOpen--departamento { /* Oculta opcao de filtrar por Departamento - accordion aberto */
+        display: none
+    }
+
+    .filter__container--priceRange .filterAvailable {
+        display: none
+    }
+
+    .filterAccordionItemBox :global(.vtex__icon-check) {
+        color: #161413;
+        background-color: #FFDA00;
+        border-color: #FFDA00;
+        border-width: 2px;
+        border-style: solid
+    }
+
+    .accordionFilterItemTag:nth-child(even) :global(.vtex-tag) { /* Oculta tag que mostra qtde de filtro aplicado para aquele tipo */
+        display: none
+    }
+
+    .accordionFilterItemTag :global(.vtex-tag) {
+        background-color: #a8a8a829;
+        color: #2d2926c2 !important;
+        vertical-align: middle;
+        margin-left: 6px;
+        transition: .2s
+    }
+    
+    .accordionFilterItemTag :global(.vtex-tag):hover {
+        background-color: red;
+        color: #fff !important
+    }
+    
+    .accordionFilterItemTag :global(.vtex__icon-close) {
+        display: none
+    }
+
+    .filterAccordionBreadcrumbs {
+        background-color: #a8a8a829;
+        border-bottom-width: 0
+    }
+    
+    /* .filterBreadcrumbsText--filter-bf { */
+    .filterBreadcrumbsText--filters-new {
+        color: #2d2926c2
+    }
+
+    /* .filterBreadcrumbsText--filter-bf::after { */
+    .filterBreadcrumbsText--filters-new::after {
+        content: " disponíveis:"
+    }
+    
+    .accordionFilterItem {
+        border-bottom-width: 1px !important;
+        border-bottom-style: solid;
+        border-color: #e3e4e6
+    }
+    
+    .filterAccordionItemBox {
+        border-bottom-width: 0px
+    }
+
+    .filterPopupButton {
+        width: 100%;
+        height: 50px;
+        padding: 14px;
+        border-width: 1px;
+        border-color: #00000057;
+        border-style: solid;
+        border-radius: 50px
+    }
+    
+    /* .orderByButton--orderby-bf { */
+    .orderByButton--orderby-new {
+        width: 100%;
+        height: 50px
+    }
+    
+    /* .filterPopupTitle--orderby-bf { */
+    .filterPopupTitle--orderby-new {
+        font-size: 0;
+        margin-left: auto
+    }
+    
+    /* .filterPopupTitle--orderby-bf::after { */
+    .filterPopupTitle--orderby-new::after {
+        content: "Ordenar";
+        font-size: .875rem
+    }
+    
+    .orderByOptionsContainer {
+        margin-top: 52px;
+        min-width: fit-content;
+        width: 100%;
+        right: 0
+    }
+
+    /* .orderByDropdown--orderby-bf { */
+    .orderByDropdown--orderby-new {
+        padding-top: 0
+    }
+
+    .filterPopupArrowIcon {
+        color: #161413
+    }
+    
+    /* .filterPopupArrowIcon--orderby-bf { */
+    .filterPopupArrowIcon--orderby-new {
+        margin-left: auto;
+        padding-left: .5rem;
+        padding-top: .25rem
+    }
+
+    /* .filterClearButtonWrapper--filter-bf :global(.vtex-button) { */
+    .filterClearButtonWrapper--filters-new :global(.vtex-button) {
+        background-color: #a8a8a829;
+        color: #2d2926c2 !important;
+        border-width: 0;
+        border-radius: 50px
+    }
+    
+    /* .filterApplyButtonWrapper--filter-bf :global(.vtex-button) { */
+    .filterApplyButtonWrapper--filters-new :global(.vtex-button) {
+        background-color: #FFDA00;
+        color: #161413;
+        border-width: 0;
+        border-radius: 50px
+    }
+
+}

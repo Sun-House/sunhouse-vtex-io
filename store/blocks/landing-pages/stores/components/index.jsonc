@@ -1,0 +1,163 @@
+{
+    "container#stores-landing-page": {
+        "children": [
+            "container#stores-landing-banner",
+            "container#stores-landing-body",
+            "container#stores-landing-pre-footer"
+        ]
+    },
+
+    // Page Header
+    "container#stores-landing-banner": {
+        "children": [
+            // Mesmo banner das paginas de categorias
+            "info-card#banner-category"
+        ]
+    },
+
+    // Page Body
+    "container#stores-landing-body": {
+        "children": [
+            // Colocar aqui o conteudos do corpo da page
+            // Duas colunas de texto - lojas
+            "flex-layout.row#stores-landing-body-text-main",
+            "flex-layout.row#stores-landing-body-text-details",
+            // Bloco do showroom - a ser finalizado posteriormente
+            "container#showroom-sandbox"
+            // Bloco do form - a ser desenvolvido posteriormente
+        ]
+    },
+
+    // Bloco de texto principal
+    "flex-layout.row#stores-landing-body-text-main": {
+        "children": [
+            "flex-layout.col#stores-landing-body-text-main-left",
+            "flex-layout.col#stores-landing-body-text-main-right"
+        ],
+        "props": {
+            "blockClass": ["stores-landing-text", "stores-landing-text_main"]
+        }
+    },
+    "flex-layout.col#stores-landing-body-text-main-left": {
+        "children": [
+            "rich-text#stores-landing-body-text-main-left"
+        ],
+        "props": {
+            "blockClass": "stores-landing-body-col"
+        }
+    },
+    "flex-layout.col#stores-landing-body-text-main-right": {
+        "children": [
+            "rich-text#stores-landing-body-text-main-right"
+        ],
+        "props": {
+            "blockClass": "stores-landing-body-col"
+        }
+    },
+
+    "rich-text#stores-landing-body-text-main-left": {
+        "props": {
+            "text": "## Sua Experiência Sun House Começa Aqui",
+            "blockClass": "stores-landing-body-text"
+        }
+    },
+    "rich-text#stores-landing-body-text-main-right": {
+        "props": {
+            "text": "Conheça nossas lojas físicas e descubra peças que contam histórias com estilo.",
+            "blockClass": ["stores-landing-text", "stores-landing-text_small"]
+        }
+    },
+
+    // Bloco de texto restante
+    "flex-layout.row#stores-landing-body-text-details": {
+        "children": [
+            "flex-layout.col#stores-landing-body-text-details-left",
+            "flex-layout.col#stores-landing-body-text-details-right"
+        ],
+        "props": {
+            "blockClass": ["stores-landing-text", "stores-landing-text_details"]
+        }
+    },
+    "flex-layout.col#stores-landing-body-text-details-left": {
+        "children": [
+            "rich-text#stores-landing-body-text-details-left",
+            "rich-text#stores-landing-body-text-details-phone",
+            "rich-text#stores-landing-body-text-details-mail"
+        ],
+        "props": {
+            "blockClass": "stores-landing-body-col"
+        }
+    },
+    "flex-layout.col#stores-landing-body-text-details-right": {
+        "children": [
+            "rich-text#stores-landing-body-text-details-right",
+            "rich-text#stores-landing-body-text-details-phone",
+            "rich-text#stores-landing-body-text-details-mail"
+        ],
+        "props": {
+            "blockClass": "stores-landing-body-col"
+        }
+    },
+
+    "rich-text#stores-landing-body-text-details-left": {
+        "props": {
+            "text": "### Teodoro Sampaio\nR. Teodoro Sampaio, 1749 - Pinheiros, São Paulo - SP",
+            "blockClass": "stores-landing-text"
+        }
+    },
+    "rich-text#stores-landing-body-text-details-right": {
+        "props": {
+            "text": "### Sun House In Concept\nRua Mateus Grou, 413 – Pinheiros, São Paulo - SP",
+            "blockClass": "stores-landing-text"
+        }
+    },
+    "rich-text#stores-landing-body-text-details-phone": {
+        "props": {
+            "text": "(11) 2506-4546",
+            "blockClass": ["stores-landing-text", "stores-landing-text_phone"]
+        }
+    },
+    "rich-text#stores-landing-body-text-details-mail": {
+        "props": {
+            "text": "contato@sunhouse.com.br",
+            "blockClass": ["stores-landing-text", "stores-landing-text_mail"]
+        }
+    },
+
+    // Showroom Sandbox
+    "container#showroom-sandbox": {
+        "children": [
+            // Fazer esse bloco com ID para criar link de direcionamento direto para o bloco do showroom
+            "flex-layout.row#showroom-sandbox"
+        ],
+        "props": {
+            "blockClass": "showroom-sandbox"
+        }
+    },
+
+    "flex-layout.row#showroom-sandbox": {
+        "children": [
+            "flex-layout.col#showroom-sandbox"
+        ],
+        "props": {
+            "blockClass": "showroom-sandbox-row"
+        }
+    },
+    "flex-layout.col#showroom-sandbox": {
+        "children": [
+            // Iframe ou Sandbox do Showroom virao aqui
+        ],
+        "props": {
+            "blockClass": "showroom-sandbox-col"
+        }
+    },
+
+    // Page Pre-Footer
+    "container#stores-landing-pre-footer": {
+        "children": [
+            // Ideal bloco do instagram, mas pelo nivel de complexidade, será implementado posteriormente
+            // Por hora ficara o bloco de Showcase Slider
+            "container#showcase-slider"
+        ]
+    }
+}

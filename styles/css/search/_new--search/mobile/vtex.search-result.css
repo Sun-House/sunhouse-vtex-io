@@ -1,0 +1,25 @@
+@media screen and (max-width: 1024px) {
+    
+    /* PRECISA AJUSTAR ISSO APOS VIRADA DO MVP */
+    /* .vtex-search-result-3-x-orderByButton--orderby-bf { */
+    .orderByButton--orderby-bf {
+        width: auto;
+        height: 50px;
+        padding: 14px;
+        border-width: 1px;
+        border-color: #00000057;
+        border-style: solid;
+        border-radius: 50px
+    }
+    
+    /* .vtex-search-result-3-x-orderByText--orderby-bf { */
+    .orderByText--orderby-bf {
+        display: none
+    }
+
+    /* .vtex-search-result-3-x-orderByOptionsContainer { */
+    .orderByOptionsContainer {
+        border-radius: 4px !important
+    }
+    
+}

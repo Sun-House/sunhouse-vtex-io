@@ -12,7 +12,7 @@
 
 .trigger :global(.vtex-store-components-3-x-arrowLine),
 .trigger :global(.vtex-store-components-3-x-arrowLineRotate) {
-    color: #2d2926
+    color: #161413
 }
 
 .trigger--footer-about {
@@ -117,7 +117,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1;
-    color: #2d2926;
+    color: #161413;
     transition: transform .3s
 }
 

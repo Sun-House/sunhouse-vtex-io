@@ -3,5 +3,11 @@
     "props": {
       "blockClass": "spacing-default"
     }
+  },
+
+  "container#product-description-spacing-default": {
+    "props": {
+      "blockClass": "product-description-spacing-default"
+    }
   }
 }

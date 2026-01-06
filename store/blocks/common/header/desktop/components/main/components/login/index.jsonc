@@ -1,6 +1,16 @@
 {
+  // Wrapper condicional que será usado no header
+  "conditional-login#desktop": {
+    "blocks": ["conditional-login.logged#desktop", "conditional-login.unlogged#desktop"]
+  },
+
+  // Quando logado: usa overlay-trigger
+  "conditional-login.logged#desktop": {
+    "children": ["overlay-trigger#login"]
+  },
+
   "overlay-trigger#login": {
-    "children": ["container#greeting-title", "conditional-login"],
+    "children": ["container#greeting-title", "overlay-layout#logged"],
     "props": {
       "trigger": "hover",
       "blockClass": "login"
@@ -22,14 +32,22 @@
     }
   },
 
-  "conditional-login": {
-    "blocks": ["conditional-login.logged", "conditional-login.unlogged"]
+  // Quando não logado: usa link simples
+  "conditional-login.unlogged#desktop": {
+    "children": ["link#login-simple"]
   },
 
-  "conditional-login.logged": {
-    "children": ["overlay-layout#logged"]
+  "link#login-simple": {
+    "title": "Link Login",
+    "props": {
+      "label": "Login",
+      "href": "/login",
+      "blockClass": ["login-simple", "header-links"]
+    }
   },
 
+  // Removido o conditional-login antigo que não é mais necessário aqui
+  // Mantido apenas para referência interna do overlay-layout#logged
   "overlay-layout#logged": {
     "children": [
       "container#greeting",
@@ -72,49 +90,9 @@
     }
   },
 
-  "conditional-login.unlogged": {
-    "children": ["overlay-layout#unlogged"]
-  },
-  "overlay-layout#unlogged": {
-    "children": [
-      "rich-text#login-text-overlay",
-      "rich-text#login",
-      "rich-text#meus-pedidos",
-      "rich-text#minha-conta"
-    ],
-    "props": {
-      "placement": "top",
-      "blockClass": ["unlogged", "dropdown-login"]
-    }
-  },
-  "rich-text#meus-pedidos": {
-    "title": "Texto Meus pedidos",
-    "props": {
-      "text": "[Meus Pedidos](/account#/orders)",
-      "blockClass": ["text-unlogged", "text-meus-pedidos"]
-    }
-  },
-  "rich-text#minha-conta": {
-    "title": "Texto Minha Conta ",
-    "props": {
-      "text": "[Minha Conta](/account#/profile)",
-      "blockClass": "text-unlogged"
-    }
-  },
-  "rich-text#login": {
-    "title": "Texto Login",
-    "props": {
-      "text": "[Entrar/Cadastrar](/login)",
-      "blockClass": "text-unlogged"
-    }
-  },
-  "rich-text#login-text-overlay": {
-    "title": "Login",
-    "props": {
-      "text": "LOGIN",
-      "blockClass": "login-text-overlay"
-    }
-  },
+  // Removido overlay-layout#unlogged pois não será mais usado
+  // (o usuário não logado agora usa apenas o link simples)
+
   //Mobile
   "flex-layout.row#login-mobile": {
     "children": ["conditional-login#mobile"],

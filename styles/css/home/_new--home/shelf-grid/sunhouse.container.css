@@ -1,0 +1,29 @@
+.container--shelf-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 48px
+
+    /* DEBUG */
+    /* background: #ff000050; */
+    /* DEBUG */
+}
+
+/* .sunhouse-container-1-x-container--shelf-grid .vtex-product-summary-2-x-container--main-shelf-new { */
+.container--shelf-grid :global(.vtex-product-summary-2-x-container--main-shelf-new) {
+    max-width: unset !important
+}
+
+/* .sunhouse-container-1-x-container--shelf-grid .vtex-store-components-3-x-discountContainer,
+.sunhouse-container-1-x-container--shelf-grid .vtex-product-summary-2-x-imageContainer--new_main-shelf { */
+.container--shelf-grid :global(.vtex-store-components-3-x-discountContainer),
+.container--shelf-grid :global(.vtex-product-summary-2-x-imageContainer--new_main-shelf) {
+    width: 100%
+}
+
+/* .sunhouse-container-1-x-container--shelf-grid .vtex-product-summary-2-x-image--new_main-shelf { */
+.container--shelf-grid :global(.vtex-product-summary-2-x-image--new_main-shelf) {
+    max-width: unset !important
+}

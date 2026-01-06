@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+    
+    /* .vtex-store-video-1-x-videoElement--product-description-video { */
+    .videoElement--product-description-video {
+        max-width: 100%
+    }
+
+}

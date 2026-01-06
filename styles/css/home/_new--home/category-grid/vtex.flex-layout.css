@@ -1,0 +1,18 @@
+.flexRow--categories-slider {
+    /* margin-top: 30px; */
+    /* border-bottom: 1px solid #161413 */
+    border-bottom: 2px solid #1614134d
+}
+
+/* .vtex-flex-layout-0-x-flexRowContent--categories-slider { */
+.flexRowContent--categories-slider {
+    width: 85vw;
+    margin-left: 50%;
+    transform: translateX(-42.5vw);
+    padding: 18px 0
+}
+
+/* .vtex-flex-layout-0-x-flexColChild--categories-content { */
+.flexColChild--categories-content {
+    width: 100%
+}

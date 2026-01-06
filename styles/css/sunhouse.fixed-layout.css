@@ -1,3 +1,4 @@
+/* Sticky Header START
 .fixedLayout--sticky-header {
     z-index: 4;
     --header-logo-left: 50%;
@@ -57,7 +58,9 @@
     --header-menu-border-color: transparent
 }
 
+/ Mobile /
 @media screen and (max-width: 1024px) {
+
     .fixedLayout--sticky-header {
         position: relative
     }
@@ -65,4 +68,6 @@
     .fixedLayout--sticky-header:hover {
         box-shadow: unset
     }
+
 }
+Sticky Header END */

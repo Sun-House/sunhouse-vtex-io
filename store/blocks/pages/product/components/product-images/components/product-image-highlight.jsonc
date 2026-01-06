@@ -1,0 +1,30 @@
+// Componente finalizado - pronto para lançamento no Refresh
+{
+    "flex-layout.row#product-image-highlight": {
+        "children": [
+            "container#single-image-highlight"
+        ],
+        "props": {
+            "blockClass": "product-image-highlight-wrapper"
+        }
+    },
+
+    "container#single-image-highlight": {
+        "title": "Imagem Destaque do Produto",
+        "children": [
+            "image#single-image-highlight"
+        ],
+        "props": {
+            "blockClass": "product-image-highlight"
+        }
+    },
+
+    // imagem de destaque do produto - sera exibida dentro do container#single-image-highlight - Devera ser substituida por componente custom
+    "image#single-image-highlight": {
+        "title": "Imagem",
+        "props": {
+            "src": "https://sunhouse.vtexassets.com/arquivos/ids/248172", // A ser definido pelo Site Editor por produto
+            "blockClass": ["product-image-highlight", "image-highlight"]
+        }
+    }
+}

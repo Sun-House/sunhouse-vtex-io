@@ -1,0 +1,15 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-minicart-2-x-minicartIconLabel { */
+    .minicartIconLabel {
+        display: none
+    }
+
+    /* .sunhouse-minicart-2-x-minicartIconContainer--minicart-main .vtex-store-icons-0-x-cartIcon { */
+    .minicartIconContainer--minicart-main :global(.vtex-store-icons-0-x-cartIcon) {
+        color: #161413;
+        width: 28px;
+        height: 28px;
+    }
+    
+}

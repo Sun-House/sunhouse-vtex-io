@@ -1,0 +1,123 @@
+{
+  "flex-layout.row#categories-slider": {
+    "title": "Container categorias",
+    "children": [
+      "flex-layout.col#categories-slider-content"
+    ],
+    "props": {
+      "blockClass": "categories-slider",
+      "colSizing": "equal",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#categories-slider-content": {
+    "title": "Conteúdo categorias",
+    "children": [
+      "flex-layout.col#categories-content"
+    ],
+    "props": {
+      "blockClass": "categories-slider-content"
+    }
+  },
+  "flex-layout.col#categories-content": {
+    "title": "Carrossel de categorias",
+    "children": [
+      "image-text-list#categories-slider"
+    ],
+    "props": {
+      "blockClass": "categories-content",
+      "width": "grow"
+    }
+  },
+
+  "image-text-list#categories-slider": {
+    "children": [
+      // "embla-carousel#by-category",
+      "responsive-layout.desktop#categories-slider",
+      "responsive-layout.mobile#categories-slider"
+    ],
+    "props": {
+      "imageTextArray": [
+        {
+          "imageText": "Categoria\nCategoria 1",
+          "image": "assets/images/categories/category.png",
+          "link": "/categoria/subcategoria"
+        },
+        {
+          "imageText": "Categoria\nCategoria 2",
+          "image": "assets/images/categories/category.png",
+          "link": "/categoria/subcategoria"
+        },
+        {
+          "imageText": "Categoria\nCategoria 3",
+          "image": "assets/images/categories/category.png",
+          "link": "/categoria/subcategoria"
+        },
+        {
+          "imageText": "Categoria\nCategoria 4",
+          "image": "assets/images/categories/category.png",
+          "link": "/categoria/subcategoria"
+        },
+        {
+          "imageText": "Categoria\nCategoria 5",
+          "image": "assets/images/categories/category.png",
+          "link": "/categoria/subcategoria"
+        }
+      ],
+      "blockClass": "categories-slider"
+    }
+  },
+
+  "responsive-layout.desktop#categories-slider": {
+    "title": "Slider de Categorias - Desktop",
+    "children": [
+      "embla-carousel#by-category"
+    ],
+    "props": {
+      "blockClass": "categories-slider"
+    }
+  },
+
+  "responsive-layout.mobile#categories-slider": {
+    "title": "Slider de Categorias - Mobile",
+    "children": [
+      "slider-layout#differentials"
+    ],
+    "props": {
+      "blockClass": "categories-slider"
+    }
+  },
+
+  "embla-carousel#by-category": {
+    "props": {
+      "options": {
+        "navigation": true,
+        "dots": false,
+        "draggable": true,
+        "loop": true,
+        "align": "start"
+        // Ver se consigo reaproveitar o breakpoints para configurar o mobile
+        // "breakpoints": {
+        //   "(max-width: 767px)": { "align": "center" },
+        //   "(min-width: 768px)": { "align": "start" }
+        // }
+      },
+      "blockClass": ["by-category"]
+    }
+  },
+
+  "slider-layout#by-category": {
+    "title": "Carrossel da prateleira com banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 10,
+        "tablet": 5,
+        "phone": 2
+      },
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "infinite": true,
+      "blockClass": ["shelf", "banner-shelf", "by-category"]
+    }
+  }
+}

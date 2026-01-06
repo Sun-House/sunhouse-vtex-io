@@ -1,0 +1,80 @@
+/* Texto Principal */
+/* .vtex-rich-text-0-x-wrapper--blog-grid-main-text { */
+.wrapper--blog-grid-main-text {
+    margin-bottom: 48px
+}
+
+/* .vtex-rich-text-0-x-heading--blog-grid-main-text { */
+.heading--blog-grid-main-text {
+    font-size: 42px;
+    font-weight: 500;
+    max-width: 70%;
+    margin-bottom: 25px
+}
+
+/* .vtex-rich-text-0-x-paragraph--blog-grid-main-text { */
+.paragraph--blog-grid-main-text {
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    color: #5b5757;
+    line-height: 1.5;
+    max-width: 80%
+}
+
+/* Trends - Bullet Points */
+/* .vtex-rich-text-0-x-wrapper--blog-grid-bullet-points { */
+.wrapper--blog-grid-bullet-points {
+    max-width: 70%
+}
+  
+/* .vtex-rich-text-0-x-list--blog-grid-bullet-points { */
+.list--blog-grid-bullet-points {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 10px
+}
+
+/* .vtex-rich-text-0-x-listItem--blog-grid-bullet-points { */
+.listItem--blog-grid-bullet-points {
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    padding: 8px 24px;
+    color: #161413;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease-in-out
+}
+  
+/* .vtex-rich-text-0-x-listItem--blog-grid-bullet-points:hover { */
+.listItem--blog-grid-bullet-points:hover {
+    background-color: #161413;
+    color: #ffda00;
+    border-color: #161413
+}
+
+/* Texto do Bloco de Posts */
+/* .vtex-rich-text-0-x-strong--blog-grid-right-content_text::before { */
+.strong--blog-grid-right-content_text::before {
+    content: "\F287";
+    font-family: "Bootstrap-Icons";
+    font-size: 6px;
+    color: #FFDA00; /* Talvez seja necessario mudar essa cor */
+    margin-left: 8px;
+    margin-right: 8px;
+    position: relative; /* Fix para ficar alinhado ao centro do texto */
+    top: -2px /* Fix para ficar alinhado ao centro do texto */
+}
+
+/* .vtex-rich-text-0-x-paragraph--blog-grid-right-content_text { */
+.paragraph--blog-grid-right-content_text {
+    color: #5b5757;
+    font-size: 14px
+}
+
+/* .vtex-rich-text-0-x-strong--blog-grid-right-content_text { */
+.strong--blog-grid-right-content_text {
+    font-weight: 400 /* alterar de acordo com o texto anterior ao strong */
+}

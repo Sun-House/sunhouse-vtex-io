@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-container-1-x-container--footer-social-content { */
+    .container--footer-social-content {
+        padding-inline: 0
+    }
+    
+}

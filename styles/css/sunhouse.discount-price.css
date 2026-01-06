@@ -1,1 +1,49 @@
-.container--shelf-default{font-weight:700;font-size:14px;line-height:18px;white-space:nowrap;text-align:left}.container--shelf-default::after{display:inline-flex;content:"";font-size:16px;font-family:"fantasticon";font-style:normal;font-weight:400;line-height:1;color:#4db6ac;margin-left:4px}.container--shelf-default .currencyContainer{font-size:16px;line-height:20px}
+/* A PRINCIPIO ESTOU APLICANDO AS ALTERACOES DO REFRESH AQUI
+   VERIFICAR SE PRECISA SER DIVIDIDO EM ARQUIVOS SEPARADOS */
+
+
+   /* IDEAL REAVALIAR TODO ESSE BLOCO
+   Interessante seria ser um bloco para vitrine e outro PDP - Hoje ambos estao usando o sistema abaixo declarado */
+
+
+
+.container--shelf-default {
+    /* font-weight: 700;
+    font-size: 14px;
+    line-height: 18px; */
+    white-space: nowrap;
+    text-align: left
+}
+
+/* Inativado - Gera icone de PIX ao lado do preço à vista
+.container--shelf-default::after {
+    display: inline-flex;
+    content: "";
+    font-size: 16px;
+    font-family: "fantasticon";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    color: #4db6ac;
+    margin-left: 4px
+} */
+
+.container--shelf-default .currencyContainer {
+    /* font-size: 16px;
+    line-height: 20px */
+    font-size: 38px;
+    line-height: normal;
+    /* font-weight: bold */
+    font-weight: 500
+}
+
+/* Para o Bloco de Preços 2 - Versao destaque para o preço em 10x */
+/* .sunhouse-discount-price-11-x-container--product-high-price--pix { */
+.container--product-high-price--pix {
+    text-transform: uppercase
+}
+
+/* .sunhouse-discount-price-1-x-currencyContainer--product-high-price--pix */
+.currencyContainer--product-high-price--pix {
+    font-weight: 600    
+}

@@ -1,0 +1,9 @@
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-store-drawer-0-x-openIconContainer--menu-mobile .vtex-store-drawer-0-x-menuIcon { */
+    .openIconContainer--menu-mobile .menuIcon {
+        height: 28px !important;
+        width: 28px !important
+    }
+
+}

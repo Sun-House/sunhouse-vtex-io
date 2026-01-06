@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024px) {
+
+    .dimensionsContainer--product-dimensions-assembled {
+        margin: 24px 18px 0 18px
+    }
+
+    .value--product-dimensions-assembled {
+        min-width: 62px;
+        text-align: right
+    }
+    
+}

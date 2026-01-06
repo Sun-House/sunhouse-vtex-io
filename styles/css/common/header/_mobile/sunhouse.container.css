@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-container-1-x-container--header--mobile__main { */
+    .container--header--mobile__main {
+        height: 95px !important
+    }
+
+}

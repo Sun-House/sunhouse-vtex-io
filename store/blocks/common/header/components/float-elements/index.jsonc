@@ -1,18 +1,25 @@
 {
   "container#float-elements": {
     "title": "Elementos Flutuantes",
-    "children": ["back-to-top-button", "storage-layout#cookies"],
+    "children": [
+      "back-to-top-button",
+      "storage-layout#cookies"
+    ],
     "props": {
       "blockClass": "float-elements"
     }
   },
   "back-to-top-button": {
+    "title": "Botão Voltar ao Topo",
     "props": {
       "display": "caret-icon"
     }
   },
   "storage-layout#cookies": {
-    "children": ["rich-text#text-cookies", "action-button#cookies"],
+    "children": [
+      "rich-text#text-cookies",
+      "action-button#cookies"
+    ],
     "props": {
       "blockClass": "cookies"
     }

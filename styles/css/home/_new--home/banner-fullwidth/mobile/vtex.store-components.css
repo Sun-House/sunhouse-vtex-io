@@ -1,0 +1,23 @@
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-store-components-3-x-infoCardTextContainer--banner-fullwidth { */
+    .infoCardTextContainer--banner-fullwidth {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 28px
+    }
+    
+    /* .vtex-store-components-3-x-container--banner-fullwidth { */
+    .container--banner-fullwidth {
+        padding-left: unset;
+        margin-top: 398px;
+        margin-bottom: 24px
+    }
+    
+    /* .vtex-store-components-3-x-infoCardCallActionContainer--banner-fullwidth .vtex-button { */
+    .infoCardCallActionContainer--banner-fullwidth :global(.vtex-button) {
+        padding: 10px 14px;
+        font-size: 18px
+    }
+
+}

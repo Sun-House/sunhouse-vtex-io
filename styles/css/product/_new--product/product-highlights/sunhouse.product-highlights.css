@@ -1,0 +1,75 @@
+/* Ideal remover os seletores especiais abaixo, e deixar no estilo geral  START */
+/* Seletor especial deixar na retaguarda para uso sazonal - como Black Friday */
+/* .sunhouse-product-highlights-2-x-productHighlightText[data-highlight-id="414"],
+.sunhouse-product-highlights-2-x-productHighlightText[data-highlight-id="262"],
+.sunhouse-product-highlights-2-x-productHighlightText[data-highlight-id="218"],
+.sunhouse-product-highlights-2-x-productHighlightText[data-highlight-id="212"]
+{
+
+} */
+
+/* .sunhouse-product-highlights-2-x-productHighlightText--highlights_product-page {
+.productHighlightText { */
+.productHighlightText--highlights_product-page {
+    flex: 1;
+    font-size: 12px;
+    line-height: 31px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin: 0 2px;
+    background-color: #e1e1e1 !important; /* Ja no padrao Refresh */
+    color: #161413 !important /* Ja no padrao Refresh */
+}
+/* END */
+
+/* .sunhouse-product-highlights-2-x-productHighlightText--highlights_product-page { */
+.productHighlightText--highlights_product-page {
+    max-width: fit-content !important;
+    margin-top: 20px;
+    /* padding-left: 8px;
+	padding-right: 8px */
+    padding-left: 16px;
+	padding-right: 16px;
+    font-size: 16px;
+    /* font-family: 'Montserrat'; - Fonte herda automaticamente do font-faces.css */
+    line-height: 31px;
+    font-weight: normal; /* Ideal testar 500 apos ajustar o font-faces.css */
+}
+
+/* Collection Highlights */
+.productHighlightText--highlights_collection-pdp::before {
+    /* content: "\F4B2"; - Ficou meio estranho, mas deixar aqui para referencia futura */
+    content: "\F5B2";
+    font-family: "Bootstrap-Icons";
+    font-size: 20px;
+    margin-right: 12px;
+    color: #161413
+}
+
+.productHighlightText--highlights_collection-pdp {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    color: #161413;
+    text-transform: none;
+    text-decoration: none;
+
+    margin-bottom: 1rem
+}
+
+/* Mobile */
+/* Apenas para shelf - nao aplica na PDP */
+/* APENAS PARA A BLACK FRIDAY */
+@media screen and (max-width: 1024px) {
+
+	/* Flag OUTLET */
+	.productHighlightText[data-highlight-id="414"]:not(.productHighlightText--highlights_product-page) {
+		display: none
+	}
+
+}

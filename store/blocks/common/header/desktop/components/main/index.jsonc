@@ -1,44 +1,47 @@
 {
   "container#header--desktop__main": {
     "title": "Principal",
-    "props": {
-      "wrapper": true,
-      "blockClass": ["header--desktop__main", "container-center"]
-    },
     "children": [
       "container#header--desktop__controls--left",
       "logo#logo-desktop",
       "container#header--desktop__controls--right"
-    ]
+    ],
+    "props": {
+      "wrapper": true,
+      "blockClass": ["header--desktop__main", "container-center"]
+    }
   },
 
   "container#header--desktop__controls--left": {
     "title": "Controles esquerda",
+    "children": [
+      "link#stores",
+      "link#showroom",
+      "link#wishlist--left"
+      // "conditional-login#desktop"
+    ],
     "props": {
       "wrapper": true,
       "blockClass": [
         "header--desktop__controls",
         "header--desktop__controls--left"
       ]
-    },
-    "children": [
-      "link#stores",
-      "link#wishlist--left",
-      "overlay-trigger#login"
-    ]
+    }
   },
 
   "link#stores": {
     "title": "Lojas",
-    "children": ["icon#stores"],
+    "children": [
+      "icon#stores"
+    ],
     "props": {
       "label": "Lojas",
-      "href": "/institucional/nossas-lojas",
+      // "href": "/institucional/nossas-lojas",
+      "href": "/landing/nossas-lojas",
       "target": "_blank",
-      "blockClass": ["header-links"]
+      "blockClass": ["header-links", "header-links--stores"]
     }
   },
-
   "icon#stores": {
     "props": {
       "id": "hpa-stores",
@@ -46,17 +49,29 @@
       "activeClassName": "vtex-store-components-3-x-storesIcon"
     }
   },
+  
+  // Link Showroom
+  "link#showroom": {
+    "title": "Showroom",
+    "props": {
+      "label": "Showroom Virtual",
+      "href": "/landing/nossas-lojas#showroom-virtual",
+      "blockClass": ["header-links", "link-showroom"]
+    }
+  },
 
   "link#wishlist--left": {
     "title": "Link Favoritos",
-    "children": ["icon#wishlist", "icon#wishlist-filled"],
+    "children": [
+      "icon#wishlist",
+      "icon#wishlist-filled"
+    ],
     "props": {
       "label": "Favoritos",
       "href": "/wishlist",
       "blockClass": ["wishlist", "header-links"]
     }
   },
-
   "icon#wishlist": {
     "props": {
       "id": "inf-heart",
@@ -64,7 +79,6 @@
       "activeClassName": "vtex-store-components-3-x-heartIcon"
     }
   },
-
   "icon#wishlist-filled": {
     "props": {
       "id": "inf-heart--filled",
@@ -75,23 +89,27 @@
 
   "container#header--desktop__controls--right": {
     "title": "Controles direita",
+    "children": [
+      // "link#wishlist--right",
+      "conditional-login#desktop",
+      "overlay-trigger#search-bar", // Deixar esse botao de busca para o Sticky Header mais intuitivo
+      // "minicart.v2"
+      "container#minicart-container"
+    ],
     "props": {
       "blockClass": [
         "header--desktop__controls",
         "header--desktop__controls--right"
       ]
-    },
-    "children": [
-      "link#wishlist--right",
-      // "overlay-trigger#login",
-      "overlay-trigger#search-bar",
-      "minicart.v2"
-    ]
+    }
   },
 
   "link#wishlist--right": {
     "title": "Link Favoritos",
-    "children": ["icon#wishlist", "icon#wishlist-filled"],
+    "children": [
+      "icon#wishlist",
+      "icon#wishlist-filled"
+    ],
     "props": {
       "href": "/wishlist",
       "blockClass": [

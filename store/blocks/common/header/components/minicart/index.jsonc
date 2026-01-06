@@ -1,18 +1,46 @@
 {
+  "container#minicart-container": {
+    "children": [
+      "minicart.v2",
+      "minicart-widget#valor-dinamico"
+    ],
+    "props": {
+      "blockClass": "minicart-container"
+    }
+  },
+
   "minicart.v2": {
+    "children": [
+      "flex-layout.row#minicart-header",
+      "minicart-base-content"
+    ],
     "props": {
       "MinicartIcon": "icon-cart#minicart-icon",
-      "quantityDisplay": "always",
+      // "quantityDisplay": "always",
+      "quantityDisplay": "never",
       "alwaysTwoDigits": "not-empty",
       "maxDrawerWidth": 500,
-      "customPixelEventName": "addToCart",
+      "customPixelEventName": "addToCart", // Desabilitado ele permite o prop do botao da PDP de addToCart "isOneClickBuy" funcionar corretamente
       "itemCountMode": "total",
+      "iconLabel": "Carrinho", // Nova prop customizada para visual novo do minicart Refresh
       "blockClass": ["minicart", "minicart-main"]
-      
-      // Correcao de texto do carrinho - sera ajustado no Refresh
-      ,"iconLabel": " "
-    },
-    "children": ["flex-layout.row#minicart-header", "minicart-base-content"]
+    }
+  },
+
+  // Gera widget ao lado do icone do minicart para exibir o valor total do carrinho dinamicamente
+  "minicart-widget#valor-dinamico": {
+    "props": {
+      "showWhenEmpty": true,
+      "blockClass": "minicart-widget"
+    }
+  },
+
+  "rich-text#minicart-outside-title": {
+    "title": "Texto Carrinho - Header",
+    "props": {
+      "text": "Carrinho",
+      "blockClass": "minicart-outside-title"
+    }
   },
 
   "icon-cart#minicart-icon": {
@@ -36,7 +64,9 @@
     }
   },
   "flex-layout.col#minicart-close": {
-    "children": ["drawer-close-button#minciart-header-close"],
+    "children": [
+      "drawer-close-button#minciart-header-close"
+    ],
     "props": {
       "blockClass": "minicart-close"
     }
@@ -67,8 +97,8 @@
   },
   "flex-layout.col#minicart-quantity": {
     "children": [
-      "rich-text#minicart-title",
-      "minicart-quantity-badge#header-quantity"
+      "rich-text#minicart-title"
+      // "minicart-quantity-badge#header-quantity"
     ],
     "props": {
       "blockClass": "header-quantity",
@@ -78,7 +108,7 @@
   "rich-text#minicart-title": {
     "title": "Texto Sacola",
     "props": {
-      "text": "Carrinho",
+      "text": "Meu Carrinho",
       "blockClass": "minicart-title"
     }
   },
@@ -94,13 +124,20 @@
   },
   "minicart-base-content": {
     "blocks": ["minicart-empty-state"],
-    "children": ["minicart-product-list", "flex-layout.row#minicart-footer"]
+    "children": [
+      "minicart-product-list",
+      "flex-layout.row#minicart-footer"
+    ]
   },
   "minicart-empty-state": {
-    "children": ["flex-layout.row#empty-state"]
+    "children": [
+      "flex-layout.row#empty-state"
+    ]
   },
   "flex-layout.row#empty-state": {
-    "children": ["flex-layout.col#empty-state"]
+    "children": [
+      "flex-layout.col#empty-state"
+    ]
   },
   "flex-layout.col#empty-state": {
     "children": [
@@ -133,7 +170,9 @@
     "blocks": ["product-list#minicart"]
   },
   "flex-layout.row#minicart-footer": {
-    "children": ["flex-layout.col#minicart-footer"],
+    "children": [
+      "flex-layout.col#minicart-footer"
+    ],
     "props": {
       "blockClass": "minicart-footer"
     }
@@ -160,26 +199,23 @@
   },
 
   "flex-layout.row#minicart-footer-summary": {
-    "children": ["minicart-summary"],
+    "children": [
+      "minicart-summary"
+    ],
     "props": {
       "blockClass": "minicart-footer-summary"
     }
   },
   "minicart-summary": {
-    "blocks": [
-      //"checkout-summary.compact#minicart"
-      "checkout-summary#minicartNew" // esse deu certo, precisa apenas personalizar campos e visuais
-    ],
+    "blocks": ["checkout-summary#minicartNew"],
     "props": {
       "blockClass": "minicart-summary"
     }
   },
 
-
-  // EM DEV START
   "checkout-summary#minicartNew": {
     "children": [
-      //"summary-coupon",
+      //"summary-coupon", - Esse nao esta renderizando nada - testar usando o minicart nativo vtex, e nao o sunhouse.minicart
       "summary-totalizers#minicartNew"
       //"summary-installments#minicartNew"
     ],
@@ -198,7 +234,6 @@
     "props": {
       "showTotal": true,
       "showDeliveryTotal": true,
-      //"showOriginalTotal": false,
       "blockClass": "totalizers__minicartNew"
     }
   },
@@ -207,11 +242,11 @@
       "blockClass": "installments__minicartNew"
     }
   },
-  // EM DEV END
-
 
   "checkout-summary.compact#minicart": {
-    "children": ["summary-totalizers#minicart"],
+    "children": [
+      "summary-totalizers#minicart"
+    ],
     "props": {
       "totalizersToShow": ["Items"]
     }
@@ -264,13 +299,17 @@
     }
   },
   "flex-layout.col#minicart-checkout-button": {
-    "children": ["minicart-checkout-button"],
+    "children": [
+      "minicart-checkout-button"
+    ],
     "props": {
       "blockClass": "minicart-checkout-button"
     }
   },
   "flex-layout.col#minicart-continue-button": {
-    "children": ["drawer-close-button#minicart-footer-close"],
+    "children": [
+      "drawer-close-button#minicart-footer-close"
+    ],
     "props": {
       "blockClass": "minicart-continue-button"
     }

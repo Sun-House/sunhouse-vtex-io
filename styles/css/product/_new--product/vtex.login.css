@@ -1,0 +1,24 @@
+/* Atraves desse arquivo é possivel customizar o header por namekey de template */
+:global(.render-container.render-route-store-product) {
+	--header-background-color: transparent;
+    --header-text-color: #fff;
+    --header-menu-item-highlight-color: #fff;
+	--header-menu-border-color: transparent
+}
+
+:global(.render-route-store-product .render-provider .vtex-store__template) {
+    background-color: unset
+}
+
+/* Desktop Force */
+/* @media screen and (min-width: 1025px) { ... } */
+
+/* Mobile */
+@media (max-width: 1024px) {
+    
+    :global(.render-container.render-route-store-product .sunhouse-container-1-x-wrapper--header--mobile__main),
+    :global(.render-container.render-route-store-product .vtex-flex-layout-0-x-flexRow--header-mobile-bottom) {
+        background-color: unset !important;
+    }
+
+}

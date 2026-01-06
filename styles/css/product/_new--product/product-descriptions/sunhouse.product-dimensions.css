@@ -1,0 +1,59 @@
+/* .sunhouse-product-dimensions-0-x-dimensionsContainer--product-dimensions-assembled { */
+.dimensionsContainer--product-dimensions-assembled {
+    margin: 24px 62px 0 62px
+}
+
+/* .sunhouse-product-dimensions-0-x-dimension--product-dimensions-assembled { */
+.dimension--product-dimensions-assembled {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px 0; */
+    padding: 17px 0;
+    border-bottom: 1px solid #2d2926a1 /* Alterar conforme padrao Refresh Edson */
+}
+
+.label--product-dimensions-assembled,
+.value--product-dimensions-assembled,
+.dimension--product-dimensions-assembled:last-child {
+    font-family: "Onest", sans-serif;
+    font-size: 15px
+}
+
+/* .sunhouse-product-dimensions-0-x-label--product-dimensions-assembled { */
+.label--product-dimensions-assembled {
+    /* color: #2d2926a1; - Alterar conforme padrao Refresh Edson */
+    color: #16141361; /* Padrao final Refresh */
+    font-weight: normal !important;
+}
+
+/* .sunhouse-product-dimensions-0-x-value--product-dimensions-assembled { */
+.value--product-dimensions-assembled {
+    font-weight: 700 !important;
+    /* color: #2d2926 - Alterar conforme padrao Refresh Edson */
+    color: #161413; /* Padrao final Refresh */
+}
+
+/* Correcao para erro de estrutura do JSON da dimensao de Peso */
+/* .sunhouse-product-dimensions-0-x-dimension--product-dimensions-assembled:last-child { */
+.dimension--product-dimensions-assembled:last-child {
+    font-weight: 700;
+    border-bottom: unset
+}
+
+/* .sunhouse-product-dimensions-0-x-label--product-dimensions-assembled::after { */
+.label--product-dimensions-assembled::after {
+    content: "— Dimensões do Produto Montado";
+    margin-left: 12px;
+    opacity: 0;
+    transition: all .3s ease-in-out
+}
+
+/* .sunhouse-product-dimensions-0-x-dimension--product-dimensions-assembled:hover .sunhouse-product-dimensions-0-x-label--product-dimensions-assembled::after { */
+.dimension--product-dimensions-assembled:hover .label--product-dimensions-assembled::after {
+    opacity: 1
+}
+
+/* .sunhouse-product-dimensions-0-x-dimension--product-dimensions-assembled--weight .sunhouse-product-dimensions-0-x-label--product-dimensions-assembled::after { */
+.dimension--product-dimensions-assembled--weight .label--product-dimensions-assembled::after {
+    content: ""
+}

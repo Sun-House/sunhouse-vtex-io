@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+    
+    .paragraph--stores-landing-text_small {
+        color: #161413;
+        max-width: unset;
+        line-height: 1.5;
+        margin-top: 24px
+    }
+    
+}

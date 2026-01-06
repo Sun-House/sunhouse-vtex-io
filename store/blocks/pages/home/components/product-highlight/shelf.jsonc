@@ -1,0 +1,64 @@
+{
+    "flex-layout.row#product-highlight-shelf": {
+        "title": "Prateleira Destaque",
+        "children": [
+            "flex-layout.col#product-highlight-shelf"
+        ],
+        "props": {
+            // "fullWidth": true
+            //"blockClass": ["shelf-home01", "shelf-container"]
+            "blockClass": "product-highlight-shelf"
+        }
+    },
+
+    "flex-layout.col#product-highlight-shelf": {
+        //"title": "Prateleira 1",
+        "children": [
+            "rich-text#product-highlight-shelf",
+            "hover-container#product-highlight-shelf"
+        ],
+        "props": {
+            //"blockClass": "shelf-home01"
+            "blockClass": "product-highlight-shelf"
+        }
+    },
+
+    "rich-text#product-highlight-shelf": {
+        "title": "Prateleira Destaque - Título",
+        "props": {
+            "text": "## Elegância que acolhe, design que encanta.\nA Cadeira Fleur combina a leveza da trama artesanal com a sofisticação do acabamento champagne. Um convite ao bem-estar com estilo.",
+            //"blockClass": ["shelf-home01", "common-title"]
+            "blockClass": "product-highlight-shelf"
+        }
+    },
+
+    "hover-container#product-highlight-shelf": {
+        "title": "Prateleira Destaque - Hover",
+        "children": [
+            "list-context.product-list#product-highlight-shelf"
+        ],
+        "props": {
+            //"blockClass": ["shelf-home01", "hover-shelf-list"]
+            "blockClass": "product-highlight-shelf"
+        }
+    },
+
+    "list-context.product-list#product-highlight-shelf": {
+        "title": "Produto Destaque",
+        "blocks": ["product-summary.shelf#product-highlight"],
+        "children": [
+            // "responsive-layout.desktop#shelf-slider",
+            // "responsive-layout.mobile#shelf-slider"
+            "container.list-render#product-highlight-shelf"
+        ],
+        "props": {
+            "maxItems": 1
+        }
+    },
+
+    "container.list-render#product-highlight-shelf": {
+        "props": {
+            "blockClass": "product-highlight-shelf"
+        }
+    }
+}

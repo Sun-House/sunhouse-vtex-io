@@ -1,0 +1,46 @@
+/* Textos da Prateleira Destaque */
+/* .vtex-rich-text-0-x-heading--product-highlight-shelf { */
+.heading--product-highlight-shelf {
+    font-size: 42px;
+    font-weight: 500;
+    max-width: 70%; /* Pode ser necessario ajustar */
+    margin-bottom: 25px
+}
+
+/* .vtex-rich-text-0-x-paragraph--product-highlight-shelf { */
+.paragraph--product-highlight-shelf {
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    color: #5b5757;
+    /* color: #16141361; */
+    line-height: 1.5
+}
+
+/* Textos de detalhes do Produto Destaque */
+/* .vtex-rich-text-0-x-wrapper--product-highlight-text { */
+.wrapper--product-highlight-text {
+    width: 100%
+}
+
+/* .vtex-rich-text-0-x-paragraph--product-highlight-text { */
+.paragraph--product-highlight-text {
+    width: 100%;
+    font-family: "Onest", sans-serif;
+    color: #5b5757;
+    /* color: #16141361; */
+}
+
+/* .vtex-rich-text-0-x-strong--product-highlight-text { */
+.strong--product-highlight-text {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: -16px;
+    color: #161413
+}
+
+/* .vtex-rich-text-0-x-strong--product-highlight-text:first-child { */
+.strong--product-highlight-text:first-child {
+    border-bottom: 1px solid;
+    padding-bottom: 24px
+}

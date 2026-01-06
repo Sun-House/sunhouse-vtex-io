@@ -1,0 +1,11 @@
+:global(.render-container.render-route-store-search-department),
+:global(.render-container.render-route-store-search-category),
+:global(.render-container.render-route-store-search-subcategory),
+:global(.render-container.render-route-store-search-brand),
+:global(.render-container.render-route-store-search),
+:global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] {
+	--header-background-color: transparent;
+    --header-text-color: #fff;
+    --header-menu-item-highlight-color: #fff;
+	--header-menu-border-color: transparent
+}

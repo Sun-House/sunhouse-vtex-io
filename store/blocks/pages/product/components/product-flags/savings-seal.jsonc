@@ -1,0 +1,10 @@
+{
+    "product-price-savings#sale-flag": {
+        "props": {
+            "percentageStyle": "compact",
+            "message": "{savingsPercentage}",
+            // "blockClass": "discount-seal"
+            "blockClass": ["discount-seal", "flag-sale"] // Pode ser necessario remover essa classe "discount-seal"
+        }
+    }
+}

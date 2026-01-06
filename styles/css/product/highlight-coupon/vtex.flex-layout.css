@@ -1,0 +1,14 @@
+/* Css abaixo em duplicidade* - precisa remover do outro arquivo geral */
+.flexRow--wrapper__highlight-pdp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 42px; /* *Css Novo - Ajuste para novo layout Refresh */
+    padding: 25px;
+    background-color: #68bd4433;
+    border: 1px solid #68bd44;
+    border-radius: 15px;
+}

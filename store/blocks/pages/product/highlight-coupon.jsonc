@@ -1,4 +1,14 @@
-{    
+// COMPONENTE DESCONTINUADO NO REFRESH
+{
+    "flex-layout.row#product-highlight-coupon": {
+        "children": [
+            "container#wrapper__highlight-coupon"
+        ],
+        "props": {
+            "blockClass": "product-highlight-coupon"
+        }
+    },
+
     "container#wrapper__highlight-coupon": {
         "title": "Faixa Destaque de Cupom",
         "children": [

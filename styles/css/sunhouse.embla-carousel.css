@@ -178,17 +178,19 @@
     justify-content: center
 }
 
+/* Movido para o arquivo home/_new--home/categories-bar/sunhouse.embla-carousel.css
 .container--by-category .viewport .emblaContainer {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
-}
+} */
 
 .container--by-category .viewport {
     margin-inline: 30px;
     overflow: hidden
 }
 
+/* Movido para o arquivo home/_new--home/categories-bar/sunhouse.embla-carousel.css
 .container--by-category .viewport .link--by-category {
     display: flex;
     flex-direction: column;
@@ -206,7 +208,6 @@
     border-radius: 50%;
     border: 2px solid #aba9a8;
     transition: border-color .2s;
-    /*  */
     width: 89px;
     height: 89px
 }
@@ -219,7 +220,7 @@
 
 .container--by-category .viewport .link--by-category:hover .imageContainer {
     border-color: #ffda00
-}
+} */
 
 .container--by-category .prevButton,
 .container--by-category .nextButton {

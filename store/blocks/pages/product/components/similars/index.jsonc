@@ -1,5 +1,7 @@
+/* Componente será descontinuado conforme novo componente de SKU Selector fara essa funcao */
 {
   "container#similars": {
+    "title": "Bloco - Outras Cores",
     "props": {
       "blockClass": "similars"
     },

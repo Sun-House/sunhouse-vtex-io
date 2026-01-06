@@ -1,8 +1,11 @@
-.gallery--bf-gallery {
-    padding-left: 0 /* Corrige estilo automatico nativo tachyons para ocupar o espaco total do container */
-}
+/* TUDO ABAIXO MOVIDO PARA search/_new--search/vtex.search-result.css */
 
-.orderByText--orderby-bf {
+
+/* .gallery--bf-gallery {
+    padding-left: 0 / Corrige estilo automatico nativo tachyons para ocupar o espaco total do container /
+} */
+
+/* .orderByText--orderby-bf {
     display: none
 }
 
@@ -15,7 +18,7 @@
     border-radius: 50px
 }
 
-/* OrderBy Options Menu */
+/ OrderBy Options Menu /
 .orderByOptionsContainer {
     margin-top: 50px;
     min-width: 265px;
@@ -37,13 +40,13 @@
     border-radius: 0 0 20px 20px
 }
 
-/* Filters Container */
-.filter__container--category-1, /* Oculta opcao de filtrar por Departamento */
-.filter__container--selectedFilters { /* Oculta resumo de filtros selecionados */
+/ Filters Container /
+.filter__container--category-1, / Oculta opcao de filtrar por Departamento /
+.filter__container--selectedFilters { / Oculta resumo de filtros selecionados /
     display: none
 }
 
-/* Filters block */
+/ Filters block /
 .filter__container--title {
     display: flex;
     align-items: center;
@@ -147,12 +150,12 @@
     color: #2d2926
 }
 
-/* Mobile */
+/ Mobile /
 @media screen and (max-width: 1024px) {
 
-    /* Filters Container */
-    .accordionFilterContainer--departamento, /* Oculta opcao de filtrar por Departamento - titulo-botao do accordion */
-    .accordionFilterOpen--departamento { /* Oculta opcao de filtrar por Departamento - accordion aberto */
+    / Filters Container /
+    .accordionFilterContainer--departamento, / Oculta opcao de filtrar por Departamento - titulo-botao do accordion /
+    .accordionFilterOpen--departamento { / Oculta opcao de filtrar por Departamento - accordion aberto /
         display: none
     }
 
@@ -168,7 +171,7 @@
         border-style: solid
     }
 
-    .accordionFilterItemTag:nth-child(even) :global(.vtex-tag) { /* Oculta tag que mostra qtde de filtro aplicado para aquele tipo */
+    .accordionFilterItemTag:nth-child(even) :global(.vtex-tag) { / Oculta tag que mostra qtde de filtro aplicado para aquele tipo /
         display: none
     }
 
@@ -272,4 +275,4 @@
         border-radius: 50px
     }
 
-}
+} */

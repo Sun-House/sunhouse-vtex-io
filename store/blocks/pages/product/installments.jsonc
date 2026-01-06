@@ -45,6 +45,7 @@
     }
   },
   "rich-text#installmentsTrigger": {
+    "title": "Texto - Opções de Parcelamento",
     "props": {
       "text": "Opções de parcelamento",
       "blockClass": "installments-trigger"

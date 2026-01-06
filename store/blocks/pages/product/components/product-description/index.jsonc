@@ -1,0 +1,251 @@
+{
+    // Description - Pure Text
+    "container#product-description-pure-text": {
+        "title": "Descrição Texto (Simples)",
+        "children": [
+            "product-description",
+            "product-dimensions#assembled-dimensions"
+        ],
+        "props": {
+            "blockClass": ["product-description", "product-description-pure-text"]
+        }
+    },
+
+    // Bloco de Dimensoes do Produto
+    "product-dimensions#assembled-dimensions": {
+        "title": "Dimensões do Produto Montado",
+        "props": {
+            "blockClass": "product-dimensions-assembled"
+        }
+    },
+
+    // Normal Description - Simple
+    "container#product-description-simple": {
+        "title": "Descrição Normal (Custom)",
+        "children": [
+            "flex-layout.row#product-description-simple"
+        ],
+        "props": {
+            "blockClass": ["product-description", "product-description-simple"]
+        }
+    },
+
+    "flex-layout.row#product-description-simple": {
+        "children": [
+            "flex-layout.col#desc-banner_ColImage", // Esse herda do Custom Descritpion - acredito que nao precisara mexer em nada (TESTAR!)
+            "flex-layout.col#product-description-simple"
+        ],
+        "props": {
+            "blockClass": ["desc-banner__row-simple", "desc-banner__row"]
+        }
+    },
+    "flex-layout.col#product-description-simple": {
+        "title": "Coluna da Descrição",
+        "children": [
+            "rich-text#product-description-simple",
+            "product-dimensions#assembled-dimensions"
+        ],
+        "props": {
+            "blockClass": ["col_desc-banner_ColText", "col_desc-banner_ColText_simple"]
+        }
+    },
+
+    "rich-text#product-description-simple": {
+        "title": "Descricao Texto",
+        "props": {
+            "text": "## Nome do Produto\n**Texto em Negrito** e [link exemplo](https://www.example.com). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit!",
+            "blockClass": ["wrapper__textoDescricao-esquerda", "product-description", "product-description-simple"]
+        }
+    },
+
+    // Normal Description - Inherited from MS
+    "container#product-description-ms": {
+        "title": "Descrição Normal (Herdada do Catalog/ERP)",
+        "children": [
+            "flex-layout.row#product-description-ms"
+        ],
+        "props": {
+            "blockClass": ["product-description", "product-description-ms"]
+        }
+    },
+
+    "flex-layout.row#product-description-ms": {
+        "title": "Descrição com Foto e Texto",
+        "children": [
+            "flex-layout.col#desc-banner_ColImage", // Esse herda do Custom Descritpion - acredito que nao precisara mexer em nada (TESTAR!)
+            "flex-layout.col#product-description-ms"
+        ],
+        "props": {
+            "blockClass": ["desc-banner__row-simple", "desc-banner__row","product-description-ms"]
+        }
+    },
+    "flex-layout.col#product-description-ms": {
+        "title": "Coluna da Descrição",
+        "children": [
+            "product-description",
+            "product-dimensions#assembled-dimensions"
+        ],
+        "props": {
+            "blockClass": ["col_desc-banner_ColText", "col_desc-banner_ColText_ms"]
+        }
+    },
+    "product-description": {
+        "props": {
+            "collapseContent": false,
+            "showTitle": false,
+            "blockClass": "product-description_right-text"
+        }
+    },
+
+    // Benefits Block
+    "container#product-description-benefits": {
+        "title": "Beneficios e Diferenciais",
+        "children": [
+            "flex-layout.row#product-description-benefits"
+        ],
+        "props": {
+            "blockClass": ["product-description", "product-description-benefits"]
+        }
+    },
+
+    "flex-layout.row#product-description-benefits": {
+        "title": "Descrição com Foto e Texto",
+        "children": [
+            "flex-layout.col#product-description-benefits", // Esse herda do Custom Descritpion
+            "flex-layout.col#desc-banner_ColImage" // Esse herda do Custom Descritpion
+        ],
+        "props": {
+            "blockClass": ["desc-banner__row-benefits", "desc-banner__row"]
+        }
+    },
+    "flex-layout.col#product-description-benefits": {
+        "title": "Coluna da Descrição",
+        "children": [
+            "rich-text#product-description-benefits"
+        ],
+        "props": {
+            "blockClass": ["col_desc-banner_ColText", "col_desc-banner_ColText_benefits"]
+        }
+    },
+
+    "rich-text#product-description-benefits": {
+        "title": "Descricao Texto",
+        "props": {
+            "text": "## Nome do Produto\n**Texto em Negrito** e [link exemplo](https://www.example.com). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit!",
+            "blockClass": ["wrapper__textoDescricao-esquerda", "product-description", "product-description-benefits"]
+        }
+    },
+
+    // Bloco Video Dinamico
+    "container#product-description-video": {
+        "title": "Video do Produto",
+        "children": [
+            "video#product-description-video-video"
+        ],
+        "props": {
+            "blockClass": ["product-description", "product-description-video"]
+        }
+    },
+
+    "video#product-description-video-video": {
+        "props": {
+            // "controlsType": "none",
+            // "controlsType": "native", // Ideal ser custom-vtex, mas precisa ser HTML5 e gerir os controles do video com props
+            "controlsType": "custom-vtex",
+            // "width": "100%",
+            "width": "1200px",
+            // "height": "684px",
+            "height": "675px",
+            "loop": false,
+            "autoPlay": false, // Não sei qual o ideal
+            "playsInline": true, // Não sei qual o ideal
+            "muted": false, // Não sei qual o ideal
+            "poster": "https://dummyimage.com/1200x675", // Ideal sempre definir para cada produto - nem sempre a thumb do YT sera boa - NAO ESTA FUNCIONANDO NO FRONT - Ver no Site Editor
+            "src": "https://www.youtube.com/watch?v=9DAoa2fvvXU", // Alteravel pelo Site Editor por produto
+            "blockClass": "product-description-video"
+        }
+    },
+
+    // Additional Infos Block
+    "container#product-description-additional-infos": {
+        "title": "Informações Adicionais",
+        "children": [
+            "flex-layout.row#product-description-additional-infos"
+        ],
+        "props": {
+            "blockClass": ["product-description", "product-description-additional-infos"]
+        }
+    },
+
+    "flex-layout.row#product-description-additional-infos": {
+        "title": "Descrição com Foto e Texto",
+        "children": [
+            "flex-layout.col#desc-banner_ColImage", // Esse herda do Custom Descritpion
+            "flex-layout.col#product-description-additional-infos" // Esse herda do Custom Descritpion
+        ],
+        "props": {
+            "blockClass": ["desc-banner__row-additional-infos", "desc-banner__row"]
+        }
+    },
+    "flex-layout.col#product-description-additional-infos": {
+        "title": "Coluna da Descrição",
+        "children": [
+            "rich-text#product-description-additional-infos"
+        ],
+        "props": {
+            "blockClass": ["col_desc-banner_ColText", "col_desc-banner_ColText_additional-infos"]
+        }
+    },
+
+    "rich-text#product-description-additional-infos": {
+        "title": "Descricao Texto",
+        "props": {
+            "text": "## Nome do Produto\n**Texto em Negrito** e [link exemplo](https://www.example.com). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit. Etiam tempus ab! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nulla risus, tincidunt at ultrices vel, pellentesque ac augue. Fusce auctor odio non tempus hendrerit!",
+            "blockClass": ["wrapper__textoDescricao-esquerda", "product-description", "product-description-additional-infos"]
+        }
+    },
+
+    // Important Text Block
+    "container#product-description-important-text": {
+        "title": "Texto para Informações Importantes",
+        "children": [
+            "rich-text#product-description-important-text"
+        ],
+        "props": {
+            "blockClass": ["product-description", "product-description-text","product-description-important-text"]
+        }
+    },
+
+    "rich-text#product-description-important-text": {
+        "title": "Texto",
+        "props": {
+            // "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a luctus magna, id blandit est. Vestibulum non dignissim sapien.",
+            // Texto padrao - ideal usar de base mas nao usar para todos os produtos
+            "text": "### Importante\n__GARANTIA DE 12 MESES CONTRA DEFEITOS DE FABRICAÇÃO. O PRODUTO NECESSITA MONTAGEM.__\nImagens meramente ilustrativas: A tonalidade do tecido pode variar de acordo com a iluminação, lote ou com a configuração do monitor. Certifique-se de que seu móvel passe nas medidas da sua porta e elevador. Não nos responsabilizamos por içamentos, transportes por escadas ou desmontagem do móvel para acesso ao local. O produto necessita breve montagem. GARANTIA DE 1 ANO CONTRA DEFEITOS DE FÁBRICA.",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "blockClass": ["product-description-text", "product-description-important-text"]
+        }
+    },
+
+    // Brand Text Block
+    "container#product-description-brand-text": {
+        "title": "Texto da Marca (Ou outro texto por produto)",
+        "children": [
+            "rich-text#product-description-brand-text"
+        ],
+        "props": {
+            "blockClass": ["product-description", "product-description-text", "product-description-brand-text"]
+        }
+    },
+
+    "rich-text#product-description-brand-text": {
+        "title": "Texto",
+        "props": {
+            "text": "## Sun House Móveis\nHá mais de 35 anos no mercado de móveis e decorações, a Sun House é referência em curadoria premium.\nCom lojas físicas em Pinheiros e na Zona Norte de São Paulo, além de um e-commerce posicionado como vitrine de sofisticação, oferecemos confiança, atendimento consultivo e a melhor experiência para transformar lares e ambientes corporativos com estilo e exclusividade.",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "blockClass": ["product-description-text", "product-description-brand-text"]
+        }
+    }
+}

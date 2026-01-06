@@ -1,4 +1,5 @@
 {
+  // Shelf antiga - Sera descontinuada no Refresh
   "product-summary.shelf#main-product": {
     "title": "Produto vitrine",
     "children": [
@@ -15,23 +16,148 @@
       "blockClass": "main-shelf"
     }
   },
-
-  // Novo sistema de Shelf padrao
+  
+  // Shelf nova - Padrao para o Refresh
   "product-summary.shelf#main-product-new": {
+    "title": "Vitrine de Produtos",
+		"children": [
+			"stack-layout#new-shelf-product-image",
+      // Versão MVP - Precisara ser melhorada posteriormente
+      "shelf-enhanced-sku-selector#default-shelf",
+			"product-summary-name#new-shelf",
+      "condition-layout.product#shelf-elf-checker"
+		],
+		"props": {
+			"blockClass": "main-shelf-new"
+		}
+	},
+
+  // Shelf Enhanced SKU Selector - pronto para o MVP do Refresh
+  "shelf-enhanced-sku-selector#default-shelf": {
+    "props": {
+      "maxItems": 8,
+      "imageWidth": 30,
+      "imageHeight": 30
+    }
+  },
+
+  // Bloco da foto do produto
+  "stack-layout#new-shelf-product-image": {
+      "title": "Imagem do Produto - Shelf New",
+      "children": [
+          "container#image-shelf-new",
+          "add-to-list-btn#main-shelf" // Wishlist Button - manter esse mesmo, padrao correto Refresh já
+      ],
+      "props": {
+          // "blockClass": ["shelf-product-image", "bf_shelf-product-image"] - Ajustar estilo que esta nesse key para o novo key abaixo
+          "blockClass": ["shelf-product-image", "shelf-new-product-image"]
+      }
+  },
+
+  "container#image-shelf-new": {
+      "children": [
+          "product-summary-image#new-shelf"
+          // "container#product-sku-variation" - Esse esta sendo aplicado de outra forma - mas validar se nao é melhor usar aqui
+      ],
+      "props": {
+          "blockClass": ["image-shelf", "bf_image-shelf"]
+      }
+  },
+  "product-summary-image#new-shelf": {
+      "title": "Imagem do Produto - Vitrine",
+      "props": {
+          // "aspectRatio": "1:1",
+          "aspectRatio": "13:16", // Apliquei via css, mas validar se nao é melhor usar aqui direto e remover o css
+          // "width": 294,
+          // "height": 294,
+          "width": 368, // Pode ser necessario ajustar isso para outras prateleiras - Esse é o ajuste ideal para a prateleira grid (maior imagem de prateleira do site)
+          "height": 424, // Pode ser necessario ajustar isso para outras prateleiras - Esse é o ajuste ideal para a prateleira grid (maior imagem de prateleira do site)
+          "hoverImage": {
+              "criteria": "index",
+              "index": 1
+          },
+          // "blockClass": "bf_main-shelf" - Ajustar estilo que esta nesse key para o novo key abaixo
+          "blockClass": "new_main-shelf"
+      }
+  },
+
+  "product-summary-name#new-shelf": {
+      "props": {
+          // "blockClass": ["main-shelf", "bf-shelf"] - Ajustar estilo que esta nesse key para o novo key abaixo
+          "blockClass": "new-shelf"
+      }
+  },
+
+
+  //
+
+
+  // Shelf Black Friday - Sera descontinuada no Refresh - Manter para backup
+  "product-summary.shelf#bf-main-product": {
+    "title": "Vitrine de Produtos",
 		"children": [
 			"stack-layout#bf-shelf-product-image",
+
+      // Shelf SKU Selector
+      // "product-summary-sku-selector#default-shelf",
+      "shelf-enhanced-sku-selector#default-shelf",
+      //
+
       "container#product-highlights",
 			"product-summary-name#bf-shelf",
-      
-      // "container#bf-price-block", // Price wrapper
-      // "hover-container#actions"
-      // aqui vai o condition layout:
       "condition-layout.product#shelf-elf-checker"
 		],
 		"props": {
 			"blockClass": ["black-friday", "main-shelf-new"]
 		}
 	},
+
+  //
+  "product-summary-sku-selector#default": {
+    "props":{
+      "showVariationsLabels": ["false"],
+      "displayMode": "slider",
+      "sliderDisplayThreshold": 5
+    }
+  },
+
+
+  "product-summary-sku-selector#default-shelf": {
+    "props":{
+      "displayMode": "slider",
+      //
+      "sliderArrowSize": 10,
+      "sliderDisplayThreshold": 1,
+      "sliderItemsPerPage": {
+        "desktop": 6,
+        // "tablet": 2,
+        "phone": 4
+      },
+      // "maxItems": 6,
+      //
+			"hideImpossibleCombinations": false,
+			"visibility": "always",
+			"initialSelection": "empty",
+			"showVariationsErrorMessage": true, // Nao entendi o funcionamento — nao esta funcionando a principio
+			"showVariationsLabels": ["none"],
+			"thumbnailImage": "tampo",
+			"imageHeight": {
+        "desktop": 5,
+        "phone": 5
+      },
+			"imageWidth": {
+        "desktop": 5,
+        "phone": 5
+      },
+			"visibleVariations": [
+				// "Medida",
+				"Tampo (acabamento)"
+				// "Base (acabamento)"
+			],
+
+			"blockClass": "sku-selector_default-shelf"
+    }
+  },
   //
 
   "product-summary-name": {
@@ -42,7 +168,6 @@
 
   "stack-layout#shelf-product-image": {
     "title": "Imagem do produto vitrine",
-
     "children": [
       "container#image-shelf",
       "add-to-list-btn#main-shelf"
@@ -61,10 +186,13 @@
   },
 
   "container#image-shelf": {
+    "children": [
+      "product-summary-image",
+      "container#product-sku-variation"
+    ],
     "props": {
       "blockClass": "image-shelf"
-    },
-    "children": ["product-summary-image", "container#product-sku-variation"]
+    }
   },
 
   "product-summary-image": {
@@ -103,7 +231,7 @@
   },
 
   "condition-layout.product#shelf-elf-checker": {
-    "title": "Condicional - Produto Exclusivo",
+    "title": "Condicional - Status Produto",
     "props": {
       "conditions": [
         {
@@ -178,7 +306,9 @@
       
       // "flex-layout.col#shelf-product-with-variation" -> Validar o que isso faz
 
-      "container#bf-price-block", // Price wrapper
+      // "container#bf-price-block", // Sistema antigo da Black Friday
+      "container#shelf-price_parcelado",
+      // "container#shelf-price_pix", - Ficara inativo no codigo pois quebra layout no Refresh - vtex gera varios blocos de flex-layout que quebram o sentido do container
       "hover-container#actions"
     ],
     "props": {
@@ -188,10 +318,13 @@
 
   "container#product-sku-variation": {
     "title": "Texto de variação Produto",
+    "children": [
+      "container#shelf-sku-selector",
+      "rich-text#see-all-variations"
+    ],
     "props": {
       "blockClass": "product-sku-variation"
-    },
-    "children": ["container#shelf-sku-selector", "rich-text#see-all-variations"]
+    }
   },
   "rich-text#see-all-variations": {
     "props": {
@@ -211,11 +344,15 @@
 
   "hover-container#actions": {
     "title": "Ações Prateleira",
-    "children": ["flex-layout.col#shelf-product-without-variation"],
+    "children": [
+      "flex-layout.col#shelf-product-without-variation"
+    ],
     "props": {
       "blockClass": "actions"
     }
   },
+
+  // Old Price Block - Shelf - Sendo usada? Nao sei, mas vou manter por aqui a principio START
   "container#shelf-product-listPrice": {
     "title": "Preço (com preço de lista) produto vitrine",
     "children": [
@@ -253,6 +390,7 @@
       "blockClass": "product-shelf-price"
     }
   },
+  // Old Price Block - Shelf - Sendo usada? Nao sei, mas vou manter por aqui a principio END
 
   "flex-layout.col#shelf-product-unavailable": {
     "title": "Produto vitrine indisponível",
@@ -322,7 +460,9 @@
 
   "flex-layout.col#shelf-product-without-variation": {
     "title": "Produto vitrine sem variação de sku",
-    "children": ["hover-container#shelf-product-buy-quantity"],
+    "children": [
+      "hover-container#shelf-product-buy-quantity"
+    ],
     "props": {
       "blockClass": "shelf-product-without-variation"
     }
@@ -330,7 +470,9 @@
 
   "container#shelf-sku-selector": {
     "title": "Seletor de sku produto vitrine",
-    "children": ["condition-layout.user#shelf-sku-selector"],
+    "children": [
+      "condition-layout.user#shelf-sku-selector"
+    ],
     "props": {
       "blockClass": "shelf-sku-selector"
     }
@@ -360,8 +502,8 @@
   "hover-container#shelf-product-buy-quantity": {
     "title": "Hover botão comprar/quantidade prateleira",
     "children": [
-      "flex-layout.row#shelf-product-buy-quantity",
-      "responsive-layout.desktop#quick-view"
+      "flex-layout.row#shelf-product-buy-quantity"
+      // "responsive-layout.desktop#quick-view" - Componente descontinuado no Refresh
     ],
     "props": {
       "blockClass": "shelf-product-buy-quantity",
@@ -376,7 +518,7 @@
   "flex-layout.row#shelf-product-buy-quantity": {
     "title": "Seletor de quantidade/botão comprar produto vitrine",
     "children": [
-      "flex-layout.col#shelf-quantity",
+      // "flex-layout.col#shelf-quantity", - Componente descontinuado no Refresh
       "flex-layout.col#shelf-buy-button"
     ],
     "props": {
@@ -398,7 +540,10 @@
   },
 
   "flex-layout.col#shelf-buy-button": {
-    "children": ["add-to-cart-button#shelf-buy"],
+    "children": [
+      // "add-to-cart-button#shelf-buy"
+      "vtex.add-to-cart-button:add-to-cart-button#shelf-buy"
+    ],
     "props": {
       "blockClass": ["shelf-buy-button", "buy-button"],
       "width": "grow"
@@ -415,12 +560,21 @@
     }
   },
 
-  "add-to-cart-button#shelf-buy": {
+  // "add-to-cart-button#shelf-buy": {
+  "vtex.add-to-cart-button:add-to-cart-button#shelf-buy": {
     "title": "Botão comprar produto vitrine",
     "props": {
       "customPixelEventId": "addToCart",
-      "onClickBehavior": "ensure-sku-selection",
-      "text": "Comprar",
+      
+      // Preciso testar todos esses e entender qual o ideal para o Refresh:
+      "onClickBehavior": "add-to-cart",
+      // "onClickBehavior": "ensure-sku-selection",
+      // "onClickBehavior":"go-to-product-page",
+      // "onClickBehavior":"add-to-cart-and-trigger-shipping-modal",
+      //
+
+      // "text": "Comprar",
+      "text": "Comprar Agora",
       "blockClass": "shelf-buy"
     }
   },

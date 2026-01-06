@@ -64,17 +64,19 @@
     width: 100%
 }
 
+/* Movido para o arquivo common/footer/sunhouse.container.css
 .container--footer-social-content {
     padding-block: 14px;
     display: flex;
     gap: 16px;
     align-items: center;
     justify-content: center
-}
+} */
 
+/* Movido para o arquivo common/footer/sunhouse.container.css
 .container--footer-social-content .imageElementLink .imageElement {
     max-height: 26px
-}
+} */
 
 .container--under-footer-content {
     background-color: #fff
@@ -132,6 +134,7 @@
     background-color: #eaeae9
 }
 
+/* Movido para common/header/menu/sunhouse.container.css
 .container--greeting {
     gap: 8px;
     display: flex;
@@ -152,8 +155,10 @@
 
 .container--greeting--title::before {
     color: var(--header-text-color)
-}
+} */
 
+
+/* Movido para common/header/sunhouse.container.css
 .container--header--desktop__main {
     position: relative;
     height: 70px;
@@ -177,8 +182,9 @@
 .container--header--desktop__controls--right {
     gap: var(--header-right-controls-gap);
     transition: all .2s
-}
+} */
 
+/* Movido para common/header/menu/sunhouse.container.css
 .container--menu {
     border-bottom: 1px solid var(--header-menu-border-color);
     height: var(--header-menu-wrapper-size);
@@ -209,7 +215,7 @@
     display: flex;
     flex-direction: column;
     align-items: center
-}
+} */
 
 .container--mobile-login {
     padding: 18px 25px;
@@ -273,6 +279,15 @@
     height: 40px
 }
 
+.container--product-description-spacing-default {
+    height: 48px
+}
+
+.container--debug-container {
+    height: 60px;
+    background-color: #ff00003d;
+}
+
 .container--fake-bread-crumb {
     padding-block: 35px 25px;
     display: flex;
@@ -290,16 +305,20 @@
     flex-direction: column
 }
 
+/* Esse aplica globalmente em todas as shelfs e PDP.
+   Estou usando uma regra especifica para o PDP no arquivo product/new--product/sunhouse.container.css */
 .container--product-highlights {
     min-height: 31px;
     display: flex
 }
+/* END */
 
+/* Movido para product/new--product/sunhouse.container.css
 .container--product-highlights--product-page {
     margin-top: 8px;
     margin-bottom: 2px;
     gap: 19px
-}
+} */
 
 .container--shelf-sku-selector {
     height: 100%;
@@ -319,12 +338,13 @@
     color: #fff
 }
 
+/* Migrado para o arquivo product/new--product/product-price/sunhouse.container.css
 .container--shelf-product-listPrice {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     height: 42px
-}
+} */
 
 .container--shelf-wishlist {
     margin-bottom: 160px
@@ -685,10 +705,11 @@
     object-fit: cover
 }
 
+/* Movido para o arquivo search/_new--search/sunhouse.container.css
 .wrapper--search-seo {
     border-block: 1px solid #d5d4d4;
     padding-block: 88px 107px
-}
+} */
 
 /* Desktop Force */
 @media screen and (min-width: 1025px) {
@@ -761,6 +782,7 @@
         height: 338px
     }
 
+    /* Movido para o arquivo common/footer/sunhouse.container.css
     .container--footer-social-content {
         padding-inline: 28px;
         justify-content: flex-start
@@ -769,7 +791,7 @@
     .container--footer-social-content .imageElementLink .imageElement {
         max-height: 42px !important;
         max-width: 42px !important
-    }
+    } */
 
     .container--footer-link-social-medias-icons {
         padding: 0 22px;

@@ -1,0 +1,54 @@
+/* .vtex-flex-layout-0-x-flexCol--blog-grid-left { */
+.flexCol--blog-grid-left {
+    margin-top: -72px
+}
+
+/* .vtex-flex-layout-0-x-flexCol--blog-grid-left .vtex-flex-layout-0-x-flexColChild--blog-grid-left:first-child { */
+.flexCol--blog-grid-left .flexColChild--blog-grid-left:first-child {
+    display: flex;
+    align-items: flex-end
+}
+
+/* .vtex-flex-layout-0-x-flexCol--blog-grid-right-content-1-right,
+.vtex-flex-layout-0-x-flexCol--blog-grid-right-content-2-left { */
+.flexCol--blog-grid-right-content-1-right,
+.flexCol--blog-grid-right-content-2-left {
+    max-width: 250px
+}
+
+/* .vtex-flex-layout-0-x-flexRow--blog-grid-right-content-1 .vtex-flex-layout-0-x-stretchChildrenWidth:last-child { */
+.flexRow--blog-grid-right-content-1 .stretchChildrenWidth:last-child {
+    justify-content: flex-end
+}
+
+/* .vtex-flex-layout-0-x-flexRow--blog-grid-right-content-2 .vtex-flex-layout-0-x-stretchChildrenWidth:first-child { */
+.flexRow--blog-grid-right-content-2 .stretchChildrenWidth:first-child {
+    justify-content: flex-start
+}
+
+/* .vtex-flex-layout-0-x-flexRowContent--blog-grid-right-content_line { */
+.flexRowContent--blog-grid-right-content_line {
+    align-items: center
+}
+
+/* .vtex-flex-layout-0-x-flexRowContent--blog-grid-right-content_line .vtex-flex-layout-0-x-stretchChildrenWidth { */
+.flexRowContent--blog-grid-right-content_line .stretchChildrenWidth {
+    width: auto !important /* */
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* .vtex-flex-layout-0-x-flexRowContent--blog-grid-right-content-1 .vtex-flex-layout-0-x-stretchChildrenWidth:first-child,
+    .vtex-flex-layout-0-x-flexRowContent--blog-grid-right-content-2 .vtex-flex-layout-0-x-stretchChildrenWidth:first-child { */
+    .flexRowContent--blog-grid-right-content-1 .stretchChildrenWidth:first-child,
+    .flexRowContent--blog-grid-right-content-2 .stretchChildrenWidth:first-child {
+        min-width: 410px
+    }
+
+    /* .vtex-flex-layout-0-x-flexRowContent--blog-grid-right-content-2 .vtex-flex-layout-0-x-stretchChildrenWidth:last-child { */
+    .flexRowContent--blog-grid-right-content-2 .stretchChildrenWidth:last-child {
+        margin-left: -100px
+    }
+
+}

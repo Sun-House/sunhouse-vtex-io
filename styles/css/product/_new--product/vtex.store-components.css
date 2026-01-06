@@ -1,0 +1,19 @@
+/* Nome do Produto */
+.productNameContainer {
+    padding-top: 6px
+}
+
+.productNameContainer .productBrand,
+.productBrandContainer .productBrandName {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #161413
+}
+
+/* Marca - Mostrado logo abaixo do nome do produto */
+/* .productBrandContainer {
+    display: flex;
+    margin-left: 5px
+} */

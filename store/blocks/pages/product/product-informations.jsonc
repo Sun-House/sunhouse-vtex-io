@@ -1,3 +1,4 @@
+// Componente incialmente lançado pela e-Plus - Foi descontinuado
 {
   "flex-layout.row#product-page-informations": {
     "children": ["flex-layout.col#product-page-informations"],
@@ -51,12 +52,15 @@
       "blockClass": "product-page-description"
     }
   },
-  "flex-layout.row#product-description": {
-    "children": ["product-description"],
-    "props": {
-      "blockClass": "product-description"
-    }
-  },
+  // Movido para o bloco product-infos-new.jsonc
+  // "flex-layout.row#product-description": {
+  //   "children": ["product-description"],
+  //   "props": {
+  //     "blockClass": "product-description"
+  //   }
+  // },
+
+  // Esta sendo usado para o disclosure-trigger#product-page-description - para Mobile - REAJUSTAR ESTE BLOCO
   "flex-layout.row#product-description-title": {
     "children": ["rich-text#product-description-title"],
     "props": {
@@ -69,13 +73,15 @@
       "blockClass": "product-description-title"
     }
   },
-  "product-description": {
-    "props": {
-      "collapseContent": false,
-      "showTitle": false
-    }
-  },
+  //
 
+  // "product-description": {
+  //   "props": {
+  //     "collapseContent": false,
+  //     "showTitle": false
+  //   }
+  // },
+  //
   "product-specification-group#content-page": {
     "children": ["product-specification#content-page"],
     "props": {

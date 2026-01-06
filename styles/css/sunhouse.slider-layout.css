@@ -25,6 +25,7 @@
     content: ""
 }
 
+/* Movido para components/_new--shelf/sunhouse.slider-layout.css
 .sliderArrows--banner-shelf.sliderLeftArrow {
     left: 15px
 }
@@ -50,7 +51,7 @@
     width: 35px;
     height: 35px;
     font-size: 14px
-}
+} */
 
 .paginationDotsContainer--shelf .paginationDot--isActive {
     background-color: #000 !important
@@ -66,16 +67,18 @@
     justify-content: flex-start
 }
 
+/* Acredito que essas impactem uma boa parte dos elementos que possuem slider arrow */
+/* Movido para components/_new--shelf/sunhouse.slider-layout.css
 .sliderArrows {
     padding: 0;
     margin: 0;
     border-radius: 8px;
     width: 40px;
     height: 40px;
-    /* Pensar em alterar depois
+    / Pensar em alterar depois
     border-radius: 30px;
     width: 48px;
-    height: 28px; */
+    height: 28px; /
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,8 +98,8 @@
 
 .sliderArrows:not(:hover) {
     background: rgba(255, 255, 255, .5) !important
-    /* Pensar em alterar depois
-    background: #ffda00 !important*/
+    / Pensar em alterar depois
+    background: #ffda00 !important /
 }
 
 .sliderArrows:not(:disabled):hover {
@@ -121,7 +124,7 @@
 
 .sliderArrows:disabled:hover .caretIcon {
     color: #fff
-}
+} */
 
 .slide--shelf {
     padding-inline: 7px
@@ -187,6 +190,8 @@
     z-index: 2
 }
 
+/* Slider Arrows de componentes descontinuados */
+/* START */
 .sliderArrows--banner-main {
     max-width: 1220px;
     margin: 0 auto;
@@ -208,6 +213,8 @@
     height: 35px;
     font-size: 14px
 }
+/* Slider Arrows de componentes descontinuados */
+/* END */
 
 .paginationDotsContainer--banner-main {
     bottom: 33px
@@ -258,6 +265,8 @@
         margin-left: 9px
     }
 
+    /* Slider Arrows de componentes descontinuados */
+    /* START */
     .sliderArrows--banner-main.sliderRightArrow {
         left: initial
     }
@@ -265,6 +274,8 @@
     .sliderArrows--banner-main.sliderLeftArrow {
         right: initial
     }
+    /* Slider Arrows de componentes descontinuados */
+    /* END */
 
 }
 
@@ -314,6 +325,8 @@
         overflow: hidden
     }
 
+    /* Slider Arrows de componentes descontinuados */
+    /* START */
     .sliderArrows--banner-main.sliderRightArrow {
         right: 15px
     }
@@ -327,6 +340,8 @@
         height: 35px;
         font-size: 14px
     }
+    /* Slider Arrows de componentes descontinuados */
+    /* END */
 
 }
 

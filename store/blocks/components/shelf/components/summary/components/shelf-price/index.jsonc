@@ -1,0 +1,72 @@
+{
+     "container#shelf-price_parcelado": {
+        "title": "Preço Parcelado - Vitrine",
+        "children": [
+            "product-installments#new-shelf-installments",
+            "product-list-price#new-shelf"
+        ],
+        "props": {
+            "wrapper": "true",
+            // "blockClass": "bf_price-block"
+            "blockClass": ["new-shelf-price", "new-shelf-price_parcelado"]
+        }
+    },
+
+    // Este bloco esta funcional no Refresh, mas nao esta sendo usado pois quebra layout - vtex gera varios blocos de flex-layout que quebram o sentido do container
+    "container#shelf-price_pix": {
+        "title": "Preço Pix - Vitrine",
+        "children": [
+            "discount-price#new-shelf",
+            "product-list-price#new-shelf"
+        ],
+        "props": {
+            "wrapper": "true",
+            // "blockClass": "bf_price-block"
+            "blockClass": ["new-shelf-price", "new-shelf-price_pix"]
+        }
+    },
+
+    // Bloco que renderiza o preço cheio do produto riscado - Preço "DE:"
+    "product-list-price#new-shelf": {
+        "title": "Preço de lista produto vitrine",
+        "props": {
+            "hideWithoutDiscount": false,
+            "message": "{listPriceValue}",
+            // "blockClass": ["product-shelf-price", "bf-list-price-shelf"]
+            "blockClass": "new-list-price-shelf"
+        }
+    },
+
+    // Bloco que renderiza o preço a vista no pix - Preço "POR:" 1 - Padrao
+    "discount-price#new-shelf": {
+        "props": {
+            "hideWithoutDiscount": false,
+            "message": "{priceValue} PIX",
+            "promotionName": "Desconto Pagamento à Vista (7%)",
+            // "blockClass": ["lp_pix-price-shelf", "bf-shelf"]
+            "blockClass": ["new-pix-price-shelf", "new-shelf"]
+        }
+    },
+
+    // [INATIVO] Bloco que renderiza o preço parcelado - Preço "POR:" 2 - Mostra apenas quando o preço a vista nao renderiza
+    "product-selling-price#new-shelf": {
+        "title": "Preço (com preço de lista) produto vitrine",
+        "props": {
+            "message": "<bold>{sellingPriceValue}</bold>",
+            "markers": ["bold"],
+            "blockClass": "product-shelf-price"
+        }
+    },
+
+    // Bloco que renderiza o preço parcelado com parcelas e informacoes do parcelamento - Complemento de Preço
+    "product-installments#new-shelf-installments": {
+        "props": {
+            // "markers": ["bold"],
+            // "message": "Ou <bold>{installmentsTotalValue}</bold> em até <bold>{installmentsNumber}x</bold> de <bold>{installmentValue}</bold> sem juros no cartão de crédito",
+            "message": "{installmentsTotalValue}",
+            "installmentsCriteria": "max-quantity-without-interest",
+            // "blockClass": "shelf-installments"
+            "blockClass": "new-shelf-installments"
+        }
+    }
+}

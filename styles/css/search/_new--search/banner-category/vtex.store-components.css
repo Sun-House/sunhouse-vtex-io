@@ -1,0 +1,12 @@
+.infoCardContainer--main-banner-category {
+    height: 74vh
+}
+
+/* Gera backdrop para criar efeito de opacidade no banner */
+.infoCardContainer--main-banner-category::after {
+    height: 74vh /* Ajustar de acordo com a altura do banner de categoria */
+}
+
+.heading--main-banner-category {
+    font-size: 4.2rem
+}

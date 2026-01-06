@@ -1,0 +1,9 @@
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-flex-layout-0-x-flexColChild--footer-content-mobile:has(.vtex-store-components-3-x-imageElementLink--logo-footer) { */
+    :global(.vtex-flex-layout-0-x-flexColChild--footer-content-mobile):has(:global(.vtex-store-components-3-x-imageElementLink--logo-footer)) {
+        align-items: center;
+        padding-top: 18px !important
+    }
+    
+}

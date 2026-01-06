@@ -59,7 +59,7 @@
   "semanticColors": {
     "background": {
       "base": "#ffffff",
-      "base--inverted": "#2d2926",
+      "base--inverted": "#161413",
       "action-primary": "#f90041",
       "action-secondary": "#eef3f7",
       "emphasis": "#f71963",
@@ -201,32 +201,32 @@
       "muted-5": "#f2f4f5"
     },
     "on": {
-      "base": "#2D2926",
+      "base": "#161413",
       "base--inverted": "#ffffff",
       "action-primary": "#ffffff",
       "action-secondary": "#f90041",
       "emphasis": "#ffffff",
       "disabled": "#979899",
       "success": "#ffffff",
-      "success--faded": "#2D2926",
+      "success--faded": "#161413",
       "danger": "#ffffff",
-      "danger--faded": "#2D2926",
+      "danger--faded": "#161413",
       "warning": "#ffffff",
       "warning--faded": "#1a1a1a",
       "muted-1": "#ffffff",
       "muted-2": "#ffffff",
-      "muted-3": "#2D2926",
-      "muted-4": "#2D2926",
-      "muted-5": "#2D2926"
+      "muted-3": "#161413",
+      "muted-4": "#161413",
+      "muted-5": "#161413"
     },
     "hover-on": {
       "action-primary": "#ffffff",
       "action-secondary": "#f90041",
       "emphasis": "#ffffff",
       "success": "#ffffff",
-      "success--faded": "#2D2926",
+      "success--faded": "#161413",
       "danger": "#ffffff",
-      "danger--faded": "#2D2926",
+      "danger--faded": "#161413",
       "warning": "#ffffff",
       "warning--faded": "#1a1a1a"
     },
@@ -235,9 +235,9 @@
       "action-secondary": "#f90041",
       "emphasis": "#ffffff",
       "success": "#ffffff",
-      "success--faded": "#2D2926",
+      "success--faded": "#161413",
       "danger": "#ffffff",
-      "danger--faded": "#2D2926",
+      "danger--faded": "#161413",
       "warning": "#ffffff",
       "warning--faded": "#1a1a1a"
     }
@@ -265,85 +265,85 @@
     "measure": [30, 34, 20],
     "styles": {
       "heading-1": {
-        "fontFamily": "Open Sans, serif",
-        "fontWeight": "700",
+        "fontFamily": "Bai Jamjuree, serif",
+        "fontWeight": "600",
         "fontSize": "3rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-2": {
-        "fontFamily": "Open Sans, serif",
-        "fontWeight": "700",
+        "fontFamily": "Bai Jamjuree, serif",
+        "fontWeight": "600",
         "fontSize": "2.25rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-3": {
-        "fontFamily": "Open Sans, serif",
-        "fontWeight": "700",
+        "fontFamily": "Bai Jamjuree, serif",
+        "fontWeight": "500",
         "fontSize": "1.75rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-4": {
-        "fontFamily": "Open Sans, serif",
-        "fontWeight": "normal",
+        "fontFamily": "Bai Jamjuree, serif",
+        "fontWeight": "500",
         "fontSize": "1.5rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-5": {
-        "fontFamily": "Open Sans, serif",
-        "fontWeight": "normal",
+        "fontFamily": "Bai Jamjuree, serif",
+        "fontWeight": "500",
         "fontSize": "1.25rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "heading-6": {
-        "fontFamily": "Open Sans, serif",
-        "fontWeight": "normal",
+        "fontFamily": "Bai Jamjuree, serif",
+        "fontWeight": "500",
         "fontSize": "1.25rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "body": {
-        "fontFamily": "Open Sans, serif",
-        "fontWeight": "normal",
+        "fontFamily": "Bai Jamjuree, serif",
+        "fontWeight": "400",
         "fontSize": "1rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "small": {
-        "fontFamily": "Open Sans, serif",
-        "fontWeight": "normal",
+        "fontFamily": "Bai Jamjuree, serif",
+        "fontWeight": "300",
         "fontSize": "0.875rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "mini": {
-        "fontFamily": "Open Sans, serif",
-        "fontWeight": "normal",
+        "fontFamily": "Bai Jamjuree, serif",
+        "fontWeight": "100",
         "fontSize": "0.75rem",
         "textTransform": "initial",
         "letterSpacing": "0"
       },
       "action": {
-        "fontFamily": "Open Sans, serif",
+        "fontFamily": "Bai Jamjuree, serif",
         "fontWeight": "500",
         "fontSize": "1rem",
         "textTransform": "uppercase",
         "letterSpacing": "0"
       },
       "action--small": {
-        "fontFamily": "Open Sans, serif",
-        "fontWeight": "500",
+        "fontFamily": "Bai Jamjuree, serif",
+        "fontWeight": "400",
         "fontSize": "0.875rem",
         "textTransform": "uppercase",
         "letterSpacing": "0"
       },
       "action--large": {
-        "fontFamily": "Open Sans, serif",
-        "fontWeight": "500",
+        "fontFamily": "Bai Jamjuree, serif",
+        "fontWeight": "600",
         "fontSize": "1.25rem",
         "textTransform": "uppercase",
         "letterSpacing": "0"

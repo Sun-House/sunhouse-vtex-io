@@ -1,44 +1,52 @@
-.productHighlightText {
+/* Nao apagar ainda - precisa validar o que aplicar nas shelfs e o que é na PDP.
+   O ideal é que a aplicacao seja separada para cada contexto - Shelf e PDP */
+
+/* Esse ficara em duplicidade alguns atributos com o arquivo product/new--product/sunhouse.product-highlights.css */
+/* .productHighlightText {
 	flex: 1;
-	/* font-size: 14px; */
     font-size: 12px;
     font-family: 'Montserrat';
 	line-height: 31px;
 	font-weight: 700;
 	text-align: center;
     text-transform: uppercase;
-    border-radius: 50px;
+    / border-radius: 50px; /
     margin: 0 2px
-}
+} */
+/* Esse ficara em duplicidade alguns atributos com o arquivo product/new--product/sunhouse.product-highlights.css */
 
+/* Movido para product/new--product/sunhouse.product-highlights.css
 .productHighlightText--highlights_product-page {
 	padding-left: 8px;
 	padding-right: 8px
-} 
+} */
 
-.productHighlightText[data-highlight-id="218"] {
+/* Flag PRONTA ENTREGA */
+/* .productHighlightText[data-highlight-id="218"] {
 	color: #fff;
 	background-color: #00b700 !important;
 	color: #fff !important;
-}
-
-.productHighlightText[data-highlight-id="252"] {
-	color: #fff;
-	background-color: rgba(249, 0, 65, 0.5);
-}
+} */
 
 /* Flag OUTLET */
-.productHighlightText[data-highlight-id="414"] {
+/* .productHighlightText[data-highlight-id="414"] {
     background-color: #F25005 !important;
 	color: #fff !important
-}
+} */
 
-/* Flag BF */
-.productHighlightText[data-highlight-id="262"] {
+/* Flag BLACK FRIDAY */
+/* .productHighlightText[data-highlight-id="262"] {
     background-color: #000 !important;
     color: #FFDA00 !important
-}
+} */
 
+/* Colecao 252 - Marktplace - Nao sei qual o proposito dessa - ficara inativa */
+/* .productHighlightText[data-highlight-id="252"] {
+	color: #fff;
+	background-color: rgba(249, 0, 65, 0.5);
+} */
+
+/* Padrao desnecessario - deixar para referencia futura START
 .productHighlightText:nth-child(odd) {
 	color: #2d2926;
 	background-color: rgba(255, 218, 0, .5);
@@ -48,13 +56,16 @@
 	color: #fff;
 	background-color: #f90041;
 }
+END */
 
-/* Mobile - APENAS PARA A BLACK FRIDAY */
-@media screen and (max-width: 1024px) {
+/* Mobile */
+/* Apenas para shelf - nao aplica na PDP */
+/* APENAS PARA A BLACK FRIDAY */
+/* @media screen and (max-width: 1024px) {
 
-	/* Flag OUTLET */
+	/ Flag OUTLET /
 	.productHighlightText[data-highlight-id="414"]:not(.productHighlightText--highlights_product-page) {
 		display: none
 	}
 
-}
+} */

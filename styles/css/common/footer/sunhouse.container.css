@@ -1,0 +1,51 @@
+.container--footer-content-about {
+    background-color: #f6f6f6;
+    padding: 64px 0
+}
+
+.container--home-faq .container--custom-block__faq-disclosure {
+    border-radius: 4px
+}
+
+.container--footer-social-content {
+    padding-block: 14px;
+    display: flex;
+    gap: 16px;
+    align-items: center
+}
+
+.container--footer-social-content .imageElement {
+    max-height: 20px !important;
+    max-width: 20px !important;
+    transition: filter .3s ease-in-out
+}
+
+.container--footer-social-content .imageElement:hover {
+    filter: invert(77%) sepia(92%) saturate(1782%) hue-rotate(45deg) brightness(170%) contrast(104%)
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    .container--container-footer-about-text {
+        width: 100vw !important;
+        margin-left: -50%;
+        transform: translateX(10vw)
+    }
+    
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    .container--footer-social-content {
+        padding-inline: 28px;
+        justify-content: flex-start
+    }
+
+    .container--footer-social-content .imageElementLink .imageElement {
+        max-height: 42px !important;
+        max-width: 42px !important
+    }
+
+}

@@ -1,0 +1,144 @@
+/* .sunhouse-slider-layout-0-x-sliderArrows--main-shelf { */
+.sliderArrows--main-shelf {
+    all: unset;
+    position: absolute;
+    top: -80px; /* Pode precisar de mais ajustes finos */
+    right: 62px
+}
+
+/* .sunhouse-slider-layout-0-x-sliderArrows--main-shelf .sunhouse-slider-layout-0-x-caretIcon--main-shelf { */
+.sliderArrows--main-shelf .caretIcon--main-shelf {
+    width: 0 !important
+}
+
+/* .sunhouse-slider-layout-0-x-sliderRightArrow--main-shelf { */
+.sliderRightArrow--main-shelf {
+    right: 6px
+}
+
+/* .sunhouse-slider-layout-0-x-sliderLeftArrow--main-shelf::after,
+.sunhouse-slider-layout-0-x-sliderRightArrow--main-shelf::after { */
+.sliderLeftArrow--main-shelf::after,
+.sliderRightArrow--main-shelf::after {
+    font-family: "Bootstrap-Icons";
+    font-size: 38px;
+    opacity: .5;
+    transition: all .2s ease-in-out
+}
+
+.sliderLeftArrow--main-shelf:hover::after,
+.sliderRightArrow--main-shelf:hover::after {
+    opacity: 1
+}
+
+/* .sunhouse-slider-layout-0-x-sliderLeftArrow--main-shelf::after { */
+.sliderLeftArrow--main-shelf::after {
+    content: "\F12F"
+}
+
+/* .sunhouse-slider-layout-0-x-sliderRightArrow--main-shelf::after { */
+.sliderRightArrow--main-shelf::after {
+    content: "\F138"
+}
+
+
+/* POR HORA OS ATRIBUTOS ABAIXO ESTAO COMO BACKUP E COMPLETAMENTE DESABILITADOS
+   ESTOU TESTANDO SE VAI IMPLICAR EM MUITO O VISUAL DO SITE NO GERAL */
+
+/* Acredito que essas impactem uma boa parte dos elementos que possuem slider arrow */
+/* START */
+/* .sliderArrows {
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    / Pensar em alterar depois
+    border-radius: 30px;
+    width: 48px;
+    height: 28px; /
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s
+}
+
+.sliderArrows--shelf {
+    top: 57%
+}
+
+.sliderArrows .caretIcon {
+    width: 16px;
+    height: 16px;
+    color: #2d2926;
+    transition: all .4s
+}
+
+.sliderArrows:not(:hover) {
+    background: rgba(255, 255, 255, .5) !important
+    / Pensar em alterar depois
+    background: #ffda00 !important /
+}
+
+.sliderArrows:not(:disabled):hover {
+    background: #ffda00 !important    
+}
+
+.sliderArrows:not(:disabled):hover .caretIcon {
+    color: #2d2926
+}
+
+.sliderArrows:disabled {
+    cursor: not-allowed
+}
+
+.sliderArrows:disabled .caretIcon {
+    color: #2d2926
+}
+
+.sliderArrows:disabled:hover {
+    background-color: #252525 !important
+}
+
+.sliderArrows:disabled:hover .caretIcon {
+    color: #fff
+} */
+/* Acredito que essas impactem uma boa parte dos elementos que possuem slider arrow */
+/* END */
+
+
+/* Slider Arrows - Banner Shelf - Validar qual é esse componente */
+/* START */
+/* .sliderArrows--banner-shelf.sliderLeftArrow {
+    left: 15px
+}
+
+.sliderArrows--banner-shelf.sliderRightArrow {
+    right: 15px
+} */
+/* Slider Arrows - Banner Shelf - Validar qual é esse componente */
+/* END */
+
+
+/* Slider Arrows - Shelfs */
+/* START */
+/* .sliderArrows--shelf {
+    top: 215px !important;
+    border-radius: 0px !important
+}
+
+.sliderArrows--shelf.sliderLeftArrow {
+    left: 7.5px
+}
+
+.sliderArrows--shelf.sliderRightArrow {
+    right: 7.5px
+}
+
+.sliderArrows--shelf::after {
+    width: 35px;
+    height: 35px;
+    font-size: 14px
+} */
+/* Slider Arrows - Shelfs */
+/* END */

@@ -1,0 +1,23 @@
+/* .vtex-rich-text-0-x-container--common-title { */
+.container--common-title {
+    /* margin-bottom: 20px; */
+    margin-bottom: 0;
+    text-align: center
+}
+
+/* .vtex-rich-text-0-x-wrapper--common-title { */
+.wrapper--common-title {
+    width: 100%;
+    /* max-width: 1220px; */
+    max-width: 1210px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0
+}
+
+.headingLevel2--common-title {
+    /* font-size: 24px; */
+    line-height: 33px;
+    margin-bottom: 0;
+    text-align: left
+}

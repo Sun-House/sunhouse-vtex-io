@@ -1,0 +1,9 @@
+/*  Oculta o Nome do Produto da linha
+    Vai depender de como vamos trabalhar o nome do SKU
+    No meu teste, trabalhei com o nome final do produto variacao
+    Mas pode ser trabalhado apenas o nome da variação.
+    Isso ainda será difinido na estrategia 
+*/
+.productBrand--sku-name_container:first-child {
+    display: none
+}

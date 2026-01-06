@@ -1,0 +1,336 @@
+/* CUSTOMIZACOES ABAIXO FEITAS PARA O MVP DO REFRESH - APOS LANÇAMENTO DO REFRESH, REVALIDAR MELHORIAS VISUAIS E FUNCIONAIS 
+   https://developers.vtex.com/docs/apps/vtex.store-components/SearchBar */
+
+.searchBarInnerContainer {
+    padding: 8px 4px;
+    position: absolute;
+    left: -38px;
+    /* right: 33px; */
+    overflow: hidden;
+    /* width: 368px; */
+    width: 1240px;
+    /* top: -26px; */
+    /* top: 106px - Alinhado com o texto do menu */
+    top: 114px /* Alinhado visualmente com o header */
+}
+
+.searchBarInnerContainer--filled {
+    background-color: #fff
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) {
+    overflow: visible;
+    /* max-width: 368px; */
+    max-width: unset;
+    width: 100%;
+    box-sizing: border-box;
+    /* border-radius: 50px; */
+    border-radius: 50px 50px 50px 8px;
+    /* height: 49px; */
+    height: 58px;
+    border: none
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-input__suffix) {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+    border: none !important;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0) !important;
+    opacity: 0;
+    box-sizing: border-box;
+    border-radius: 50px;
+    /* font-family: "Open Sans", sans-serif; */
+    /* font-weight: 700 !important;
+    font-size: 14px !important; */
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 19px;
+    /* color: #2d2926 !important */
+    color: #161413 !important /* Cor final Refresh */
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder {
+    font-size: 12px;
+    font-weight: normal
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+    font-size: 12px;
+    font-weight: normal;
+    color: #3e3e3e
+}
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder {
+    color: #3e3e3e
+}
+
+/* .searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: #3e3e3e
+} */
+
+.searchBarIcon {
+    /* padding: 0;
+    margin-top: -1px; */
+    margin: 5px;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    border-radius: 50px;
+    /* width: 104px; */
+    width: 156px;
+    /* height: 49px; */
+    height: auto;
+    justify-content: center
+}
+
+.searchBarIcon .searchIcon {
+    /* color: #2d2926; */
+    color: #161413;
+    width: 20px;
+    height: 20px
+}
+
+.searchBarIcon::after {
+    content: "Buscar";
+    /* font-family: "Open Sans", sans-serif; */
+    font-style: normal;
+    /* font-weight: normal; */
+    font-weight: 500;
+    /* font-size: 12px; */
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    /* color: #2d2926; */
+    color: #161413;
+    margin-left: 10px
+}
+
+.resultsList {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    /* width: 360px; */
+    width: 1230px; /* Validar se vai quebrar em diferentes tamanhos de tela */
+    /* margin: 5px 0 0 0; */
+    margin: 8px 0 0 0;
+    /* padding: 0; */
+    /* padding: 0 0 3.9px 0; */
+    padding: 12px 24px;
+    /* max-height: 277px; */
+    max-height: auto;
+    overflow-y: auto
+}
+
+.resultsList::-webkit-scrollbar {
+    /* width: 5px; */
+    width: 8px;
+    height: 5px
+}
+
+.resultsList::-webkit-scrollbar-track {
+    background: #ede8ec;
+    border-radius: 100px
+}
+
+.resultsList ::-moz-scrollbar-button,
+.resultsList ::-webkit-scrollbar-button {
+    width: 0px
+}
+
+.resultsList::-webkit-scrollbar-thumb {
+    background: #3e3e3e;
+    border-radius: 100px
+}
+
+.resultsList::-webkit-scrollbar-thumb:hover {
+    background: #585858
+}
+
+.resultsList .resultsItem {
+    /* padding: 0; */
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 0;
+    background: rgba(0, 0, 0, 0);
+    align-items: center;
+    transition: all .2s ease-in-out
+}
+
+.resultsList .resultsItem:hover {
+    background-color: rgba(0, 0, 0, 0);
+    /* color: #3e3e3e; */
+    background-color: #f6f6f6
+}
+
+.resultsList .resultsItem .searchTerm {
+    display: none
+}
+
+.resultsList .resultsItem .resultsItemImage {
+    /* border-radius: 10px; */
+    border-radius: 4px;
+    margin-right: 2px;
+    margin-left: 8px
+}
+
+.resultsList .resultsItem .resultsItemName {
+    /* font-family: "Open Sans", sans-serif; */
+    font-style: normal;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2d2926;
+    padding-left: 11px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden
+}
+
+.searchBarContainer {
+    position: relative;
+    /* min-width: 84px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; */
+    height: 20px;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 26px
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found {
+    width: 100%;
+    height: 100%;
+    max-height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    border-radius: 7px;
+    position: static;
+    padding: 0
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found .autoCompleteOuterContainer,
+.searchBarContainer .searchBarInnerContainer--not-found .compactMode {
+    height: 100%
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) {
+    border: none;
+    height: 100%;
+    max-width: 284px;
+    border-radius: 0;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-input__prefix) {
+    display: none
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+    opacity: 1;
+    height: 100%;
+    padding: 0 0 0 10px;
+    max-width: 206px;
+    font-size: 12px;
+    line-height: 14px;
+    opacity: 1
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::-moz-placeholder {
+    font-size: 16px
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+    font-size: 16px
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found .searchBarIcon {
+    height: 100%;
+    width: 20px
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found .searchBarIcon .searchIcon {
+    color: #2d2926
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found .searchBarIcon::after {
+    content: unset
+}
+
+.searchBarContainer .searchBarInnerContainer--not-found .resultsList {
+    display: none
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) {
+    transform: none !important;
+    top: 0px
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer {
+    overflow: visible
+}
+
+/* :global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer {
+    background-color: #fff
+} */
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--opened {
+    /* height: 340px */
+    background: unset
+}
+
+/* :global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) {
+    width: 368px; / Esse controla a largura do container wrapper e nao a barra visual em si /
+    border-radius: 7px
+} */
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) :global(.vtex-input-prefix__group) {
+    border: 1px solid #c0bfbe;
+    border-right: none;
+    background-color: #fff
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+    opacity: 1;
+    /* padding: 0 0 0 45.85px */
+    padding: 0 0 0 28px
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon {
+    background: #ffe133
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon--search {
+    justify-content: center
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon .searchIcon {
+    /* color: #2d2926 */
+    color: #161413
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .searchBarIcon::after {
+    /* color: #2d2926 !important */
+    color: #161413 !important
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer:not(:global(.vtex-overlay-layout-0-x-popper--search-bar) .searchBarContainer .searchBarInnerContainer--not-found) .resultsList {
+    display: block
+}
+
+:global(.vtex-overlay-layout-0-x-popper--search-bar) :global(.vtexarg-speech-to-text-1-x-audioSearchContainer) {
+    opacity: 1;
+    pointer-events: auto
+}

@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px) {
+    
+    /* .sunhouse-store-components-4-x-searchBarInnerContainer .vtex-input-prefix__group .vtex-styleguide-9-x-input { */
+    .searchBarInnerContainer :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+        font-size: 18px !important;
+        opacity: 1 !important
+    }
+
+    /* .sunhouse-store-components-4-x-searchBarContainer { */
+    .searchBarContainer {
+        height: 58px !important;
+        margin: 0 !important
+    }
+
+    /* .sunhouse-store-components-4-x-searchBarContainer .sunhouse-store-components-4-x-searchBarIcon { */
+    .searchBarContainer .searchBarIcon {
+        height: auto;
+        width: auto;
+        top: 10px !important;
+        margin-right: 0 !important;
+        right: 32px !important
+    }
+
+    /* .sunhouse-store-components-4-x-searchBarIcon .sunhouse-store-components-4-x-searchIcon { */
+    .searchBarIcon .searchIcon {
+        width: 25px !important;
+        height: 25px !important
+    }
+    
+}

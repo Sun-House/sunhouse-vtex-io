@@ -1,5 +1,5 @@
 {
-  // shelf home01
+  // Shelf 1 - Sera descontinuada no Refresh
   "flex-layout.row#shelf-home01": {
     "title": "Prateleira 1 - Container",
     "children": ["flex-layout.col#shelf-home01"],
@@ -46,20 +46,20 @@
       "maxItems": 10
     }
   },
+  //
 
-  // Shelf Home 2
+  // Shelf 2 - Sera reaproveitado para o novo layout Refresh
   "container#shelf-home02": {
-    "title": "Wrapper - Prateleira 2",
+    "title": "Prateleira 1",
     "children": [
       "flex-layout.row#shelf-home02"
     ],
     "props": {
-      "blockClass": "wrapper__shelf-home02"
+      "blockClass": ["wrapper__shelf-home02", "shelf-inline"]
     }
   },
 
   "flex-layout.row#shelf-home02": {
-    "title": "Prateleira 2 - Container",
     "children": [
       "flex-layout.col#shelf-home02"
     ],
@@ -70,7 +70,6 @@
   },
 
   "flex-layout.col#shelf-home02": {
-    "title": "Prateleira 2",
     "children": [
       "rich-text#shelf-home02",
       "hover-container#shelf-home02"
@@ -83,12 +82,14 @@
   "rich-text#shelf-home02": {
     "title": "Prateleira 2 - Título",
     "props": {
-      "text": "## Pronta Entrega\nCompre agora e receba super rápido!",
-      "blockClass": ["shelf-home02", "common-title"]
+      // "text": "## Lançamentos Elements",
+      "text": "## Lançamentos",
+      "blockClass": ["common-title", "shelf-slider-home"]
     }
   },
 
   "hover-container#shelf-home02": {
+    "title": "Configurações do Hover",
     "children": [
       "list-context.product-list#shelf-home02"
     ],
@@ -98,7 +99,8 @@
   },
 
   "list-context.product-list#shelf-home02": {
-    "title": "Lista de Produtos 2",
+    // "title": "Lista de Produtos 2",
+    "title": "Configurações da Lista de Produtos",
     "blocks": [
       // "product-summary.shelf#main-product"
       "product-summary.shelf#main-product-new"
@@ -108,24 +110,110 @@
       "responsive-layout.mobile#shelf-slider"
     ],
     "props": {
-      "maxItems": 10
+      // "maxItems": 10
+      "maxItems": 9 // Quantidade ideal para o fluxo do slider ser agradavel
+    }
+  },
+  //
+
+  // Shelf 3 - Nova prateleira com sistema de grid
+  "container#shelf-home03": {
+    "title": "Prateleira Grid - Home",
+    "children": [
+      "flex-layout.row#shelf-home03"
+    ],
+    "props": {
+      "blockClass": "wrapper__shelf-home03"
     }
   },
 
-  // shelf slider
-  "responsive-layout.desktop#shelf-slider": {
-    "children": ["slider-layout#main-shelf"]
+  "flex-layout.row#shelf-home03": {
+    "children": [
+      "flex-layout.col#shelf-home03"
+    ],
+    "props": {
+      "blockClass": ["shelf-home03", "shelf-container"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#shelf-home03": {
+    "children": [
+      "hover-container#shelf-home03"
+    ],
+    "props": {
+      "blockClass": "shelf-home03"
+    }
   },
 
+  "rich-text#shelf-home03": {
+    "title": "Prateleira Grid - Título",
+    "props": {
+      "text": "## Lançamentos\nDescubra as novidades da Sun House",
+      "blockClass": ["shelf-home03", "common-title"]
+    }
+  },
+
+  "hover-container#shelf-home03": {
+    "title": "Configurações do Hover",
+    "children": [
+      "list-context.product-list#shelf-home03"
+    ],
+    "props": {
+      "blockClass": ["shelf-home03", "hover-shelf-list"]
+    }
+  },
+
+  // Lista de Produtos 3 - sem slider
+  // Será usada de base para o sistema de Shelf Grid do Refresh (da home apenas)
+  "list-context.product-list#shelf-home03": {
+    "title": "Configurações da Lista de Produtos",
+    "blocks": [
+      "product-summary.shelf#main-product-new"
+    ],
+    "children": [
+      // Esse é o responsavel por renderizar a lista de produtos em grid
+      // "container.list-render#shelf-list"
+
+      "responsive-layout.desktop#shelf-list",
+      "responsive-layout.mobile#shelf-slider"
+    ],
+    "props": {
+      "maxItems": 9
+    }
+  },
+
+  "responsive-layout.desktop#shelf-list": {
+    "children": [
+      "container.list-render#shelf-list"
+    ]
+  },
+  //
+
+  // Grid Layout - para o sistema de Shelf Grid do Refresh
+  // Esse bloco pode ser reaproveitado para outros contextos, criando um sistema de grid de 3 produtos por linha
+  "container.list-render#shelf-list": {
+    "props": {
+      "blockClass": ["shelf", "shelf-list", "shelf-grid"]
+    }
+  },
+
+  // Sliders das Prateleiras
+  "responsive-layout.desktop#shelf-slider": {
+    "children": [
+      "slider-layout#main-shelf"
+    ]
+  },
+
+  // Slider Layout - padrao shelf antiga e será reaproveitado para o novo layout refresh
   "slider-layout#main-shelf": {
     "title": "Carossel das Prateleiras",
     "props": {
       "itemsPerPage": {
         "desktop": 4
       },
-      "showPaginationDots": "always",
-      "showNavigationArrows": "desktopOnly",
-      // "infinite": false,
+      // "showPaginationDots": "always",
+      "showPaginationDots": "mobileOnly", // Acredito que será o ideal ter apenas no Mobile - validar conforme prop abaixo
+      "showNavigationArrows": "desktopOnly", // Talvez precise mudar para o Refresh - a definir Mobile
       "infinite": true,
       "blockClass": ["shelf", "main-shelf"]
     }
@@ -135,22 +223,7 @@
     "children": ["embla-carousel#shelf-mobile"]
   },
 
-  // "slider-layout#shelf-mobile": {
-  //   "title": "Carossel da prateleir",
-  //   "props": {
-  //     "itemsPerPage": {
-  //       "tablet": 2,
-  //       "phone": 1
-  //     },
-  //     "showPaginationDots": "always",
-  //     "centerMode": "to-the-left",
-  //     "centerModeSlidesGap": 1,
-  //     "showNavigationArrows": "desktopOnly",
-  //     "infinite": true,
-  //     "blockClass": ["shelf", "banner-shelf"]
-  //   }
-  // },
-
+  // Embla Carousel - para o mobile - Preciso validar se será possivel reaproveitar para o novo layout refresh
   "embla-carousel#shelf-mobile": {
     "props": {
       "options": {
@@ -162,70 +235,6 @@
         "align": "start"
       },
       "blockClass": ["shelf", "banner-shelf", "shelf--mobile"]
-    }
-  },
-
-  // Shelf Home 3
-  "container#shelf-home03": {
-    "title": "Wrapper - Prateleira 3",
-    "children": [
-      "flex-layout.row#shelf-home03"
-    ],
-    "props": {
-      "blockClass": "wrapper__shelf-home03"
-    }
-  },
-
-  "flex-layout.row#shelf-home03": {
-    "title": "Prateleira 3 - Container",
-    "children": [
-      "flex-layout.col#shelf-home03"
-    ],
-    "props": {
-      "blockClass": ["shelf-home03", "shelf-container"],
-      "fullWidth": true
-    }
-  },
-  "flex-layout.col#shelf-home03": {
-    "title": "Prateleira 3",
-    "children": [
-      "rich-text#shelf-home03",
-      "hover-container#shelf-home03"
-    ],
-    "props": {
-      "blockClass": "shelf-home03"
-    }
-  },
-
-  "rich-text#shelf-home03": {
-    "title": "Prateleira 3 - Título",
-    "props": {
-      "text": "## Lançamentos\nDescubra as novidades da Sun House",
-      "blockClass": ["shelf-home03", "common-title"]
-    }
-  },
-
-  "hover-container#shelf-home03": {
-    "children": [
-      "list-context.product-list#shelf-home03"
-    ],
-    "props": {
-      "blockClass": ["shelf-home03", "hover-shelf-list"]
-    }
-  },
-
-  "list-context.product-list#shelf-home03": {
-    "title": "Lista de Produtos 3",
-    "blocks": [
-      // "product-summary.shelf#main-product"
-      "product-summary.shelf#main-product-new"
-    ],
-    "children": [
-      "responsive-layout.desktop#shelf-slider",
-      "responsive-layout.mobile#shelf-slider"
-    ],
-    "props": {
-      "maxItems": 10
     }
   }
 }

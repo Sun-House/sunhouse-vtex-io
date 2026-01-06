@@ -1,13 +1,19 @@
-.hoverContent {
+/* NAO mover esse arquivo!
+   Será mais pratico estilizar por aqui mesmo */
+
+/* .hoverContent {
 	transition: all .4s
-}
+} */
 
 .hoverContent--hover-shelf-list,
 .hoverContent--hover-search-content {
 	margin-top: 40px
 }
 
-.hoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf):hover .hoverContent--shelf-product-buy-quantity,
+/* Old Shelf
+   Desabilitei para ver se da algum bug no site
+   Caso nao de, excluir esse bloco */
+/* .hoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf):hover .hoverContent--shelf-product-buy-quantity,
 .hoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf):hover .hoverContent--shelf-buy-button,
 .hoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf):hover .hoverContent--shelf-sku-selector,
 .hoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf):hover .hoverContent--quick-view,
@@ -21,9 +27,10 @@
 .hoverContent--hover-search-content :global(.vtex-product-summary-2-x-element--main-shelf):hover .hoverContent--shelf-product-unavailable-button {
 	opacity: 1;
 	visibility: visible
-}
+} */
 
-/* New shelf */
+/* New shelf
+   Sistema de hover esta sendo feito de outra maneira
 .hoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf-new):hover .hoverContent--shelf-product-buy-quantity,
 .hoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf-new):hover .hoverContent--shelf-buy-button,
 .hoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf-new):hover .hoverContent--shelf-sku-selector,
@@ -38,25 +45,54 @@
 .hoverContent--hover-search-content :global(.vtex-product-summary-2-x-element--main-shelf-new):hover .hoverContent--shelf-product-unavailable-button {
 	opacity: 1;
 	visibility: visible
-}
-/* New shelf */
+} */
 
-.hoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf):hover :global(.vtex-container--product-sku-variation),
+/* Alternador de visualizacao do bloco de preco
+   Para a sobreposicao do botao de compra - sistema novo Refresh
+.hoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf-new):hover :global(.vtex-container-wrapper--bf_price-block),
+.hoverContent--hover-search-content :global(.vtex-product-summary-2-x-element--main-shelf-new):hover :global(.vtex-container-wrapper--bf_price-block) {
+	transition: opacity .2s ease-in-out, visibility .2s ease-in-out
+} */
+
+/* .ahoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf-new):hover :global(.vtex-container-wrapper--bf_price-block),
+.ahoverContent--hover-search-content :global(.vtex-product-summary-2-x-element--main-shelf-new):hover :global(.vtex-container-wrapper--bf_price-block) {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .2s ease-in-out, visibility .2s ease-in-out
+} */
+
+/* Algo relacionado a um sistema antigo de SKU Selector
+   Validar se ha necessidade de manter isso
+   Por hora manter inativo e ver como o site se comporta */
+/* .hoverContent--hover-shelf-list :global(.vtex-product-summary-2-x-element--main-shelf):hover :global(.vtex-container--product-sku-variation),
 .hoverContent--hover-search-content :global(.vtex-product-summary-2-x-element--main-shelf):hover :global(.vtex-container--product-sku-variation) {
 	opacity: 1;
 	visibility: visible
-}
+} */
 
-@media screen and (min-width: 1025px) {
+
+/* PRECISA ALTERAR o que trigga mostrar o botao, pois tudo do card da shelf esta triggando atualmente */
+/* START */
+/* @media screen and (min-width: 1025px) {
 
 	.hoverContent--shelf-product-buy-quantity,
 	.hoverContent--shelf-buy-button,
 	.hoverContent--shelf-sku-selector,
 	.hoverContent--quick-view,
 	.hoverContent--actions,
-	.hoverContent--shelf-product-unavailable-button {
-		opacity: 0;
-		visibility: hidden
-	}
+	.hoverContent--shelf-product-unavailable-button { */
+		/* opacity: 0;
+		visibility: hidden */
 
-}
+		/* DEBUG para posicionamento correto - REMOVER APOS CORRIGIR POSICAO */
+        /* opacity: 1;
+        visibility: visible; */
+        /* DEBUG para posicionamento correto - REMOVER APOS CORRIGIR POSICAO */
+        
+        /* top: -70px; */
+        /* position: relative; */
+	/* } */
+	/* PRECISA ALTERAR o que trigga mostrar o botao, pois tudo do card da shelf esta triggando atualmente */
+	/* END */
+
+/* } */

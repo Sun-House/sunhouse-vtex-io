@@ -1,0 +1,31 @@
+.container--by-category .viewport .emblaContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.container--by-category .viewport .link--by-category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    color: #161413;
+    text-decoration: none
+}
+
+.container--by-category .viewport .link--by-category .imageContainer .imageItem {
+    display: flex;
+    height: 69px;
+    border-radius: 4px
+}
+
+.container--by-category .viewport .link--by-category:hover .imageContainer {
+    border-color: #ffda00
+}
+
+.container--by-category .viewport .link--by-category .text--by-category {
+    margin-left: 32px
+}

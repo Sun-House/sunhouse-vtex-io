@@ -1,0 +1,28 @@
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-store-components-3-x-infoCardContainer--main-banner-category { */
+    .infoCardContainer--main-banner-category {
+        position: relative;
+        height: 100%
+    }
+
+    /* .vtex-store-components-3-x-infoCardContainer--main-banner-category::after { */
+    .infoCardContainer--main-banner-category::after {
+        height: 100%
+    }
+    
+    /* .vtex-store-components-3-x-paragraph--main-banner-category { */
+    .paragraph--main-banner-category {
+        font-size: 24px;
+        width: 100%;
+        margin-top: 28px;
+        margin-bottom: 92px;
+        text-align: left !important
+    }
+
+    /* .vtex-store-components-3-x-infoCardContainer--main-banner::after { */
+    .infoCardContainer--main-banner::after {
+        top: auto /* Pode resultar em bug */
+    }
+    
+}

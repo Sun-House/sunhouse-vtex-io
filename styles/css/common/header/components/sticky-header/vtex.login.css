@@ -1,0 +1,16 @@
+/* TESTAR SE VAI OCULTAR MESMO QUANDO LOGADO */
+/* START */
+/* Oculta o botao de login apenas no sticky header quando o usuario rola a pagina para baixo */
+:global(.render-container) :global(.vtex-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast) :global(.sunhouse-auth-utils-2-x-wrapper) {
+    display: none;
+}
+
+:global(.render-container) :global(.vtex-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast) :global(.sunhouse-minicart-2-x-minicartIconLabel) {
+    display: none
+}
+
+:global(.render-container) :global(.vtex-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) {
+    top: -8px
+}
+/* TESTAR SE VAI OCULTAR MESMO QUANDO LOGADO */
+/* END */

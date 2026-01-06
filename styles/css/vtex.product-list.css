@@ -11,12 +11,13 @@
 }
 
 .productName {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
-    font-weight: normal;
+    /* font-weight: normal; */
+    font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #2d2926;
+    color: #161413;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;
@@ -30,7 +31,7 @@
 }
 
 .quantitySelectorWrapper {
-    border: 1px solid #2d2926;
+    border: 1px solid #161413;
     box-sizing: border-box;
     border-radius: 5px;
     width: 100%;
@@ -42,7 +43,7 @@
     padding: 0;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    color: #2d2926
+    color: #161413
 }
 
 .quantitySelectorButton:hover {
@@ -54,7 +55,7 @@
     border: none;
     width: 100%;
     flex: 1;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -62,11 +63,11 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #2d2926
+    color: #161413
 }
 
 .price--minicart-price {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -81,7 +82,7 @@
 }
 
 .productPriceCurrency--minicart-price .currencyContainer {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -101,7 +102,7 @@
 .removeButton .deleteIcon {
     width: 24px;
     height: 27px;
-    color: #2d2926
+    color: #161413
 }
 
 .productListUnavailableItemsMessage {
@@ -116,7 +117,8 @@
     .productName {
         font-size: 16px;
         font-style: normal;
-        font-weight: 400
+        /* font-weight: 400 */
+        font-weight: 500;
     }
 
     .quantitySelectorContainer {

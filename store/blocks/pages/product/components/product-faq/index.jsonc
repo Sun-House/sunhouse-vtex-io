@@ -1,0 +1,12 @@
+{
+    "container#product-faq": {
+        "title": "FAQ - Perguntas Frequentes PDP",
+        "children": [
+            "flex-layout.row#faq-disclosure__title-row",
+            "container#custom-block__faq-disclosure"
+        ],
+        "props": {
+            "blockClass": ["custom-block__container", "custom-block__wrapper-faq-disclosure", "product-faq"]
+        }
+    }
+}

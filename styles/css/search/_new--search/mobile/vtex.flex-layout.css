@@ -1,0 +1,14 @@
+@media screen and (max-width: 1024px) {
+    
+    /* .vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--post-header-line_mobile { */
+    .flexRow--post-header-line_mobile {
+        margin: 0 18px
+    }
+    
+    /* .vtex-flex-layout-0-x-flexRowContent--post-header-line_mobile .vtex-flex-layout-0-x-stretchChildrenWidth { */
+    .flexRowContent--post-header-line_mobile .stretchChildrenWidth {
+        width: 50% !important;
+        margin: 0 auto
+    }
+    
+}

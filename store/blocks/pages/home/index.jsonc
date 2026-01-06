@@ -1,27 +1,59 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#banner-main",
-      "container#differentials",
+      // Main Banner
+      // Concluido! (desktop-mobile)
+      "info-card#banner-main",
+      
+      // Category Grid
+      // Concluido! (desktop-mobile)
       "flex-layout.row#categories-slider",
       "container#spacing-default",
-      "list-context.image-list#image-double",
-      "container#spacing-default",
-      "flex-layout.row#shelf-home01",
-      "container#spacing-default",
-      "list-context.image-list#banner-grid",
-      "container#spacing-default",
-      "container#shelf-home02",
-      "container#shelf-home03",
-      "container#spacing-default",
+
+      // Shelfs
+      // Concluido! (desktop-mobile)
+      "container#shelf-home02", // Mudar nome posteriormente
+      "container#shelf-featured",
+      "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
+
+      // Product Highlight Grid
+      // Concluido! (desktop-mobile)
+      "container#product-highlight-grid",
+
+      // Fullwidth Static Banner
+      // Concluido! (desktop-mobile)
+      "container#fullwidth-static-banner",
+
+      // Shelf Grid
+      // Concluido! (desktop-mobile)
+      "container#shelf-home03", // Mudar nome posteriormente
+      "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
+
+      // Fullwidth Shelf Banner
+      // A SER IMPLEMENTADO - Usar o abaixo como base:
       // "flex-layout.row#shelf-banner-desktop",
       // "container#spacing-default",
-      // "flex-layout.row#trustvox-colt-highlight",
-      "container#trustvox-colt-highlight",
-      "container#spacing-default",
       //
-      "container#blog-cards",
-      "container#spacing-default"
+
+      // Instagram Block - Estudar se será possivel para lançamento no Refresh
+      // A SER IMPLEMENTADO - pos lancamento do MVP do Refresh
+
+      // Blog Grid
+      // Concluido! (desktop)
+      "container#blog-grid",
+
+      // Trustvox Colt Reviews - Concluido!
+      // Não ficará visivel no Refresh, mas sera mantido para backup
+      "container#trustvox-colt-highlight",
+      // "container#spacing-default",
+
+      // Showcase Slider
+      // Concluido! (desktop-mobile)
+      "container#showcase-slider",
+
+      // About Text with FAQ
+      // Concluido! (desktop)
+      "container#pre-footer-about"
     ]
   }
 }

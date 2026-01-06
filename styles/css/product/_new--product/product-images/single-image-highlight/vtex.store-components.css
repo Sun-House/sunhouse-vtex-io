@@ -1,0 +1,14 @@
+/* .vtex-store-components-3-x-imageElement--image-highlight { */
+.imageElement--image-highlight {
+    /* filter: brightness(60%); - Muito escuro */
+    /* filter: brightness(70%); - Ainda muito escuro */
+    filter: brightness(80%); /* Esse ficou OK */
+    /* filter: brightness(90%); Esse estava muito claro */
+    object-fit: cover;
+    width: 100vw;
+    max-width: unset;
+    min-height: 1184px;
+    max-height: 1184px;
+    margin-left: 50%;
+    transform: translateX(-50vw)
+}

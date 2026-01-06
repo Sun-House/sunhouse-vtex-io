@@ -1,0 +1,83 @@
+/* TUDO ABAIXO PRECISA SER MIGRADO PARA O ARQUIVO DE CSS DO APP CUSTOM
+   DE PRODUCT IMAGES - QUE AINDA NAO FOI FEITO DEPLOY */
+
+
+/* Esse precisa ser revisto - nao esta aplicando sempre na imagem
+   Porem, esta visualmente aceitavel, ajustar se tiver tempo habil */
+.productImage--product-images-v2,
+.productImageTag--product-images-v2 {
+    border-radius: 4px
+}
+
+/* .sunhouse-store-components-images-0-x-productImageTag--product-images-v2--main { */
+/* .productImageTag--product-images-v2--main {
+    cursor: url(https://sunhouse.vtexassets.com/assets/vtex/assets-builder/sunhouse.sunhouse/0.10.11/icons/zoom-mouse___1622061….svg), auto;
+} */
+
+/* .sunhouse-product-images-custom-1-x-productImage--product-images-v2 { */
+.productImage--product-images-v2 {
+    cursor: url(https://sunhouse.vtexassets.com/assets/vtex/assets-builder/sunhouse.sunhouse/0.10.11/icons/zoom-mouse___1622061….svg), auto
+}
+
+/* Swiper Thumbnails START */
+/* .sunhouse-product-images-custom-1-x-productImagesThumbActive .sunhouse-product-images-custom-1-x-carouselThumbBorder { */
+.productImagesThumbActive .carouselThumbBorder {
+    border-color: #FFDA00 !important;
+    border-width: 3px !important;
+    border-radius: 4px
+}
+
+/* .sunhouse-product-images-custom-1-x-carouselGaleryThumbs--product-images-v2 { */
+.carouselGaleryThumbs--product-images-v2 {
+    margin-top: 20px
+}
+
+/* Tamanho mínimo para thumbnails quando há menos de 3 slides */
+/* .sunhouse-product-images-custom-1-x-carouselGaleryThumbs .swiper-slide { */
+.carouselGaleryThumbs .productImagesGallerySlide {
+    min-width: 150px /* Ajuste conforme sua medida ideal */
+}
+
+/* .sunhouse-product-images-custom-1-x-thumbImg--product-images-v2 { */
+.thumbImg--product-images-v2 {
+    border-radius: 4px
+}
+
+/* .sunhouse-product-images-custom-1-x-gradientBaseRight { */
+.gradientBaseRight,
+.gradientBaseLeft {
+    background: #00000000 !important
+}
+
+/* .sunhouse-product-images-custom-1-x-caretIcon--product-images-v2 { */
+.caretIcon--product-images-v2 {
+    color: #161314
+}
+
+/* Desktop force */
+@media screen and (min-width: 1025px) {
+
+    /* .sunhouse-product-images-custom-1-x-carouselGaleryThumbs .swiper-slide { */
+    .carouselGaleryThumbs .productImagesGallerySlide {
+        min-width: 200px /* Ver tamnho correto no arquivo de blocks json que cria o componente de imagens */
+    }
+
+}
+/* Swiper Thumbnails END */
+
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+    
+    /* .sunhouse-product-images-custom-1-x-swiper-pagination { */
+    /* .swiper-pagination {
+        bottom: 0;
+        z-index: 1
+    } */
+    
+    /* .sunhouse-product-images-custom-1-x-productImagesGallerySwiperContainer--product-images-v2 { */
+    .productImagesGallerySwiperContainer--product-images-v2 {
+        min-height: 430px !important
+    }
+    
+}

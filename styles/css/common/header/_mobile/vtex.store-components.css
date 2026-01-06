@@ -1,0 +1,9 @@
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-store-components-3-x-logoImage--logo-image--mobile { */
+    .logoImage--logo-image--mobile {
+        width: 80px !important;
+        height: 80px !important
+    }
+
+}

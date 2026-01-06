@@ -1,0 +1,21 @@
+@media screen and (max-width: 1024px) {
+
+    .link--diferentials-mobile {
+        display: flex;
+        align-items: center;
+        gap: 24px
+    }
+
+    .link--diferentials-mobile {
+        /* display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center; */
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        color: #161413;
+        text-decoration: none
+    }
+
+}

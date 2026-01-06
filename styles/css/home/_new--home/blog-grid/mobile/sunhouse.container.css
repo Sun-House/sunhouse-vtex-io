@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-container-1-x-container--blog-grid { */
+    .container--blog-grid {
+         padding-bottom: 48px
+    }
+    
+}

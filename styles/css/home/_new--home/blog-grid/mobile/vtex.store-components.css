@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+    
+    /* .vtex-store-components-3-x-imageElement--blog-grid-image { */
+    .imageElement--blog-grid-image {
+        width: 100%;
+        min-width: unset;
+        max-width: unset
+    }
+    
+}

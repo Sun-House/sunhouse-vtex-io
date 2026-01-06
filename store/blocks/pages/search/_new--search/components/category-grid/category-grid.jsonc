@@ -1,0 +1,119 @@
+{
+    // Carrossel Categorias 1
+    "container#plp-category-grid": {
+        "title": "Grid Categorias",
+        "children": [
+            "flex-layout.row#plp-category-grid"
+        ],
+        "props": {
+            // "blockClass": "lp_grid-cadeiras"
+            "blockClass": "plp-category-grid"
+        }
+    },
+
+    "flex-layout.row#plp-category-grid": {
+        // "title": "Wrapper Linha",
+        "children": [
+            "flex-layout.col#plp-category-grid"
+        ],
+        "props": {
+            "colSizing": "equal",
+            "preventVerticalStretch": true,
+            // "blockClass": "lp_grid"
+            "blockClass": "plp-category-grid"
+        }
+    },
+    "flex-layout.col#plp-category-grid": {
+        // "title": "Wrapper Coluna",
+        "children": [
+            "image-text-list#plp-category-grid_images"
+        ],
+        "props": {
+            "width": "grow",
+            // "blockClass": "lp_grid"
+            "blockClass": "plp-category-grid"
+        }
+    },
+
+    "image-text-list#plp-category-grid_images": {
+        "title": "Grid Itens",
+        "children": [
+            // "embla-carousel#plp-category-grid_carousel"
+            
+            "responsive-layout.desktop#plp-category-grid",
+            "responsive-layout.mobile#plp-category-grid"
+        ],
+        "props": {
+            "imageTextArray": [
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/300x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/300x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/300x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/300x300",
+                    "link": "#"
+                },
+                {
+                    "imageText": "Categoria",
+                    "image": "https://dummyimage.com/300x300",
+                    "link": "#"
+                }
+            ],
+            // "blockClass": "lp_grid_images"
+            "blockClass": "plp-category-grid_items"
+        }
+    },
+
+    // Tem que testar se esta gerando dois blocos - um desktop e ter que replicar tudo pro mobile
+    // Se sim, precisa voltar para o padrao anterior e ajustar tudo via CSS
+    "responsive-layout.desktop#plp-category-grid": {
+        "children": [
+            "embla-carousel#plp-category-grid_carousel.desktop"
+        ]
+    },
+    "responsive-layout.mobile#plp-category-grid": {
+        "children": [
+            "embla-carousel#plp-category-grid_carousel.mobile"
+        ]
+    },
+
+    "embla-carousel#plp-category-grid_carousel.desktop": {
+        "props": {
+            "options": {
+                "navigation": false,
+                "dots": false,
+                "draggable": false,
+                "loop": false,
+                "align": "center"
+            },
+            // "blockClass": "lp_grid_carousel" // Acredito que valha a pena manter o class original para reaproveitar estilizacao
+            "blockClass": "plp-category-grid_carousel"
+        }
+    },
+
+    "embla-carousel#plp-category-grid_carousel.mobile": {
+        "props": {
+            "options": {
+                "navigation": false,
+                "dots": false,
+                "draggable": true,
+                "loop": false,
+                "align": "center"
+            },
+            // "blockClass": "lp_grid_carousel" // Acredito que valha a pena manter o class original para reaproveitar estilizacao
+            "blockClass": "plp-category-grid_carousel-mobile"
+        }
+    }
+}

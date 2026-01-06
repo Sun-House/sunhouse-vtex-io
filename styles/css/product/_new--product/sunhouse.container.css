@@ -1,0 +1,7 @@
+/* .sunhouse-container-1-x-container--product-highlights--product-page { */
+.container--product-highlights--product-page {
+    /* margin-top: 18px; - remover */
+    /* margin-bottom: 12px; - remover */
+    gap: 19px; /* Precisa ajustar conforme tiver mais flags de destaques */
+    min-height: unset
+}

@@ -1,0 +1,10 @@
+{
+    "product-price-savings#amount-saved": {
+        "props": {
+            "percentageStyle": "compact",
+            "message": "{savingsValue}",
+            // "blockClass": "discount-seal"
+            "blockClass": ["discount-seal", "flag-savings-amount"] // Pode ser necessario remover essa classe "discount-seal"
+        }
+    }
+}

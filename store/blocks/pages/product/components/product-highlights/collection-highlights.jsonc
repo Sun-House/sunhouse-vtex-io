@@ -1,0 +1,42 @@
+{
+    "flex-layout.row#collection-highlights--product-page": {
+        "children": [
+            "sunhouse.product-highlights@2.x:product-highlights#collection-pdp"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "marginBottom": 5,
+            // "blockClass": "shipping-simulator-wrapper"
+            "blockClass": "highlight-collection-wrapper"
+        }
+    },
+
+    "sunhouse.product-highlights@2.x:product-highlights#collection-pdp": {
+        "title": "Flags Destaque",
+        "children": [
+            "product-highlight-text#collection-pdp"
+        ],
+        "props": {
+            "type": "collection",
+            "filter": {
+                "type": "show",
+                "highlightNames": [
+                    // Aqui colocar as coleções de destaque
+                    // Nome apenas - igual no Catalog
+                    // Deixar nome no Catalog igual o que deve renderizar na PDP a principio
+                    // Adicionar todas possiveis aqui - A principio apenas o Produto Personalizado mas outras serao adicionadas conforme for necessario
+                    // Acredito que o processo acima descrito possa ser feito pelo Site Editor - a confirmar
+                    "Produto Personalizado"
+                ]
+            }
+        }
+    },
+    "product-highlight-text#collection-pdp": {
+        "props": {
+            "message": "{highlightName}",
+            // "blockClass": "highlights_product-page"
+            // "link": "Example: /collection/{highlightId}", // Nao vou usar, mas deixar aqui para lembrar caso precise ser usado
+            "blockClass": "highlights_collection-pdp" // Aqui tem que mudar
+        }
+    }
+}
