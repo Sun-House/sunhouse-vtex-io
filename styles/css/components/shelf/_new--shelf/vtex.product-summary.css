@@ -26,16 +26,22 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding-bottom: 0.5rem !important
 }
 
+/* Validar em quais templates esta sendo aplicado */
 .nameContainer--new-shelf .productBrand--new-shelf,
 .nameContainer--new-shelf .brandName--new-shelf {
     display: block;
-    height: 38px;
+    /* height: 38px; */
+    height: 20px;
     font-weight: 500;
     display: -webkit-box;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
+    /* line-clamp: 2;
+    -webkit-line-clamp: 2; */
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    overflow: hidden
+    overflow: hidden;
+    color: #161413
 }

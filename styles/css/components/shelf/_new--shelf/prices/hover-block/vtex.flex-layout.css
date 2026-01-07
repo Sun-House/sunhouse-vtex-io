@@ -1,19 +1,11 @@
 /* New Shelf mouse hover system */
-.flexCol--shelf-product-available :global(.vtex-container-wrapper--bf_price-block),
+.flexCol--shelf-product-available :global(.vtex-container-wrapper--new-shelf),
 .flexCol--shelf-product-available .flexCol--shelf-buy-button {
     transition: all .2s ease-in-out
 }
 
-/* DEBUG 
-   Remover comentario apos ajustar posicao do hover block */
-
-.flexCol--shelf-product-available:hover :global(.vtex-container-wrapper--bf_price-block),
+.flexCol--shelf-product-available:hover :global(.vtex-container-wrapper--new-shelf),
 .flexCol--shelf-product-available .flexCol--shelf-buy-button {
     opacity: 0;
     visibility: hidden
-}
-
-.flexCol--shelf-product-available:hover .flexCol--shelf-buy-button {
-    opacity: 1;
-    visibility: visible
 }

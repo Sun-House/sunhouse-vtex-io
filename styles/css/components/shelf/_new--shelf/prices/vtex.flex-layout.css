@@ -2,7 +2,8 @@
 .flexCol--shelf-product-available .flexColChild--shelf-product-available:nth-child(even) {
     position: relative;
     /* top: -70px; */
-    top: -36px;
+    /* top: -36px; */
+    top: -50px;
     height: 20px !important
 }
 

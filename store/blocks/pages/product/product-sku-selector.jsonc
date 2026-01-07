@@ -2,8 +2,8 @@
 	"container#sku-variation-selector": {
 		"title": "Seletor de Variação de SKU",
 		"children": [
-			"enhanced-sku-selector#wrapper",
-			"container#sku-variation-data"
+			"enhanced-sku-selector#wrapper"
+			// "container#sku-variation-data" - Deixa de ser necessario apos lancamento da v2 do Enhanced SKU Selector
 		],
 		"props": {
 			"blockClass": "sku-selector_container"
@@ -15,19 +15,20 @@
 		"props": {
 			"displayMode": "select", // Precisa manter assim para aparecer o dropdown de variações quando nao tiver thumbnailImage
 			"imageHeight": { 
-				// "desktop": 60, // 300 ideal para o popover
-				// "mobile": 60 // 300 ideal para o popover
-				"desktop": 300, // 300 ideal para o popover
-				"mobile": 300 // 300 ideal para o popover
+				"desktop": 300,
+				"mobile": 300
 			},
 			"imageWidth": {
-				// "desktop": 60, // 300 ideal para o popover
-				// "mobile": 60 // 300 ideal para o popover
-				"desktop": 300, // 300 ideal para o popover
-				"mobile": 300 // 300 ideal para o popover
+				"desktop": 300,
+				"mobile": 300
 			},
 			"hideImpossibleCombinations": false,
 			"showVariationsErrorMessage": false,
+			
+			// Nova versão do enhanced SKU Selector (v2) - Mostra card logo acima do seletor de variações com foto ampliada da cor/acabamento selecionada
+			"showImagePopper": true,
+      		"popperImageSize": 300, // A confirmar se este tamanho esta de acordo com o UX
+			
 			"blockClass": ["sku-selector_default", "sku-selector_acabamento"]
 		}
 	},

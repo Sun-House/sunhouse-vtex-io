@@ -1,0 +1,23 @@
+
+/* New Shelf mouse hover system */
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper),
+    :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
+    :global(.vtex-container-wrapper--new-shelf-price_parcelado) {
+        transition: all .2s ease-in-out
+    }
+
+    :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
+    :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado) {
+        opacity: 0;
+        visibility: hidden
+    }
+
+    :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-flex-layout-0-x-flexCol--shelf-buy-button) {
+        opacity: 1;
+        visibility: visible
+    }
+
+}

@@ -133,9 +133,13 @@
     color: #bcbbbb /* Cor final validada Refresh */
 }
 
-/* .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem--selected .valueWrapper {
-    color: #fff !important
-} */
-/**/
+/* Popper de exibicao das cores/acabamentos */
+/* Mobile */
+@media screen and (max-width: 1024px) {
 
-/* Estilo do container das opcoes de variações END */
+    /* Oculta popper mouseover no mobile */
+    .imagePopper {
+        display: none
+    }
+
+}

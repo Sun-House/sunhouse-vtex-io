@@ -22,15 +22,41 @@
     "title": "Vitrine de Produtos",
 		"children": [
 			"stack-layout#new-shelf-product-image",
+      
       // Versão MVP - Precisara ser melhorada posteriormente
-      "shelf-enhanced-sku-selector#default-shelf",
-			"product-summary-name#new-shelf",
-      "condition-layout.product#shelf-elf-checker"
+      // "shelf-enhanced-sku-selector#default-shelf",
+      "flex-layout.row#shelf-enhanced-sku-selector",
+      //
+
+      "flex-layout.col#hover-block-wrapper"
+
+			// "product-summary-name#new-shelf",
+      // "condition-layout.product#shelf-elf-checker"
 		],
 		"props": {
 			"blockClass": "main-shelf-new"
 		}
 	},
+
+  "flex-layout.col#hover-block-wrapper": {
+    "children": [
+      // "flex-layout.col#hover-block-wrapper"
+      "product-summary-name#new-shelf",
+      "condition-layout.product#shelf-elf-checker"
+    ],
+    "props": {
+      "blockClass": "hover-block-wrapper"
+    }
+  },
+
+  "flex-layout.row#shelf-enhanced-sku-selector": {
+    "children": [
+      "shelf-enhanced-sku-selector#default-shelf"
+    ],
+    "props": {
+      "blockClass": "shelf-enhanced-sku-selector"
+    }
+  },
 
   // Shelf Enhanced SKU Selector - pronto para o MVP do Refresh
   "shelf-enhanced-sku-selector#default-shelf": {
@@ -100,7 +126,8 @@
 
       // Shelf SKU Selector
       // "product-summary-sku-selector#default-shelf",
-      "shelf-enhanced-sku-selector#default-shelf",
+      // "shelf-enhanced-sku-selector#default-shelf",
+      "flex-layout.row#shelf-enhanced-sku-selector",
       //
 
       "container#product-highlights",

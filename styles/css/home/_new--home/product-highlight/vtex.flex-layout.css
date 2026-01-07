@@ -23,25 +23,76 @@
 
 /* .vtex-flex-layout-0-x-flexColChild--product-highlight-shelf .vtex-add-to-cart-button-0-x-buttonText--shelf-buy::after { */
 .flexColChild--product-highlight-shelf :global(.vtex-add-to-cart-button-0-x-buttonText--shelf-buy)::after {
-    content: "Comprar";
-    font-size: 16px;
+    content: "";
+    font-size: 16px
 }
 
 /* .vtex-flex-layout-0-x-flexColChild--product-highlight-shelf .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button { */
 .flexColChild--product-highlight-shelf .flexCol--buy-button :global(.vtex-button) {
     background-color: #161413;
-    width: 158px;
+    /* width: 158px; */
+    width: 52px;
+    transition: all .2s ease-in-out
+}
+
+.flexColChild--product-highlight-shelf .flexCol--buy-button :global(.vtex-button):hover {
+    background-color: #FFDA00
+}
+
+.flexColChild--product-highlight-shelf .flexCol--buy-button :global(.vtex-button):hover :global(.vtex-button__label) {
+    color: #161413
 }
 
 /* .vtex-flex-layout-0-x-flexColChild--product-highlight-shelf .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button .vtex-button__label { */
 .flexColChild--product-highlight-shelf .flexCol--buy-button :global(.vtex-button) :global(.vtex-button__label) {
-    color: #e1dede;
+    color: #e1dede
 }
 
 /* .vtex-flex-layout-0-x-flexColChild--product-highlight-shelf .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button .vtex-button__label::after { */
 .flexColChild--product-highlight-shelf .flexCol--buy-button :global(.vtex-button) :global(.vtex-button__label)::after {
-    content: "\F134";
+    /* content: "\F134"; */
+    content: "\F244";
     font-family: "Bootstrap-Icons";
-    font-size: 20px;
-    margin-left: 12px
+    /* font-size: 20px; */
+    font-size: 24px
+    /* margin-left: 12px */
+}
+
+/* Botão Abrir PDP */
+/* .vtex-flex-layout-0-x-flexColChild--product-highlight-shelf .vtex-flex-layout-0-x-flexCol--shelf-buy-button { */
+.flexColChild--product-highlight-shelf .flexCol--shelf-buy-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .vtex-flex-layout-0-x-flexColChild--product-highlight-shelf .vtex-flex-layout-0-x-flexCol--shelf-buy-button::before { */
+.flexColChild--product-highlight-shelf .flexCol--shelf-buy-button::before {
+    /* Conteúdo e Estilo do Botão */
+    content: "SAIBA MAIS \F141";
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    
+    /* Dimensões e Cores */
+    background-color: #161413;
+    color: #e1dede;
+    padding: 16.811px 35px;
+    margin-right: 12px;
+    border-radius: 50px;
+    
+    /* Tipografia do Botão */
+    font-family: 'Bootstrap-Icons', 'Bai Jamjuree', serif;
+    font-weight: 500;
+    font-size: 16px;
+    
+    /* Transição para interatividade */
+    transition: all 0.2s ease-in-out
+}
+
+/* .vtex-flex-layout-0-x-flexColChild--product-highlight-shelf .vtex-flex-layout-0-x-flexCol--shelf-buy-button:hover::before { */
+.flexColChild--product-highlight-shelf .flexCol--shelf-buy-button:hover::before {
+    background-color: #FFDA00;
+    color: #161413
 }

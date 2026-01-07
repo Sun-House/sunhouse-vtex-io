@@ -1,0 +1,5 @@
+.shelfSKUVariationItem {
+    margin: 0 !important;
+    /* margin-right: 8px !important - Valor padrao de correcao para margin 4px nativo do componente */
+    margin-right: 16px !important /* Valor ideal validado Refresh */
+}

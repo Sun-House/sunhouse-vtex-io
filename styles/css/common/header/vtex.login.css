@@ -80,9 +80,19 @@
     --header-text-color: #161413
 }
 
-/* Institucional Pages */
+/* Institucional - Nossas Lojas */
 :global(.render-container.render-route-vtex-store-2-x-store-custom-institucional-nossas-lojas) :global(.vtex-render__container-id-institutional) {
     margin-top: 124px
+}
+
+/* Desktop Force*/
+@media screen and (min-width: 1025px) {
+    
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-institucional-"] :global(.vtex-render__container-id-institutional),
+    :global(.render-container.render-route-vtex-store-2-x-store-custom-institucional-app) :global(.vtex-render__container-id-institucional-landing) {
+        margin-top: 124px
+    }
+
 }
 
 /* Mobile */

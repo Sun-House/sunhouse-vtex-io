@@ -54,7 +54,6 @@
             "images": [
                 {
                     "image": "https://dummyimage.com/546x682"
-                    // "mobileImage": "https://dummyimage.com/360x640" - A definir se vou usar
                 }
             ],
             "blockClass": ["product-highlight-image", "product-highlight-image_col-1"]
@@ -84,11 +83,9 @@
             "images": [
                 {
                     "image": "https://dummyimage.com/289x216"
-                    // "mobileImage": "https://dummyimage.com/360x640" - A definir se vou usar
                 },
                 {
                     "image": "https://dummyimage.com/289x289"
-                    // "mobileImage": "https://dummyimage.com/360x640" - A definir se vou usar
                 }
             ],
             "blockClass": ["product-highlight-image", "product-highlight-image_col-2"]
