@@ -8,8 +8,10 @@
 /* Estilizacao das 'bolinhas' das variações START */
 /* .sunhouse-enhanced-sku-selector-1-x-skuSelectorItem--sku-selector_default { */
 .skuSelectorItem--sku-selector_default {
-    width: 35px !important;
-    height: 35px !important;
+    /* width: 35px !important;
+    height: 35px !important; */
+    width: 40px !important;
+    height: 40px !important;
     border-radius: 100%
 }
 
@@ -24,38 +26,33 @@
 }
 
 .valueWrapper--sku-selector_default {
-    /* width: 60px;
-    height: 60px; */
-    width: 35px;
-    height: 35px;
-    /* border: 1px solid #000; */
-    /* border-radius: 50px; */
-    /* padding: 3px !important */
+    /* width: 35px;
+    height: 35px; */
+    width: 40px;
+    height: 40px;
     padding: 2px !important
 }
 
 .skuSelectorItemImageValue--sku-selector_default {
-    width: 35px;
-    height: 35px;
+    /* width: 35px;
+    height: 35px; */
+    width: 40px;
+    height: 40px;
     max-width: 100%;
     max-height: 100%;
-    /* border-radius: 50px */
     border-radius: 100%
 }
 /* Estilizacao das 'bolinhas' das variações END */
 
-
-/**/
 .skuSelectorContainer .skuSelectorSubcontainer {
     width: 100%;
     align-items: flex-start;
     margin-bottom: 12px !important
 }
 
-/* .sunhouse-enhanced-sku-selector-1-x-skuSelectorName { */
 .skuSelectorName {
     font-weight: bold;
-    color: #2d2926
+    color: #161413
 }
 
 .skuSelectorNameContainer {
@@ -67,11 +64,8 @@
 }
 
 .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList {
-    /* margin: 20px 0; */
     margin: 8px 0;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    /* gap: 8px 5px */
     gap: 8px 12px
 }
 
@@ -80,17 +74,14 @@
     margin: 0 2.5px;
     width: 44px;
     height: 23px;
-    /* outline: 2px solid #2d2926; */
-    outline: 1px solid #2d2926;
+    /* outline: 1px solid #161413; */
+    outline: 1px solid #f6f6f6;
     background-color: #eee;
     transition: outline-color .3s
-    /* transition: .3s */
 }
 
 .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem:hover {
-    /* outline-color: #ffe133 */
-    outline-color: #F90041;
-    outline-width: 2px;
+    outline-color: #16141386
 }
 
 /*  VER O QUE SAO ABAIXO: */
@@ -102,19 +93,15 @@
     border: none
 }
 
-/* .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem .skuSelectorInternalBox .diagonalCross {
-    display: none
-} */
-
 .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem .skuSelectorInternalBox .valueWrapper {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
     text-align: center;
     text-transform: uppercase;
-    color: #2d2926;
+    color: #161413;
     padding: 0
 }
 
@@ -123,23 +110,17 @@
 }
 
 .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem--selected {
-    /* HOMOLOG: background: green !important */
-    outline-color: #F90041;
+    outline-color: #f90042a4;
     outline-width: 2px
 }
 
-/* .sunhouse-enhanced-sku-selector-1-x-skuSelectorOptionsList .vtex-dropdown__button { */
 .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList :global(.vtex-dropdown__button) {
     color: #bcbbbb /* Cor final validada Refresh */
 }
 
 /* Popper de exibicao das cores/acabamentos */
-/* Mobile */
-@media screen and (max-width: 1024px) {
-
-    /* Oculta popper mouseover no mobile */
-    .imagePopper {
-        display: none
-    }
-
+.imagePopperLabel {
+    font-weight: 600;
+    color: #161413;
+    padding-bottom: 0.5rem
 }

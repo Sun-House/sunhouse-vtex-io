@@ -1,0 +1,50 @@
+@media screen and (max-width: 1024px) {
+
+    .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem {
+        outline-color: transparent
+    }
+
+    .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem:hover {
+        outline-color: transparent
+    }
+
+    .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem--selected {
+        outline-color: #f90042a4 !important
+    }
+
+    /* Popper-modal de exibicao das cores/acabamentos */
+    /* Oculta popper mouseover no mobile */
+    .imagePopper {
+        display: none
+    }
+    
+    /* .sunhouse-enhanced-sku-selector-1-x-imageModalContent { */
+    .imageModalContent {
+        padding: .75rem !important
+    }
+
+    /* .sunhouse-enhanced-sku-selector-1-x-imageModalCloseButton { */
+    .imageModalCloseButton {
+        background: #ff000075;
+        color: #fff;
+        border-radius: 8px;
+        margin: 18px;
+        line-height: unset !important;
+        width: 38px !important;
+        height: 38px !important
+    }
+    
+    /* .sunhouse-enhanced-sku-selector-1-x-imageModalCloseButton:hover { */
+    .imageModalCloseButton:hover {
+        color: #fff !important
+    }
+    
+    /* .sunhouse-enhanced-sku-selector-1-x-imageModalLabel--sku-selector_default { */
+    .imageModalLabel--sku-selector_default {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #161413;
+        padding-bottom: 1rem
+    }
+
+}

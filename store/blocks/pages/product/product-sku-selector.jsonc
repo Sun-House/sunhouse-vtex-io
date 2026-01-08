@@ -3,15 +3,13 @@
 		"title": "Seletor de Variação de SKU",
 		"children": [
 			"enhanced-sku-selector#wrapper"
-			// "container#sku-variation-data" - Deixa de ser necessario apos lancamento da v2 do Enhanced SKU Selector
 		],
 		"props": {
 			"blockClass": "sku-selector_container"
 		}
 	},
 
-	"enhanced-sku-selector#wrapper": { // - nome correto para quando o app estiver standalone
-	// "sku-selector#wrapper": {
+	"enhanced-sku-selector#wrapper": {
 		"props": {
 			"displayMode": "select", // Precisa manter assim para aparecer o dropdown de variações quando nao tiver thumbnailImage
 			"imageHeight": { 
@@ -46,41 +44,6 @@
 	"product-sku-attributes#sku-variation-data": {
 		"props": {
 			"blockClass": "sku-variation-data_wrapper"
-		}
-	},
-
-	// Popover de Thumb View - porem ainda nao entendi como aplicar a logica para aparecer para cada variação
-	"overlay-trigger#thumb-view": {
-    	"children": [
-			"rich-text#thumb-view",
-			"overlay-layout#thumb-view"
-		],
-    	"props": {
-			"trigger": "hover",
-			"blockClass": "sku-selector-popover"
-		}
-	},
-	"rich-text#thumb-view": {
-		"props": {
-			"text": "Visualizar",
-			"blockClass": "sku-selector-popover"
-		}
-	},
-	"overlay-layout#thumb-view": {
-    	"children": [
-			"image#thumb-view"
-		],
-		"props": {
-			// "placement": "top"
-			"blockClass": "sku-selector-popover"
-		}
-	},
-	"image#thumb-view": {
-		"props": {
-			"src": "https://sunhouse.vteximg.com.br/arquivos/ids/248109/AA097C4",
-			"maxHeight": 120,
-			"maxWidth": 120,
-			"blockClass": "sku-selector-popover"
 		}
 	}
 }

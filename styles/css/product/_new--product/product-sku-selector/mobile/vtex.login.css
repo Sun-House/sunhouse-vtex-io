@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+        
+    /* .sunhouse-enhanced-sku-selector-1-x-imageModalContent .flex-column.items-center { */
+    :global(.sunhouse-enhanced-sku-selector-1-x-imageModalContent) :global(.flex-column):global(.items-center) {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+    }
+
+}
