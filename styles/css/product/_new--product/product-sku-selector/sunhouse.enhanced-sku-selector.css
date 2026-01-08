@@ -119,6 +119,10 @@
 }
 
 /* Popper de exibicao das cores/acabamentos */
+.imagePopper--sku-selector_default {
+    z-index: 2 !important
+}
+
 .imagePopperLabel {
     font-weight: 600;
     color: #161413;
