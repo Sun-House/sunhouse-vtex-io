@@ -79,7 +79,8 @@
   },
   "drawer-close-button#minciart-header-close-bottom": {
     "props": {
-      "text": "Voltar para a página inicial",
+      //"text": "Voltar para a página inicial",
+      "text": "Voltar às compras",
       "blockClass": "minicart-close-bottom"
     }
   },
@@ -192,7 +193,8 @@
 
   "rich-text#observation": {
     "props": {
-      "text": "Cupons são inseridos no checkout*",
+      // "text": "Cupons são inseridos no checkout*",
+      "text": "Aplique seu cupom na finalização",
       "textAlignment": "CENTER",
       "blockClass": "minicart-observation"
     }

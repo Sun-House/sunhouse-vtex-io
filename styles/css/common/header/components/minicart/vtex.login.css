@@ -11,3 +11,48 @@
 :global(.vtex-product-list-0-x-productPriceCurrency--minicart-price.strike) {
     text-decoration: unset !important
 }
+
+
+/* Animacao do Icone do carrinho quando vazio - EM TESTES */
+/* Definição da Animação */
+@keyframes jump-tilt {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    30% {
+        /* O pulo (sobe) e a inclinação para esquerda (anti-horário) */
+        transform: translateY(-10px) rotate(-15deg);
+    }
+    50% {
+        /* Começa a descer, mantendo leve inclinação */
+        transform: translateY(-2px) rotate(-15deg);
+    }
+    100% {
+        /* Volta ao chão e retifica */
+        transform: translateY(0) rotate(0deg);
+    }
+}
+  
+/* Aplicação na classe do seu ícone */
+/* .vtex-store-icons-0-x-cartIcon--minicart-empty-state { */
+:global(.vtex-store-icons-0-x-cartIcon--minicart-empty-state) {
+    /* Define o ponto de eixo para o centro inferior (como se as rodas ficassem no chão) */
+    transform-origin: bottom center; 
+
+    /* Configuração para renderização correta do eixo em SVGs */
+    transform-box: fill-box
+
+    /* Aplica a animação: nome, duração, curva de velocidade e repetição */
+    /* animation: jump-tilt 0.6s ease-in-out infinite;*/
+}
+  
+/* Exemplo para animar apenas ao passar o mouse */
+:global(.sunhouse-minicart-2-x-minicartEmptyStateContainer):hover :global(.vtex-store-icons-0-x-cartIcon--minicart-empty-state) {
+    animation: jump-tilt 0.6s ease-in-out
+}
+
+/* Footer Prices Table */
+/* Discounts Line */
+:global(div#discounts-price) {
+    color: green
+}

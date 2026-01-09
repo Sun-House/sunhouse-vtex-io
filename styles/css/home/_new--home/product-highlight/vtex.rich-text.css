@@ -44,3 +44,49 @@
     border-bottom: 1px solid;
     padding-bottom: 24px
 }
+
+/* Botao CTA Produto Destaque */
+/* .vtex-rich-text-0-x-container--product-highlight_open-product { */
+.container--product-highlight_open-product {
+    display: flex;
+    align-items: center
+}
+
+/* .vtex-rich-text-0-x-container--product-highlight_open-product { */
+.container--product-highlight_open-product {
+    background-color: #161413;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all .3s ease-in-out
+}
+
+/* .vtex-rich-text-0-x-paragraph--product-highlight_open-product { */
+.paragraph--product-highlight_open-product {
+    display: flex;
+    align-items: center;
+    color: #e1dede;
+    transition: all .3s ease-in-out
+}
+
+/* .vtex-rich-text-0-x-paragraph--product-highlight_open-product::after { */
+.paragraph--product-highlight_open-product::after {
+    content: "\F141";
+    font-family: "Bootstrap-Icons";
+    font-size: 18px;
+    margin-left: 8px
+}
+
+/* .vtex-rich-text-0-x-container--product-highlight_open-product:hover { */
+.container--product-highlight_open-product:hover {
+    background-color: #FFDA00
+}
+
+/* .vtex-rich-text-0-x-container--product-highlight_open-product:hover .vtex-rich-text-0-x-paragraph--product-highlight_open-product { */
+.container--product-highlight_open-product:hover .paragraph--product-highlight_open-product {
+    color: #161413
+}

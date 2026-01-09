@@ -2,30 +2,29 @@
   "store.home": {
     "blocks": [
       // Main Banner
-      // Concluido! (desktop-mobile)
       "info-card#banner-main",
+
+      // WIP: Nova disposicao de banners com opcao de usar UM unico InfoCard, ou o banner de imagem comum com sistema de slides (imageList)
+      // "container#banner-main_info-card",
+      // "container#banner-main_image",
+      //
       
       // Category Grid
-      // Concluido! (desktop-mobile)
       "flex-layout.row#categories-slider",
       "container#spacing-default",
 
       // Shelfs
-      // Concluido! (desktop-mobile)
       "container#shelf-home02", // Mudar nome posteriormente
       "container#shelf-featured",
       "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
 
       // Product Highlight Grid
-      // Concluido! (desktop-mobile)
       "container#product-highlight-grid",
 
       // Fullwidth Static Banner
-      // Concluido! (desktop-mobile)
       "container#fullwidth-static-banner",
 
       // Shelf Grid
-      // Concluido! (desktop-mobile)
       "container#shelf-home03", // Mudar nome posteriormente
       "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
 
@@ -39,20 +38,16 @@
       // A SER IMPLEMENTADO - pos lancamento do MVP do Refresh
 
       // Blog Grid
-      // Concluido! (desktop)
       "container#blog-grid",
 
-      // Trustvox Colt Reviews - Concluido!
+      // Trustvox Colt Reviews
       // Não ficará visivel no Refresh, mas sera mantido para backup
       "container#trustvox-colt-highlight",
-      // "container#spacing-default",
 
       // Showcase Slider
-      // Concluido! (desktop-mobile)
       "container#showcase-slider",
 
       // About Text with FAQ
-      // Concluido! (desktop)
       "container#pre-footer-about"
     ]
   }

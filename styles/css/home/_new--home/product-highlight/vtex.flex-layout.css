@@ -67,32 +67,32 @@
 }
 
 /* .vtex-flex-layout-0-x-flexColChild--product-highlight-shelf .vtex-flex-layout-0-x-flexCol--shelf-buy-button::before { */
-.flexColChild--product-highlight-shelf .flexCol--shelf-buy-button::before {
+/* .flexColChild--product-highlight-shelf .flexCol--shelf-buy-button::before { */
     /* Conteúdo e Estilo do Botão */
-    content: "SAIBA MAIS \F141";
+    /* content: "SAIBA MAIS \F141";
     cursor: pointer;
     display: flex;
     flex-wrap: nowrap;
-    white-space: nowrap;
+    white-space: nowrap; */
     
     /* Dimensões e Cores */
-    background-color: #161413;
+    /* background-color: #161413;
     color: #e1dede;
     padding: 16.811px 35px;
     margin-right: 12px;
-    border-radius: 50px;
+    border-radius: 50px; */
     
     /* Tipografia do Botão */
-    font-family: 'Bootstrap-Icons', 'Bai Jamjuree', serif;
+    /* font-family: 'Bootstrap-Icons', 'Bai Jamjuree', serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 16px; */
     
     /* Transição para interatividade */
-    transition: all 0.2s ease-in-out
-}
+    /* transition: all 0.2s ease-in-out */
+/* } */
 
 /* .vtex-flex-layout-0-x-flexColChild--product-highlight-shelf .vtex-flex-layout-0-x-flexCol--shelf-buy-button:hover::before { */
-.flexColChild--product-highlight-shelf .flexCol--shelf-buy-button:hover::before {
+/* .flexColChild--product-highlight-shelf .flexCol--shelf-buy-button:hover::before {
     background-color: #FFDA00;
     color: #161413
-}
+} */

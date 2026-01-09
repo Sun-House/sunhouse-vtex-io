@@ -190,6 +190,7 @@
     font-weight: 700
 }
 
+/* Movido para o arquivo common/header/components/minicart/vtex.rich-text.css
 .container--minicart-observation {
     margin-bottom: 18px
 }
@@ -202,7 +203,7 @@
     text-align: center;
     font-size: 12px;
     color: #d83613
-}
+} */
 
 .container--mobile-login {
     color: #161413

@@ -1,0 +1,17 @@
+@media screen and (max-width: 1024px) {
+
+    .flexRowContent--cta-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 12px
+    }
+
+    .container--product-highlight_open-product:hover {
+        background-color: #161413
+    }
+
+    .container--product-highlight_open-product:hover .paragraph--product-highlight_open-product {
+        color: #e1dede
+    }
+
+}

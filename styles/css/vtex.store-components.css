@@ -538,9 +538,12 @@
     transition: all .4s
 }
 
+/* Desktop Force */
 @media screen and (min-width: 1281px) {
     .imageElement--banner-main {
-        max-height: 612px !important
+        /* max-height: 612px !important */
+        max-height: unset !important;
+        height: 100vh
     }
 }
 
@@ -565,6 +568,7 @@
     }
 }
 
+/* Mobile */
 @media screen and (max-width: 1024px) {
     /* Movido para common/footer/vtex.store-components.css
     .imageElementLink--logo-footer {
@@ -655,6 +659,7 @@
     }
 }
 
+/* Mobile */
 @media screen and (max-width: 768px) {
     .logoImage--pci-image {
         width: 36%;
@@ -666,6 +671,7 @@
     }
 }
 
+/* Mobile */
 @media screen and (max-width: 638px) {
     .imageElement--banner-grid-mobile {
         border-radius: 0px 7px 7px 0px

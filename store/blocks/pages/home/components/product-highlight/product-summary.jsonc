@@ -3,10 +3,10 @@
         "title": "Vitrine de Produto Destaque",
         "children": [
             "product-installments#new-shelf-installments", // Preço aqui
-            "flex-layout.col#shelf-buy-button"
+            // "flex-layout.col#shelf-buy-button"
             
             // Novo esquema de botoes abaixo 
-            // "flex-layout.row#product-highlight_cta-buttons"
+            "flex-layout.row#product-highlight_cta-buttons"
         ],
         "props": {
             "blockClass": "main-shelf-new" // Pode ser necessario ajustar
@@ -15,23 +15,19 @@
 
     "flex-layout.row#product-highlight_cta-buttons": {
         "children": [
-            "product-summary-name#product-highlight_open-product", // Botao para abrir o produto linkado
+            "rich-text#product-highlight_open-product", // Botao para abrir o produto linkado
             "flex-layout.col#shelf-buy-button" // Botao de adicionar ao carrinho
         ],
         "props": {
+            "colSizing": "auto",
+            "colGap": 3,
             "blockClass": "cta-buttons"
         }
     },
 
-    "product-summary-name#product-highlight_open-product": {
-        "title": "Botão Abrir PDP",
+    "rich-text#product-highlight_open-product": {
         "props": {
-            "showFieldsProps": {
-                "showProductReference": false,
-                "showBrandName": false,
-                "showSku": false
-            },
-            "tag": "div",
+            "text": "Conhecer Produto",
             "blockClass": "product-highlight_open-product"
         }
     }

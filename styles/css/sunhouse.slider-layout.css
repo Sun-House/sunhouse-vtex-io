@@ -190,15 +190,15 @@
     z-index: 2
 }
 
-/* Slider Arrows de componentes descontinuados */
-/* START */
+/* A principio preferi ocultar os arrows do banner principal, mas caso precise, deixarei aqui para voltar a usar */
 .sliderArrows--banner-main {
-    max-width: 1220px;
+    display: none;
+    /* max-width: 1220px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, .5) !important
+    background-color: rgba(255, 255, 255, .5) !important */
 }
 
-.sliderArrows--banner-main.sliderRightArrow {
+/* .sliderArrows--banner-main.sliderRightArrow {
     right: 40px;
     left: 1220px
 }
@@ -206,8 +206,10 @@
 .sliderArrows--banner-main.sliderLeftArrow {
     left: 40px;
     right: 1220px
-}
+} */
 
+/* Slider Arrows de componentes descontinuados */
+/* START */
 .sliderArrows--diferentials-mobile::after {
     width: 35px;
     height: 35px;

@@ -1,0 +1,35 @@
+.container--minicart-observation {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 18px;
+    border: 1px solid transparent;
+    border-radius: .25rem
+}
+
+.container--minicart-observation .wrapper {
+    width: 100%
+}
+
+.container--minicart-observation .wrapper .paragraph {
+    /* font-size: 12px;
+    color: #d83613 */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: #856404;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.container--minicart-observation .wrapper .paragraph::before {
+    content: "\F6CB";
+    font-family: "Bootstrap-Icons";
+    font-size: 18px;
+    margin-right: 12px;
+    color: #856404
+}

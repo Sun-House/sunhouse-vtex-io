@@ -1,0 +1,41 @@
+{
+    "container#banner-main_image": {
+        "title": "Banner Principal - Imagens",
+        "children": [
+            "list-context.image-list#banner-main-new"
+        ],
+        "props": {
+            "blockClass": ["banner-main-home_wrapper", "banner-main-home_wrapper-image"]
+        }
+    },
+
+    "list-context.image-list#banner-main-new": {
+        "title": "Banner Principal",
+        "props": {
+            "images": [
+                {
+                    "image": "assets/images/main-banner.png",
+                    "mobileImage": "assets/images/main-banner-mobile.png",
+                    "description": "Banner Principal",
+                    "link": {
+                        "url": "/"
+                        },
+                    "title": "Banner Principal"
+                },
+                {
+                    "image": "assets/images/main-banner.png",
+                    "mobileImage": "assets/images/main-banner-mobile.png",
+                    "description": "Banner Principal",
+                    "link": {
+                        "url": "/"
+                        },
+                    "title": "Banner Principal"
+                }
+            ]
+        },
+        "children": [
+            // "slider-layout#banner-main"
+            "slider-layout#banner-main-slider"
+        ]
+    }
+}

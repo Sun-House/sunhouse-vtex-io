@@ -1,3 +1,6 @@
+/* NAO mover esse arquivo!
+   Será mais pratico estilizar por aqui mesmo */
+
 .summarySmallDisclaimer {
     display: none
 }
@@ -13,7 +16,9 @@
 }
 
 .summaryItemContainer:nth-child(odd) {
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ccc
 }
 
 /*.summaryItemContainer:last-child {
@@ -23,9 +28,13 @@
 .summaryItemContainer .summaryItemLabel {
     /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+    /* font-weight: bold; */
+    font-weight: 500;
+    /* font-size: 14px; */
+    font-size: 16px;
+    /* line-height: 17px; */
+    color: #16141363;
+    line-height: 30px;
     display: flex;
     align-items: center
 }
@@ -37,16 +46,18 @@
 }*/
 
 .summaryItemContainer .summaryItemPrice {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-weight: 600;
     font-size: 16px;
-    line-height: 20px;
+    /* line-height: 20px; */
+    line-height: 30px;
     display: flex;
     align-items: center;
     /*text-transform: uppercase;*/
     text-transform: capitalize;
-    color: #2d2926;
+    /* color: #2d2926; */
+    color: #161413;
     flex: initial
 }
 

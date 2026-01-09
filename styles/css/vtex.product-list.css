@@ -4,11 +4,12 @@
     overflow: hidden
 }
 
+/* Movido para o arquivo common/header/components/minicart/vtex.product-list.css
 .productImage {
     width: auto;
     height: 100%;
     border-radius: 0
-}
+} */
 
 .productName {
     /* font-family: "Open Sans", sans-serif; */
@@ -30,6 +31,7 @@
     margin-right: 20px
 }
 
+/* Movido para o arquivo common/header/components/minicart/vtex.product-list.css
 .quantitySelectorWrapper {
     border: 1px solid #161413;
     box-sizing: border-box;
@@ -48,7 +50,7 @@
 
 .quantitySelectorButton:hover {
     background-color: rgba(0, 0, 0, 0)
-}
+} */
 
 .inputContainer {
     padding: 0;
@@ -76,10 +78,10 @@
     align-items: center
 }
 
-.price--minicart-price::before {
+/* .price--minicart-price::before {
     margin-right: 4px;
     content: "Por:"
-}
+} */
 
 .productPriceCurrency--minicart-price .currencyContainer {
     /* font-family: "Open Sans", sans-serif; */
@@ -90,10 +92,11 @@
     text-decoration: line-through
 }
 
-.productPriceCurrency--minicart-price .currencyContainer::before {
+/* .productPriceCurrency--minicart-price .currencyContainer::before {
     content: "De: "
-}
+} */
 
+/* Movido para o arquivo common/header/components/minicart/vtex.product-list.css
 .removeButton {
     padding: 0;
     margin-bottom: 5px
@@ -103,7 +106,7 @@
     width: 24px;
     height: 27px;
     color: #161413
-}
+} */
 
 .productListUnavailableItemsMessage {
     background-color: #fff2b6;

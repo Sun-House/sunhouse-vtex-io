@@ -1,15 +1,25 @@
-/* .vtex-flex-layout-0-x-flexRowContent--minicart-footer-buttons { */
 .flexRowContent--minicart-footer-buttons {
     flex-direction: column
 }
 
-/* .vtex-flex-layout-0-x-flexRowContent--minicart-footer-buttons .vtex-flex-layout-0-x-stretchChildrenWidth { */
 .flexRowContent--minicart-footer-buttons .stretchChildrenWidth {
     width: 100% !important
 }
 
-/* .vtex-flex-layout-0-x-flexRow--minicart-product:last-child { */
 .flexRow--minicart-product:last-child {
-    /* padding-bottom: 102px - Fix para poder ver ultimo item do carrinho no caso de ter muitos no mesmo */
     margin-bottom: 102px /* Fix para poder ver ultimo item do carrinho no caso de ter muitos no mesmo */
+}
+
+/* Minicart Product List - Image */
+/* .vtex-flex-layout-0-x-flexCol--minicart-image { */
+.flexCol--minicart-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+/* Minicart - Remove Product Button */
+/* .vtex-flex-layout-0-x-flexColChild--minicart-remove:nth-child(even) { */
+.flexColChild--minicart-remove:nth-child(even) {
+    display: none
 }
