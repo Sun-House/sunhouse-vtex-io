@@ -1,5 +1,5 @@
 // Highlight Bar Checkout component
-const CUPOM_CODE = 'NATAL15';
+const CUPOM_CODE = 'SUN300';
 
 // 1. Defina o bloco HTML atualizado com o botão "Usar cupom"
 const htmlBlock = `
@@ -9,10 +9,9 @@ const htmlBlock = `
             <div id="coupon-info-text-container">
                 <div>
                     <p>
-                        Seu carrinho merece 
-                        <span class="coupon-highlight_bold-text" id="">15% OFF</span> — Aplique
+                        <span class="coupon-highlight_bold-text">R$ 300 OFF</span> acima de R$ 2.000 com o cupom 
                         <span class="coupon-highlight_bold-text" id="coupon-code-display">${CUPOM_CODE}</span> 
-                        abaixo e economize hoje! <button id="apply-coupon-button">Usar cupom 🎁</button>
+                        — Por tempo limitado <button id="apply-coupon-button">Usar cupom <i class="bi bi-gift-fill"></i></button>
                     </p>
                 </div>
             </div>
@@ -47,7 +46,8 @@ function injetarCupomHTML(selector, position = 'beforebegin') {
  */
 function aplicarCupomHandler(event) {
     const button = event.target;
-    const originalText = 'Usar cupom 🎁'; // Texto original do botão
+    // const originalText = 'Usar cupom 🎁'; // Texto original do botão
+    const originalText = 'Usar cupom <i class="bi bi-gift-fill"></i>'; // Texto original do botão
     const revertDelay = 7000; // 7 segundos em milissegundos
     
     button.disabled = true;
@@ -59,7 +59,8 @@ function aplicarCupomHandler(event) {
         // Se houver erro de inicialização, habilita e reverte rapidamente
         setTimeout(() => {
             button.disabled = false;
-            button.textContent = originalText;
+            // button.textContent = originalText;
+            button.innerHTML = originalText;
             button.style.backgroundColor = ''; 
             button.style.color = '';
         }, 1000); 
@@ -73,7 +74,8 @@ function aplicarCupomHandler(event) {
                 && orderForm.marketingData.coupon.toUpperCase() === CUPOM_CODE;
 
             if (couponApplied) {
-                button.textContent = 'Cupom aplicado ✅';
+                // button.textContent = 'Cupom aplicado ✅';
+                button.innerHTML = 'Cupom aplicado <i class="bi bi-check-circle-fill"></i>';
                 button.style.backgroundColor = 'green';
                 button.style.color = 'white';
             } else {
@@ -89,7 +91,8 @@ function aplicarCupomHandler(event) {
             setTimeout(() => {
                 // Reverte para o estado original e o habilita, permitindo nova tentativa.
                 button.disabled = false;
-                button.textContent = originalText;
+                // button.textContent = originalText;
+                button.innerHTML = originalText;
                 button.style.backgroundColor = ''; // Remove a cor de fundo (verde/vermelho)
                 button.style.color = '';          // Remove a cor do texto
             }, revertDelay);
@@ -187,6 +190,11 @@ document.addEventListener('DOMContentLoaded', function() {
         #wa-widget-container:hover {
             filter: brightness(1.1);
             transform: translateY(-50%) scale(1.05);
+        }
+
+        /* Estilo dos icones Bootstrap */
+        #coupon-highlight-container i.bi {
+            margin-left: 4px
         }
 
         /* --- ESTILO MOBILE (Telas menores que 768px) --- */

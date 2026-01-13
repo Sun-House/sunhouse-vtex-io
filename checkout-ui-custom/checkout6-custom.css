@@ -1960,19 +1960,18 @@ fieldset.box-payment-group2.box-payment-option.custom205PaymentGroupPaymentGroup
     border-radius: 50px;
     padding: 8px 24px;
     margin-left: 12px;
-    background-color: #FFDA00;
-    /* color: #FFDA00; */
-    color: #F90041;
+    /* background-color: #FFDA00; */
+    background-color: #69BD44;
+    /* color: #F90041; */
+    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     transition: .3s
 }
 
 #apply-coupon-button:hover {
-    /* background-color: #FFDA00;
-    color: #F90041 */
-    background-color: #ffe33c;
-    /* opacity: 0.8 */
+    /* background-color: #ffe33c */
+    background-color: #75c950
 }
 
 /* Mobile */

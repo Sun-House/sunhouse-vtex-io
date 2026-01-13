@@ -21,5 +21,12 @@
     .paragraph--main-banner-home {
         width: 85%
     }
+
+    /* Fix para nao quebrar o layout do texto H1 no Mobile view.
+       Pode ser evoluido posteriormente para aparecer de forma correta */
+    .container--main-banner-home:first-child .heading--main-banner-home::after,
+    .container--main-banner-home:first-child .heading--main-banner-home::before {
+        display: none
+    }
     
 }
