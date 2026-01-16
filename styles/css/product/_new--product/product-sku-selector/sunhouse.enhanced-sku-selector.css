@@ -5,11 +5,8 @@
     align-items: flex-start
 }
 
-/* Estilizacao das 'bolinhas' das variações START */
-/* .sunhouse-enhanced-sku-selector-1-x-skuSelectorItem--sku-selector_default { */
+/* Estilizacao das 'bolinhas' das variações */
 .skuSelectorItem--sku-selector_default {
-    /* width: 35px !important;
-    height: 35px !important; */
     width: 40px !important;
     height: 40px !important;
     border-radius: 100%
@@ -20,29 +17,23 @@
     border-radius: 50px
 }
 
-/* .sunhouse-enhanced-sku-selector-1-x-skuSelectorInternalBox--sku-selector_default { */
 .skuSelectorInternalBox--sku-selector_default {
     border-radius: 100%
 }
 
 .valueWrapper--sku-selector_default {
-    /* width: 35px;
-    height: 35px; */
     width: 40px;
     height: 40px;
     padding: 2px !important
 }
 
 .skuSelectorItemImageValue--sku-selector_default {
-    /* width: 35px;
-    height: 35px; */
     width: 40px;
     height: 40px;
     max-width: 100%;
     max-height: 100%;
     border-radius: 100%
 }
-/* Estilizacao das 'bolinhas' das variações END */
 
 .skuSelectorContainer .skuSelectorSubcontainer {
     width: 100%;
@@ -74,7 +65,6 @@
     margin: 0 2.5px;
     width: 44px;
     height: 23px;
-    /* outline: 1px solid #161413; */
     outline: 1px solid #f6f6f6;
     background-color: #eee;
     transition: outline-color .3s
@@ -94,7 +84,6 @@
 }
 
 .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList .skuSelectorItem .skuSelectorInternalBox .valueWrapper {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -115,12 +104,24 @@
 }
 
 .skuSelectorContainer .skuSelectorSubcontainer .skuSelectorOptionsList :global(.vtex-dropdown__button) {
-    color: #bcbbbb /* Cor final validada Refresh */
+    color: #bcbbbb
 }
 
 /* Popper de exibicao das cores/acabamentos */
 .imagePopper--sku-selector_default {
     z-index: 2 !important
+}
+
+.imagePopper--sku-selector_default::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffffffcf transparent transparent transparent;
+    z-index: 10
 }
 
 .imagePopperLabel {

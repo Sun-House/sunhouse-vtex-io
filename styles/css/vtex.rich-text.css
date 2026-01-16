@@ -1144,9 +1144,12 @@
 }
 
 .paragraph--search-seo {
+    font-family: 'Onest', sans-serif;
     font-style: normal;
-    font-size: 14px;
-    line-height: 19px;
+    /* font-size: 14px; */
+    font-size: 16px;
+    /* line-height: 19px; */
+    line-height: 24px;
     color: #161413;
     opacity: .8
 }
@@ -1241,11 +1244,15 @@
 }
 
 .heading--search-seo {
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 28px;
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
+    font-weight: 600;
     line-height: normal;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+    margin-top: 42px;
+    margin-bottom: 28px;
     color: #161413
 }
 
