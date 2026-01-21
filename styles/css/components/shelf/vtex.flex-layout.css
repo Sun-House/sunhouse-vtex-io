@@ -1,0 +1,19 @@
+.flexCol--hover-block-wrapper:hover :global(.vtex-rich-text-0-x-paragraph--shelf-product-exclusive-button) {
+    visibility: hidden;
+    opacity: 0;
+    position: relative
+}
+
+/* .vtex-flex-layout-0-x-flexCol--hover-block-wrapper:hover .vtex-rich-text-0-x-paragraph--shelf-product-exclusive-button { */
+/* .flexCol--hover-block-wrapper:hover :global(.vtex-rich-text-0-x-paragraph--shelf-product-exclusive-cta) {
+    visibility: hidden;
+    opacity: 0;
+    position: relative
+} */
+
+/* .vtex-flex-layout-0-x-flexCol--hover-block-wrapper:hover .vtex-rich-text-0-x-paragraph--shelf-product-exclusive-button::after { */
+.flexCol--hover-block-wrapper:hover :global(.vtex-rich-text-0-x-paragraph--shelf-product-exclusive-cta) {
+    /* content: "Venda Exclusiva em Loja"; */
+    visibility: visible;
+    opacity: 1
+}

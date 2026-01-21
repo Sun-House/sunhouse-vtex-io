@@ -21,10 +21,10 @@
     }
 
     /* DEBUG */
-    :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper) {
-        /* DEBUG */
-        background: #6633998a;
-        /* DEBUG */
-    }
+    /* :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper) {
+        / DEBUG /
+        background: #6633998a
+        / DEBUG /
+    } */
     
 }
