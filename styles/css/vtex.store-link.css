@@ -134,8 +134,8 @@
     margin-right: 0;
 }
 
-/* .vtex-store-link-0-x-label--link-showroom { */
-.label--link-showroom {
+.label--link-showroom,
+.label--link-corporate {
     display: flex
 }
 
@@ -333,8 +333,7 @@
 }
 /**/
 
-/* Icone do Botao Showroom Virtual START */
-/* .vtex-store-link-0-x-label--link-showroom::before { */
+/* Icone do Botao Showroom Virtual */
 .label--link-showroom::before {
     display: inline-flex;
     content: "\F1C8";
@@ -346,7 +345,21 @@
     margin-right: 12px;
     color: #FFDA00
 }
-/* END*/
+
+/* Icone do Botao Vendas Corporativas */
+.label--link-corporate::before {
+    display: inline-flex;
+    /* content: "\F87D"; */
+    /* content: "\F1DD"; */
+    content: "\F1CC";
+    font-family: "Bootstrap-Icons";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 12px;
+    color: #FFDA00
+}
 
 .childrenContainer--our-stores {
     margin-right: 12.61px;

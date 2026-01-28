@@ -15,7 +15,8 @@
     },
     "children": [
       // "link#mobile-account",
-      "link#stores-landing",
+      // "link#stores-landing",
+      "link#corporate-mobile",
       "minicart.v2",
       "link#mobile-wishlist"
     ]
@@ -72,14 +73,21 @@
   },
   
   // Novo - apenas mobile
-  "link#stores-landing": {
+  "link#stores-landing-mobile": {
     "props": {
       "href": "/landing/nossas-lojas",
       "label": "Nossas Lojas — Showroom",
       "blockClass": "menu-mobile-stores-landing"
     }
   },
-  //
+
+  "link#corporate-mobile": {
+    "props": {
+      "href": "/institucional/vendas-corporativas",
+      "label": "Vendas Corporativas",
+      "blockClass": ["menu-mobile-stores-landing", "menu-mobile-corporate"]
+    }
+  },
 
   "link#mobile-wishlist": {
     "props": {

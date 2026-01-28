@@ -22,16 +22,9 @@
     "title": "Vitrine de Produtos",
 		"children": [
 			"stack-layout#new-shelf-product-image",
-      
-      // Versão MVP - Precisara ser melhorada posteriormente
-      // "shelf-enhanced-sku-selector#default-shelf",
+      // Versão MVP - Precisara ser melhorada posteriormente:
       "flex-layout.row#shelf-enhanced-sku-selector",
-      //
-
       "flex-layout.col#hover-block-wrapper"
-
-			// "product-summary-name#new-shelf",
-      // "condition-layout.product#shelf-elf-checker"
 		],
 		"props": {
 			"blockClass": "main-shelf-new"
@@ -40,7 +33,6 @@
 
   "flex-layout.col#hover-block-wrapper": {
     "children": [
-      // "flex-layout.col#hover-block-wrapper"
       "product-summary-name#new-shelf",
       "condition-layout.product#shelf-elf-checker"
     ],
@@ -325,15 +317,7 @@
   "flex-layout.col#shelf-product-available": {
     "title": "Produto vitrine disponível",
     "children": [
-      // Desativado - layout antigo
-      // "container#shelf-product-listPrice",
-      // "product-installments#shelf-installments",
-      // "hover-container#actions"
-      //
-      
       // "flex-layout.col#shelf-product-with-variation" -> Validar o que isso faz
-
-      // "container#bf-price-block", // Sistema antigo da Black Friday
       "container#shelf-price_parcelado",
       // "container#shelf-price_pix", - Ficara inativo no codigo pois quebra layout no Refresh - vtex gera varios blocos de flex-layout que quebram o sentido do container
       "hover-container#actions"
@@ -397,7 +381,8 @@
       "hideWithoutDiscount": true,
       "message": "{priceValue} à vista no PIX",
       "blockClass": "shelf-default",
-      "promotionName": "Desconto Pagamento à Vista (7%)"
+      // "promotionName": "Desconto Pagamento à Vista (7%)"
+      "promotionName": "Desconto Pagamento a Vista (10%)"
     }
   },
 

@@ -1,5 +1,11 @@
 {
 	"store.custom#institutional-default": {
 		"children": ["container#institutional"]
+
+		// TESTE
+		// ,
+		// "parent": {
+		// 	"header": "container#corporate-header"
+		// }
 	}
 }

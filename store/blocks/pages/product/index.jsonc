@@ -368,12 +368,9 @@
   "flex-layout.col#product-available": {
     "children": [
       "flex-layout.row#product-page-price",
-      "container#sku-variation-selector", // Seletor de Variacao de SKUs
-      // "container#share-block", - Bloco nativo de compartilhamento - Nao sera mais usado
-      // "condition-layout.product#product-measurement-guide",
+      "container#sku-variation-selector",
       "flex-layout.row#product-buy-container",
       "flex-layout.row#whatsapp-button_normal-product",
-      // "container#similars", - Inativado conforme novo layout Refresh
       "flex-layout.row#collection-highlights--product-page",
       "flex-layout.row#shipping-simulator-wrapper"
     ],
@@ -513,7 +510,7 @@
 
   "flex-layout.col#product-unavailable": {
     "children": [
-      // "sunhouse.store-components:availability-subscriber"
+      "container#sku-variation-selector",
       "container#product-unavailable"
     ],
     "props": {

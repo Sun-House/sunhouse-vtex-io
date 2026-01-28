@@ -16,7 +16,8 @@
     "title": "Controles esquerda",
     "children": [
       "link#stores",
-      "link#showroom",
+      // "link#showroom",
+      "link#corporate", // Llink para vendas corporativas
       "link#wishlist--left"
       // "conditional-login#desktop"
     ],
@@ -57,6 +58,18 @@
       "label": "Showroom Virtual",
       "href": "/landing/nossas-lojas#showroom-virtual",
       "blockClass": ["header-links", "link-showroom"]
+    }
+  },
+
+  // Link Corporate
+  "link#corporate": {
+    "title": "Corporate",
+    "props": {
+      "label": "Vendas Corporativas",
+      "href": "/institucional/vendas-corporativas", // Precisa ser ajustado para a nova rota abaixo comentada
+      // "href": "/landing/corporate",
+      // "blockClass": ["header-links", "link-showroom", "link-corporate"]
+      "blockClass": ["header-links", "link-corporate"]
     }
   },
 

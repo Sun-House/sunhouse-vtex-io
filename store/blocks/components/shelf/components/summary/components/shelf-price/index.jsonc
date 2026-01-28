@@ -42,8 +42,8 @@
         "props": {
             "hideWithoutDiscount": false,
             "message": "{priceValue} PIX",
-            "promotionName": "Desconto Pagamento à Vista (7%)",
-            // "blockClass": ["lp_pix-price-shelf", "bf-shelf"]
+            // "promotionName": "Desconto Pagamento à Vista (7%)",
+            "promotionName": "Desconto Pagamento a Vista (10%)",
             "blockClass": ["new-pix-price-shelf", "new-shelf"]
         }
     },

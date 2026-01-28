@@ -22,4 +22,20 @@
       "link#whatsapp-float"
     ]
   }
+
+
+  // TESTE ---***************
+  ,
+
+  "container#corporate-header": {
+    "children": [
+      "rich-text#corporate-header-text"
+    ]
+  },
+  "rich-text#corporate-header-text": {
+    "props": {
+      "text": "Vendas Corporativas"
+    }
+  }
+
 }

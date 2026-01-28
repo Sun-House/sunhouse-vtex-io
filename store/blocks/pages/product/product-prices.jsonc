@@ -32,7 +32,8 @@
 			"hideWithoutDiscount": true,
 			"message": "{priceValue}",
 			"blockClass": "shelf-default",
-			"promotionName": "Desconto Pagamento à Vista (7%)"
+			// "promotionName": "Desconto Pagamento à Vista (7%)"
+			"promotionName": "Desconto Pagamento a Vista (10%)"
 		}
 	},
 
@@ -133,7 +134,8 @@
 		"props": {
 			"hideWithoutDiscount": true,
 			"message": "Ou {priceValue} à vista no PIX",
-			"promotionName": "Desconto Pagamento à Vista (7%)",
+			// "promotionName": "Desconto Pagamento à Vista (7%)",
+			"promotionName": "Desconto Pagamento a Vista (10%)",
 			"blockClass": "product-high-price--pix"
 		}
 	}

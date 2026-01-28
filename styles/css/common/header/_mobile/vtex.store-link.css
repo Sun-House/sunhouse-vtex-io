@@ -21,7 +21,8 @@
 
     /* .vtex-store-link-0-x-label--menu-mobile-stores-landing::before { */
     .label--menu-mobile-stores-landing::before {
-        content: "\F3E8";
+        /* content: "\F3E8"; */
+        content: "\F1CC";
         font-family: "Bootstrap-Icons";
         font-size: 27px;
         font-weight: 400;

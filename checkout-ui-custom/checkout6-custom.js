@@ -233,6 +233,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 transform: scale(1.1);
             }
         }
+
+        /* --- ESTILO ESPECIAL PARA TELAS DESKTOP - Para nao quebrar layout (Telas menores que 1690px) --- */
+        @media screen and (max-width: 1690px) {
+            #wa-widget-container {
+                left: -120px
+            }
+
+            #wa-widget-container:hover {
+                left: 0
+            }
+
+            .wa-text-bubble {
+                color: #ffffff38
+            }
+
+            #wa-widget-container:hover .wa-text-bubble {
+                color: white
+            }
+        }
     `;
 
     // 2. Criar a estrutura HTML
