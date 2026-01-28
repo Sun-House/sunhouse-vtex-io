@@ -1,11 +1,61 @@
 {
 	"store.custom#institutional-default": {
-		"children": ["container#institutional"]
+		"children": ["container#institutional"],
+		"parent": {
+			"footer": "footer#institutional-corporate"
+		}
+	},
 
-		// TESTE
-		// ,
-		// "parent": {
-		// 	"header": "container#corporate-header"
-		// }
+
+	// EM TESTES:
+	// Mover todo esse bloco para novo arquivo jsonc
+	"footer#institutional-corporate": {
+		"blocks": ["footer-layout.desktop#dois", "footer-layout.mobile#dois"]
+	},
+
+	"footer-layout.desktop#dois": {
+		"title": "Footer Desktop",
+		"children": [
+			"link#whatsapp-float-corporate",
+			"flex-layout.row#footer-logo",
+			"flex-layout.row#footer-content",
+			"flex-layout.row#footer-social",
+			"flex-layout.row#footer-bottom"
+		],
+		"props": {
+			"blockClass": ["global-footer", "footer-wrapper-desktop"]
+		}
+	},
+	"footer-layout.mobile#dois": {
+		"title": "Footer Mobile",
+		"children": [
+			"link#whatsapp-float-corporate",
+			"flex-layout.row#footer-content-mobile",
+			"flex-layout.row#footer-social",
+			"flex-layout.row#footer-security-title",
+			"flex-layout.row#footer-security-content",
+			"flex-layout.row#footer-bottom"
+		],
+		"props": {
+			"blockClass": ["global-footer", "footer-wrapper-mobile"]
+		}
+	},
+
+	"link#whatsapp-float-corporate": {
+		"title": "WhatsApp Flutuante - Corporativo",
+		"children": [
+			"icon#whatsapp",
+			"rich-text#whatsapp-text-corporate"
+		],
+		"props": {
+			"href": "https://api.whatsapp.com/send?phone=5511988699713",
+			"target": "_blank",
+			"blockClass": "whatsapp-corporate"
+		}
+	},
+	"rich-text#whatsapp-text-corporate": {
+		"props": {
+			"text": "Fale com o Corporativo"
+		}
 	}
 }

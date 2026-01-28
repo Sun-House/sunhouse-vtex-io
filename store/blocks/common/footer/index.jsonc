@@ -2,11 +2,9 @@
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
+  
   "footer#without-seo-info": {
-    "blocks": [
-      "footer-layout.desktop#without-seo-info",
-      "footer-layout.mobile#without-seo-info"
-    ]
+    "blocks": ["footer-layout.desktop#without-seo-info", "footer-layout.mobile#without-seo-info"]
   },
   
   "footer-layout.desktop": {
