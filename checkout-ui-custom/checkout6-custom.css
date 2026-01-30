@@ -3115,3 +3115,52 @@ button#payment-data-submit i {
 /* PAGINA FINALIZACAO DA COMPRA */
 
 /* REFRESH */
+
+
+/* Checkout product name - in Debug and tests */
+/* START */
+
+/* Animação do skuName Skeleton Loading */
+@keyframes sh-shimmer {
+    0% { background-position: -468px 0; }
+    100% { background-position: 468px 0; }
+}
+
+/* Classe do Skeleton */
+.sh-skeleton-loading {
+    /* Esconde o texto original enquanto carrega */
+    color: transparent !important; 
+    
+    /* Fundo cinza com gradiente animado */
+    background: #f6f7f8;
+    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-size: 800px 100%;
+    
+    /* Executa a animação */
+    animation: sh-shimmer 1.5s linear infinite forwards;
+    
+    /* Impede cliques enquanto carrega */
+    pointer-events: none;
+    cursor: wait;
+    
+    /* Mantém a altura para não colapsar o layout */
+    min-height: 40px; 
+    border-radius: 8px;
+    display: block /* Garante que o fundo ocupe a largura */
+}
+
+/* Ajustes na exibição do name/skuName do produto */
+.sh-product-name {
+    display: none !important
+}
+
+.brand-name {
+    font-weight: 400 !important;
+    font-size: 12px;
+    color: #777;
+    text-transform: uppercase
+}
+
+/* Checkout product name - in Debug and tests */
+/* END */

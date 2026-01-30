@@ -1,3 +1,5 @@
+// Fn - Highlight Bar Checkout
+
 // Highlight Bar Checkout component
 const CUPOM_CODE = 'SUN300';
 
@@ -282,3 +284,83 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 })();
+
+
+// Fn - SkuName Adjustments - in Debug and tests
+/*
+** IN TESTS
+*/
+
+// 1. Função Principal
+function adjustSkuNames(items) {
+    if (!items || !items.length) return;
+
+    $.each(items, function (index, item) {
+        // Seleciona o elemento. IMPORTANTE: O seletor deve rodar aqui dentro para pegar o elemento "vivo"
+        var $productNameElement = $("#product-name" + item.id);
+
+        // Se o elemento não existir, aborta
+        if ($productNameElement.length === 0) return;
+
+        // --- APLICAÇÃO DO SKELETON ---
+        // Forçamos a reinicialização visual
+        $productNameElement
+            .removeClass('sh-processed')     // Remove flag de concluído
+            .addClass('sh-skeleton-loading') // Adiciona o efeito
+            .css('color', 'transparent');    // Esconde o texto original da VTEX
+
+        // --- VALIDAÇÃO ---
+        var skuNameClean = (item.skuName || "").toLowerCase().trim();
+        var termosProibidos = ["sun house", "sunhouse"];
+        var ehProibido = termosProibidos.indexOf(skuNameClean) !== -1;
+
+        // --- REVELAÇÃO (Com Delay Visual) ---
+        setTimeout(function () {
+            // Re-seleciona o elemento (caso a VTEX tenha recriado o DOM nesse meio tempo)
+            var $el = $("#product-name" + item.id);
+            
+            if ($el.length > 0) {
+                // Só altera o HTML se não for um termo proibido
+                if (!ehProibido) {
+                    var nomeProduto = item.productName || item.name;
+                    var nomeSku = item.skuName;
+
+                    var novoHtml =
+                        '<span class="sh-product-name">' + nomeProduto + '</span>' +
+                        '<span class="sh-sku-name">' + nomeSku + '</span>';
+
+                    $el.html(novoHtml);
+                }
+
+                // Finaliza o processo visual
+                $el.removeClass('sh-skeleton-loading')
+                   .addClass('sh-processed')
+                   .css('color', ''); // Restaura a cor
+            }
+        }, 600); // 600ms = Tempo que o skeleton fica rodando
+    });
+}
+
+// 2. Executa ao carregar a página (Initial Load)
+$(document).ready(function() {
+    if (vtexjs && vtexjs.checkout && vtexjs.checkout.orderForm) {
+        adjustSkuNames(vtexjs.checkout.orderForm.items);
+    } else {
+        vtexjs.checkout.getOrderForm().done(function(orderForm) {
+            adjustSkuNames(orderForm.items);
+        });
+    }
+});
+
+// 3. Executa na atualização (Update) - COM CORREÇÃO DE RACE CONDITION
+$(window).on('orderFormUpdated.vtex', function (_, orderForm) {
+    // Adicionamos um delay de 200ms ANTES de chamar a função.
+    // Isso dá tempo para a VTEX destruir e reconstruir o HTML da linha do produto.
+    setTimeout(function() {
+        adjustSkuNames(orderForm.items);
+    }, 200); 
+});
+
+/*
+** IN TESTS
+*/

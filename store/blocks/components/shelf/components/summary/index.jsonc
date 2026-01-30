@@ -279,8 +279,10 @@
   "flex-layout.col#shelf-product-exclusive": {
     "title": "Produto vitrine indisponível",
     "children": [
-      "container#shelf-product-exclusive-button",
-      "rich-text#know-more-cta"
+      // "container#shelf-product-exclusive-button"
+      "rich-text#shelf-product-exclusive-button",
+      "rich-text#shelf-product-exclusive-cta"
+      // "rich-text#know-more-cta"
     ],
     "props": {
       "preventVerticalStretch": true,
@@ -298,12 +300,22 @@
     }
   },
   "rich-text#shelf-product-exclusive-button": {
-    "title": "Botão Produto Exclusivo vitrine",
+  // "rich-text#shelf-product-exclusive-text": {
+    "title": "Texto Produto Exclusivo - Vitrine",
     "props": {
       "text": "__Produto Exclusivo__",
       "blockClass": "shelf-product-exclusive-button"
     }
   },
+  "rich-text#shelf-product-exclusive-cta": {
+    "title": "CTA Produto Exclusivo - Vitrine",
+    "props": {
+      "text": "__Venda Exclusiva em Loja__",
+      "blockClass": "shelf-product-exclusive-cta"
+    }
+  },
+
+  // Nao esta sendo usado
   "rich-text#know-more-cta": {
     "title": "Texto Saiba Mais - Vitrine",
     "props": {
@@ -408,8 +420,9 @@
     "title": "Produto vitrine indisponível",
     "children": [
       "rich-text#shelf-product-unavailable",
-      "container#shelf-product-unavailable-cta",
-      "rich-text#know-more-cta"
+      "rich-text#shelf-product-unavailable-cta"
+      // "container#shelf-product-unavailable-cta"
+      // "rich-text#know-more-cta"
       // "hover-container#shelf-product-unavailable-button"
     ],
     "props": {
@@ -419,13 +432,23 @@
     }
   },
   "rich-text#shelf-product-unavailable": {
-    "title": "Texto produto indisponível vitrine",
+    "title": "Texto Produto Indisponível - Vitrine",
     "props": {
-      "text": "__Produto Indisponível__",
+      // "text": "__Produto Indisponível__",
+      "text": "__Produto Sob Consulta__",
       "blockClass": "shelf-product-unavailable"
     }
   },
+  "rich-text#shelf-product-unavailable-cta": {
+    "title": "CTA Produto Indisponível - Vitrine",
+    "props": {
+      // "text": "__Produto Indisponível__",
+      "text": "__Consulte Disponibilidade__",
+      "blockClass": "shelf-product-unavailable-cta"
+    }
+  },
   
+  // Nao esta sendo usado START
   "container#shelf-product-unavailable-cta": {
     "children": [
       "rich-text#shelf-product-unavailable-cta"
@@ -435,13 +458,14 @@
       "blockClass": "shelf-product-unavailable-cta"
     }
   },
-  "rich-text#shelf-product-unavailable-cta": {
-    "title": "CTA Produto Indisponível - Vitrine",
-    "props": {
-      "text": "__Veja mais detalhes__",
-      "blockClass": "shelf-product-unavailable-cta"
-    }
-  },
+  // "rich-text#shelf-product-unavailable-cta": {
+  //   "title": "CTA Produto Indisponível - Vitrine",
+  //   "props": {
+  //     "text": "__Veja mais detalhes__",
+  //     "blockClass": "shelf-product-unavailable-cta"
+  //   }
+  // },
+  // Nao esta sendo usado END
   
   "hover-container#shelf-product-unavailable-button": {
     "title": "Hover botão avise-me prateleira",
