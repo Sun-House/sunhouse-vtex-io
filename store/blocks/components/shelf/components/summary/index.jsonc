@@ -261,9 +261,27 @@
         }
       ],
       "Then": "flex-layout.col#shelf-product-exclusive",
+      "Else": "condition-layout.product#shelf-corporate-checker"
+      // "Else": "condition-layout.product#shelf-product-availability"
+    }
+  },
+
+  "condition-layout.product#shelf-corporate-checker": {
+    "title": "Condicional - Status Produto",
+    "props": {
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            "id": "443"
+          }
+        }
+      ],
+      "Then": "flex-layout.col#shelf-product-corporate",
       "Else": "condition-layout.product#shelf-product-availability"
     }
   },
+
   "condition-layout.product#shelf-product-availability": {
     "props": {
       "conditions": [
@@ -277,7 +295,7 @@
   },
   
   "flex-layout.col#shelf-product-exclusive": {
-    "title": "Produto vitrine indisponível",
+    "title": "Produto Vitrine - Exclusivo",
     "children": [
       // "container#shelf-product-exclusive-button"
       "rich-text#shelf-product-exclusive-button",
@@ -291,30 +309,65 @@
     }
   },
 
-  "container#shelf-product-exclusive-button": {
-    "children": [
-      "rich-text#shelf-product-exclusive-button"
-    ],
-    "props": {
-      "blockClass": "shelf-product-exclusive-button"
-    }
-  },
+  // EXCLUIR CASO NAO DE ERRO DE BUILD
+  // "container#shelf-product-exclusive-button": {
+  //   "children": [
+  //     "rich-text#shelf-product-exclusive-button"
+  //   ],
+  //   "props": {
+  //     "blockClass": "shelf-product-exclusive-button"
+  //   }
+  // },
+
   "rich-text#shelf-product-exclusive-button": {
   // "rich-text#shelf-product-exclusive-text": {
     "title": "Texto Produto Exclusivo - Vitrine",
     "props": {
       "text": "__Produto Exclusivo__",
-      "blockClass": "shelf-product-exclusive-button"
+      // "blockClass": "shelf-product-exclusive-button"
+      "blockClass": ["shelf-product-info-text", "shelf-product-exclusive-button"]
     }
   },
+
   "rich-text#shelf-product-exclusive-cta": {
     "title": "CTA Produto Exclusivo - Vitrine",
     "props": {
-      "text": "__Venda Exclusiva em Loja__",
+      // "text": "__Venda Exclusiva em Loja__",
+      "text": "__Venda Exclusiva • Saiba Mais__",
       "blockClass": "shelf-product-exclusive-cta"
     }
   },
 
+  "flex-layout.col#shelf-product-corporate": {
+    "title": "Produto Vitrine - Corporativo",
+    "children": [
+      "rich-text#shelf-product-corporate-button",
+      "rich-text#shelf-product-corporate-cta"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "top",
+      "blockClass": "shelf-product-exclusive"
+    }
+  },
+
+  "rich-text#shelf-product-corporate-button": {
+    "title": "Texto Produto Corporativo - Vitrine",
+    "props": {
+      "text": "__Preço Sob Consulta__",
+      // "blockClass": "shelf-product-corporate-button"
+      "blockClass": ["shelf-product-info-text", "shelf-product-corporate-button"]
+    }
+  },
+
+  "rich-text#shelf-product-corporate-cta": {
+    "title": "CTA Produto Corporativo - Vitrine",
+    "props": {
+      "text": "__Solicitar Orçamento__",
+      "blockClass": "shelf-product-corporate-cta"
+    }
+  },
+  
   // Nao esta sendo usado
   "rich-text#know-more-cta": {
     "title": "Texto Saiba Mais - Vitrine",
@@ -327,7 +380,7 @@
   },
   
   "flex-layout.col#shelf-product-available": {
-    "title": "Produto vitrine disponível",
+    "title": "Produto Vitrine - Disponível",
     "children": [
       // "flex-layout.col#shelf-product-with-variation" -> Validar o que isso faz
       "container#shelf-price_parcelado",
@@ -417,13 +470,10 @@
   // Old Price Block - Shelf - Sendo usada? Nao sei, mas vou manter por aqui a principio END
 
   "flex-layout.col#shelf-product-unavailable": {
-    "title": "Produto vitrine indisponível",
+    "title": "Produto Vitrine - Indisponível",
     "children": [
       "rich-text#shelf-product-unavailable",
       "rich-text#shelf-product-unavailable-cta"
-      // "container#shelf-product-unavailable-cta"
-      // "rich-text#know-more-cta"
-      // "hover-container#shelf-product-unavailable-button"
     ],
     "props": {
       "preventVerticalStretch": true,
@@ -434,30 +484,30 @@
   "rich-text#shelf-product-unavailable": {
     "title": "Texto Produto Indisponível - Vitrine",
     "props": {
-      // "text": "__Produto Indisponível__",
-      "text": "__Produto Sob Consulta__",
-      "blockClass": "shelf-product-unavailable"
+      "text": "__Esgotado__",
+      // "blockClass": "shelf-product-unavailable"
+      "blockClass": ["shelf-product-info-text", "shelf-product-unavailable"]
     }
   },
   "rich-text#shelf-product-unavailable-cta": {
     "title": "CTA Produto Indisponível - Vitrine",
     "props": {
-      // "text": "__Produto Indisponível__",
       "text": "__Consulte Disponibilidade__",
       "blockClass": "shelf-product-unavailable-cta"
     }
   },
   
+  // EXCLUIR CASO NAO DE ERRO DE BUILD
   // Nao esta sendo usado START
-  "container#shelf-product-unavailable-cta": {
-    "children": [
-      "rich-text#shelf-product-unavailable-cta"
-      // "link#unavailable-cta-wpp" -> Nao deu certo pois ao clicar ele acessa o produto
-    ],
-    "props": {
-      "blockClass": "shelf-product-unavailable-cta"
-    }
-  },
+  // "container#shelf-product-unavailable-cta": {
+  //   "children": [
+  //     "rich-text#shelf-product-unavailable-cta"
+  //     // "link#unavailable-cta-wpp" -> Nao deu certo pois ao clicar ele acessa o produto
+  //   ],
+  //   "props": {
+  //     "blockClass": "shelf-product-unavailable-cta"
+  //   }
+  // },
   // "rich-text#shelf-product-unavailable-cta": {
   //   "title": "CTA Produto Indisponível - Vitrine",
   //   "props": {

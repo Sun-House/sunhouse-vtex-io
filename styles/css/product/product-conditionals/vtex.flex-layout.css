@@ -1,6 +1,12 @@
+/* Exclusive CTA */
 .flexCol--product-exclusive {
     padding-top: 24px;
-    /* margin-top: 12px;
-    border-top: 1px solid #d5d4d4; */
     margin-bottom: 20px
+}
+
+/* Corporate CTA */
+.flexCol--product-corporate {
+    margin-top: 99px;
+    margin-bottom: 20px;
+    padding-top: 24px
 }

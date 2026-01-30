@@ -1,20 +1,29 @@
-/* Exclusive Shelf Product */
-.wrapper--shelf-product-exclusive-button {
+/* All Custom Shelf Product */
+.wrapper--shelf-product-info-text {
     width: 100%
 }
 
-.paragraph--shelf-product-exclusive-button {
+.paragraph--shelf-product-info-text {
+    box-sizing: border-box;
+    border-radius: 4px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     font-style: normal;
-    font-size: 16px;
-    /* line-height: 19px; */
-    color: #161413;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
     transition: all .2s ease-in-out
+    /* background-color: #161413;
+    color: #fff; */
 }
 
-/* .vtex-rich-text-0-x-wrapper--shelf-product-exclusive-cta { */
+/* Exclusive Shelf Product */
+.paragraph--shelf-product-exclusive-button {
+    background-color: #ffda005e;
+    color: #161413
+}
+
 .wrapper--shelf-product-exclusive-cta {
     position: relative;
     width: 100%
@@ -43,22 +52,70 @@
     transition: all .2s ease-in-out
 }
 
+/* Corporate Shelf Product */
+.paragraph--shelf-product-corporate-button {
+    background-color: #161413;
+    color: #fff
+}
+
+.wrapper--shelf-product-corporate-cta {
+    position: relative;
+    width: 100%
+}
+
+.paragraph--shelf-product-corporate-cta {
+    visibility: hidden;
+    opacity: 0;
+    height: 50px;
+    position: absolute;
+    top: -45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    text-transform: uppercase;
+    background-color: var(--midnight-blue);
+    color: var(--champagne);
+    border: 2px solid var(--champagne);
+    border-radius: 5px;
+    transition: all .2s ease-in-out
+}
+
+/* Nao esta sendo usado */
 /* Unavailable Shelf Product */
+.paragraph--shelf-product-unavailable {
+    background-color: #ffda005e;
+    color: #EA3546
+}
+
 .wrapper--shelf-product-unavailable-cta {
+    position: relative;
     width: 100%
 }
 
 .paragraph--shelf-product-unavailable-cta {
-    background-color: #161413;
-    box-sizing: border-box;
-    border-radius: 5px;
-    /* height: 48px; */
+    visibility: hidden;
+    opacity: 0;
+    height: 50px;
+    position: absolute;
+    /* top: -45px; */
+    top: -65px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-style: normal;
+    box-sizing: border-box;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    color: #fff;
-    /* margin-bottom: 10px */
+    font-style: normal;
+    text-transform: uppercase;
+    background-color: #69bd4445;
+    color: #161413;
+    border: 2px solid #69bd448a;
+    border-radius: 5px;
+    transition: all .2s ease-in-out
 }

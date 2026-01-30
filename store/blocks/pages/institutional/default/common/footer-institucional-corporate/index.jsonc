@@ -4,7 +4,7 @@
 	},
 
 	"footer-layout.desktop#institutional-corporate": {
-		"title": "Footer Desktop",
+		"title": "Footer Desktop - Institucional Corporativo",
 		"children": [
 			"link#whatsapp-float-corporate",
 			"flex-layout.row#footer-logo",
@@ -17,7 +17,7 @@
 		}
 	},
 	"footer-layout.mobile#institutional-corporate": {
-		"title": "Footer Mobile",
+		"title": "Footer Mobile - Institucional Corporativo",
 		"children": [
 			"link#whatsapp-float-corporate",
 			"flex-layout.row#footer-content-mobile",

@@ -1,0 +1,55 @@
+{
+    "container#product-corporate": {
+        "title": "SE: Produto Corporativo",
+		"children": [
+            "rich-text#corporate-cta_hidden-price-line", // Linha do preço oculto com efeito skeleton
+            "rich-text#corporate-cta_detail-line", // Linha do detalhe dourado
+            "rich-text#corporate-cta_title-line", // Linha do titulo
+            "rich-text#corporate-cta_text-line", // Linha do texto
+			"whatsapp-dynamic-button#wpp-button-corporate"
+		],
+		"props": {
+			"blockClass": "corporate-cta_container"
+		}
+	},
+
+    "rich-text#corporate-cta_hidden-price-line": {
+        "title": "Linha 1 - Preço Oculto",
+		"props": {
+			"text": "R$ NaN\n##### __R$ NaN__ em até 10x de R$ NaN",
+			"blockClass": "corporate-cta_hidden-price"
+		}
+	},
+	"rich-text#corporate-cta_detail-line": {
+        "title": "Linha 1 - Detalhe Dourado",
+		"props": {
+			"text": "",
+			"blockClass": ["unavailable-cta_text", "corporate-cta_gold-detail"]
+		}
+	},
+    "rich-text#corporate-cta_title-line": {
+        "title": "Linha 2 - Titulo",
+		"props": {
+            "text": "## Consultoria Exclusiva Sun House Corporate",
+			"blockClass": ["unavailable-cta_text", "corporate-cta_title"]
+		}
+	},
+    "rich-text#corporate-cta_text-line": {
+        "title": "Linha 3 - Texto",
+		"props": {
+            "text": "Móveis de alto padrão para projetos corporativos e residenciais de luxo.",
+			"blockClass": ["unavailable-cta_text", "corporate-cta_text"]
+		}
+	},
+
+	"whatsapp-dynamic-button#wpp-button-corporate": {
+		"title": "Botão WhatsApp - Corporativo",
+		"props": {
+			"phone": "5511988699713",
+			"text": "Solicitar Orçamento",
+			"showIcon": true,
+			"collectionId": "443",
+			"blockClass": "wpp-button-corporate"
+    	}
+	}
+}

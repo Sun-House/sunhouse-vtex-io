@@ -1,0 +1,8 @@
+:global(.sunhouse-whatsapp-dynamic-btn-1-x-whatsappDynamicButtonIcon--wpp-button-corporate) :global(svg) :global(path) {
+    fill: var(--champagne);
+    transition: all 0.3s ease-in-out
+}
+
+:global(.sunhouse-whatsapp-dynamic-btn-1-x-whatsappDynamicButtonLink--wpp-button-corporate):hover :global(.sunhouse-whatsapp-dynamic-btn-1-x-whatsappDynamicButtonIcon--wpp-button-corporate) :global(svg) :global(path) {
+    fill: var(--midnight-blue)
+}

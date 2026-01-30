@@ -24,3 +24,30 @@
 .whatsappDynamicButtonIcon {
     margin-left: 8px
 }
+
+/* Custom Css for Corporate Products */
+/* .cta-button { */
+/* .sunhouse-whatsapp-dynamic-btn-1-x-whatsappDynamicButtonLink--wpp-button-corporate */
+.whatsappDynamicButtonLink--wpp-button-corporate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+    border: 1.5px solid var(--champagne);
+    color: var(--champagne);
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out
+}
+
+/* .cta-button:hover { */
+.whatsappDynamicButtonLink--wpp-button-corporate:hover {
+    background-color: var(--champagne);
+    color: var(--midnight-blue);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4)
+}

@@ -1,3 +1,4 @@
+/* Unavailable CTA */
 .wrapper--unavailable-cta_text {
     margin-top: 24px
 }
@@ -6,7 +7,8 @@
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 28px;
-    text-align: center
+    text-align: center;
+    text-transform: uppercase
 }
 
 .paragraph--unavailable-cta_text {
@@ -14,6 +16,7 @@
     line-height: 1.35
 }
 
+/* Exclusive CTA */
 .container--exclusive-cta_line-2 {
     display: block;
     width: 100%
@@ -26,4 +29,126 @@
     background: hsla(0, 0%, 100%, .6);
     border: 1px dashed #f9d7e0;
     font-size: clamp(13px, 2vw, 15px)
+}
+
+/* Corporate CTA */
+/* .vtex-rich-text-0-x-container--corporate-cta_hidden-price { */
+.container--corporate-cta_hidden-price {
+    position: relative;
+    top: -140px;
+    left: -30px;
+    height: 0
+}
+
+/* .vtex-rich-text-0-x-paragraph--corporate-cta_hidden-price { */
+.paragraph--corporate-cta_hidden-price {
+    font-size: 20px;
+    margin-bottom: 8px
+}
+
+/* .vtex-rich-text-0-x-strong--corporate-cta_hidden-price { */
+.strong--corporate-cta_hidden-price {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+/* .vtex-rich-text-0-x-headingLevel3--corporate-cta_hidden-price { */
+.heading--corporate-cta_hidden-price {
+    font-size: 16px
+}
+
+/* Oculta texto base estrutural do Skeleton Effect */
+.paragraph--corporate-cta_hidden-price,
+.strong--corporate-cta_hidden-price,
+.heading--corporate-cta_hidden-price {
+    color: #f6f6f600;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Skeleton Effect Base Structure */
+.paragraph--corporate-cta_hidden-price,
+.heading--corporate-cta_hidden-price {
+    /* background-color: #e0e0e0; - Cor base ideal para o skeleton, porem, deixei mais escuro para ter um visual melhor no nosso layout */
+    background-color: #cfcfcf;
+  
+    /* O gradiente que cria o brilho passando */
+    background-image: linear-gradient(
+      90deg,
+      /* #e0e0e0 0px, 
+      #f5f5f5 50%, 
+      #e0e0e0 100% - Cor base ideal para o skeleton, porem, deixei mais escuro para ter um visual melhor no nosso layout */
+      #cfcfcf 0px, 
+      #dfdfdf 50%, 
+      #cccccc 100%
+    );
+  
+    /* O tamanho do background precisa ser maior que o elemento para permitir o movimento */
+    background-size: 200% 100%;
+    border-radius: 4px;
+    display: table;
+    animation: shimmer 1.5s infinite linear;
+}
+  
+/* Definição da animação do Skeleton Effect */
+@keyframes shimmer {
+
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+
+}
+
+/* .vtex-rich-text-0-x-container--corporate-cta_gold-detail::after { */
+.container--corporate-cta_gold-detail::after {
+    /* content: "\F87C";*/
+    content: "\F87D";    
+    font-family: "Bootstrap-Icons";
+    color: #fff;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+/* .gold-detail { */
+/* .vtex-rich-text-0-x-wrapper--corporate-cta_gold-detail */
+.wrapper--corporate-cta_gold-detail {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--champagne), transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0
+}
+
+/* .corporate-card h2 { */
+/* .vtex-rich-text-0-x-heading--corporate-cta_title */
+.heading--corporate-cta_title {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    line-height: 1.2
+}
+
+/* .corporate-card p { */
+/* .vtex-rich-text-0-x-paragraph--corporate-cta_text */
+.paragraph--corporate-cta_text {
+    color: var(--text-gray);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-weight: 300
 }

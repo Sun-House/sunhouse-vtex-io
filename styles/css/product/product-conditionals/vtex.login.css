@@ -1,0 +1,7 @@
+/* Oculta botão flutuante padrão de WhatsApp da PDP quando o bloco Corporate CTA está presente */
+:global(.render-container.render-route-store-product):has(:global(.vtex-flex-layout-0-x-flexCol--product-corporate)) :global(.vtex-store-link-0-x-childrenContainer--whatsapp-float) {
+    display: none
+}
+
+/* Ver para trazer o mesmo botão flutuante da pagina de Vendas Corporativas */
+/* ****************************************************** */

@@ -4,17 +4,17 @@
 		"children": [
             "rich-text#exclusive-cta_line-1",
             "rich-text#exclusive-cta_line-2",
-            // "link#unavailable-cta-wpp"
 			"whatsapp-dynamic-button#wpp-button-exclusive"
 		],
 		"props": {
 			"blockClass": "exclusive-cta_container"
 		}
 	},
+	
 	"rich-text#exclusive-cta_line-1": {
         "title": "Texto 1 - Info Produto Exclusivo",
 		"props": {
-			"text": "## &#10024; Produto Exclusivo\nEste item **n&atilde;o est&aacute; dispon&iacute;vel para compra online**. A aquisi&ccedil;&atilde;o &eacute; realizada **somente nas nossas lojas f&iacute;sicas** ou via **atendimento personalizado por telefone ou WhatsApp.**",
+			"text": "## Produto Exclusivo\nEste item **n&atilde;o est&aacute; dispon&iacute;vel para compra online**. A aquisi&ccedil;&atilde;o &eacute; realizada **somente nas nossas lojas f&iacute;sicas** ou via **atendimento personalizado por telefone ou WhatsApp.**",
 			"blockClass": ["unavailable-cta_text", "exclusive-cta_text"]
 		}
 	},
@@ -26,15 +26,14 @@
 		}
 	},
 
-	// Custom WhatsApp Button App
 	"whatsapp-dynamic-button#wpp-button-exclusive": {
 		"title": "Botão WhatsApp - Exclusivo",
 		"props": {
-			"phone": "5511994877664", // Ja vem com o numero do site como padrao, mas pode ser alterado via site editor e aqui
-			"text": "Falar com um Especialista", // Texto alteravel via site editor e aqui
-			"showIcon": true, // Bool que define se mostra ou nao o icone de whatsapp - icone inalteravel, ja definido no app react
-			"collectionId": "427", // Esse atributo é especifico para botão de Exclusivo - pode ser utilizado com outras colecoes tambem
-			"blockClass": "wpp-button-exclusive" // Ainda nao sei se vai funcionar esse
+			"phone": "5511994877664",
+			"text": "Falar com um Especialista",
+			"showIcon": true,
+			"collectionId": "427",
+			"blockClass": "wpp-button-exclusive"
     	}
 	}
 }
