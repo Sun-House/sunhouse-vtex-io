@@ -9,6 +9,7 @@
 
     // Page Header
     "container#stores-landing-banner": {
+        "title": "Banner Hero",
         "children": [
             // Reutilizado o componente de banner das paginas de categoria
             "info-card#banner-category"
@@ -17,6 +18,7 @@
 
     // Page Body
     "container#stores-landing-body": {
+        "title": "Page Body",
         "children": [
             "flex-layout.row#stores-landing-body-text-main",
             "flex-layout.row#stores-landing-body-text-details",
@@ -58,12 +60,14 @@
     },
 
     "rich-text#stores-landing-body-text-main-left": {
+        "title": "Texto Principal Esquerdo",
         "props": {
             "text": "## Sua Experiência Sun House Começa Aqui",
             "blockClass": "stores-landing-body-text"
         }
     },
     "rich-text#stores-landing-body-text-main-right": {
+        "title": "Texto Principal Direito",
         "props": {
             "text": "Conheça nossas lojas físicas e descubra peças que contam histórias com estilo.",
             "blockClass": ["stores-landing-text", "stores-landing-text_small"]
@@ -101,24 +105,28 @@
     },
 
     "rich-text#stores-landing-body-text-details-left": {
+        "title": "Texto Detalhes Esquerdo",
         "props": {
             "text": "### Teodoro Sampaio\nR. Teodoro Sampaio, 1749 - Pinheiros, São Paulo - SP",
             "blockClass": "stores-landing-text"
         }
     },
     "rich-text#stores-landing-body-text-details-right": {
+        "title": "Texto Detalhes Direito",
         "props": {
             "text": "### Sun House In Concept\nRua Mateus Grou, 413 – Pinheiros, São Paulo - SP",
             "blockClass": "stores-landing-text"
         }
     },
     "rich-text#stores-landing-body-text-details-phone": {
+        "title": "Texto Detalhes Telefone",
         "props": {
             "text": "(11) 2506-4546",
             "blockClass": ["stores-landing-text", "stores-landing-text_phone"]
         }
     },
     "rich-text#stores-landing-body-text-details-mail": {
+        "title": "Texto Detalhes Email",
         "props": {
             "text": "contato@sunhouse.com.br",
             "blockClass": ["stores-landing-text", "stores-landing-text_mail"]
@@ -128,6 +136,7 @@
     
     // Bloco Showroom Virtual - in Dev **START**
     "container#showroom-iframe": {
+        "title": "Showroom Virtual",
         "children": [
             "rich-text#showroom-title",
             "flex-layout.row#showroom-iframe"
@@ -166,6 +175,7 @@
 
     // Esta funcional: O link - a principio - precisa ser no mesmo padrao de embed do Google Maps para funcionar corretamente
     "iframe#showroom-iframe": {
+        "title": "Link Embed do Showroom Virtual",
         "props": {
             "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.162555035188!2d-46.6856783!3d-23.5626046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce579e90afa8ab%3A0x73fa908f3ccdf1e5!2sR.%20Teodoro%20Sampaio%2C%201749%20-%20Pinheiros%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005405-150!5e0!3m2!1spt-BR!2sbr!4v1770123078274!5m2!1spt-BR!2sbr",
             "width": 1220,
@@ -199,6 +209,7 @@
     
     // Page Pre-Footer
     "container#stores-landing-pre-footer": {
+        "title": "Page Pre-Footer",
         "children": [
             // Ideal bloco do instagram, mas pelo nivel de complexidade, será implementado posteriormente
             // Por hora ficara o bloco de Showcase Slider
