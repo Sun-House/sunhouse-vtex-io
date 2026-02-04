@@ -1,10 +1,25 @@
 @media screen and (max-width: 1024px) {
+
+    .heading--stores-landing-body-text {
+        font-size: 38px
+    }
     
     .paragraph--stores-landing-text_small {
         color: #161413;
         max-width: unset;
         line-height: 1.5;
         margin-top: 24px
+    }
+
+    /* .vtex-rich-text-0-x-container--showroom-title { */
+    .container--showroom-title {
+        padding-top: 32px;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .heading--showroom-title {
+        font-size: 32px
     }
     
 }

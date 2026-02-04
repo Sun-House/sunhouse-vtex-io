@@ -55,3 +55,21 @@
     margin-right: 12px;
     vertical-align: middle
 }
+
+/* Bloco Showroom Virtual */
+/* .vtex-rich-text-0-x-container--showroom-title { */
+.container--showroom-title {
+    margin: 0 auto;
+    padding-top: 84px;
+    padding-bottom: 64px;
+    max-width: 524px;
+    text-align: center
+}
+
+/* .vtex-rich-text-0-x-paragraph--showroom-title { */
+.paragraph--showroom-title {
+    max-width: 424px;
+    margin: 0 auto;
+    padding-top: 24px;
+    line-height: 1.5
+}

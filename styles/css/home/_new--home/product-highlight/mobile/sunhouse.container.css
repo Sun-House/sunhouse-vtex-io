@@ -22,4 +22,10 @@
         max-width: 45% !important
     }
 
+    /* Ajuste para quando tiver imagem com link */
+    /* .sunhouse-container-1-x-imageElementLink--product-highlight-image_col-2 .sunhouse-container-1-x-imageElement--product-highlight-image_col-2 { */
+    .imageElementLink--product-highlight-image_col-2 .imageElement--product-highlight-image_col-2 {
+        max-width: 289px !important
+    }
+
 }

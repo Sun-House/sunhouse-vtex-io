@@ -10,7 +10,11 @@
   "footer-layout.desktop": {
     "title": "Footer Desktop",
     "children": [
-      // "container#newsletter", - Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
+      // Ativado para testes de integração com RD Station e Master Data VTEX
+      // Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
+      "container#newsletter",
+      //
+
       "flex-layout.row#footer-logo",
       "flex-layout.row#footer-content",
       "flex-layout.row#footer-social",

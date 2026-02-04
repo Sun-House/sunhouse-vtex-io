@@ -64,10 +64,9 @@
       "title": "Imagem do Produto - Shelf New",
       "children": [
           "container#image-shelf-new",
-          "add-to-list-btn#main-shelf" // Wishlist Button - manter esse mesmo, padrao correto Refresh já
+          "add-to-list-btn#main-shelf"
       ],
       "props": {
-          // "blockClass": ["shelf-product-image", "bf_shelf-product-image"] - Ajustar estilo que esta nesse key para o novo key abaixo
           "blockClass": ["shelf-product-image", "shelf-new-product-image"]
       }
   },
@@ -75,7 +74,6 @@
   "container#image-shelf-new": {
       "children": [
           "product-summary-image#new-shelf"
-          // "container#product-sku-variation" - Esse esta sendo aplicado de outra forma - mas validar se nao é melhor usar aqui
       ],
       "props": {
           "blockClass": ["image-shelf", "bf_image-shelf"]
@@ -94,21 +92,15 @@
               "criteria": "index",
               "index": 1
           },
-          // "blockClass": "bf_main-shelf" - Ajustar estilo que esta nesse key para o novo key abaixo
           "blockClass": "new_main-shelf"
       }
   },
 
   "product-summary-name#new-shelf": {
       "props": {
-          // "blockClass": ["main-shelf", "bf-shelf"] - Ajustar estilo que esta nesse key para o novo key abaixo
           "blockClass": "new-shelf"
       }
   },
-
-
-  //
-
 
   // Shelf Black Friday - Sera descontinuada no Refresh - Manter para backup
   "product-summary.shelf#bf-main-product": {
@@ -131,7 +123,6 @@
 		}
 	},
 
-  //
   "product-summary-sku-selector#default": {
     "props":{
       "showVariationsLabels": ["false"],
@@ -140,20 +131,16 @@
     }
   },
 
-
+  // VALIDAR - ESSE COMPONENTE ESTA SENDO USADO?
   "product-summary-sku-selector#default-shelf": {
     "props":{
       "displayMode": "slider",
-      //
       "sliderArrowSize": 10,
       "sliderDisplayThreshold": 1,
       "sliderItemsPerPage": {
         "desktop": 6,
-        // "tablet": 2,
         "phone": 4
       },
-      // "maxItems": 6,
-      //
 			"hideImpossibleCombinations": false,
 			"visibility": "always",
 			"initialSelection": "empty",
@@ -190,7 +177,6 @@
     "children": [
       "container#image-shelf",
       "add-to-list-btn#main-shelf"
-      // "container#shelf-sku-selector"
     ],
     "props": {
       "blockClass": "shelf-product-image"
@@ -262,7 +248,6 @@
       ],
       "Then": "flex-layout.col#shelf-product-exclusive",
       "Else": "condition-layout.product#shelf-corporate-checker"
-      // "Else": "condition-layout.product#shelf-product-availability"
     }
   },
 
@@ -297,10 +282,8 @@
   "flex-layout.col#shelf-product-exclusive": {
     "title": "Produto Vitrine - Exclusivo",
     "children": [
-      // "container#shelf-product-exclusive-button"
       "rich-text#shelf-product-exclusive-button",
       "rich-text#shelf-product-exclusive-cta"
-      // "rich-text#know-more-cta"
     ],
     "props": {
       "preventVerticalStretch": true,
@@ -309,22 +292,10 @@
     }
   },
 
-  // EXCLUIR CASO NAO DE ERRO DE BUILD
-  // "container#shelf-product-exclusive-button": {
-  //   "children": [
-  //     "rich-text#shelf-product-exclusive-button"
-  //   ],
-  //   "props": {
-  //     "blockClass": "shelf-product-exclusive-button"
-  //   }
-  // },
-
   "rich-text#shelf-product-exclusive-button": {
-  // "rich-text#shelf-product-exclusive-text": {
     "title": "Texto Produto Exclusivo - Vitrine",
     "props": {
       "text": "__Produto Exclusivo__",
-      // "blockClass": "shelf-product-exclusive-button"
       "blockClass": ["shelf-product-info-text", "shelf-product-exclusive-button"]
     }
   },
@@ -332,7 +303,6 @@
   "rich-text#shelf-product-exclusive-cta": {
     "title": "CTA Produto Exclusivo - Vitrine",
     "props": {
-      // "text": "__Venda Exclusiva em Loja__",
       "text": "__Venda Exclusiva • Saiba Mais__",
       "blockClass": "shelf-product-exclusive-cta"
     }
@@ -355,7 +325,6 @@
     "title": "Texto Produto Corporativo - Vitrine",
     "props": {
       "text": "__Preço Sob Consulta__",
-      // "blockClass": "shelf-product-corporate-button"
       "blockClass": ["shelf-product-info-text", "shelf-product-corporate-button"]
     }
   },
@@ -382,9 +351,9 @@
   "flex-layout.col#shelf-product-available": {
     "title": "Produto Vitrine - Disponível",
     "children": [
-      // "flex-layout.col#shelf-product-with-variation" -> Validar o que isso faz
       "container#shelf-price_parcelado",
-      // "container#shelf-price_pix", - Ficara inativo no codigo pois quebra layout no Refresh - vtex gera varios blocos de flex-layout que quebram o sentido do container
+      //Ficara inativo no codigo pois quebra layout no Refresh:
+      // "container#shelf-price_pix",
       "hover-container#actions"
     ],
     "props": {
@@ -408,6 +377,7 @@
       "text": "**Entre e veja todos**"
     }
   },
+  
   // Parcelamento
   "product-installments#shelf-installments": {
     "props": {
@@ -429,6 +399,7 @@
   },
 
   // Old Price Block - Shelf - Sendo usada? Nao sei, mas vou manter por aqui a principio START
+  // START
   "container#shelf-product-listPrice": {
     "title": "Preço (com preço de lista) produto vitrine",
     "children": [
@@ -446,7 +417,6 @@
       "hideWithoutDiscount": true,
       "message": "{priceValue} à vista no PIX",
       "blockClass": "shelf-default",
-      // "promotionName": "Desconto Pagamento à Vista (7%)"
       "promotionName": "Desconto Pagamento a Vista (10%)"
     }
   },
@@ -467,7 +437,8 @@
       "blockClass": "product-shelf-price"
     }
   },
-  // Old Price Block - Shelf - Sendo usada? Nao sei, mas vou manter por aqui a principio END
+  // Old Price Block - Shelf - Sendo usada? Nao sei, mas vou manter por aqui a principio
+  // END
 
   "flex-layout.col#shelf-product-unavailable": {
     "title": "Produto Vitrine - Indisponível",
@@ -485,7 +456,6 @@
     "title": "Texto Produto Indisponível - Vitrine",
     "props": {
       "text": "__Esgotado__",
-      // "blockClass": "shelf-product-unavailable"
       "blockClass": ["shelf-product-info-text", "shelf-product-unavailable"]
     }
   },
@@ -496,26 +466,6 @@
       "blockClass": "shelf-product-unavailable-cta"
     }
   },
-  
-  // EXCLUIR CASO NAO DE ERRO DE BUILD
-  // Nao esta sendo usado START
-  // "container#shelf-product-unavailable-cta": {
-  //   "children": [
-  //     "rich-text#shelf-product-unavailable-cta"
-  //     // "link#unavailable-cta-wpp" -> Nao deu certo pois ao clicar ele acessa o produto
-  //   ],
-  //   "props": {
-  //     "blockClass": "shelf-product-unavailable-cta"
-  //   }
-  // },
-  // "rich-text#shelf-product-unavailable-cta": {
-  //   "title": "CTA Produto Indisponível - Vitrine",
-  //   "props": {
-  //     "text": "__Veja mais detalhes__",
-  //     "blockClass": "shelf-product-unavailable-cta"
-  //   }
-  // },
-  // Nao esta sendo usado END
   
   "hover-container#shelf-product-unavailable-button": {
     "title": "Hover botão avise-me prateleira",
@@ -589,7 +539,6 @@
     "title": "Hover botão comprar/quantidade prateleira",
     "children": [
       "flex-layout.row#shelf-product-buy-quantity"
-      // "responsive-layout.desktop#quick-view" - Componente descontinuado no Refresh
     ],
     "props": {
       "blockClass": "shelf-product-buy-quantity",
@@ -604,7 +553,6 @@
   "flex-layout.row#shelf-product-buy-quantity": {
     "title": "Seletor de quantidade/botão comprar produto vitrine",
     "children": [
-      // "flex-layout.col#shelf-quantity", - Componente descontinuado no Refresh
       "flex-layout.col#shelf-buy-button"
     ],
     "props": {
@@ -627,7 +575,6 @@
 
   "flex-layout.col#shelf-buy-button": {
     "children": [
-      // "add-to-cart-button#shelf-buy"
       "vtex.add-to-cart-button:add-to-cart-button#shelf-buy"
     ],
     "props": {
