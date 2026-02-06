@@ -7,28 +7,28 @@
 }
 
 /* Desktop Force */
-/*@media screen and (min-width: 1025px) {
-    / Bloqueia rolagem da tela START /
+@media screen and (min-width: 1025px) {
+    /* Bloqueia rolagem da tela START */
     body:has(:global(.render-route-vtex-store-2-x-store-custom-black-friday)) {
         overflow: hidden !important
     }
-    / Bloqueia rolagem da tela END /
+    /* Bloqueia rolagem da tela END */
 
-    / Altera o background color do site por Store Template /
+    /* / Altera o background color do site por Store Template /
     / Testei e deu para alterar para outras paginas como Home tambem /
     / :global(.render-route-vtex-store-2-x-store-custom-black-friday .render-provider .vtex-store__template) {
         background-color: #262d26
-    } /
+    } / */
     
-}*/
+}
 
 /* Mobile */
-/*@media (max-width: 768px) {
-    / Bloqueia rolagem da tela START /
+@media (max-width: 768px) {
+    /* Bloqueia rolagem da tela START */
     body:has(:global(.render-route-vtex-store-2-x-store-custom-black-friday)) {
         overflow: hidden !important;
         height: 100%;
         position: fixed
     }
-    / Bloqueia rolagem da tela END /
-}*/
+    /* Bloqueia rolagem da tela END */
+}

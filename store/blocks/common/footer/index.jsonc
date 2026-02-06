@@ -10,11 +10,7 @@
   "footer-layout.desktop": {
     "title": "Footer Desktop",
     "children": [
-      // Ativado para testes de integração com RD Station e Master Data VTEX
-      // Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
-      "container#newsletter",
-      //
-
+      // Inserir aqui novo bloco de newsletter
       "flex-layout.row#footer-logo",
       "flex-layout.row#footer-content",
       "flex-layout.row#footer-social",
@@ -27,7 +23,7 @@
   "footer-layout.mobile": {
     "title": "Footer Mobile",
     "children": [
-      // "container#newsletter", - Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
+      // Inserir aqui novo bloco de newsletter
       "flex-layout.row#footer-content-mobile",
       // "container#social-medias-mobile",
       "flex-layout.row#footer-social",
@@ -44,7 +40,7 @@
   },
   "footer-layout.desktop#without-seo-info": {
     "children": [
-      // "container#newsletter", - Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
+      // Inserir aqui novo bloco de newsletter
       "flex-layout.row#footer-content",
       "flex-layout.row#footer-bottom"
     ],
@@ -54,9 +50,7 @@
   },
   "footer-layout.mobile#without-seo-info": {
     "children": [
-      // Componente modelo visual antigo - mantido para caso decidam voltar com a estrutura de newsletter
-      // "container#newsletter",
-      //
+      // Inserir aqui novo bloco de newsletter
       "flex-layout.row#footer-content-mobile",
       // "container#social-medias-mobile",
       "flex-layout.row#footer-social",
