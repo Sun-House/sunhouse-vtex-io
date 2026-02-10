@@ -1,0 +1,13 @@
+/* Fix para pagina de Moveis por Ambiente desktop
+   Poderia acontecer em outras paginas, mas nao testei */
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* .vtex-flex-layout-0-x-flexColChild--search-content_col
+    .vtex-flex-layout-0-x-flexColChild--search-content_col-main */
+    .flexColChild--search-content_col-main {
+        height: auto !important
+    }
+
+}
