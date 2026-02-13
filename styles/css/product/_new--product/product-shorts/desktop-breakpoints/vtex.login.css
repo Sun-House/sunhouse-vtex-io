@@ -1,0 +1,53 @@
+/* All breakpoints for Desktop different sizes */
+
+/* De 1746px até 1900px */
+/* @media screen and (min-width: 1746px) and (max-width: 1900px) { */
+@media screen and (max-width: 1900px) {
+    
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe) {
+        bottom: 20vh;
+        margin: 24px
+    }
+    
+}
+
+/* De 1676px até 1745px */
+/* @media screen and (min-width: 1676px) and (max-width: 1745px) { */
+@media screen and (max-width: 1745px) {
+    
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe) {
+        bottom: 20vh;
+        /* margin: 12px */
+    }
+
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe) :global(iframe) {
+        width: 196.5px;
+        height: 350px
+    }
+    
+}
+
+/* De 1621px até 1675px */
+/* @media screen and (min-width: 1621px) and (max-width: 1675px) { */
+@media screen and (max-width: 1675px) {
+    
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe) :global(iframe) {
+        width: 169px;
+        height: 300px
+    }
+    
+}
+
+/* De 1024px até 1620px (limite máximo 1023px conforme solicitado) */
+/* @media screen and (min-width: 1025px) and (max-width: 1620px) { */
+@media screen and (min-width: 1025px) and (max-width: 1620px) {
+    
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe) {
+        right: -150px
+    }
+
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe):hover {
+        right: 0
+    }
+    
+}

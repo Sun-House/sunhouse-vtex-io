@@ -1,15 +1,39 @@
 {
   "store.product": {
-    "children": [
+    "children": [      
+      // Futuramente englobar ele com outros componente - ex. Imagem de Destaque do Produto - para nao ter que fazer uma configuracao
+      // para desktop e outra para mobile - igual a estrutura da descricao do produto "flex-layout.row#product-infos-wrapper"
+      "container#youtube-shorts",
+      //
       "responsive-layout.desktop#product-main",
       "responsive-layout.mobile#product-main",
       "flex-layout.row#product-infos-wrapper",
       "container#product__related-grid",
-      // "condition-layout.user#buy-together", // Ainda em DEV
+      // "condition-layout.user#buy-together", // Ainda em DEV - task liveSEO
       "container#ra-trustvox",
       "flex-layout.row#also-seen",
       "container#spacing-default"
     ]
+  },
+
+  // Iframe - Youtube Shorts
+  "container#youtube-shorts": {
+    "title": "Embed - Shorts Youtube",
+    "children": [
+      "iframe#youtube-shorts"
+    ],
+    "props": {
+      "blockClass": "container-yt-shorts"
+    }
+  },
+  "iframe#youtube-shorts": {
+    "title": "Link Embed",
+    "props": {
+      "src": "https://www.youtube.com/embed/8mb6YHMvncs",
+      "width": 225,
+      "height": 400,
+      "blockClass": "yt-shorts-iframe"
+    }
   },
 
   "container#ra-trustvox": {
@@ -24,7 +48,6 @@
   },
 
   "responsive-layout.desktop#product-main": {
-    // "title": "Configurações do Produto",
     "title": "Produto",
     "children": [
       "flex-layout.row#product-image-highlight",
@@ -35,18 +58,6 @@
       //
 
       "flex-layout.row#product-main"
-      
-      // Wrapper das duas opções de descrição do produto - Simple e Custom - e tambem de todos os blocos de informações do produto (beneficios, especificações, video, etc)
-      // "flex-layout.row#product-infos-wrapper"
-      //
-
-      // Criar aqui o bloco do Rodapé do Produto - Texto da Sun House (mas que pode ser customizado pelo Site Editor por produto e mudar o texto caso necessario)
-      // block-here#block,
-      //
-
-      // Bloco da FAQ
-      // "container#line-wrapper-15" // Ajustar nome e blocagem do componente - Nao sei se sera necessario
-      //
     ]
   },
   "responsive-layout.mobile#product-main": {
@@ -56,12 +67,7 @@
   },
   "flex-layout.row#product-main": {
     "children": [
-      //"container#product-medias", - Bloco antigo de fotos do Produto
-      
-      // New product images - IN TESTS
       "flex-layout.col#product-main-left",
-      //
-
       "flex-layout.col#product-main-right"
     ],
     "props": {

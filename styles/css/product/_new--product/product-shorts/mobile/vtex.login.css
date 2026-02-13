@@ -1,0 +1,42 @@
+@media screen and (max-width: 1024px) {
+    
+    /* .vtex-flex-layout-0-x-flexColChild--product-main-mobile:has(.vtex-store-components-3-x-productNameContainer) { */
+    :global(.vtex-flex-layout-0-x-flexColChild--product-main-mobile):has(:global(.vtex-store-components-3-x-productNameContainer)) {
+        margin-top: 42px
+    }
+    
+}
+
+/* NAO ESTA PRONTO */
+@media screen and (max-width: 1024px) {
+
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe) {
+        width: 100%;
+        position: fixed;
+        top: 25dvh;
+        left: -100%;
+        margin: 0;
+        z-index: 99;
+        transition: .3s ease-in-out;
+        display: block
+    }
+
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe)::after {
+        content: "clique aqui";
+        position: absolute;
+        right: -85px;
+        display: flex;
+        top: 44dvh;
+    }
+
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe):active {
+        left: 0;
+    }
+
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe) :global(iframe) {
+        width: 100%;
+        height: 100%;
+        /* opacity: .5 */
+    }
+    
+}

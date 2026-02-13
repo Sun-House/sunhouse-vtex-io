@@ -1,0 +1,19 @@
+@media screen and (min-width: 1025px) {
+
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe) {
+        width: auto;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 24px 94px;
+        z-index: 99;
+        transition: .3s ease-in-out
+    }
+
+    :global(.vtex-iframe-0-x-container--yt-shorts-iframe) :global(iframe) {
+        border-radius: 12px;
+        box-shadow: 6px 6px 8px #1614133d
+        
+    }
+
+}
