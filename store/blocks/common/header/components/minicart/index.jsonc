@@ -46,7 +46,8 @@
   "icon-cart#minicart-icon": {
     "props": {
       "size": 20,
-      "id": "hpa-bag",
+      // "id": "hpa-bag",
+      "id": "hpa-cart-new",
       "blockClass": "minicart-icon"
     }
   },
@@ -155,7 +156,8 @@
   },
   "icon-cart#minicart-empty-state": {
     "props": {
-      "id": "hpa-bag",
+      // "id": "hpa-bag",
+      "id": "hpa-cart-new",
       "size": 143,
       "blockClass": "minicart-empty-state"
     }
