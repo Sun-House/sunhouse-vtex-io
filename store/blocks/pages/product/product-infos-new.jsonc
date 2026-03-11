@@ -36,6 +36,10 @@
             // Texto da Marca
             "container#product-description-brand-text",
 
+            // Compre Junto - em Desenvolvimento
+            "container#product-description-buy-together",
+            //
+
             // A principio ficara melhor por ultimo - mas ao fim do projeto podera mudar
             // TESTAR SE VAI FALTAR O CONTAINER DE ESPACAMENTO AQUI
             "container#product-description-custom",

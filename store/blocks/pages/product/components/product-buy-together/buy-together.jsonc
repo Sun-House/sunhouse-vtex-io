@@ -1,15 +1,23 @@
 {
+  "container#product-description-buy-together": {
+    "title": "",
+    "children": [
+      "buy-together"
+    ],
+    "props": {
+      "blockClass": "product-description-buy-together"
+    }
+  },
+
   "buy-together": {
-    "children": ["flex-layout.col#buyTogetherContent"]
+    "children": [
+      "flex-layout.col#buyTogetherContent"
+    ]
   },
   "flex-layout.col#buyTogetherContent": {
-    "children": ["buy-together-title", "flex-layout.row#buyTogetherContainer"]
-  },
-  "buy-together-title": {
-    "props": {
-      "text": "Aproveite e leve também",
-      "blockClass": "buy-together-title"
-    }
+    "children": [
+      "flex-layout.row#buyTogetherContainer"
+    ]
   },
   "flex-layout.row#buyTogetherContainer": {
     "children": [
@@ -27,32 +35,41 @@
   },
 
   "flex-layout.col#icon-plus": {
-    "children": ["icon-plus"],
+    "children": [
+      "icon-plus"
+    ],
     "props": {
       "verticalAlign": "middle",
       "horizontalAlign": "center"
     }
   },
 
+  // Descontinuado - vou testar uma questao visual ainda antes de descontinuar
   "flex-layout.col#icon-equals": {
-    "children": ["icon-equals"],
+    "children": [
+      "icon-equals"
+    ],
     "props": {
       "verticalAlign": "middle",
       "horizontalAlign": "center"
     }
   },
-
   "icon-equals": {
     "props": {
       "size": 38,
       "blockClass": "icon-equals"
     }
   },
+  //
 
   "buy-together-current-product": {
+    "title": "Produto Atual",
     "blocks": ["product-summary.shelf#buy-together-current"]
   },
+  
+  // PRECISA AJUSTAR O NOME DESSE BLOCO - NAO É LISTA DE PRODUTOS MAIS
   "buy-together-product-list": {
+    "title": "Produto Sugerido",
     "blocks": ["product-summary.shelf#buy-together"],
     "props": {
       "swiperProps": {
@@ -60,34 +77,7 @@
       }
     }
   },
-  "product-summary.shelf#buy-together-current": {
-    "children": ["product-summary-image#buy-together", "product-summary-name"],
-    "props": {
-      "blockClass": "buy-together"
-    }
-  },
-  "product-summary.shelf#buy-together": {
-    "children": ["stack-layout#shelf-product-image", "product-summary-name"],
-    "props": {
-      "blockClass": "buy-together"
-    }
-  },
 
-  "product-summary-image#buy-together": {
-    "title": "Imagem do produto Compre junto",
-    "props": {
-      "width": {
-        "desktop": 437,
-        "mobile": 437
-      },
-      "height": {
-        "desktop": 437,
-        "mobile": 437
-      },
-      "showBadge": false,
-      "blockClass": ["main-shelf", "buy-together"]
-    }
-  },
   "flex-layout.col#buyTogetherInformation": {
     "children": [
       "buy-together-message",
@@ -100,15 +90,10 @@
       "blockClass": "buy-together-info"
     }
   },
+
   "buy-together-buy-button": {
     "props": {
-      // "BuyButton": "add-to-cart-button#product-page"
       "BuyButton": "vtex.add-to-cart-button:add-to-cart-button#product-page"
-    }
-  },
-  "buy-together-message": {
-    "props": {
-      "message": "Compre o look"
     }
   }
 }

@@ -1,0 +1,7 @@
+/* .sunhouse-container-1-x-container--product-description-buy-together { */
+.container--product-description-buy-together {
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50vw);
+    background-color: #ededed /* Ou: #f6f6f6 */
+}
