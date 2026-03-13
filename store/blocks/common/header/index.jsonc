@@ -11,7 +11,8 @@
     "children": [
       "container#header--desktop--home",
       "container#float-elements",
-      "link#whatsapp-float"
+      // "link#whatsapp-float"
+      "container#link-whatsapp-float"
     ]
   },
 
@@ -19,7 +20,8 @@
     "children": [
       "container#header--mobile",
       "container#float-elements",
-      "link#whatsapp-float"
+      // "link#whatsapp-float"
+      "container#link-whatsapp-float"
     ]
   }
 

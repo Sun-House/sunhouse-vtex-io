@@ -1,0 +1,4 @@
+/* Oculta os dots do slider do componente Also Seen da PDP */
+:global(.vtex-flex-layout-0-x-flexColChild--also-seen) .paginationDotsContainer--main-shelf {
+    display: none
+}

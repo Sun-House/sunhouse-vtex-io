@@ -6,15 +6,29 @@
   },
 
   "flex-layout.row#line-spacer": {
-    "children": ["flex-layout.col#column-spacer"]
+    "children": [
+      "flex-layout.col#column-spacer"
+    ]
+  },
+
+  "container#link-whatsapp-float": {
+    "title": "Botão WhatsApp - Flutuante",
+    "children": [
+      "link#whatsapp-float"
+    ],
+    "props": {
+      "blockClass": "whatsapp-float"
+    }
   },
   "link#whatsapp-float": {
-    "title": "Botão WhatsApp - Flutuante",
-    "children": ["icon#whatsapp"],
+    "title": "Link WhatsApp",
+    "children": [
+      "icon#whatsapp"
+    ],
     "props": {
-      "blockClass": "whatsapp-float",
       "target": "_blank",
-      "href": "https://api.whatsapp.com/send?phone=5511994877664"
+      "href": "https://api.whatsapp.com/send?phone=5511994877664",
+      "blockClass": "whatsapp-float"
     }
   },
   "icon#whatsapp": {

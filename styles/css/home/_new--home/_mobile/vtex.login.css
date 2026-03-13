@@ -1,0 +1,80 @@
+/* Customizacao do Header Mobile para Home
+   A principio aplicado somente na Home para testar o dia a dia do Banner Hero Mobile
+   Essa atualizacao sera evoluida para outras paginas com banner no mesmo estilo futuramente */
+
+@media screen and (max-width: 1024px) {
+
+    :global(.render-container.render-route-store-home) :global(.sunhouse-container-1-x-container--header) {
+        height: 0 !important
+    }
+    
+    :global(.render-container.render-route-store-home) :global(.sunhouse-container-1-x-wrapper--header--mobile__main),
+    :global(.render-container.render-route-store-home) :global(.vtex-flex-layout-0-x-flexRow--header-mobile-bottom) {
+        background-color: transparent !important
+    }
+
+    :global(.render-container.render-route-store-home) :global(.vtex-store-drawer-0-x-openIconContainer--menu-mobile) :global(.vtex-store-drawer-0-x-menuIcon),
+    :global(.render-container.render-route-store-home) :global(.sunhouse-minicart-2-x-minicartIconContainer--minicart-main) :global(.vtex-store-icons-0-x-cartIcon),
+    :global(.render-container.render-route-store-home) :global(.vtexarg-speech-to-text-1-x-audioSearchContainer)::after,
+    :global(.render-container.render-route-store-home) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.sunhouse-store-components-4-x-searchBarIcon) :global(.sunhouse-store-components-4-x-searchIcon){
+        color: #fff !important
+    }
+
+    :global(.render-container.render-route-store-home) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.vtex-input-prefix__group)::after {
+        background-color: #fff !important
+    }
+
+    :global(.render-container.render-route-store-home) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+        font-size: 20px !important;
+        color: #fff !important
+    }
+
+    :global(.render-container.render-route-store-home) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+        font-size: 17px !important;
+        color: #fff !important
+    }
+
+    /*  */
+    :global(.render-container.render-route-store-home) :global(.vtex-store-components-3-x-wrapper--main-banner-home) {
+        width: 100% !important;
+        max-width: 100% !important
+    }
+
+    :global(.render-container.render-route-store-home) :global(.vtex-store-components-3-x-container--main-banner-home) h1 {
+        margin-top: 124px
+    }
+
+    :global(.render-container.render-route-store-home) :global(.vtex-store-components-3-x-headingLevel1--main-banner-home),
+    :global(.render-container.render-route-store-home) :global(.vtex-store-components-3-x-headingLevel2--main-banner-home) {
+        width: 100% !important;
+        /* font-size: clamp(0.5rem, 17vw, 5rem) !important; - tamanho ideal mas quebra visual na maioria dos casos - pode ser ajustado futuramente via mobile breakpoints */
+        font-size: clamp(0.5rem, 15vw, 5rem) !important;
+        line-height: 1.1 !important;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+        text-align: center;
+        transform-origin: left center
+    }
+
+    :global(.render-container.render-route-store-home) :global(.vtex-store-components-3-x-infoCardTextContainer--main-banner-home) {
+        margin-bottom: unset !important;
+        margin-top: unset !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100dvh;
+        display: flex;
+        justify-content: center
+        /* text-align: center; */
+    }
+    
+}
+
+/* Ajuster de breakpoint para algumas telas com altura específica - ex. iPhone 11 Pro Max */
+@media screen and (min-width: 400px) and (max-height: 820px) {
+    
+    :global(.render-container.render-route-store-home) :global(.vtex-store-components-3-x-container--main-banner-home) h1 {
+        margin-top: 180px
+    }
+    
+}
