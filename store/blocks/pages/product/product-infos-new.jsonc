@@ -25,24 +25,27 @@
             "container#product-description-spacing-default",
             "container#product-description-video",
             
-            // Informacoes Adicionais
+            // Informacoes Adicionais/Especificacoes
             "container#product-description-spacing-default",
             "container#product-description-additional-infos",
+
+            // Compre Junto
+            // IN DEV
+            "container#product-description-buy-together",
+            // IN DEV
+            //
             
-            // Informacoes Adicionais
+            // Texto Informacoes Importantes
             "container#product-description-spacing-default",
             "container#product-description-important-text",
 
             // Texto da Marca
             "container#product-description-brand-text",
-
-            // Compre Junto - em Desenvolvimento
-            // "container#product-description-buy-together",
-            //
-
-            // A principio ficara melhor por ultimo - mas ao fim do projeto podera mudar
-            // TESTAR SE VAI FALTAR O CONTAINER DE ESPACAMENTO AQUI
+            
+            // Descricao Customizada - Para produtos Elements a principio
             "container#product-description-custom",
+
+            // FAQ
             "container#product-faq"
         ],
         "props": {

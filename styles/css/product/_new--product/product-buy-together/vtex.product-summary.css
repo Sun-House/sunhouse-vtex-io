@@ -1,0 +1,41 @@
+/* A principio TODO o Css desse componente vira nativamente via App React
+   Alguns ajustes poderao ser feitos aqui via Store Theme sim, porem, a ideia
+   é ja vir pronto para uso nativo via App React */
+
+/* .container:not(.container--buy-together) {
+    max-width: 307px !important;
+}
+
+.container--buy-together .nameContainer {
+    margin-top: 6px;
+    margin: 0;
+    padding: 0;
+}
+
+.container--buy-together .imageNormal {
+    max-width: 293px !important;
+}
+
+.SKUSelectorContainer--buy-together-sku-selector {
+    max-width: 200px;
+}
+
+.containerNormal--buy-together :global(.vtex-wish-list-1-x-wishlistIconContainer) {
+    display: none;
+}
+
+.containerNormal--buy-together :global(.vtex-stack-layout-0-x-stackContainer--shelf-product-image) {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 638px) {
+
+    .container--buy-together .nameContainer {
+        justify-content: center;
+    }
+
+    .container--buy-together .nameContainer .productNameContainer {
+        text-align: center;
+    }
+
+} */

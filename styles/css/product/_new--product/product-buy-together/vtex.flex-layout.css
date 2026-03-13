@@ -1,5 +1,25 @@
+/* A principio TODO o Css desse componente vira nativamente via App React
+   Alguns ajustes poderao ser feitos aqui via Store Theme sim, porem, a ideia
+   é ja vir pronto para uso nativo via App React */
+
 /* .vtex-flex-layout-0-x-flexRowContent--buyTogetherContainer { */
-.flexRowContent--buyTogetherContainer {
+/* .flexRowContent--buyTogetherContainer {
     margin: 0 auto;
     justify-content: center
+} */
+
+/* .flexCol--buy-together-info {
+    border-radius: 5px;
+    align-items: center;
+    width: 292px !important;
+    height: 292px;
+    background-color: #fdb3c6
 }
+
+@media screen and (max-width:638px) {
+    
+    .flexCol--buy-together-info {
+        margin-top: 20px
+    }
+
+} */

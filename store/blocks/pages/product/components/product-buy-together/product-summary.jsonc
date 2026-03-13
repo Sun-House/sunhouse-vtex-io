@@ -1,24 +1,24 @@
 {
     "product-summary.shelf#buy-together-current": {
         "children": [
-            "product-summary-image#buy-together"
-            // "product-summary-name" - No modelo atual preciso ajustar o nome para flutuar assim que tiver o hover, por hora, deixar sem
+            "product-summary-image#buy-together",
+            "product-summary-name" // No modelo atual preciso ajustar o nome para flutuar assim que tiver o hover, por hora, deixar sem
             // Precisa tambem colocar alguma informação pertinente, preço, desconto, enfim. Mas tudo isso no mouse over, dentro do conteiner da imagem do produto
         ],
         "props": {
-            "blockClass": "buy-together"
+            "blockClass": ["buy-together", "buy-together-current"]
         }
     },
   
-    "product-summary.shelf#buy-together": {
+    "product-summary.shelf#buy-together-suggested": {
         "children": [
             // "stack-layout#shelf-product-image" - Esse é o modelo padrao do Refresh para a shelf - evitar usar, usar a do Buy Together
-            "product-summary-image#buy-together"
-            // "product-summary-name" - No modelo atual preciso ajustar o nome para flutuar assim que tiver o hover, por hora, deixar sem
+            "product-summary-image#buy-together",
+            "product-summary-name" // No modelo atual preciso ajustar o nome para flutuar assim que tiver o hover, por hora, deixar sem
             // Precisa tambem colocar alguma informação pertinente, preço, desconto, enfim. Mas tudo isso no mouse over, dentro do conteiner da imagem do produto
         ],
         "props": {
-            "blockClass": "buy-together"
+            "blockClass": ["buy-together", "buy-together-suggested"]
         }
     },
 

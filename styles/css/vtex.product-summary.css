@@ -2,9 +2,10 @@
     border-radius: 0;
 }
 
+/* Movido para o arquivo product/new--product/product-buy-together/vtex.product-summary.css
 .container:not(.container--buy-together) {
     max-width: 307px !important;
-}
+} */
 
 .container--main-wishlist {
     margin: 0 auto !important;
@@ -120,6 +121,7 @@
     height: 74px;
 }
 
+/* Movido para o arquivo product/new--product/product-buy-together/vtex.product-summary.css
 .container--buy-together .nameContainer {
     margin-top: 6px;
     margin: 0;
@@ -140,7 +142,7 @@
 
 .containerNormal--buy-together :global(.vtex-stack-layout-0-x-stackContainer--shelf-product-image) {
     margin-bottom: 5px;
-}
+} */
 
 @media screen and (max-width: 1024px) {
     .element--main-shelf {
@@ -148,6 +150,7 @@
     }
 }
 
+/* Movido para o arquivo product/new--product/product-buy-together/vtex.product-summary.css
 @media screen and (max-width: 638px) {
     .container--buy-together .nameContainer {
         justify-content: center;
@@ -155,4 +158,4 @@
     .container--buy-together .nameContainer .productNameContainer {
         text-align: center;
     }
-}
+} */

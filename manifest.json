@@ -100,7 +100,8 @@
     "sunhouse.ra-trustvox": "0.x",
     "sunhouse.enhanced-sku-selector": "1.x",
     "sunhouse.product-images-custom": "1.x",
-    "sunhouse.shelf-enhanced-sku-selector": "1.x"
+    "sunhouse.shelf-enhanced-sku-selector": "1.x",
+    "sunhouse.buy-together-enhanced": "0.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",

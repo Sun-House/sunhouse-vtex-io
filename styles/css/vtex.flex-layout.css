@@ -706,13 +706,14 @@
     margin-bottom: 20px
 } */
 
+/* Movido para o arquivo product/new--product/product-buy-together/vtex.flex-layout.css
 .flexCol--buy-together-info {
     border-radius: 5px;
     align-items: center;
     width: 292px !important;
     height: 292px;
     background-color: #fdb3c6
-}
+} */
 
 .flexCol--measurement-guide-content {
     max-width: 487px;
@@ -758,9 +759,10 @@
     justify-content: flex-start
 } */
 
+/* Nao foi movido - nao esta sendo usado - mantido aqui para referencia/backup
 .flexRowContent--buy-together-sku-selector {
     display: flex
-}
+} */
 
 .flexRow--search-result :global(.vtex-store-components-3-x-container) {
     padding: 0
@@ -1230,9 +1232,10 @@
         padding: 0
     }
 
+    /* Movido para o arquivo product/new--product/product-buy-together/vtex.flex-layout.css
     .flexCol--buy-together-info {
         margin-top: 20px
-    }
+    } */
 
     .flexRow--not-found-container :global(.vtex-store-components-3-x-container) {
         padding: 0

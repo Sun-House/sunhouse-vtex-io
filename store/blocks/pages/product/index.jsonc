@@ -3,8 +3,9 @@
     "children": [      
       // Futuramente englobar ele com outros componente - ex. Imagem de Destaque do Produto - para nao ter que fazer uma configuracao
       // para desktop e outra para mobile - igual a estrutura da descricao do produto "flex-layout.row#product-infos-wrapper"
-      // "container#youtube-shorts",
+      "container#youtube-shorts",
       //
+      
       "responsive-layout.desktop#product-main",
       "responsive-layout.mobile#product-main",
       "flex-layout.row#product-infos-wrapper",

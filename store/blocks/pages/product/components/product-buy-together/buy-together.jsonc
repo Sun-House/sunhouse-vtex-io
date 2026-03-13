@@ -2,98 +2,98 @@
   "container#product-description-buy-together": {
     "title": "",
     "children": [
-      // "buy-together"
+      "buy-together"
     ],
     "props": {
       "blockClass": "product-description-buy-together"
     }
-  }
+  },
 
-  // "buy-together": {
-  //   "children": [
-  //     "flex-layout.col#buyTogetherContent"
-  //   ]
-  // },
-  // "flex-layout.col#buyTogetherContent": {
-  //   "children": [
-  //     "flex-layout.row#buyTogetherContainer"
-  //   ]
-  // },
-  // "flex-layout.row#buyTogetherContainer": {
-  //   "children": [
-  //     "buy-together-current-product",
-  //     "flex-layout.col#icon-plus",
-  //     "buy-together-product-list",
-  //     "flex-layout.col#icon-equals",
-  //     "flex-layout.col#buyTogetherInformation"
-  //   ],
-  //   "props": {
-  //     "colSizing": "auto",
-  //     "preventVerticalStretch": true,
-  //     "blockClass": "buyTogetherContainer"
-  //   }
-  // },
+  "buy-together": {
+    "children": [
+      "flex-layout.col#buyTogetherContent"
+    ]
+  },
+  "flex-layout.col#buyTogetherContent": {
+    "children": [
+      "flex-layout.row#buyTogetherContainer"
+    ]
+  },
+  "flex-layout.row#buyTogetherContainer": {
+    "children": [
+      "buy-together-current-product",
+      // "flex-layout.col#icon-plus",
+      "buy-together-product-list",
+      // "flex-layout.col#icon-equals",
+      "flex-layout.col#buyTogetherInformation"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "preventVerticalStretch": true,
+      "blockClass": "buyTogetherContainer"
+    }
+  },
 
-  // "flex-layout.col#icon-plus": {
-  //   "children": [
-  //     "icon-plus"
-  //   ],
-  //   "props": {
-  //     "verticalAlign": "middle",
-  //     "horizontalAlign": "center"
-  //   }
-  // },
+  "flex-layout.col#icon-plus": {
+    "children": [
+      "icon-plus"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    }
+  },
 
-  // // Descontinuado - vou testar uma questao visual ainda antes de descontinuar
-  // "flex-layout.col#icon-equals": {
-  //   "children": [
-  //     "icon-equals"
-  //   ],
-  //   "props": {
-  //     "verticalAlign": "middle",
-  //     "horizontalAlign": "center"
-  //   }
-  // },
-  // "icon-equals": {
-  //   "props": {
-  //     "size": 38,
-  //     "blockClass": "icon-equals"
-  //   }
-  // },
-  // //
+  // Descontinuado - vou testar uma questao visual ainda antes de descontinuar
+  "flex-layout.col#icon-equals": {
+    "children": [
+      "icon-equals"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    }
+  },
+  "icon-equals": {
+    "props": {
+      "size": 38,
+      "blockClass": "icon-equals"
+    }
+  },
+  //
 
-  // "buy-together-current-product": {
-  //   "title": "Produto Atual",
-  //   "blocks": ["product-summary.shelf#buy-together-current"]
-  // },
+  "buy-together-current-product": {
+    "title": "Produto Atual",
+    "blocks": ["product-summary.shelf#buy-together-current"]
+  },
   
-  // // PRECISA AJUSTAR O NOME DESSE BLOCO - NAO É LISTA DE PRODUTOS MAIS
-  // "buy-together-product-list": {
-  //   "title": "Produto Sugerido",
-  //   "blocks": ["product-summary.shelf#buy-together"],
-  //   "props": {
-  //     "swiperProps": {
-  //       "spaceBetween": 50
-  //     }
-  //   }
-  // },
+  "buy-together-product-list": {
+    "title": "Produto(s) Sugerido(s)",
+    "blocks": ["product-summary.shelf#buy-together-suggested"],
+    "props": {
+      "swiperProps": {
+        "spaceBetween": 50
+      }
+    }
+  },
 
-  // "flex-layout.col#buyTogetherInformation": {
-  //   "children": [
-  //     "buy-together-message",
-  //     "buy-together-total",
-  //     "buy-together-buy-button"
-  //   ],
-  //   "props": {
-  //     "preventVerticalStretch": true,
-  //     "verticalAlign": "middle",
-  //     "blockClass": "buy-together-info"
-  //   }
-  // },
+  "flex-layout.col#buyTogetherInformation": {
+    "children": [
+      "buy-together-message",
+      "buy-together-total",
+      "buy-together-buy-button"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "blockClass": "buy-together-info"
+    }
+  },
 
-  // "buy-together-buy-button": {
-  //   "props": {
-  //     "BuyButton": "vtex.add-to-cart-button:add-to-cart-button#product-page"
-  //   }
-  // }
+  "buy-together-buy-button": {
+    "title": "Botão - Comprar Junto",
+    "props": {
+      "BuyButton": "vtex.add-to-cart-button:add-to-cart-button#product-page"
+    }
+  }
 }
