@@ -1,7 +1,7 @@
 // Fn - Highlight Bar Checkout
 
 // Highlight Bar Checkout component
-const CUPOM_CODE = 'SUN300';
+const CUPOM_CODE = 'CONSUMIDOR500';
 
 // 1. Defina o bloco HTML atualizado com o botão "Usar cupom"
 const htmlBlock = `
@@ -11,7 +11,7 @@ const htmlBlock = `
             <div id="coupon-info-text-container">
                 <div>
                     <p>
-                        <span class="coupon-highlight_bold-text">R$ 300 OFF</span> acima de R$ 2.000 com o cupom 
+                        <span class="coupon-highlight_bold-text">R$ 500 OFF</span> acima de R$ 3.000 com o cupom 
                         <span class="coupon-highlight_bold-text" id="coupon-code-display">${CUPOM_CODE}</span> 
                         — Por tempo limitado <button id="apply-coupon-button">Usar cupom <i class="bi bi-gift-fill"></i></button>
                     </p>
