@@ -573,7 +573,9 @@
     }
   },
   "flex-layout.row#buy-together": {
-    "children": ["buy-together"],
+    // "children": [
+    //   "buy-together"
+    // ],
     "props": {
       "blockClass": "buy-together"
     }
