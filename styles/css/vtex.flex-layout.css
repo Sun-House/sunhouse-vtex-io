@@ -646,7 +646,7 @@
     align-items: flex-start
 }
 
-.flexRowContent--buyTogetherContainer,
+/* .flexRowContent--buyTogetherContainer, - Migrado para o arquivo product/new--product/product-buy-together/vtex.flex-layout.css */
 .flexRowContent--installments-title,
 .flexRowContent--measurement-guide-header,
 .flexRowContent--measurement-guide-text,

@@ -6,7 +6,7 @@
 			"rich-text#unavailable-cta_line-1",
 			"rich-text#unavailable-cta_line-2",
             // "link#unavailable-cta-wpp"
-			"whatsapp-dynamic-button#wpp-button-unavailable"
+			"whatsapp-lead-capture-btn#wpp-button-unavailable"
 		],
 		"props": {
 			"blockClass": "unavailable-cta_container"
@@ -50,7 +50,7 @@
 	// Todo esse bloco sera desabilitado e excluido 
 
 	// Custom WhatsApp Button App
-	"whatsapp-dynamic-button#wpp-button-unavailable": {
+	"whatsapp-lead-capture-btn#wpp-button-unavailable": {
 		"title": "Botão WhatsApp - Esgotado",
 		"props": {
 			"phone": "5511994877664", // Ja vem com o numero do site como padrao, mas pode ser alterado via site editor e aqui

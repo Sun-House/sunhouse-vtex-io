@@ -67,11 +67,6 @@
         }
     },
     // Installments Block - PDP
-
-
-	
-	
-	
 	
 	// Bloco de Preços 2 - Versao destaque para o preço em 10x
 	"container#product-high-price": {
@@ -79,6 +74,7 @@
 		"children": [
 			"product-list-price#product-high-price", // Preço DE
 			// Criar um overlay para o componente abaixo para abrir drawner à direita com lista de parcelas
+			// ,"product-installments-list" -> Precisa ser configurado para aparecer em modal ou drawer lateral
 			// Esse DEV poderá nao sair no lançamento do Refresh, mas ficará em backlog prioritario
 			"flex-layout.col#installments-content-high-price", // Preço POR + parcelas
 			"discount-price#product-high-price"
@@ -87,7 +83,6 @@
 			"blockClass": ["shelf-product-listPrice", "product-high-price"]
 		}
 	},
-
 
 	// PREÇO DE
 	"product-list-price#product-high-price": {
@@ -111,7 +106,7 @@
     "flex-layout.col#installments-content-high-price": {
         "children": [
             "product-installments#page-product-high-price"
-        ],
+		],
         "props": {
             "blockClass": "installments-content"
         }

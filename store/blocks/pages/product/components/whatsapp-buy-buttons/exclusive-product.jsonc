@@ -4,7 +4,7 @@
 		"children": [
             "rich-text#exclusive-cta_line-1",
             "rich-text#exclusive-cta_line-2",
-			"whatsapp-dynamic-button#wpp-button-exclusive"
+			"whatsapp-lead-capture-btn#wpp-button-exclusive"
 		],
 		"props": {
 			"blockClass": "exclusive-cta_container"
@@ -26,7 +26,7 @@
 		}
 	},
 
-	"whatsapp-dynamic-button#wpp-button-exclusive": {
+	"whatsapp-lead-capture-btn#wpp-button-exclusive": {
 		"title": "Botão WhatsApp - Exclusivo",
 		"props": {
 			"phone": "5511994877664",

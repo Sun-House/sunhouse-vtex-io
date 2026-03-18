@@ -1,0 +1,20 @@
+{
+    "container#bt-float-product-info": {
+        "title": "Informações do produto flutuantes",
+        "children": [
+            // "product-summary-name",
+            "product-summary-name#bt-product-name",
+            "container#shelf-price_parcelado"
+            // Precisa tambem colocar alguma informação pertinente, preço, desconto, enfim. Mas tudo isso no mouse over, dentro do conteiner da imagem do produto
+        ],
+        "props": {
+            "blockClass": "bt-float-product-info"
+        }
+    },
+
+    "product-summary-name#bt-product-name": {
+        "props": {
+            "blockClass": ["new-shelf", "bt-product-name"]
+        }
+    }
+}

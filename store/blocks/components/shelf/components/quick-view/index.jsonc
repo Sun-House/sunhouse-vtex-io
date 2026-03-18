@@ -88,7 +88,7 @@
       "container#above-buy",
       "link.product#product-page",
       // "link#unavailable-cta-wpp"
-      "whatsapp-dynamic-button#wpp-button-normal"
+      "whatsapp-lead-capture-btn#wpp-button-normal"
     ]
   },
 

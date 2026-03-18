@@ -96,11 +96,11 @@
     "sunhouse.list-grid": "0.x",
     "sunhouse.product-dimensions": "0.x",
     "sunhouse.slider-layout": "0.x",
-    "sunhouse.whatsapp-dynamic-btn": "1.x",
     "sunhouse.ra-trustvox": "0.x",
     "sunhouse.enhanced-sku-selector": "1.x",
     "sunhouse.product-images-custom": "1.x",
     "sunhouse.shelf-enhanced-sku-selector": "1.x",
+    "sunhouse.whatsapp-lead-capture-pdp": "2.x",
     "sunhouse.buy-together-enhanced": "0.x"
   },
   "peerDependencies": {

@@ -23,3 +23,27 @@
     }
 
 } */
+
+/* MIGRAR APLICACAO DO ESTILO PARA APP REACT SE POSSIVEL */
+.flexRowContent--buyTogetherContainer {
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+/* .vtex-flex-layout-0-x-flexCol--bt-plus-icon { */
+.flexCol--bt-plus-icon {
+    position: relative;
+    z-index: 2;
+    width: 0
+}
+
+/* .vtex-flex-layout-0-x-flexCol--bt-plus-icon svg { */
+.flexCol--bt-plus-icon :global(.vtex-store-icons-0-x-plusIcon) {
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px #ccc
+}

@@ -1,0 +1,31 @@
+/* Configurado aqui via seletor global para centralizar o estilo do efeito de mouseover */
+
+:global(.vtex-product-summary-2-x-element--buy-together) {
+    position: relative
+}
+
+:global(.sunhouse-container-1-x-container--bt-float-product-info) {
+    position: absolute;
+    padding: 0 14px;
+    /* bottom: -100px; */
+    
+    /* DEBUG */
+    bottom: 0;
+    /* DEBUG */
+
+    left: 0;
+    width: 100%;
+    height: 100px; /* altura da sombra */
+    background: linear-gradient(
+      to top,
+      rgb(213 213 213) 0%,
+      transparent 100%
+    );
+    pointer-events: none; /* não bloqueia cliques */
+    transition: .4s ease-out
+}
+
+/* DEBUG - remover comentario apos finalizar o layout BT */
+/* :global(.vtex-product-summary-2-x-element--buy-together):hover :global(.sunhouse-container-1-x-container--bt-float-product-info) {
+    bottom: 0
+} */

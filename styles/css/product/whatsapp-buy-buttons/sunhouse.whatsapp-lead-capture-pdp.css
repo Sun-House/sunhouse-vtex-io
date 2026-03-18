@@ -28,7 +28,8 @@
 /* Custom Css for Corporate Products */
 /* .cta-button { */
 /* .sunhouse-whatsapp-dynamic-btn-1-x-whatsappDynamicButtonLink--wpp-button-corporate */
-.whatsappDynamicButtonLink--wpp-button-corporate {
+/* .sunhouse.whatsapp-lead-capture-pdp-1-x-whatsappDynamicButtonLink--wpp-button-corporate */
+.sunhouse.whatsapp-lead-capture-pdp-0-x-whatsappDynamicButtonLink--wpp-button-corporate {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +47,9 @@
 }
 
 /* .cta-button:hover { */
-.whatsappDynamicButtonLink--wpp-button-corporate:hover {
+/* .sunhouse-whatsapp-dynamic-btn-1-x-whatsappDynamicButtonLink--wpp-button-corporate:hover */
+/* .sunhouse.whatsapp-lead-capture-pdp-1-x-whatsappDynamicButtonLink--wpp-button-corporate:hover */
+.sunhouse.whatsapp-lead-capture-pdp-0-x-whatsappDynamicButtonLink--wpp-button-corporate:hover {
     background-color: var(--champagne);
     color: var(--midnight-blue);
     box-shadow: 0 0 15px rgba(212, 175, 55, 0.4)

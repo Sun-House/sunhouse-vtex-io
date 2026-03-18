@@ -6,7 +6,7 @@
             "rich-text#corporate-cta_detail-line", // Linha do detalhe dourado
             "rich-text#corporate-cta_title-line", // Linha do titulo
             "rich-text#corporate-cta_text-line", // Linha do texto
-			"whatsapp-dynamic-button#wpp-button-corporate"
+			"whatsapp-lead-capture-btn#wpp-button-corporate"
 		],
 		"props": {
 			"blockClass": "corporate-cta_container"
@@ -42,7 +42,7 @@
 		}
 	},
 
-	"whatsapp-dynamic-button#wpp-button-corporate": {
+	"whatsapp-lead-capture-btn#wpp-button-corporate": {
 		"title": "Botão WhatsApp - Corporativo",
 		"props": {
 			"phone": "5511988699713",

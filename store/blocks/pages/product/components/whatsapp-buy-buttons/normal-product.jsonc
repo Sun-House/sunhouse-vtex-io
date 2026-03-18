@@ -3,7 +3,7 @@
 		"title": "",
 		"children": [
 			// "link#unavailable-cta-wpp",
-			"whatsapp-dynamic-button#wpp-button-normal"
+			"whatsapp-lead-capture-btn#wpp-button-normal"
 		],
 		"props": {
 			"blockClass": "whatsapp-button_normal-product"
@@ -11,7 +11,7 @@
 	},
 
 	// Custom WhatsApp Button App
-	"whatsapp-dynamic-button#wpp-button-normal": {
+	"whatsapp-lead-capture-btn#wpp-button-normal": {
 		"title": "Botão WhatsApp",
 		"props": {
 			"phone": "5511994877664", // Ja vem com o numero do site como padrao, mas pode ser alterado via site editor e aqui
