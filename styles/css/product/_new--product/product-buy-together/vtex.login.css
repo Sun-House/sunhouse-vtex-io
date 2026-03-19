@@ -1,31 +1,56 @@
 /* Configurado aqui via seletor global para centralizar o estilo do efeito de mouseover */
 
+/* Efeito de hover com gradiente - bloco de nome e preço de cada produto */
+/* START */
 :global(.vtex-product-summary-2-x-element--buy-together) {
     position: relative
 }
 
 :global(.sunhouse-container-1-x-container--bt-float-product-info) {
     position: absolute;
-    padding: 0 14px;
-    /* bottom: -100px; */
-    
-    /* DEBUG */
-    bottom: 0;
-    /* DEBUG */
-
+    /* padding: 0 14px; */
+    padding: 8px 24px;
+    bottom: -100px;
     left: 0;
     width: 100%;
     height: 100px; /* altura da sombra */
+    
+    /* Efeitos de gradiente START */
+    /* Reto */
     background: linear-gradient(
       to top,
       rgb(213 213 213) 0%,
       transparent 100%
     );
+    
+    /* Elipse */
+    /* background: radial-gradient(
+      ellipse 80% 60px at 50% 100%,
+      rgb(213 213 213) 0%,
+      transparent 100%
+    ); */
+    /* Efeitos de gradiente END */
+
     pointer-events: none; /* não bloqueia cliques */
     transition: .4s ease-out
 }
 
-/* DEBUG - remover comentario apos finalizar o layout BT */
-/* :global(.vtex-product-summary-2-x-element--buy-together):hover :global(.sunhouse-container-1-x-container--bt-float-product-info) {
+:global(.vtex-product-summary-2-x-element--buy-together):hover :global(.sunhouse-container-1-x-container--bt-float-product-info) {
     bottom: 0
-} */
+}
+/* END */
+
+/* :global(.vtex-flex-layout-0-x-flexRowContent--buyTogetherContainer) :global(div) { */
+:global(.vtex-flex-layout-0-x-flexRowContent--buyTogetherContainer) :global(div.items-stretch) {
+    flex: 2
+}
+
+/* :global(.vtex-flex-layout-0-x-flexRowContent--buyTogetherContainer) :global(div):nth-child(4) { */
+:global(.vtex-flex-layout-0-x-flexRowContent--buyTogetherContainer) :global(div.items-stretch):nth-child(4) {
+    flex: 1.5;
+    margin: 24px
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buyTogetherContainer) :global(div):has(:global(.vtex-flex-layout-0-x-flexCol--bt-plus-icon)) {
+    flex: 0 !important
+}

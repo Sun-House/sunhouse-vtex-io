@@ -27,20 +27,16 @@
         "title": "Imagem do produto Compre junto",
         "props": {
             "width": {
-                "desktop": 600
-            //     "mobile": 1000
+                // "desktop": 420
+                "desktop": 452
+                // "mobile": 1000
             },
             "height": {
-                "desktop": 800
-            //     "mobile": 1000
+                // "desktop": 560
+                "desktop": 604
+                // "mobile": 1000
             },
-
-            // "aspectRatio": "3:4",
-            "aspectRatio": {
-                "desktop": "4:3"
-                // "mobile": "1:1"
-            },
-            "showBadge": false,
+            "showBadge": false, // Oculta toda e qualquer flag configurada atraves do sistema de badges - ex.: SALE
             "blockClass": ["main-shelf", "buy-together"]
         }
     }

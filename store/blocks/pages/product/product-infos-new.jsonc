@@ -11,6 +11,7 @@
 
     "flex-layout.col#product-description-wrapper": {
         "children": [
+            // Blocos de Descrição do Produto - Base e Texto Simples
             "container#product-description-spacing-default",
             "container#product-description-pure-text",
             "container#product-description-simple",
@@ -29,18 +30,16 @@
             "container#product-description-spacing-default",
             "container#product-description-additional-infos",
 
-            // Compre Junto
-            // IN DEV
-            "container#product-description-spacing-default",
-            "container#product-description-buy-together",
-            // IN DEV
-            //
-            
             // Texto Informacoes Importantes
             "container#product-description-spacing-default",
             "container#product-description-important-text",
 
+            // Compre Junto
+            // "container#product-description-spacing-default",
+            "container#product-description-buy-together",
+
             // Texto da Marca
+            // "container#product-description-spacing-default",
             "container#product-description-brand-text",
             
             // Descricao Customizada - Para produtos Elements a principio

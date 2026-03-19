@@ -39,3 +39,26 @@
     }
 
 } */
+
+/* .vtex-product-summary-2-x-container--buy-together { */
+.container--buy-together {
+    max-width: unset !important
+}
+
+/* Wrapper da imagem */
+/* .vtex-product-summary-2-x-imageContainer--buy-together { */
+.imageContainer--buy-together {
+    display: flex
+}
+
+/* .vtex-product-summary-2-x-image--buy-together { */
+.image--buy-together {
+    transform-origin: center center;
+    transition: transform .4s ease-out
+}
+
+/* .vtex-product-summary-2-x-image--buy-together:hover { */
+.image--buy-together:hover {
+    transform: scale(1.08);
+    filter: brightness(98%)
+}

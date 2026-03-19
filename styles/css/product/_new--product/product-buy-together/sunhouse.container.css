@@ -1,10 +1,11 @@
-/* Esse Css mantem - ele configura visualmente apenas o container de Compre Junto
-   De qualquer forma, desabilitar ele temporariamente para testar o layout nativo do app */
-
 .container--product-description-buy-together {
+    position: relative;
+    z-index: 1;
     width: 100vw;
-    height: calc(100vh - 108px);
+    height: 791px;
+    margin-top: 48px;
     margin-left: 50%;
+    margin-bottom: -2px;
     transform: translateX(-50vw);
-    background-color: #ededed; /* Ou: #f6f6f6 */
+    background-color: #f6f6f6
 }

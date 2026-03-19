@@ -1,1 +1,54 @@
 /* Arquivo correto para estilizar o Buy Together Enhanced - Novo App Custom criado por Alex */
+
+/* .sunhouse-buy-together-enhanced-0-x-buyTogetherContainer { */
+.buyTogetherContainer {
+    padding-bottom: 72px
+}
+
+/* .sunhouse-buy-together-enhanced-0-x-currentProduct .vtex-product-summary-2-x-image--buy-together { */
+.currentProduct :global(.vtex-product-summary-2-x-image--buy-together),
+.currentProduct :global(.vtex-product-summary-2-x-image--buy-together):hover {
+    border-radius: 4px 0 0 4px
+}
+
+/* .sunhouse-buy-together-enhanced-0-x-productList .vtex-product-summary-2-x-image--buy-together { */
+.productList :global(.vtex-product-summary-2-x-image--buy-together),
+.productList :global(.vtex-product-summary-2-x-image--buy-together):hover {
+    border-radius: 0 4px 4px 0
+}
+
+/* .sunhouse-buy-together-enhanced-0-x-currentProduct .sunhouse-container-1-x-container--bt-float-product-info { */
+.currentProduct :global(.vtex-container-container--bt-float-product-info),
+.currentProduct :global(.vtex-container-container--bt-float-product-info):hover {
+    border-radius: 0 0 0 4px
+}
+
+/* .sunhouse-buy-together-enhanced-0-x-productList .sunhouse-container-1-x-container--bt-float-product-info { */
+.productList :global(.vtex-container-container--bt-float-product-info),
+.productList :global(.vtex-container-container--bt-float-product-info):hover {
+    border-radius: 0 0 4px 0
+}
+
+/* Botão de Compra */
+/* .sunhouse-buy-together-enhanced-0-x-buyButton .vtex-button { */
+.buyButton :global(.vtex-button) {
+    background: #161413;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+    height: 52px;
+    transition: all .2s
+}
+
+/* .sunhouse-buy-together-enhanced-0-x-buyButton .vtex-button:hover { */
+.buyButton :global(.vtex-button):hover {
+    background-color: #161413cb !important
+}
+
+/* .sunhouse-buy-together-enhanced-0-x-buyButton .vtex-button .vtex-button__label::after { */
+.buyButton :global(.vtex-button) :global(.vtex-button__label)::after {
+    content: "\F134";
+    font-family: "Bootstrap-Icons";
+    font-size: 24px;
+    margin-left: 12px
+}

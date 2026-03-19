@@ -1,7 +1,8 @@
 {
   "container#product-description-buy-together": {
-    "title": "",
+    "title": "Compre Junto",
     "children": [
+      "rich-text#buy-together-title",
       "buy-together"
     ],
     "props": {
@@ -9,7 +10,16 @@
     }
   },
 
+  "rich-text#buy-together-title": {
+    "title": "Titulo - Compre Junto",
+    "props": {
+      "text": "## Leve mais por menos",
+      "blockClass": ["common-title", "buy-together-title"]
+    }
+  },
+
   "buy-together": {
+    "title": "Configurações - Compre Junto",
     "children": [
       "flex-layout.col#buyTogetherContent"
     ]
@@ -25,7 +35,6 @@
       "buy-together-current-product",
       "flex-layout.col#icon-plus",
       "buy-together-product-list",
-      // "flex-layout.col#icon-equals", - Esse acredito que nao vamos usar mais
       "flex-layout.col#buyTogetherInformation"
     ],
     "props": {
@@ -43,27 +52,9 @@
     "props": {
       "verticalAlign": "middle",
       "horizontalAlign": "center",
-      "blockClass": "bt-plus-icon" // Para tentar estilizar o icone de + mesmo ele sendo herdado de outro componente do store theme
+      "blockClass": "bt-plus-icon"
     }
   },
-
-  // Descontinuado - vou testar uma questao visual ainda antes de descontinuar
-  "flex-layout.col#icon-equals": {
-    "children": [
-      "icon-equals"
-    ],
-    "props": {
-      "verticalAlign": "middle",
-      "horizontalAlign": "center"
-    }
-  },
-  "icon-equals": {
-    "props": {
-      "size": 38,
-      "blockClass": "icon-equals"
-    }
-  },
-  //
 
   "buy-together-current-product": {
     "title": "Produto Atual",
@@ -103,7 +94,7 @@
   "vtex.add-to-cart-button:add-to-cart-button#buy-together": {
     "props": {
       "onClickBehavior": "add-to-cart",
-      "text": "Levar os Dois",
+      // "text": "Levar os Dois",
       "customPixelEventId": "bt_add-to-cart_button", // Em testes
       "blockClass": ["add-to-cart_button", "bt_add-to-cart_button"]
     }
