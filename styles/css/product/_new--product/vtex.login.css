@@ -21,4 +21,10 @@
         background-color: unset !important;
     }
 
+    /* Fix para bloco Youtube Shorts
+       Mesmo quando oculto ele causa uma disrupcao no layout Mobile */
+    :global(.render-route-store-product .vtex-render__container-id-youtube-shorts) {
+        margin-top: 62px
+    }
+
 }
