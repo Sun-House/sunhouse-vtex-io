@@ -3,7 +3,10 @@
     "children": [      
       // Futuramente englobar ele com outros componente - ex. Imagem de Destaque do Produto - para nao ter que fazer uma configuracao
       // para desktop e outra para mobile - igual a estrutura da descricao do produto "flex-layout.row#product-infos-wrapper"
+      
+      // In DEV
       "container#youtube-shorts",
+      // In DEV
       //
       
       "responsive-layout.desktop#product-main",
@@ -17,16 +20,32 @@
     ]
   },
 
+
   // Iframe - Youtube Shorts
+  // **************************************************
   "container#youtube-shorts": {
     "title": "Embed - Shorts Youtube",
     "children": [
-      "iframe#youtube-shorts"
+      // "iframe#youtube-shorts"
+      "youtube-shorts-widget#product-page"
     ],
     "props": {
       "blockClass": "container-yt-shorts"
     }
   },
+
+  // NOVO APP YT WIDGET AQUI
+  "youtube-shorts-widget#product-page": {
+    "title": "Configurações - Youtube Shorts App",
+    "props": {
+      // "shortsUrl": "https://www.youtube.com/watch?v=8mb6YHMvncs",
+      "shortsUrl": "https://www.youtube.com/embed/8mb6YHMvncs", // ideal usar esse formato de link embed
+      "startOnLoad": true,
+      "muted": false,
+      "closable": true
+    }
+  },
+
   "iframe#youtube-shorts": {
     "title": "Link Embed",
     "props": {
@@ -36,6 +55,9 @@
       "blockClass": "yt-shorts-iframe"
     }
   },
+  // **************************************************
+  //
+
 
   "container#ra-trustvox": {
     "title": "Bloco: Avaliações Trustvox",

@@ -101,7 +101,8 @@
     "sunhouse.product-images-custom": "1.x",
     "sunhouse.shelf-enhanced-sku-selector": "1.x",
     "sunhouse.whatsapp-lead-capture-pdp": "2.x",
-    "sunhouse.buy-together-enhanced": "1.x"
+    "sunhouse.buy-together-enhanced": "1.x",
+    "sunhouse.youtube-shorts-widget": "0.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",
