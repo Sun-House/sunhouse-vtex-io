@@ -1,0 +1,9 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-container-1-x-container--product-description-buy-together { */
+    .container--product-description-buy-together {
+        height: unset;
+        padding-bottom: 124px
+    }
+    
+}

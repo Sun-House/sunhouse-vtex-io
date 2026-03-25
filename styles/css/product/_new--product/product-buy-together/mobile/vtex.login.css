@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024px) {
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--buyTogetherContainer) :global(div.items-stretch):nth-child(4) {
+        flex: none;
+        margin: 24px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0
+    }
+    
+}

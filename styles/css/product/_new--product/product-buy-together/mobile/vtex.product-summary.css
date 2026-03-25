@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+    
+    /* .vtex-product-summary-2-x-image--buy-together { */
+    .image--buy-together {
+        height: 100% !important
+    }
+            
+}

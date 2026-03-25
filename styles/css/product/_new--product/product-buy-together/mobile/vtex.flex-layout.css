@@ -1,0 +1,14 @@
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-flex-layout-0-x-flexRow--buyTogetherContainer { */
+    .flexRow--buyTogetherContainer {
+        padding: 15px
+    }
+
+    /* .vtex-flex-layout-0-x-flexRowContent--buyTogetherContainer { */
+    .flexRowContent--buyTogetherContainer {
+        display: flex;
+        flex-direction: row
+    }
+        
+}

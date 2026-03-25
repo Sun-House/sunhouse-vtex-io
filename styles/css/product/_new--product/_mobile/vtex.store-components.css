@@ -1,0 +1,13 @@
+@media screen and (max-width: 1024px) {
+
+    .productNameContainer,
+    .productBrandContainer--product-brand {
+        text-align: center
+    }
+
+    .productBrandContainer--product-brand {
+        margin-top: -10px;
+        margin-bottom: 24px
+    }
+
+}
