@@ -1,9 +1,22 @@
 @media screen and (max-width: 1024px) {
 
-    /* .sunhouse-container-1-x-container--product-description-buy-together { */
     .container--product-description-buy-together {
         height: unset;
         padding-bottom: 124px
     }
-    
+
+    /* .sunhouse-container-1-x-container--bt-float-product-info { */
+    .container--bt-float-product-info {
+        padding: 18px 12px
+    }
+
+    /* .sunhouse-container-1-x-container--bt-float-product-info .vtex-product-price-1-x-listPrice,
+    .sunhouse-container-1-x-container--bt-float-product-info .vtex-product-price-1-x-installments,
+    .sunhouse-container-1-x-container--bt-float-product-info .vtex-product-summary-2-x-productBrand--bt-product-name { */
+    .container--bt-float-product-info :global(.vtex-product-price-1-x-listPrice),
+    .container--bt-float-product-info :global(.vtex-product-price-1-x-installments),
+    .container--bt-float-product-info :global(.vtex-product-summary-2-x-productBrand--bt-product-name) {
+        font-size: 14px
+    }
+
 }
