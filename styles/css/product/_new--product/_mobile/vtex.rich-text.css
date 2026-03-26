@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024px) {
+
+    /* Marca Fixa */
+    /* .vtex-rich-text-0-x-container--product-brand-text-fixed { */
+    .container--product-brand-text-fixed {
+        display: flex;
+        justify-content: center;
+        margin-top: -10px;
+        margin-bottom: 24px
+    }
+    
+}

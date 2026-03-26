@@ -115,7 +115,13 @@
       "flex-layout.row#product-image-highlight",
       "container#wrapper__highlight-coupon-mobile",
       "condition-layout.product#product-title",
-      "vtex.store-components:product-brand#product-brand", // Precisa ficar logo abaixo do nome do produto
+
+      //
+      // "vtex.store-components:product-brand#product-brand",
+      "container#product-brand-dynamic",
+      "container#product-brand-fixed",
+      //
+
       "product-images-custom#product-images"
     ],
     "props": {
@@ -248,13 +254,18 @@
     }
   },
   "flex-layout.col#product-main-right": {
+    "title": "Informações Principais",
     "children": [
       // "flex-layout.row#breadcrumb-product",
       "container#product-top-infos",
 
       // Criar condicional para mostrar o nome do produto ou o nome do SKU
       "condition-layout.product#product-title",
-      "vtex.store-components:product-brand#product-brand", // Precisa ficar logo abaixo do nome do produto
+      
+      // "vtex.store-components:product-brand#product-brand", // Precisa ficar logo abaixo do nome do produto
+      "container#product-brand-dynamic",
+      "container#product-brand-fixed",
+      
       // "vtex.store-components:product-name",
       // "vtex.store-components:product-name#sku-name",
       //
@@ -268,6 +279,35 @@
       "width": "50%",
       "blockClass": "product-main-right",
       "preventVerticalStretch": true
+    }
+  },
+
+  // Toggle - Marca Dinâmica
+  "container#product-brand-dynamic": {
+    "title": "Marca Dinâmica",
+    "children": [
+      "vtex.store-components:product-brand#product-brand"
+    ],
+    "props": {
+      "blockClass": ["product-brand-text", "product-brand-dynamic"]
+    }
+  },
+
+  // Toggle - Marca Fixa
+  "container#product-brand-fixed": {
+    "title": "Marca Fixa",
+    "children": [
+      "rich-text#product-brand-fixed"
+    ],
+    "props": {
+      "blockClass": ["product-brand-text", "product-brand-fixed"]
+    }
+  },
+  "rich-text#product-brand-fixed": {
+    "title": "Texto - Marca Fixa",
+    "props": {
+      "text": "Sun House",
+      "blockClass": "product-brand-text-fixed"
     }
   },
   
@@ -300,7 +340,9 @@
 	},
 
   "flex-layout.row#breadcrumb-product": {
-    "children": ["breadcrumb#product-page"],
+    "children": [
+      "breadcrumb#product-page"
+    ],
     "props": {
       "blockClass": "breadcrumb-product"
     }
@@ -324,8 +366,8 @@
   },
   "flex-layout.row#product-code-brand": {
     "children": [
-      "product-identifier.product#product-reference",
-      // "product-identifier.product#sku-reference",
+      "product-identifier.product#product-reference", // Deveria vir o codigo do Produto, porem nada aparece visualmente (pode ter alguma regra de Css ocultando, validar posteriormente)
+      // "product-identifier.product#sku-reference", - Deveria vir o codigo do SKU, porem esta desabilitado
       "vtex.store-components:product-brand#product-brand"
     ],
     "props": {
@@ -341,6 +383,8 @@
       "displayMode": "text"
     }
   },
+
+  // Esta sendo utilizado? VALIDAR
   "product-identifier.product#product-reference": {
     "props": {
       "label": "custom",
@@ -348,6 +392,7 @@
       "idField": "productReference"
     }
   },
+  //
 
   "condition-layout.product#elf-checker": {
     "title": "Condicional - Status Produto",

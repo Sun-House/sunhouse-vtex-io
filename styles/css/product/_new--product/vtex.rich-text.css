@@ -22,3 +22,13 @@
     margin-right: 12px;
     color: #161413 /* Validar a cor correta Refresh */
 }
+
+/* Marca Fixa */
+/* .vtex-rich-text-0-x-paragraph--product-brand-text-fixed { */
+.paragraph--product-brand-text-fixed {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #161413
+}
