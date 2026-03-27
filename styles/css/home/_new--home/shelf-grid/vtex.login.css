@@ -1,0 +1,60 @@
+/* Novos ajustes - para deixar identico a ideia original do Refresh */
+
+/* .sunhouse-container-1-x-container--shelf-list
+.sunhouse-container-1-x-container--shelf-grid
+.vtex-container-container--shelf-list
+.vtex-container-container--shelf-grid */
+
+/* .sunhouse-container-1-x-container--shelf-grid .vtex-product-summary-2-x-nameContainer--new-shelf { */
+:global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-product-summary-2-x-nameContainer--new-shelf) {
+    max-width: 70%; /* 75 e 80 ficam bons tambem */
+}
+
+/* .sunhouse-container-1-x-container--shelf-grid .sunhouse-hover-container-0-x-hoverContent.sunhouse-hover-container-0-x-hoverContent--actions { */
+:global(.sunhouse-container-1-x-container--shelf-grid) :global(.sunhouse-hover-container-0-x-hoverContent.sunhouse-hover-container-0-x-hoverContent--actions) {
+    float: right
+}
+
+/* .sunhouse-container-1-x-container--shelf-grid .vtex-add-to-cart-button-0-x-buttonText--shelf-buy { */
+:global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-add-to-cart-button-0-x-buttonText--shelf-buy) {
+    font-size: 0
+}
+
+/* .sunhouse-container-1-x-container--shelf-grid .vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button { */
+:global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button) {
+    width: 52px
+}
+
+/* .sunhouse-container-1-x-container--shelf-grid .vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button:hover { */
+:global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button):hover {
+    background-color: #FFDA00
+}
+
+/* .sunhouse-container-1-x-container--shelf-grid .vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button:hover .vtex-button__label::after { */
+:global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button):hover :global(.vtex-button__label)::after {
+    color: #161413
+}
+
+/* .sunhouse-container-1-x-container--shelf-grid .vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button .vtex-button__label::after { */
+:global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button .vtex-button__label)::after {
+    font-size: 24px;
+    margin-left: 0
+}
+
+/* Corrige a funcionalidade de hover block de PLP padrao do Refresh */
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+    
+    :global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
+    :global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado) {
+        opacity: 1; /* Pode ser necessario aplicar !important */
+        visibility: visible /* Pode ser necessario aplicar !important */
+    }
+
+    /* .sunhouse-container-1-x-container--shelf-grid .vtex-flex-layout-0-x-flexCol--hover-block-wrapper .vtex-flex-layout-0-x-flexCol--shelf-buy-button { */
+    :global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper .vtex-flex-layout-0-x-flexCol--shelf-buy-button) {
+        opacity: 1; /* Pode ser necessario aplicar !important */
+        visibility: visible /* Pode ser necessario aplicar !important */
+    }
+    
+}

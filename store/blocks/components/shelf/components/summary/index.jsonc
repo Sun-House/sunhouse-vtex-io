@@ -31,6 +31,22 @@
 		}
 	},
 
+  //
+  // Shelf Grid Home - Padrao Refresh - EM TESTES
+  "product-summary.shelf#main-product-home-grid": {
+    "title": "Vitrine de Produtos - Home Shelf Grid",
+		"children": [
+			"stack-layout#new-shelf-product-image-home-grid",
+      // Versão MVP - Precisara ser melhorada posteriormente:
+      "flex-layout.row#shelf-enhanced-sku-selector",
+      "flex-layout.col#hover-block-wrapper"
+		],
+		"props": {
+			"blockClass": ["main-shelf-new", "shelf-grid-home"]
+		}
+	},
+  //
+
   "flex-layout.col#hover-block-wrapper": {
     "children": [
       "product-summary-name#new-shelf",
@@ -95,6 +111,46 @@
           "blockClass": "new_main-shelf"
       }
   },
+
+  //
+  // Bloco de foto shelf grid home - EM TESTES
+  "stack-layout#new-shelf-product-image-home-grid": {
+      "title": "Imagem do Produto - Home Shelf Grid",
+      "children": [
+          "container#image-shelf-grid-home",
+          "add-to-list-btn#main-shelf"
+      ],
+      "props": {
+          "blockClass": ["shelf-product-image", "shelf-new-product-image"]
+      }
+  },
+
+  "container#image-shelf-grid-home": {
+      "children": [
+          "product-summary-image#new-shelf-grid-home"
+      ],
+      "props": {
+          "blockClass": ["image-shelf", "bf_image-shelf"]
+      }
+  },
+  "product-summary-image#new-shelf-grid-home": {
+      "title": "Imagem do Produto - Home Shelf Grid",
+      "props": {
+          "aspectRatio": "1:1",
+          // "aspectRatio": "13:16", // Apliquei via css, mas validar se nao é melhor usar aqui direto e remover o css
+          // "width": 294,
+          // "height": 294,
+          // "width": 368, // Pode ser necessario ajustar isso para outras prateleiras - Esse é o ajuste ideal para a prateleira grid (maior imagem de prateleira do site)
+          // "height": 424, // Pode ser necessario ajustar isso para outras prateleiras - Esse é o ajuste ideal para a prateleira grid (maior imagem de prateleira do site)
+          "hoverImage": {
+              "criteria": "index",
+              "index": 1
+          },
+          "blockClass": ["new_main-shelf", "shelf-grid-home"]
+      }
+  },
+  //
+
 
   "product-summary-name#new-shelf": {
       "props": {

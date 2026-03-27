@@ -1,0 +1,87 @@
+{
+	// Shelf Home - Banner Fullwidth
+	"flex-layout.row#home-shelf-full": {
+		"title": "",
+		"children": [
+            "list-context.product-list#home-shelf-full"
+		],
+		"props": {
+            "fullWidth": false,
+            "horizontalAlign": "right",
+            "colJustify": "between",
+            "preventHorizontalStretch": true,
+			// "blockClass": ["also-seen", "shelf-container"],
+            "blockClass": ["also-seen", "shelf-container"]
+		}
+	},
+
+	// "list-context.related-product-list#home-shelf-full": {
+    "list-context.product-list#home-shelf-full": {
+		"title": "",
+		"blocks": ["product-summary.shelf#main-product-new"],
+		"children": [
+			"flex-layout.col#home-shelf-full"
+		],
+		"props": {
+			"recommendation": "view",
+			"maxItems": 9
+		}
+	},
+
+	"flex-layout.col#home-shelf-full": {
+		"title": "",
+		"children": [
+			// "rich-text#home-shelf-full",
+			"hover-container#home-shelf-full"
+		],
+		"props": {
+            "width": 50,
+            "horizontalAlign": "right",
+			// "blockClass": "also-seen"
+            "blockClass": "also-seen"
+		}
+	},
+
+    // A priori nao precisara de texto nessa shelf, mas vou deixar aqui por hora
+	"rich-text#home-shelf-full": {
+		"title": "",
+		"props": {
+			"text": "## Quem viu, viu também",
+			// "blockClass": ["also-seen", "common-title"]
+            "blockClass": ["also-seen", "common-title"]
+		}
+	},
+
+	"hover-container#home-shelf-full": {
+        "title": "",
+		"children": [
+			// "responsive-layout.desktop#shelf-slider",
+            "responsive-layout.desktop#home-shelf-full-slider",
+			"responsive-layout.mobile#shelf-slider" // Esse a principio se mantem, pois o embla entrega um bom resultado para o mobile
+		],
+		"props": {
+			// "blockClass": ["also-seen", "hover-shelf-list"]
+            "blockClass": ["also-seen", "hover-shelf-list"]
+		}
+	},
+
+    // Slider da Prateleira Home Fullwidth
+    "responsive-layout.desktop#home-shelf-full-slider": {
+        "children": [
+            "slider-layout#home-shelf-full"
+        ]
+    },    
+    "slider-layout#home-shelf-full": {
+        "title": "",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 2
+            },
+            "showPaginationDots": "mobileOnly", // Acredito que será o ideal ter apenas no Mobile - validar conforme prop abaixo
+            "showNavigationArrows": "desktopOnly", // Talvez precise mudar para o Refresh - a definir Mobile
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": ["shelf", "main-shelf"]
+        }
+    }
+}

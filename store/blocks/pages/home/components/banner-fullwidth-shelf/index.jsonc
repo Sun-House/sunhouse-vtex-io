@@ -1,0 +1,35 @@
+{
+    "container#fullwidth-banner-shelf": {
+        "children": [
+            "info-card#banner-fullwidth-shelf",
+            
+            // aqui vai a prateleira - ela devera ser posicionada com absolute para sobrepor o banner
+            "flex-layout.row#home-shelf-full"
+            //
+        ],
+        "props": {
+            // "blockClass": ["fullwidth-static-banner"]
+            "blockClass": ["fullwidth-banner-shelf"]
+        }
+    },
+
+    "info-card#banner-fullwidth-shelf": {
+        "title": "Banner Estático com Prateleira",
+        "props": {
+            "isFullModeStyle": true,
+            // Nao devera ter textos
+            // "textMode": "rich-text",
+            // "headline": "# Titulo do Banner Fullwidth Estático",
+            "callToActionMode": "none",
+            // "callToActionText": "Conheça",
+            // "callToActionUrl": "/",
+			"imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/d1f442e3-67f8-4ee5-af54-68653a3d9a0d___1d378e446447b2f2990f5323f07e0a1d.png",
+			"mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/d1f442e3-67f8-4ee5-af54-68653a3d9a0d___1d378e446447b2f2990f5323f07e0a1d.png",
+            "imageAltText": "Texto ALT para SEO",
+			"fetchpriority": "auto",
+			"preload": true,
+            // "blockClass": ["main-banner", "main-banner-home", "banner-fullwidth"]
+            "blockClass": ["main-banner", "main-banner-home", "banner-fullwidth-shelf"]
+        }
+    }
+}

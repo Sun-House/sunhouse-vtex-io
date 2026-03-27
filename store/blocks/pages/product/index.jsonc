@@ -5,7 +5,7 @@
       // para desktop e outra para mobile - igual a estrutura da descricao do produto "flex-layout.row#product-infos-wrapper"
       
       // In DEV
-      "container#youtube-shorts",
+      "container#youtube-shorts", // Container existe mas esta vazio pois o app ainda esta em desenvolvimento
       // In DEV
       //
       
@@ -27,7 +27,7 @@
     "title": "Embed - Shorts Youtube",
     "children": [
       // "iframe#youtube-shorts"
-      "youtube-shorts-widget#product-page"
+      // "youtube-shorts-widget#product-page"
     ],
     "props": {
       "blockClass": "container-yt-shorts"
@@ -35,26 +35,26 @@
   },
 
   // NOVO APP YT WIDGET AQUI
-  "youtube-shorts-widget#product-page": {
-    "title": "Configurações - Youtube Shorts App",
-    "props": {
-      // "shortsUrl": "https://www.youtube.com/watch?v=8mb6YHMvncs",
-      "shortsUrl": "https://www.youtube.com/embed/8mb6YHMvncs", // ideal usar esse formato de link embed
-      "startOnLoad": true,
-      "muted": false,
-      "closable": true
-    }
-  },
+  // "youtube-shorts-widget#product-page": {
+  //   "title": "Configurações - Youtube Shorts App",
+  //   "props": {
+  //     // "shortsUrl": "https://www.youtube.com/watch?v=8mb6YHMvncs",
+  //     "shortsUrl": "https://www.youtube.com/embed/8mb6YHMvncs", // ideal usar esse formato de link embed
+  //     "startOnLoad": true,
+  //     "muted": false,
+  //     "closable": true
+  //   }
+  // },
 
-  "iframe#youtube-shorts": {
-    "title": "Link Embed",
-    "props": {
-      "src": "https://www.youtube.com/embed/8mb6YHMvncs",
-      "width": 225,
-      "height": 400,
-      "blockClass": "yt-shorts-iframe"
-    }
-  },
+  // "iframe#youtube-shorts": {
+  //   "title": "Link Embed",
+  //   "props": {
+  //     "src": "https://www.youtube.com/embed/8mb6YHMvncs",
+  //     "width": 225,
+  //     "height": 400,
+  //     "blockClass": "yt-shorts-iframe"
+  //   }
+  // },
   // **************************************************
   //
 

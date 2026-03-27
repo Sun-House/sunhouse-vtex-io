@@ -169,11 +169,9 @@
     "title": "Configurações da Lista de Produtos",
     "blocks": [
       "product-summary.shelf#main-product-new"
+      // "product-summary.shelf#main-product-home-grid" // Em testes - OK, mas precisa ser alinhado com o cadastro uma margem maior nas fotos principais, senao corta as laterais da imagem
     ],
     "children": [
-      // Esse é o responsavel por renderizar a lista de produtos em grid
-      // "container.list-render#shelf-list"
-
       "responsive-layout.desktop#shelf-list",
       "responsive-layout.mobile#shelf-slider"
     ],
