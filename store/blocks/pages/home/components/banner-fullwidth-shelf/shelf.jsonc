@@ -6,11 +6,10 @@
             "list-context.product-list#home-shelf-full"
 		],
 		"props": {
-            "fullWidth": false,
-            "horizontalAlign": "right",
-            "colJustify": "between",
-            "preventHorizontalStretch": true,
-			// "blockClass": ["also-seen", "shelf-container"],
+            // "fullWidth": false,
+            // "horizontalAlign": "right",
+            // "colJustify": "between",
+            // "preventHorizontalStretch": true,
             "blockClass": ["also-seen", "shelf-container"]
 		}
 	},
@@ -20,11 +19,27 @@
 		"title": "",
 		"blocks": ["product-summary.shelf#main-product-new"],
 		"children": [
-			"flex-layout.col#home-shelf-full"
+			// "flex-layout.col#home-shelf-full"
+			"flex-layout.row#home-shelf-full_wrapper"
 		],
 		"props": {
 			"recommendation": "view",
 			"maxItems": 9
+		}
+	},
+
+	"flex-layout.row#home-shelf-full_wrapper": {
+		"title": "",
+		"children": [
+			"flex-layout.col#home-shelf-full"
+		],
+		"props": {
+			// "fullWidth": true,
+			// "colSizing": "equal",
+			// "colJustify": "between",
+			// "horizontalAlign": "right",
+			// "preventHorizontalStretch": true,
+			"blockClass": "home-shelf-full"
 		}
 	},
 
@@ -35,10 +50,10 @@
 			"hover-container#home-shelf-full"
 		],
 		"props": {
-            "width": 50,
-            "horizontalAlign": "right",
-			// "blockClass": "also-seen"
-            "blockClass": "also-seen"
+            // "width": "50%",
+            // "horizontalAlign": "right",
+			// "preventVerticalStretch": true,
+			"blockClass": ["also-seen", "home-shelf-full"]
 		}
 	},
 
@@ -48,7 +63,7 @@
 		"props": {
 			"text": "## Quem viu, viu também",
 			// "blockClass": ["also-seen", "common-title"]
-            "blockClass": ["also-seen", "common-title"]
+            "blockClass": ["home-shelf-full", "common-title"]
 		}
 	},
 
@@ -61,7 +76,7 @@
 		],
 		"props": {
 			// "blockClass": ["also-seen", "hover-shelf-list"]
-            "blockClass": ["also-seen", "hover-shelf-list"]
+            "blockClass": ["home-shelf-full", "hover-shelf-list"]
 		}
 	},
 
@@ -80,7 +95,8 @@
             "showPaginationDots": "mobileOnly", // Acredito que será o ideal ter apenas no Mobile - validar conforme prop abaixo
             "showNavigationArrows": "desktopOnly", // Talvez precise mudar para o Refresh - a definir Mobile
             "infinite": true,
-            "fullWidth": false,
+            // "fullWidth": false,
+			"navigationStep": 1,
             "blockClass": ["shelf", "main-shelf"]
         }
     }

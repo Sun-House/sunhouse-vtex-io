@@ -4,7 +4,8 @@
             "info-card#banner-fullwidth-shelf",
             
             // aqui vai a prateleira - ela devera ser posicionada com absolute para sobrepor o banner
-            "flex-layout.row#home-shelf-full"
+            // "flex-layout.row#home-shelf-full"
+            "list-context.product-list#home-shelf-full"
             //
         ],
         "props": {

@@ -1,0 +1,23 @@
+/* .vtex-product-summary-2-x-container--main-shelf-new
+.vtex-product-summary-2-x-containerNormal
+.vtex-product-summary-2-x-containerNormal--main-shelf-new */
+
+/* .sunhouse-container-1-x-container--fullwidth-banner-shelf .vtex-product-summary-2-x-containerNormal--main-shelf-new { / Esse talvez precise ajustar */
+:global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-product-summary-2-x-containerNormal--main-shelf-new) { /* Esse talvez precise ajustar */
+    max-width: unset !important
+}
+
+:global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-product-summary-2-x-element--main-shelf-new) {
+    background-color: #ccc
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* .vtex-flex-layout-0-x-flexRow--home-shelf-full > .vtex-store-components-3-x-container { */
+    :global(.vtex-flex-layout-0-x-flexRow--home-shelf-full > .vtex-store-components-3-x-container) {
+        height: 100%;
+        position: relative
+    }
+
+}

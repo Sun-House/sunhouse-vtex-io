@@ -1,0 +1,31 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+    
+    /* .vtex-flex-layout-0-x-flexRow--home-shelf-full { */
+    .flexRow--home-shelf-full {
+        height: 100%;
+        position: relative
+    }
+
+    /* .vtex-flex-layout-0-x-flexCol--home-shelf-full { */
+    .flexCol--home-shelf-full {
+        display: flex;
+        align-items: flex-end
+    }
+
+    /* .vtex-flex-layout-0-x-flexRowContent--home-shelf-full { */
+    .flexRowContent--home-shelf-full {
+        position: absolute !important;
+        top: -50% !important;
+        right: 0 !important;
+        transform: translateY(-50%) !important
+    }
+
+    /* .vtex-flex-layout-0-x-flexColChild--home-shelf-full { */
+    .flexColChild--home-shelf-full {
+        /* width: 65%; */
+        width: 68%;
+        background: #ffaeae
+    }
+    
+}

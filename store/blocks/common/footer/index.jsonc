@@ -279,6 +279,7 @@
     }
   },
 
+  // FAQ - Perguntas Frequentes Home
   "container#home-faq": {
       "title": "FAQ - Perguntas Frequentes Home",
       "children": [
@@ -287,6 +288,18 @@
       ],
       "props": {
           "blockClass": ["custom-block__container", "custom-block__wrapper-faq-disclosure", "home-faq"]
+      }
+  },
+
+  // FAQ - Perguntas Frequentes Categorias
+  "container#category-faq": {
+      "title": "FAQ - Perguntas Frequentes Categorias",
+      "children": [
+          "flex-layout.row#footer-faq-disclosure__title-row",
+          "container#custom-block__faq-disclosure"
+      ],
+      "props": {
+          "blockClass": ["custom-block__container", "custom-block__wrapper-faq-disclosure", "category-faq"]
       }
   },
 

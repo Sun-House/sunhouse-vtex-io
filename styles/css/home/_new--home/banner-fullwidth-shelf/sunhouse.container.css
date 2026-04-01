@@ -1,0 +1,10 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* .sunhouse-container-1-x-container--fullwidth-banner-shelf { */
+    .container--fullwidth-banner-shelf {
+        position: relative;
+        height: 720px
+    }
+
+}

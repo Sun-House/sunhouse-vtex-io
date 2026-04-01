@@ -1,4 +1,9 @@
 .wrapper--search-seo {
-    /* border-block: 1px solid #d5d4d4; */
-    padding-block: 88px 107px
+    /* padding-block: 88px 107px */
+    padding-block: 88px
+}
+
+/* .sunhouse-container-1-x-container--search-seo .sunhouse-container-1-x-container--category-faq { */
+.container--search-seo .container--category-faq {
+    padding-top: 88px
 }

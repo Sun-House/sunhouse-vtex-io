@@ -1,0 +1,30 @@
+/* .vtex-store-components-3-x-infoCardContainer--banner-fullwidth-shelf { */
+.infoCardContainer--banner-fullwidth-shelf {
+    display: flex;
+    align-items: flex-end;
+    /* height: 80vh; */
+    height: 720px
+    /* margin-bottom: 60px */
+    /* margin-bottom: -60px // Esse deverá ser ajustado quando entrar o bloco de instagram abaixo deste */
+}
+
+/* .vtex-store-components-3-x-infoCardContainer--banner-fullwidth-shelf::after { */
+.infoCardContainer--banner-fullwidth-shelf::after {
+    top: inherit;
+    /* height: 80vh */
+    height: 720px
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* .vtex-store-components-3-x-infoCardContainer--banner-shelf { */
+    .infoCardContainer--banner-shelf {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+
+}
