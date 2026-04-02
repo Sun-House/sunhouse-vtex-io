@@ -1,15 +1,16 @@
 {
   "container#header__top-bar": {
     "title": "Carrossel de informações",
+    "children": [
+      "list-context.text-list#info-carousel"
+    ],
     "props": {
       "wrapper": true,
       "blockClass": ["top-bar", "container-center"]
-    },
-    "children": ["list-context.text-list#info-carousel"]
+    }
   },
 
   "list-context.text-list#info-carousel": {
-    "children": ["embla-carousel#info-carousel"],
     "props": {
       "texts": [
         {
@@ -19,7 +20,8 @@
           "value": "Frete Grátis para pedidos acima de **R$150,00**"
         }
       ]
-    }
+    },
+    "children": ["embla-carousel#info-carousel"]
   },
 
   "embla-carousel#info-carousel": {

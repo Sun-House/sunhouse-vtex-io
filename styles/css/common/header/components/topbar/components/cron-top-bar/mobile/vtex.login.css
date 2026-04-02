@@ -1,0 +1,11 @@
+/* Isso é um fix bem especifico para o mobile para caso algum
+   layout shift seja causado pelo container de cron-countdown */
+
+@media screen and (max-width: 1024px) {
+    
+    /* .sunhouse-container-1-x-container--header--mobile__content:has(.sunhouse-container-1-x-wrapper--top-bar-cron) .sunhouse-container-1-x-wrapper--top-bar:first-child * { */
+    :global(.sunhouse-container-1-x-container--header--mobile__content:has(.sunhouse-container-1-x-wrapper--top-bar-cron) .sunhouse-container-1-x-wrapper--top-bar):first-child * {
+        color: transparent
+    }
+
+}

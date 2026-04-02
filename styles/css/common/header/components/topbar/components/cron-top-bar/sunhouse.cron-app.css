@@ -1,0 +1,13 @@
+/* .sunhouse-cron-app-0-x-container--top-bar-cron-countdown { */
+.container--top-bar-cron-countdown {
+    color: #eaeae9;
+    font-family: 'Onest', sans-serif;
+    font-size: 14px
+}
+
+/* .sunhouse-cron-app-0-x-timeUnit--top-bar-cron-countdown { */
+.timeUnit--top-bar-cron-countdown {
+    font-variant-numeric: tabular-nums
+    /* Validar se vou precisar usar:
+    letter-spacing: -0.8px; */
+}

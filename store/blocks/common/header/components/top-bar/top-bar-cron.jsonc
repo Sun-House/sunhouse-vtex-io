@@ -1,0 +1,30 @@
+{
+    "container#header__top-bar-cron": {
+        "title": "Carrossel de informações - Cron",
+        "children": [
+            "rich-text#info-carousel",
+            "cron-countdown"
+        ],
+        "props": {
+            "wrapper": true,
+            "blockClass": ["top-bar", "container-center", "top-bar-cron"]
+        }
+    },
+
+    "rich-text#info-carousel": {
+        "title": "Texto",
+        "props": {
+            "text": "SALE OUTUBRO | Até 40% OFF | Termina em",
+            "blockClass": "top-bar-cron-text"
+        }
+    },
+  
+    "cron-countdown": {
+        "title": "Contagem Regressiva",
+        "props": {
+            "targetDate": "05/04/2026",
+            "targetTime": "23:59:59",
+            "blockClass": "top-bar-cron-countdown"
+        }
+    }
+}

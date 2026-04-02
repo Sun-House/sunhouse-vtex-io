@@ -24,6 +24,7 @@
     },
     "children": [
       "container#header__top-bar",
+      "container#header__top-bar-cron",
       "container#header--mobile__main",
       "flex-layout.row#header-mobile-bottom"
     ]

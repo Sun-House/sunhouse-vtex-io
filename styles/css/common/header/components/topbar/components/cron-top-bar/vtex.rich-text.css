@@ -1,0 +1,12 @@
+/* .vtex-rich-text-0-x-container--top-bar-cron-text { */
+.container--top-bar-cron-text {
+    margin-right: 4px
+}
+
+/* .vtex-rich-text-0-x-paragraph--top-bar-cron-text { */
+.paragraph--top-bar-cron-text {
+    color: #eaeae9;
+    font-family: 'Onest', sans-serif;
+    font-size: 14px;
+    font-weight: 400
+}

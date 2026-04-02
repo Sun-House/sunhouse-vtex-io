@@ -38,6 +38,7 @@
     "title": "Cabeçalho desktop",
     "children": [
       "container#header__top-bar",
+      "container#header__top-bar-cron",
       "container#header--desktop__main",
       "container#header--desktop__menu"
     ],

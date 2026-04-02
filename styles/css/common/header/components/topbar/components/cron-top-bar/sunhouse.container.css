@@ -1,0 +1,13 @@
+/* .sunhouse-container-1-x-wrapper--top-bar-cron { */
+.wrapper--top-bar-cron {
+    display: flex;
+    min-height: 38px
+}
+
+/* .sunhouse-container-1-x-container--top-bar-cron { */
+.container--top-bar-cron {
+    display: flex;
+    padding-block: 10px;
+    justify-content: center;
+    align-items: center
+}

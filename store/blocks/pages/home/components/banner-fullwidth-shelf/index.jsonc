@@ -1,5 +1,6 @@
 {
     "container#fullwidth-banner-shelf": {
+        "title": "Prateleira Fullwidth - Home",
         "children": [
             "info-card#banner-fullwidth-shelf",
             

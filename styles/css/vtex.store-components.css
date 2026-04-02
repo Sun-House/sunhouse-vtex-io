@@ -561,12 +561,14 @@
     }
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
+
     .backToTopButtonContainer {
         bottom: 16px;
         right: 16px
     }
-}
+
+} */
 
 /* Mobile */
 @media screen and (max-width: 1024px) {
@@ -587,10 +589,11 @@
     .logoImage--pci-image {
         width: 15%
     }
-
+    
+    /* Ajuste para posicionar corretamente apos criacao do novo botao de Whatsapp da RD Station */
     .backToTopButtonContainer {
-        right: 26px;
-        bottom: 16px
+        right: 30px;
+        bottom: 108px
     }
 
     .imageElement--info {
