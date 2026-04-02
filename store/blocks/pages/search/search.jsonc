@@ -580,7 +580,7 @@
       // Apos migrar os textos, remover o bloco acima
       //
 
-      "disclosure-layout#seo-category-disclosure",
+      "container#seo-category-disclosure",
       "container#category-faq"
     ],
     "props": {
@@ -602,7 +602,19 @@
     }
   },
 
+  //
+  // in DEV
   // Cria sistema de mostrar mais ou menos do texto seo de Categorias
+  "container#seo-category-disclosure": {
+    "title": "IN DEV Texto Seo - Categoria",
+    "children": [
+      "disclosure-layout#seo-category-disclosure"
+    ],
+    "props": {
+      "blockClass": "seo-category-disclosure"
+    }
+  },
+
   "disclosure-layout#seo-category-disclosure": {
     "title": "TESTE Footer Sobre Nos",
     "children": [
@@ -651,4 +663,6 @@
       "blockClass": ["seo-disclosure", "seo-disclosure-less"]
     }
   }
+  //
+  // in DEV
 }
