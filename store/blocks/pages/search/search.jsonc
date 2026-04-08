@@ -595,74 +595,9 @@
   "rich-text#search-seo": {
     "title": "Texto Seo",
     "props": {
-      // "text": "## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!",
-      "text": "## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!",
+      "text": "## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!",
       "blockClass": "search-seo",
       "textPosition": "CENTER"
     }
-  },
-
-  //
-  // in DEV
-  // Cria sistema de mostrar mais ou menos do texto seo de Categorias
-  "container#seo-category-disclosure": {
-    "title": "IN DEV Texto Seo - Categoria",
-    "children": [
-      "disclosure-layout#seo-category-disclosure"
-    ],
-    "props": {
-      "blockClass": "seo-category-disclosure"
-    }
-  },
-
-  "disclosure-layout#seo-category-disclosure": {
-    "title": "TESTE Footer Sobre Nos",
-    "children": [
-      "disclosure-content#seo-category-disclosure",
-      "disclosure-trigger#seo-category-disclosure"
-    ],
-    "props": {
-      // "animated": true, - Isso sempre 'estraga' o funcionamento do disclosure
-      "initialVisibility": "hidden",
-      "blockClass": "seo-disclosure"
-    }
-  },
-
-  "disclosure-content#seo-category-disclosure": {
-    "children": [
-      "rich-text#search-seo"
-    ],
-    "props": {
-      "blockClass": "seo-disclosure"
-    }
-  },
-
-  "disclosure-trigger#seo-category-disclosure": {
-    "children": [
-      "disclosure-state-indicator#seo-category-disclosure"
-    ],
-    "props": {
-      "blockClass": "seo-disclosure"
-    }
-  },
-  "disclosure-state-indicator#seo-category-disclosure": {
-    "props": {
-      "Show": "rich-text#seo-category-disclosure_see-more",
-      "Hide": "rich-text#seo-category-disclosure_see-less"
-    }
-  },
-  "rich-text#seo-category-disclosure_see-more": {
-    "props": {
-      "text": "Continuar Lendo",
-      "blockClass": ["seo-disclosure", "seo-disclosure-more"]
-    }
-  },
-  "rich-text#seo-category-disclosure_see-less": {
-    "props": {
-      "text": "Reduzir Leitura",
-      "blockClass": ["seo-disclosure", "seo-disclosure-less"]
-    }
   }
-  //
-  // in DEV
 }

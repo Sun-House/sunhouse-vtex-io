@@ -1,11 +1,11 @@
+/* Movido para o arquivo product/new--product/vtex.flex-layout.css
 .flexRow--product-main {
-    padding-top: 32px !important /* PRECISA AJUSTAR ISSO DIRETAMENTE NA DECLARACAO DA PROPRIEDADE ORIGINAL EM OUTRO ARQUIVO */
-}
+    padding-top: 32px !important
+} */
 
-.flexRow--product-highlight-coupon {
-    /* margin-top: 145px */
+/* .flexRow--product-highlight-coupon {
     margin-top: 182px
-}
+} */
 
 .flexRow--wishlist-content {
     /* margin-top: 64px */

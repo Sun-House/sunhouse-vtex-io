@@ -10,8 +10,21 @@
     background-color: unset
 }
 
+/* Ajuste - Novo modelo visual Ilan */
+:global(.vtex-flex-layout-0-x-flexColChild--product-available):has(:global(.vtex-flex-layout-0-x-flexCol--product-buy-button)) {
+    margin-bottom: 24px
+}
+
 /* Desktop Force */
-/* @media screen and (min-width: 1025px) { ... } */
+@media screen and (min-width: 1025px) {
+
+    /* Fix para altura do header desktop apenas na PDP */
+    :global(.render-route-store-product .sunhouse-container-1-x-container--header--desktop) {
+        height: 214px !important
+        /* height: 262px !important - Altura ja somando a distancia visual ideal entre o bloco de header e o bloco principal do produto */
+    }
+
+}
 
 /* Mobile */
 @media (max-width: 1024px) {

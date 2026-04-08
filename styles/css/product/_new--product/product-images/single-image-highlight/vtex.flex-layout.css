@@ -1,6 +1,6 @@
-/* .vtex-flex-layout-10-x-flexRow--product-image-highlight-wrapper { */
 .flexRow--product-image-highlight-wrapper {
     position: absolute;
+    top: 0;
     z-index: -1;
     overflow: hidden; /* Ideal para nao gerar scroll horizontal - que é gerado por conta da regra de estourar a largura do container */
     width: 100%;

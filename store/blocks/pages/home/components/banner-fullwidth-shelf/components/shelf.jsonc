@@ -1,93 +1,62 @@
 {
-	// Shelf Home - Banner Fullwidth
 	"flex-layout.row#home-shelf-full": {
-		"title": "",
 		"children": [
             "list-context.product-list#home-shelf-full"
 		],
 		"props": {
-            // "fullWidth": false,
-            // "horizontalAlign": "right",
-            // "colJustify": "between",
-            // "preventHorizontalStretch": true,
             "blockClass": ["also-seen", "shelf-container"]
 		}
 	},
 
-	// "list-context.related-product-list#home-shelf-full": {
-    "list-context.product-list#home-shelf-full": {
-		"title": "",
-		"blocks": ["product-summary.shelf#main-product-new"],
+	"list-context.product-list#home-shelf-full": {
+		"title": "Prateleira de Produtos",
+		"blocks": ["product-summary.shelf#home-product-shelf"],
 		"children": [
-			// "flex-layout.col#home-shelf-full"
 			"flex-layout.row#home-shelf-full_wrapper"
 		],
 		"props": {
-			"recommendation": "view",
-			"maxItems": 9
+			"recommendation": "view", // Padrao ideal - mais do que 4 itens podera ficar estranho e o banner nao comportara
+			"maxItems": 4
 		}
 	},
 
 	"flex-layout.row#home-shelf-full_wrapper": {
-		"title": "",
 		"children": [
 			"flex-layout.col#home-shelf-full"
 		],
 		"props": {
-			// "fullWidth": true,
-			// "colSizing": "equal",
-			// "colJustify": "between",
-			// "horizontalAlign": "right",
-			// "preventHorizontalStretch": true,
 			"blockClass": "home-shelf-full"
 		}
 	},
 
 	"flex-layout.col#home-shelf-full": {
-		"title": "",
 		"children": [
-			// "rich-text#home-shelf-full",
 			"hover-container#home-shelf-full"
 		],
 		"props": {
-            // "width": "50%",
-            // "horizontalAlign": "right",
-			// "preventVerticalStretch": true,
 			"blockClass": ["also-seen", "home-shelf-full"]
 		}
 	},
 
-    // A priori nao precisara de texto nessa shelf, mas vou deixar aqui por hora
-	"rich-text#home-shelf-full": {
-		"title": "",
-		"props": {
-			"text": "## Quem viu, viu também",
-			// "blockClass": ["also-seen", "common-title"]
-            "blockClass": ["home-shelf-full", "common-title"]
-		}
-	},
-
-	"hover-container#home-shelf-full": {
-        "title": "",
+    "hover-container#home-shelf-full": {
 		"children": [
-			// "responsive-layout.desktop#shelf-slider",
             "responsive-layout.desktop#home-shelf-full-slider",
-			"responsive-layout.mobile#shelf-slider" // Esse a principio se mantem, pois o embla entrega um bom resultado para o mobile
+			"responsive-layout.mobile#shelf-slider"
 		],
 		"props": {
-			// "blockClass": ["also-seen", "hover-shelf-list"]
             "blockClass": ["home-shelf-full", "hover-shelf-list"]
 		}
 	},
 
     // Slider da Prateleira Home Fullwidth
     "responsive-layout.desktop#home-shelf-full-slider": {
+		"title": "Configurações do Hover",
         "children": [
             "slider-layout#home-shelf-full"
         ]
     },    
     "slider-layout#home-shelf-full": {
-        "title": "",
+        "title": "Configurações do Slider",
         "props": {
             "itemsPerPage": {
                 "desktop": 2
@@ -95,7 +64,6 @@
             "showPaginationDots": "mobileOnly", // Acredito que será o ideal ter apenas no Mobile - validar conforme prop abaixo
             "showNavigationArrows": "desktopOnly", // Talvez precise mudar para o Refresh - a definir Mobile
             "infinite": true,
-            // "fullWidth": false,
 			"navigationStep": 1,
             "blockClass": ["shelf", "main-shelf"]
         }

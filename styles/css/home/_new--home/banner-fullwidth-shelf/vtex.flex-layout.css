@@ -3,7 +3,8 @@
     
     /* .vtex-flex-layout-0-x-flexRow--home-shelf-full { */
     .flexRow--home-shelf-full {
-        height: 100%;
+        /* height: 100%; */
+        height: 0;
         position: relative
     }
 
@@ -16,16 +17,27 @@
     /* .vtex-flex-layout-0-x-flexRowContent--home-shelf-full { */
     .flexRowContent--home-shelf-full {
         position: absolute !important;
-        top: -50% !important;
+        /* top: -50% !important; */
         right: 0 !important;
-        transform: translateY(-50%) !important
+        /* transform: translateY(-120%) !important */
+        transform: translateY(-130%) !important
     }
 
     /* .vtex-flex-layout-0-x-flexColChild--home-shelf-full { */
     .flexColChild--home-shelf-full {
-        /* width: 65%; */
-        width: 68%;
-        background: #ffaeae
+        width: 65%;
+        /* width: 68%; */
+        
+        /* DEBUG */
+        /* background: #ffaeae */
+        /* DEBUG */
+    }
+
+    /* .sunhouse-container-1-x-container--fullwidth-banner-shelf .vtex-flex-layout-0-x-flexCol--hover-block-wrapper,
+    .sunhouse-container-1-x-container--fullwidth-banner-shelf .vtex-flex-layout-0-x-flexRow--shelf-enhanced-sku-selector { */
+    :global(.vtex-container-container--fullwidth-banner-shelf) .flexCol--hover-block-wrapper,
+    :global(.vtex-container-container--fullwidth-banner-shelf) .flexRow--shelf-enhanced-sku-selector {
+        padding: 0 24px
     }
     
 }

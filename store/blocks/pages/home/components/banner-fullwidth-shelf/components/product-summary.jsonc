@@ -1,0 +1,46 @@
+{
+    "product-summary.shelf#home-product-shelf": {
+        "title": "Configuracoes do Produto",
+        "children": [
+            "stack-layout#new-shelf-product-image",
+            // "stack-layout#home-product-shelf_product-image", - Esse é o ideal, porem, enquanto nao mudarmos o padrao de imagens dos produtos, precisamos manter o bloco antigo conforme acima
+            "flex-layout.row#shelf-enhanced-sku-selector", // Esse nao sera customizado a parte - customizacoes apenas por seletor de css
+            "flex-layout.col#hover-block-wrapper" // Esse nao sera customizado a parte - customizacoes apenas por seletor de css
+        ],
+        "props": {
+            "blockClass": ["main-shelf-new", "home-product-shelf"]
+        }
+    },
+
+    // Bloco - Imagem do produto da Shelf
+    // NAO ESTA SENDO USADO - Esse componente depende de mudarmos o padrao de imagens dos produtos, conforme acima mencionado
+    "stack-layout#home-product-shelf_product-image": {
+        "children": [
+            "container#image-home-shelf",
+            "add-to-list-btn#main-shelf" // Esse nao sera customizado a parte
+        ],
+        "props": {
+            "blockClass": ["shelf-product-image", "shelf-new-product-image", "home-product-shelf"]
+        }
+    },
+    "container#image-home-shelf": {
+        "children": [
+            "product-summary-image#image-home-shelf"
+        ],
+        "props": {
+            "blockClass": ["image-shelf", "home-product-shelf"]
+        }
+    },
+    "product-summary-image#image-home-shelf": {
+        "title": "Imagem do Produto - Vitrine Home",
+        "props": {
+            "width": 422,
+            "height": 422,
+            "hoverImage": {
+                "criteria": "index",
+                "index": 1
+            },
+            "blockClass": ["new_main-shelf", "home-product-shelf"]
+        }
+    }
+}

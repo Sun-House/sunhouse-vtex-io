@@ -464,8 +464,13 @@
     "children": [
       "flex-layout.row#product-page-price",
       "container#sku-variation-selector",
+      
+      //
       "flex-layout.row#product-buy-container",
-      "flex-layout.row#whatsapp-button_normal-product",
+      "flex-layout.col#buy-button",
+      // "flex-layout.row#whatsapp-button_normal-product",
+      //
+
       "flex-layout.row#collection-highlights--product-page",
       "flex-layout.row#shipping-simulator-wrapper"
     ],
@@ -541,7 +546,10 @@
   "flex-layout.row#product-buy-container": {
     "children": [
       "flex-layout.col#buy-quantity",
-      "flex-layout.col#buy-button"
+      
+      // Esse botao vai pro lugar do whatsapp, e o do whatsapp pra ca
+      "flex-layout.row#whatsapp-button_normal-product"
+      // "flex-layout.col#buy-button"
     ],
     "props": {
       "blockClass": "buy-container",
@@ -596,9 +604,9 @@
       "onClickBehavior": "add-to-cart",
       // "isOneClickBuy": true, // Funciona se desabilitar a prop do minicart "customPixelEventName"
       // "onClickEventPropagation": "disabled", // Esta funcionando em conjunto com o minicart - la tem um evento de propagacao que causa o efeito de abrir o minicart
-      // "text": "Comprar" // Valor antigo-anterior
-      "text": "Adicionar ao Carrinho",
       // "customPixelEventId": "?" // Pode ser util para ferramentas externas e outros apps
+      // "text": "Adicionar ao Carrinho",
+      "text": "Comprar Agora",
       "blockClass": "add-to-cart_button"
     }
   },

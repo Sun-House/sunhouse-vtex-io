@@ -1,0 +1,8 @@
+/* .vtex-rich-text-0-x-paragraph--text__coupon-info { */
+.paragraph--text__coupon-info {
+    font-family: "Onest", sans-serif;
+    font-size: 18px; /* Ainda em testes esse tamanho de fonte */
+    font-weight: 500; /* Pode ficar muito espessa, mas testar */
+    color: #fff;
+    text-shadow: 0 0 5px #6c6c6c91
+}

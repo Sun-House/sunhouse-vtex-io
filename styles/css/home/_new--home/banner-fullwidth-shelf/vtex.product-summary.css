@@ -1,0 +1,23 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* Esse fix pode dar problema futuramente - vou revalidar se é possivel nao usar isso e ajustar de outra forma 
+    Possivelmente a forma seria criar meio que do zero uma shelf completa para esse componente em especifico */
+    /* .sunhouse-container-1-x-container--fullwidth-banner-shelf .vtex-product-summary-2-x-container--main-shelf-new { */
+    :global(.vtex-container-container--fullwidth-banner-shelf) .container--main-shelf-new {
+        /* max-width: 364px !important */
+        margin-left: 18px;
+        margin-right: 12px
+    }
+
+    /* .sunhouse-container-1-x-container--fullwidth-banner-shelf .vtex-product-summary-2-x-element--main-shelf-new { */
+    :global(.vtex-container-container--fullwidth-banner-shelf) .element--main-shelf-new {
+        /* DEBUG */
+        /* background-color: #ccc */
+        /* DEBUG */
+
+        background-color: #fff
+        /* border-radius: 4px - precisa aplicar na imagem tambem */
+    }
+
+}

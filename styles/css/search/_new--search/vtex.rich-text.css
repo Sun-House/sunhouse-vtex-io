@@ -1,0 +1,7 @@
+/* .vtex-rich-text-0-x-paragraph--seo-disclosure { */
+.paragraph--seo-disclosure {
+    font-weight: 500;
+    font-size: 18px;
+    color: #444;
+    transition: .2s ease-in
+}

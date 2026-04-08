@@ -1,14 +1,26 @@
-/* Css abaixo em duplicidade* - precisa remover do outro arquivo geral */
 .flexRow--wrapper__highlight-pdp {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1220px;
+    margin-top: 14px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 42px; /* *Css Novo - Ajuste para novo layout Refresh */
+    /* margin-bottom: 42px; */
     padding: 25px;
-    background-color: #68bd4433;
+    /* background-color: #68bd4433;
     border: 1px solid #68bd44;
-    border-radius: 15px;
+    border-radius: 15px */
+    border-radius: 50px;
+    /* background: linear-gradient(to right, #ffda0085, #f9004182); */
+    /* background: linear-gradient(to right, #FFDA00, #F90041); */
+    /* background: linear-gradient(to right, #FFDA00 30%, #F90041 70%); */
+    background: linear-gradient(135deg, #FFDA00 10%, #F90041 50%);
+    box-shadow: 4px 4px 6px #b3b3b3
+}
+
+/* .vtex-flex-layout-0-x-flexRowContent--wrapper__highlight-pdp { */
+.flexRowContent--wrapper__highlight-pdp {
+    align-items: center;
+    justify-content: center
 }

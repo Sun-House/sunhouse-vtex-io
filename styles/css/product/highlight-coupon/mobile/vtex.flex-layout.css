@@ -1,0 +1,23 @@
+/* ESSE PRECISA SER COMPLETAMENTE REDESENHADO, POIS NO MOBILE O ILAN NAO GOSTA DESTE MODELO
+   VER MINHA PENDENCIAS DE BACKLOG ONDE PRE-DESENVOLVI UM MODELO NOVO INTERESSANTE */
+
+@media screen and (max-width: 1024px) {
+
+    .flexRow--wrapper__highlight-pdp-mobile {
+        display: none !important;
+
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 95%;
+        margin-top: 12px;
+        margin-bottom: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px;
+        background-color: #68bd4433;
+        border: 1px solid #68bd44;
+        border-radius: 15px */
+    }
+
+}

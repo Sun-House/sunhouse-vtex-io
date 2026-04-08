@@ -1,13 +1,21 @@
+/* Ainda nao esta funcionando a animacao
+   Sera lançado sem mesmo, nao impacta na funcionalidade */
 /* .vtex-disclosure-layout-1-x-content--seo-disclosure { */
-.content--seo-disclosure {
-    transition: all .8s /* Ainda ficou meio travada a animacao, mas nao tem como fazer melhor a principio */
-}
+/* .content--seo-disclosure {
+    transition: all .8s - Ainda ficou meio travada a animacao, mas nao tem como fazer melhor a principio
+} */
 
 /* .vtex-disclosure-layout-1-x-content--seo-disclosure--hidden { */
 .content--seo-disclosure--hidden {
     display: block !important;
     max-height: 335px;
-    overflow: hidden
+    overflow: hidden;
+    background: linear-gradient(to top, #6c6c6c59 0%, transparent 100%);
+    background-size: 100% 15%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    box-shadow: 0 8px 6px -8px #b3b3b3;
+    border-radius: 0 0 6px 6px
 }
 
 /* .vtex-disclosure-layout-1-x-content--seo-disclosure--visible { */
@@ -15,10 +23,8 @@
     height: auto
 }
 
-
-
-/* ABAIXO ORGANIZAR NOS DEVIDOS ARQUIVOS */
-.vtex-disclosure-layout-1-x-trigger--seo-disclosure {
+/* .vtex-disclosure-layout-1-x-trigger--seo-disclosure { */
+.trigger--seo-disclosure {
     display: block;
     margin: 24px auto 0;
     background-color: #a8a8a829;
@@ -30,26 +36,14 @@
     transition: .2s ease-in
 }
 
-.vtex-rich-text-0-x-paragraph--seo-disclosure {
-    font-weight: 500;
-    font-size: 18px;
-    color: #444;
-    transition: .2s ease-in
-}
-
-.vtex-disclosure-layout-1-x-trigger--seo-disclosure:hover {
+/* .vtex-disclosure-layout-1-x-trigger--seo-disclosure:hover { */
+.trigger--seo-disclosure:hover {
     cursor: pointer;
     background-color: #FFDA00
 }
 
-.vtex-disclosure-layout-1-x-trigger--seo-disclosure:hover .vtex-rich-text-0-x-paragraph--seo-disclosure {
+/* .vtex-disclosure-layout-1-x-trigger--seo-disclosure:hover .vtex-rich-text-0-x-paragraph--seo-disclosure { */
+.trigger--seo-disclosure:hover :global(.vtex-rich-text-0-x-paragraph--seo-disclosure) {
     color: #fff;
     text-shadow: 0 0 5px #6c6c6c
-}
-
-.vtex-disclosure-layout-1-x-content--seo-disclosure--hidden {
-    background: linear-gradient(to top, #6c6c6c 0%, transparent 100%);
-    background-size: 100% 15%;
-    background-repeat: no-repeat;
-    background-position: bottom
 }

@@ -1,0 +1,28 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* .vtex-container-container--fullwidth-banner-shelf .sunhouse-slider-layout-0-x-slide--main-shelf { */
+    :global(.vtex-container-container--fullwidth-banner-shelf) .slide--main-shelf {
+        padding-inline: 0
+    }
+
+    /* Fix para cores das arrows */
+    /* .sunhouse-container-1-x-container--fullwidth-banner-shelf .sunhouse-slider-layout-0-x-sliderArrows--main-shelf { */
+    :global(.vtex-container-container--fullwidth-banner-shelf) .sliderArrows--main-shelf {
+        color: #fff;
+        transition: .2s ease-in-out
+    }
+    
+    /* .sunhouse-container-1-x-container--fullwidth-banner-shelf .sunhouse-slider-layout-0-x-sliderLeftArrow--main-shelf::after,
+    .sunhouse-container-1-x-container--fullwidth-banner-shelf .sunhouse-slider-layout-0-x-sliderRightArrow--main-shelf::after { */
+    :global(.vtex-container-container--fullwidth-banner-shelf) .sliderLeftArrow--main-shelf::after,
+    :global(.vtex-container-container--fullwidth-banner-shelf) .sliderRightArrow--main-shelf::after {
+        opacity: 1
+    }
+    
+    /* .sunhouse-container-1-x-container--fullwidth-banner-shelf .sunhouse-slider-layout-0-x-sliderArrows--main-shelf:hover { */
+    :global(.vtex-container-container--fullwidth-banner-shelf) .sliderArrows--main-shelf:hover {
+        opacity: .5
+    }
+
+}

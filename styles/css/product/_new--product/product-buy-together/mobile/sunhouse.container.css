@@ -1,7 +1,8 @@
 @media screen and (max-width: 1024px) {
 
     .container--product-description-buy-together {
-        height: unset;
+        /* height: unset; */
+        height: 700px; /* Evita CLS e ajusta para todas as possibilidade de configurações do componente */
         padding-bottom: 124px
     }
 

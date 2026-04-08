@@ -1,24 +1,26 @@
 .whatsappDynamicButtonLink {
     display: flex;
-    /* flex-direction: row; */
     flex-direction: row-reverse;
     align-items: center;
     width: 100%;
     height: 52px;
     justify-content: center;
-    background: #25d366;
-    /* border-radius: 8px; */
+    /* background: #25d366; */
+    background-color: #161413;
     border-radius: 50px;
-    margin-top: 18px;
-    margin-bottom: 24px;
+    /* margin-top: 18px; */
+    /* margin-bottom: 24px; */
+    margin-bottom: 18px;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    transition: opacity .4s
+    /* transition: opacity .4s */
+    transition: .2s
 }
 
 .whatsappDynamicButtonLink:hover {
-    opacity: .8
+    /* opacity: .8 */
+    background-color: #161413cb
 }
 
 .whatsappDynamicButtonIcon {
@@ -26,9 +28,6 @@
 }
 
 /* Custom Css for Corporate Products */
-/* .cta-button { */
-/* .sunhouse-whatsapp-dynamic-btn-1-x-whatsappDynamicButtonLink--wpp-button-corporate */
-/* .sunhouse.whatsapp-lead-capture-pdp-1-x-whatsappDynamicButtonLink--wpp-button-corporate */
 .sunhouse.whatsapp-lead-capture-pdp-0-x-whatsappDynamicButtonLink--wpp-button-corporate {
     display: flex;
     align-items: center;
@@ -46,9 +45,6 @@
     transition: all 0.3s ease-in-out
 }
 
-/* .cta-button:hover { */
-/* .sunhouse-whatsapp-dynamic-btn-1-x-whatsappDynamicButtonLink--wpp-button-corporate:hover */
-/* .sunhouse.whatsapp-lead-capture-pdp-1-x-whatsappDynamicButtonLink--wpp-button-corporate:hover */
 .sunhouse.whatsapp-lead-capture-pdp-0-x-whatsappDynamicButtonLink--wpp-button-corporate:hover {
     background-color: var(--champagne);
     color: var(--midnight-blue);

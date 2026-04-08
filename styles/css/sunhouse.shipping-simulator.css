@@ -63,17 +63,13 @@
 }
 
 .shippingContainer .shippingFormContainer .shippingForm :global(.vtex-button) {
-    /* height: 46px; */
     height: 52px;
     border: none;
-    /* background-color: #161413; */
-    background-color: #161413; /* Cor final Refresh */
-    /* border-radius: 7px; */
+    /* background-color: #161413; - Cor final Refresh */
+    background-color: #999; /* Cor ilan - 07.04.26 */
     border-radius: 50px;
     width: 100%;
-    /* max-width: 200px; */
     cursor: pointer;
-    /* transition: all .4s */
     transition: all .2s
 }
 

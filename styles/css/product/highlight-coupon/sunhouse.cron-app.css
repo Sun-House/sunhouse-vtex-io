@@ -1,0 +1,15 @@
+/* .sunhouse-cron-app-1-x-container--highlight-coupon-cron { */
+.container--highlight-coupon-cron {
+    font-family: "Onest", sans-serif;
+    font-size: 18px; /* Ainda em testes esse tamanho de fonte */
+    font-weight: 500; /* Pode ficar muito espessa, mas testar */
+    color: #fff;
+    text-shadow: 0 0 5px #6c6c6c91;
+    margin-left: 4px
+}
+
+/* .sunhouse-cron-app-1-x-timeUnit--highlight-coupon-cron { */
+.timeUnit--highlight-coupon-cron {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -1px
+}

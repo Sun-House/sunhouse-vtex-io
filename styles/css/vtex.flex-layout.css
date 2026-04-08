@@ -847,6 +847,7 @@
     padding: 50px 0
 }
 
+/* Movido para o arquivo product/highlight-coupon/vtex.flex-layout.css
 .flexRow--wrapper__highlight-pdp {
     display: flex;
     justify-content: center;
@@ -858,7 +859,7 @@
     background-color: #68bd4433;
     border: 1px solid #68bd44;
     border-radius: 15px
-}
+} */
 
 .flexRowContent--filters-container {
     max-width: 1220px;
@@ -872,7 +873,9 @@
     bottom: -15px
 }
 
+/* Mobile breakpoint 2 */
 @media screen and (max-width:1250px) {
+
     .flexRow--menu-desktop-fixed {
         left: 290.55px
     }
@@ -902,6 +905,7 @@
         padding-right: 15px
     }
 
+    /* Movido para o arquivo product/highlight-coupon/mobile/vtex.flex-layout.css
     .flexRow--wrapper__highlight-pdp-mobile {
         display: flex;
         justify-content: center;
@@ -915,7 +919,8 @@
         background-color: #68bd4433;
         border: 1px solid #68bd44;
         border-radius: 15px
-    }
+    } */
+
 }
 
 @media screen and (max-width:1248px) {

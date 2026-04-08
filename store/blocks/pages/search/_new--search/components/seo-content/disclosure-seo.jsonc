@@ -1,0 +1,70 @@
+{
+	"container#seo-category-disclosure": {
+		"title": "Texto Seo - Wrapper",
+		"children": [
+			"disclosure-layout#seo-category-disclosure"
+		],
+		"props": {
+			"blockClass": "seo-category-disclosure"
+		}
+	},
+
+	"disclosure-layout#seo-category-disclosure": {
+		"children": [
+			"disclosure-content#seo-category-disclosure",
+			"disclosure-trigger#seo-category-disclosure"
+		],
+		"props": {
+			// "animated": true, - Isso sempre 'estraga' o funcionamento do disclosure
+			"initialVisibility": "hidden",
+			"blockClass": "seo-disclosure"
+		}
+	},
+
+	"disclosure-content#seo-category-disclosure": {
+		"children": [
+			"rich-text#search-seo"
+		],
+		"props": {
+			"blockClass": "seo-disclosure"
+		}
+	},
+
+	"disclosure-trigger#seo-category-disclosure": {
+		"children": [
+			"disclosure-state-indicator#seo-category-disclosure"
+		],
+		"props": {
+			"blockClass": "seo-disclosure"
+		}
+	},
+
+	"disclosure-state-indicator#seo-category-disclosure": {
+		"props": {
+			"Show": "rich-text#seo-category-disclosure_see-more",
+			"Hide": "rich-text#seo-category-disclosure_see-less"
+		}
+	},
+
+	"rich-text#seo-category-disclosure_see-more": {
+		"title": "Texto Botão - Ver Mais",
+		"props": {
+			"text": "Continuar Lendo",
+			"blockClass": [
+				"seo-disclosure",
+				"seo-disclosure-more"
+			]
+		}
+	},
+
+	"rich-text#seo-category-disclosure_see-less": {
+		"title": "Texto Botão - Ver Menos",
+		"props": {
+			"text": "Reduzir Leitura",
+			"blockClass": [
+				"seo-disclosure",
+				"seo-disclosure-less"
+			]
+		}
+	}
+}

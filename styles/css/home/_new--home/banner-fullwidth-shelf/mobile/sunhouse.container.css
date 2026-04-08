@@ -1,0 +1,10 @@
+/* TEMPORARIO - apenas ate o mobile ser desenvolvido corretamente */
+
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-container-1-x-container--fullwidth-banner-shelf { */
+    .container--fullwidth-banner-shelf {
+        display: none !important
+    }
+    
+}

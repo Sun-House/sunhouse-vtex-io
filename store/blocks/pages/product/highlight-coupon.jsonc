@@ -1,4 +1,3 @@
-// COMPONENTE DESCONTINUADO NO REFRESH
 {
     "flex-layout.row#product-highlight-coupon": {
         "children": [
@@ -21,21 +20,60 @@
     },
 
     "flex-layout.row#highlight-coupon": {
-        "props" : {
-            "blockClass": "wrapper__highlight-pdp"
-        },
         "children": [
-            "rich-text#highlight-text"
-        ]
+            // "rich-text#sale-text", - repensar sobre isso no futuro
+            "rich-text#highlight-text",
+            "container#highlight-coupon-cron"
+        ],
+        "props" : {
+            "preventVerticalStretch": true,
+            "colJustify": "between",
+            "colSizing": "auto",
+            "blockClass": "wrapper__highlight-pdp"
+        }
     },
+
+    // Ainda nao foi desenvolvido - repensar sobre isso no futuro
+    "rich-text#sale-text": {
+        "title": "Flag Sale",
+        "props": {
+            "text": "SALE",
+            "blockClass": "sale-highlight-text"
+        }
+    },
+    //
+
     "rich-text#highlight-text": {
         "title": "Texto da Faixa",
         "props": {
             "blockClass": "text__coupon-info",
-            "text": "Desconto garantido! Aproveite o cupom SUNHOUSE10 em qualquer valor de compra! Corre que é por tempo limitado!"
+            "text": "Desconto garantido! Aproveite o cupom SUNHOUSE10 em qualquer valor de compra! Termina em"
         }
     },
 
+    // Wrapper Cron App
+    "container#highlight-coupon-cron": {
+        "title": "Cronometro do Cupom",
+        "children": [
+            "cron-countdown#highlight-coupon"
+        ],
+        "props": {
+            "wrapper": true,
+            "blockClass": "highlight-coupon-cron-wrapper"
+        }
+    },
+    "cron-countdown#highlight-coupon": {
+        "title": "Configurações do Cronometro",
+        "props": {
+            "targetDate": "05/11/2029",
+            "targetTime": "23:59:59",
+            "blockClass": "highlight-coupon-cron"
+        }
+    },
+
+    
+    // ABAIXO FOI DESCONTINUADO NO REFRESH
+    // Preciso rever e repensar no modelo a ser utilizado no mobile
     "container#wrapper__highlight-coupon-mobile": {
         "title": "Faixa Destaque de Cupom Mobile",
         "children": [

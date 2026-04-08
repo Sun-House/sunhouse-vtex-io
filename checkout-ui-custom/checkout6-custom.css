@@ -1111,8 +1111,8 @@ footer {
 } */
 
 .checkout-container>.cart-template .cart-links .btn-place-order-wrapper .btn-place-order:hover {
-    /* background-color: #07700f */
-    background-color: #161413cb !important
+    /* background-color: #161413cb !important */
+    opacity: 0.8
 }
 
 @media (min-width:480px) {
@@ -2045,7 +2045,8 @@ fieldset.box-payment-group2.box-payment-option.custom205PaymentGroupPaymentGroup
 
 .checkout-container>.cart-template .cart-links .btn-place-order-wrapper .btn-place-order {
     padding: 0px;
-    background: #161413 !important;
+    /* background: #161413 !important; */
+    background: #25d366 !important;
     border: none;
     box-sizing: border-box;
     border-radius: 50px;
@@ -3069,7 +3070,8 @@ fieldset.box-client-info-pf input {
 
 button#payment-data-submit {
     padding: 0px;
-    background: #161413 !important;
+    /* background: #161413 !important; */
+    background: #25d366 !important;
     border: none;
     box-sizing: border-box;
     border-radius: 50px;
@@ -3089,11 +3091,17 @@ button#payment-data-submit::after {
 }
 
 button#payment-data-submit:hover {
-    background-color: #161413cb
+    /* background-color: #161413cb */
+    opacity: 0.8
+
 }
 
 button#payment-data-submit i {
     display: none !important
+}
+
+.payment-confirmation-wrap {
+    background: unset !important
 }
 
 .checkout-container.orderform-active .summary-template-holder .accordion-inner td:first-child {

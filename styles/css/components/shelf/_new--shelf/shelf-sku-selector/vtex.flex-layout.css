@@ -1,3 +1,4 @@
 .flexRow--shelf-enhanced-sku-selector {
-    min-height: 30px /* Esse ajuste na verdade deveria ser temporario, mas acredito que dificilmente todos os produtos terao variações, portanto, ficara como permanente */
+    min-height: 30px; /* Esse ajuste na verdade deveria ser temporario, mas acredito que dificilmente todos os produtos terao variações, portanto, ficara como permanente */
+    margin-top: 1.2rem
 }

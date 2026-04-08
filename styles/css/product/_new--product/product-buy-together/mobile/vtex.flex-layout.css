@@ -10,5 +10,11 @@
         display: flex;
         flex-direction: row
     }
-        
+
+    .flexCol--bt-plus-icon :global(.vtex-store-icons-0-x-plusIcon) {
+        width: 13px !important;
+        height: 13px !important;
+        padding: 14px
+    }
+
 }

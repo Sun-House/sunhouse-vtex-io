@@ -20,4 +20,10 @@
         font-size: 18px
     }
 
+    /* Fix necessario apos atualizacao dos banner que oculpam dinamicamente a tela inteira no celular */
+    /* .vtex-store-components-3-x-heading--banner-fullwidth { */
+    .heading--banner-fullwidth {
+        text-align: left !important
+    }
+
 }
