@@ -1,0 +1,8 @@
+:global(.render-container.render-route-vtex-store-2-x-store-custom-elements) * {
+    --header-text-color: #fff !important
+}
+
+:global(.render-container.render-route-vtex-store-2-x-store-custom-elements) :global(.sunhouse-container-1-x-container--menu) {
+    /* --header-menu-border-color: #c0bfbe !important */
+    border-bottom: 1px solid #c0bfbe !important
+}

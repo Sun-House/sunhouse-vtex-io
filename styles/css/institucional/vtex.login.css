@@ -4,6 +4,11 @@
     display: none
 }
 
+/* Oculta botao flutuante do whatsapp da RD Station para a pagina LP - Vendas Corporativas */
+:global(body:has(.render-route-vtex-store-2-x-store-custom-institucional-vendas-corporativas)) :global(.rdstation-popup-position-bottom_right) {
+    display: none !important
+}
+
 /* Botao WhatsApp Corporativo apenas para a pagina de Institucional - Vendas Corporativas */
 :global(.vtex-store-link-0-x-link--whatsapp-corporate) {
     position: fixed;

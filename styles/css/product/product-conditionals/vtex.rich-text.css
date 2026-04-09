@@ -23,7 +23,8 @@
 }
 
 .paragraph--exclusive-cta_line-2 {
-    margin: 16px 0 0;
+    /* margin: 16px 0 0; */
+    margin: 16px 0 12px;
     padding: 12px 14px;
     border-radius: 12px;
     background: hsla(0, 0%, 100%, .6);
