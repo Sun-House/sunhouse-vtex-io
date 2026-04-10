@@ -1,0 +1,24 @@
+{
+    "container#corporate-landing-page": {
+        "children": [
+            // Organizar cada dobra da pagina aqui
+            "container#corporate-landing-banner"
+            // "container#corporate-landing-body",
+            // "container#corporate-landing-pre-footer"
+        ],
+        "props": {
+            "blockClass": "corporate-landing-page"
+        }
+    },
+
+    // Page Header
+    "container#corporate-landing-banner": {
+        "title": "Banner Hero",
+        "children": [
+            // Reutilizado o componente de banner da homepage
+            "info-card#banner-main"
+        ]
+    }
+
+
+}

@@ -1,0 +1,127 @@
+/* Oculta botao flutuante do whatsapp padrao para a pagina LP - Vendas Corporativas */
+:global(.render-container.render-route-vtex-store-2-x-store-custom-landing-corporativo) :global(.vtex-store-link-0-x-link--whatsapp-float) {
+    display: none
+}
+
+/* Oculta botao flutuante do whatsapp da RD Station para a pagina LP - Vendas Corporativas */
+:global(body:has(.render-route-vtex-store-2-x-store-custom-landing-corporativo)) :global(.rdstation-popup-position-bottom_right) {
+    display: none !important
+}
+
+/* Botao WhatsApp Corporativo apenas para a pagina de Institucional - Vendas Corporativas */
+:global(.vtex-store-link-0-x-link--whatsapp-corporate) {
+    position: fixed;
+    z-index: 99999;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+    /* Ajustes abaixo para desktop - precisa separar e criar o do mobile */
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+:global(.vtex-store-link-0-x-link--whatsapp-corporate) :global(.vtex-store-link-0-x-childrenContainer--whatsapp-corporate) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/* Parte do Texto */
+:global(.vtex-store-link-0-x-link--whatsapp-corporate) :global(.vtex-rich-text-0-x-paragraph) {
+    background-color: #00a884; /* Verde Paleta WhatsApp */
+    color: white;
+    padding: 12px 15px 12px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    display: block; /* Visível no desktop */
+}
+
+/* Container do Ícone (Bola verde) */
+:global(.vtex-store-link-0-x-childrenContainer--whatsapp-corporate) :global(.vtex-rich-text-0-x-container) {
+    display: flex;
+    align-items: center
+}
+
+:global(.vtex-store-link-0-x-childrenContainer--whatsapp-corporate) :global(.vtex-rich-text-0-x-container)::after,
+:global(.vtex-store-link-0-x-childrenContainer--whatsapp-corporate) :global(.vtex-rich-text-0-x-container)::before {
+    content: "\F618";
+    font-family: "Bootstrap-Icons";
+    color: #fff;
+    font-size: 28px;
+    background-color: #00a884;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 2;
+    align-items: center
+}
+
+/* Efeito Hover (Desktop) */
+:global(.vtex-store-link-0-x-link--whatsapp-corporate):hover {
+    filter: brightness(1.1);
+    transform: translateY(-50%) scale(1.05)
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+    
+    :global(.vtex-store-link-0-x-childrenContainer--whatsapp-corporate) :global(.vtex-rich-text-0-x-container)::before {
+        display: none
+    }
+
+    :global(.vtex-store-link-0-x-childrenContainer--whatsapp-corporate) :global(.vtex-rich-text-0-x-container)::after {
+        margin-left: -10px
+    }
+    
+}
+
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    :global(.vtex-store-link-0-x-link--whatsapp-corporate) {
+        left: unset;
+        right: 0;
+        top: unset;
+        bottom: 42px
+    }
+    
+    :global(.vtex-store-link-0-x-childrenContainer--whatsapp-corporate) :global(.vtex-rich-text-0-x-container)::after {
+        display: none
+    }
+    
+    :global(.vtex-store-link-0-x-childrenContainer--whatsapp-corporate) :global(.vtex-rich-text-0-x-container)::before {
+        margin-right: -10px
+    }
+
+}
+
+/* --- ESTILO ESPECIAL PARA TELAS DESKTOP - Para nao quebrar layout (Telas menores que 1690px) --- */
+@media screen and (max-width: 1690px) and (min-width: 1025px) {
+
+    :global(.vtex-store-link-0-x-link--whatsapp-corporate) {
+        left: -170px
+    }
+
+    :global(.vtex-store-link-0-x-link--whatsapp-corporate):hover {
+        left: 0
+    }
+
+    :global(.vtex-store-link-0-x-link--whatsapp-corporate) :global(.vtex-rich-text-0-x-paragraph) {
+        color: #ffffff38
+    }
+
+    :global(.vtex-store-link-0-x-link--whatsapp-corporate):hover :global(.vtex-rich-text-0-x-paragraph) {
+        color: #fff
+    }
+
+}

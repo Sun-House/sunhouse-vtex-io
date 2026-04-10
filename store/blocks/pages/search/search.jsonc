@@ -575,12 +575,10 @@
   "container#search-seo": {
     "title": "Texto e FAQ - Seo",
     "children": [
-      //
-      "rich-text#search-seo", // Precisa adicionar sistema de 'leia mais' para o texto seo
-      // Apos migrar os textos, remover o bloco acima
-      //
-
-      "container#seo-category-disclosure",
+      // Esse vai sair assim que os textos forem migrados para o novo sistema de 'leia mais'
+      "rich-text#search-seo",
+      //      
+      "container#seo-category-disclosure", // Com sistema de 'leia mais' para o texto seo
       "container#category-faq"
     ],
     "props": {
@@ -592,6 +590,17 @@
       "blockClass": ["search-seo", "container-center"]
     }
   },
+  
+  //
+  "container#seo-category-wrapper": {
+		"title": "Texto Seo - Wrapper ANTIGO",
+		"children": [
+      "rich-text#search-seo"
+		],
+		"props": {
+			"blockClass": "seo-category-wrapper"
+		}
+	},
   "rich-text#search-seo": {
     "title": "Texto Seo",
     "props": {
