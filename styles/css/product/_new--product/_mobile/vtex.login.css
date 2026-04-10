@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+    
+    /* Fix para ocultar o icone de favorito no mobile quando o produto for exclusivo */
+    :global(.vtex-flex-layout-0-x-flexCol--product-main-mobile:has(.vtex-flex-layout-0-x-flexCol--product-exclusive)) :global(.vtex-wish-list-1-x-wishlistIconContainer--product-page) {
+        display: none
+    }
+    
+}
