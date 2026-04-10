@@ -1,8 +1,13 @@
-:global(.render-container.render-route-vtex-store-2-x-store-custom-elements) * {
+/* :global(.render-container.render-route-vtex-store-2-x-store-custom-elements) * { */
+:global(.render-container.render-route-vtex-store-2-x-store-custom-elements:not(:has(.sunhouse-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast))) * {
     --header-text-color: #fff !important
 }
 
-:global(.render-container.render-route-vtex-store-2-x-store-custom-elements) :global(.sunhouse-container-1-x-container--menu) {
+:global(.render-container.render-route-vtex-store-2-x-store-custom-elements) :global(.vtex-container-container--minicart-container) {
+    border-color: #fff !important
+}
+
+:global(.render-container.render-route-vtex-store-2-x-store-custom-elements:not(:has(.sunhouse-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast))) :global(.sunhouse-container-1-x-container--menu) {
     /* --header-menu-border-color: #c0bfbe !important */
     border-bottom: 1px solid #c0bfbe !important
 }
