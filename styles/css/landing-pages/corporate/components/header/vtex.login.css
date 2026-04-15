@@ -1,0 +1,7 @@
+:global(.render-container.render-route-vtex-store-2-x-store-custom-landing-corporativo),
+:global(.render-container.render-route-store-custom-corporate-landing-page) {
+    --header-background-color: transparent;
+    --header-text-color: #fff;
+    --header-menu-item-highlight-color: #fff;
+    --header-menu-border-color: transparent
+}

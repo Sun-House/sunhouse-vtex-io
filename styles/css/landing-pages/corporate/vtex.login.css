@@ -1,10 +1,12 @@
 /* Oculta botao flutuante do whatsapp padrao para a pagina LP - Vendas Corporativas */
-:global(.render-container.render-route-vtex-store-2-x-store-custom-landing-corporativo) :global(.vtex-store-link-0-x-link--whatsapp-float) {
+:global(.render-container.render-route-vtex-store-2-x-store-custom-landing-corporativo) :global(.vtex-store-link-0-x-link--whatsapp-float),
+:global(.render-container.render-route-store-custom-corporate-landing-page) :global(.vtex-store-link-0-x-link--whatsapp-float) {
     display: none
 }
 
 /* Oculta botao flutuante do whatsapp da RD Station para a pagina LP - Vendas Corporativas */
-:global(body:has(.render-route-vtex-store-2-x-store-custom-landing-corporativo)) :global(.rdstation-popup-position-bottom_right) {
+:global(body:has(.render-route-vtex-store-2-x-store-custom-landing-corporativo)) :global(.rdstation-popup-position-bottom_right),
+:global(body:has(.render-route-store-custom-corporate-landing-page)) :global(.rdstation-popup-position-bottom_right) {
     display: none !important
 }
 

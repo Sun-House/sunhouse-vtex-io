@@ -156,6 +156,15 @@
 }
 /* Novos Blocos Edson END */
 
+/* Ajuste para o Refresh - texto de paragrafo segue um padrao diferente de fonte */
+/* .vtex-container-container--product-description-custom .vtex-rich-text-0-x-paragraph { */
+:global(.vtex-container-container--product-description-custom) .paragraph {
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    /* color: #161413; - mantido aqui para referencia, mas sem deixar explicito ja funciona bem */
+    line-height: 1.5;
+    font-weight: 300 /* Corrige visual estranho que estava deixando o peso padrao - que era 400 */
+}
 
 @media screen and (max-width: 1024px) {
 

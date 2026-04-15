@@ -1,0 +1,9 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    :global(.vtex-container-container--corporate-landing-page) .flexCol--hover-block-wrapper,
+    :global(.vtex-container-container--corporate-landing-page) .flexRow--shelf-enhanced-sku-selector {
+        padding: 0 24px
+    }
+    
+}

@@ -8,8 +8,8 @@
     max-width: calc(100% - 12px);
     max-height: calc(100% - 24px);
     box-sizing: border-box;
-    /* border-radius: 8px; */
-    border-radius: 32px;
+    /* border-radius: 32px; */
+    border-radius: 4px;
     transition: .2s ease
 }
 
@@ -73,8 +73,8 @@
 .container--highlights-grid__container {
     height: 100%;
     border: 1px solid;
-    /* border-radius: 8px; */
-    border-radius: 32px;
+    /* border-radius: 32px; */
+    border-radius: 4px;
     padding: 24px
 }
 
@@ -86,8 +86,8 @@
 .imageElement--highlights-grid__container-image {
     width: auto !important;
     height: 135px;
-    /* border-radius: 8px */
-    border-radius: 32px
+    /* border-radius: 32px */
+    border-radius: 4px
 }
 
 /* Bloco Tres Colunas Fotos Destaque */
@@ -108,16 +108,16 @@
     margin: 24px 150px 12px 150px;
     background: #eaeae9;
     padding: 25px 50px;
-    /* border-radius: 8px */
-    border-radius: 32px
+    /* border-radius: 32px */
+    border-radius: 4px
 }
 
 
 /* Novos Blocos Edson */
 .imageElement--custom-pdp_image {
     max-height: unset !important;
-    /* border-radius: 8px */
-    border-radius: 32px;
+    /* border-radius: 32px */
+    border-radius: 4px;
     transition: opacity .2s
 }
 

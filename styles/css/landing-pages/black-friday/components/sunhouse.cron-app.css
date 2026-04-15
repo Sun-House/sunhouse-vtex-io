@@ -1,0 +1,24 @@
+/* .sunhouse-cron-app-1-x-container--cron-countdown-black-friday { */
+.container--cron-countdown-black-friday {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* z-index: 2; */
+    z-index: 999999;
+    transform: translateY(60%);
+    width: 100%;
+    font-family: 'Onest', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.28;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* text-shadow: 4px 4px 8px #2d2926; */
+    text-shadow: 4px 4px 8px #161413;
+    color: #fff
+}
+
+/* .sunhouse-cron-app-1-x-timeUnit--cron-countdown-black-friday { */
+.timeUnit--cron-countdown-black-friday {
+    font-variant-numeric: tabular-nums
+}

@@ -2,8 +2,8 @@
     "container#corporate-landing-page": {
         "children": [
             // Organizar cada dobra da pagina aqui
-            "container#corporate-landing-banner"
-            // "container#corporate-landing-body",
+            "container#corporate-landing-banner",
+            "container#corporate-landing-body"
             // "container#corporate-landing-pre-footer"
         ],
         "props": {
@@ -15,10 +15,75 @@
     "container#corporate-landing-banner": {
         "title": "Banner Hero",
         "children": [
-            // Reutilizado o componente de banner da homepage
-            "info-card#banner-main"
+            "info-card#banner-main-corporate"
         ]
-    }
+    },
 
+    // Page Body
+    "container#corporate-landing-body": {
+        "title": "Page Body", // Esse titulo pode atrapalhar algumas questoes visuais do container em relacao as linhas e colunas
+        "children": [
+            "flex-layout.row#corporate-landing-body_l1",
+            // "container#spacing-default",
+            // "flex-layout.row#corporate-landing-body_l2",
+            "flex-layout.row#corporate-landing-body_l3"
+            // "flex-layout.row#corporate-landing-body_l4",
+            // "flex-layout.row#corporate-landing-body_l5"
+        ],
+        "props": {
+            "blockClass": "corporate-landing-body"
+        }
+    },
+
+    // Linha 1
+    "flex-layout.row#corporate-landing-body_l1": {
+        "title": "Linha 1",
+        "children": [
+            "container#line-wrapper-1" // componente original da custom LP Elements
+            // "container#corporate-landing-body_about-us" // Componente customizado para a landing page corporativa
+        ],
+        "props": {
+            "htmlId": "corporate-intro",
+            "blockClass": ["corporate-body-line", "cbl_line-1"]
+        }
+    },
+
+    // Linha 2 - Componente de Slider de Projetos em Destaque
+    // "flex-layout.row#corporate-landing-body_l2": {
+    //     "title": "Linha 2",
+    //     "children": [
+            
+    //     ]
+    // },
+
+    // Linha 2
+    "flex-layout.row#corporate-landing-body_l3": {
+        "title": "Linha 3",
+        "children": [
+            "flex-layout.col#corporate-landing-body_l3-col1"
+        ],
+        "props": {
+            "blockClass": ["corporate-body-line", "cbl_line-3"]
+        }
+    },
+
+    "flex-layout.col#corporate-landing-body_l3-col1": {
+        "title": "Coluna 1",
+        "children": [
+            "rich-text#corporate-landing-l3_title",
+            // "container#shelf-home03" // Prateleira Grid - componente herdado da home
+            "hover-container#corporate-shelf-grid" // Prateleira Grid customizada para a landing page corporativa
+        ]
+    },
+
+    "rich-text#corporate-landing-l3_title": {
+        "title": "Quem viu, viu também título",
+        "props": {
+            "text": "Linha exclusiva para nossos clientes corporativos\n### Linha Corporate",
+            // "blockClass": ["also-seen", "common-title"]
+            "blockClass": ["also-seen", "common-title", "corporate-shelf-title"]
+        }
+    }
+    
 
 }

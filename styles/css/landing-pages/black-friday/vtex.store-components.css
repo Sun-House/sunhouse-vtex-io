@@ -73,4 +73,13 @@
         /* text-align: center */
     }
 
+    /* TEMPORARIO - apenas durante o ano, fora da epoca de Black */
+    /* .vtex-store-components-3-x-infoCardContainer--info-card_lp-black-friday { */
+    .infoCardContainer--info-card_lp-black-friday {
+        position: absolute;
+        top: 0;
+        z-index: 99999;
+        height: 101vh
+    }
+
 }

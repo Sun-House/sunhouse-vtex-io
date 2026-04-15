@@ -1,0 +1,8 @@
+/* .vtex-container-container--corporate-landing-page .vtex-rich-text-0-x-paragraph { */
+:global(.vtex-container-container--corporate-landing-page) .paragraph {
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    color: #161413;
+    font-weight: 300; /* Corrige visual estranho que estava deixando o peso padrao - que era 400 */
+    margin-top: 12px /* Pode acabar quebrando alguns layouts */
+}

@@ -1,0 +1,16 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    :global(.sunhouse-slider-layout-0-x-slide--slider__custom-photo-grid):nth-child(4) :global(img) {
+        border-radius: 32px 4px 4px 32px
+    }
+    
+    :global(.sunhouse-slider-layout-0-x-slide--slider__custom-photo-grid):nth-child(5) :global(img) {
+        border-radius: 4px
+    }
+    
+    :global(.sunhouse-slider-layout-0-x-slide--slider__custom-photo-grid):nth-child(6) :global(img) {
+        border-radius: 4px 32px 32px 4px
+    }
+
+}

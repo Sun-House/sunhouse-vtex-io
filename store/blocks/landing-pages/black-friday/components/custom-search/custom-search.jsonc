@@ -304,7 +304,7 @@
 
 
 	"flex-layout.row#bf_info-card__wrapper": {
-		"title": "Banner Destaque - Line Wrapper",
+		"title": "Banner Hero",
 		"children": [
 			"container#custom_banner-department-desktop"
 		],
@@ -316,7 +316,8 @@
 	"container#custom_banner-department-desktop": {
 		"title": "Banner - InfoCard",
 		"children": [
-			"info-card#black-friday"
+			"info-card#black-friday",
+			"cron-countdown#black-friday"
 		],
 		"props": {
 			"blockClass": ["search-banner", "info-card_lp-banner"]
@@ -342,5 +343,13 @@
 			"preload": true,
 			"blockClass": "info-card_lp-black-friday"
     	}
-  	}
+  	},
+	"cron-countdown#black-friday": {
+		"title": "Contagem Regressiva - Black Friday",
+		"props": {
+			"targetDate": "27/11/2026",
+			"targetTime": "00:00:01",
+			"blockClass": "cron-countdown-black-friday"
+		}
+	}
 }

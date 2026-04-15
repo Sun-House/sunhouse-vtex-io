@@ -24,8 +24,9 @@
     margin-right: 12px
 }
 
-/* Desktop */
+/* Desktop Force */
 @media screen and (min-width: 1025px) {
+
     .slideChildrenContainer--slider__custom-photo-grid {
         margin-right: 12px
     }
@@ -37,6 +38,7 @@
     .imageElement--slider__custom-photo-grid {
         box-shadow: 0px 0px 6px #ccc
     }
+
 }
 
 /* Mobile */

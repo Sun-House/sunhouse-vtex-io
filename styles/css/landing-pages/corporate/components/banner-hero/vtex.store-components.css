@@ -1,0 +1,4 @@
+/* .vtex-container-container--corporate-landing-page .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-corporate .vtex-button__label::after { */
+:global(.vtex-container-container--corporate-landing-page) .infoCardCallActionContainer--main-banner-corporate :global(.vtex-button__label)::after {
+    content: "\F119" !important
+}

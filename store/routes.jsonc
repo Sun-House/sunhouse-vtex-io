@@ -1,3 +1,5 @@
+// ESSE ARQUIVO SERVE DE BASE APENAS, POIS ELE É UM JSON COM COMENTARIOS,
+// E O VTEX IO NAO ACEITA JSON ASSIM NO BUILD.
 // Definir aqui é a mesma coisa que definir no admin vtex/pages
 {
   // "store.custom#nossas-lojas": {
@@ -14,5 +16,8 @@
   // },
   // "store.custom#vendas-corporativas": {
   //   "path": "/institucional/vendas-corporativas"
+  // },
+  // "store.custom#corporate-landing-page": {
+  //   "path": "/landing/corporativo"
   // }
 }

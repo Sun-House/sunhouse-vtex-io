@@ -1,0 +1,10 @@
+/* .vtex-container-container--corporate-landing-page .sunhouse-container-1-x-imageElement--container_desc-banner__imagemDescricao { */
+:global(.vtex-container-container--corporate-landing-page) .imageElement--container_desc-banner__imagemDescricao {
+    height: auto
+}
+
+/* .vtex-container-container--corporate-landing-page .sunhouse-container-1-x-container--shelf-grid { */
+:global(.vtex-container-container--corporate-landing-page) .container--shelf-grid {
+    gap: 24px;
+    max-width: 1000px
+}

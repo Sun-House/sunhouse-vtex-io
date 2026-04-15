@@ -1,0 +1,22 @@
+/* Ajuste visual geral para todas as linhas do corpo da pagina */
+/* .vtex-flex-layout-0-x-flexRow.vtex-flex-layout-0-x-flexRow--corporate-body-line { */
+.flexRow--corporate-body-line {
+    padding-bottom: 60px
+}
+
+/* .vtex-flex-layout-0-x-flexRow--cbl_line-3 { */
+.flexRow--cbl_line-3 {
+    /* DEBUG */
+    background: #ccc
+    /* DEBUG */
+}
+
+/* Area de About Us */
+/* .vtex-container-container--corporate-landing-page .vtex-flex-layout-0-x-flexRowContent--desc-banner__row .vtex-flex-layout-0-x-stretchChildrenWidth:first-child { */
+:global(.vtex-container-container--corporate-landing-page) .flexRowContent--desc-banner__row .stretchChildrenWidth:first-child {
+    width: 80% !important /* Valor ideal de acordo com a apresentacao corporativa da Julie */
+}
+
+/* Area de Projetos em Destaque */
+
+/* Area de Catalogo Grid */

@@ -1,0 +1,41 @@
+{
+    "hover-container#corporate-shelf-grid": {
+        "title": "Configurações do Hover",
+        "children": [
+            "list-context.product-list#corporate-shelf-grid"
+        ],
+        "props": {
+            "blockClass": ["shelf-home03", "hover-shelf-list", "corporate-shelf-grid"]
+        }
+    },
+    
+    // Lista de Produtos em Grid
+    "list-context.product-list#corporate-shelf-grid": {
+        "title": "Configurações da Lista de Produtos",
+        "blocks": [
+            "product-summary.shelf#main-product-new"
+        ],
+        "children": [
+            // "responsive-layout.desktop#shelf-list", // Monta shelf grid padrao Refresh - herdado de outro arquivo Json
+            //
+            "responsive-layout.desktop#corporate-shelf-grid",
+            //
+            "responsive-layout.mobile#shelf-slider" // Monta shelf padrao Embla - ainda nao configurado visual para Refresh - herdado de outro arquivo Json
+        ],
+        "props": {
+            "maxItems": 9
+        }
+    },
+
+    "responsive-layout.desktop#corporate-shelf-grid": {
+        "children": [
+            "container.list-render#corporate-shelf-grid"
+        ]
+    },
+    "container.list-render#corporate-shelf-grid": {
+        "props": {
+            // "blockClass": ["shelf", "shelf-list", "shelf-grid"]
+            "blockClass": "corporate-shelf-grid"
+        }
+    }
+}

@@ -3,7 +3,8 @@
     padding: 64px 0
 }
 
-.container--home-faq .container--custom-block__faq-disclosure {
+.container--home-faq .container--custom-block__faq-disclosure,
+.container--search-seo .container--custom-block__faq-disclosure {
     border-radius: 4px
 }
 

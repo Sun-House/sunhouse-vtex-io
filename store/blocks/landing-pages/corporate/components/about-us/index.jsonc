@@ -1,0 +1,47 @@
+// ESSENCIALMENTE FOI ALTERADO ABAIXO APENAS OS AJUSTES DE TAMANHO DE COLUNAS,
+// PORTANTO, A PRINCIPIO NAO ESTA SENDO USADO. FICARA AQUI ATE O FINAL DO DEV
+// PARA CASO SEJA NECESSARIO UTILIZAR UM COMPONENTE SEPARADO DE FATO.
+{
+    "container#corporate-landing-body_about-us": {
+        "title": "Descricao com Banner",
+        "children": [
+            "flex-layout.row#corporate-landing-body_about-us"
+        ],
+        "props": {
+            "blockClass": ["custom-block__container", "custom-block__desc-banner"]
+        }
+    },
+
+    "flex-layout.row#corporate-landing-body_about-us": {
+        "title": "Wrapper Descricao com Banner",
+        "children": [
+            "flex-layout.col#corporate-landing-body_about-us_col1",
+            "flex-layout.col#corporate-landing-body_about-us_col2"
+        ],
+        "props": {
+            // "colSizing": "auto",
+            "blockClass": "desc-banner__row"
+        }
+    },
+
+    "flex-layout.col#corporate-landing-body_about-us_col1": {
+        "title": "Coluna da Descrição",
+        "children": [
+            "rich-text#desc-banner__textoDescricao"
+        ],
+        "props": {
+            "width": "80%",
+            "blockClass": ["col_desc-banner_ColText"]
+        }
+    },
+    "flex-layout.col#corporate-landing-body_about-us_col2": {
+        // "title": "Coluna da Foto do Produto ou Marca",
+        "children": [
+            "list-context.image-list#desc-banner__imagemDescricao"
+        ],
+        "props": {
+            // "width": "30%",
+            "blockClass": ["col_desc-banner_ColImage"]
+        }
+    }
+}

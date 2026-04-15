@@ -1,0 +1,23 @@
+{
+    "info-card#banner-main-corporate": {
+        "title": "Configurações do Banner",
+        "props": {
+            "isFullModeStyle": true,
+			"textMode": "rich-text",
+            "textPosition": "center",
+            "textAlignment": "center",
+            "headline": "# Sun House",
+            "subhead": "## Corporate",
+            "bodyText": "Líderes em soluções de mobiliário de alto padrão para ambientes corporativos.",
+            "callToActionMode": "button",
+            "callToActionText": "Saiba mais",
+            "callToActionUrl": "#corporate-intro",
+			"imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/961c493f-323c-48a2-a78c-77dd5fc54606___124067926e66f7502e1e5b55f11c4b79.png",
+			"mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/961c493f-323c-48a2-a78c-77dd5fc54606___124067926e66f7502e1e5b55f11c4b79.png",
+            "imageAltText": "Banner Sun House Corporate",
+			"fetchpriority": "auto",
+			"preload": true,
+            "blockClass": ["main-banner", "main-banner-home", "main-banner-corporate"]
+        }
+    }
+}
