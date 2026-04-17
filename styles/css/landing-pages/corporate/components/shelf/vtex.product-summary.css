@@ -2,7 +2,7 @@
 @media screen and (min-width: 1025px) {
 
     :global(.vtex-container-container--corporate-landing-page) .element--main-shelf-new {
-        background-color: #fff;
+        background-color: #fff
     }
 
 }

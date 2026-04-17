@@ -44,5 +44,6 @@
 /* .sunhouse-container-1-x-container--product-description-brand-text { */
 .container--product-description-brand-text {
     border-top: 1px solid #2d2926;
-    margin-top: 0
+    margin-top: 0;
+    margin-bottom: 32px
 }

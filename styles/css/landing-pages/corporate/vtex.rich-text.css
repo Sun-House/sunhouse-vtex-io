@@ -1,8 +1,45 @@
+/* ESTA QUEBRANDO O LAYOUT DOS P DA PAGINA */
 /* .vtex-container-container--corporate-landing-page .vtex-rich-text-0-x-paragraph { */
-:global(.vtex-container-container--corporate-landing-page) .paragraph {
+/* :global(.vtex-container-container--corporate-landing-page) .paragraph {
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    color: #161413;
+    font-weight: 300
+} */
+/* ESTA QUEBRANDO O LAYOUT DOS P DA PAGINA */
+
+/* .vtex-container-container--corporate-landing-page .vtex-container-container--custom-block__desc-banner .vtex-rich-text-0-x-paragraph { */
+:global(.vtex-container-container--corporate-landing-page) :global(.vtex-container-container--custom-block__desc-banner) .paragraph {
     font-family: "Onest", sans-serif;
     font-size: 16px;
     color: #161413;
     font-weight: 300; /* Corrige visual estranho que estava deixando o peso padrao - que era 400 */
-    margin-top: 12px /* Pode acabar quebrando alguns layouts */
+    margin-top: 12px
+}
+
+/* .vtex-container-container--corporate-landing-page .vtex-rich-text-0-x-paragraph--pdp-h2-title:first-child { */
+:global(.vtex-container-container--corporate-landing-page) .paragraph--pdp-h2-title:first-child {
+    text-transform: uppercase;
+    margin-bottom: 6px
+}
+
+/* .vtex-rich-text-0-x-paragraph--corporate-block-title { */
+.paragraph--corporate-block-title {
+    text-transform: uppercase;
+    padding-top: 60px;
+    margin-bottom: 6px
+}
+
+/* .vtex-container-container--corporate-landing-page .vtex-rich-text-0-x-heading--pdp-h2-title { */
+:global(.vtex-container-container--corporate-landing-page) .heading--pdp-h2-title {
+    line-height: 1.2
+}
+
+/* .vtex-rich-text-0-x-heading--corporate-block-title { */
+.heading--corporate-block-title {
+    font-weight: 700;
+    color: #161413;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    margin-bottom: 25px
 }

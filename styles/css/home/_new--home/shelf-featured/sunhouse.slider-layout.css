@@ -1,19 +1,17 @@
-/* .sunhouse-container-1-x-container--shelf-featured .sunhouse-slider-layout-0-x-link--main-shelf { */
 :global(.vtex-container-container--shelf-featured) .link--main-shelf {
     text-decoration: none
 }
 
-/* .sunhouse-container-1-x-container--shelf-featured .sunhouse-slider-layout-0-x-textContainer--main-shelf { */
 :global(.vtex-container-container--shelf-featured) .textContainer--main-shelf {
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
-    top: -92px;
+    /* top: -92px; */
+    top: -78px;
     height: 0 /* Normaliza o componente para nao esticar o slider component */
 }
 
-/* .sunhouse-container-1-x-container--shelf-featured .sunhouse-slider-layout-0-x-text--main-shelf { */
 :global(.vtex-container-container--shelf-featured) .text--main-shelf {
     background-color: #fff; /* mudar para fff */
     color: #161413;
@@ -23,13 +21,21 @@
     transition: all .3s ease-in-out
 }
 
-/* .sunhouse-container-1-x-container--shelf-featured .sunhouse-slider-layout-0-x-link--main-shelf:hover .sunhouse-slider-layout-0-x-text--main-shelf { */
 :global(.vtex-container-container--shelf-featured) .link--main-shelf:hover .text--main-shelf {
     background-color: #161413; /* mudar para fff */
     color: #fff
 }
 
-/* .sunhouse-container-1-x-container--shelf-featured .sunhouse-slider-layout-0-x-imageItem--main-shelf { */
+/* Fix para atualizacao do Image-Text-List App onde agora ele pode receber texto no formato de markdown */
+/* .sunhouse-container-1-x-container--shelf-featured .sunhouse-slider-layout-0-x-heading--main-shelf,
+.sunhouse-container-1-x-container--shelf-featured .sunhouse-slider-layout-0-x-paragraph--main-shelf { */
+:global(.vtex-container-container--shelf-featured) .heading--main-shelf,
+:global(.vtex-container-container--shelf-featured) .paragraph--main-shelf {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400
+}
+
 :global(.vtex-container-container--shelf-featured) .imageItem--main-shelf {
     border-radius: 4px;
     min-height: 355px;

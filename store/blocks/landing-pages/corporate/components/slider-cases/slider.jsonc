@@ -1,0 +1,73 @@
+{
+    "container#slider-cases": {
+        "title": "Slider de Projetos em Destaque",
+        "children": [
+            "rich-text#corporate-block-title", // Tentar usar o mesmo componente de titulo para todos os blocos
+            "image-text-list#slider-cases-images"
+        ],
+        "props": {
+            "blockClass": "slider-cases"
+        }
+    },
+
+    "image-text-list#slider-cases-images": {
+        "title": "Imagens",
+        "children": [
+            "responsive-layout.desktop#slider-cases",
+            "responsive-layout.mobile#shelf-slider" // Esse é o mesmo sistema que usa o Embla, que esta sendo usado em todo o site Refresh - Pensar em mudar depois
+        ],
+        "props": {
+            "imageTextArray": [
+                {
+                    "image": "https://dummyimage.com/400x350",
+                    "imageText": "## Categoria\nCategoria 1",
+                    "link": "/"
+                },
+                {
+                    "image": "https://dummyimage.com/400x350",
+                    "imageText": "## Categoria\nCategoria 2",
+                    "link": "/"
+                },
+                {
+                    "image": "https://dummyimage.com/400x350",
+                    "imageText": "## Categoria\nCategoria 3",
+                    "link": "/"
+                },
+                {
+                    "image": "https://dummyimage.com/400x350",
+                    "imageText": "## Categoria\nCategoria 4",
+                    "link": "/"
+                }
+            ],
+            // "blockClass": "shelf-featured-images"
+            // "blockClass": "slider-cases-images"
+            "blockClass": ["shelf-featured-images", "slider-cases-images"]
+        }
+    },
+    
+    "responsive-layout.desktop#slider-cases": {
+        "children": [
+            "slider-layout#slider-cases"
+        ]
+    },
+    // "responsive-layout.mobile#slider-cases": {
+    //     "children": [
+    //         "embla-carousel#slider-cases-mobile"
+    //     ]
+    // },
+
+    "slider-layout#slider-cases": {
+        // "title": "Carossel das Prateleiras",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 2
+            },
+            "showPaginationDots": "never",
+            "showNavigationArrows": "desktopOnly",
+            "infinite": true,
+            "navigationStep": 1,
+            // "blockClass": ["shelf", "main-shelf"]
+            "blockClass": ["shelf", "main-shelf", "slider-cases"]
+        }
+    }
+}

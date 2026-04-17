@@ -67,43 +67,42 @@
   "rich-text#footer-for-you": {
     "title": "Titulo Para Você",
     "props": {
-      "text": "#### Para você",
+      "text": "Para você",
       "blockClass": ["footer", "footer-for-you", "footer-title", "footer-right-title"]
     }
   },
   "rich-text#footer-for-you-content": {
     "title": "Texto Para Você",
     "props": {
-      "text": "- [Minha conta](/account#/profile)\n- [Pedidos](/account#/orders)\n- [Minha sacola](/checkout#/cart)",
+      "text": "- [Minha conta](/account#/profile)\n- [Pedidos](/account#/orders)\n- [Minha sacola](/checkout#/cart)\n- [Compra Segura](/institucional/compra-segura)\n- [Dicas de Manutenção](/institucional/dicas-de-manutencao)\n- [Baixe o App](/institucional/app)\n- [Black Friday](/black-friday)\n- [Outlet](/outlet)\n- [Parceria Elements](/elements)",
       "blockClass": ["footer", "footer-for-you-content", "footer-list"]
     }
   },
   "rich-text#footer-institutional": {
     "title": "Titulo Sobre Nós",
     "props": {
-      "text": "#### Sobre Nós",
+      "text": "Sobre Nós",
       "blockClass": ["footer", "footer-institutional", "footer-title", "footer-right-title"]
     }
   },
   "rich-text#footer-institutional-content": {
     "title": "Texto Sobre Nós",
     "props": {
-      "text": "- [Quem somos](/institucional/sobre-nos)\n- [Nossas Lojas](/institucional/nossas-lojas)\n- [Fale conosco](/institucional/fale-conosco)\n- [Politica de Privacidade](/institucional/politica-de-privacidade)\n- [Preciso de Ajuda](/institucional/ajuda)",
+      "text": "- [Quem somos](/institucional/quem-somos)\n- [Nossas Lojas](/landing/nossas-lojas)\n- [Fale conosco](/institucional/fale-conosco)\n- [Politica de Privacidade](/institucional/politica-de-privacidade)\n- [Preciso de Ajuda](/institucional/ajuda)\n- [Parceiros](/institucional/parceiros-marketplaces)",
       "blockClass": ["footer", "footer-institutional-content", "footer-list"]
     }
   },
   "rich-text#footer-informations": {
     "title": "Titulo Informações",
     "props": {
-      "text": "#### Informações",
+      "text": "Informações",
       "blockClass": ["footer", "footer-informations", "footer-title", "footer-right-title"]
     }
   },
   "rich-text#footer-informations-content": {
     "title": "Texto Informações",
     "props": {
-      // politica de privacidade; duvidas frequentes; trocas e devolucoes; prazos de envio; formas de pagamento
-      "text": "- <a href='https://blog.sunhouse.com.br/' target='_blank'>Nosso blog</a>\n- [Montagens](/institucional/montagens)\n- [Vendas Corporativas](/institucional/vendas-corporativas)\n- [Perguntas Frequentes](/institucional/perguntas-frequentes)\n- <a href='https://design.sunhouse.com.br/' target='_blank'>Parcerias para Arquitetos</a>",
+      "text": "- [Nosso blog](https://blog.sunhouse.com.br/)\n- [Designers](/designers)\n- [Montagens](/institucional/montagens)\n- [Vendas Corporativas](/institucional/vendas-corporativas)\n- [Perguntas Frequentes](/institucional/perguntas-frequentes)\n- [Parceria para Arquitetos](https://design.sunhouse.com.br/)",
       "blockClass": ["footer", "footer-informations-content", "footer-list"]
     }
   },
@@ -111,7 +110,7 @@
   "rich-text#footer-security": {
     "title": "Titulo Certificações",
     "props": {
-      "text": "#### Certificações",
+      "text": "Certificações",
       "blockClass": ["footer", "footer-security", "footer-title", "footer-right-title"]
     }
   },
@@ -219,7 +218,7 @@
   "rich-text#footer-schedules": {
     "title": "Titulo Horario de Atendimento",
     "props": {
-      "text": "#### Horário de Atendimento",
+      "text": "Horário de Atendimento",
       "blockClass": ["footer", "footer-schedules", "footer-title"]
     }
   },

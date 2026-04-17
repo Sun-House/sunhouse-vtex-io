@@ -5,5 +5,10 @@
     :global(.vtex-container-container--corporate-landing-page) .flexRow--shelf-enhanced-sku-selector {
         padding: 0 24px
     }
-    
+
+    /* .vtex-container-container--corporate-landing-page .vtex-flex-layout-0-x-flexCol--hover-block-wrapper { */
+    :global(.vtex-container-container--corporate-landing-page) .flexCol--hover-block-wrapper {
+        margin-bottom: 16px
+    }
+
 }

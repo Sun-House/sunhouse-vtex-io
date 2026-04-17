@@ -1,0 +1,10 @@
+{
+    "rich-text#corporate-block-title": {
+        "title": "Título Bloco",
+        "props": {
+            "text": "Pre-titulo superior\n## Titulo Principal",
+            // "blockClass": ["common-title", "shelf-slider-home"]
+            "blockClass": "corporate-block-title"
+        }
+    }
+}

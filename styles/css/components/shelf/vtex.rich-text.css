@@ -46,6 +46,7 @@
     font-size: 16px;
     font-style: normal;
     text-transform: uppercase;
+    text-align: center;
     background-color: #FFF6C2;
     color: #161413;
     border: 2px solid #F9D7E0;
@@ -69,7 +70,8 @@
     opacity: 0;
     height: 50px;
     position: absolute;
-    top: -45px;
+    /* top: -45px; */
+    top: -52px;
     width: 100%;
     display: flex;
     align-items: center;

@@ -15,8 +15,8 @@
       "container#product__related-grid",
       // "condition-layout.user#buy-together", // Ainda em DEV - task liveSEO
       "container#ra-trustvox",
-      "flex-layout.row#also-seen",
-      "container#spacing-default"
+      "flex-layout.row#also-seen"
+      // "container#spacing-default" // Espaco extra aparentemente desnecessario - ficara aqui apenas caso necessite voltar
     ]
   },
 

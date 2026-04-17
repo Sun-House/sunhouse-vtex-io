@@ -1,0 +1,38 @@
+/* Customizacao do Header Mobile para Paginas de PLP - Departamento, Categoria, Subcategoria, Marca, Pesquisa e Customizadas com Search */
+@media screen and (max-width: 1024px) {
+
+    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-container-1-x-container--header) {
+        height: 0 !important
+    }
+    
+    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-container-1-x-wrapper--header--mobile__main),
+    :global(.render-container)[class*="render-route-store-search-"] :global(.vtex-flex-layout-0-x-flexRow--header-mobile-bottom) {
+        background-color: transparent !important
+    }
+
+    :global(.render-container)[class*="render-route-store-search-"] :global(.vtex-store-drawer-0-x-openIconContainer--menu-mobile) :global(.vtex-store-drawer-0-x-menuIcon),
+    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-minicart-2-x-minicartIconContainer--minicart-main) :global(.vtex-store-icons-0-x-cartIcon),
+    :global(.render-container)[class*="render-route-store-search-"] :global(.vtexarg-speech-to-text-1-x-audioSearchContainer)::after,
+    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.sunhouse-store-components-4-x-searchBarIcon) :global(.sunhouse-store-components-4-x-searchIcon){
+        color: #fff !important
+    }
+
+    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.vtex-input-prefix__group)::after {
+        background-color: #fff !important
+    }
+
+    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+        font-size: 20px !important;
+        color: #fff !important
+    }
+
+    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+        font-size: 17px !important;
+        color: #fff !important
+    }
+
+    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-search-result-3-x-container--layout) {
+        margin-top: 0
+    }
+
+}

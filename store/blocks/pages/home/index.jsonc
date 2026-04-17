@@ -29,12 +29,8 @@
       "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
 
       // Fullwidth Shelf Banner
-      // A SER IMPLEMENTADO - Usar o abaixo como base:
-      // "flex-layout.row#shelf-banner-desktop",
-      "container#spacing-default", // Pode ser necessario ser removido apos os ajustes Css no banner e prateleira
+      "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
       "container#fullwidth-banner-shelf",
-      // "container#spacing-default", - vai ficar mais bonito sem o spacing
-      //
 
       // Instagram Block - Estudar se será possivel para lançamento no Refresh
       // A SER IMPLEMENTADO - pos lancamento do MVP do Refresh

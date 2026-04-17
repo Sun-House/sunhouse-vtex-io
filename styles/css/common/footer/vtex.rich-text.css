@@ -26,6 +26,12 @@
     font-weight: 700
 }
 
+/* .vtex-rich-text-0-x-paragraph--footer-right-title { */
+.paragraph--footer-right-title {
+    font-size: 1.5rem;
+    font-weight: 500
+}
+
 .container--footer-social {
     text-align: center;
     align-items: center

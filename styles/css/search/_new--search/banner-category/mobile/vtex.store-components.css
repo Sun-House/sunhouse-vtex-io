@@ -3,12 +3,15 @@
     /* .vtex-store-components-3-x-infoCardContainer--main-banner-category { */
     .infoCardContainer--main-banner-category {
         position: relative;
-        height: 100%
+        /* height: 100% */
+        height: 100dvh;
+        margin-bottom: 24px
     }
 
     /* .vtex-store-components-3-x-infoCardContainer--main-banner-category::after { */
     .infoCardContainer--main-banner-category::after {
-        height: 100%
+        /* height: 100% */
+        height: 100dvh
     }
     
     /* .vtex-store-components-3-x-paragraph--main-banner-category { */

@@ -1,0 +1,10 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* .vtex-flex-layout-0-x-flexRow--also-seen .vtex-product-summary-2-x-element--main-shelf-new { */
+    :global(.vtex-flex-layout-0-x-flexRow--also-seen) .element--main-shelf-new {
+        background-color: #fff
+        /* border-radius: 4px - precisa aplicar na imagem tambem */
+    }
+    
+}

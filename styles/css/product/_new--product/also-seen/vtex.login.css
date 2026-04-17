@@ -1,0 +1,12 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+    
+    /* .vtex-flex-layout-0-x-flexRow--shelf-container - esse aplica para toda e qualquer shelf do site (ate em grid vertical) */
+    /* .vtex-flex-layout-0-x-flexRow--also-seen { */
+    :global(.vtex-flex-layout-0-x-flexRow--also-seen):has(:global(.vtex-rich-text-0-x-container--also-seen)) {
+        height: 662px;
+        /* margin-top: 32px; */
+        background: #f6f6f6
+    }
+
+}

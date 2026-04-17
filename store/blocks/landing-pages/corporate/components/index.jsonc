@@ -25,7 +25,7 @@
         "children": [
             "flex-layout.row#corporate-landing-body_l1",
             // "container#spacing-default",
-            // "flex-layout.row#corporate-landing-body_l2",
+            "flex-layout.row#corporate-landing-body_l2",
             "flex-layout.row#corporate-landing-body_l3"
             // "flex-layout.row#corporate-landing-body_l4",
             // "flex-layout.row#corporate-landing-body_l5"
@@ -35,7 +35,7 @@
         }
     },
 
-    // Linha 1
+    // Linha 1 - About Us
     "flex-layout.row#corporate-landing-body_l1": {
         "title": "Linha 1",
         "children": [
@@ -49,14 +49,16 @@
     },
 
     // Linha 2 - Componente de Slider de Projetos em Destaque
-    // "flex-layout.row#corporate-landing-body_l2": {
-    //     "title": "Linha 2",
-    //     "children": [
-            
-    //     ]
-    // },
+    "flex-layout.row#corporate-landing-body_l2": {
+        "title": "Linha 2",
+        "children": [
+            "container#slider-cases"
+        ],
+        "props": {
+            "blockClass": ["corporate-body-line", "cbl_line-2"]
+        }
+    },
 
-    // Linha 2
     "flex-layout.row#corporate-landing-body_l3": {
         "title": "Linha 3",
         "children": [
@@ -70,20 +72,11 @@
     "flex-layout.col#corporate-landing-body_l3-col1": {
         "title": "Coluna 1",
         "children": [
-            "rich-text#corporate-landing-l3_title",
+            "rich-text#corporate-block-title", // Tentar usar o mesmo componente de titulo para todos os blocos
             // "container#shelf-home03" // Prateleira Grid - componente herdado da home
             "hover-container#corporate-shelf-grid" // Prateleira Grid customizada para a landing page corporativa
         ]
-    },
-
-    "rich-text#corporate-landing-l3_title": {
-        "title": "Quem viu, viu também título",
-        "props": {
-            "text": "Linha exclusiva para nossos clientes corporativos\n### Linha Corporate",
-            // "blockClass": ["also-seen", "common-title"]
-            "blockClass": ["also-seen", "common-title", "corporate-shelf-title"]
-        }
     }
-    
 
+    // Linha 4 - 
 }

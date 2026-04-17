@@ -12,10 +12,6 @@
 
     /* .sunhouse-container-1-x-container--fullwidth-banner-shelf .vtex-product-summary-2-x-element--main-shelf-new { */
     :global(.vtex-container-container--fullwidth-banner-shelf) .element--main-shelf-new {
-        /* DEBUG */
-        /* background-color: #ccc */
-        /* DEBUG */
-
         background-color: #fff
         /* border-radius: 4px - precisa aplicar na imagem tambem */
     }

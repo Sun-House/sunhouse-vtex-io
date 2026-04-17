@@ -1,0 +1,14 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+    
+    /* .vtex-flex-layout-0-x-flexCol--hover-block-wrapper { */
+    .flexRow--also-seen .flexCol--hover-block-wrapper {
+        padding: 0 24px
+    }
+
+    /* .vtex-flex-layout-0-x-flexRow--also-seen .vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button { */
+    .flexRow--also-seen .flexColChild--shelf-product-available .flexCol--buy-button :global(.vtex-button) {
+        width: auto !important
+    }
+
+}

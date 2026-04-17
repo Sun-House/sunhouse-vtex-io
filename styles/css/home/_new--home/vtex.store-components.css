@@ -1,10 +1,8 @@
-/* .vtex-store-components-3-x-infoCardContainer--main-banner-home { */
 .infoCardContainer--main-banner-home {
     height: 100vh;
     border: 0 /* Fix para remover borda inferior do banner que vem como padrao do componente VTEX */
 }
 
-/**/
 /* Gera backdrop para criar efeito de opacidade no banner */
 .infoCardContainer--main-banner::after {
     content: "";
@@ -20,42 +18,67 @@
     height: 100vh
 }
 
-/* .infoCardTextContainer--main-banner-home { */
 .infoCardTextContainer--main-banner {
     z-index: 2;
-    /* position: relative; */
     margin-top: 152px;
     width: 100%;
     max-width: unset
 }
 
-/* .vtex-store-components-3-x-container--main-banner-home:first-child .vtex-store-components-3-x-heading--main-banner-home:before,
-.vtex-store-components-3-x-container--main-banner-home:first-child .vtex-store-components-3-x-heading--main-banner-home:after { */
-.container--main-banner-home:first-child .heading--main-banner-home::before,
+/* .container--main-banner-home:first-child .heading--main-banner-home::before,
 .container--main-banner-home:first-child .heading--main-banner-home::after {
     content: "/";
     color: #FFDA00;
     margin-left: 20px;
     margin-right: 20px
+} */
+
+/* .vtex-store-components-3-x-container--main-banner-home:first-child .vtex-store-components-3-x-paragraph--main-banner-home:after,
+.vtex-store-components-3-x-container--main-banner-home:first-child .vtex-store-components-3-x-paragraph--main-banner-home:before { */
+.container--main-banner-home:first-child .paragraph--main-banner-home::after,
+.container--main-banner-home:first-child .paragraph--main-banner-home::before {
+    content: "/";
+    color: #ffda00;
+    margin-left: 20px;
+    margin-right: 20px
 }
 
-/* .heading--main-banner-home,
-.paragraph--main-banner-home { */
 .heading--main-banner,
 .paragraph--main-banner {
     color: #fff
 }
 
-/* .vtex-store-components-3-x-heading--main-banner-home { */
 .heading--main-banner {
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 0
 }
 
-.heading--main-banner-home {
+/* .heading--main-banner-home {
     font-size: 5rem;
     text-transform: uppercase
+} */
+
+/* .vtex-store-components-3-x-heading--main-banner-home - deixei aqui para referencia caso seja necessario usar para qualquer nivel de heading */
+/* .vtex-store-components-3-x-headingLevel1--main-banner-home { */
+.headingLevel1--main-banner-home {
+    font-family: Onest, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 55%;
+    margin: 24px auto 12px
+}
+
+/* .vtex-store-components-3-x-container--main-banner-home .vtex-store-components-3-x-paragraph--main-banner-home { */
+.container--main-banner-home .paragraph--main-banner-home {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Bai Jamjuree, serif;
+    line-height: 1.2;
+    margin: 0
 }
 
 /* .vtex-store-components-3-x-paragraph--main-banner-home { */
@@ -71,7 +94,6 @@
 }
 
 /* BOTAO - Replicar para todos botoes de CTA possiveis do site START */
-/* .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-home .vtex-button { */
 .infoCardCallActionContainer--main-banner-home :global(.vtex-button) {
     background-color: unset;
     border-color: #fff;
@@ -81,7 +103,6 @@
     /* Propriedades base do botão animado */
     position: relative; /* Essencial para posicionar o ::before */
     display: inline-block;
-    /* padding: 10px 20px; */
     padding: 10px 0px;
     border: 2px solid #fff;
     background-color: transparent; /* Cor de fundo inicial transparente */
@@ -89,13 +110,10 @@
     cursor: pointer;
     overflow: hidden; /* Corta o ::before fora da área do botão */
     z-index: 1; /* Garante que o texto fique acima do ::before */
-  
-    /* Transição para a cor do texto (opcional, mas melhora o efeito) */
     transition: color 0.4s ease-in-out
     /* Propriedades base do botão animado */
 }
 
-/* .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-home .vtex-button::before { */
 .infoCardCallActionContainer--main-banner-home :global(.vtex-button)::before {
     content: "";
     /* Posicionamento e tamanho iniciais do preenchimento */
@@ -115,21 +133,18 @@
     transition: width 0.4s ease-in-out
 }
   
-  /* Estado de HOVER (Passar o mouse) */
-/* .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-home .vtex-button:hover { */
+/* Estado de HOVER (Passar o mouse) */
 .infoCardCallActionContainer--main-banner-home :global(.vtex-button):hover {
-    color: #ffffff; /* Muda a cor do texto para branco */
+    color: #ffffff /* Muda a cor do texto para branco */
 }
   
 /* .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-home .vtex-button:hover::before { */
 .infoCardCallActionContainer--main-banner-home :global(.vtex-button):hover::before {
-    width: 100%; /* A largura aumenta de 0% para 100%, preenchendo o botão */
+    width: 100% /* A largura aumenta de 0% para 100%, preenchendo o botão */
     /* width: 150%; */ /* Para quando usar o skew */
 }
 /* BOTAO - Replicar para todos botoes de CTA possiveis do site END */
 
-
-/* .vtex-store-components-3-x-infoCardCallActionContainer--main-banner-home .vtex-button__label::after { */
 .infoCardCallActionContainer--main-banner-home :global(.vtex-button__label)::after {
     content: "\F134";
     font-family: "Bootstrap-Icons";

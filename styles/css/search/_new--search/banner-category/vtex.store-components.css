@@ -7,6 +7,28 @@
     height: 74vh /* Ajustar de acordo com a altura do banner de categoria */
 }
 
-.heading--main-banner-category {
+.headingLevel1--main-banner-category {
     font-size: 4.2rem
+}
+
+.headingLevel2--main-banner-category,
+.headingLevel3--main-banner-category {
+    font-family: 'Onest', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 12px
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    .heading--main-banner-category {
+        text-align: center
+    }
+
 }
