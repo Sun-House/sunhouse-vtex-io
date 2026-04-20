@@ -211,16 +211,13 @@
     "title": "Search Mobile",
     "children": [
       "container#banner-department-mobile",
-      // "container#categories-slider",
+      // "container#categories-slider", - ver se da para reaproveitar algo desse componente para o novo abaixo
       "container#plp-category-grid",
-      // "flex-layout.row#search-breadcrumb",
+      // "flex-layout.row#search-breadcrumb", - esse precisa voltar para o mobile, pois é importante - revalidar onde ele encaixa no novo layout
       "flex-layout.row#search-result.mobile",
       "container#showcase-slider",
       "container#search-seo",
       "container#spacing-default"
-      // "container#blog-cards",
-      // "container#spacing-default"
-      // "flex-layout.row#banners-slider"
     ],
     "props": {
       "defaultGalleryLayout": "grid",

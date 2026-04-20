@@ -35,4 +35,9 @@
         margin-top: 0
     }
 
+    /* Corrige um padding nativo desnecessario para a pagina de resultado de busca no mobile */
+    :global(.vtex-render__container-id-cluster-and-search) :global(.vtex-store-components-3-x-container) {
+        padding: 0
+    }
+
 }

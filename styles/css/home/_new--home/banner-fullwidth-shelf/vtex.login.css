@@ -1,7 +1,3 @@
-/* .vtex-product-summary-2-x-container--main-shelf-new
-.vtex-product-summary-2-x-containerNormal
-.vtex-product-summary-2-x-containerNormal--main-shelf-new */
-
 /* .sunhouse-container-1-x-container--fullwidth-banner-shelf .vtex-product-summary-2-x-containerNormal--main-shelf-new { / Esse talvez precise ajustar */
 :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-product-summary-2-x-containerNormal--main-shelf-new) { /* Esse talvez precise ajustar */
     max-width: unset !important

@@ -1,0 +1,9 @@
+/* Mobile */
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-flex-layout-0-x-flexRow--also-seen { */
+    .flexRow--also-seen {
+        margin-bottom: 48px
+    }
+
+}

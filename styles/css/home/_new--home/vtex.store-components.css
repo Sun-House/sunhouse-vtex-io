@@ -86,7 +86,7 @@
     font-family: 'Onest', sans-serif; /* Fonte final validada Refresh */
     font-size: 22px;
     text-align: center;
-    width: 55%;
+    /* width: 55%; - Estava crashando o layout do texto principal na pagina corporate */
     margin-top: 24px;
     margin-right: auto;
     margin-left: auto;

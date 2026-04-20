@@ -5,7 +5,7 @@
         position: relative;
         /* height: 100% */
         height: 100dvh;
-        margin-bottom: 24px
+        /* margin-bottom: 24px - Pode ser necessario voltar quando o carrossel de categorias for implementado */
     }
 
     /* .vtex-store-components-3-x-infoCardContainer--main-banner-category::after { */

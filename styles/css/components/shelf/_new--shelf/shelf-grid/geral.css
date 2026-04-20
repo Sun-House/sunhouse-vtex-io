@@ -1,0 +1,74 @@
+/* MOVER KEYS ABAIXO PARA CADA ARQUIVO CORRETO!
+   A ideia é centralizar aqui as configuracoes gerais para
+   o modelo visual de shelf grid, mas aplicar somente onde
+   for necessario */
+ 
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    .vtex-container-container--corporate-landing-page .vtex-product-summary-2-x-element--main-shelf-new {
+        background-color: #fff
+    }
+
+    .vtex-container-container--corporate-landing-page .vtex-flex-layout-0-x-flexCol--hover-block-wrapper {
+        margin-bottom: 16px
+    }
+
+    .vtex-container-container--corporate-landing-page .vtex-flex-layout-0-x-flexRow--shelf-enhanced-sku-selector,
+    .vtex-container-container--corporate-landing-page .vtex-flex-layout-0-x-flexCol--hover-block-wrapper {
+        padding: 0 24px
+    }
+
+    /*  */
+    :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-product-summary-2-x-containerNormal--main-shelf-new) {
+        max-width: unset !important
+    }
+    
+    :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-product-summary-2-x-nameContainer--new-shelf) {
+        max-width: 70%; /* 75 e 80 ficam bons tambem */
+    }
+    
+    :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.sunhouse-hover-container-0-x-hoverContent.sunhouse-hover-container-0-x-hoverContent--actions) {
+        float: right
+    }
+    
+    :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-add-to-cart-button-0-x-buttonText--shelf-buy) {
+        font-size: 0
+    }
+    
+    :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button) {
+        width: 52px
+    }
+    
+    :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button):hover {
+        background-color: #FFDA00
+    }
+    
+    :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button):hover :global(.vtex-button__label)::after {
+        color: #161413
+    }
+    
+    :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button .vtex-button__label)::after {
+        font-size: 24px;
+        margin-left: 0
+    }
+
+    /*  */
+    :global(.vtex-flex-layout-0-x-flexRow--home-shelf-full > .vtex-store-components-3-x-container) {
+        height: 100%;
+        position: relative
+    }
+
+    /* Ajustes para deixar identico a ideia original do Refresh */
+    :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
+    :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado) {
+        opacity: 1; /* Pode ser necessario aplicar !important */
+        visibility: visible /* Pode ser necessario aplicar !important */
+    }
+
+    :global(.sunhouse-container-1-x-container--fullwidth-banner-shelf) :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper .vtex-flex-layout-0-x-flexCol--shelf-buy-button) {
+        opacity: 1; /* Pode ser necessario aplicar !important */
+        visibility: visible /* Pode ser necessario aplicar !important */
+    }
+
+}

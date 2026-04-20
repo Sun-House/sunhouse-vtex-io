@@ -275,8 +275,8 @@
         right: 0
     }
 
-    /* .orderByDropdown--orderby-bf { */
-    .orderByDropdown--orderby-new {
+    .orderByDropdown--orderby-bf {
+    /* .orderByDropdown--orderby-new { - Precisa ajustar para esse key, mas apenas o key acima esta de fato ativo e funcionando */
         padding-top: 0
     }
 

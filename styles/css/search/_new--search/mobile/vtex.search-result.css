@@ -3,13 +3,14 @@
     /* PRECISA AJUSTAR ISSO APOS VIRADA DO MVP */
     /* .vtex-search-result-3-x-orderByButton--orderby-bf { */
     .orderByButton--orderby-bf {
-        width: auto;
+        /* width: auto; - so atrapalha o layout do componente wrapper pai */
         height: 50px;
         padding: 14px;
         border-width: 1px;
         border-color: #00000057;
         border-style: solid;
-        border-radius: 50px
+        border-radius: 50px;
+        background: none /* Remove background nativo VTEX do elemento */
     }
     
     /* .vtex-search-result-3-x-orderByText--orderby-bf { */

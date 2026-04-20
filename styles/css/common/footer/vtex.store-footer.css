@@ -1,4 +1,12 @@
 .footerLayout--global-footer {
-    background-color: #161413;
-    height: 763px
+    background-color: #161413
+}
+
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    .footerLayout--global-footer {
+        height: 763px
+    }
+
 }
