@@ -28,12 +28,13 @@
     }
 
     :global(.vtex-container-container--shelf-featured) .imageItem--shelf--mobile {
-        
-        border-radius: 4px;
-        min-height: 355px;
-        max-height: 355px !important;
-        object-fit: cover /* Esse atributo centraliza a imagem perfeitamente ao centro do slide, permitindo subir fotos de qualquer proporcao */
-
+        /* min-height: 355px;
+        max-height: 355px !important; */
+        width: 291px;
+        height: 355px;
+        object-fit: cover; /* Esse atributo centraliza a imagem perfeitamente ao centro do slide, permitindo subir fotos de qualquer proporcao */
+        object-position: center;
+        border-radius: 4px
     }
     
 }

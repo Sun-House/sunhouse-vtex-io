@@ -71,4 +71,11 @@
         visibility: visible /* Pode ser necessario aplicar !important */
     }
 
+    /*  */
+    /* Apenas caso seja mostrado o fundo branco
+       Caso nao mostre, deixar o key abaixo desativado */
+       :global(.vtex-stack-layout-0-x-stackContainer--shelf-new-product-image) {
+        padding: 12px 24px 0 /* Top, Right, Bottom, Left */
+    }
+
 }

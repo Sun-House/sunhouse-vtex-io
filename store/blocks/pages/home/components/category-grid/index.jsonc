@@ -1,6 +1,6 @@
 {
   "flex-layout.row#categories-slider": {
-    "title": "Container categorias",
+    "title": "Categorias em Destaque",
     "children": [
       "flex-layout.col#categories-slider-content"
     ],
@@ -11,7 +11,6 @@
     }
   },
   "flex-layout.col#categories-slider-content": {
-    "title": "Conteúdo categorias",
     "children": [
       "flex-layout.col#categories-content"
     ],
@@ -20,7 +19,6 @@
     }
   },
   "flex-layout.col#categories-content": {
-    "title": "Carrossel de categorias",
     "children": [
       "image-text-list#categories-slider"
     ],
@@ -31,6 +29,7 @@
   },
 
   "image-text-list#categories-slider": {
+    "title": "Imagens",
     "children": [
       // "embla-carousel#by-category",
       "responsive-layout.desktop#categories-slider",

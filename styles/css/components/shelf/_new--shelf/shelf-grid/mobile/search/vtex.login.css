@@ -4,76 +4,85 @@
 @media screen and (max-width: 1024px) {
 
     /*  */
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-product-summary-2-x-element--main-shelf-new) {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-product-summary-2-x-element--main-shelf-new),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-product-summary-2-x-element--main-shelf-new) {
         background-color: #fff;
         border-radius: 4px
     }
 
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper) {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper) {
         margin-bottom: 16px
     }
 
     :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexRow--shelf-enhanced-sku-selector),
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper) {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexRow--shelf-enhanced-sku-selector),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper) {
         padding: 0 24px
     }
 
     /*  */
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-product-summary-2-x-containerNormal--main-shelf-new) {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-product-summary-2-x-containerNormal--main-shelf-new),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-product-summary-2-x-containerNormal--main-shelf-new) {
         max-width: unset !important
     }
     
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-product-summary-2-x-nameContainer--new-shelf) {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-product-summary-2-x-nameContainer--new-shelf) {
         max-width: 70%; /* 75 e 80 ficam bons tambem */
     }
     
-    :global(.render-container)[class*="render-route-store-search"] :global(.sunhouse-hover-container-0-x-hoverContent.sunhouse-hover-container-0-x-hoverContent--actions) {
+    :global(.render-container)[class*="render-route-store-search"] :global(.sunhouse-hover-container-0-x-hoverContent.sunhouse-hover-container-0-x-hoverContent--actions),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.sunhouse-hover-container-0-x-hoverContent.sunhouse-hover-container-0-x-hoverContent--actions) {
         float: right
     }
     
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-add-to-cart-button-0-x-buttonText--shelf-buy) {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-add-to-cart-button-0-x-buttonText--shelf-buy),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-add-to-cart-button-0-x-buttonText--shelf-buy) {
         font-size: 0
     }
     
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button) {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button) {
         width: 52px
     }
     
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button):hover {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button):hover,
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button):hover {
         background-color: #FFDA00
     }
     
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button):hover :global(.vtex-button__label)::after {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button):hover :global(.vtex-button__label)::after,
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button):hover :global(.vtex-button__label)::after {
         color: #161413
     }
     
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button .vtex-button__label)::after {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button .vtex-button__label)::after,
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexColChild--shelf-product-available .vtex-flex-layout-0-x-flexCol--buy-button .vtex-button .vtex-button__label)::after {
         font-size: 24px;
         margin-left: 0
     }
 
     /*  */
-    :global(.render-container)[class*="render-route-store-search"] > :global(.vtex-store-components-3-x-container) {
+    :global(.render-container)[class*="render-route-store-search"] > :global(.vtex-store-components-3-x-container),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] > :global(.vtex-store-components-3-x-container) {
         height: 100%;
         position: relative
     }
 
     :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado) {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado) {
         opacity: 1;
         visibility: visible
     }
 
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper .vtex-flex-layout-0-x-flexCol--shelf-buy-button) {
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper .vtex-flex-layout-0-x-flexCol--shelf-buy-button),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper .vtex-flex-layout-0-x-flexCol--shelf-buy-button) {
         opacity: 1;
         visibility: visible
-    }
-
-    /*  */
-    /* Apenas caso seja mostrado o fundo branco
-       Caso nao mostre, deixar o key abaixo desativado */
-    :global(.vtex-stack-layout-0-x-stackContainer--shelf-new-product-image) {
-        padding: 12px 24px 0 /* Top, Right, Bottom, Left */
     }
     
 }

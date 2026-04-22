@@ -14,7 +14,7 @@
       "container#spacing-default",
 
       // Shelfs
-      "container#shelf-home02", // Mudar nome posteriormente
+      // "container#shelf-home02", // Mudar nome posteriormente
       "container#shelf-featured",
       "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
 
