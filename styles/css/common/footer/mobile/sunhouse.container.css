@@ -4,5 +4,11 @@
     .container--footer-social-content {
         padding-inline: 0
     }
+
+    /* .sunhouse-container-1-x-imageItem--footer-social-content { */
+    .imageItem--footer-social-content {
+        width: 32px;
+        height: 32px
+    }
     
 }

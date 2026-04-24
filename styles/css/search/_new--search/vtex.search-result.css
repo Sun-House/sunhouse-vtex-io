@@ -255,6 +255,16 @@
         width: 100%;
         height: 50px
     }
+
+    /* .vtex-search-result-3-x-filterPopupTitle--orderby-bf,
+    .vtex-search-result-3-x-filterPopupTitle--orderby-new { */
+    .filterPopupTitle--orderby-bf,
+    .filterPopupTitle--orderby-new {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100% /* ou um valor fixo como 200px */
+    }
     
     /* .filterPopupTitle--orderby-bf { */
     .filterPopupTitle--orderby-new {

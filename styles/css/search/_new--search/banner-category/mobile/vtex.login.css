@@ -1,0 +1,41 @@
+@media screen and (max-width: 1024px) {
+    
+    /* .render-container[class*="render-route-store-search-"] .vtex-store-components-3-x-headingLevel2--main-banner-category,
+    .render-container[class*="render-route-vtex-store-2-x-store-custom-"] .vtex-store-components-3-x-headingLevel2--main-banner-category { */
+    :global(.render-container[class*="render-route-store-search-"]) :global(.vtex-store-components-3-x-headingLevel2--main-banner-category),
+    :global(.render-container[class*="render-route-vtex-store-2-x-store-custom-"]) :global(.vtex-store-components-3-x-headingLevel2--main-banner-category) {
+        text-align: left
+    }
+
+    /* .render-container[class*="render-route-store-search-"] .vtex-store-components-3-x-infoCardTextContainer--main-banner,
+    .render-container[class*="render-route-vtex-store-2-x-store-custom-"] .vtex-store-components-3-x-infoCardTextContainer--main-banner { */
+    :global(.render-container[class*="render-route-store-search-"]) :global(.vtex-store-components-3-x-infoCardTextContainer--main-banner),
+    :global(.render-container[class*="render-route-vtex-store-2-x-store-custom-"]) :global(.vtex-store-components-3-x-infoCardTextContainer--main-banner) {
+        padding: 0 24px
+    }
+
+    /* .render-container[class*="render-route-store-search-"] .vtex-store-components-3-x-headingLevel1--main-banner-category,
+    .render-container[class*="render-route-vtex-store-2-x-store-custom-"] .vtex-store-components-3-x-headingLevel1--main-banner-category { */
+    :global(.render-container[class*="render-route-store-search-"]) :global(.vtex-store-components-3-x-headingLevel1--main-banner-category),
+    :global(.render-container[class*="render-route-vtex-store-2-x-store-custom-"]) :global(.vtex-store-components-3-x-headingLevel1--main-banner-category) {
+        transform-origin: left center;
+        width: 100% !important;
+        font-size: clamp(0.5rem, 14.5vw, 4.5rem) !important;
+        line-height: 1.1 !important;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important
+    }
+
+    /* Esse talvez precise, por hora, nao usar
+    .vtex-store-components-3-x-headingLevel2--main-banner-category {
+        transform-origin: left center;
+        width: 100% !important;
+        font-size: clamp(0.5rem, 15vw, 5rem) !important; / Se remover o comentario geral, ajustar tamanho da fonte aqui /
+        line-height: 1.1 !important;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+    } */
+    
+}

@@ -15,12 +15,15 @@
         margin-bottom: 16px
     }
 
-    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexRow--shelf-enhanced-sku-selector),
+    /* Ajusta padding do SKU Selector da shelf
+       Esse NAO pode aplicar se seletor pai, senao fica bugado 
+       pois o ideal é aplicar somente quando tiver fundo branco no card */
+    /* :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexRow--shelf-enhanced-sku-selector),
     :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper),
     :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexRow--shelf-enhanced-sku-selector),
     :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper) {
         padding: 0 24px
-    }
+    } */
 
     /*  */
     :global(.render-container)[class*="render-route-store-search"] :global(.vtex-product-summary-2-x-containerNormal--main-shelf-new),

@@ -15,5 +15,27 @@
     .flexRow--footer-payments-list {
         padding-bottom: 128px !important        
     }
+
+    /* .vtex-flex-layout-0-x-flexRow--footer-social { */
+    .flexRow--footer-social {
+        margin-left: 8px
+    }
+
+    /* Ajustes para melhorar o CLS */
+    /* .flexRow--footer-logo {
+        height: px
+    }
+    
+    .flexRow--footer-content {
+        height: px
+    }
+
+    .flexRow--footer-social {
+        height: px
+    }
+
+    .flexRow--footer-bottom {
+        height: px
+    } */
     
 }

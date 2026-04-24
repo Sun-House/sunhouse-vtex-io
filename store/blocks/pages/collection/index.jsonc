@@ -1,8 +1,11 @@
 {
   "store.custom#collection": {
-    "blocks": [
-      "sunhouse.search-result:search-result-layout.customQuery#collection"
+    "blocks": ["sunhouse.search-result:search-result-layout.customQuery#collection"],
+    // Nova infraestrutura de SEO - Reflete desktop e mobile simultaneamente
+    "children": [
+      "container#search-seo-new"
     ],
+    //
     "props": {
       "context": {
         "skusFilter": "ALL_AVAILABLE",

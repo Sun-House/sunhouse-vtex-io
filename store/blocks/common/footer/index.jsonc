@@ -80,7 +80,10 @@
     "title": "Social Media Mobile",
     "children": [
       "container#social-medias-mobile-text",
-      "list-context.image-list#social"
+      // Excluir assim que finalizar o novo bloco
+      // "list-context.image-list#social"
+      //
+      "image-text-list#social"
     ],
     "props": {
       "blockClass": "footer-social-medias-mobile"
@@ -188,7 +191,10 @@
     "children": [
       // "flex-layout.col#footer-social"
       "rich-text#footer-social",
-      "list-context.image-list#social"
+      // Excluir assim que finalizar o novo bloco
+      // "list-context.image-list#social"
+      //
+      "image-text-list#social"
     ],
     "props": {
       "blockClass": "footer-social"

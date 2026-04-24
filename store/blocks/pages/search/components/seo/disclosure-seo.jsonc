@@ -1,6 +1,6 @@
 {
 	"container#seo-category-disclosure": {
-		"title": "Texto Seo - Wrapper",
+		"title": "Texto SEO",
 		"children": [
 			"disclosure-layout#seo-category-disclosure"
 		],
@@ -47,7 +47,7 @@
 	},
 
 	"rich-text#seo-category-disclosure_see-more": {
-		"title": "Texto Botão - Ver Mais",
+		"title": "Botão - Ver Mais",
 		"props": {
 			"text": "Continuar Lendo",
 			"blockClass": [
@@ -58,7 +58,7 @@
 	},
 
 	"rich-text#seo-category-disclosure_see-less": {
-		"title": "Texto Botão - Ver Menos",
+		"title": "Botão - Ver Menos",
 		"props": {
 			"text": "Reduzir Leitura",
 			"blockClass": [

@@ -8,7 +8,6 @@
     max-width: calc(100% - 12px);
     max-height: calc(100% - 24px);
     box-sizing: border-box;
-    /* border-radius: 32px; */
     border-radius: 4px;
     transition: .2s ease
 }
@@ -23,13 +22,7 @@
     max-height: unset !important;
     width: 581px;
     height: 499px
-    /* transition: none !important;
-    opacity: 1 !important */
 }
-
-/* .imageElement--container_desc-banner__imagemDescricao:hover {
-    opacity: 1 !important
-} */
 
 /* Bloco Titulo e Texto Breve */
 .container--custom-block__text-summary {
@@ -73,7 +66,6 @@
 .container--highlights-grid__container {
     height: 100%;
     border: 1px solid;
-    /* border-radius: 32px; */
     border-radius: 4px;
     padding: 24px
 }
@@ -86,7 +78,6 @@
 .imageElement--highlights-grid__container-image {
     width: auto !important;
     height: 135px;
-    /* border-radius: 32px */
     border-radius: 4px
 }
 
@@ -106,9 +97,8 @@
 /* Bloco FAQ */
 .container--custom-block__faq-disclosure {
     margin: 24px 150px 12px 150px;
-    background: #eaeae9;
+    background-color: #f6f6f6;
     padding: 25px 50px;
-    /* border-radius: 32px */
     border-radius: 4px
 }
 
@@ -116,7 +106,6 @@
 /* Novos Blocos Edson */
 .imageElement--custom-pdp_image {
     max-height: unset !important;
-    /* border-radius: 32px */
     border-radius: 4px;
     transition: opacity .2s
 }
@@ -180,24 +169,15 @@
 
     /* A ajustar medida correta */
     .imageElement--feature-card-v2__image {
-        /* width: 383px;
-        height: 383px */
         max-height: unset
     }
     /* A ajustar medida correta */
 
-    /* In DEV */
-    /* .wrapper--photo-grid-mosaic_2 {
-        display: grid -> So bugou tudo
-    } */
-    
     .container--photo-grid-mosaic_2 {
         display: grid;
         gap: 28px;
         margin: 28px 0;
         height: 100%
-        /* max-height: 886px; */
-        /* overflow: hidden; */
     }
 
     .wrapper--photo-grid-mosaic_2 {
@@ -211,15 +191,9 @@
 
     .imageElement--photo-grid-mosaic_2 {
         display: block;
-        /* width: 100%; */
         height: 100%;
-        /* object-fit: cover; */
     }
 
-    /* .imageElementLink--photo-grid-mosaic_2 { -> Pode bugar nao ativar essa, pois nao vai aplicar o sistema de grid em alguns casos
-        display: grid
-    } */
-    
     .imageElementLink--photo-grid-mosaic_2:first-child,  /* Aqui ele nunca vai aplicar os dois juntos, pois ou tera um link com uma imagem dentro, ou tera somente uma imagem */
     .imageElement--photo-grid-mosaic_2:first-child {
         grid-area: 1 / 1 / 3 / 2
@@ -229,7 +203,6 @@
     .imageElement--photo-grid-mosaic_2:last-child {
         grid-area: 2 / 2 / 3 / 3
     }
-    /* In DEV */
     /* Novos Blocos Edson END */
 
 }
@@ -247,12 +220,6 @@
     .imageElement--container_desc-banner__imagemDescricao {
         height: auto
     }
-
-    /* Bloco Banner Wide - nao sera exibido no mobile a principio - ver se buga deixar comentado a aplicacao abaixo */
-    /* .imageElement--banner-fulfill {
-        width: 376px !important;
-        height: 480px
-    } */
 
     /* Bloco Feature Cards */
     .imageElement--feature-card__image {
@@ -275,7 +242,6 @@
         margin-top: unset;
         margin-right: unset;
         margin-bottom: unset;
-        /* margin-left: 12px; */
         margin-left: 0;
         padding: 20px 30px
     }

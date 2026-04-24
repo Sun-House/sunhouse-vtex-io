@@ -6,9 +6,16 @@
 /* Desktop Force */
 @media screen and (min-width: 1025px) {
     
-    /* Ajusta padding do SKU Selector da shelf */
+    /* Ajusta padding do SKU Selector da shelf 
+       Esse NAO pode aplicar se seletor pai, senao fica bugado 
+       pois o ideal é aplicar somente quando tiver fundo branco no card */
     /* .vtex-flex-layout-0-x-flexRow--shelf-enhanced-sku-selector { */
-    .flexRow--shelf-enhanced-sku-selector {
+    /* .flexRow--shelf-enhanced-sku-selector {
+        padding: 0 24px
+    } */
+
+    /* .vtex-flex-layout-0-x-flexRow--also-seen .vtex-flex-layout-0-x-flexRow--shelf-enhanced-sku-selector { */
+    .flexRow--also-seen .flexRow--shelf-enhanced-sku-selector {
         padding: 0 24px
     }
     

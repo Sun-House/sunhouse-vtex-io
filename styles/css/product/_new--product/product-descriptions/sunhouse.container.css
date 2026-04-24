@@ -1,47 +1,32 @@
 /* Containers Gerais */
-/* .sunhouse-container-1-x-container--product-description { */
-/* .container--product-description { */
-    /* DEBUG */
-    /* background: #ff000036; */
-    /* DEBUG */
-
-    /* margin-top: 48px
-} */
-
-/* .sunhouse-container-1-x-container--product-description-simple .sunhouse-container-1-x-imageElement--container_desc-banner__imagemDescricao { */
 .container--product-description .imageElement--container_desc-banner__imagemDescricao {
     aspect-ratio: 1 / 1;
     width: 100%;
     height: 100%
 }
 
-/* .sunhouse-container-1-x-container--product-description .sunhouse-container-1-x-imageElement--custom-description-banner { */
 .container--product-description .imageElement--custom-description-banner {
     max-width: unset; /* Fix para estilo herdado do Custom Description Banner */
     margin-left: 0; /* Fix para estilo herdado do Custom Description Banner */
     border-radius: 4px
 }
 
-/* .sunhouse-container-1-x-container--product-faq .sunhouse-container-1-x-container--custom-block__faq-disclosure { */
 .container--product-faq .container--custom-block__faq-disclosure {
     border-radius: 4px;
-    background: #eaeae9 /* Precisa alterar de acordo com o padrao do Edson */
+    background-color: #f6f6f6
 }
 
 /* Containers de Texto - Full ScreenWidth */
-/* .sunhouse-container-1-x-container--product-description-text { */
 .container--product-description-text {
     width: 100vw;
     margin-left: 50%;
     transform: translateX(-50vw)
 }
 
-/* .sunhouse-container-1-x-container--product-description-important-text { */
 .container--product-description-important-text {
     border-top: 1px solid #2d2926
 }
 
-/* .sunhouse-container-1-x-container--product-description-brand-text { */
 .container--product-description-brand-text {
     border-top: 1px solid #2d2926;
     margin-top: 0;

@@ -1,0 +1,29 @@
+{
+    "container#search-seo-new": {
+        "title": "Texto e FAQ - Seo",
+        "children": [
+            "container#seo-category-disclosure", // Com sistema de 'leia mais' para o texto seo
+            "container#category-faq",
+            "container#spacing-default"
+        ],
+        "props": {
+            // "wrapper": true,
+            // "colSizing": "auto",
+            // "preventHorizontalStretch": true,
+            // "preventVerticalStretch": true,
+            // "horizontalAlign": "center",
+            "blockClass": ["search-seo", "container-center"]
+        }
+    },
+
+    // Esse é geral - tanto para o bloco antigo quanto para o novo
+    "rich-text#search-seo": {
+        // "title": "Texto Seo",
+        "title": "Texto",
+        "props": {
+            "text": "## Sun House - Ofertas Incríveis - Loja Física e Online \n Na Sun House Você Encontra Diversas Opções em Decoração, Cozinha, Mesa, Cama, e Muito Mais Encontre as melhores ofertas de Móveis e Ótimas condições de pagamento para você!",
+            "textPosition": "CENTER",
+            "blockClass": "search-seo"
+        }
+    }
+}

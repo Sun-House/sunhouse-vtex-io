@@ -1,0 +1,12 @@
+/* .vtex-rich-text-0-x-paragraph--seo-disclosure { */
+.paragraph--seo-disclosure {
+    font-weight: 500;
+    font-size: 18px;
+    color: #444;
+    transition: .2s ease-in
+}
+
+/* .vtex-container-container--seo-category-disclosure .vtex-rich-text-0-x-wrapper--search-seo { */
+:global(.vtex-container-container--seo-category-disclosure) .wrapper--search-seo {
+    padding: 0 24px
+}

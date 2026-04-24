@@ -1,42 +1,87 @@
 /* Customizacao do Header Mobile para Paginas de PLP - Departamento, Categoria, Subcategoria, Marca, Pesquisa e Customizadas com Search */
 @media screen and (max-width: 1024px) {
 
-    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-container-1-x-container--header) {
+    /*
+    .vtex-container-container--banner-department-mobile
+    .vtex-container-container--highlight-category-banner
+    */
+
+    /* Esses blocos so devem acontecer quando tiver o banner ativo */
+    :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-container-1-x-container--header),
+    :global(.render-container)[class*="render-route-store-search-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-container-1-x-container--header),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-container-1-x-container--header) {
         height: 0 !important
     }
     
-    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-container-1-x-wrapper--header--mobile__main),
-    :global(.render-container)[class*="render-route-store-search-"] :global(.vtex-flex-layout-0-x-flexRow--header-mobile-bottom) {
+    :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-container-1-x-wrapper--header--mobile__main),
+    :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.vtex-flex-layout-0-x-flexRow--header-mobile-bottom),
+    :global(.render-container)[class*="render-route-store-search-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-container-1-x-wrapper--header--mobile__main),
+    :global(.render-container)[class*="render-route-store-search-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.vtex-flex-layout-0-x-flexRow--header-mobile-bottom),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-container-1-x-wrapper--header--mobile__main),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.vtex-flex-layout-0-x-flexRow--header-mobile-bottom) {
         background-color: transparent !important
     }
 
+    :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.vtex-store-drawer-0-x-openIconContainer--menu-mobile) :global(.vtex-store-drawer-0-x-menuIcon),
+    :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-minicart-2-x-minicartIconContainer--minicart-main) :global(.vtex-store-icons-0-x-cartIcon),
+    :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.vtexarg-speech-to-text-1-x-audioSearchContainer)::after,
+    :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.sunhouse-store-components-4-x-searchBarIcon) :global(.sunhouse-store-components-4-x-searchIcon),
     :global(.render-container)[class*="render-route-store-search-"] :global(.vtex-store-drawer-0-x-openIconContainer--menu-mobile) :global(.vtex-store-drawer-0-x-menuIcon),
-    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-minicart-2-x-minicartIconContainer--minicart-main) :global(.vtex-store-icons-0-x-cartIcon),
-    :global(.render-container)[class*="render-route-store-search-"] :global(.vtexarg-speech-to-text-1-x-audioSearchContainer)::after,
-    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.sunhouse-store-components-4-x-searchBarIcon) :global(.sunhouse-store-components-4-x-searchIcon){
+    :global(.render-container)[class*="render-route-store-search-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-minicart-2-x-minicartIconContainer--minicart-main) :global(.vtex-store-icons-0-x-cartIcon),
+    :global(.render-container)[class*="render-route-store-search-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.vtexarg-speech-to-text-1-x-audioSearchContainer)::after,
+    :global(.render-container)[class*="render-route-store-search-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.sunhouse-store-components-4-x-searchBarIcon) :global(.sunhouse-store-components-4-x-searchIcon),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.vtex-store-drawer-0-x-openIconContainer--menu-mobile) :global(.vtex-store-drawer-0-x-menuIcon),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-minicart-2-x-minicartIconContainer--minicart-main) :global(.vtex-store-icons-0-x-cartIcon),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.vtexarg-speech-to-text-1-x-audioSearchContainer)::after,
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.sunhouse-store-components-4-x-searchBarIcon) :global(.sunhouse-store-components-4-x-searchIcon) {
         color: #fff !important
     }
+    /* Esses blocos so devem acontecer quando tiver o banner ativo */
 
-    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.vtex-input-prefix__group)::after {
+    /* VALIDAR */
+    :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.vtex-input-prefix__group)::after,
+    :global(.render-container)[class*="render-route-store-search-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.vtex-input-prefix__group)::after,
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.vtex-input-prefix__group)::after {
         background-color: #fff !important
     }
+    /* VALIDAR */
 
-    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
-        font-size: 20px !important;
+    /* Esses blocos so devem acontecer quando tiver o banner ativo */
+    :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input),
+    :global(.render-container)[class*="render-route-store-search-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input),
+    :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder,
+    :global(.render-container)[class*="render-route-store-search-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder,
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
         color: #fff !important
     }
+    /* Esses blocos so devem acontecer quando tiver o banner ativo */
 
-    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
-        font-size: 17px !important;
-        color: #fff !important
-    }
-
-    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-search-result-3-x-container--layout) {
+    /* VALIDAR */
+    :global(.render-container)[class*="render-route-store-search"] :global(.sunhouse-search-result-3-x-container--layout),
+    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-search-result-3-x-container--layout),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.sunhouse-search-result-3-x-container--layout) {
         margin-top: 0
     }
+    /* VALIDAR */
+
+    /* Aplica em qualquer situacao - com banner, sem banner, ou outra circunstancia */
+    :global(.render-container)[class*="render-route-store-search"] :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input),
+    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+        font-size: 20px !important
+    }
+
+    :global(.render-container)[class*="render-route-store-search"] :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder,
+    :global(.render-container)[class*="render-route-store-search-"] :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder,
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+        font-size: 17px !important
+    }
+    /*  */
 
     /* Corrige um padding nativo desnecessario para a pagina de resultado de busca no mobile */
-    :global(.vtex-render__container-id-cluster-and-search) :global(.vtex-store-components-3-x-container) {
+    :global(.vtex-render__container-id-cluster-and-search) :global(.vtex-store-components-3-x-container),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-store-components-3-x-container) {
         padding: 0
     }
 

@@ -122,80 +122,7 @@
       "blockClass": ["footer", "footer-social"]
     }
   },
-  "list-context.image-list#social": {
-    "title": "Icones Redes Sociais",
-    "props": {
-      "images": [
-        { // Facebook
-          "image": "assets/images/footer/facebook-f-icon.png",
-          "loading": "lazy",
-          "fetchpriority": "low",
-          "description": "Facebook",
-          "title": "Facebook",
-          "width": "50px",
-          "link": {
-            "title": "Facebook",
-            "url": "https://www.facebook.com/Sunhousemoveis/",
-            "openNewTab": true
-          }
-        },
-        { // Instagram
-          "image": "assets/images/footer/instagram-f-icon.png",
-          "loading": "lazy",
-          "fetchpriority": "low",
-          "description": "Instagram",
-          "title": "Instagram",
-          "width": "50px",
-          "link": {
-            "title": "Instagram",
-            "url": "https://www.instagram.com/sunhousemoveis/",
-            "openNewTab": true
-          }
-        },
-        { // Pinterest - Na versao do Edson, é X (formerly Twitter)
-          "image": "assets/images/footer/pinterest-f-icon_2.png",
-          "loading": "lazy",
-          "fetchpriority": "low",
-          "description": "Pinterest",
-          "title": "Pinterest",
-          "width": "50px",
-          "link": {
-            "title": "Pinterest",
-            "url": "https://br.pinterest.com/sunhousemoveis/",
-            "openNewTab": true
-          }
-        },
-        { // WhatsApp
-          "image": "assets/images/footer/whatsapp-f-icon.png",
-          "loading": "lazy",
-          "fetchpriority": "low",
-          "description": "WhatsApp",
-          "title": "WhatsApp",
-          "width": "50px",
-          "link": {
-            "title": "WhatsApp",
-            "url": "https://wa.me/5511994877664",
-            "openNewTab": true
-          }
-        },
-        { // Blog
-          "image": "assets/images/footer/blog-f-icon.png",
-          "loading": "lazy",
-          "fetchpriority": "low",
-          "description": "Blog",
-          "title": "Blog",
-          "width": "50px",
-          "link": {
-            "title": "Blog",
-            "url": "https://blog.sunhouse.com.br/",
-            "openNewTab": true
-          }
-        }
-      ],
-      "height": "50px"
-    },
-    "children": ["container.list-render#social"]
-  },
+  
   "container.list-render#social": {
     "props": {
       "blockClass": "footer-social-content"
@@ -205,13 +132,12 @@
   "flex-layout.row#footer-social-content": {
     "title": "Redes Social",
     "children": [
-      "list-context.image-list#social"
+      // Excluir assim que finalizar o novo bloco
+      // "list-context.image-list#social"
+      //
+      "image-text-list#social"
     ],
     "props": {
-      // "preventHorizontalStretch": true,
-      // "preventVerticalStretch": true,
-      // "preserveLayoutOnMobile": true,
-      // "colJustify": "between",
       "blockClass": "footer-social-content"
     }
   },

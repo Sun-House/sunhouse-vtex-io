@@ -1,0 +1,58 @@
+{
+    "container#product-reviews": {
+        "title": "Display - Avaliações",
+        "children": [
+            "flex-layout.row#product-reviews"
+        ],
+        "props": {
+            "blockClass": "container-product-reviews"
+        }
+    },
+
+    "flex-layout.row#product-reviews": {
+        "title": "Display - Avaliações",
+        "children": [
+            "flex-layout.col#product-reviews"
+        ],
+        "props": {
+            "blockClass": "container-product-reviews"
+        }
+    },
+
+    "flex-layout.col#product-reviews": {
+        "title": "Display - Avaliações",
+        "children": [
+            "flex-layout.row#product-reviews-header"
+            // "flex-layout.row#product-reviews-main",
+            // "flex-layout.row#product-reviews-footer"
+        ],
+        "props": {
+            "blockClass": "container-product-reviews"
+        }
+    },
+
+    // Linha 1 - header contendo foto, nome do avaliador e data da avaliação
+    "flex-layout.row#product-reviews-header": {
+        "title": "Linha 1 - header contendo foto, nome do avaliador e data da avaliação",
+        "children": [
+            "flex-layout.col#product-reviews-header"
+        ],
+        "props": {
+            "blockClass": "product-reviews-header"
+        }
+    },
+    "flex-layout.col#product-reviews-header": {
+        "title": "Linha 1 - header contendo foto, nome do avaliador e data da avaliação",
+        "children": [
+            // Image-component - pode ser image-text-list ou list-context.image-list
+            "image-text-list#product-reviews_client-data"
+            // "rich-text#product-reviews_client-data"
+        ],
+        "props": {
+            "blockClass": "product-reviews-header"
+        }
+    }
+
+    // Linha 2 - avaliação
+    
+}
