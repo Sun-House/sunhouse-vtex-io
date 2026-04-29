@@ -1,6 +1,7 @@
 {
     "info-card#banner-category": {
-        "title": "Banner Categoria",
+        // "title": "Banner Categoria",
+        "title": "Configurações do Banner",
         "props": {
             "isFullModeStyle": true,
 			"textMode": "rich-text",

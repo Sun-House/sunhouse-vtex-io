@@ -1,0 +1,69 @@
+@media screen and (max-width: 1024px) {
+    
+    /* Esse fix esta atrapalhando um pouco, mas deixar aqui para caso futuramente precise */
+    /* .render-route-store-product .sunhouse-container-1-x-container--header { */
+    /* :global(.render-route-store-product .sunhouse-container-1-x-container--header) {
+        height: 0 !important
+    } */
+
+    /* Fix para o nome do produto ficar proximo a borda inferior da imagem de destaque */
+    /* .vtex-flex-layout-0-x-flexColChild--mobile-first-fold:has(.vtex-store-components-3-x-productNameContainer) { */
+    :global(.vtex-flex-layout-0-x-flexColChild--mobile-first-fold:has(.vtex-store-components-3-x-productNameContainer)) {
+        margin-top: auto
+    }
+    
+    /* Abaixo, ajustes de cores de fontes para quando tiver imagem de destaque */
+    
+    /* .sunhouse-container-1-x-container--product-image-highlight
+    .vtex-container-container--product-image-highlight */
+
+    /* Esses blocos so devem acontecer somente quando tiver a imagem de destaque ativa */
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.sunhouse-container-1-x-wrapper--header--mobile__main),
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.vtex-flex-layout-0-x-flexRow--header-mobile-bottom) {
+        background-color: transparent !important
+    }
+
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.vtex-store-drawer-0-x-openIconContainer--menu-mobile) :global(.vtex-store-drawer-0-x-menuIcon),
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.sunhouse-minicart-2-x-minicartIconContainer--minicart-main) :global(.vtex-store-icons-0-x-cartIcon),
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.vtexarg-speech-to-text-1-x-audioSearchContainer)::after,
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.sunhouse-store-components-4-x-searchBarIcon) :global(.sunhouse-store-components-4-x-searchIcon) {
+        color: #fff !important
+    }
+
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.vtex-input-prefix__group)::after {
+        background-color: #fff !important
+    }
+
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input),
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+        color: #fff !important
+    }
+
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.sunhouse-product-images-custom-1-x-caretIcon--product-images-v2) {
+        color: #fff
+    }
+
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.vtex-store-components-3-x-productNameContainer) :global(.vtex-store-components-3-x-productBrand),
+    :global(.render-route-store-product):has(:global(.vtex-container-container--product-image-highlight)) :global(.vtex-store-components-3-x-productBrandContainer) :global(.vtex-store-components-3-x-productBrandName) {
+        color: #fff
+    }
+    /* Esses blocos so devem acontecer somente quando tiver a imagem de destaque ativa */
+
+    /* Aplica em qualquer situacao - com imagem de destaque, sem imagem de destaque, ou outra circunstancia */
+    :global(.render-route-store-product) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+        font-size: 20px !important
+    }
+
+    :global(.render-route-store-product) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+        font-size: 17px !important
+    }
+    /* Aplica em qualquer situacao - com imagem de destaque, sem imagem de destaque, ou outra circunstancia */
+
+    /* Fix para o header ficar transparente quando o usuario rola a pagina para baixo */
+    /* .sunhouse-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast { */
+    :global(.render-route-store-product) :global(.sunhouse-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast) {
+        --header-background-color: unset
+    }
+    /* Fix para o header ficar transparente quando o usuario rola a pagina para baixo */
+    
+}

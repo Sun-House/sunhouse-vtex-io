@@ -32,8 +32,8 @@
             },
             "showPaginationDots": {
                 "desktop": false,
-                "phone": true,
-                "tablet": true
+                "phone": false, // Ideal para imagem destacada mobile e tambem nao faz diferença para quando nao tiver imagem destacada
+                "tablet": false // Versao tablet esta toda quebrada, como quase ninguem usa, nao faz sentido perder tempo com isso por enquanto
             },
             "blockClass": "product-images-v2" // ver se ha a necessidade de manter esse v2 - ACREDITO QUE NESSE BLOCO SUPORTA APENAS UMA CLASSE
         }

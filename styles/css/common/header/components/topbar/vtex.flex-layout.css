@@ -20,9 +20,9 @@
         margin-top: 20px
     }
 
-    /* .vtex-flex-layout-0-x-flexRow--product-main-mobile { */
-    .flexRow--product-main-mobile {
+    /* Movido para o arquivo product/new--product/product-images/single-image-highlight/mobile/vtex.flex-layout.css */
+    /* .flexRow--product-main-mobile {
         margin-top: 65px
-    }
+    } */
 
 }

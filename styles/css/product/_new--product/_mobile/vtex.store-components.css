@@ -2,7 +2,8 @@
 
     .productNameContainer,
     .productBrandContainer--product-brand {
-        text-align: center
+        /* text-align: center */
+        text-align: left /* Ajuste para novo modelo visual mobile com imagem de destaque */
     }
 
     .productBrandContainer--product-brand {

@@ -38,13 +38,15 @@
     }
     /* Esses blocos so devem acontecer quando tiver o banner ativo */
 
-    /* VALIDAR */
+    /* Esses blocos so devem acontecer quando tiver o banner ativo */
+    /* Esse aplica a cor da borda abaixo do campo de busca - separador do header/menu do testante do site */
     :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.vtex-input-prefix__group)::after,
     :global(.render-container)[class*="render-route-store-search-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.vtex-input-prefix__group)::after,
     :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarContainer) :global(.vtex-input-prefix__group)::after {
         background-color: #fff !important
     }
-    /* VALIDAR */
+    /* Esse aplica a cor da borda abaixo do campo de busca - separador do header/menu do testante do site */
+    /* Esses blocos so devem acontecer quando tiver o banner ativo */
 
     /* Esses blocos so devem acontecer quando tiver o banner ativo */
     :global(.render-container)[class*="render-route-store-search"]:has(:global(.vtex-container-container--banner-department-mobile)) :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input),
@@ -77,7 +79,7 @@
     :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.sunhouse-store-components-4-x-searchBarInnerContainer) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
         font-size: 17px !important
     }
-    /*  */
+    /* Aplica em qualquer situacao - com banner, sem banner, ou outra circunstancia */
 
     /* Corrige um padding nativo desnecessario para a pagina de resultado de busca no mobile */
     :global(.vtex-render__container-id-cluster-and-search) :global(.vtex-store-components-3-x-container),

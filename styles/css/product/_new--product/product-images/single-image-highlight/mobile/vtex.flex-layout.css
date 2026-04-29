@@ -1,49 +1,44 @@
 @media screen and (max-width: 1024px) {
 
-    /* .vtex-flex-layout-0-x-flexCol--product-main-mobile_wrapper { */
-    /* .flexCol--product-main-mobile_wrapper {
-        height: 100vh
-    } */
+    /* .vtex-flex-layout-0-x-flexRow--product-main-mobile { */
+    .flexRow--product-main-mobile {
+        margin-top: 65px /* Esse pode ser util quando nao tiver a imagem de destaque */
+        /* margin-top: 0;
+        position: relative;
+        top: -165px */
+    }
 
-    /* .vtex-flex-layout-0-x-flexCol--product-main-mobile_wrapper .vtex-flex-layout-0-x-flexColChild--product-main-mobile_wrapper:first-child { */
-    /* .flexCol--product-main-mobile_wrapper .flexColChild--product-main-mobile_wrapper:first-child {
-        height: 0 !important
-    } */
+    /* .vtex-flex-layout-0-x-flexCol--mobile-first-fold { */
+    .flexCol--mobile-first-fold {
+        /* height: 100dvh */
+        /* height: calc(100dvh - 165px) */
+        /* min-height: 767px; */
+        min-height: 734px;
+        height: auto
+    }
+
+    /* .vtex-flex-layout-0-x-flexCol--mobile-first-fold .vtex-flex-layout-0-x-flexColChild--mobile-first-fold { */
+    .flexCol--mobile-first-fold .flexColChild--mobile-first-fold {
+        height: auto !important
+    }
+    
 
     /* .vtex-flex-layout-0-x-flexRow--product-image-highlight-wrapper { */
     .flexRow--product-image-highlight-wrapper {
-        /* position: absolute;
-        z-index: -1;
-        overflow: hidden;
-        width: 100%;
-        height: auto;
-        min-height: 1184px;
-        max-height: 1184px;
-        background-color: #ededed; */
-
-        /* Acima ja herdado do principal */
-        /* Abaixo especifico para o mobile */
-
-        height: auto;
-        min-height: 117vh;
-        max-height: 117vh;
+        /* height: 100dvh; */
+        min-height: 980px;
+        max-height: 980px;
+        /* height: auto; */
         top: 0;
-        left: 0;
+        left: 0
 
-        /* A principio ficara oculto no mobile, ate ser corretamente desenhado para tal */
-        display: none;
-        /* A principio ficara oculto no mobile, ate ser corretamente desenhado para tal */
-        
         /* DEBUG */
-        /* z-index: 5;
-        opacity: 0.5; */
-        /* DEBUG */
-        
+        /* ;display: none; */
+        /* DEBUG */       
     }
 
     /* .vtex-flex-layout-0-x-flexRow--breadcrumb-product { */
     .flexRow--breadcrumb-product {
-        /* margin-top: 125px */
         margin-top: 28px
     }
 

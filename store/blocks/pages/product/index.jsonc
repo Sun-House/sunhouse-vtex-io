@@ -88,6 +88,7 @@
     ]
   },
   "responsive-layout.mobile#product-main": {
+    "title": "Produto Mobile",
     "children": [
       "flex-layout.row#product-main-mobile"
     ]
@@ -104,7 +105,7 @@
   "flex-layout.row#product-main-mobile": {
     "children": [
       // Em testes - Novo sistema de imagens de destaque, sendo aplicado ao mobile tambem
-      "flex-layout.row#product-image-highlight",
+      // "flex-layout.row#product-image-highlight",
       //
 
       "flex-layout.col#product-main-mobile"
@@ -117,54 +118,32 @@
   "flex-layout.col#product-main-mobile_wrapper": {
     "children": [
       "flex-layout.row#product-image-highlight",
-      "container#wrapper__highlight-coupon-mobile",
+
+      // In DEV
+      "container#wrapper__highlight-coupon-mobile", // Ainda nao esta pronto para ser utilizado
+      //
+      
+      "product-images-custom#product-images",
       "condition-layout.product#product-title",
-
-      //
-      // "vtex.store-components:product-brand#product-brand",
       "container#product-brand-dynamic",
-      "container#product-brand-fixed",
-      //
-
-      "product-images-custom#product-images"
+      "container#product-brand-fixed"
     ],
     "props": {
-      "blockClass": ["product-main-mobile", "product-main-mobile_wrapper"]
+      "blockClass": ["product-main-mobile", "product-main-mobile_wrapper", "mobile-first-fold"]
     }
   },
 
-  //
   "flex-layout.col#product-main-mobile": {
     "children": [
-      // Em testes - Novo sistema de imagens de destaque, sendo aplicado ao mobile tambem
-      // "flex-layout.row#product-image-highlight",
-      //
-
       // Componente descontinuado no Refresh - Mas vou manter aqui por uma questão de ajuste
       // de CSS pendente que farei apenas apos lançar o MVP do Refresh
       //"container#wrapper__highlight-coupon-mobile",
       //
 
-      // "vtex.store-components:product-name",
-      //"condition-layout.product#product-title",
-      //"vtex.store-components:product-brand#product-brand", // Precisa ficar logo abaixo do nome do produto
-      
-      // Em testes - Novo sistema de imagens padrao, sendo aplicado ao mobile tambem
-      // "flex-layout.row#product-mobile-images",
-      //"product-images-custom#product-images",
-      //
-
-      // TESTE
-      // Acima, foram todos encapsulados nesse elemento abaixo:
       "flex-layout.col#product-main-mobile_wrapper",
-      //
-
       "flex-layout.row#breadcrumb-product",
-
-      // "product-dimensions",
-      "container#product-top-infos",
+      "container#product-top-infos", // Validar se esse componente ainda serve para algo
       "container#product-highlights--product-page",
-      // "condition-layout.product#product-availability",
       "condition-layout.product#elf-checker"
       
       // O bloco "flex-layout.col#product-description-wrapper-mobile" sera descontinuado no Refresh

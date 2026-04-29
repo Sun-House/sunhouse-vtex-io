@@ -96,6 +96,7 @@
   //
 
   "sunhouse.search-result:search-result-layout#cluster-and-search": {
+    "title": "Configurações do Search Result",
     "blocks": [
       "sunhouse.search-result:search-result-layout.desktop#cluster-and-search",
       "sunhouse.search-result:search-result-layout.mobile#cluster-and-search",
