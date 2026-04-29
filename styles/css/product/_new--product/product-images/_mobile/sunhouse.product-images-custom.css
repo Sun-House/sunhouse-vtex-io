@@ -1,0 +1,10 @@
+/* Mobile */
+/* @media screen and (max-width: 1024px) { */
+    
+    /* Estou inativando esse pois esta quebrando o layout para o novo modelo
+       visual da PDP mobile com imagem destacada - voltar caso quebre algo importante */
+    /* .productImagesGallerySwiperContainer--product-images-v2 {
+        min-height: 430px !important
+    }
+    
+} */

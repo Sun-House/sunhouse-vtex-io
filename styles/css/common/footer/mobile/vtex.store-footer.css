@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+
+    /* Ajustes para melhorar o CLS */
+    /* .vtex-store-footer-2-x-footerLayout--footer-wrapper-mobile { */
+    .footerLayout--footer-wrapper-mobile {
+        min-height: 1228px;
+        height: auto
+    }
+
+}

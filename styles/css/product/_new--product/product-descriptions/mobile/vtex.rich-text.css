@@ -23,4 +23,11 @@
         margin: 0 18px 0 18px
     }
 
+    /* .vtex-rich-text-0-x-wrapper--product-description-benefits,
+    .vtex-rich-text-0-x-wrapper--product-description-additional-infos { */
+    .wrapper--product-description-benefits,
+    .wrapper--product-description-additional-infos {
+        margin-bottom: 24px
+    }
+
 }
