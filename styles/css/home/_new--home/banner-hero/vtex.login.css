@@ -1,0 +1,9 @@
+/* .vtex-store-components-3-x-container--main-banner-home:has(.vtex-store-components-3-x-heading--main-banner-home):nth-child(2) { */
+:global(.vtex-store-components-3-x-container--main-banner-home):has(:global(.vtex-store-components-3-x-heading--main-banner-home)):nth-child(2) {
+    margin: 24px auto 0;
+}
+
+/* .vtex-store-components-3-x-container--main-banner-home:has(.vtex-store-components-3-x-heading--main-banner-home):nth-child(3) { */
+:global(.vtex-store-components-3-x-container--main-banner-home):has(:global(.vtex-store-components-3-x-heading--main-banner-home)):nth-child(3) {
+    margin: 0 auto 12px;
+}

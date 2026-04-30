@@ -71,9 +71,12 @@
         transform-origin: left center
     }
 
-    :global(.render-container.render-route-store-home) :global(.vtex-store-components-3-x-headingLevel1--main-banner-home) {
+    /* Ajustes abaixo foram feitos devido a mudança de aplicacao da estrutura do banner hero,
+       utilizando texto normal no titulo, H1 no subtitulo e H2 no texto normal. *** AINDA EM TESTES *** */
+    /* :global(.render-container.render-route-store-home) :global(.vtex-store-components-3-x-headingLevel1--main-banner-home) { */
+    :global(.render-container.render-route-store-home) :global(.vtex-store-components-3-x-heading--main-banner-home) {
         /* width: 100% !important; */
-        width: 85% !important;
+        /* width: 85% !important; */
         font-size: clamp(0.5rem, 15vw, 1.3rem) !important;
         line-height: 1.5 !important;
         word-break: keep-all !important;

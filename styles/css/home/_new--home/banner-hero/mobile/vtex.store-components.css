@@ -28,5 +28,12 @@
     .container--main-banner-home:first-child .heading--main-banner-home::before {
         display: none
     }
-    
+
+    /* Fix alternativo temporario para não quebrar layout em mobile com o uso desse detalhe visual */
+    /* AINDA PRETENDO CORRIGIR ISSO PARA MOSTRAR O DETALHER DE FORMA CORRETA */
+    .container--main-banner-home:first-child .paragraph--main-banner-home::before,
+    .container--main-banner-home:first-child .paragraph--main-banner-home::after {
+        display: none
+    }
+
 }
