@@ -1,0 +1,7 @@
+@media screen and (max-width: 1024px) {
+    
+    body:not(:has(:global(.vtex-container-container--product-description-buy-together))) :global(.vtex-container-container--product-description-brand-text) {
+        margin-top: 50px
+    }
+    
+}
