@@ -1,7 +1,7 @@
 // Fn - Highlight Bar Checkout
 
 // Highlight Bar Checkout component
-const CUPOM_CODE = 'PASCOAHOUSE';
+const CUPOM_CODE = 'MAESUN7';
 
 // 1. Defina o bloco HTML atualizado com o botão "Usar cupom"
 const htmlBlock = `
@@ -11,9 +11,10 @@ const htmlBlock = `
             <div id="coupon-info-text-container">
                 <div>
                     <p>
-                        <span class="coupon-highlight_bold-text">15% OFF</span> em qualquer produto com o cupom 
+                        Mês das Mães —
+                        <span class="coupon-highlight_bold-text">7% OFF</span> em qualquer produto com o cupom 
                         <span class="coupon-highlight_bold-text" id="coupon-code-display">${CUPOM_CODE}</span> 
-                        — Por tempo limitado <button id="apply-coupon-button">Usar cupom <i class="bi bi-gift-fill"></i></button>
+                        <button id="apply-coupon-button">Usar cupom <i class="bi bi-gift-fill"></i></button>
                     </p>
                 </div>
             </div>
