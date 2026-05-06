@@ -1,6 +1,7 @@
-.rating-click-here {
-    display: none !important /* Não esta funcionando por alguma razao - resolvido via runtime do app ratrustvox */
-}
+/* DESCONTINUADO NO REFRESH */
+/* .rating-click-here {
+    display: none !important Não esta funcionando por alguma razao - resolvido via runtime do app ratrustvox
+} */
 
 /* Estilo sendo aplicado no arquivo sunhouse.container.css */
 /* :global(.vtex-render__container-id-ra-trustvox) {

@@ -1,0 +1,68 @@
+/* .sunhouse-coupon-button-1-x-button
+.sunhouse-coupon-button-1-x-button--highlight-coupon-button
+.sunhouse-coupon-button-1-x-button--idle
+.sunhouse-coupon-button-1-x-button--highlight-coupon-button--idle */
+
+/* .sunhouse-coupon-button-1-x-button--highlight-coupon-button { */
+.button--highlight-coupon-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: unset;
+    border-radius: 50px;
+    padding: 8px 24px;
+    margin-left: 12px;
+    /* background-color: #69BD44; */
+    background-color: #161413;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .3s ease-in-out   
+}
+
+/* .sunhouse-coupon-button-1-x-button--highlight-coupon-button:hover { */
+.button--highlight-coupon-button:hover,
+.button--highlight-coupon-button:focus {
+    /* background-color: #69BD44; */
+    background-color: #161413;
+    color: #fff;
+    opacity: .8
+}
+
+/* .sunhouse-coupon-button-1-x-button--highlight-coupon-button::after { */
+.button--highlight-coupon-button::after {
+    /* content: "\F3EB"; */
+    /* content: "\F70C"; */
+    /* content: "\F70B"; */
+    content: "\F6CB";
+    font-family: "Bootstrap-Icons";
+    /* font-weight: normal; Com fica estranho e sem mais estranho ainda */
+    margin-left: 6px
+}
+
+/* Estado intermediario - aplicando o cupom */
+/* .sunhouse-coupon-button-1-x-button--highlight-coupon-button--applying { */
+.button--highlight-coupon-button--applying {
+    opacity: .8 !important
+}
+
+/* Botao quando já aplicado o cupom - o mesmo fica com atributo disabled */
+/* .sunhouse-coupon-button-1-x-button--highlight-coupon-button--ok { */
+.button--highlight-coupon-button--ok {
+    opacity: 1 !important /* O ideal é alterar esse direto no app */
+}
+
+/* .sunhouse-coupon-button-1-x-button--highlight-coupon-button--ok:hover { */
+.button--highlight-coupon-button--ok:hover,
+.button--highlight-coupon-button--ok:focus {
+    /* background-color: #69BD44; */
+    background-color: #161413;
+    color: #fff
+}
+
+/* .sunhouse-coupon-button-1-x-button--highlight-coupon-button--ok::after { */
+.button--highlight-coupon-button--ok::after {
+    content: "\F26A";
+    font-weight: normal
+}

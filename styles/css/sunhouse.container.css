@@ -673,10 +673,11 @@
     justify-content: space-between
 }
 
+/* DESCONTINUADO NO REFRESH
 .container--trustvox {
-    /*margin-top: 64px;*/
+    / margin-top: 64px; /
     padding: 32px;
-}
+} */
 
 .container--installments {
     position: relative

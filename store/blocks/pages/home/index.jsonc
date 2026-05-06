@@ -38,10 +38,6 @@
       // Blog Grid
       "container#blog-grid",
 
-      // Trustvox Colt Reviews
-      // Não ficará visivel no Refresh, mas sera mantido para backup
-      "container#trustvox-colt-highlight",
-
       // Showcase Slider
       "container#showcase-slider",
 

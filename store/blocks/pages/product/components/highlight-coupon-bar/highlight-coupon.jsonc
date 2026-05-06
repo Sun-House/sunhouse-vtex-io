@@ -21,15 +21,25 @@
 
     "flex-layout.row#highlight-coupon": {
         "children": [
-            // "rich-text#sale-text", - repensar sobre isso no futuro
             "rich-text#highlight-text",
-            "container#highlight-coupon-cron"
+            "container#highlight-coupon-cron",
+            "coupon-button#highlight-coupon-button"
         ],
         "props" : {
             "preventVerticalStretch": true,
             "colJustify": "between",
             "colSizing": "auto",
             "blockClass": "wrapper__highlight-pdp"
+        }
+    },
+
+    // Add Coupon Button
+    "coupon-button#highlight-coupon-button": {
+        "title": "Botão - Usar Cupom",
+        "props": {
+            "label": "Usar Cupom",
+            "couponCode": "MAESUN7",
+            "blockClass": "highlight-coupon-button"
         }
     },
 

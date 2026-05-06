@@ -13,7 +13,7 @@
       "responsive-layout.mobile#product-main",
       "flex-layout.row#product-infos-wrapper",
       "container#product__related-grid",
-      "container#ra-trustvox",
+      // "container#ra-trustvox" - Removido da Loja
       "flex-layout.row#also-seen"
       //
       // In DEV
@@ -63,16 +63,18 @@
   //
 
 
-  "container#ra-trustvox": {
-    "title": "Bloco: Avaliações Trustvox",
-    "children": [
-      "product-reviews"
-    ],
-    "props": {
-      "wrapper": true, // Não sei para que serve - esse componente nao tem documentacao
-      "blockClass": "container-ra-pdp"
-    }
-  },
+  // DESCONTINUADO NO REFRESH
+  // "container#ra-trustvox": {
+  //   "title": "Bloco: Avaliações Trustvox",
+  //   "children": [
+  //     "product-reviews"
+  //   ],
+  //   "props": {
+  //     "wrapper": true, // Não sei para que serve - esse componente nao tem documentacao
+  //     "blockClass": "container-ra-pdp"
+  //   }
+  // },
+  //
 
   "responsive-layout.desktop#product-main": {
     "title": "Produto",
@@ -333,7 +335,7 @@
   "container#product-top-infos": {
     "children": [
       // "flex-layout.row#product-code-brand",      
-      // "trustvox-starts",
+      // "trustvox-starts", - Removido da Loja
       "product-rating-summary",
       "add-to-list-btn#product-page"
     ],

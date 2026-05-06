@@ -208,7 +208,7 @@
     "children": [
       // "link#vtex",
       // "link#eplus",
-      "certificate-ratrustvox"
+      // "certificate-ratrustvox" - Removido da Loja
     ],
     "props": {
       "blockClass": "footer-images-bottom",

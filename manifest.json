@@ -87,7 +87,6 @@
     "sunhouse.storage-layout": "0.x",
     "sunhouse.super-menu": "2.x",
     "sunhouse.form": "0.x",
-    "sunhouse.trustvox": "0.x",
     "sunhouse.institutional-menu": "0.x",
     "sunhouse.breadcrumb-custom-routes": "0.x",
     "sunhouse.product-highlights": "2.x",
@@ -96,13 +95,13 @@
     "sunhouse.list-grid": "0.x",
     "sunhouse.product-dimensions": "0.x",
     "sunhouse.slider-layout": "0.x",
-    "sunhouse.ra-trustvox": "0.x",
     "sunhouse.enhanced-sku-selector": "1.x",
     "sunhouse.product-images-custom": "1.x",
     "sunhouse.shelf-enhanced-sku-selector": "1.x",
     "sunhouse.whatsapp-lead-capture-pdp": "2.x",
     "sunhouse.buy-together-enhanced": "1.x",
-    "sunhouse.cron-app": "1.x"
+    "sunhouse.cron-app": "1.x",
+    "sunhouse.coupon-button": "1.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",
