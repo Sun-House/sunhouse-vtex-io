@@ -1,4 +1,6 @@
 .infoCardContainer--banner-fullwidth-shelf {
+    /* height: 100vh; - Deixar assim quebra o posicionamento do elemento filho de shelf, portanto, inviavel manter - EM TESTES usando a definição abaixo */
+    height: 100% !important;
     display: flex;
     align-items: flex-end;
     /* height: 820px */
@@ -6,10 +8,11 @@
 }
 
 .infoCardContainer--banner-fullwidth-shelf::after {
+    /* height: 100vh; - Deixar assim quebra o posicionamento do elemento filho de shelf, portanto, inviavel manter - EM TESTES usando a definição abaixo */
+    height: 100% !important;
     top: inherit;
     /* height: 820px */
-    height: 920px
-
+    min-height: 920px /* Acredito que seja para reduzir LS, mas pode acabar quebrando o layout em algumas resolucoes */
 }
 
 /* Desktop Force */
