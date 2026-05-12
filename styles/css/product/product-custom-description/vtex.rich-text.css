@@ -96,8 +96,9 @@
 }
 
 .wrapper--faq-disclosure-line__text .paragraph {
+    font-family: 'Onest', sans-serif;
+    font-size: 16px;
     margin-top: 18px;
-    /* line-height: 1.35; */
     line-height: 1.5;
     border: none
 }
