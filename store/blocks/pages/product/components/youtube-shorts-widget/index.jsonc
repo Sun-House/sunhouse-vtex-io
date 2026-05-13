@@ -1,0 +1,22 @@
+{
+    "container#youtube-shorts": {
+        "title": "Youtube Shorts Flutuante",
+        "children": [
+            "youtube-shorts-widget#product-page"
+        ],
+        "props": {
+            "blockClass": "container-yt-shorts"
+        }
+    },
+
+    "youtube-shorts-widget#product-page": {
+        "title": "Configurações do Vídeo",
+        "props": {
+            // "shortsUrl": "https://www.youtube.com/watch?v=8mb6YHMvncs", // Link original do YT
+            "shortsUrl": "https://www.youtube.com/embed/8mb6YHMvncs", // Link de embed - ideal usar esse formato de link
+            "startOnLoad": true,
+            "muted": false,
+            "closable": true
+        }
+    }
+}

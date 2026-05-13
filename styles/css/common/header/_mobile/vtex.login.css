@@ -1,0 +1,44 @@
+@media screen and (max-width: 1024px) {
+
+    /* PDP */
+    /* Pode dar problema pois a PDP tem mais de um container com o id product-main */
+    :global(.render-route-store-product) :global(.vtex-render__container-id-product-main):first-child {
+        margin-top: 62px
+    }
+
+    /* Search and PLP Pages */
+    :global(.render-container.render-route-store-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-notFound--layout),
+    :global(.render-container.render-route-store-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer),
+    :global(.render-container)[class*="render-route-store-search-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer--search-result),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer--search-result) {
+        /* margin-top: 102px */
+        margin-top: 62px /* Pode acabar impactando negativamente em algumas situações */
+    }
+
+    /* Login Page */
+    :global(.render-container.render-route-store-login) :global(.vtex-render__container-id-vtex\.login\:login-content) {
+        margin-top: 62px
+    }
+    
+    /* Institucional Pages */
+    :global(.render-container.render-route-vtex-store-2-x-store-custom-institucional-nossas-lojas) :global(.vtex-render__container-id-institutional) {
+        margin-top: 62px
+    }
+    
+    /* Esquema de switch para os icones do Link Wizard (coringa) do header */
+
+    /* .vtex-store-link-0-x-label--menu-mobile-stores-landing::before { */
+    /* :global(.vtex-store-link-0-x-link--menu-mobile-wizard[href*="/landing/nossas-lojas"]) :global(.vtex-store-link-0-x-label--menu-mobile-wizard)::before { */
+
+    /* Icone do Botao Lojas + Showroom Virtual */
+    :global(.vtex-store-link-0-x-link--menu-mobile-wizard[href*="/landing/nossas-lojas"]) :global(.vtex-store-link-0-x-label--menu-mobile-wizard)::before {
+        /* content: "\F3E8" - Icone de Localizacao Mapa */
+        content: "\F1C8"
+    }
+
+    /* Icone do Botao Vendas Corporativas */
+    :global(.vtex-store-link-0-x-link--menu-mobile-wizard[href*="/institucional/vendas-corporativas"]) :global(.vtex-store-link-0-x-label--menu-mobile-wizard)::before {
+        content: "\F1CC"
+    }
+
+}

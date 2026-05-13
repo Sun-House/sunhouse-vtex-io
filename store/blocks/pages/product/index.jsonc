@@ -24,58 +24,6 @@
     ]
   },
 
-
-  // Iframe - Youtube Shorts
-  // **************************************************
-  "container#youtube-shorts": {
-    "title": "Embed - Shorts Youtube",
-    "children": [
-      // "iframe#youtube-shorts"
-      // "youtube-shorts-widget#product-page"
-    ],
-    "props": {
-      "blockClass": "container-yt-shorts"
-    }
-  },
-
-  // NOVO APP YT WIDGET AQUI
-  // "youtube-shorts-widget#product-page": {
-  //   "title": "Configurações - Youtube Shorts App",
-  //   "props": {
-  //     // "shortsUrl": "https://www.youtube.com/watch?v=8mb6YHMvncs",
-  //     "shortsUrl": "https://www.youtube.com/embed/8mb6YHMvncs", // ideal usar esse formato de link embed
-  //     "startOnLoad": true,
-  //     "muted": false,
-  //     "closable": true
-  //   }
-  // },
-
-  // "iframe#youtube-shorts": {
-  //   "title": "Link Embed",
-  //   "props": {
-  //     "src": "https://www.youtube.com/embed/8mb6YHMvncs",
-  //     "width": 225,
-  //     "height": 400,
-  //     "blockClass": "yt-shorts-iframe"
-  //   }
-  // },
-  // **************************************************
-  //
-
-
-  // DESCONTINUADO NO REFRESH
-  // "container#ra-trustvox": {
-  //   "title": "Bloco: Avaliações Trustvox",
-  //   "children": [
-  //     "product-reviews"
-  //   ],
-  //   "props": {
-  //     "wrapper": true, // Não sei para que serve - esse componente nao tem documentacao
-  //     "blockClass": "container-ra-pdp"
-  //   }
-  // },
-  //
-
   "responsive-layout.desktop#product-main": {
     "title": "Produto",
     "children": [

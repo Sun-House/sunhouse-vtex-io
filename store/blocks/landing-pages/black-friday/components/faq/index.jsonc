@@ -19,7 +19,7 @@
         }
     },
     "rich-text#bf__faq-disclosure__title-row": {
-        "title": "Texto - Titulo FAQ",
+        "title": "Titulo FAQ",
         "props": {
             "text": "## Perguntas Frequentes",
             "blockClass": "wrapper__custom-description-title"

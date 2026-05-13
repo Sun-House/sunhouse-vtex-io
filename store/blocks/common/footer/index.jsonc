@@ -310,38 +310,30 @@
   },
 
   "flex-layout.row#footer-faq-disclosure__title-row": {
-        "children": [
-            "rich-text#footer-faq-disclosure__title-row"
-        ],
-        "props": {
-            "blockClass": ["feature-card__title", "feature-card__title", "footer-faq-title_row"]
-        }
-    },
-    "rich-text#footer-faq-disclosure__title-row": {
-        "title": "Texto - Titulo FAQ",
-        "props": {
-            "text": "## Perguntas Frequentes",
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            // "blockClass": ["wrapper__custom-description-title", "footer-faq-title"]
-            "blockClass": "footer-faq-title"
-        }
-    },
-  //
+    "children": [
+      "rich-text#footer-faq-disclosure__title-row"
+    ],
+    "props": {
+      "blockClass": ["feature-card__title", "feature-card__title", "footer-faq-title_row"]
+    }
+  },
+  "rich-text#footer-faq-disclosure__title-row": {
+    "title": "Titulo FAQ",
+    "props": {
+      "text": "## Perguntas Frequentes",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "footer-faq-title"
+    }
+  },
 
-
-  //
   "flex-layout.row#footer-bottom": {
-    // "title": "Footer Baixo",
     "title": "Footer Linhas",
     "children": [
       "flex-layout.col#footer-bottom-left",
       "flex-layout.col#footer-bottom-right"
     ],
     "props": {
-      // "horizontalAlign": "center",
-      // "colJustify": "around",
-      // "preventHorizontalStretch": true,
       "blockClass": "footer-bottom"
     }
   },

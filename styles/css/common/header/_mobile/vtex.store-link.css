@@ -19,10 +19,9 @@
         align-items: center
     }
 
-    /* .vtex-store-link-0-x-label--menu-mobile-stores-landing::before { */
-    .label--menu-mobile-stores-landing::before {
-        /* content: "\F3E8"; */
-        content: "\F1CC";
+    /* Os icones em si estao sendo controlados pelo arquivo ./vtex.login.css */
+    .label--menu-mobile-stores-landing::before,
+    .label--menu-mobile-wizard::before {
         font-family: "Bootstrap-Icons";
         font-size: 27px;
         font-weight: 400;

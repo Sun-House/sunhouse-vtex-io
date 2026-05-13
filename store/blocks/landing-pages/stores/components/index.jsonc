@@ -22,18 +22,17 @@
         "children": [
             "flex-layout.row#stores-landing-body-text-main",
             "flex-layout.row#stores-landing-body-text-details",
-            
-            // Bloco do showroom - in DEV
             "container#showroom-iframe"
 
             // Bloco de formulario - in DEV **Testes**
-            // ,
-            // "container#stores-landing-form"
+            // ,"container#stores-landing-form"
+            //
         ]
     },
 
     // Bloco de texto principal
     "flex-layout.row#stores-landing-body-text-main": {
+        "title": "Informações - Principais",
         "children": [
             "flex-layout.col#stores-landing-body-text-main-left",
             "flex-layout.col#stores-landing-body-text-main-right"
@@ -75,6 +74,7 @@
     },
 
     "flex-layout.row#stores-landing-body-text-details": {
+        "title": "Informações - Textos",
         "children": [
             "flex-layout.col#stores-landing-body-text-details-left",
             "flex-layout.col#stores-landing-body-text-details-right"
@@ -133,8 +133,7 @@
         }
     },
 
-    
-    // Bloco Showroom Virtual - in Dev **START**
+    // Bloco Showroom Virtual
     "container#showroom-iframe": {
         "title": "Showroom Virtual",
         "children": [
@@ -165,7 +164,6 @@
     },
     "flex-layout.col#showroom-iframe": {
         "children": [
-            // Iframe ou Sandbox do Showroom virao aqui
             "iframe#showroom-iframe"
         ],
         "props": {
@@ -173,7 +171,6 @@
         }
     },
 
-    // Esta funcional: O link - a principio - precisa ser no mesmo padrao de embed do Google Maps para funcionar corretamente
     "iframe#showroom-iframe": {
         "title": "Link Embed do Showroom Virtual",
         "props": {

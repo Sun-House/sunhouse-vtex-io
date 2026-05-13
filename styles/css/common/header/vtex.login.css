@@ -85,42 +85,39 @@
     margin-top: 124px
 }
 
+/* Esquema de switch para os icones do Link Wizard (coringa) do header */
+/* Icone do Botao Showroom Virtual */
+:global(.vtex-store-link-0-x-link--link-wizard[href*="/landing/nossas-lojas"]) :global(.vtex-store-link-0-x-label--link-wizard)::before {
+    display: inline-flex;
+    content: "\F1C8";
+    font-family: "Bootstrap-Icons";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 12px;
+    color: #FFDA00
+}
+
+/* Icone do Botao Vendas Corporativas */
+:global(.vtex-store-link-0-x-link--link-wizard[href*="/institucional/vendas-corporativas"]) :global(.vtex-store-link-0-x-label--link-wizard)::before {
+    display: inline-flex;
+    content: "\F1CC";
+    font-family: "Bootstrap-Icons";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 12px;
+    color: #FFDA00
+}
+
 /* Desktop Force*/
 @media screen and (min-width: 1025px) {
     
     :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-institucional-"] :global(.vtex-render__container-id-institutional),
     :global(.render-container.render-route-vtex-store-2-x-store-custom-institucional-app) :global(.vtex-render__container-id-institucional-landing) {
         margin-top: 124px
-    }
-
-}
-
-/* Mobile */
-@media screen and (max-width: 1024px) {
-
-    /* PDP */
-    /* Pode dar problema pois a PDP tem mais de um container com o id product-main */
-    :global(.render-route-store-product) :global(.vtex-render__container-id-product-main):first-child {
-        margin-top: 62px
-    }
-
-    /* Search and PLP Pages */
-    :global(.render-container.render-route-store-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-notFound--layout),
-    :global(.render-container.render-route-store-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer),
-    :global(.render-container)[class*="render-route-store-search-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer--search-result),
-    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer--search-result) {
-        /* margin-top: 102px */
-        margin-top: 62px /* Pode acabar impactando negativamente em algumas situações */
-    }
-
-    /* Login Page */
-    :global(.render-container.render-route-store-login) :global(.vtex-render__container-id-vtex\.login\:login-content) {
-        margin-top: 62px
-    }
-    
-    /* Institucional Pages */
-    :global(.render-container.render-route-vtex-store-2-x-store-custom-institucional-nossas-lojas) :global(.vtex-render__container-id-institutional) {
-        margin-top: 62px
     }
 
 }

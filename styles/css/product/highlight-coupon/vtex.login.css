@@ -1,3 +1,11 @@
 :global(body:has(.vtex-container-container--product-image-highlight)) :global(.vtex-container-wrapper--highlight--coupon) {
     display: none
 }
+
+/* Fix para ajustar o fundo cinza quando nao tem imagem de destaque mas tem a barra de cupom ativa */
+/* Pode ser necessario forcar o desktop breakpoint */
+/* .vtex-render__container-id-product-main:has(.vtex-container-wrapper--highlight--coupon) .vtex-flex-layout-0-x-flexRow--product-image-highlight-wrapper { */
+:global(.vtex-render__container-id-product-main:has(.vtex-container-wrapper--highlight--coupon)) :global(.vtex-flex-layout-0-x-flexRow--product-image-highlight-wrapper) {
+    min-height: 1315px !important;
+    max-height: 1315px !important
+}

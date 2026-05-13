@@ -99,6 +99,7 @@
   color: #252525;
 }
 
+/* App deprecated - excluir esse bloco apos 0.12.7
 :global(.vtex-reviews-and-ratings-3-x-star) {
   font-size: 0px;
 }
@@ -215,7 +216,7 @@
   font-size: 14px;
   line-height: 17px;
   color: #ffe133;
-}
+} */
 
 :global(.sunhouse-container-1-x-container--greeting--title .sunhouse-auth-utils-2-x-greeting) {
   max-width: 100px;
@@ -429,13 +430,14 @@
   display: none;
 }
 
+/* App deprecated - excluir esse bloco apos 0.12.7
 :global(.vtex-reviews-and-ratings-3-x-container .review__comment--user) {
   font-size: 14px;
 }
 
 :global(.vtex-reviews-and-ratings-3-x-container .review__comment.b--muted-5) {
   border: none;
-}
+} */
 
 :global(.vtex-rich-text-0-x-container--footer-list .vtex-rich-text-0-x-list a) {
   font-size: 12px;
