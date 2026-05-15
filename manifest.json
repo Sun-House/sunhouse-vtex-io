@@ -1,7 +1,7 @@
 {
   "vendor": "sunhouse",
   "name": "sunhouse",
-  "version": "0.12.5",
+  "version": "0.12.9",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -101,7 +101,8 @@
     "sunhouse.whatsapp-lead-capture-pdp": "2.x",
     "sunhouse.buy-together-enhanced": "1.x",
     "sunhouse.cron-app": "1.x",
-    "sunhouse.coupon-button": "1.x"
+    "sunhouse.coupon-button": "1.x",
+    "sunhouse.youtube-shorts-widget": "1.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",

@@ -1,0 +1,46 @@
+@media screen and (max-width: 1024px) {
+
+    /* PDP */
+    /* Pode dar problema pois a PDP tem mais de um container com o id product-main */
+    :global(.render-route-store-product) :global(.vtex-render__container-id-product-main):first-child {
+        margin-top: 62px
+    }
+
+    /* Search and PLP Pages */
+    :global(.render-container.render-route-store-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-notFound--layout),
+    :global(.render-container.render-route-store-search):not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer),
+    :global(.render-container)[class*="render-route-store-search-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer--search-result),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"]:not(:has(:global(.vtex-store-components-3-x-infoCardContainer))) :global(.sunhouse-search-result-3-x-searchResultContainer--search-result) {
+        /* margin-top: 62px */
+        margin-top: 124px
+    }
+
+    /* Login Page */
+    :global(.render-container.render-route-store-login) :global(.vtex-render__container-id-vtex\.login\:login-content) {
+        margin-top: 62px
+    }
+    
+    /* Institucional Pages */
+    :global(.render-container.render-route-vtex-store-2-x-store-custom-institucional-nossas-lojas) :global(.vtex-render__container-id-institutional) {
+        margin-top: 62px
+    }
+    
+    /* Esquema de switch para os icones do Link Wizard (coringa) do header */
+    /* Icone do Botao Lojas + Showroom Virtual */
+    :global(.vtex-store-link-0-x-link--menu-mobile-wizard[href*="/landing/nossas-lojas"]) :global(.vtex-store-link-0-x-label--menu-mobile-wizard)::before {
+        /* content: "\F3E8" - Icone de Localizacao Mapa */
+        content: "\F1C8"
+    }
+
+    /* Icone do Botao Vendas Corporativas */
+    :global(.vtex-store-link-0-x-link--menu-mobile-wizard[href*="/institucional/vendas-corporativas"]) :global(.vtex-store-link-0-x-label--menu-mobile-wizard)::before {
+        content: "\F1CC"
+    }
+
+    /* Fix para o header ficar transparente quando o usuario rola a pagina para baixo */
+    :global(.sunhouse-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast) {
+    /* :global(.vtex-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast) { */
+        --header-background-color: unset !important
+    }
+
+}

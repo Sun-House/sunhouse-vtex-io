@@ -16,8 +16,9 @@
     "title": "Controles esquerda",
     "children": [
       "link#stores",
-      // "link#showroom",
-      "link#corporate", // Llink para vendas corporativas
+      // "link#showroom", // Link para showroom virtual
+      // "link#corporate", // Link para vendas corporativas
+      "link#wizard", // Link coringa - tem um ajuste no Css que mostra o icone de acordo com o link atribuido
       "link#wishlist--left"
       // "conditional-login#desktop"
     ],
@@ -70,6 +71,16 @@
       // "href": "/landing/corporate",
       // "blockClass": ["header-links", "link-showroom", "link-corporate"]
       "blockClass": ["header-links", "link-corporate"]
+    }
+  },
+
+  // Link Wizard - Coringa para usar facilmente no Site Editor sem precisar rebuildar versão da loja
+  "link#wizard": {
+    "title": "Link Coringa",
+    "props": {
+      "label": "Wizard",
+      "href": "/", // Aqui sera ajustado de acordo com a necessidade diretamente pelo Site Editor
+      "blockClass": ["header-links", "link-wizard"]
     }
   },
 

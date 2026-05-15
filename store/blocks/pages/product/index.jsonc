@@ -24,68 +24,11 @@
     ]
   },
 
-
-  // Iframe - Youtube Shorts
-  // **************************************************
-  "container#youtube-shorts": {
-    "title": "Embed - Shorts Youtube",
-    "children": [
-      // "iframe#youtube-shorts"
-      // "youtube-shorts-widget#product-page"
-    ],
-    "props": {
-      "blockClass": "container-yt-shorts"
-    }
-  },
-
-  // NOVO APP YT WIDGET AQUI
-  // "youtube-shorts-widget#product-page": {
-  //   "title": "Configurações - Youtube Shorts App",
-  //   "props": {
-  //     // "shortsUrl": "https://www.youtube.com/watch?v=8mb6YHMvncs",
-  //     "shortsUrl": "https://www.youtube.com/embed/8mb6YHMvncs", // ideal usar esse formato de link embed
-  //     "startOnLoad": true,
-  //     "muted": false,
-  //     "closable": true
-  //   }
-  // },
-
-  // "iframe#youtube-shorts": {
-  //   "title": "Link Embed",
-  //   "props": {
-  //     "src": "https://www.youtube.com/embed/8mb6YHMvncs",
-  //     "width": 225,
-  //     "height": 400,
-  //     "blockClass": "yt-shorts-iframe"
-  //   }
-  // },
-  // **************************************************
-  //
-
-
-  // DESCONTINUADO NO REFRESH
-  // "container#ra-trustvox": {
-  //   "title": "Bloco: Avaliações Trustvox",
-  //   "children": [
-  //     "product-reviews"
-  //   ],
-  //   "props": {
-  //     "wrapper": true, // Não sei para que serve - esse componente nao tem documentacao
-  //     "blockClass": "container-ra-pdp"
-  //   }
-  // },
-  //
-
   "responsive-layout.desktop#product-main": {
     "title": "Produto",
     "children": [
       "flex-layout.row#product-image-highlight",
-
-      // Componente descontinuado no Refresh - Mas vou manter aqui por uma questão de ajuste
-      // de CSS pendente que farei apenas apos lançar o MVP do Refresh
       "flex-layout.row#product-highlight-coupon",
-      //
-
       "flex-layout.row#product-main"
     ]
   },
@@ -241,26 +184,14 @@
   "flex-layout.col#product-main-right": {
     "title": "Informações Principais",
     "children": [
-      // "flex-layout.row#breadcrumb-product",
       "container#product-top-infos",
-
-      // Criar condicional para mostrar o nome do produto ou o nome do SKU
       "condition-layout.product#product-title",
-      
-      // "vtex.store-components:product-brand#product-brand", // Precisa ficar logo abaixo do nome do produto
       "container#product-brand-dynamic",
       "container#product-brand-fixed",
-      
-      // "vtex.store-components:product-name",
-      // "vtex.store-components:product-name#sku-name",
-      //
-      
       "container#product-highlights--product-page",
-      // "condition-layout.product#product-availability"
       "condition-layout.product#elf-checker"
     ],
     "props": {
-      // "width": "43%",
       "width": "50%",
       "blockClass": "product-main-right",
       "preventVerticalStretch": true
@@ -336,13 +267,31 @@
     "children": [
       // "flex-layout.row#product-code-brand",      
       // "trustvox-starts", - Removido da Loja
-      "product-rating-summary",
+      // "product-rating-summary", - Removido da Loja junto com o Trustvox
+      
+      // Em desenvolvimento
+      "container#product-reviews-summary",
+      //
+      
       "add-to-list-btn#product-page"
     ],
-    "props": {
+    "props": {      
       "blockClass": "product-top-infos"
     }
   },
+
+  // Em desenvolvimento
+  "container#product-reviews-summary": {
+    "title": "Estrelas de Avaliações",
+    "children": [
+      // Nada a colocar aqui por enquanto
+    ],
+    "props": {
+      "blockClass": "product-reviews-summary"
+    }
+  },
+  //
+  
   "add-to-list-btn#product-page": {
     "title": "Botão adicionar a lista de desejos",
     "props": {

@@ -14,9 +14,9 @@
       "blockClass": "menu-mobile-controls--logged"
     },
     "children": [
-      // "link#mobile-account",
       // "link#stores-landing",
-      "link#corporate-mobile",
+      // "link#corporate-mobile",
+      "link#wizard-mobile",
       "minicart.v2",
       "link#mobile-wishlist"
     ]
@@ -40,6 +40,7 @@
     "children": ["link#mobile-login"]
   },
   "link#mobile-login": {
+    "title": "Link Login",
     "props": {
       "href": "/login",
       "blockClass": "mobile-login"
@@ -57,6 +58,7 @@
   },
 
   "link#mobile-logout": {
+    "title": "Link Sair",
     "props": {
       "blockClass": "mobile-logout",
       "label": "[Sair]",
@@ -65,6 +67,7 @@
   },
 
   "link#mobile-account": {
+    "title": "Link Meus Pedidos",
     "props": {
       "href": "/_secure/account#/orders",
       "label": "Meus Pedidos",
@@ -72,16 +75,19 @@
     }
   },
   
-  // Novo - apenas mobile
+  // Link Showroom Virtual
   "link#stores-landing-mobile": {
+    "title": "Link Showroom Virtual",
     "props": {
-      "href": "/landing/nossas-lojas",
-      "label": "Nossas Lojas — Showroom",
+      "href": "/landing/nossas-lojas#showroom-virtual",
+      "label": "Showroom Virtual",
       "blockClass": "menu-mobile-stores-landing"
     }
   },
 
+  // Link Vendas Corporativas
   "link#corporate-mobile": {
+    "title": "Link Vendas Corporativas",
     "props": {
       "href": "/institucional/vendas-corporativas",
       "label": "Vendas Corporativas",
@@ -89,7 +95,18 @@
     }
   },
 
+  // Link Wizard - Coringa para usar facilmente no Site Editor sem precisar rebuildar versão da loja
+  "link#wizard-mobile": {
+    "title": "Link Coringa",
+    "props": {
+      "href": "/",
+      "label": "Wizard",
+      "blockClass": ["menu-mobile-stores-landing", "menu-mobile-wizard"]
+    }
+  },
+
   "link#mobile-wishlist": {
+    "title": "Link Favoritos",
     "props": {
       "href": "/wishlist",
       "label": "Lista de Favoritos",

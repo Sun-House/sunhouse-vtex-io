@@ -45,7 +45,7 @@
         }
     },
     "rich-text#faq-disclosure__title-row": {
-        "title": "Texto - Titulo FAQ",
+        "title": "Titulo",
         "props": {
             "text": "## Perguntas Frequentes",
             "blockClass": "wrapper__custom-description-title"
@@ -69,6 +69,7 @@
     // Lines Disclosures Declaration
     // Linha 1
     "disclosure-layout#faq-disclosure-line-1": {
+        "title": "Pergunta 1",
         "children": [
             "disclosure-trigger#faq-disclosure-line-1",
             "disclosure-content#faq-disclosure-line-1"
@@ -88,7 +89,7 @@
         }
     },
     "rich-text#faq-disclosure-line-1__title": {
-        "title": "Linha 1 - Título",
+        "title": "Pergunta",
         "props": {
             "text": "## Título da pergunta 1 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
@@ -103,7 +104,7 @@
         }
     },
     "rich-text#faq-disclosure-line-1__text": {
-        "title": "Linha 1 - Texto",
+        "title": "Resposta",
         "props": {
             "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. [Quisque](#) ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci. \n \n Nunc vitae nunc purus. Nam tincidunt enim neque, quis ultrices felis convallis sit amet. Nullam dapibus laoreet venenatis. Vestibulum ullamcorper a massa vel convallis. Donec congue libero sed tortor varius tincidunt.",
             "blockClass": "faq-disclosure-line__text"
@@ -112,6 +113,7 @@
 
     // Linha 2
     "disclosure-layout#faq-disclosure-line-2": {
+        "title": "Pergunta 2",
         "children": [
             "disclosure-trigger#faq-disclosure-line-2",
             "disclosure-content#faq-disclosure-line-2"
@@ -131,7 +133,7 @@
         }
     },
     "rich-text#faq-disclosure-line-2__title": {
-        "title": "Linha 2 - Título",
+        "title": "Pergunta",
         "props": {
             "text": "## Título da pergunta 2 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
@@ -146,7 +148,7 @@
         }
     },
     "rich-text#faq-disclosure-line-2__text": {
-        "title": "Linha 2 - Texto",
+        "title": "Resposta",
         "props": {
             "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. Quisque ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci.",
             "blockClass": "faq-disclosure-line__text"
@@ -155,6 +157,7 @@
 
     // Linha 3
     "disclosure-layout#faq-disclosure-line-3": {
+        "title": "Pergunta 3",
         "children": [
             "disclosure-trigger#faq-disclosure-line-3",
             "disclosure-content#faq-disclosure-line-3"
@@ -174,7 +177,7 @@
         }
     },
     "rich-text#faq-disclosure-line-3__title": {
-        "title": "Linha 3 - Título",
+        "title": "Pergunta",
         "props": {
             "text": "## Título da pergunta 3 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
@@ -189,7 +192,7 @@
         }
     },
     "rich-text#faq-disclosure-line-3__text": {
-        "title": "Linha 3 - Texto",
+        "title": "Resposta",
         "props": {
             "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. Quisque ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci.",
             "blockClass": "faq-disclosure-line__text"
@@ -198,6 +201,7 @@
 
     // Linha 4
     "disclosure-layout#faq-disclosure-line-4": {
+        "title": "Pergunta 4",
         "children": [
             "disclosure-trigger#faq-disclosure-line-4",
             "disclosure-content#faq-disclosure-line-4"
@@ -217,7 +221,7 @@
         }
     },
     "rich-text#faq-disclosure-line-4__title": {
-        "title": "Linha 4 - Título",
+        "title": "Pergunta",
         "props": {
             "text": "## Título da pergunta 4 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
@@ -232,7 +236,7 @@
         }
     },
     "rich-text#faq-disclosure-line-4__text": {
-        "title": "Linha 4 - Texto",
+        "title": "Resposta",
         "props": {
             "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. Quisque ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci.",
             "blockClass": "faq-disclosure-line__text"
@@ -241,6 +245,7 @@
 
     // Linha 5
     "disclosure-layout#faq-disclosure-line-5": {
+        "title": "Pergunta 5",
         "children": [
             "disclosure-trigger#faq-disclosure-line-5",
             "disclosure-content#faq-disclosure-line-5"
@@ -260,7 +265,7 @@
         }
     },
     "rich-text#faq-disclosure-line-5__title": {
-        "title": "Linha 5 - Título",
+        "title": "Pergunta",
         "props": {
             "text": "## Título da pergunta 5 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
@@ -275,7 +280,7 @@
         }
     },
     "rich-text#faq-disclosure-line-5__text": {
-        "title": "Linha 5 - Texto",
+        "title": "Resposta",
         "props": {
             "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. Quisque ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci.",
             "blockClass": "faq-disclosure-line__text"
@@ -284,6 +289,7 @@
 
     // Linha 6
     "disclosure-layout#faq-disclosure-line-6": {
+        "title": "Pergunta 6",
         "children": [
             "disclosure-trigger#faq-disclosure-line-6",
             "disclosure-content#faq-disclosure-line-6"
@@ -303,7 +309,7 @@
         }
     },
     "rich-text#faq-disclosure-line-6__title": {
-        "title": "Linha 6 - Título",
+        "title": "Pergunta",
         "props": {
             "text": "## Título da pergunta 6 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
@@ -318,7 +324,7 @@
         }
     },
     "rich-text#faq-disclosure-line-6__text": {
-        "title": "Linha 6 - Texto",
+        "title": "Resposta",
         "props": {
             "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. Quisque ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci.",
             "blockClass": "faq-disclosure-line__text"
@@ -327,6 +333,7 @@
 
     // Linha 7
     "disclosure-layout#faq-disclosure-line-7": {
+        "title": "Pergunta 7",
         "children": [
             "disclosure-trigger#faq-disclosure-line-7",
             "disclosure-content#faq-disclosure-line-7"
@@ -346,7 +353,7 @@
         }
     },
     "rich-text#faq-disclosure-line-7__title": {
-        "title": "Linha 7 - Título",
+        "title": "Pergunta",
         "props": {
             "text": "## Título da pergunta 7 da FAQ - Máximo 1 linha",
             "blockClass": "faq-disclosure-line__title"
@@ -361,7 +368,7 @@
         }
     },
     "rich-text#faq-disclosure-line-7__text": {
-        "title": "Linha 7 - Texto",
+        "title": "Resposta",
         "props": {
             "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. Quisque ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci.",
             "blockClass": "faq-disclosure-line__text"
