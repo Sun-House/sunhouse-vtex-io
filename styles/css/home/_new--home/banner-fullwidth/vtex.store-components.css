@@ -19,7 +19,7 @@
     margin-top: 0;
     margin-bottom: 38px;
     width: 100%;
-    max-width: 1200px
+    max-width: 1200px !important
 }
 
 /* .vtex-store-components-3-x-container--banner-fullwidth { */
@@ -37,9 +37,9 @@
 /* .vtex-store-components-3-x-heading--banner-fullwidth { */
 .heading--banner-fullwidth {
     /* font-size: 2rem; */
-    font-size: 2.8rem;
+    font-size: 2.8rem !important;
     text-transform: none;
-    text-align: left
+    text-align: left !important
 }
 
 /* .vtex-store-components-3-x-infoCardCallActionContainer--banner-fullwidth .vtex-button { */
