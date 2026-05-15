@@ -1,0 +1,40 @@
+{
+    "container#stores-landing-form": {
+        "title": "Formulário Visita de Loja",
+        "children": [
+            "flex-layout.row#stores-landing-form-content"
+        ],
+        "props": {
+            "blockClass": "stores-landing-form"
+        }
+    },
+
+    "flex-layout.row#stores-landing-form-content": {
+        // "title": "DEV Formulário de Cadastro - Conteúdo",
+        "children": [
+            "flex-layout.col#stores-landing-form-content"
+        ],
+        "props": {
+            "blockClass": "stores-landing-form-content"
+        }
+    },
+    "flex-layout.col#stores-landing-form-content": {
+        "children": [
+            "rd-station-form#stores-landing-form"
+        ],
+        "props": {
+            "blockClass": "stores-landing-form-content"
+        }
+    },
+
+    "rd-station-form#stores-landing-form": {
+        "props": {
+            "formId": "ecomm-nossas-lojas-teste-1382e8dfc02a4ffc3aa8", // Id do formulário RD Station
+            "identifier": "", // Identificador do formulário RD Station - valor legado, a maioria dos formularios nao possuem
+            "className": "minha-classe-tema", // Classe CSS do formulário - usado para estilizar o formulário mais a fundo
+            "showLoading": false, // Mostrar loading ou nao mostrar antes de gerar o formulario
+            "loadingLabel": "Carregando…", // Label de loading acima
+            "errorFallbackLabel": "Formulário indisponível no momento." // Label de erro - caso de erro, exibe esta mensagem
+        }
+    }
+}

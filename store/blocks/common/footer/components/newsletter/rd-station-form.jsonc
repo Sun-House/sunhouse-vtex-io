@@ -1,0 +1,40 @@
+{
+    "container#newsletter-rdstation": {
+        "title": "Newsletter - RD Station",
+        "children": [
+            "flex-layout.row#newsletter-rdstation-content"
+        ],
+        "props": {
+            "blockClass": "newsletter-rd-form"
+        }
+    },
+
+    "flex-layout.row#newsletter-rdstation-content": {
+        // "title": "Newsletter - RD Station - Conteúdo",
+        "children": [
+            "flex-layout.col#newsletter-rdstation-content"
+        ],
+        "props": {
+            "blockClass": "newsletter-rd-form-content"
+        }
+    },
+    "flex-layout.col#newsletter-rdstation-content": {
+        "children": [
+            "rd-station-form#newsletter"
+        ],
+        "props": {
+            "blockClass": "newsletter-rd-form-content"
+        }
+    },
+
+    "rd-station-form#newsletter": {
+        "props": {
+            "formId": "newsletter-2026-94f19da0fb6f5ed83a1e", // Id do formulário RD Station
+            "identifier": "", // Identificador do formulário RD Station - valor legado, a maioria dos formularios nao possuem
+            "className": "newsletter-rd-form", // Classe CSS do formulário - usado para estilizar o formulário mais a fundo
+            "showLoading": false, // Mostrar loading ou nao mostrar antes de gerar o formulario
+            "loadingLabel": "Carregando…", // Label de loading acima
+            "errorFallbackLabel": "Formulário indisponível no momento :(" // Label de erro - caso de erro, exibe esta mensagem
+        }
+    }
+}
