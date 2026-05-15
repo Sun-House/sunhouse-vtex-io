@@ -10,7 +10,10 @@
   "footer-layout.desktop": {
     "title": "Footer Desktop",
     "children": [
-      // Inserir aqui novo bloco de newsletter
+      // Inserir aqui novo bloco de newsletter - in DEV
+      "container#newsletter-rdstation",
+      //
+      
       "flex-layout.row#footer-logo",
       "flex-layout.row#footer-content",
       "flex-layout.row#footer-social",

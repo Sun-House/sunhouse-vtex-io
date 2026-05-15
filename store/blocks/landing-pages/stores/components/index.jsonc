@@ -24,8 +24,8 @@
             "flex-layout.row#stores-landing-body-text-details",
             "container#showroom-iframe"
 
-            // Bloco de formulario - in DEV **Testes**
-            // ,"container#stores-landing-form"
+            // Bloco de formulario RD Station - in DEV
+            ,"container#stores-landing-form"
             //
         ]
     },
