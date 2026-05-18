@@ -1,0 +1,25 @@
+:global(.vtex-container-container--newsletter-rd-form) * {
+    font-family: Bai Jamjuree, serif !important
+}
+
+:global(.vtex-container-container--newsletter-rd-form) h2 > span {
+    font-weight: 500 !important
+}
+
+:global(.vtex-container-container--newsletter-rd-form) p > span {
+    font-family: 'Onest', sans-serif !important
+}
+
+:global(.vtex-container-container--newsletter-rd-form) input {
+    padding-left: 24px !important
+}
+
+:global(.vtex-container-container--newsletter-rd-form .rd-button) {
+    transition: .3s ease-in-out
+}
+
+:global(.vtex-container-container--newsletter-rd-form .rd-button):hover {
+    background-color: #ffda00 !important;
+    color: #161413 !important;
+    border-color: #ffda00 !important
+}

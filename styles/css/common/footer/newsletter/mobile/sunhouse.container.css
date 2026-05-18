@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+
+    .container--newsletter-rd-form {
+        height: auto;
+        min-height: 391px;
+        border-top: 1px solid #E5E5E5;
+        border-bottom: unset
+    }
+
+}

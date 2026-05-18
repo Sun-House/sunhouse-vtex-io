@@ -1,0 +1,7 @@
+/* .vtex-container-container--newsletter-rd-form { */
+.container--newsletter-rd-form {
+    height: auto;
+    min-height: 260px;
+    padding: 24px 0 12px 0;
+    border-bottom: 1px solid #E5E5E5
+}

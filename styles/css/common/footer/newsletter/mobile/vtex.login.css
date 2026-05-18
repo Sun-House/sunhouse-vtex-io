@@ -1,0 +1,7 @@
+@media screen and (max-width: 1024px) {
+    
+    :global(.vtex-container-container--newsletter-rd-form .rd-button) {
+        height: auto !important
+    }
+
+}
