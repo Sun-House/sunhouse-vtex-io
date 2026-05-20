@@ -5,9 +5,7 @@
     overflow: hidden; /* Ideal para nao gerar scroll horizontal - que é gerado por conta da regra de estourar a largura do container */
     width: 100%;
     height: auto;
-    /* min-height: 1036px;
-    max-height: 1036px; */
     min-height: 1184px;
     max-height: 1184px;
-    background-color: #ededed /* Cor final Refresh validada */
+    background-color: #ededed
 }

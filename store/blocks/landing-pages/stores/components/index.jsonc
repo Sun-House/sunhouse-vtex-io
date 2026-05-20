@@ -25,7 +25,7 @@
             "container#showroom-iframe"
 
             // Bloco de formulario RD Station - in DEV
-            ,"container#stores-landing-form"
+            // ,"container#stores-landing-form"
             //
         ]
     },
@@ -180,29 +180,6 @@
             "blockClass": "showroom-iframe"
         }
     },
-
-
-    // Bloco de formulario - in DEV **Testes**
-    //
-    // "container#stores-landing-form": {
-    //     "children": [
-    //         // "rich-text#stores-landing-form-title",
-    //         "custom-form#form-test"
-            
-    //     ],
-    //     "props": {
-    //         "blockClass": "stores-landing-form"
-    //     }
-    // },
-    // "custom-form#form-test": {
-    //     "props": {
-    //         "blockClass": "form-test"
-    //     }
-    // },
-
-    // Bloco de formulario - in DEV **Testes**
-    //
-
     
     // Page Pre-Footer
     "container#stores-landing-pre-footer": {

@@ -280,11 +280,11 @@
     }
   },
 
-  // Em desenvolvimento
+  // Em desenvolvimento - App parceiro Konfidency
   "container#product-reviews-summary": {
     "title": "Estrelas de Avaliações",
     "children": [
-      // Nada a colocar aqui por enquanto
+      "konfidencypartnerbr.konfidency-reviews:product-rating-summary" // tive que colocar assim pois nao consigo de jeito nenhum remover o componente nativo vtex.reviews-and-ratings do peerDependencies
     ],
     "props": {
       "blockClass": "product-reviews-summary"
