@@ -191,8 +191,10 @@
       "image#pci-vtex",
       "container#spacing-default",
       "link#vtex",
-      "container#spacing-default",
-      "konfidencypartnerbr.konfidency-reviews:store-reviews-badge" // Selo de reviews da Konfidency
+      "container#spacing-default"
+      //
+      // Necessario lançar o major 1 para poder adicionar o peerDependency e usar o App
+      // "konfidencypartnerbr.konfidency-reviews:store-reviews-badge" // Selo de reviews da Konfidency
     ],
     "props": {
       "blockClass": [

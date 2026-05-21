@@ -250,7 +250,9 @@
   "container#product-reviews-summary": {
     "title": "Estrelas de Avaliações",
     "children": [
-      "konfidencypartnerbr.konfidency-reviews:product-rating-summary" // tive que colocar assim pois nao consigo de jeito nenhum remover o componente nativo vtex.reviews-and-ratings do peerDependencies
+      //
+      // Necessario lançar o major 1 para poder adicionar o peerDependency e usar o App
+      // "konfidencypartnerbr.konfidency-reviews:product-rating-summary" // tive que colocar assim pois nao consigo de jeito nenhum remover o componente nativo vtex.reviews-and-ratings do peerDependencies
     ],
     "props": {
       "blockClass": "product-reviews-summary"

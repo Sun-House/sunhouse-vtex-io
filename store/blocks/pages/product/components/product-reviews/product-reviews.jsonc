@@ -20,7 +20,9 @@
 
     "flex-layout.col#product-reviews": {
         "children": [
-            "konfidencypartnerbr.konfidency-reviews:product-reviews"
+            //
+            // Necessario lançar o major 1 para poder adicionar o peerDependency e usar o App
+            // "konfidencypartnerbr.konfidency-reviews:product-reviews"
             
             //"flex-layout.row#product-reviews-header" // Sera desenvolvido posteriormente - usado o bloco nativo da Konfidency acima
             // "flex-layout.row#product-reviews-main", // Sera desenvolvido posteriormente - usado o bloco nativo da Konfidency acima
