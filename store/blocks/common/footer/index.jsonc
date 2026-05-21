@@ -213,7 +213,6 @@
     "children": [
       // "flex-layout.row#footer-content-about", - Movido permanentemente para home.jsonc - a principio precisa repensar nesse bloco da home
       "flex-layout.row#footer-content-lists"
-      // "flex-layout.row#footer-images-bottom" - Linha completamente vazia
     ],
     "props": {
       "blockClass": "footer-content-right",

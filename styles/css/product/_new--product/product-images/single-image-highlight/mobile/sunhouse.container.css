@@ -1,9 +1,9 @@
 @media screen and (max-width: 1024px) {
     
-    /* .sunhouse-container-1-x-container--product-top-infos { */
     .container--product-top-infos {
-        /* margin-top: 125px */
-        height: 0 !important /* Preciso validar para que serve esse componente, mas por hora, sera melhor ele ficar assim */
+        height: 0 !important; /* Futuramente validar se precisa manter isso, pois na verdade estava assim pois antes estava vazio, mas agora possui conteudo */
+        margin-bottom: 24px
+
     }
     
 }

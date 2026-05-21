@@ -1,0 +1,19 @@
+/* Bloco de Estrelas de Avaliação */
+:global(.vtex-container-container--product-reviews-summary .empty-review-count) {
+    font-family: 'Onest', sans-serif;
+    font-size: 12px !important;
+    color: #727273 !important
+}
+
+/* Bloco de Avaliações Completo */
+/* .vtex-container-container--product-reviews { */
+:global(.vtex-container-container--product-reviews) {
+    margin: 64px 0 32px
+}
+
+/* .vtex-container-container--product-reviews h2 { */
+:global(.vtex-container-container--product-reviews h2) {
+    text-align: center;
+    color: #161413;
+    font-size: 36px
+}

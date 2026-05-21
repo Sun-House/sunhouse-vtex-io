@@ -1,26 +1,13 @@
 {
   "store.product": {
     "children": [      
-      // Futuramente englobar ele com outros componente - ex. Imagem de Destaque do Produto - para nao ter que fazer uma configuracao
-      // para desktop e outra para mobile - igual a estrutura da descricao do produto "flex-layout.row#product-infos-wrapper"
-      
-      // In DEV
-      "container#youtube-shorts", // Container existe mas esta vazio pois o app ainda esta em desenvolvimento
-      // In DEV
-      //
-      
+      "container#youtube-shorts",
       "responsive-layout.desktop#product-main",
       "responsive-layout.mobile#product-main",
       "flex-layout.row#product-infos-wrapper",
-      "container#product__related-grid",
-      // "container#ra-trustvox" - Removido da Loja
-      "flex-layout.row#also-seen"
-      //
-      // In DEV
-      ,"container#product-reviews"
-      // In DEV
-      //
-      // "container#spacing-default" // Espaco extra aparentemente desnecessario - ficara aqui apenas caso necessite voltar
+      // "container#product__related-grid", // Componente descontinuado - Sera descontinuado no Refresh - Remover apos testes e subida da proxima versao
+      "container#product-reviews",
+      "container#product-shelf-also-seen"
     ]
   },
 
@@ -49,10 +36,6 @@
   },
   "flex-layout.row#product-main-mobile": {
     "children": [
-      // Em testes - Novo sistema de imagens de destaque, sendo aplicado ao mobile tambem
-      // "flex-layout.row#product-image-highlight",
-      //
-
       "flex-layout.col#product-main-mobile"
     ],
     "props": {
@@ -80,21 +63,11 @@
 
   "flex-layout.col#product-main-mobile": {
     "children": [
-      // Componente descontinuado no Refresh - Mas vou manter aqui por uma questão de ajuste
-      // de CSS pendente que farei apenas apos lançar o MVP do Refresh
-      //"container#wrapper__highlight-coupon-mobile",
-      //
-
       "flex-layout.col#product-main-mobile_wrapper",
       "flex-layout.row#breadcrumb-product",
-      "container#product-top-infos", // Validar se esse componente ainda serve para algo
+      "container#product-top-infos",
       "container#product-highlights--product-page",
       "condition-layout.product#elf-checker"
-      
-      // O bloco "flex-layout.col#product-description-wrapper-mobile" sera descontinuado no Refresh
-      // Todo o mobile sera tratato pelo "container#product-main-description" que sera configurado
-      // e ajustado seus breakpoints via CSS
-      //"flex-layout.col#product-description-wrapper-mobile"
     ],
     "props": {
       "blockClass": "product-main-mobile"
@@ -124,7 +97,6 @@
       "contentOrder": "videos-first",
       "displayThumbnailsArrows": true,
       "thumbnailsOrientation": "horizontal",
-      // "showNavigationArrows": false,
       "showNavigationArrows": true,
       "showPaginationDots": false,
       "blockClass": "product-page"
@@ -227,7 +199,7 @@
     }
   },
   
-  // New product title structure
+  // Nova estrutura de nome do produto - Muda conforme a selecao de SKU/Variação
 	"condition-layout.product#product-title": {
     "title": "Condicional - Nome do Produto",
 		"props": {
@@ -265,14 +237,9 @@
   },
   "container#product-top-infos": {
     "children": [
-      // "flex-layout.row#product-code-brand",      
-      // "trustvox-starts", - Removido da Loja
-      // "product-rating-summary", - Removido da Loja junto com o Trustvox
-      
-      // Em desenvolvimento
-      "container#product-reviews-summary",
+      // "flex-layout.row#product-code-brand", // Pensar em voltar a utilizar em algum momento
       //
-      
+      "container#product-reviews-summary",
       "add-to-list-btn#product-page"
     ],
     "props": {      
@@ -280,7 +247,6 @@
     }
   },
 
-  // Em desenvolvimento - App parceiro Konfidency
   "container#product-reviews-summary": {
     "title": "Estrelas de Avaliações",
     "children": [
@@ -290,7 +256,6 @@
       "blockClass": "product-reviews-summary"
     }
   },
-  //
   
   "add-to-list-btn#product-page": {
     "title": "Botão adicionar a lista de desejos",
@@ -301,7 +266,9 @@
   "flex-layout.row#product-code-brand": {
     "children": [
       "product-identifier.product#product-reference", // Deveria vir o codigo do Produto, porem nada aparece visualmente (pode ter alguma regra de Css ocultando, validar posteriormente)
-      // "product-identifier.product#sku-reference", - Deveria vir o codigo do SKU, porem esta desabilitado
+      // "product-identifier.product#sku-reference", - Deveria vir o codigo do SKU, porem esta desabilitado (validar posteriormente se serve pra algo - senao, revover do codigo)
+      
+      // Marca do produto - Esta funcionando normalmente
       "vtex.store-components:product-brand#product-brand"
     ],
     "props": {
@@ -341,7 +308,6 @@
       ],
       "Then": "flex-layout.col#product-exclusive",
       "Else": "condition-layout.product#corporate-checker"
-      // "Else": "condition-layout.product#product-availability"
     }
   },
 
@@ -398,13 +364,8 @@
     "children": [
       "flex-layout.row#product-page-price",
       "container#sku-variation-selector",
-      
-      //
       "flex-layout.row#product-buy-container",
       "flex-layout.col#buy-button",
-      // "flex-layout.row#whatsapp-button_normal-product",
-      //
-
       "flex-layout.row#collection-highlights--product-page",
       "flex-layout.row#shipping-simulator-wrapper"
     ],
@@ -415,10 +376,8 @@
   },
   "flex-layout.row#product-page-price": {
     "children": [
-      // Padrao de preço 1 - Versao original Edson - Destaque para o preço no Pix
-      "container#product-low-price", // No arquivo product-prices.jsonc
-      // Padrao de preço 2 - Versao destaque para o preço em 10x
-      "container#product-high-price" // No arquivo product-prices.jsonc
+      "container#product-low-price", // Preço destaque no Pix
+      "container#product-high-price" // Preço destaque em 10x
     ],
     "props": {
       "blockClass": "product-page-price",
@@ -480,14 +439,10 @@
   "flex-layout.row#product-buy-container": {
     "children": [
       "flex-layout.col#buy-quantity",
-      
-      // Esse botao vai pro lugar do whatsapp, e o do whatsapp pra ca
       "flex-layout.row#whatsapp-button_normal-product"
-      // "flex-layout.col#buy-button"
     ],
     "props": {
       "blockClass": "buy-container",
-      // "colJustify": "between",
       "preventVerticalStretch": true,
       "colGap": 0,
       "preserveLayoutOnMobile": true
@@ -499,7 +454,6 @@
     ],
     "props": {
       "blockClass": "buy-quantity",
-      // "width": "41%"
       "width": "30%"
     }
   },
@@ -513,17 +467,15 @@
   },
   "flex-layout.col#buy-button": {
     "children": [
-      // "add-to-cart-button#product-page",
       "vtex.add-to-cart-button:add-to-cart-button#product-page"
       // "rich-text#safe-purchase"
     ],
     "props": {
-      // "width": "52%"
       "blockClass": ["product-buy-button", "buy-button"]
     }
   },
 
-  /* Desabilitado */
+  /* Desabilitado - Pode voltar em algum momento */
   "rich-text#safe-purchase": {
     "title": "Texto - Compra Segura",
     "props": {
@@ -531,15 +483,14 @@
       "text": "Compra 100% segura"
     }
   },
+  //
 
-  // "add-to-cart-button#product-page": {
   "vtex.add-to-cart-button:add-to-cart-button#product-page": {
     "props": {
       "onClickBehavior": "add-to-cart",
       // "isOneClickBuy": true, // Funciona se desabilitar a prop do minicart "customPixelEventName"
       // "onClickEventPropagation": "disabled", // Esta funcionando em conjunto com o minicart - la tem um evento de propagacao que causa o efeito de abrir o minicart
       // "customPixelEventId": "?" // Pode ser util para ferramentas externas e outros apps
-      // "text": "Adicionar ao Carrinho",
       "text": "Comprar Agora",
       "blockClass": "add-to-cart_button"
     }
@@ -556,41 +507,46 @@
     }
   },
 
-  // Compre junto
-  "condition-layout.user#buy-together": {
-    "props": {
-      "conditions": [
-        {
-          "subject": "isAuthenticated",
-          "arguments": {
-            "value": true
-          }
-        }
-      ],
-      "Then": "condition-layout.product#product-content-availability"
-    }
-  },
+  // Compre junto - Esse bloco esta descontinuado completamente
+  // REMOVER TOTALMENTE DO CODIGO APOS A SUBIADA DA PROXIMA VERSÃO
+  // ------------------------------------------------------------------------------------------------
+  // "condition-layout.user#buy-together": {
+  //   "props": {
+  //     "conditions": [
+  //       {
+  //         "subject": "isAuthenticated",
+  //         "arguments": {
+  //           "value": true
+  //         }
+  //       }
+  //     ],
+  //     "Then": "condition-layout.product#product-content-availability"
+  //   }
+  // },
 
-  "condition-layout.product#product-content-availability": {
-    "title": "Condicional - Compre Junto",
-    "props": {
-      "conditions": [
-        {
-          "subject": "isProductAvailable"
-        }
-      ],
-      "Then": "flex-layout.row#buy-together"
-    }
-  },
-  "flex-layout.row#buy-together": {
-    // "children": [
-    //   "buy-together"
-    // ],
-    "props": {
-      "blockClass": "buy-together"
-    }
-  },
+  // "condition-layout.product#product-content-availability": {
+  //   "title": "Condicional - Compre Junto",
+  //   "props": {
+  //     "conditions": [
+  //       {
+  //         "subject": "isProductAvailable"
+  //       }
+  //     ],
+  //     "Then": "flex-layout.row#buy-together"
+  //   }
+  // },
+  // "flex-layout.row#buy-together": {
+  //   // "children": [
+  //   //   "buy-together"
+  //   // ],
+  //   "props": {
+  //     "blockClass": "buy-together"
+  //   }
+  // },
+  // ------------------------------------------------------------------------------------------------
 
+  // ESTA SENDO UTILIZADO? VALIDAR
+  // ------------------------------------------------------------------------------------------------
   // Quem Viu Comprou Tambem
   "flex-layout.row#shelf-buy-too": {
     "children": [
@@ -618,4 +574,5 @@
       "blockClass": "shelf-buy-too"
     }
   }
+  // ------------------------------------------------------------------------------------------------
 }

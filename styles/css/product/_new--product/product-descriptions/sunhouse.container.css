@@ -11,11 +11,6 @@
     border-radius: 4px
 }
 
-.container--product-faq .container--custom-block__faq-disclosure {
-    border-radius: 4px;
-    background-color: #f6f6f6
-}
-
 /* Containers de Texto - Full ScreenWidth */
 .container--product-description-text {
     width: 100vw;
@@ -31,4 +26,14 @@
     border-top: 1px solid #2d2926;
     margin-top: 0;
     margin-bottom: 32px
+}
+
+/* FAQ */
+.container--product-faq {
+    margin: 64px 0 24px
+}
+
+.container--product-faq .container--custom-block__faq-disclosure {
+    border-radius: 4px;
+    background-color: #f6f6f6
 }

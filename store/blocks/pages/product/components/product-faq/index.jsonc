@@ -2,11 +2,27 @@
     "container#product-faq": {
         "title": "FAQ - Perguntas Frequentes PDP",
         "children": [
-            "flex-layout.row#faq-disclosure__title-row",
+            "flex-layout.row#product-faq-title",
             "container#custom-block__faq-disclosure"
         ],
         "props": {
             "blockClass": ["custom-block__container", "custom-block__wrapper-faq-disclosure", "product-faq"]
+        }
+    },
+
+    "flex-layout.row#product-faq-title": {
+        "children": [
+            "rich-text#product-faq-title"
+        ],
+        "props": {
+            "blockClass": "product-faq-title"
+        }
+    },
+    "rich-text#product-faq-title": {
+        "title": "Titulo",
+        "props": {
+            "text": "## Perguntas Frequentes",
+            "blockClass": "product-faq-title"
         }
     }
 }

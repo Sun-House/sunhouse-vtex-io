@@ -1,7 +1,15 @@
 {
-  // shelf home01
+  "container#product-shelf-also-seen": {
+    "title": "Prateleira - Recomendações",
+    "children": [
+      "flex-layout.row#also-seen"
+    ],
+    "props": {
+      "blockClass": "product-shelf-also-seen"
+    }
+  },
+  
   "flex-layout.row#also-seen": {
-    "title": "Quem viu, viu também",
     "children": [
       "list-context.related-product-list#also-seen"
     ],
@@ -12,11 +20,8 @@
   },
 
   "list-context.related-product-list#also-seen": {
-    "title": "Quem viu, viu também",
-    "blocks": [
-      // "product-summary.shelf#main-product"
-      "product-summary.shelf#main-product-new"
-    ],
+    "title": "Conf. da Prateleira Nativa VTEX",
+    "blocks": ["product-summary.shelf#main-product-new"],
     "children": [
       "flex-layout.col#also-seen"
     ],
@@ -27,7 +32,6 @@
   },
 
   "flex-layout.col#also-seen": {
-    "title": "Quem viu, viu também",
     "children": [
       "rich-text#also-seen",
       "hover-container#also-seen"
@@ -38,10 +42,9 @@
   },
 
   "rich-text#also-seen": {
-    "title": "Quem viu, viu também título",
+    "title": "Título da Prateleira",
     "props": {
-      // "text": "## Quem viu, viu também\nProdutos que você também pode gostar",
-      "text": "## Quem viu, viu também",
+      "text": "## Produtos que você pode gostar", // Esse titulo sempre sera relativo ao tipo de prateleira usada e a estrategia
       "blockClass": ["also-seen", "common-title"]
     }
   },

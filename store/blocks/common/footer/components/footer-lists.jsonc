@@ -188,10 +188,11 @@
 
   "flex-layout.row#footer-security-content": {
     "children": [
-      // "link#letsencrypt",
       "image#pci-vtex",
       "container#spacing-default",
-      "link#vtex"
+      "link#vtex",
+      "container#spacing-default",
+      "konfidencypartnerbr.konfidency-reviews:store-reviews-badge" // Selo de reviews da Konfidency
     ],
     "props": {
       "blockClass": [
@@ -202,19 +203,6 @@
       "colSizing": "auto",
       "preserveLayoutOnMobile": true,
       "colGap": 4
-    }
-  },
-  "flex-layout.row#footer-images-bottom": {
-    "children": [
-      // "link#vtex",
-      // "link#eplus",
-      // "certificate-ratrustvox" - Removido da Loja
-    ],
-    "props": {
-      "blockClass": "footer-images-bottom",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "preserveLayoutOnMobile": true
     }
   }
 }

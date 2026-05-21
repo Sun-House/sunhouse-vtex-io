@@ -1,35 +1,24 @@
-/* .vtex-rich-text-0-x-wrapper--product-description-simple { */
 .wrapper--product-description-simple {
-    margin: 0 62px 0 62px /* Talvez precise aplicar !important */
+    margin: 0 62px 0 62px
 }
 
 /* Textos do Final do Bloco de Descricao */
-/* .vtex-rich-text-0-x-wrapper--product-description-text { */
-/* .wrapper--product-description-text {
-    max-width: 1200px
-} */
-
-/* .vtex-rich-text-0-x-wrapper--product-description-important-text { */
 .wrapper--product-description-important-text {
     max-width: 1200px
 }
 
-/* .vtex-rich-text-0-x-wrapper--product-description-brand-text { */
 .wrapper--product-description-brand-text {
     max-width: 1000px
 }
 
-/* .vtex-rich-text-0-x-wrapper--product-description-important-text { */
 .wrapper--product-description-important-text {
     padding: 24px 0 32px 0
 }
 
-/* .vtex-rich-text-0-x-container--product-description-brand-text { */
 .container--product-description-brand-text {
     padding: 64px 0 24px 0
 }
 
-/* .vtex-rich-text-0-x-paragraph--product-description-text { */
 .paragraph--product-description-text {
     line-height: 1.5
 }
@@ -41,22 +30,22 @@
 
 /* Define tamanho padrao para todos os headings utilizados na descricao do produto 
    Em todas as seções de descrição */
-/* .vtex-rich-text-0-x-container--product-description .vtex-rich-text-0-x-heading--product-description { */
 .container--product-description .heading--product-description {
     font-size: 42px
 }
 
 /* Listas de Descricao */
-/* .vtex-rich-text-0-x-list--product-description 
-.vtex-rich-text-0-x-list--product-description */
-/* .vtex-rich-text-0-x-list--wrapper__textoDescricao-esquerda { */
 .list--wrapper__textoDescricao-esquerda {
     padding-left: 20px;
     line-height: 1.5
 }
 
-/* .vtex-rich-text-0-x-listItem--product-description */
-/* .vtex-rich-text-0-x-listItem--wrapper__textoDescricao-esquerda { */
 .listItem--wrapper__textoDescricao-esquerda {
     margin-bottom: 14px
+}
+
+/* FAQ */
+.container--product-faq-title {
+    justify-content: center;
+    margin-bottom: 24px
 }

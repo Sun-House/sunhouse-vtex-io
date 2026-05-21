@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+    
+    /* Pode dar errado usar assim, mas vou testar */
+    :global(.vtex-render__container-id-product-shelf-also-seen) {
+        background: #f6f6f6
+    }
+    
+}
