@@ -68,7 +68,8 @@
         overflow-wrap: normal !important;
         hyphens: none !important;
         text-align: center;
-        transform-origin: left center
+        transform-origin: left center;
+        white-space: normal /* Fix para frases ou palavras longas que estavam quebrando o layout */
     }
 
     /* Ajustes abaixo foram feitos devido a mudança de aplicacao da estrutura do banner hero,
