@@ -1,0 +1,9 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+    
+    /* .sunhouse-container-1-x-container--plp-category-grid { */
+    .container--plp-category-grid {
+        height: 333px
+    }
+
+}

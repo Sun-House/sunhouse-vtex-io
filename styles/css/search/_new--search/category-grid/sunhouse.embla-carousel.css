@@ -49,7 +49,12 @@
 
     .container--plp-category-grid_carousel .emblaSlide--plp-category-grid_carousel {
         min-width: min-content !important;
-        margin: 0 7px
+        margin: 0 7px;
+        text-align: center
+    }
+
+    .container--plp-category-grid_carousel .paragraph--plp-category-grid_carousel {
+        max-width: 250px
     }
 
 }
