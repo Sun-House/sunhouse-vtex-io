@@ -1,0 +1,58 @@
+/* .sunhouse-slider-layout-0-x-sliderLayoutContainer--plp-category-grid_carousel { */
+.sliderLayoutContainer--plp-category-grid_carousel {
+    margin-top: 0 !important
+}
+
+/* .sunhouse-slider-layout-0-x-sliderTrack--plp-category-grid_carousel { */
+.sliderTrack--plp-category-grid_carousel {
+    height: 275px;
+    margin-top: 12px;
+    align-items: flex-start
+}
+
+/* .sunhouse-slider-layout-0-x-slide--plp-category-grid_carousel { */
+.slide--plp-category-grid_carousel {
+    transition: all .3s ease-in-out
+}
+    
+/* .sunhouse-slider-layout-0-x-slide--plp-category-grid_carousel:hover { */
+.slide--plp-category-grid_carousel:hover {
+    /* margin-top: -24px */
+    margin-top: -12px
+}
+
+/* .sunhouse-slider-layout-0-x-link--plp-category-grid_carousel { */
+.link--plp-category-grid_carousel {
+    text-decoration: none;
+    text-align: center
+}
+
+/* .sunhouse-slider-layout-0-x-paragraph--plp-category-grid_carousel { */
+.paragraph--plp-category-grid_carousel {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #161413;
+    transition: all .3s ease-in-out
+}
+
+/* Setas para quando tiver mais de 5 itens */
+/* .sunhouse-slider-layout-0-x-sliderArrows--plp-category-grid_carousel { */
+.sliderArrows--plp-category-grid_carousel {
+    top: 82px
+}
+
+/* .sunhouse-slider-layout-0-x-sliderArrows--plp-category-grid_carousel:disabled { */
+.sliderArrows--plp-category-grid_carousel:disabled {
+    display: none
+}
+
+/* .sunhouse-slider-layout-0-x-sliderLeftArrow--plp-category-grid_carousel { */
+.sliderLeftArrow--plp-category-grid_carousel {
+    left: -24px
+}
+
+/* .sunhouse-slider-layout-0-x-sliderRightArrow--plp-category-grid_carousel { */
+.sliderRightArrow--plp-category-grid_carousel {
+    right: -24px
+}

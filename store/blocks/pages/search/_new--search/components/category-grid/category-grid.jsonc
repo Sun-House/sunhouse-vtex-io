@@ -1,36 +1,30 @@
 {
-    // Carrossel Categorias 1
     "container#plp-category-grid": {
         "title": "Grid Categorias",
         "children": [
             "flex-layout.row#plp-category-grid"
         ],
         "props": {
-            // "blockClass": "lp_grid-cadeiras"
             "blockClass": "plp-category-grid"
         }
     },
 
     "flex-layout.row#plp-category-grid": {
-        // "title": "Wrapper Linha",
         "children": [
             "flex-layout.col#plp-category-grid"
         ],
         "props": {
             "colSizing": "equal",
             "preventVerticalStretch": true,
-            // "blockClass": "lp_grid"
             "blockClass": "plp-category-grid"
         }
     },
     "flex-layout.col#plp-category-grid": {
-        // "title": "Wrapper Coluna",
         "children": [
             "image-text-list#plp-category-grid_images"
         ],
         "props": {
             "width": "grow",
-            // "blockClass": "lp_grid"
             "blockClass": "plp-category-grid"
         }
     },
@@ -38,8 +32,6 @@
     "image-text-list#plp-category-grid_images": {
         "title": "Grid Itens",
         "children": [
-            // "embla-carousel#plp-category-grid_carousel"
-            
             "responsive-layout.desktop#plp-category-grid",
             "responsive-layout.mobile#plp-category-grid"
         ],
@@ -71,24 +63,31 @@
                     "link": "#"
                 }
             ],
-            // "blockClass": "lp_grid_images"
             "blockClass": "plp-category-grid_items"
         }
     },
 
-    // Tem que testar se esta gerando dois blocos - um desktop e ter que replicar tudo pro mobile
-    // Se sim, precisa voltar para o padrao anterior e ajustar tudo via CSS
     "responsive-layout.desktop#plp-category-grid": {
         "children": [
-            "embla-carousel#plp-category-grid_carousel.desktop"
+            // "embla-carousel#plp-category-grid_carousel.desktop"
+            "slider-layout#plp-category-grid_carousel.desktop"
         ]
     },
-    "responsive-layout.mobile#plp-category-grid": {
-        "children": [
-            "embla-carousel#plp-category-grid_carousel.mobile"
-        ]
+    "slider-layout#plp-category-grid_carousel.desktop": {
+        "title": "Configurações do Slider",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5
+            },
+            "showPaginationDots": "never", // Acredito que será o ideal ter apenas no Mobile - validar conforme prop abaixo
+            "showNavigationArrows": "desktopOnly", // Talvez precise mudar para o Refresh - a definir Mobile
+            "infinite": false,
+			"navigationStep": 1,
+            "blockClass": ["shelf", "main-shelf", "plp-category-grid_carousel"]
+        }
     },
 
+    // Descontinuado - pessimo de configurar, app criado pela Eplus cheio de bugs e problemas estruturais
     "embla-carousel#plp-category-grid_carousel.desktop": {
         "props": {
             "options": {
@@ -98,21 +97,28 @@
                 "loop": false,
                 "align": "center"
             },
-            // "blockClass": "lp_grid_carousel" // Acredito que valha a pena manter o class original para reaproveitar estilizacao
             "blockClass": "plp-category-grid_carousel"
         }
     },
+    //
 
+    "responsive-layout.mobile#plp-category-grid": {
+        "children": [
+            "embla-carousel#plp-category-grid_carousel.mobile"
+        ]
+    },
     "embla-carousel#plp-category-grid_carousel.mobile": {
         "props": {
             "options": {
                 "navigation": false,
                 "dots": false,
                 "draggable": true,
+                "dragFree": true,
                 "loop": false,
-                "align": "center"
+                // "align": "center" // Aparentemente nao esta fazendo diferença ou ajudando em algo aqui
+                // "selectedOnClick": true, // Aparentemente nao esta fazendo diferença
+                "disabledPreventClick": true
             },
-            // "blockClass": "lp_grid_carousel" // Acredito que valha a pena manter o class original para reaproveitar estilizacao
             "blockClass": "plp-category-grid_carousel-mobile"
         }
     }

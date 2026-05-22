@@ -1,20 +1,20 @@
 @media screen and (max-width: 1024px) {
 
-    /* .vtex-store-components-3-x-infoCardContainer--main-banner-category { */
     .infoCardContainer--main-banner-category {
         position: relative;
-        /* height: 100% */
-        height: 100dvh;
-        /* margin-bottom: 24px - Pode ser necessario voltar quando o carrossel de categorias for implementado */
+        /* height: 100dvh; */
+        height: auto;
+        /* min-height: 980px; */
+        min-height: 840px;
+        margin-bottom: 28px
     }
 
-    /* .vtex-store-components-3-x-infoCardContainer--main-banner-category::after { */
     .infoCardContainer--main-banner-category::after {
-        /* height: 100% */
-        height: 100dvh
+        /* height: 100dvh */
+        height: auto;
+        min-height: 840px
     }
     
-    /* .vtex-store-components-3-x-paragraph--main-banner-category { */
     .paragraph--main-banner-category {
         font-size: 24px;
         width: 100%;
@@ -23,7 +23,6 @@
         text-align: left !important
     }
 
-    /* .vtex-store-components-3-x-infoCardContainer--main-banner::after { */
     .infoCardContainer--main-banner::after {
         top: auto /* Pode resultar em bug */
     }
