@@ -250,8 +250,8 @@
   "container#product-reviews-summary": {
     "title": "Estrelas de Avaliações",
     "children": [
-      // "konfidencypartnerbr.konfidency-reviews:product-rating-summary"
-      "product-rating-summary" // NATIVO VTEX - substituido automaticamente pelo App da Konfidency
+      "konfidencypartnerbr.konfidency-reviews:product-rating-summary"
+      // "product-rating-summary" // NATIVO VTEX - substituido automaticamente pelo App da Konfidency
     ],
     "props": {
       "blockClass": "product-reviews-summary"
