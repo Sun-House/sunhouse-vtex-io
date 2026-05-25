@@ -39,7 +39,8 @@
 /* Setas para quando tiver mais de 5 itens */
 /* .sunhouse-slider-layout-0-x-sliderArrows--plp-category-grid_carousel { */
 .sliderArrows--plp-category-grid_carousel {
-    top: 82px
+    top: 82px;
+    width: 45px
 }
 
 /* .sunhouse-slider-layout-0-x-sliderArrows--plp-category-grid_carousel:disabled { */
