@@ -20,9 +20,8 @@
 
     "flex-layout.col#product-reviews": {
         "children": [
-            //
-            // Necessario lançar o major 1 para poder adicionar o peerDependency e usar o App
             // "konfidencypartnerbr.konfidency-reviews:product-reviews"
+            "product-reviews" // NATIVO VTEX - substituido automaticamente pelo App da Konfidency
             
             //"flex-layout.row#product-reviews-header" // Sera desenvolvido posteriormente - usado o bloco nativo da Konfidency acima
             // "flex-layout.row#product-reviews-main", // Sera desenvolvido posteriormente - usado o bloco nativo da Konfidency acima

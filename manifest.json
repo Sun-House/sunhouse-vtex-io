@@ -108,7 +108,7 @@
   "peerDependencies": {
     "vtex.wish-list": "1.x",
     "vtexarg.speech-to-text": "1.x",
-    "vtex.reviews-and-ratings": "3.x"
+    "konfidencypartnerbr.konfidency-reviews": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
