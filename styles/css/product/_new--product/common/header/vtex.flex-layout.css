@@ -1,6 +1,11 @@
 /* Desktop Force */
 @media screen and (min-width: 1025px) {
 
+    /* .vtex-flex-layout-0-x-flexRowContent--header__product-page-price .vtex-flex-layout-0-x-stretchChildrenWidth { */
+    .flexRowContent--header__product-page-price .stretchChildrenWidth {
+        width: 100% !important
+    }
+
     /* .vtex-flex-layout-0-x-flexRowContent--header__product-page-price { */
     .flexRowContent--header__product-page-price {
         align-items: center
