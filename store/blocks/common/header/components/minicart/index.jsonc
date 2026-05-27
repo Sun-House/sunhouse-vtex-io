@@ -16,11 +16,11 @@
     ],
     "props": {
       "MinicartIcon": "icon-cart#minicart-icon",
-      // "quantityDisplay": "always",
       "quantityDisplay": "never",
       "alwaysTwoDigits": "not-empty",
       "maxDrawerWidth": 500,
       "customPixelEventName": "addToCart", // Desabilitado ele permite o prop do botao da PDP de addToCart "isOneClickBuy" funcionar corretamente
+      // "customPixelEventId": "add-to-cart-event", // Nao esta funcionando corretamente, preciso validar no app sunhouse.minicart - mas deveria funcionar em conjunto com o botao da PDP de addToCart
       "itemCountMode": "total",
       "iconLabel": "Carrinho", // Nova prop customizada para visual novo do minicart Refresh
       "blockClass": ["minicart", "minicart-main"]
@@ -219,9 +219,9 @@
 
   "checkout-summary#minicartNew": {
     "children": [
-      //"summary-coupon", - Esse nao esta renderizando nada - testar usando o minicart nativo vtex, e nao o sunhouse.minicart
+      // "summary-coupon", - Esse nao esta renderizando nada - testar usando o minicart nativo vtex, e nao o sunhouse.minicart
       "summary-totalizers#minicartNew"
-      //"summary-installments#minicartNew"
+      // "summary-installments#minicartNew"
     ],
     "props": {
       "totalizersToShow": ["Shipping"],

@@ -1,0 +1,31 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* Aplica o header fixo na PDP apenas quando chega a determinada altura de rolagem */
+    .fixedLayout--sticky-header-pdp--scrolledPast {
+        position: fixed !important
+    }
+
+    /* .sunhouse-fixed-layout-0-x-fixedLayout--sticky-header-pdp--scrolledPast .vtex-container-wrapper--top-bar-cron,
+    .sunhouse-fixed-layout-0-x-fixedLayout--sticky-header-pdp--scrolledPast .vtex-container-wrapper--top-bar,
+    .sunhouse-fixed-layout-0-x-fixedLayout--sticky-header-pdp--scrolledPast .vtex-container-container--menu,
+    .sunhouse-fixed-layout-0-x-fixedLayout--sticky-header-pdp--scrolledPast .vtex-container-container--header--desktop__controls--right { */
+    .fixedLayout--sticky-header-pdp--scrolledPast :global(.vtex-container-wrapper--top-bar-cron),
+    .fixedLayout--sticky-header-pdp--scrolledPast :global(.vtex-container-wrapper--top-bar),
+    .fixedLayout--sticky-header-pdp--scrolledPast :global(.vtex-container-container--menu),
+    .fixedLayout--sticky-header-pdp--scrolledPast :global(.vtex-container-container--header--desktop__controls--right) {
+        display: none
+    }
+
+    /* .sunhouse-fixed-layout-0-x-fixedLayout--sticky-header-pdp--scrolledPast .vtex-container-container--header--desktop__main { */
+    .fixedLayout--sticky-header-pdp--scrolledPast :global(.vtex-container-container--header--desktop__main) {
+        height: 108px !important
+    }
+
+    /* .sunhouse-fixed-layout-0-x-fixedLayout--sticky-header-pdp--scrolledPast .vtex-container-container--header__product-page-controls { */
+    .fixedLayout--sticky-header-pdp--scrolledPast :global(.vtex-container-container--header__product-page-controls) {
+        display: flex;
+        right: 0
+    }
+
+}

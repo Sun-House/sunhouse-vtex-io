@@ -13,28 +13,4 @@
 /* .imageElement--lp_banner-hero {
     margin-top: 152px
 } */
-
-/* Mobile */
-@media screen and (max-width: 1024px) {
-
-    .wrapper--header--mobile__main {
-        background-color: #fff
-    }
-    
-    .container--header {
-        height: 102px
-    }
-
-    .container--institutional {
-        margin-top: 85px
-    }
-
-    .container--institucional-landing {
-        margin-top: 85px !important
-    }
-
-    .imageElement--lp_banner-hero {
-        margin-top: 65px
-    }
-
-}
+ 

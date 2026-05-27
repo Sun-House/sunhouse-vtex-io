@@ -22,25 +22,25 @@
         },
         {
           "id": "1000010",
-          "__editorItemTitle": "Escritórios"
+          "__editorItemTitle": "Escritório"
         },
         {
-          "id": "1000052",
-          "__editorItemTitle": "Cadeiras"
+          "id": "1000059",
+          "__editorItemTitle": "Sofá"
         },
         {
           "id": "lancamentos",
           "__editorItemTitle": "Lançamentos",
           "name": "Lançamentos",
-          "href": "#",
-          "highlight": true
+          "href": "/lancamentos"
+          // "highlight": true
         },
         {
           "id": "pronta-entrega",
           "__editorItemTitle": "Pronta Entrega",
           "name": "Pronta Entrega",
-          "href": "#",
-          "highlight": true
+          "href": "/pronta-entrega"
+          // "highlight": true
         }
       ]
     }

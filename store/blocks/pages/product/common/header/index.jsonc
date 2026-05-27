@@ -1,0 +1,31 @@
+{
+    "header#product-page-header": {
+        "blocks": ["header-layout.desktop#product-page", "header-layout.mobile#product-page"]
+    },
+  
+    // Precisa validar o que é esse header.full e o que o difere do acima declarado
+    // De qualquer forma como nao mexi, esta abaixo apenas para referencia caso precise
+    // "header.full": {
+    //     "blocks": ["header-layout.desktop#home", "header-layout.mobile"]
+    // },
+  
+    "header-layout.desktop#product-page": {
+        "children": [
+            // Novo container de header da PDP:
+            "container#product-page-header.desktop",
+            //
+
+            "container#float-elements",
+            "container#link-whatsapp-float"
+        ]
+    },
+  
+    // Será ajustado conforme o novo sticky do Refresh desktop for implementado
+    "header-layout.mobile#product-page": {
+        "children": [
+            "container#header--mobile",
+            "container#float-elements",
+            "container#link-whatsapp-float"
+        ]
+    }
+}

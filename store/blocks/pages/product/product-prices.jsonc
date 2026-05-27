@@ -1,10 +1,7 @@
 {
 	// Bloco de Preços 1 - Versao original Edson - Destaque para o preço no Pix
-
 	// List Price Block - PDP
-    // "container#product-listPrice-new": {
 	"container#product-low-price": {
-		// "title": "Preço (com preço de lista) produto vitrine",
 		"title": "Preço Pix Destacado",
 		"children": [
 			"product-list-price#product-page", // Preço DE
@@ -13,13 +10,11 @@
 			"flex-layout.col#installments-content" // Lista de parcelas com texto informativo de parcelamento
 		],
 		"props": {
-			// "blockClass": "shelf-product-listPrice"
 			"blockClass": ["shelf-product-listPrice", "product-low-price"]
 		}
 	},
 
     "product-list-price#product-page": {
-		// "title": "Preço de lista produto vitrine",
 		"props": {
 			"message": "{listPriceValue}",
 			"blockClass": "product-shelf-price"
@@ -27,26 +22,21 @@
 	},
 
 	"discount-price#product-page": {
-		// "title": "Preço PIX produto vitrine",
 		"props": {
 			"hideWithoutDiscount": true,
 			"message": "{priceValue}",
 			"blockClass": "shelf-default",
-			// "promotionName": "Desconto Pagamento à Vista (7%)"
 			"promotionName": "Desconto Pagamento a Vista (10%)"
 		}
 	},
 
 	"product-selling-price#product-page": {
-		// "title": "Preço (com preço de lista) produto vitrine",
 		"props": {
 			"message": "<bold>{sellingPriceValue}</bold>",
 			"markers": ["bold"],
 			"blockClass": "product-shelf-price"
 		}
 	},
-	// List Price Block - PDP
-
     
     // Installments Block - PDP
     "flex-layout.col#installments-content": {
@@ -61,12 +51,10 @@
         "props": {
             "installmentsCriteria": "max-quantity",
             "markers": ["bold"],
-            // "message": "Ou <bold>{installmentsTotalValue}</bold> em até <bold>{installmentsNumber}x</bold> de <bold>{installmentValue}</bold> sem juros no cartão de crédito",
             "message": "À vista no <bold>PIX</bold>, Ou em até <bold>{installmentsNumber}x de {installmentValue}</bold>",
             "blockClass": "product-page"
         }
     },
-    // Installments Block - PDP
 	
 	// Bloco de Preços 2 - Versao destaque para o preço em 10x
 	"container#product-high-price": {
@@ -84,7 +72,7 @@
 		}
 	},
 
-	// PREÇO DE
+	// Preço DE
 	"product-list-price#product-high-price": {
 		"title": "Preço DE",
 		"props": {
@@ -102,7 +90,7 @@
 		}
 	},
     
-    // LINHA DE PARCELAS COM TEXTO INFORMATIVO DE PARCELAMENTO
+    // Linha de parcelas com texto informativo de parcelamento
     "flex-layout.col#installments-content-high-price": {
         "children": [
             "product-installments#page-product-high-price"
@@ -123,13 +111,12 @@
         }
     },
 
-	// PREÇO PIX
+	// Preço PIX
 	"discount-price#product-high-price": {
 		"title": "Preço PIX",
 		"props": {
 			"hideWithoutDiscount": true,
 			"message": "Ou {priceValue} à vista no PIX",
-			// "promotionName": "Desconto Pagamento à Vista (7%)",
 			"promotionName": "Desconto Pagamento a Vista (10%)",
 			"blockClass": "product-high-price--pix"
 		}

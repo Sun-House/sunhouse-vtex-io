@@ -150,11 +150,10 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/images/logo-white.svg",
+      // "url": "assets/images/logo-white.svg",
+      "url": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/855a109a-b6fb-4f17-a929-f26bab9665e7___aa2a67a186894146b5041b8c57e0bc51.png",
       "width": "62",
       "height": "62",
-      // "width": 62,
-      // "height": 62,
       "blockClass": ["logo-image--desktop", "logo-white"]
     }
   }

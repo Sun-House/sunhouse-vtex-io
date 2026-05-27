@@ -1,0 +1,33 @@
+{
+    "container#product-page-header.desktop": {
+        "children": [
+            "fixed-layout#product-page-header.desktop"
+        ],
+        "props": {
+            "blockClass": ["header", "header--desktop", "header--desktop--product-page"]
+        }
+    },
+  
+    "fixed-layout#product-page-header.desktop": {
+        "children": [
+            "container#product-page-header__content"
+        ],
+        "props": {
+            "threshold": 900, // (Valor em px) Valor alto pois na PDP existe um foco adicional para o usuario, e quando ele rola o header fixo, gera um botao de comprar no lugar do header padrao do restante do site
+            "blockClass": ["sticky-header", "sticky-header-pdp"]
+        }
+    },
+  
+    "container#product-page-header__content": {
+        "title": "Cabeçalho PDP Desktop",
+        "children": [
+            "container#header__top-bar",
+            "container#header__top-bar-cron",
+            "container#header--desktop__main-product",
+            "container#header--desktop__menu"
+        ],
+        "props": {
+            "blockClass": ["header--desktop__content", "product-page-header__content"]
+        }
+    }
+}

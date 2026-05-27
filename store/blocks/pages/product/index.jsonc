@@ -5,10 +5,12 @@
       "responsive-layout.desktop#product-main",
       "responsive-layout.mobile#product-main",
       "flex-layout.row#product-infos-wrapper",
-      // "container#product__related-grid", // Componente descontinuado - Sera descontinuado no Refresh - Remover apos testes e subida da proxima versao
       "container#product-reviews",
       "container#product-shelf-also-seen"
-    ]
+    ],
+    "parent": {
+			"header": "header#product-page-header" // Sticky Header da PDP no padrao Refresh
+		}
   },
 
   "responsive-layout.desktop#product-main": {
@@ -491,7 +493,7 @@
       "onClickBehavior": "add-to-cart",
       // "isOneClickBuy": true, // Funciona se desabilitar a prop do minicart "customPixelEventName"
       // "onClickEventPropagation": "disabled", // Esta funcionando em conjunto com o minicart - la tem um evento de propagacao que causa o efeito de abrir o minicart
-      // "customPixelEventId": "?" // Pode ser util para ferramentas externas e outros apps
+      "customPixelEventId": "add-to-cart-event", // Nao esta funcionando corretamente, preciso validar no app sunhouse.minicart - mas deveria funcionar em conjunto com o botao da PDP de addToCart
       "text": "Comprar Agora",
       "blockClass": "add-to-cart_button"
     }

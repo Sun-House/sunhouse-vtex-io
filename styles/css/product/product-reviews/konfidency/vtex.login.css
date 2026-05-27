@@ -1,5 +1,6 @@
 /* Bloco de Estrelas de Avaliação */
-:global(.vtex-container-container--product-reviews-summary .empty-review-count) {
+:global(.vtex-container-container--product-reviews-summary .empty-review-count),
+:global(.vtex-container-container--product-reviews-summary .review-count-full) {
     font-family: 'Onest', sans-serif;
     font-size: 12px !important;
     color: #727273 !important

@@ -13,10 +13,12 @@
       "container#header--desktop__content"
     ],
     "props": {
-      "threshold": 50,
-      "thresholdByRouteId": {
-        "store.home": 50
-      },
+      "threshold": 50, // (Valor em px) Esse é o cara que cria o bug que quando scrolla para o topo rapido, o header continua no modo fixo - quanto menor o valor, mais provevel de bugar
+      // Esse nao esta funcionando, conforme nao existe nada referenciando ele no app da Eplus do fixed-layout
+      // "thresholdByRouteId": {
+      //   "store.home": 50
+      // },
+      //
       "blockClass": ["sticky-header", "sticky-header--home"]
     }
   },
@@ -26,16 +28,18 @@
       "container#header--desktop__content"
     ],
     "props": {
-      "threshold": 100,
-      "thresholdByRouteId": {
-        "store.home": 500
-      },
+      "threshold": 100, // (Valor em px) Esse é o cara que cria o bug que quando scrolla para o topo rapido, o header continua no modo fixo - quanto menor o valor, mais provevel de bugar
+      // Esse nao esta funcionando, conforme nao existe nada referenciando ele no app da Eplus do fixed-layout
+      // "thresholdByRouteId": { 
+      //   "store.home": 500
+      // },
+      //
       "blockClass": "sticky-header"
     }
   },
 
   "container#header--desktop__content": {
-    "title": "Cabeçalho desktop",
+    "title": "Cabeçalho Desktop",
     "children": [
       "container#header__top-bar",
       "container#header__top-bar-cron",

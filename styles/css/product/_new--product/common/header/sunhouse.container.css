@@ -1,0 +1,30 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* .sunhouse-container-1-x-container--header__product-page */
+    .container--header__product-page-controls {
+        position: absolute;
+        right: -100%;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        padding: 8px 8px 8px 24px;
+        background-color: #fff;
+        transition: .3s ease-in-out
+    }
+
+    /* .sunhouse-container-1-x-container--header__product-page-price .vtex-product-price-1-x-installments--header__price-installments { */
+    .container--header__product-page-price :global(.vtex-product-price-1-x-installments--header__price-installments) {
+        font-weight: 500;
+        color: #161413;
+        margin-left: 12px
+    }
+
+    /* .sunhouse-container-1-x-container--header__product-page-price .vtex-product-price-1-x-listPrice,
+    .sunhouse-container-1-x-container--header__product-page-price .vtex-product-price-1-x-installments--header__price-installments { */
+    .container--header__product-page-price :global(.vtex-product-price-1-x-listPrice),
+    .container--header__product-page-price :global(.vtex-product-price-1-x-installments--header__price-installments) {
+        font-size: 28px
+    }
+
+}

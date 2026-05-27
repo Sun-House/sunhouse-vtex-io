@@ -1,0 +1,107 @@
+{
+    "container#header--desktop__main-product": {
+        "title": "Principal",
+        "children": [
+            "container#header--desktop__controls--left",
+            "logo#logo-desktop",
+            "container#header--desktop__controls--right",
+            "container#header__product-page-controls"
+        ],
+        "props": {
+            "wrapper": true,
+            "blockClass": ["header--desktop__main", "container-center", "header__product-page"]
+        }
+    },
+
+    "container#header__product-page-controls": {
+        "title": "Header Fixo PDP",
+        "children": [
+            "container#header__product-page-price",
+            // "vtex.add-to-cart-button:add-to-cart-button#product-page" // Botão de compra padrão da PDP
+            "vtex.add-to-cart-button:add-to-cart-button#header--product-page" // Customizado para o header PDP
+        ],
+        "props": {
+            "blockClass": "header__product-page-controls"
+        }
+    },
+
+    // Botão de Compra Customizado para o header PDP
+    "vtex.add-to-cart-button:add-to-cart-button#header--product-page": {
+        "props": {
+            "onClickBehavior": "add-to-cart",
+            "isOneClickBuy": true, // Funciona, porem a prop do minicart "customPixelEventName" faz com que qualquer botao de compra abra o minicart, por hora, vou deixar assim
+            "onClickEventPropagation": "disabled", // Esta funcionando em conjunto com o minicart - la tem um evento de propagacao que causa o efeito de abrir o minicart
+            // "customPixelEventId": "buyNow", // Pode ser util para ferramentas externas e outros apps
+            "text": "Comprar Agora",
+            "blockClass": ["add-to-cart_button", "header__buy-now_button"]
+        }
+    },
+
+    // Preço do Produto Customizado para o header PDP
+    "container#header__product-page-price": {
+        "title": "Preço PDP",
+        "children": [
+            "container#header__price-content_installments",
+            "container#header__price-content_pix"
+        ],
+        "props": {
+            "blockClass": "header__product-page-price"
+        }
+    },
+
+    "container#header__price-content_installments": {
+        "title": "Preço 10x",
+        "children": [
+            "flex-layout.row#header__price-content_installments"
+        ],
+        "props": {
+            "blockClass": "header__product-page-price"
+        }
+    },
+    "flex-layout.row#header__price-content_installments": {
+        "children": [
+            "product-list-price#product-high-price", // Preço DE riscado
+            "product-installments#header__price-installments" // Preço POR em 10x
+        ],
+        "props": {
+            "blockClass": "header__product-page-price"
+        }
+    },
+    // Preço POR em 10x - Customizado para o header PDP
+    "product-installments#header__price-installments": {
+        "props": {
+            "installmentsCriteria": "max-quantity",
+			"message": "{installmentsTotalValue}",
+            "blockClass": "header__price-installments"
+        }
+    },
+
+    "container#header__price-content_pix": {
+        "title": "Preço PIX",
+        "children": [
+            "flex-layout.row#header__price-content_pix"
+        ],
+        "props": {
+            "blockClass": "header__product-page-price"
+        }
+    },
+    "flex-layout.row#header__price-content_pix": {
+        "children": [
+            "product-list-price#product-high-price", // Preço DE riscado
+            "discount-price#header__price-pix" // Preço PIX - a vista
+        ],
+        "props": {
+            "blockClass": "header__product-page-price"
+        }
+    },
+    // PREÇO PIX - Customizado para o header PDP
+	"discount-price#header__price-pix": {
+		"title": "Preço PIX",
+		"props": {
+			"hideWithoutDiscount": true,
+			"message": "{priceValue}",
+			"promotionName": "Desconto Pagamento a Vista (10%)",
+			"blockClass": "header__price-pix"
+		}
+	}
+}

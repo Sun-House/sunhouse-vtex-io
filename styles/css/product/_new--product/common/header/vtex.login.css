@@ -1,0 +1,41 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+
+    /* Remove o header fixo padrao do app apenas na PDP */
+    :global(.render-route-store-product .sunhouse-fixed-layout-0-x-fixedLayout) {
+        position: relative;
+        transition: .3s ease-in-out /* Nao esta funcionando, sera corrigido futuramente */
+    }
+
+    /* .vtex-container-container--header__product-page .vtex-button:has(.vtex-add-to-cart-button-0-x-buttonDataContainer) { */
+    :global(.vtex-container-container--header__product-page .vtex-button:has(.vtex-add-to-cart-button-0-x-buttonDataContainer)) {
+        background-color: #25d366;
+        color: #fff;
+        border: none;
+        margin-left: 24px;
+        box-sizing: border-box;
+        border-radius: 50px;
+        height: 52px;
+        width: 384px;
+        transition: .2s ease-in-out
+    }
+
+    :global(.vtex-container-container--header__product-page .vtex-button:has(.vtex-add-to-cart-button-0-x-buttonDataContainer) .vtex-button__label) {
+        font-size: 18px
+    }
+
+    /* .vtex-container-container--header__product-page .vtex-button:has(.vtex-add-to-cart-button-0-x-buttonDataContainer) .vtex-button__label::after { */
+    :global(.vtex-container-container--header__product-page .vtex-button:has(.vtex-add-to-cart-button-0-x-buttonDataContainer) .vtex-button__label)::after {
+        /* content: "\F134"; - Padrao inicial da PDP */
+        content: "\F244";
+        font-family: "Bootstrap-Icons";
+        font-size: 22px;
+        margin-left: 12px
+    }
+
+    /* .vtex-container-container--header__product-page .vtex-button:has(.vtex-add-to-cart-button-0-x-buttonDataContainer):hover { */
+    :global(.vtex-container-container--header__product-page .vtex-button:has(.vtex-add-to-cart-button-0-x-buttonDataContainer)):hover {
+        opacity: .8
+    }
+
+}
