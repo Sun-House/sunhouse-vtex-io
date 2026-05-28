@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px) {
+
+    /* Fixa a top bar slider de textos no mobile apenas apos o usuario rolar a pagina para baixo */
+    :global(.sunhouse-fixed-layout-0-x-fixedLayout--sticky-header--scrolledPast .vtex-container-wrapper--top-bar) {
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+        top: 0
+    }
+
+}

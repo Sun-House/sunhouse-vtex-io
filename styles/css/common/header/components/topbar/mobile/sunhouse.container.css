@@ -21,7 +21,7 @@
     }
 
     .wrapper--top-bar {
-        min-height: 54px; /* Pode causar alguns problemas, pois na verdade ajustei isso para nao dar erro no top-bar-cron */
+        min-height: 54px /* Pode causar alguns problemas, pois na verdade ajustei isso para nao dar erro no top-bar-cron */
     }
 
 }
