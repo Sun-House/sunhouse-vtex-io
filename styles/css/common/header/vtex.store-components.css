@@ -21,6 +21,7 @@
     opacity: var(--header-logo-opacity);
     visibility: var(--header-logo-visible);
     height: 110px; /* Validar se nao é melhor definir a altura pelo blocks.json */
+    width: 110px;
     /* max-height: 100%; */
     /* -o-object-fit: contain;
     object-fit: contain */
