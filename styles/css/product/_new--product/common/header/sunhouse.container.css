@@ -4,7 +4,8 @@
     /* .sunhouse-container-1-x-container--header__product-page */
     .container--header__product-page-controls {
         position: absolute;
-        right: -100%;
+        /* right: -100%; */
+        right: -100vw; /* Fix: 100% da largura da viewport - usar o % em si nao aplica o efeito de fato, apenas se usar vw */
         display: flex;
         align-items: center;
         border-radius: 50px;
