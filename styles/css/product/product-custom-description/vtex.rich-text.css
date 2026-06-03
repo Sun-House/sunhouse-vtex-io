@@ -103,6 +103,13 @@
     border: none
 }
 
+.wrapper--faq-disclosure-line__text .list {
+    font-family: 'Onest', sans-serif;
+    margin-top: 18px;
+    line-height: 1.5;
+    padding-inline-start: 20px !important
+}
+
 /* Novos Blocos Edson START */
 .headingLevel2--pdp-h2-title,
 .headingLevel3--pdp-h3-title {

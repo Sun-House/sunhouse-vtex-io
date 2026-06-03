@@ -3,7 +3,6 @@
 }
 
 .heading,
-/* .link, */
 .paragraph {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@
     color: #161413
 }
 
-/* Setando padrao essa cor para todos os links do site */
 .link {
     color: #F90041
 }
@@ -81,101 +79,6 @@
     text-align: center
 }
 
-/* Movido para o arquivo common/footer/vtex.rich-text.css
-.container--footer-title {
-    padding-bottom: 4px;
-    border-bottom: solid 1px #d5d4d4;
-    min-width: 122px
-}
-
-.container--footer-title .heading {
-    display: block;
-    width: 100%;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700
-}
-
-.container--footer-social {
-    text-align: center;
-    display: block
-}
-
-.container--footer-right-title {
-    margin-bottom: 14px
-}
-
-.container--footer-schedules-content {
-    display: block
-}
-
-.container--footer-schedules-content .paragraph {
-    font-size: 12px;
-    font-style: normal;
-    line-height: 16px;
-    font-weight: 700;
-    margin-bottom: 16px
-}
-
-.container--footer-schedules-content .paragraph:last-child {
-    margin-bottom: 0
-}
-
-.container--footer-bottom-text .paragraph {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-align: center
-}
-
-.container--footer-list .list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 8px
-}
-
-.container--footer-list .list .link {
-    font-size: 12px;
-    line-height: 18px;
-    text-decoration: none
-}
-
-.container--footer-list .list .link:hover {
-    text-decoration: underline
-}
-
-.container--footer-about {
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.container--footer-about .paragraph {
-    font-weight: 700
-}
-
-.container--footer-about-text .heading {
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 700;
-    margin-bottom: 16px
-}
-
-.container--footer-about-text .paragraph {
-    font-size: 14px;
-    line-height: 19px;
-    margin-bottom: 19px;
-    font-weight: 400
-}
-
-.container--footer-about-text .paragraph:last-child {
-    margin-bottom: 0
-} */
-
 .container--cookies .paragraph,
 .container--cookies .link {
     font: "Open Sans", sans-serif;
@@ -189,21 +92,6 @@
     text-decoration: none;
     font-weight: 700
 }
-
-/* Movido para o arquivo common/header/components/minicart/vtex.rich-text.css
-.container--minicart-observation {
-    margin-bottom: 18px
-}
-
-.container--minicart-observation .wrapper {
-    width: 100%
-}
-
-.container--minicart-observation .wrapper .paragraph {
-    text-align: center;
-    font-size: 12px;
-    color: #d83613
-} */
 
 .container--mobile-login {
     color: #161413
@@ -306,7 +194,6 @@
 }
 
 .paragraph--top-header {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -326,7 +213,6 @@
 }
 
 .paragraph--login-text {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -348,7 +234,6 @@
     width: 100%;
     text-align: center;
     margin: 0 0 15px 0;
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -378,7 +263,6 @@
 }
 
 .paragraph--minicart-title {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -388,7 +272,6 @@
 }
 
 .paragraph--minicart-remove {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -408,7 +291,6 @@
 }
 
 .strong--top-header {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -419,7 +301,6 @@
 
 .link--text-unlogged {
     display: block;
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -464,12 +345,6 @@
     align-items: center
 }
 
-/* Movido para o arquivo components/shelf/_new--shelf/vtex.rich-text.css
-.container--common-title {
-    margin-bottom: 20px;
-    text-align: center
-} */
-
 .container--wishlist-title {
     border-bottom: none;
     padding-bottom: 0;
@@ -480,17 +355,7 @@
     width: 100%
 }
 
-/* Movido para o arquivo components/shelf/_new--shelf/vtex.rich-text.css
-.wrapper--common-title {
-    width: 100%;
-    max-width: 1220px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0
-} */
-
 .headingLevel3--common-title {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -500,7 +365,6 @@
 }
 
 .paragraph--common-title {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 14px;
     line-height: 17px;
@@ -509,7 +373,6 @@
 }
 
 .paragraph--shelf-product-unavailable {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
@@ -525,7 +388,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
@@ -534,7 +396,6 @@
 }
 
 .paragraph--quick-view {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -543,7 +404,6 @@
 }
 
 .paragraph--shelf-banner-button-text {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -809,7 +669,6 @@
 }
 
 .paragraph--diferentials-text {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -818,7 +677,6 @@
 }
 
 .paragraph--categories-title {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 25px;
     line-height: 29px;
@@ -851,13 +709,6 @@
     padding: 0 0 15px;
     color: #fff
 }
-
-/* Movido para o arquivo components/shelf/_new--shelf/vtex.rich-text.css
-.headingLevel2--common-title {
-    font-size: 24px;
-    line-height: 33px;
-    margin-bottom: 0
-} */
 
 .headingLevel2--opinion-title {
     font-size: 25px;
@@ -995,7 +846,6 @@
 }
 
 .paragraph--product-zoom-text {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -1005,7 +855,6 @@
 }
 
 .paragraph--installments-trigger {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1016,7 +865,6 @@
 }
 
 .paragraph--product-security-buy-text {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
@@ -1025,21 +873,8 @@
     color: #161413
 }
 
-/* Movido para o arquivo product/_new--product/vtex.rich-text.css
-.paragraph--shipping-calculate {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #2d2926;
-    text-transform: none
-} */
-
 .paragraph--product-description-title,
 .paragraph--product-specs-title {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1048,7 +883,6 @@
 }
 
 .paragraph--measurement-guide {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1059,7 +893,6 @@
 }
 
 .paragraph--measurement-guide-informations-bottom {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 12px;
     line-height: 14px;
@@ -1067,7 +900,6 @@
 }
 
 .strong--measurement-guide-informations-bottom .link {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-size: 12px;
     line-height: 14px;
@@ -1077,7 +909,6 @@
 
 .headingLevel4--measurement-guide-title {
     margin: 0;
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -1123,7 +954,6 @@
 }
 
 .paragraph--not-found-text {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1133,7 +963,6 @@
 }
 
 .paragraph--not-found-text-bottom {
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1146,12 +975,17 @@
 .paragraph--search-seo {
     font-family: 'Onest', sans-serif;
     font-style: normal;
-    /* font-size: 14px; */
     font-size: 16px;
-    /* line-height: 19px; */
     line-height: 24px;
     color: #161413;
     opacity: .8
+}
+
+.list--search-seo {
+    font-family: 'Onest', sans-serif;
+    margin-top: 18px;
+    line-height: 1.5;
+    padding-inline-start: 20px !important
 }
 
 .paragraph--seo-result-text {
@@ -1192,7 +1026,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1244,13 +1077,10 @@
 }
 
 .heading--search-seo {
-    /* font-size: 24px; */
     font-size: 28px;
     font-style: normal;
-    /* font-weight: 700; */
     font-weight: 600;
     line-height: normal;
-    /* margin-bottom: 24px; */
     margin-top: 42px;
     margin-bottom: 28px;
     color: #161413
@@ -1279,6 +1109,7 @@
 }
 
 @media screen and (max-width: 1250px) {
+    
     .wrapper--common-title {
         padding-left: 15px;
         padding-right: 15px
@@ -1298,15 +1129,19 @@
     .container--also-seen {
         margin-top: 0
     }
+
 }
 
 @media (max-width: 1024px) {
+
     .paragraph--installments-trigger {
         font-size: 12px
     }
+
 }
 
 @media screen and (max-width: 1024px) {
+
     .container--newsletter {
         margin: 0px;
         margin-bottom: 6px;
@@ -1425,9 +1260,11 @@
         padding-left: 0;
         padding-top: 20px
     }
+
 }
 
 @media screen and (max-width: 768px) {
+
     .container--countdown {
         margin-bottom: 20px
     }
@@ -1446,9 +1283,11 @@
     .paragraph--seo-result-text {
         line-height: 1.4
     }
+
 }
 
 @media screen and (max-width: 767px) {
+
     :global(.vtex-container-container--institutional-content) .container--title .headingLevel1 {
         font-size: 20px
     }
@@ -1456,11 +1295,14 @@
     :global(.vtex-container-container--institutional-content) .container--description .headingLevel1 {
         font-size: 20px
     }
+
 }
 
 @media screen and (max-width: 638px) {
+
     .paragraph--minicart-remove {
         font-size: 12px;
         line-height: 14px
     }
+
 }

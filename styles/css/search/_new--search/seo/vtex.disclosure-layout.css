@@ -10,12 +10,14 @@
     display: block !important;
     max-height: 335px;
     overflow: hidden;
-    background: linear-gradient(to top, #6c6c6c59 0%, transparent 100%);
+    /* background: linear-gradient(to top, #6c6c6c59 0%, transparent 100%);
     background-size: 100% 15%;
     background-repeat: no-repeat;
     background-position: bottom;
     box-shadow: 0 8px 6px -8px #b3b3b3;
-    border-radius: 0 0 6px 6px
+    border-radius: 0 0 6px 6px */
+    box-shadow: 0 14px 6px -8px #b3b3b3;
+    border-radius: 0 0 24px 246px
 }
 
 /* .vtex-disclosure-layout-1-x-content--seo-disclosure--visible { */
