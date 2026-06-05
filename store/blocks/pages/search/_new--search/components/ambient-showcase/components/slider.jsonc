@@ -1,0 +1,20 @@
+{
+    "slider-layout#ambient-showcase": {
+        "title": "Configurações do Slider",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "phone": 1
+            },
+            "showPaginationDots": "always",
+            "showNavigationArrows": "always",
+            "infinite": false,
+            "blockClass": "ambient-showcase-slider"
+        },
+        "children": [
+            "container#ambient-showcase_slide-1",
+            "container#ambient-showcase_slide-2",
+            "container#ambient-showcase_slide-3"
+        ]
+    }
+}

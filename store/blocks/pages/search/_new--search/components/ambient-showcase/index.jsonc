@@ -1,0 +1,34 @@
+{
+    "container#ambient-showcase-wrapper": {
+        "title": "Vitrine de Ambientes",
+        "children": [
+            "container#ambient-showcase-unique",
+            "container#ambient-showcase-slider"
+        ],
+        "props": {
+            "blockClass": "ambient-showcase-wrapper"
+        }
+    },
+
+    // Unico
+    "container#ambient-showcase-unique": {
+        "title": "Vitrine de Ambientes - Unico",
+        "children": [
+            "container#ambient-showcase"
+        ],
+        "props": {
+            "blockClass": ["ambient-showcase", "ambient-showcase_unique"]
+        }
+    },
+
+    // Slider
+    "container#ambient-showcase-slider": {
+        "title": "Vitrine de Ambientes - Slider",
+        "children": [
+            "slider-layout#ambient-showcase"
+        ],
+        "props": {
+            "blockClass": ["ambient-showcase", "ambient-showcase_slider"]
+        }
+    }
+}

@@ -1,11 +1,9 @@
 {
   "store.search": {
     "blocks": ["sunhouse.search-result:search-result-layout#cluster-and-search"],
-    // Nova infraestrutura de SEO - Reflete desktop e mobile simultaneamente
     "children": [
       "container#search-seo-new"
     ],
-    //
     "props": {
       "context": {
         "skusFilter": "ALL_AVAILABLE",
@@ -16,11 +14,9 @@
   },
   "store.search#department": {
     "blocks": ["sunhouse.search-result:search-result-layout"],
-    // Nova infraestrutura de SEO - Reflete desktop e mobile simultaneamente
     "children": [
       "container#search-seo-new"
     ],
-    //
     "props": {
       "context": {
         "skusFilter": "ALL_AVAILABLE",
@@ -31,11 +27,9 @@
   },
   "store.search#category": {
     "blocks": ["sunhouse.search-result:search-result-layout"],
-    // Nova infraestrutura de SEO - Reflete desktop e mobile simultaneamente
     "children": [
       "container#search-seo-new"
     ],
-    //
     "props": {
       "context": {
         "skusFilter": "ALL_AVAILABLE",
@@ -46,11 +40,9 @@
   },
   "store.search#brand": {
     "blocks": ["sunhouse.search-result:search-result-layout"],
-    // Nova infraestrutura de SEO - Reflete desktop e mobile simultaneamente
     "children": [
       "container#search-seo-new"
     ],
-    //
     "props": {
       "context": {
         "skusFilter": "ALL_AVAILABLE",
@@ -61,11 +53,9 @@
   },
   "store.search#subcategory": {
     "blocks": ["sunhouse.search-result:search-result-layout"],
-    // Nova infraestrutura de SEO - Reflete desktop e mobile simultaneamente
     "children": [
       "container#search-seo-new"
     ],
-    //
     "props": {
       "context": {
         "skusFilter": "ALL_AVAILABLE",
@@ -86,13 +76,14 @@
   },
 
   // Componente desativado no Refresh - Precisa ser removido
-  "image#search-result": {
-    "title": "Banner Departamento",
-    "props": {
-      "src": "assets/images/search/banner.png",
-      "blockClass": "search-result"
-    }
-  },
+  // DESATIVADO - Sera removido assim que subir a versao com sucesso
+  // "image#search-result": {
+  //   "title": "Banner Departamento",
+  //   "props": {
+  //     "src": "assets/images/search/banner.png",
+  //     "blockClass": "search-result"
+  //   }
+  // },
   //
 
   "sunhouse.search-result:search-result-layout#cluster-and-search": {
@@ -122,13 +113,16 @@
     "children": [
       // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result-cluster-and-search",
+      
+      // Ambient Showcase - In DEV
+      "container#ambient-showcase-wrapper",
+      //
+
       "container#showcase-slider",
       // Sera excluido assim que a nova versao com sistema de disclusure for implementada com sucesso na versao
       "container#search-seo",
       //
       "container#spacing-default"
-      // "container#blog-cards",
-      // "container#spacing-default"
     ],
     "props": {
       "showFacetQuantity": true
@@ -139,12 +133,16 @@
     "children": [
       // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result.mobile",
+
+      // Ambient Showcase - In DEV
+      // "container#ambient-showcase-wrapper", - Aqui preciso ver como sera o mobile
+      //
+
       "container#showcase-slider",
       // Sera excluido assim que a nova versao com sistema de disclusure for implementada com sucesso na versao
       "container#search-seo"
       //
       // "flex-layout.row#banners-slider" - ver se da para reaproveitar algo desse componente para o novo do Refresh
-      // "container#spacing-default"
     ],
     "props": {
       "showFacetQuantity": true
@@ -192,11 +190,15 @@
       "container#plp-category-grid",
       // "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-result.desktop",
+      
+      // Ambient Showcase - In DEV
+      "container#ambient-showcase-wrapper",
+      //
+
       "container#showcase-slider",
       "container#search-seo",
       // "flex-layout.row#banners-slider", - ver se da para reaproveitar algo desse componente para o novo do Refresh
       "container#spacing-default"
-      // "container#spacing-default"
     ],
     "props": {
       "defaultGalleryLayout": "grid",
@@ -213,19 +215,6 @@
     }
   },
 
-  // EXCLUIR APOS SUBIDA DA VERSAO COM SUCESSO
-  // "container#categories-slider": {
-  //   "title": "Carrossel de categorias",
-  //   "children": [
-  //     "flex-layout.row#categories-slider"
-  //   ],
-  //   "props": {
-  //     "blockClass": "categories-slider",
-  //     "shouldRender": false
-  //   }
-  // },
-  //
-
   "sunhouse.search-result:search-result-layout.mobile": {
     "title": "Search Mobile",
     "children": [
@@ -233,6 +222,11 @@
       "container#plp-category-grid",
       // "flex-layout.row#search-breadcrumb", - esse precisa voltar para o mobile, pois é importante - revalidar onde ele encaixa no novo layout
       "flex-layout.row#search-result.mobile",
+
+      // Ambient Showcase - In DEV
+      // "container#ambient-showcase-wrapper", - Aqui preciso ver como sera o mobile
+      //
+
       "container#showcase-slider",
       "container#search-seo",
       "container#spacing-default"

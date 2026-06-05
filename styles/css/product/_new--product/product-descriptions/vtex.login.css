@@ -30,8 +30,8 @@
 
 :global(.render-route-store-product) :global(.vtex-store-components-3-x-productDescriptionText) h2,
 :global(.render-route-store-product) :global(.vtex-store-components-3-x-productDescriptionText) h2 b {
-    font-size: 40px !important
-    /* margin: 24px 0 38px 0 */
+    font-size: 40px !important;
+    margin-bottom: 38px
 }
 
 :global(.render-route-store-product) :global(.vtex-store-components-3-x-productDescriptionText) h3,

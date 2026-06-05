@@ -1,0 +1,37 @@
+{
+    // Unique
+    "container#ambient-showcase": {
+        "children": [
+            "flex-layout.row#ambient-showcase"
+        ]
+        // "props": {
+        //     "blockClass": "ambient-showcase"
+        // }
+    },
+
+    // Slides
+    "container#ambient-showcase_slide-1": {
+        "children": [
+            "flex-layout.row#ambient-showcase"
+        ],
+        "props": {
+            "blockClass": "ambient-showcase_1"
+        }
+    },
+    "container#ambient-showcase_slide-2": {
+        "children": [
+            "flex-layout.row#ambient-showcase"
+        ],
+        "props": {
+            "blockClass": "ambient-showcase_2"
+        }
+    },
+    "container#ambient-showcase_slide-3": {
+        "children": [
+            "flex-layout.row#ambient-showcase"
+        ],
+        "props": {
+            "blockClass": "ambient-showcase_3"
+        }
+    }
+}
