@@ -3,14 +3,16 @@
     padding-top: 62px
 }
 
+/* .sunhouse-container-1-x-imageElement--ambient-showcase-image { */
+.imageElement--ambient-showcase-image {
+    min-height: 976px; /* A principio esse é a altura fixa da imagem */
+    min-width: 598px /* A principio esse é a largura fixa da imagem */
+}
+
 /* Unique */
 /* .sunhouse-container-1-x-container--ambient-showcase_unique { */
 .container--ambient-showcase_unique {
     height: 1038px
-    
-    /* DEBUG */
-    ;background: #ff000073;
-    /* DEBUG */
 }
 
 /* Slider */
@@ -19,11 +21,7 @@
     max-width: 1220px;
     height: 1099px;
     margin: 0 auto;
-    padding-bottom: 24px;
-
-    /* DEBUG */
-    ;background: #0044ff73;
-    /* DEBUG */
+    padding-bottom: 24px
 }
 
 /* .sunhouse-container-1-x-container--ambient-showcase_shelf { */

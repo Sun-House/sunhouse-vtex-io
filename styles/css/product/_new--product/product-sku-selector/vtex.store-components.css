@@ -7,3 +7,10 @@
 .productBrand--sku-name_container:first-child {
     display: none
 }
+
+/* Define altura minima para o container do nome do produto - SEO e redução de CLS/LCP */
+/* .vtex-store-components-3-x-productNameContainer */
+/* .vtex-store-components-3-x-productNameContainer--sku-name_container { */
+.productNameContainer--sku-name_container {
+    min-height: 40px
+}

@@ -1,0 +1,4 @@
+/* A principio o valor abaixo atende desktop e mobile */
+:global(.vtex-render__container-id-product-reviews) {
+    min-height: 670px
+}

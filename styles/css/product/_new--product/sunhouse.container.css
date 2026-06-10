@@ -1,7 +1,12 @@
-/* .sunhouse-container-1-x-container--product-highlights--product-page { */
 .container--product-highlights--product-page {
-    /* margin-top: 18px; - remover */
-    /* margin-bottom: 12px; - remover */
     gap: 19px; /* Precisa ajustar conforme tiver mais flags de destaques */
     min-height: unset
+}
+
+/* Define altura minima para a linha de texto de marca - SEO e redução de CLS/LCP */
+/* .sunhouse-container-1-x-container--product-brand-text,
+.sunhouse-container-1-x-container--product-brand-dynamic { */
+.container--product-brand-text,
+.container--product-brand-dynamic {
+    min-height: 40px
 }

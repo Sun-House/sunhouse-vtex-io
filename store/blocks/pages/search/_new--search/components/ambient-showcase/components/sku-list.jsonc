@@ -1,0 +1,58 @@
+{
+    "hover-container#ambient-showcase_shelf-sku-list": {
+        "title": "Configurações do Hover",
+        "children": [
+            "sku-summary-list#ambient-showcase_shelf"
+        ],
+        "props": {
+            "blockClass": ["ambient-showcase_shelf", "ambient-showcase_shelf-sku-list"]
+        }
+    },
+    
+    // SKU Summary Shelf - Novo App
+    "sku-summary-list#ambient-showcase_shelf": {
+        "title": "Configurações da Lista de SKUs",
+        "blocks": ["sku-summary.shelf#main-product-new"],
+        "children": [
+            "responsive-layout.desktop#ambient-showcase_shelf"
+            // "responsive-layout.mobile#ambient-showcase_shelf" - Precisa ser definido ainda
+        ],
+        "props": {
+            "productId": "76907", // ID do produto - deverá ser alterado dinamicamente via Site Editor para cada pagina
+            "itemsFilter": "ALL_AVAILABLE", // Filtro de SKUs disponíveis - ideal ser sempre assim para nao puxar os sem estoque ou afins e evitar peso de carregamento
+            "maxItems": 4 // Quantidade de itens da lista - Pode ser ajustado conforme o contexto da prateleira
+        }
+    },
+
+    "sku-summary.shelf#main-product-new": {
+        "title": "Vitrine de Produtos",
+        "children": [
+            "stack-layout#new-shelf-product-image", // Herdado da prateleira original do Product Summary utilizado na loja pos Refresh
+            "flex-layout.col#sku-hover-block-wrapper"
+        ],
+        "props": {
+            "blockClass": "main-shelf-new"
+        }
+    },
+
+    "flex-layout.col#sku-hover-block-wrapper": {
+        "children": [
+            "sku-summary-name#ambient-showcase_shelf",
+            "condition-layout.product#shelf-elf-checker" // Nao sei se vai precisar desse, mas por hora vou manter - inclusive pode gerar um comportamento estranho, mas deixar para ver o que acontece
+        ],
+        "props": {
+            "blockClass": "hover-block-wrapper"
+        }
+    },
+
+    "sku-summary-name#ambient-showcase_shelf": {
+        "props": {
+            "showFieldsProps": {
+                "showProductName": false, // Oculta o nome do Produto - Vessel que comporta todos os SKUs dentro dele
+                "showBrandName": false, // Controla se o nome da Marca aparece como sufixo ao Nome do Produto
+                "showSku": true, // Controla se aparece o nome do SKU
+                "showProductReference": false // Controla se aparece o codigo de referencia - refereceId
+            }
+        }
+    }
+}

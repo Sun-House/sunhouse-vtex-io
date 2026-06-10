@@ -1,0 +1,47 @@
+/* .sunhouse-sku-summary-1-x-clearLink { */
+.clearLink {
+    text-decoration: inherit;
+    color: inherit
+}
+
+/* Alterar block class posteriormente */
+/* .sunhouse-sku-summary-1-x-nameContainer { */
+.nameContainer {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem !important
+}
+
+/* Alterar block class posteriormente */
+/* .sunhouse-sku-summary-1-x-skuName { */
+.skuName {
+    display: block;
+    height: 20px;
+    font-weight: 500;
+    font-size: 1rem; /* Ajuste necessario para evitar o t-small que o span dessa cadeia esta recebendo */
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #161413
+}
+
+/* Ajusta no efeito de hover block para ocultar o nome do SKU - Somente Desktop a principio */
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+    
+    /* .sunhouse-sku-summary-1-x-nameContainer { */
+    .nameContainer {
+        transition: all .2s ease-in-out
+    }
+
+    /* :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.sunhouse-sku-summary-1-x-nameContainer) { */
+    :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover .nameContainer {
+        opacity: 0;
+        visibility: hidden
+    }
+    
+}

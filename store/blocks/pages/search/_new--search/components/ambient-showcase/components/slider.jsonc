@@ -8,7 +8,16 @@
             },
             "showPaginationDots": "always",
             "showNavigationArrows": "always",
-            "infinite": false,
+            "infinite": true,
+            "slideTransition": {
+                "speed": 600,
+                "delay": 100,
+                "timing": "ease-in"
+            },
+            // "autoplay": {
+            //     "timeout": 4000,
+            //     "stopOnHover": true
+            // },
             "blockClass": "ambient-showcase-slider"
         },
         "children": [

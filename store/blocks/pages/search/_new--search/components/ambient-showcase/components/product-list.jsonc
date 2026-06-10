@@ -1,0 +1,25 @@
+{
+    "hover-container#ambient-showcase_shelf-product-list": {
+        "title": "Configurações do Hover",
+        "children": [
+            "list-context.product-list#ambient-showcase_shelf"
+        ],
+        "props": {
+            "blockClass": ["ambient-showcase_shelf", "ambient-showcase_shelf-product-list"]
+        }
+    },
+
+    "list-context.product-list#ambient-showcase_shelf": {
+        "title": "Configurações da Lista de Produtos",
+        "blocks": [
+            "product-summary.shelf#main-product-new" // OK - Pode precisar de alguns ajustes via CSS para o efeito de hover - fazer posteriormente
+        ],
+        "children": [
+            "responsive-layout.desktop#ambient-showcase_shelf"
+            // "responsive-layout.mobile#ambient-showcase_shelf" - Precisa ser definido ainda
+        ],
+        "props": {
+            "maxItems": 4 // Quantidade ideal do componente
+        }
+    }
+}

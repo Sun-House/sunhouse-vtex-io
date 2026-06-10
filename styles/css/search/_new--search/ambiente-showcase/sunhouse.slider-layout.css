@@ -2,3 +2,109 @@
 .slideChildrenContainer--ambient-showcase-slider {
     padding-bottom: 38px
 }
+
+/* Slider Dots Refresh Layout */
+/* 1. Transforma o container dos dots em uma barra cinza contínua (o trilho) */
+/* .sunhouse-slider-layout-0-x-paginationDotsContainer--ambient-showcase-slider { */
+.paginationDotsContainer--ambient-showcase-slider {
+    position: absolute;
+    bottom: 11px; /* Ajuste a distância do fundo conforme necessário */
+    left: 45%;
+    transform: translateX(-50%);
+    display: flex !important;
+    justify-content: flex-start !important; /* Alinha o conteúdo ao início */
+    align-items: center;  /* Alinha o conteúdo ao centro horizontalmente */
+    
+    /* Tamanho total da barra cinza de fundo */
+    width: 90%;
+    height: 3px;
+    
+    /* Cor do trilho (fundo desativado) */
+    background-color: #E0E0E0; /* Cor sugerida Gemini */
+    /* background-color: #f1f1f1; Cor usada em outros elementos da pagina */
+    border-radius: 4px;
+    padding: 0 200px !important;
+    margin: 0 !important
+}
+  
+/* 2. Reseta o visual original de bolinha de TODOS os dots */
+/* .sunhouse-slider-layout-0-x-paginationDot--ambient-showcase-slider { */
+.paginationDot--ambient-showcase-slider {
+    background: transparent !important; /* Esconde a cor padrão */
+    border-radius: 0 !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100% !important;
+    box-shadow: none !important;
+    outline: none !important;
+    
+    /* Divide o espaço igualmente entre os 3 dots */
+    flex: 1
+    /* transition: background-color 0.3s ease - Talvez precise mudar */
+}
+  
+/* 3. Estiliza apenas o dot ativo, que vai preencher a sua fatia do "scroll" */
+/* .sunhouse-slider-layout-0-x-paginationDot--ambient-showcase-slider--isActive { */
+.paginationDot--ambient-showcase-slider--isActive {
+    background-color: #161413 !important; /* Cor da barra preta ativa */
+    border-radius: 4px !important; /* Arredonda os cantos da barra ativa */
+    padding: 0 62px !important; /* Ideal para controlar o tamanho do ´scrollbar´ visual */
+    display: flex
+}
+
+/* Slider Arrows Refresh Layout */
+/* .sunhouse-slider-layout-0-x-sliderArrows--ambient-showcase-slider { */
+.sliderArrows--ambient-showcase-slider {
+    all: unset;
+    position: absolute;
+    bottom: -10px;
+    right: 62px
+}
+
+/* .sunhouse-slider-layout-0-x-sliderRightArrow--ambient-showcase-slider { */
+.sliderRightArrow--ambient-showcase-slider {
+    right: 6px
+}
+
+/* .sunhouse-slider-layout-0-x-sliderArrows--ambient-showcase-slider .sunhouse-slider-layout-0-x-caretIcon--ambient-showcase-slider { */
+.sliderArrows--ambient-showcase-slider .caretIcon--ambient-showcase-slider {
+    width: 0 !important
+}
+
+/* .sunhouse-slider-layout-0-x-sliderLeftArrow--ambient-showcase-slider::after,
+.sunhouse-slider-layout-0-x-sliderRightArrow--ambient-showcase-slider::after { */
+.sliderLeftArrow--ambient-showcase-slider::after,
+.sliderRightArrow--ambient-showcase-slider::after {
+    font-family: Bootstrap-Icons;
+    font-size: 38px;
+    opacity: .5;
+    transition: all .2s ease-in-out
+}
+
+/* .sunhouse-slider-layout-0-x-sliderLeftArrow--ambient-showcase-slider:hover::after,
+.sunhouse-slider-layout-0-x-sliderRightArrow--ambient-showcase-slider:hover::after { */
+.sliderLeftArrow--ambient-showcase-slider:hover::after,
+.sliderRightArrow--ambient-showcase-slider:hover::after {
+    opacity: 1
+}
+
+/* .sunhouse-slider-layout-0-x-sliderLeftArrow--ambient-showcase-slider::after { */
+.sliderLeftArrow--ambient-showcase-slider::after {
+    content: "\F12F"
+}
+
+/* .sunhouse-slider-layout-0-x-sliderRightArrow--ambient-showcase-slider::after { */
+.sliderRightArrow--ambient-showcase-slider::after {
+    content: "\F138"
+}
+
+
+
+
+
+/* TESTE */
+/* .sunhouse-slider-layout-0-x-slide--ambient-showcase-slider { */
+.slide--ambient-showcase-slider {
+    min-height: 976px
+}

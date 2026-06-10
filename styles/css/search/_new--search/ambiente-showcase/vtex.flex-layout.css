@@ -1,0 +1,4 @@
+/* .vtex-container-container--ambient-showcase .vtex-flex-layout-0-x-flexRow--ambient-showcase-item .vtex-flex-layout-0-x-stretchChildrenWidth { */
+:global(.vtex-container-container--ambient-showcase) .flexRow--ambient-showcase-item .stretchChildrenWidth {
+    min-width: 610px
+}

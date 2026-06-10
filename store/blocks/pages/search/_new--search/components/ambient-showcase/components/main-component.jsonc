@@ -30,7 +30,7 @@
             "images": [
                 {
                     "image": "https://dummyimage.com/598x976", // Tamanho medio ideal - pode ser alterado ao longo do desenvolvimento
-                    "maxHeight": "100%" // Acredito que funcionou, deixar assim e ficar de olho no comportamento
+                    "maxHeight": "100%" // Apenas para evitar o padrao que reduz a imagem, para CLS/LCP sera controlado via CSS
                 }
             ],
             "blockClass": "ambient-showcase-image"
@@ -49,7 +49,8 @@
     "flex-layout.col#ambient-showcase-right": {
         "title": "Coluna Direita - Produtos",
         "children": [
-            "hover-container#ambient-showcase_shelf"
+            "container#ambient-showcase_product-list",
+            "container#ambient-showcase_sku-list"
         ],
         "props": {
             "paddingLeft": 4,
@@ -57,30 +58,26 @@
         }
     },
 
-    "hover-container#ambient-showcase_shelf": {
-        "title": "Configurações do Hover",
+    "container#ambient-showcase_product-list": {
+        "title": "Lista de Produtos",
         "children": [
-            "list-context.product-list#ambient-showcase_shelf"
+            "hover-container#ambient-showcase_shelf-product-list"
         ],
         "props": {
-            // "blockClass": ["shelf-home03", "hover-shelf-list"]
-            "blockClass": "ambient-showcase_shelf"
+            "blockClass": "ambient-showcase_shelf-product-list"
         }
     },
 
-    "list-context.product-list#ambient-showcase_shelf": {
-        "title": "Configurações da Lista de Produtos",
-        "blocks": [
-            "product-summary.shelf#main-product-new" // OK - Pode precisar de alguns ajustes via CSS para o efeito de hover - fazer posteriormente
-        ],
+    "container#ambient-showcase_sku-list": {
+        "title": "Lista de SKUs",
         "children": [
-            "responsive-layout.desktop#ambient-showcase_shelf"
-            // "responsive-layout.mobile#" - Precisa ser definido ainda
+            "hover-container#ambient-showcase_shelf-sku-list"
         ],
         "props": {
-            "maxItems": 4 // Quantidade ideal do componente
+            "blockClass": "ambient-showcase_shelf-sku-list"
         }
     },
+
     "responsive-layout.desktop#ambient-showcase_shelf": {
         "children": [
             "container.list-render#ambient-showcase_shelf"
@@ -92,4 +89,12 @@
             "blockClass": "ambient-showcase_shelf"
         }
     }
+
+    // *****
+    // Ainda nao desenvolvido:
+    // "responsive-layout.mobile#ambient-showcase_shelf": {
+    //     "children": [
+    //         // Possivelmente vira um embla carousel ou um slider layout - AINDA EM DEV
+    //     ]
+    // }
 }

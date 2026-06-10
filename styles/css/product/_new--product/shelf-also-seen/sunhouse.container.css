@@ -1,0 +1,5 @@
+/* Define altura minima para o wrapper - SEO e redução de CLS/LCP */
+/* .sunhouse-container-1-x-container--product-shelf-also-seen { */
+.container--product-shelf-also-seen {
+    min-height: 662px
+}
