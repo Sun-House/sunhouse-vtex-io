@@ -10,14 +10,14 @@
             "showNavigationArrows": "always",
             "infinite": true,
             "slideTransition": {
-                "speed": 600,
-                "delay": 100,
-                "timing": "ease-in"
+                "speed": 1000,
+                "delay": 0,
+                "timing": "cubic-bezier(0, 0, 0.2, 1)"
             },
-            // "autoplay": {
-            //     "timeout": 4000,
-            //     "stopOnHover": true
-            // },
+            "autoplay": {
+                "timeout": 4000,
+                "stopOnHover": true
+            },
             "blockClass": "ambient-showcase-slider"
         },
         "children": [
