@@ -10,9 +10,9 @@
         }
     },
 
-    // Unico
+    // Single - Unico
     "container#ambient-showcase-unique": {
-        "title": "Vitrine de Ambientes - Unico",
+        "title": "Unico",
         "children": [
             "container#ambient-showcase"
         ],
@@ -21,9 +21,9 @@
         }
     },
 
-    // Slider
+    // Slider - Carrossel
     "container#ambient-showcase-slider": {
-        "title": "Vitrine de Ambientes - Slider",
+        "title": "Carrossel",
         "children": [
             "slider-layout#ambient-showcase"
         ],

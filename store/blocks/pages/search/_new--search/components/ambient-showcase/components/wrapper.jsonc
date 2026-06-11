@@ -1,5 +1,5 @@
 {
-    // Unique
+    // Single
     "container#ambient-showcase": {
         "children": [
             "flex-layout.row#ambient-showcase"
@@ -12,26 +12,17 @@
         "children": [
             "flex-layout.row#ambient-showcase"
         ]
-        // "props": {
-        //     "blockClass": "ambient-showcase_1"
-        // }
     },
     "container#ambient-showcase_slide-2": {
         "title": "Slide 2",
         "children": [
             "flex-layout.row#ambient-showcase"
         ]
-        // "props": {
-        //     "blockClass": "ambient-showcase_2"
-        // }
     },
     "container#ambient-showcase_slide-3": {
         "title": "Slide 3",
         "children": [
             "flex-layout.row#ambient-showcase"
         ]
-        // "props": {
-        //     "blockClass": "ambient-showcase_3"
-        // }
     }
 }
