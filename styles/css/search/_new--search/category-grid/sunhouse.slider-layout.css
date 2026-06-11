@@ -12,7 +12,8 @@
 
 /* .sunhouse-slider-layout-0-x-slide--plp-category-grid_carousel { */
 .slide--plp-category-grid_carousel {
-    transition: all .3s ease-in-out
+    transition: all .3s ease-in-out;
+    cursor: pointer
 }
     
 /* .sunhouse-slider-layout-0-x-slide--plp-category-grid_carousel:hover { */
