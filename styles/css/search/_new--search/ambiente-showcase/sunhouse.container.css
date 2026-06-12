@@ -5,8 +5,10 @@
 
 /* .sunhouse-container-1-x-imageElement--ambient-showcase-image { */
 .imageElement--ambient-showcase-image {
-    min-height: 976px; /* A principio esse é a altura fixa da imagem */
-    min-width: 598px /* A principio esse é a largura fixa da imagem */
+    min-height: 976px;
+    min-width: 598px;
+    border-radius: 4px;
+    object-fit: cover
 }
 
 /* Unique */
@@ -29,9 +31,4 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px
-}
-
-/* .sunhouse-container-1-x-imageElement--ambient-showcase-image { */
-.imageElement--ambient-showcase-image {
-    border-radius: 4px
 }

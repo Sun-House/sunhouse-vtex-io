@@ -1,0 +1,6 @@
+/* .vtex-flex-layout-0-x-flexRowContent--ambient-showcase-item:has(.vtex-container-container--ambient-showcase_shelf-sku-list) .sunhouse-container-1-x-imageElement--ambient-showcase-image { */
+:global(.vtex-flex-layout-0-x-flexRowContent--ambient-showcase-item:has(.vtex-container-container--ambient-showcase_shelf-sku-list) .sunhouse-container-1-x-imageElement--ambient-showcase-image) {
+    min-height: unset;
+    max-height: 914px !important;
+    width: 100%
+}

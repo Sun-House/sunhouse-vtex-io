@@ -29,7 +29,7 @@
         "props": {
             "images": [
                 {
-                    "image": "https://dummyimage.com/598x976", // Tamanho medio ideal - pode ser alterado ao longo do desenvolvimento
+                    "image": "https://dummyimage.com/598x976", // Tamanho medio ideal - devera mudar de acordo com o contexto da prateleira (produto ou SKU)
                     "maxHeight": "100%" // Apenas para evitar o padrao que reduz a imagem, para CLS/LCP sera controlado via CSS
                 }
             ],
@@ -85,7 +85,6 @@
     },
     "container.list-render#ambient-showcase_shelf": {
         "props": {
-            // "blockClass": ["shelf", "shelf-list", "shelf-grid"]
             "blockClass": "ambient-showcase_shelf"
         }
     }
