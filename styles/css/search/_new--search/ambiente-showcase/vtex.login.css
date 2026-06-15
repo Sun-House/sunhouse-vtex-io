@@ -1,6 +1,26 @@
 /* .vtex-flex-layout-0-x-flexRowContent--ambient-showcase-item:has(.vtex-container-container--ambient-showcase_shelf-sku-list) .sunhouse-container-1-x-imageElement--ambient-showcase-image { */
 :global(.vtex-flex-layout-0-x-flexRowContent--ambient-showcase-item:has(.vtex-container-container--ambient-showcase_shelf-sku-list) .sunhouse-container-1-x-imageElement--ambient-showcase-image) {
-    min-height: unset;
-    max-height: 914px !important;
+    /* min-height: unset; */
+    /* min-height: 877px;
+    max-height: 914px !important; */    
+    height: 877px !important;
     width: 100%
+}
+
+/* :global(.vtex-container-container--ambient-showcase .flexRow--ambient-showcase-item:has(.vtex-container-container--ambient-showcase_shelf-sku-list) .vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(even) {
+    margin-top: -.5rem
+} */
+
+/* .vtex-flex-layout-0-x-flexRow--ambient-showcase-item:not(:has(.vtex-container-container--ambient-showcase_shelf-product-list )) .vtex-container-container--ambient-showcase_shelf { */
+:global(.vtex-flex-layout-0-x-flexRow--ambient-showcase-item:not(:has(.vtex-container-container--ambient-showcase_shelf-product-list)) .vtex-container-container--ambient-showcase_shelf) {
+    margin-top: -.5rem
+}
+
+/* Unique */
+:global(.vtex-container-container--ambient-showcase_unique:not(:has(.vtex-container-container--ambient-showcase_shelf-product-list))) {
+    height: 964px
+}
+
+:global(.vtex-container-container--ambient-showcase_unique:has(.vtex-container-container--ambient-showcase_shelf-product-list)) {
+    height: 1054px
 }

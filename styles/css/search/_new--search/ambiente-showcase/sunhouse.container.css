@@ -5,7 +5,9 @@
 
 /* .sunhouse-container-1-x-imageElement--ambient-showcase-image { */
 .imageElement--ambient-showcase-image {
-    min-height: 976px;
+    /* min-height: 976px; */
+    /* height: 976px; */
+    height: 964px;
     min-width: 598px;
     border-radius: 4px;
     object-fit: cover
@@ -14,10 +16,8 @@
 /* Unique */
 /* .sunhouse-container-1-x-container--ambient-showcase_unique { */
 .container--ambient-showcase_unique {
-    height: 1038px
-
     /* DEBUG */
-    ;background: #ff000050;
+    background: #ff000050;
     /* DEBUG */
 }
 
@@ -25,7 +25,7 @@
 /* .sunhouse-container-1-x-container--ambient-showcase_slider { */
 .container--ambient-showcase_slider {
     max-width: 1220px;
-    height: 1099px;
+    height: 1099px; /* Esse vai precisar ajustar, mas vou deixar rolar por enquanto */
     margin: 0 auto;
     padding-bottom: 24px
 }

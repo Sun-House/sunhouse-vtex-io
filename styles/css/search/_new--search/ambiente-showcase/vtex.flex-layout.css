@@ -7,3 +7,8 @@
 .flexRowContent--ambient-showcase-item .stretchChildrenWidth:nth-child(even) .flexColChild--ambient-showcase-item {
     height: auto !important
 }
+
+/* .vtex-flex-layout-0-x-flexCol--ambient-showcase-item { */
+.flexCol--ambient-showcase-item {
+    flex-direction: row
+}

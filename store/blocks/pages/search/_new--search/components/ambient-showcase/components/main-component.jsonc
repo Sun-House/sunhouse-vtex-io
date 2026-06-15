@@ -59,7 +59,8 @@
     },
 
     "container#ambient-showcase_product-list": {
-        "title": "Lista de Produtos",
+        // "title": "Lista de Produtos",
+        "title": "Lista Nativa VTEX",
         "children": [
             "hover-container#ambient-showcase_shelf-product-list"
         ],
