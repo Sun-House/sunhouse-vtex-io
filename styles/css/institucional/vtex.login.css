@@ -29,6 +29,10 @@
     align-items: center;
 }
 
+:global(body:not(:has(.render-route-vtex-store-2-x-store-custom-institucional-vendas-corporativas)) .vtex-store-link-0-x-link--whatsapp-corporate) {
+    display: none
+}
+
 /* Parte do Texto */
 :global(.vtex-store-link-0-x-link--whatsapp-corporate) :global(.vtex-rich-text-0-x-paragraph) {
     background-color: #00a884; /* Verde Paleta WhatsApp */
