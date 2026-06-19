@@ -1,0 +1,51 @@
+/* Customizacao do Header Mobile para Home */
+/* Se aplica ao info-card custom app standalone */
+@media screen and (max-width: 1024px) {
+
+    /* Ajustes nos blocos de textos */
+    :global(.render-container.render-route-store-home) :global(.sunhouse-slider-layout-0-x-wrapper--main-banner-home) {
+        width: 100% !important;
+        max-width: 100% !important
+    }
+
+    :global(.render-container.render-route-store-home) :global(.sunhouse-slider-layout-0-x-container--main-banner-home):first-child p {
+        margin-top: 124px
+    }
+
+    :global(.render-container.render-route-store-home) :global(.sunhouse-slider-layout-0-x-paragraph--main-banner-home) {
+        width: 100% !important;
+        font-size: clamp(0.5rem, 15vw, 5rem) !important;
+        line-height: 1.1 !important;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+        text-align: center;
+        transform-origin: left center;
+        white-space: normal /* Fix para frases ou palavras longas que estavam quebrando o layout */
+    }
+
+    /* Ajustes abaixo foram feitos devido a mudança de aplicacao da estrutura do banner hero,
+       utilizando texto normal no titulo, H1 no subtitulo e H2 no texto normal. */
+    :global(.render-container.render-route-store-home) :global(.sunhouse-slider-layout-0-x-heading--main-banner-home) {
+        font-size: clamp(0.5rem, 15vw, 1.3rem) !important;
+        line-height: 1.5 !important;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+        text-align: center;
+        transform-origin: left center
+    }
+
+    :global(.render-container.render-route-store-home) :global(.sunhouse-slider-layout-0-x-infoCardTextContainer--main-banner-home) {
+        margin-bottom: unset !important;
+        margin-top: unset !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        /* height: 100dvh; */
+        height: auto;
+        min-height: 980px;
+        display: flex;
+        justify-content: center
+    }
+    
+}

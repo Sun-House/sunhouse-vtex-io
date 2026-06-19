@@ -1,41 +1,17 @@
 {
-  "list-context.image-list#banner-main": {
-    "children": ["slider-layout#banner-main"],
-    "title": "Banner Principal",
-    "props": {
-      "images": [
-        {
-          "image": "assets/images/main-banner.png",
-          "mobileImage": "assets/images/main-banner-mobile.png",
-          "description": "Banner Principal",
-          "link": {
-            "url": "/"
-          },
-          "title": "Banner Principal"
-        },
-        {
-          "image": "assets/images/main-banner.png",
-          "mobileImage": "assets/images/main-banner-mobile.png",
-
-          "description": "Banner Principal",
-          "link": {
-            "url": "/"
-          },
-          "title": "Banner Principal"
+    "slider-layout#banner-main-slider": {
+        "title": "Configurações do Slider",
+        "props": {
+            "itemsPerPage": 1,
+            "infinite": true,
+            "autoplay": {
+                // "timeout": 4000
+                // "timeout": 5000,
+                "timeout": 6000,
+                // "stopOnHover": true
+                "stopOnHover": false
+            },
+            "blockClass": ["banner", "banner-main"]
         }
-      ]
     }
-  },
-
-  "slider-layout#banner-main": {
-    "props": {
-      "itemsPerPage": 1,
-      "infinite": true,
-      "autoplay": {
-        "timeout": 4000,
-        "stopOnHover": true
-      },
-      "blockClass": ["banner", "banner-main"]
-    }
-  }
 }

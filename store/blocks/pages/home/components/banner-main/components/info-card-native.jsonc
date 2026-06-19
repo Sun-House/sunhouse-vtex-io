@@ -1,13 +1,14 @@
 {
-    "container#banner-main_info-card": {
-        "title": "Banner Principal - InfoCard",
-        "children": [
-            "info-card#banner-main"
-        ],
-        "props": {
-            "blockClass": ["banner-main-home_wrapper", "banner-main-home_wrapper-info-card"]
-        }
-    },
+    // Nao esta sendo usado
+    // "container#banner-main_info-card": {
+    //     "title": "Banner Principal - InfoCard",
+    //     "children": [
+    //         "info-card#banner-main"
+    //     ],
+    //     "props": {
+    //         "blockClass": ["banner-main-home_wrapper", "banner-main-home_wrapper-info-card"]
+    //     }
+    // },
 
     "info-card#banner-main": {
         "title": "Banner Principal",

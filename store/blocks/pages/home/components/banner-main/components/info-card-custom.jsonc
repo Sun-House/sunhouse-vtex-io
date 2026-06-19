@@ -1,0 +1,48 @@
+{
+    "list-context.info-card-list#banner-main": {
+        // "title": "Banner Principal",
+        "title": "Banner Hero",
+        "children": [
+            "slider-layout#banner-main-slider"
+        ],
+        "props": {
+            "infoCards": [
+                {
+                    "isFullModeStyle": true,
+                    "textMode": "rich-text",
+                    "textPosition": "center",
+                    "textAlignment": "center",
+                    "headline": "# Banner Principal 01",
+                    "subhead": "## Subtítulo do banner 01",
+                    "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting.",
+                    "callToActionMode": "button",
+                    "callToActionText": "Aproveitar",
+                    "callToActionUrl": "/",
+                    "imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/0a74edaf-ba4c-4a14-87cf-f8662b531cda___9adbd1dac1bb2760cb724f63cd46a53e.jpg",
+                    "mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/0a74edaf-ba4c-4a14-87cf-f8662b531cda___9adbd1dac1bb2760cb724f63cd46a53e.jpg",
+                    "imageAltText": "Texto ALT para SEO",
+                    "fetchpriority": "auto",
+                    "preload": true
+                },
+                {
+                    "isFullModeStyle": true,
+                    "textMode": "rich-text",
+                    "textPosition": "center",
+                    "textAlignment": "center",
+                    "headline": "# Banner Principal 02",
+                    "subhead": "## Subtítulo do banner 02",
+                    "bodyText": "Lorem Ipsum is simply dummy text of the printing and typesetting.",
+                    "callToActionMode": "button",
+                    "callToActionText": "Aproveitar",
+                    "callToActionUrl": "/",
+                    "imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/0a74edaf-ba4c-4a14-87cf-f8662b531cda___9adbd1dac1bb2760cb724f63cd46a53e.jpg",
+                    "mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/0a74edaf-ba4c-4a14-87cf-f8662b531cda___9adbd1dac1bb2760cb724f63cd46a53e.jpg",
+                    "imageAltText": "Texto ALT para SEO",
+                    "fetchpriority": "auto",
+                    "preload": true
+                }
+            ],
+            "blockClass": ["main-banner", "main-banner-home"]
+        }
+    }
+}

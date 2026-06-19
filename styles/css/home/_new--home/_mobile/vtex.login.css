@@ -79,6 +79,50 @@
         display: flex;
         justify-content: center
     }
+
+    /* Novo sistema de lista de info cards */
+    /* Ajustes nos blocos de textos - info-card-list (sunhouse.slider-layout) */
+    /* :global(.render-container.render-route-store-home) :global(.sunhouse-slider-layout-0-x-wrapper--main-banner-home) {
+        width: 100% !important;
+        max-width: 100% !important
+    }
+
+    :global(.render-container.render-route-store-home) :global(.sunhouse-slider-layout-0-x-infoCardHeadline--main-banner-home):first-child :global(.sunhouse-slider-layout-0-x-heading--main-banner-home) {
+        margin-top: 124px
+    }
+
+    :global(.render-container.render-route-store-home) :global(.sunhouse-slider-layout-0-x-infoCardSubhead--main-banner-home) :global(.sunhouse-slider-layout-0-x-heading--main-banner-home) {
+        width: 100% !important;
+        font-size: clamp(0.5rem, 15vw, 5rem) !important;
+        line-height: 1.1 !important;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+        text-align: center;
+        transform-origin: left center;
+        white-space: normal !important
+    }
+
+    :global(.render-container.render-route-store-home) :global(.sunhouse-slider-layout-0-x-infoCardHeadline--main-banner-home) :global(.sunhouse-slider-layout-0-x-heading--main-banner-home) {
+        font-size: clamp(0.5rem, 15vw, 1.3rem) !important;
+        line-height: 1.5 !important;
+        word-break: keep-all !important;
+        overflow-wrap: normal !important;
+        hyphens: none !important;
+        text-align: center;
+        transform-origin: left center
+    }
+
+    :global(.render-container.render-route-store-home) :global(.sunhouse-slider-layout-0-x-infoCardTextContainer--main-banner-home) {
+        margin-bottom: unset !important;
+        margin-top: unset !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto;
+        min-height: 980px;
+        display: flex;
+        justify-content: center
+    } */
     
 }
 

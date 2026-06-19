@@ -158,6 +158,7 @@
     position: relative
 }
 
+/* Migrado para home/_new--home/banner-hero/sunhouse.slider-layout.css
 .sliderLayoutContainer--banner-main::after {
     position: absolute;
     content: "";
@@ -180,7 +181,7 @@
     right: 0;
     height: 100%;
     width: 100%
-}
+} */
 
 .imageElementLink--banner-main {
     display: flex;
@@ -190,13 +191,13 @@
     z-index: 2
 }
 
-/* A principio preferi ocultar os arrows do banner principal, mas caso precise, deixarei aqui para voltar a usar */
-.sliderArrows--banner-main {
+/* Migrado para home/_new--home/banner-hero/sunhouse.slider-layout.css */
+/* .sliderArrows--banner-main {
     display: none;
-    /* max-width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, .5) !important */
-}
+    background-color: rgba(255, 255, 255, .5) !important
+} */
 
 /* .sliderArrows--banner-main.sliderRightArrow {
     right: 40px;

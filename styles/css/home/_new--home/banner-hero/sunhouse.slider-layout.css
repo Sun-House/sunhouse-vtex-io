@@ -1,10 +1,55 @@
-/* Se aplica ao info-card nativo do store-components */
+/* Se aplica ao info-card custom app standalone */
+/* *** */
+/* Gera efeitos de backdrop START */
+/* Gera backdrop para criar efeito de opacidade no banner */
+.infoCardContainer--main-banner-home::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4
+}
+
+/* Gera efeitos de backdrop para o slider do banner principal - camada superior com sombra aplicada */
+/* Esse gera um efeito mais concentrado para cima, mais aparente e mais escuro, porem, mais interessante para o sistema de banner atual */
+.sliderLayoutContainer--banner-main::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 40%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+    z-index: 0
+}
+
+/* Esse gera um efeito mais espalhado para baixo, menos aparente e mais suave */
+/* .slideChildrenContainer--banner-main::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0.51) 0%, rgba(58, 58, 58, 0) 44.77%)
+} */
+/* Gera efeitos de backdrop END */
+
+/* Arrows do slider do banner hero */
+.sliderArrows--banner-main {
+    color: #fff
+}
+
 .infoCardContainer--main-banner-home {
+    width: 100%;
     height: 100vh;
     border: 0 /* Fix para remover borda inferior do banner que vem como padrao do componente VTEX */
 }
 
-/* .infoCardContainer--main-banner::after { */
 .infoCardContainer--main-banner-home::after {
     top: 0
 }
@@ -20,17 +65,16 @@
     max-width: unset
 }
 
-/* .vtex-store-components-3-x-container--main-banner-home:first-child .vtex-store-components-3-x-paragraph--main-banner-home:after,
-.vtex-store-components-3-x-container--main-banner-home:first-child .vtex-store-components-3-x-paragraph--main-banner-home:before { */
+.container--main-banner-home {
+    margin-top: 0
+}
+
 .container--main-banner-home:first-child .paragraph--main-banner-home::after,
 .container--main-banner-home:first-child .paragraph--main-banner-home::before {
     position: absolute;
     top: 0;
     content: "/";
     color: #ffda00
-    /* Esse sairam em virtude da entrada do absolute - ficar de olho que isso pode quebrar o mobile
-    margin-left: 20px;
-    margin-right: 20px */
 }
 
 .heading--main-banner,
@@ -86,17 +130,25 @@
     margin-bottom: 12px
 }
 
+.infoCardCallActionContainer--main-banner-home {
+    text-decoration: none
+}
+
 /* BOTAO - Replicar para todos botoes de CTA possiveis do site START */
 .infoCardCallActionContainer--main-banner-home :global(.vtex-button) {
     background-color: unset;
     border-color: #fff;
     border-radius: 50px;
-    padding: 12px 18px;
+    padding: 13px 24px;
+    text-transform: uppercase;
+    font-weight: 500;
 
     /* Propriedades base do botão animado */
     position: relative; /* Essencial para posicionar o ::before */
-    display: inline-block;
-    padding: 10px 0px;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    /* padding: 10px 0px; */
     border: 2px solid #fff;
     background-color: transparent; /* Cor de fundo inicial transparente */
     color: #fff; /* Cor do texto inicial */
@@ -138,7 +190,8 @@
 }
 /* BOTAO - Replicar para todos botoes de CTA possiveis do site END */
 
-.infoCardCallActionContainer--main-banner-home :global(.vtex-button__label)::after {
+/* .infoCardCallActionContainer--main-banner-home :global(.vtex-button__label)::after { */
+.infoCardCallActionContainer--main-banner-home :global(.vtex-button)::after {
     content: "\F134";
     font-family: "Bootstrap-Icons";
     font-size: 24px;

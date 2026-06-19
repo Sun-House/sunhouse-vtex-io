@@ -1,4 +1,4 @@
-/* Se aplica ao info-card nativo do store-components */
+/* Se aplica ao info-card custom app standalone */
 @media screen and (max-width: 1024px) {
 
     .infoCardContainer--main-banner-home {
@@ -34,6 +34,11 @@
     /* AINDA PRETENDO CORRIGIR ISSO PARA MOSTRAR O DETALHER DE FORMA CORRETA */
     .container--main-banner-home:first-child .paragraph--main-banner-home::before,
     .container--main-banner-home:first-child .paragraph--main-banner-home::after {
+        display: none
+    }
+
+    /* Arrows do slider do banner hero */
+    .sliderArrows--banner-main {
         display: none
     }
 

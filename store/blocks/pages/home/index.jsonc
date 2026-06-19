@@ -2,7 +2,7 @@
   "store.home": {
     "blocks": [
       // Main Banner
-      "info-card#banner-main",
+      "list-context.info-card-list#banner-main",
 
       // WIP: Nova disposicao de banners com opcao de usar UM unico InfoCard, ou o banner de imagem comum com sistema de slides (imageList)
       // "container#banner-main_info-card",
