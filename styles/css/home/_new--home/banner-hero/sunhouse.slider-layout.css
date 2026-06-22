@@ -2,14 +2,40 @@
 /* *** */
 /* Gera efeitos de backdrop START */
 /* Gera backdrop para criar efeito de opacidade no banner */
-.infoCardContainer--main-banner-home::after {
+/* Sistema de backdrop nativo que replica em todos banners, desativado para uso do sistema de backdrop integrado ao app info-card-custom START */
+/* .infoCardContainer--main-banner-home::after {
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
     background-color: #000;
     opacity: 0.4
+} */
+/* Sistema de backdrop nativo que replica em todos banners, desativado para uso do sistema de backdrop integrado ao app info-card-custom END */
+
+/* Sistema de backdrop integrado ao app info-card-custom START */
+.infoCardContainer--backdrop {
+    position: relative
 }
+  
+.infoCardContainer--backdrop::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 0
+}
+  
+.infoCardContainer--backdrop .infoCardTextContainer {
+    position: relative;
+    z-index: 1
+}
+/* Sistema de backdrop integrado ao app info-card-custom END */
 
 /* Gera efeitos de backdrop para o slider do banner principal - camada superior com sombra aplicada */
 /* Esse gera um efeito mais concentrado para cima, mais aparente e mais escuro, porem, mais interessante para o sistema de banner atual */
