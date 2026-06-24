@@ -54,7 +54,9 @@
       //
       
       "product-images-custom#product-images",
-      "condition-layout.product#product-title",
+      // "condition-layout.product#product-title", - Desabilitado - testei e na pratica, nao esta mudando nada, a propria vtex ja trata nativamente o nome do produto x nome sku quano há essa necessidade
+      // "vtex.store-components:product-name#sku-name", - Nome nativo somente do SKU - Desabilitado, mesmo motivo acima mencionado
+			"vtex.store-components:product-name", // Nome nativo VTEX que trata Product Title e SKU Name automaticamente quando há necessidade
       "container#product-brand-dynamic",
       "container#product-brand-fixed"
     ],
@@ -159,7 +161,8 @@
     "title": "Informações Principais",
     "children": [
       "container#product-top-infos",
-      "condition-layout.product#product-title",
+      // "condition-layout.product#product-title",
+      "vtex.store-components:product-name",
       "container#product-brand-dynamic",
       "container#product-brand-fixed",
       "container#product-highlights--product-page",
@@ -201,6 +204,9 @@
     }
   },
   
+  // NAO ESTA SENDO UTILIZADO - VTEX ja trata nativamente o nome do produto x nome sku quano há essa necessidade
+  // Remover apos subida e testes da proxima versao
+  // START
   // Nova estrutura de nome do produto - Muda conforme a selecao de SKU/Variação
 	"condition-layout.product#product-title": {
     "title": "Condicional - Nome do Produto",
@@ -228,6 +234,7 @@
 			"blockClass": "sku-name_container"
 		}
 	},
+  // END
 
   "flex-layout.row#breadcrumb-product": {
     "children": [
