@@ -1,3 +1,16 @@
+/* Barra de progresso de quantidade de produtos */
+/* .sunhouse-search-result-3-x-progressBar,
+.sunhouse-search-result-3-x-progressBarFiller { */
+.progressBar,
+.progressBarFiller {
+    height: 5px
+}
+
+/* .sunhouse-search-result-3-x-progressBarFiller { */
+.progressBarFiller {
+    background-color: #161413
+}
+
 /* Botoes Ver Mais e Mostrar Anteriores */
 .buttonShowMore {
     margin-bottom: 20px;
@@ -5,16 +18,54 @@
 }
 
 .buttonShowMore :global(.vtex-button) {
-    /* background: #ffe133;
-    border: 1px solid #ffda00; */
-    background: #FFDA00;
-    border: 1px solid #FFDA00;
-    /* border-radius: 7px; */
-    border-radius: 100px;
-    padding: 0 42px;
-    height: 46px;
-    transition: all .4s
+    border-color: #E0E0E0;
+    border-radius: 50px;
+    padding: 6px 12px;
+    height: 45px;
+
+    /* Propriedades base do botão animado */
+    position: relative; /* Essencial para posicionar o ::before */
+    border: 2px solid #E0E0E0;
+    background-color: transparent; /* Cor de fundo inicial transparente */
+    overflow: hidden; /* Corta o ::before fora da área do botão */
+    z-index: 1; /* Garante que o texto fique acima do ::before */
+    transition: all .3s ease-in-out
+    /* Propriedades base do botão animado */
 }
+
+/* Gera efeito de hover especial START */
+/* .sunhouse-search-result-3-x-buttonShowMore .vtex-button::before { */
+.buttonShowMore :global(.vtex-button)::before {
+    content: "";
+    
+    /* Posicionamento e tamanho iniciais do preenchimento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0; /* Largura inicial zero */    
+    background-color: #ffda00;
+    z-index: -1; /* Coloca o preenchimento por trás do texto */
+  
+    /* Aqui esta a chave da animacao: */
+    transition: width .3s ease-in-out
+}
+
+/* .sunhouse-search-result-3-x-buttonShowMore .vtex-button:hover::before { */
+.buttonShowMore :global(.vtex-button):hover::before {
+    width: 100%
+}
+
+/* .sunhouse-search-result-3-x-buttonShowMore .vtex-button:hover .vtex-button__label { */
+.buttonShowMore :global(.vtex-button):hover :global(.vtex-button__label) {
+    color: #161413 !important
+}
+
+/* .sunhouse-search-result-3-x-buttonShowMore .vtex-button:hover { */
+.buttonShowMore :global(.vtex-button):hover {
+    border-color: #ffda00
+}
+/* Gera efeito de hover especial END */
 
 .buttonShowMore :global(.vtex-button):disabled {
     pointer-events: none;
@@ -22,26 +73,25 @@
 }
 
 .buttonShowMore :global(.vtex-button) :global(.vtex-button__label) {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Onest", sans-serif;
     font-style: normal;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    /* color: #fff; */
-    color: #2d2926;
-    transition: all .4s
+    color: #161413;
+    transition: .3s ease-in-out
 }
 
-.buttonShowMore :global(.vtex-button):hover {
+/* .buttonShowMore :global(.vtex-button):hover {
     background: #fff
-}
+} */
 
-.buttonShowMore :global(.vtex-button):hover :global(.vtex-button__label) {
-    /* color: #ffda00 */
-    /* color: #ffd901 -> Amarelo site so que mais escuro */
+/* .buttonShowMore :global(.vtex-button):hover :global(.vtex-button__label) {
     color: #FFDA00
-}
+} */
 
 @media screen and (max-width: 1024px) {
 

@@ -1,7 +1,8 @@
 /* .vtex-search-result-3-x-gallery--new-gallery { */
 .gallery--new-gallery {
     gap: 8px 0;
-    padding-left: 0 /* Corrige estilo automatico nativo tachyons para ocupar o espaco total do container */
+    padding-left: 0; /* Corrige estilo automatico nativo tachyons para ocupar o espaco total do container */
+    justify-content: flex-start
 }
 
 /* .orderByText--orderby-bf { */

@@ -75,17 +75,6 @@
     }
   },
 
-  // Componente desativado no Refresh - Precisa ser removido
-  // DESATIVADO - Sera removido assim que subir a versao com sucesso
-  // "image#search-result": {
-  //   "title": "Banner Departamento",
-  //   "props": {
-  //     "src": "assets/images/search/banner.png",
-  //     "blockClass": "search-result"
-  //   }
-  // },
-  //
-
   "sunhouse.search-result:search-result-layout#cluster-and-search": {
     "title": "Configurações do Search Result",
     "blocks": [
@@ -318,45 +307,50 @@
       "blockClass": "filters-container"
     }
   },
-  "flex-layout.row#filters-container.mobile": {
-    "children": [
-      "flex-layout.col#filters-container.mobile"
-    ],
-    "props": {
-      "preserveLayoutOnMobile": true,
-      "blockClass": "filters-container"
-    }
-  },
-  "flex-layout.col#filters-container.mobile": {
-    "children": [
-      "flex-layout.row#filters-container-top.mobile",
-      "flex-layout.row#filters-container-bottom.mobile"
-    ],
-    "props": {
-      "blockClass": "filters-container"
-    }
-  },
-  "flex-layout.row#filters-container-top.mobile": {
-    "children": [
-      "flex-layout.col#order-content"
-    ],
-    "props": {
-      "preserveLayoutOnMobile": true,
-      "marginBottom": 6,
-      "colJustify": "between",
-      "colSizing": "auto",
-      "horizontalAlign": "center",
-      "blockClass": ["filters-container-top", "filters-container-top-mobile"]
-    }
-  },
-  "flex-layout.row#filters-container-bottom.mobile": {
-    "children": [
-      "sunhouse.search-result:search-products-count-per-page"
-    ],
-    "props": {
-      "blockClass": "filters-container-bottom"
-    }
-  },
+  
+  // Nao esta sendo utilizado - preciso validar do que se trata
+  // CASO NAO DE NENHUM ERRO GERAL, EXCLUIR APOS SUBIDA DA PROXIMA VERSAO
+  // "flex-layout.row#filters-container.mobile": {
+  //   "children": [
+  //     "flex-layout.col#filters-container.mobile"
+  //   ],
+  //   "props": {
+  //     "preserveLayoutOnMobile": true,
+  //     "blockClass": "filters-container"
+  //   }
+  // },
+  // "flex-layout.col#filters-container.mobile": {
+  //   "children": [
+  //     "flex-layout.row#filters-container-top.mobile",
+  //     "flex-layout.row#filters-container-bottom.mobile"
+  //   ],
+  //   "props": {
+  //     "blockClass": "filters-container"
+  //   }
+  // },
+  // "flex-layout.row#filters-container-top.mobile": {
+  //   "children": [
+  //     "flex-layout.col#order-content"
+  //   ],
+  //   "props": {
+  //     "preserveLayoutOnMobile": true,
+  //     "marginBottom": 6,
+  //     "colJustify": "between",
+  //     "colSizing": "auto",
+  //     "horizontalAlign": "center",
+  //     "blockClass": ["filters-container-top", "filters-container-top-mobile"]
+  //   }
+  // },
+  // "flex-layout.row#filters-container-bottom.mobile": {
+  //   "children": [
+  //     "sunhouse.search-result:search-products-count-per-page"
+  //   ],
+  //   "props": {
+  //     "blockClass": "filters-container-bottom"
+  //   }
+  // },
+  //
+  //
   
   "sunhouse.search-result:sidebar-close-button": {
     "props": {
@@ -430,17 +424,30 @@
       "activeClassName": "vtex-store-components-3-x-nextIcon"
     }
   },
-  // Botao Ver mais e Ver menos
+
+  // Botao Ver mais e Ver menos START
   "flex-layout.row#fetch-more": {
     "children": [
-      "sunhouse.search-result:search-fetch-more"
+      "flex-layout.col#fetch-more-content"
     ]
   },
+  "flex-layout.col#fetch-more-content": {
+    "children": [
+      "vtex.search-result:search-products-count-per-page", // usar o prefixo sunhouse esta defasando visualmente o componente. Permancer usando o nativo vtex
+      "sunhouse.search-result:search-products-progress-bar", // usar o prefixo vtex ou sunhouse nao esta fazendo diferença visual ou funcional aqui
+      "sunhouse.search-result:search-fetch-more"
+    ],
+    "props": {
+      "blockClass": "fetch-more-content_col"
+    }
+  },
+
   "flex-layout.row#fetch-less": {
     "children": [
       "sunhouse.search-result:search-fetch-previous"
     ]
   },
+
   "sunhouse.search-result:search-fetch-more": {
     "props": {
       "htmlElementForButton": "a"
@@ -451,8 +458,8 @@
       "htmlElementForButton": "a"
     }
   },
+  // Botao Ver mais e Ver menos END
 
-  //
   "flex-layout.row#search-content.desktop": {
     "children": [
       "flex-layout.col#search-content.desktop",
@@ -485,7 +492,6 @@
       "blockClass": ["search-content_col", "search-content_col-filter"]
 		}
 	},
-  //
 
   // Esse componente precisa ser removido apos a implementacao do novo search-result
   "hover-container#search-content": {
@@ -571,18 +577,4 @@
       "blockClass": ["search-seo", "container-center"]
     }
   }
-  //
-
-  // EXCLUIR APOS SUBIDA DA VERSAO COM SUCESSO
-  // "container#seo-category-wrapper": {
-	// 	"title": "Texto Seo - Wrapper ANTIGO",
-	// 	"children": [
-  //     "rich-text#search-seo"
-	// 	],
-	// 	"props": {
-	// 		"blockClass": "seo-category-wrapper"
-	// 	}
-	// },
-  //
-  //
 }

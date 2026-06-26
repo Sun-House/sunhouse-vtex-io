@@ -5,7 +5,7 @@
 
 .galleryTitle--layout {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -30,7 +30,7 @@
 }
 
 .showingProducts {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -80,7 +80,7 @@
 
 .filtersWrapper .filter__container--priceRange .filterWrapperOptions .filterContent :global(.vtex-slider__left-value),
 .filtersWrapper .filter__container--priceRange .filterWrapperOptions .filterContent :global(.vtex-slider__right-value) {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -101,7 +101,7 @@
 }
 
 .filtersWrapper .filter__container .filter .filterTitle {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -221,7 +221,7 @@
 }
 
 .filtersWrapper .filter__container .filterWrapperOptions .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__label) {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -243,7 +243,7 @@
 
 .orderByDropdown .orderByButton .orderByText,
 .orderByDropdown .orderByButton .filterPopupTitle {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -313,7 +313,7 @@
 
 .orderByDropdown .orderByOptionsContainerOpen .orderByOptionsContent .orderByOptionItem {
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -370,7 +370,7 @@
 .pagedControlsContainer .previousPage .previousPageText,
 .pagedControlsContainer .nextPage .nextPageText,
 .pagedControlsContainer .nextPage .previousPageText {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -416,7 +416,7 @@
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -473,7 +473,7 @@
 }
 
 .filtersWrapperMobile .filterPopupButton .filterPopupTitle {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -514,12 +514,12 @@
     color: #2d2926;
     font-size: 12px;
     line-height: 14px;
-    font-family: "Open Sans", sans-serif
+    /* font-family: "Open Sans", sans-serif */
 }
 
 .sidebar .accordionFilter .filterAccordionBreadcrumbs .filterBreadcrumbsText,
 .sidebar .accordionFilter .filterAccordionBreadcrumbs .filterBreadcrumbsItem .filterBreadcrumbsItemName {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -555,7 +555,7 @@
 }
 
 .sidebar .accordionFilter .accordionFilterContainer .accordionFilterItem .accordionFilterContent .accordionFilterItemTitle {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -619,7 +619,7 @@
 
 .sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__label),
 .sidebar .accordionFilter .accordionFilterItemOptions .filterItem :global(.vtex-checkbox__label) {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -647,7 +647,7 @@
 
 .sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow :global(.vtex-slider__left-value),
 .sidebar .accordionFilter .accordionFilterItemOptions .filter__container--priceRange .filterTemplateOverflow :global(.vtex-slider__right-value) {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -666,7 +666,7 @@
 
 .sidebar .filterButtonsBox .filterClearButtonWrapper :global(.vtex-button) :global(.vtex-button__label) {
     color: #252525;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -683,7 +683,7 @@
 
 .sidebar .filterButtonsBox .filterApplyButtonWrapper :global(.vtex-button) :global(.vtex-button__label) {
     color: #2d2926;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-style: normal;
     font-weight: bold;
     font-size: 16px;

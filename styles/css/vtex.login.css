@@ -9,9 +9,9 @@
   height: auto !important;
 }
 
-.inputContainer :global(.vtex-styleguide-9-x-input) {
+/* .inputContainer :global(.vtex-styleguide-9-x-input) {
   font-family: "Open Sans", sans-serif;
-}
+} */
 
 .codeConfirmation .formTitle {
   max-width: 199px;

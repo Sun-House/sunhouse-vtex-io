@@ -54,9 +54,8 @@
       //
       
       "product-images-custom#product-images",
-      // "condition-layout.product#product-title", - Desabilitado - testei e na pratica, nao esta mudando nada, a propria vtex ja trata nativamente o nome do produto x nome sku quano há essa necessidade
-      // "vtex.store-components:product-name#sku-name", - Nome nativo somente do SKU - Desabilitado, mesmo motivo acima mencionado
-			"vtex.store-components:product-name", // Nome nativo VTEX que trata Product Title e SKU Name automaticamente quando há necessidade
+      "condition-layout.product#product-title", // Desabilitado - testei e na pratica, nao esta mudando nada, a propria vtex ja trata nativamente o nome do produto x nome sku quano há essa necessidade
+			// "vtex.store-components:product-name", // Nome nativo VTEX que trata Product Title e SKU Name automaticamente quando há necessidade
       "container#product-brand-dynamic",
       "container#product-brand-fixed"
     ],
@@ -161,8 +160,7 @@
     "title": "Informações Principais",
     "children": [
       "container#product-top-infos",
-      // "condition-layout.product#product-title",
-      "vtex.store-components:product-name",
+      "condition-layout.product#product-title",
       "container#product-brand-dynamic",
       "container#product-brand-fixed",
       "container#product-highlights--product-page",
@@ -204,9 +202,6 @@
     }
   },
   
-  // NAO ESTA SENDO UTILIZADO - VTEX ja trata nativamente o nome do produto x nome sku quano há essa necessidade
-  // Remover apos subida e testes da proxima versao
-  // START
   // Nova estrutura de nome do produto - Muda conforme a selecao de SKU/Variação
 	"condition-layout.product#product-title": {
     "title": "Condicional - Nome do Produto",
@@ -221,7 +216,7 @@
 				}
 			],
 			"Then": "vtex.store-components:product-name#sku-name",
-			"Else": "vtex.store-components:product-name"
+			"Else": "vtex.store-components:product-name#product-name"
 		}
 	},
 	"vtex.store-components:product-name#sku-name": {
@@ -229,12 +224,20 @@
 		"props": {
 			"showBrandName": false,
 			"showProductReference": false,
-			"showSku": true,
+			"showSku": true, // Esse mostra o nome do SKU junto, e via CSS é ocultado o nome do produto
 			"tag": "h1",
 			"blockClass": "sku-name_container"
 		}
 	},
-  // END
+  "vtex.store-components:product-name#product-name": {
+    "props": {
+      "showBrandName": false,
+      "showProductReference": false,
+      "showSku": false, // Esse força para ocultar o nome do SKU, e fica no default, mostrando apenas o nome do produto - sem tratamento com CSS
+      "tag": "h1",
+      "blockClass": "product-name_container"
+    }
+  },
 
   "flex-layout.row#breadcrumb-product": {
     "children": [

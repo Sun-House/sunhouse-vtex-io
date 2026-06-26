@@ -10,5 +10,10 @@
         width: 32px;
         height: 32px
     }
+
+    /* .vtex-flex-layout-0-x-flexRowContent--footer-payments-list .sunhouse-container-1-x-imageItem--footer-social-content */
+    :global(.vtex-flex-layout-0-x-flexRowContent--footer-payments-list) .imageItem--footer-social-content {
+        width: auto !important
+    }
     
 }

@@ -24,13 +24,9 @@
     "title": "Footer Mobile",
     "children": [
       "flex-layout.row#footer-content-mobile",
-      // "container#social-medias-mobile",
       "flex-layout.row#footer-social",
-      // "flex-layout.row#footer-payments-title",
-      // "flex-layout.row#footer-payments-content",
       "flex-layout.row#footer-security-title",
       "flex-layout.row#footer-security-content",
-      // "container#footer-selo-mobile",
       "flex-layout.row#footer-bottom"
     ],
     "props": {
@@ -39,7 +35,6 @@
   },
   "footer-layout.desktop#without-seo-info": {
     "children": [
-      // Inserir aqui novo bloco de newsletter
       "flex-layout.row#footer-content",
       "flex-layout.row#footer-bottom"
     ],
@@ -49,15 +44,10 @@
   },
   "footer-layout.mobile#without-seo-info": {
     "children": [
-      // Inserir aqui novo bloco de newsletter
       "flex-layout.row#footer-content-mobile",
-      // "container#social-medias-mobile",
       "flex-layout.row#footer-social",
-      // "flex-layout.row#footer-payments-title",
-      // "flex-layout.row#footer-payments-content",
       "flex-layout.row#footer-security-title",
       "flex-layout.row#footer-security-content",
-      // "container#footer-selo-mobile",
       "flex-layout.row#footer-bottom"
     ],
     "props": {
@@ -68,8 +58,6 @@
     "title": "Footer Selos Mobile",
     "children": [
       "link#vtex"
-      // "link#eplus",
-      // "certificate-ratrustvox" - Removido da Loja
     ],
     "props": {
       "blockClass": ["footer-selos-mobile"]
@@ -79,9 +67,6 @@
     "title": "Social Media Mobile",
     "children": [
       "container#social-medias-mobile-text",
-      // Excluir assim que finalizar o novo bloco
-      // "list-context.image-list#social"
-      //
       "image-text-list#social"
     ],
     "props": {
@@ -130,9 +115,7 @@
   "flex-layout.col#footer-content-left": {
     "title": "Footer Content Esquerda",
     "children": [
-      // "flex-layout.row#footer-logo",
       "flex-layout.row#footer-schedules",
-      // "flex-layout.row#footer-social"
       "flex-layout.row#footer-phone",
       "flex-layout.row#footer-email",
       "flex-layout.row#footer-address"
@@ -159,7 +142,6 @@
     }
   },
 
-  //
   "flex-layout.row#footer-phone": {
     "children": [
       "rich-text#footer-phone"
@@ -184,34 +166,20 @@
       "blockClass": "footer-address"
     }
   },
-  //
 
   "flex-layout.row#footer-social": {
     "children": [
-      // "flex-layout.col#footer-social"
       "rich-text#footer-social",
-      // Excluir assim que finalizar o novo bloco
-      // "list-context.image-list#social"
-      //
       "image-text-list#social"
     ],
     "props": {
       "blockClass": "footer-social"
     }
   },
-  // "flex-layout.col#footer-social": {
-  //   "children": [
-  //     "rich-text#footer-social",
-  //     "list-context.image-list#social"
-  //   ],
-  //   "props": {
-  //     "blockClass": "footer-social"
-  //   }
-  // },
+  
   "flex-layout.col#footer-content-right": {
     "title": "Footer Content Direita",
     "children": [
-      // "flex-layout.row#footer-content-about", - Movido permanentemente para home.jsonc - a principio precisa repensar nesse bloco da home
       "flex-layout.row#footer-content-lists"
     ],
     "props": {
@@ -220,11 +188,8 @@
     }
   },
 
-  //
   "container#pre-footer-about": {
     "children": [
-      // "responsive-layout.desktop#pre-footer-about",
-      // "responsive-layout.mobile#pre-footer-about"
       "flex-layout.row#footer-content-about",
       "container#home-faq"
     ],
@@ -375,21 +340,41 @@
   "flex-layout.row#footer-payments-content": {
     "title": "Icones Pagamentos",
     "children": [
-      "image#mastercard",
-      "image#visa",
-      "image#elo",
-      "image#diners",
-      "image#amex",
-      // "image#paypal",
-      "image#pix"
-      // "image#boleto"
+      "image-text-list#footer-payments-content"
     ],
     "props": {
-      // "colSizing": "auto",
-      // "preventHorizontalStretch": true,
-      // "preventVerticalStretch": true,
-      // "preserveLayoutOnMobile": true,
       "blockClass": ["footer-payments-content", "footer-list", "footer-payments-list"]
+    }
+  },
+  "image-text-list#footer-payments-content": {
+    "children": [
+      "container.list-render#social" // É obrigatorio usar o children para rederizar o bloco... validar o porque disso
+    ],
+    "props": {
+      "imageTextArray": [
+        {
+          "image": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/baa2480c-e58a-4dbb-bfb2-83039840f0a7___db2e266cdf1351bb6c0b77ae3cd86f60.png"
+        },
+        {
+          "image": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/c82b137c-b7f6-4469-a538-b06268d35266___6de5dc85d440022c4bf4275ced452e54.png"
+        },
+        {
+          "image": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/04875422-85cf-4ebc-9a80-d8d56c0f44b1___f0ca04388a89327fa6a57eb79956dc8d.png"
+        },
+        {
+          "image": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/3c9d2296-05f2-4dda-a5b9-ffb585562eba___ad4530374c4898a60fc086f3f0db2555.png"
+        },
+        {
+          "image": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/8dd1959b-74ad-4614-a7e3-d341625352c3___49cc9f00094bded74a6066623b4c750b.png"
+        },
+        {
+          "image": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/cc02dd7a-9b7f-4fff-b20c-b6856a4a88b2___f4a4e1a1975f71c75b45734e3ab86285.png"
+        }
+      ],
+      "imageWidth": 44,
+      "imageHeight": 26,
+      "imageLoading": "lazy",
+      "blockClass": "footer-payments-content"
     }
   },
   

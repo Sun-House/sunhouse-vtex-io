@@ -1,11 +1,13 @@
-/* Fix para pagina de Moveis por Ambiente desktop
-   Poderia acontecer em outras paginas, mas nao testei */
+/* .vtex-flex-layout-0-x-flexCol--fetch-more-content_col { */
+.flexCol--fetch-more-content_col {
+    padding-top: 38px
+}
 
 /* Desktop Force */
 @media screen and (min-width: 1025px) {
 
-    /* .vtex-flex-layout-0-x-flexColChild--search-content_col
-    .vtex-flex-layout-0-x-flexColChild--search-content_col-main */
+    /* Fix para pagina de Moveis por Ambiente desktop
+       Poderia acontecer em outras paginas, mas nao testei */
     .flexColChild--search-content_col-main {
         height: auto !important
     }
