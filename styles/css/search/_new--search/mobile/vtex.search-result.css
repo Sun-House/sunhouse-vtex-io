@@ -22,5 +22,146 @@
     .orderByOptionsContainer {
         border-radius: 4px !important
     }
+
+    /* Filters Container */
+    .accordionFilterContainer--departamento, /* Oculta opcao de filtrar por Departamento - titulo-botao do accordion */
+    .accordionFilterOpen--departamento { /* Oculta opcao de filtrar por Departamento - accordion aberto */
+        display: none
+    }
+
+    .filter__container--priceRange .filterAvailable {
+        display: none
+    }
+
+    .filterAccordionItemBox :global(.vtex__icon-check) {
+        color: #161413;
+        background-color: #FFDA00;
+        border-color: #FFDA00;
+        border-width: 2px;
+        border-style: solid
+    }
+
+    .accordionFilterItemTag:nth-child(even) :global(.vtex-tag) { /* Oculta tag que mostra qtde de filtro aplicado para aquele tipo */
+        display: none
+    }
+
+    .accordionFilterItemTag :global(.vtex-tag) {
+        background-color: #a8a8a829;
+        color: #2d2926c2 !important;
+        vertical-align: middle;
+        margin-left: 6px;
+        transition: .2s
+    }
+    
+    .accordionFilterItemTag :global(.vtex-tag):hover {
+        background-color: red;
+        color: #fff !important
+    }
+    
+    .accordionFilterItemTag :global(.vtex__icon-close) {
+        display: none
+    }
+
+    .filterAccordionBreadcrumbs {
+        background-color: #a8a8a829;
+        border-bottom-width: 0
+    }
+    
+    /* .filterBreadcrumbsText--filter-bf { */
+    .filterBreadcrumbsText--filters-new {
+        color: #2d2926c2
+    }
+
+    /* .filterBreadcrumbsText--filter-bf::after { */
+    .filterBreadcrumbsText--filters-new::after {
+        content: " disponíveis:"
+    }
+    
+    .accordionFilterItem {
+        border-bottom-width: 1px !important;
+        border-bottom-style: solid;
+        border-color: #e3e4e6
+    }
+    
+    .filterAccordionItemBox {
+        border-bottom-width: 0px
+    }
+
+    .filterPopupButton {
+        width: 100%;
+        height: 50px;
+        padding: 14px;
+        border-width: 1px;
+        border-color: #00000057;
+        border-style: solid;
+        border-radius: 50px
+    }
+    
+    /* .orderByButton--orderby-bf { */
+    .orderByButton--orderby-new {
+        width: 100%;
+        height: 50px
+    }
+
+    /* .vtex-search-result-3-x-filterPopupTitle--orderby-bf,
+    .vtex-search-result-3-x-filterPopupTitle--orderby-new { */
+    .filterPopupTitle--orderby-bf,
+    .filterPopupTitle--orderby-new {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100% /* ou um valor fixo como 200px */
+    }
+    
+    /* .filterPopupTitle--orderby-bf { */
+    .filterPopupTitle--orderby-new {
+        font-size: 0;
+        margin-left: auto
+    }
+    
+    /* .filterPopupTitle--orderby-bf::after { */
+    .filterPopupTitle--orderby-new::after {
+        content: "Ordenar";
+        font-size: .875rem
+    }
+    
+    .orderByOptionsContainer {
+        margin-top: 52px;
+        min-width: fit-content;
+        width: 100%;
+        right: 0
+    }
+
+    .orderByDropdown--orderby-bf {
+    /* .orderByDropdown--orderby-new { - Precisa ajustar para esse key, mas apenas o key acima esta de fato ativo e funcionando */
+        padding-top: 0
+    }
+
+    .filterPopupArrowIcon {
+        color: #161413
+    }
+    
+    /* .filterPopupArrowIcon--orderby-bf { */
+    .filterPopupArrowIcon--orderby-new {
+        margin-left: auto;
+        padding-left: .5rem;
+        padding-top: .25rem
+    }
+
+    /* .filterClearButtonWrapper--filter-bf :global(.vtex-button) { */
+    .filterClearButtonWrapper--filters-new :global(.vtex-button) {
+        background-color: #a8a8a829;
+        color: #2d2926c2 !important;
+        border-width: 0;
+        border-radius: 50px
+    }
+    
+    /* .filterApplyButtonWrapper--filter-bf :global(.vtex-button) { */
+    .filterApplyButtonWrapper--filters-new :global(.vtex-button) {
+        background-color: #FFDA00;
+        color: #161413;
+        border-width: 0;
+        border-radius: 50px
+    }
     
 }
