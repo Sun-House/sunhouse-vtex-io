@@ -1,0 +1,182 @@
+{
+	"flex-layout.row#faq-test": {
+		"props": {
+			"blockClass": "faq-test",
+			"horizontalAlign": "center",
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true
+		},
+		"children": ["flex-layout.col#faq-test"]
+	},
+
+	"flex-layout.col#faq-test": {
+		"props": {
+			"blockClass": "faq-test",
+			"width": "100%",
+			"horizontalAlign": "left"
+		},
+		"children": [
+			"rich-text#faq-test-title",
+			"disclosure-ld-layout-group#faq-test"
+		]
+	},
+
+	"rich-text#faq-test-title": {
+		"props": {
+			"blockClass": "faq-test-title",
+			"textAlignment": "LEFT",
+			"textPosition": "LEFT",
+			"font": "t-heading-3",
+			"text": "## Perguntas frequentes"
+		}
+	},
+
+	"disclosure-ld-layout-group#faq-test": {
+		"props": {
+			"maxVisible": "one",
+			"generateStructuredData": true
+		},
+		"children": [
+			"disclosure-ld-layout#faq-1",
+			"disclosure-ld-layout#faq-2",
+			"disclosure-ld-layout#faq-3"
+		]
+	},
+
+	"disclosure-ld-layout#faq-1": {
+		"props": {
+			"initialVisibility": "hidden",
+			"animated": true
+		},
+		"children": [
+			"disclosure-ld-trigger#faq-1",
+			"disclosure-ld-content#faq-1"
+		]
+	},
+	"disclosure-ld-trigger#faq-1": {
+		"props": {
+			"blockClass": "faq-trigger",
+			"as": "button"
+		},
+		"children": [
+			"rich-text#faq-q1"
+			// "disclosure-ld-state-indicator#faq"
+		]
+	},
+	"disclosure-ld-content#faq-1": {
+		"props": {
+			"blockClass": "faq-content"
+		},
+		"children": ["rich-text#faq-a1"]
+	},
+	"rich-text#faq-q1": {
+		"props": {
+			"blockClass": "faq-question",
+			"text": "**Como altero o endereço de entrega do meu pedido?**"
+		}
+	},
+	"rich-text#faq-a1": {
+		"props": {
+			"blockClass": "faq-answer",
+			"text": "Acesse Minha Conta > Pedidos, selecione o pedido desejado e edite o endereço enquanto o status permitir alteração. Se o pedido já estiver em transporte, entre em contato com o atendimento."
+		}
+	},
+
+	"disclosure-ld-layout#faq-2": {
+		"props": {
+			"initialVisibility": "hidden",
+			"animated": true
+		},
+		"children": [
+			"disclosure-ld-trigger#faq-2",
+			"disclosure-ld-content#faq-2"
+		]
+	},
+	"disclosure-ld-trigger#faq-2": {
+		"props": {
+			"blockClass": "faq-trigger",
+			"as": "button"
+		},
+		"children": [
+			"rich-text#faq-q2"
+			// "disclosure-ld-state-indicator#faq"
+		]
+	},
+	"disclosure-ld-content#faq-2": {
+		"props": {
+			"blockClass": "faq-content"
+		},
+		"children": ["rich-text#faq-a2"]
+	},
+	"rich-text#faq-q2": {
+		"props": {
+			"blockClass": "faq-question",
+			"text": "**Como faço para rastrear meu pedido?**"
+		}
+	},
+	"rich-text#faq-a2": {
+		"props": {
+			"blockClass": "faq-answer",
+			"text": "Após a confirmação do pagamento, o código de rastreio fica disponível em Minha Conta > Pedidos. Você também recebe o link de acompanhamento por e-mail."
+		}
+	},
+
+	"disclosure-ld-layout#faq-3": {
+		"props": {
+			"initialVisibility": "hidden",
+			"animated": true
+		},
+		"children": [
+			"disclosure-ld-trigger#faq-3",
+			"disclosure-ld-content#faq-3"
+		]
+	},
+	"disclosure-ld-trigger#faq-3": {
+		"props": {
+			"blockClass": "faq-trigger",
+			"as": "button"
+		},
+		"children": [
+			"rich-text#faq-q3"
+			// "disclosure-ld-state-indicator#faq"
+		]
+	},
+	"disclosure-ld-content#faq-3": {
+		"props": {
+			"blockClass": "faq-content"
+		},
+		"children": ["rich-text#faq-a3"]
+	},
+	"rich-text#faq-q3": {
+		"props": {
+			"blockClass": "faq-question",
+			"text": "**Qual o prazo para trocas e devoluções?**"
+		}
+	},
+	"rich-text#faq-a3": {
+		"props": {
+			"blockClass": "faq-answer",
+			"text": "Você tem até 7 dias corridos após o recebimento para solicitar troca ou devolução, conforme o Código de Defesa do Consumidor. O produto deve estar sem uso e com a embalagem original."
+		}
+	},
+
+	// "disclosure-ld-state-indicator#faq": {
+	// 	"children": {
+	// 		"Show": "icon-caret#faq-show",
+	// 		"Hide": "icon-caret#faq-hide"
+	// 	}
+	// },
+	"icon-caret#faq-show": {
+		"props": {
+			"orientation": "down",
+			"size": 16
+		}
+	},
+	"icon-caret#faq-hide": {
+		"props": {
+			"orientation": "up",
+			"size": 16
+		}
+	}
+}

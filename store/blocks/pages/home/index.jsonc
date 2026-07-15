@@ -43,6 +43,10 @@
 
       // About Text with FAQ
       "container#pre-footer-about"
+
+      // FAQ LD Layout - IN DEV
+      ,"flex-layout.row#faq-test"
+      //
     ]
   }
 }

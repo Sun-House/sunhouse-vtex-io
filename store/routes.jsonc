@@ -20,4 +20,36 @@
   // "store.custom#corporate-landing-page": {
   //   "path": "/landing/corporativo"
   // }
+
+  // Em testes para a tarefa 11492/209208 da liveSEO
+  // OK funcionou, replicando para os outros -- alguns entrarao em testes, apos validacao documentarei aqui
+  // "store.custom#stores-landing-page": {
+  //   "path": "/landing/nossas-lojas",
+  //   "isSitemapEntry": true
+  // }
+  // Novos:
+  // "store.custom#institutional-default": {
+  //     "path": "/institucional-default", - abaixo outros ficaram com esse path generico (path de fallback) que teoricamente deve funcionar para forçar o sitemap, e as urls reais ficam no admin visual
+  //     "isSitemapEntry": true
+  // },
+  // "store.custom#designer": {
+  //     "path": "/designer",
+  //     "isSitemapEntry": true
+  // },
+  // "store.custom#designers": {
+  //     "path": "/designers",
+  //     "isSitemapEntry": true
+  // },
+  // "store.custom#collection": {
+  //     "path": "/colecao-default",
+  //     "isSitemapEntry": true
+  // },
+  // "store.custom#institucional-landing": {
+  //     "path": "/institucional-landing",
+  //     "isSitemapEntry": true
+  // },
+  // "store.custom#black-friday-plp": {
+  //     "path": "/black-friday",
+  //     "isSitemapEntry": true
+  // }
 }
