@@ -3,20 +3,14 @@
     "blocks": [
       // Main Banner
       "list-context.info-card-list#banner-main",
-
-      // WIP: Nova disposicao de banners com opcao de usar UM unico InfoCard, ou o banner de imagem comum com sistema de slides (imageList)
-      // "container#banner-main_info-card",
-      // "container#banner-main_image",
-      //
       
       // Category Grid
       "flex-layout.row#categories-slider",
       "container#spacing-default",
 
       // Shelfs
-      // "container#shelf-home02", // Mudar nome posteriormente
       "container#shelf-featured",
-      "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
+      "container#spacing-default",
 
       // Product Highlight Grid
       "container#product-highlight-grid",
@@ -26,10 +20,10 @@
 
       // Shelf Grid
       "container#shelf-home03", // Mudar nome posteriormente
-      "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
+      "container#spacing-default",
 
       // Fullwidth Shelf Banner
-      "container#spacing-default", // Ver se é realmente necessario manter esse sistema de spacing
+      "container#spacing-default",
       "container#fullwidth-banner-shelf",
 
       // Instagram Block - Estudar se será possivel para lançamento no Refresh
@@ -42,11 +36,7 @@
       "container#showcase-slider",
 
       // About Text with FAQ
-      "container#pre-footer-about"
-
-      // FAQ LD Layout - IN DEV
-      ,"flex-layout.row#faq-test"
-      //
+      "container#pre-footer-about" // Substituir bloco de FAQ deste container por FAQ LD Layout depois de finalizar o desenvolvimento
     ]
   }
 }

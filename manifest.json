@@ -1,7 +1,7 @@
 {
   "vendor": "sunhouse",
   "name": "sunhouse",
-  "version": "1.3.6",
+  "version": "1.3.9",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -106,7 +106,7 @@
     "sunhouse.rd-station-forms": "1.x",
     "sunhouse.sku-summary": "1.x",
     "sunhouse.info-card-custom": "1.x",
-    "sunhouse.disclosure-ld-layout": "1.x"
+    "sunhouse.disclosure-ld-layout": "0.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",
