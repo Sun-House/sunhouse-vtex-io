@@ -3,7 +3,6 @@
         "title": "FAQ - Black Friday",
         "children": [
             "flex-layout.row#bf__faq-disclosure__title-row",
-            // "container#bf__faq-disclosure"
             "container#faq-ld-disclosure"
         ],
         "props": {

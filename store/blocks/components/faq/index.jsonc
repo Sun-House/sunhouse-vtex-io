@@ -1,20 +1,5 @@
 {
-    // Remover esse bloco apos replicar a estrutura para as outras paginas
-	// "container#faq-ld-disclosure_wrapper": {
-    //     "title": "FAQ - Perguntas Frequentes",
-    //     "children": [
-    //         "flex-layout.row#footer-faq-disclosure__title-row",  // Herdando o titulo ja existente em outro bloco/arquivo
-    //         "container#faq-ld-disclosure"
-    //     ],
-    //     "props": {
-	// 		"blockClass": ["custom-block__container", "custom-block__wrapper-faq-disclosure", "category-faq"]
-    //     }
-    // },
-    // Remover esse bloco apos replicar a estrutura para as outras paginas
-    //
-
-	// Bloco que gera a FAQ em si
-	"container#faq-ld-disclosure": {
+    "container#faq-ld-disclosure": {
         "children": [
 			"disclosure-ld-layout-group#faq-disclosure-lines"
         ],

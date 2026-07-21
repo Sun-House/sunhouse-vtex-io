@@ -3,8 +3,7 @@
         "title": "Texto e FAQ - Seo",
         "children": [
             "container#seo-category-disclosure", // Com sistema de 'leia mais' para o texto seo
-            "container#category-faq", // Esse será excluido apois finalizar a migração para o novo bloco com JSON-LD
-            "container#faq-ld-disclosure",
+            "container#category-faq", // Ja atualizado com sistema de JSON-LD
             "container#spacing-default"
         ],
         "props": {

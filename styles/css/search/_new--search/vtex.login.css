@@ -12,10 +12,7 @@
 
 /* Mostra texto "Resultados" quando o botão Ver Mais existir no DOM */
 /* .vtex-flex-layout-0-x-flexCol--fetch-more-content_col:has(.vtex-button) .vtex-search-result-3-x-showingProducts::after { */
-
 /* :global(.vtex-flex-layout-0-x-flexCol--fetch-more-content_col):has(.vtex-button) :global(.vtex-search-result-3-x-showingProducts)::after { */
-
 :global(.vtex-flex-layout-0-x-flexCol--fetch-more-content_col:has(.vtex-button) .vtex-search-result-3-x-showingProducts)::after {
-
     display: inline
 }

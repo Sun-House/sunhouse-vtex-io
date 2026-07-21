@@ -253,7 +253,7 @@
       "title": "FAQ - Perguntas Frequentes Home",
       "children": [
           "flex-layout.row#footer-faq-disclosure__title-row",
-          // "container#custom-block__faq-disclosure"
+          // "container#custom-block__faq-disclosure" // Modelo antigo sem JSON-LD
           "container#faq-ld-disclosure"
       ],
       "props": {
@@ -266,7 +266,7 @@
       "title": "FAQ - Perguntas Frequentes Categorias",
       "children": [
           "flex-layout.row#footer-faq-disclosure__title-row",
-          "container#custom-block__faq-disclosure", // Esse será excluido apois finalizar a migração para o novo bloco com JSON-LD
+          // "container#custom-block__faq-disclosure", // Modelo antigo sem JSON-LD
           "container#faq-ld-disclosure"
       ],
       "props": {
