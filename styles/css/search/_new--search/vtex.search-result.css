@@ -183,8 +183,8 @@
 }
 
 /* .vtex-search-result-3-x-showingProducts::after { */
-.showingProducts::after {
+/* .showingProducts::after {
     content: "Resultados";
     margin-left: 4px;
-    display: none /* Oculta texto "Resultados" - configurado em outro arquivo para exibir quando o botão Ver Mais existir no DOM */
-}
+    display: none / Oculta texto "Resultados" - configurado em outro arquivo para exibir quando o botão Ver Mais existir no DOM /
+} */

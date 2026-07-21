@@ -106,7 +106,7 @@
     "sunhouse.rd-station-forms": "1.x",
     "sunhouse.sku-summary": "1.x",
     "sunhouse.info-card-custom": "1.x",
-    "sunhouse.disclosure-ld-layout": "0.x"
+    "sunhouse.disclosure-ld-layout": "1.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",

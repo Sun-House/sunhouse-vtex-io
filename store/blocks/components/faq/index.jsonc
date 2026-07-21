@@ -1,0 +1,274 @@
+{
+    // Remover esse bloco apos replicar a estrutura para as outras paginas
+	// "container#faq-ld-disclosure_wrapper": {
+    //     "title": "FAQ - Perguntas Frequentes",
+    //     "children": [
+    //         "flex-layout.row#footer-faq-disclosure__title-row",  // Herdando o titulo ja existente em outro bloco/arquivo
+    //         "container#faq-ld-disclosure"
+    //     ],
+    //     "props": {
+	// 		"blockClass": ["custom-block__container", "custom-block__wrapper-faq-disclosure", "category-faq"]
+    //     }
+    // },
+    // Remover esse bloco apos replicar a estrutura para as outras paginas
+    //
+
+	// Bloco que gera a FAQ em si
+	"container#faq-ld-disclosure": {
+        "children": [
+			"disclosure-ld-layout-group#faq-disclosure-lines"
+        ],
+        "props": {
+            "blockClass": "custom-block__faq-disclosure"
+        }
+    },
+
+	// Wrapper para as linhas da FAQ - apenas assim funcionará corretamente pois gerará apenas uma tag script com o JSON-LD correto
+	"disclosure-ld-layout-group#faq-disclosure-lines": {
+		"title": "Conf. das Perguntas",
+		"children": [
+			"disclosure-ld-layout#faq-disclosure-line-1",
+            "disclosure-ld-layout#faq-disclosure-line-2",
+            "disclosure-ld-layout#faq-disclosure-line-3",
+            "disclosure-ld-layout#faq-disclosure-line-4",
+            "disclosure-ld-layout#faq-disclosure-line-5",
+            "disclosure-ld-layout#faq-disclosure-line-6",
+            "disclosure-ld-layout#faq-disclosure-line-7"
+		]
+	},
+
+    // Titulo e texto das perguntas
+    "rich-text#faq-disclosure-line-1__title": {
+        "title": "Pergunta",
+        "props": {
+            "text": "## Título da pergunta 1 da FAQ - Máximo 1 linha",
+            "blockClass": "faq-disclosure-line__title"
+        }
+    },
+    "rich-text#faq-disclosure-line-1__text": {
+        "title": "Resposta",
+        "props": {
+            "text": "Nullam fermentum velit eget rhoncus rutrum. Aenean ut porta urna. Sed urna sapien, vulputate vitae convallis nec, lobortis nec erat. [Quisque](#) ac ipsum eu dui euismod porta in vitae augue. Pellentesque vel urna sed dui rutrum hendrerit nec non orci. \n \n Nunc vitae nunc purus. Nam tincidunt enim neque, quis ultrices felis convallis sit amet. Nullam dapibus laoreet venenatis. Vestibulum ullamcorper a massa vel convallis. Donec congue libero sed tortor varius tincidunt.",
+            "blockClass": "faq-disclosure-line__text"
+        }
+    },
+
+    // Icones de estado mostrados ao lado direito de cada linha de titulo
+	"disclosure-ld-state-indicator#product-page-informations": {
+		"props": {
+			"Show": "icon#plus-disclosure",
+			"Hide": "icon#minus-disclosure"
+		}
+	},
+
+    // Lines Disclosures Declaration
+    // Linha 1
+    "disclosure-ld-layout#faq-disclosure-line-1": {
+        "title": "Pergunta 1",
+        "children": [
+            "disclosure-ld-trigger#faq-disclosure-line-1",
+            "disclosure-ld-content#faq-disclosure-line-1"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line",
+            "initialVisibility": "hidden"
+        }
+    },
+    "disclosure-ld-trigger#faq-disclosure-line-1": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__title",
+            "disclosure-ld-state-indicator#product-page-informations"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+    "disclosure-ld-content#faq-disclosure-line-1": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__text"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+
+    // Linha 2
+    "disclosure-ld-layout#faq-disclosure-line-2": {
+        "title": "Pergunta 2",
+        "children": [
+            "disclosure-ld-trigger#faq-disclosure-line-2",
+            "disclosure-ld-content#faq-disclosure-line-2"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line",
+            "initialVisibility": "hidden"
+        }
+    },
+    "disclosure-ld-trigger#faq-disclosure-line-2": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__title",
+            "disclosure-ld-state-indicator#product-page-informations"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+    "disclosure-ld-content#faq-disclosure-line-2": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__text"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+
+    // Linha 3
+    "disclosure-ld-layout#faq-disclosure-line-3": {
+        "title": "Pergunta 3",
+        "children": [
+            "disclosure-ld-trigger#faq-disclosure-line-3",
+            "disclosure-ld-content#faq-disclosure-line-3"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line",
+            "initialVisibility": "hidden"
+        }
+    },
+    "disclosure-ld-trigger#faq-disclosure-line-3": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__title",
+            "disclosure-ld-state-indicator#product-page-informations"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+    "disclosure-ld-content#faq-disclosure-line-3": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__text"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+
+    // Linha 4
+    "disclosure-ld-layout#faq-disclosure-line-4": {
+        "title": "Pergunta 4",
+        "children": [
+            "disclosure-ld-trigger#faq-disclosure-line-4",
+            "disclosure-ld-content#faq-disclosure-line-4"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line",
+            "initialVisibility": "hidden"
+        }
+    },
+    "disclosure-ld-trigger#faq-disclosure-line-4": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__title",
+            "disclosure-ld-state-indicator#product-page-informations"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+    "disclosure-ld-content#faq-disclosure-line-4": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__text"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+
+    // Linha 5
+    "disclosure-ld-layout#faq-disclosure-line-5": {
+        "title": "Pergunta 5",
+        "children": [
+            "disclosure-ld-trigger#faq-disclosure-line-5",
+            "disclosure-ld-content#faq-disclosure-line-5"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line",
+            "initialVisibility": "hidden"
+        }
+    },
+    "disclosure-ld-trigger#faq-disclosure-line-5": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__title",
+            "disclosure-ld-state-indicator#product-page-informations"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+    "disclosure-ld-content#faq-disclosure-line-5": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__text"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+
+    // Linha 6
+    "disclosure-ld-layout#faq-disclosure-line-6": {
+        "title": "Pergunta 6",
+        "children": [
+            "disclosure-ld-trigger#faq-disclosure-line-6",
+            "disclosure-ld-content#faq-disclosure-line-6"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line",
+            "initialVisibility": "hidden"
+        }
+    },
+    "disclosure-ld-trigger#faq-disclosure-line-6": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__title",
+            "disclosure-ld-state-indicator#product-page-informations"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+    "disclosure-ld-content#faq-disclosure-line-6": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__text"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line"
+        }
+    },
+
+    // Linha 7
+    "disclosure-ld-layout#faq-disclosure-line-7": {
+        "title": "Pergunta 7",
+        "children": [
+            "disclosure-ld-trigger#faq-disclosure-line-7",
+            "disclosure-ld-content#faq-disclosure-line-7"
+        ],
+        "props": {
+            "blockClass": "faq-disclosure-line",
+            "initialVisibility": "hidden"
+        }
+    },
+    "disclosure-ld-trigger#faq-disclosure-line-7": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__title",
+            "disclosure-ld-state-indicator#product-page-informations"
+        ],
+        "props": {
+            "blockClass": ["faq-disclosure-line", "faq-disclosure-line-last"]
+        }
+    },
+    "disclosure-ld-content#faq-disclosure-line-7": {
+        "children": [
+            "rich-text#faq-disclosure-line-1__text"
+        ],
+        "props": {
+            "blockClass": ["faq-disclosure-line", "faq-disclosure-line-last"]
+        }
+    }
+}

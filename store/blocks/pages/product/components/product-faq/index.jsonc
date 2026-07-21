@@ -3,7 +3,8 @@
         "title": "FAQ - Perguntas Frequentes PDP",
         "children": [
             "flex-layout.row#product-faq-title",
-            "container#custom-block__faq-disclosure"
+            // "container#custom-block__faq-disclosure"
+            "container#faq-ld-disclosure"
         ],
         "props": {
             "blockClass": ["custom-block__container", "custom-block__wrapper-faq-disclosure", "product-faq"]

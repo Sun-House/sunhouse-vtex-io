@@ -35,7 +35,6 @@
             "container#line-wrapper-12",
             "container#line-wrapper-13",
             "container#line-wrapper-14"
-            // Bloco da FAQ que ficava aqui, agora ficara fixo no template da PDP
         ],
         "props": {
             "blockClass": ["blocks__product-description-custom", "product-custom-description_col-wrapper"]
