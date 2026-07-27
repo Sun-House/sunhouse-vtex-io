@@ -12,14 +12,31 @@
 	},
 
 	"responsive-layout.desktop#institutional-menu": {
-		"children": ["institutional-menu"]
+		// "children": ["institutional-menu"]
+		"children": [
+			"rich-text#institutional-menu"
+		]
 	},
 
+	//
+	"rich-text#institutional-menu": {
+		"title": "Menu Institucional",
+		"props": {
+			"text": "- [Quem Somos](/institucional/quem-somos)\n- [Nossas Lojas](/institucional/nossas-lojas)\n- [Fale Conosco](/institucional/fale-conosco)\n- [Politica de Privacidade](/institucional/politica-de-privacidade)\n- [Montagens](/institucional/montagens)\n- [Vendas Corporativas](/institucional/vendas-corporativas)\n- [Compra Segura](/institucional/compra-segura)\n- [Ajuda](/institucional/ajuda)\n- [Perguntas Frequentes](/institucional/perguntas-frequentes)\n- [Dicas de Manutenção](/institucional/dicas-de-manutencao)\n- [Parceiros](/institucional/parceiros-marketplaces)",
+			"blockClass": "institutional-menu"
+		}
+	},
+	//
+
 	"responsive-layout.tablet#institutional-menu": {
-		"children": ["container#institutional-menu-trigger-mobile"]
+		"children": [
+			"container#institutional-menu-trigger-mobile"
+		]
 	},
 
 	"responsive-layout.phone#institutional-menu": {
-		"children": ["container#institutional-menu-trigger-mobile"]
+		"children": [
+			"container#institutional-menu-trigger-mobile"
+		]
 	}
 }

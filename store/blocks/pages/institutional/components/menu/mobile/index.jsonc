@@ -27,6 +27,9 @@
   },
 
   "disclosure-content#institutional-menu": {
-    "children": ["institutional-menu"]
+    // "children": ["institutional-menu"]
+    "children": [
+      "rich-text#institutional-menu"
+    ]
   }
 }

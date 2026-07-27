@@ -1,0 +1,43 @@
+/* .vtex-rich-text-0-x-wrapper--institutional-menu { */
+.wrapper--institutional-menu {
+    width: 100%
+}
+
+/* .vtex-rich-text-0-x-list--institutional-menu { */
+.list--institutional-menu {
+    padding-inline-start: unset
+}
+
+/* .vtex-rich-text-0-x-listItem--institutional-menu { */
+.listItem--institutional-menu {
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    list-style: none;
+    transition: .3s ease-in-out
+}
+
+/* .vtex-rich-text-0-x-listItem--institutional-menu:hover { */
+.listItem--institutional-menu:hover {
+    cursor: pointer;
+    background-color: #FFDA00;
+    border-color: #FFDA00
+}
+
+.listItem--institutional-menu:hover .link--institutional-menu {
+    color: #161413
+}
+
+/* .vtex-rich-text-0-x-link--institutional-menu { */
+.link--institutional-menu {
+    display: block !important;
+    font-family: Onest, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 14px 18px;
+    color: #161413c9;
+    text-decoration: none;
+    transition: .3s ease-in-out
+}

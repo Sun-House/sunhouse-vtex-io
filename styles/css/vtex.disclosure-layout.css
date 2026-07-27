@@ -137,11 +137,11 @@
     opacity: 0
 }
 
-:global(.vtex-container-container--institutional-menu-trigger-mobile) .content.content--visible {
+/* :global(.vtex-container-container--institutional-menu-trigger-mobile) .content.content--visible {
     max-height: 500px;
     overflow: visible;
     opacity: 1
-}
+} */
 
 .trigger--product-page-description,
 .trigger--product-page-specifications {

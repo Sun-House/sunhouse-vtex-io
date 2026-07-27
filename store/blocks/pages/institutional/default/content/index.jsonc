@@ -3,7 +3,6 @@
     "props": {
       "blockClass": "institutional"
     },
-
     "children": [
       "container#institutional-breadcrumb",
       "container#institutional-wrapper-menu-content"
