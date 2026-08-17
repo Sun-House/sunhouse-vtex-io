@@ -2,6 +2,9 @@
 	"store.custom#institutional-default": {
 		"children": [
 			"container#institutional"
+
+			// In DEV
+			,"sortable-container#home-test"
 		],
 		"parent": {
 			"footer": "footer#institutional-corporate"

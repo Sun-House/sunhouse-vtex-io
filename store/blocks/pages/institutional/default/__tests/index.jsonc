@@ -1,0 +1,89 @@
+{
+    "sortable-container#home-test": {
+        "props": {
+            "blockClass": "home-test",
+            "sections": [
+                { "__editorItemTitle": "Hero", "order": 1, "show": true },
+                { "__editorItemTitle": "Copy", "order": 2, "show": true },
+                { "__editorItemTitle": "Promo", "order": 3, "show": true }
+            ]
+        },
+        "children": [
+            "sortable-container.item#test-hero",
+            "sortable-container.item#test-copy",
+            "sortable-container.item#test-promo"
+        ]
+    },
+  
+    "sortable-container.item#test-hero": {
+      "props": {
+        "blockClass": "test-hero"
+      },
+      "children": ["flex-layout.row#test-hero"]
+    },
+    "flex-layout.row#test-hero": {
+      "props": {
+        "colGap": 2,
+        "margin": { "desktop": "0 0 2rem 0", "mobile": "0 0 1rem 0" }
+      },
+      "children": [
+        "flex-layout.col#test-hero-left"
+        // "flex-layout.col#test-hero-right"
+      ]
+    },
+    "flex-layout.col#test-hero-left": {
+      "props": {
+        "width": { "desktop": 50, "mobile": 100 }
+      },
+      "children": ["rich-text#test-hero-title"]
+    },
+    "flex-layout.col#test-hero-right": {
+      "props": {
+        "width": { "desktop": 50, "mobile": 100 }
+      },
+      "children": ["rich-text#test-hero-body"]
+    },
+    "rich-text#test-hero-title": {
+        "title": "1 - hero",
+      "props": {
+        "text": "# 1 Hero",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#test-hero-body": {
+      "props": {
+        "text": "Seção 1: layout em duas colunas dentro do item."
+      }
+    },
+  
+    "sortable-container.item#test-copy": {
+      "children": ["rich-text#test-copy"]
+    },
+    "rich-text#test-copy": {
+        "title": "2 - copy",
+      "props": {
+        "text": "## 2 Copy"
+      }
+    },
+  
+    "sortable-container.item#test-promo": {
+      "children": [
+        "flex-layout.row#test-promo"
+        // "rich-text#test-promo-note"
+      ]
+    },
+    "flex-layout.row#test-promo": {
+      "children": ["rich-text#test-promo-title"]
+    },
+    "rich-text#test-promo-title": {
+        "title": "3 - promo",
+      "props": {
+        "text": "### 3 Promo"
+      }
+    },
+    "rich-text#test-promo-note": {
+      "props": {
+        "text": "Item misturando flex-layout.row + rich-text no mesmo nível."
+      }
+    }
+}
