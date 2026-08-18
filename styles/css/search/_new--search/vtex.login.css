@@ -16,3 +16,18 @@
 :global(.vtex-flex-layout-0-x-flexCol--fetch-more-content_col:has(.vtex-button) .vtex-search-result-3-x-showingProducts)::after {
     display: inline
 }
+
+/* Ajuste temporario: para enquanto as imagens ainda seguirem
+   o padrao antigo, onde nao posso remover o ´object-fit: cover´
+   para seguir o padrao de aspect-ratio do Refresh */
+/* .vtex-flex-layout-0-x-flexRow--search-content .vtex-stack-layout-0-x-stackItem--add-to-list-btn { */
+:global(.vtex-flex-layout-0-x-flexRow--search-content .vtex-stack-layout-0-x-stackItem--add-to-list-btn) {
+    /* top: 5px; - Valor original, aqui apenas para referencia, pois ele ja esta sendo setado em outro arquivo */
+    top: 26px !important
+}
+
+/* .vtex-flex-layout-0-x-flexRow--search-content .vtex-store-components-3-x-discountInsideContainer { */
+:global(.vtex-flex-layout-0-x-flexRow--search-content .vtex-store-components-3-x-discountInsideContainer) {
+    /* top: 20px; - Valor original, aqui apenas para referencia, pois ele ja esta sendo setado em outro arquivo */
+    top: 41px !important
+}

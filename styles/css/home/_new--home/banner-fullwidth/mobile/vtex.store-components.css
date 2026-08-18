@@ -1,5 +1,10 @@
 @media screen and (max-width: 1024px) {
 
+    /* .vtex-store-components-3-x-infoCardContainer--banner-fullwidth { */
+    .infoCardContainer--banner-fullwidth {
+        height: 707px !important
+    }
+
     /* .vtex-store-components-3-x-infoCardTextContainer--banner-fullwidth { */
     .infoCardTextContainer--banner-fullwidth {
         flex-direction: column;
@@ -12,6 +17,11 @@
         padding-left: unset;
         margin-top: 398px;
         margin-bottom: 24px
+    }
+
+    /* .vtex-store-components-3-x-infoCardCallActionContainer--banner-fullwidth { */
+    .infoCardCallActionContainer--banner-fullwidth {
+        margin-top: 0 !important
     }
     
     /* .vtex-store-components-3-x-infoCardCallActionContainer--banner-fullwidth .vtex-button { */

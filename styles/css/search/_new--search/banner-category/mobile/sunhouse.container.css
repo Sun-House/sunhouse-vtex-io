@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-container-1-x-container--highlight-category-banner */
+    .container--highlight-category-banner {
+        height: auto
+    }
+
+}

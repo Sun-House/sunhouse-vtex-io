@@ -4,6 +4,8 @@
       // Main Banner
       "list-context.info-card-list#banner-main",
       
+      "__fold__", // Em testes - validando se melhora a performance do site (apenas home por enquanto)
+
       // Category Grid
       "flex-layout.row#categories-slider",
       "container#spacing-default",

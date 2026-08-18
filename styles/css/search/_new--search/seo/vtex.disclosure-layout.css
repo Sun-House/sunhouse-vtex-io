@@ -5,27 +5,19 @@
     transition: all .8s - Ainda ficou meio travada a animacao, mas nao tem como fazer melhor a principio
 } */
 
-/* .vtex-disclosure-layout-1-x-content--seo-disclosure--hidden { */
 .content--seo-disclosure--hidden {
     display: block !important;
     max-height: 335px;
     overflow: hidden;
-    /* background: linear-gradient(to top, #6c6c6c59 0%, transparent 100%);
-    background-size: 100% 15%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    box-shadow: 0 8px 6px -8px #b3b3b3;
-    border-radius: 0 0 6px 6px */
-    box-shadow: 0 14px 6px -8px #b3b3b3;
+    /* box-shadow: 0 14px 6px -8px #b3b3b3; */
+    box-shadow: inset 0px -29px 14px -24px #777777;
     border-radius: 0 0 24px 24px
 }
 
-/* .vtex-disclosure-layout-1-x-content--seo-disclosure--visible { */
 .content--seo-disclosure--visible {
     height: auto
 }
 
-/* .vtex-disclosure-layout-1-x-trigger--seo-disclosure { */
 .trigger--seo-disclosure {
     display: block;
     margin: 24px auto 0;
@@ -38,13 +30,11 @@
     transition: .2s ease-in
 }
 
-/* .vtex-disclosure-layout-1-x-trigger--seo-disclosure:hover { */
 .trigger--seo-disclosure:hover {
     cursor: pointer;
     background-color: #FFDA00
 }
 
-/* .vtex-disclosure-layout-1-x-trigger--seo-disclosure:hover .vtex-rich-text-0-x-paragraph--seo-disclosure { */
 .trigger--seo-disclosure:hover :global(.vtex-rich-text-0-x-paragraph--seo-disclosure) {
     color: #fff;
     text-shadow: 0 0 5px #6c6c6c
