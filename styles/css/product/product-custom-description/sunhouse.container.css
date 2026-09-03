@@ -12,9 +12,12 @@
     transition: .2s ease
 }
 
-.imageElement--custom-description-banner:hover {
+/* Esse efeito esta sendo aplicado na descricao Site Editor do padrao Refresh,
+   o que é indesejado, portanto, removi. Futuramente voltar e apontar para a 
+   descrição padrão Elements se necessario */
+/* .imageElement--custom-description-banner:hover {
     opacity: .8
-}
+} */
 
 /* Bloco Descricao com Foto */
 .imageElement--container_desc-banner__imagemDescricao {

@@ -54,8 +54,7 @@
       //
       
       "product-images-custom#product-images",
-      "condition-layout.product#product-title", // Desabilitado - testei e na pratica, nao esta mudando nada, a propria vtex ja trata nativamente o nome do produto x nome sku quano há essa necessidade
-			// "vtex.store-components:product-name", // Nome nativo VTEX que trata Product Title e SKU Name automaticamente quando há necessidade
+      "condition-layout.product#product-title",
       "container#product-brand-dynamic",
       "container#product-brand-fixed"
     ],
@@ -69,6 +68,9 @@
       "flex-layout.col#product-main-mobile_wrapper",
       "flex-layout.row#breadcrumb-product",
       "container#product-top-infos",
+      //
+      // "flex-layout.row#product-code-identifier", // Renderiza o codigo do SKU de forma dinamica, conforme a selecao de SKU/Variação
+      //
       "container#product-highlights--product-page",
       "condition-layout.product#elf-checker"
     ],
@@ -160,6 +162,7 @@
     "title": "Informações Principais",
     "children": [
       "container#product-top-infos",
+      "flex-layout.row#product-code-identifier", // Renderiza o codigo do SKU de forma dinamica, conforme a selecao de SKU/Variação
       "condition-layout.product#product-title",
       "container#product-brand-dynamic",
       "container#product-brand-fixed",
@@ -181,6 +184,13 @@
     ],
     "props": {
       "blockClass": ["product-brand-text", "product-brand-dynamic"]
+    }
+  },
+  "vtex.store-components:product-brand#product-brand": {
+    "props": {
+      "withLink": "none",
+      "blockClass": "product-brand",
+      "displayMode": "text"
     }
   },
 
@@ -249,8 +259,6 @@
   },
   "container#product-top-infos": {
     "children": [
-      // "flex-layout.row#product-code-brand", // Pensar em voltar a utilizar em algum momento
-      //
       "container#product-reviews-summary",
       "add-to-list-btn#product-page"
     ],
@@ -276,37 +284,24 @@
       "blockClass": "product-page"
     }
   },
-  "flex-layout.row#product-code-brand": {
+  "flex-layout.row#product-code-identifier": {
     "children": [
-      "product-identifier.product#product-reference", // Deveria vir o codigo do Produto, porem nada aparece visualmente (pode ter alguma regra de Css ocultando, validar posteriormente)
-      // "product-identifier.product#sku-reference", - Deveria vir o codigo do SKU, porem esta desabilitado (validar posteriormente se serve pra algo - senao, revover do codigo)
-      
-      // Marca do produto - Esta funcionando normalmente
-      "vtex.store-components:product-brand#product-brand"
+      "product-identifier.product#sku-reference"
     ],
     "props": {
       "preventHorizontalStretch": true,
-      "blockClass": "product-code-brand",
-      "preserveLayoutOnMobile": true
+      "preserveLayoutOnMobile": true,
+      // "blockClass": "product-code-brand"
+      "blockClass": "product-code-identifier"
     }
   },
-  "vtex.store-components:product-brand#product-brand": {
-    "props": {
-      "withLink": "none",
-      "blockClass": "product-brand",
-      "displayMode": "text"
-    }
-  },
-
-  // Esta sendo utilizado? VALIDAR
-  "product-identifier.product#product-reference": {
+  "product-identifier.product#sku-reference": {
     "props": {
       "label": "custom",
       "customLabel": "Código",
-      "idField": "productReference"
+      "idField": "itemId"
     }
   },
-  //
 
   "condition-layout.product#elf-checker": {
     "title": "Condicional - Status Produto",

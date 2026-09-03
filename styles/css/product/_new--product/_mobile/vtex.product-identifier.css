@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+
+    .product-identifier--itemId {
+        margin: 16px 0 -12px;
+        font-size: 16px
+    }
+
+}

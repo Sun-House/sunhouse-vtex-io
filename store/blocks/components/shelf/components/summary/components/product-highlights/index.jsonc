@@ -1,4 +1,5 @@
 {
+  // Flags Destaque - Demais paginas (confirmar quais depois)
   "container#product-highlights": {
     "children": [
       "sunhouse.product-highlights@2.x:product-highlights"
@@ -7,16 +8,6 @@
       "blockClass": "product-highlights"
     }
   },
-
-  "container#product-highlights--product-page": {
-    "children": [
-      "sunhouse.product-highlights@2.x:product-highlights#pdp"
-    ],
-    "props": {
-      "blockClass": ["product-highlights", "product-highlights--product-page"]
-    }
-  },
-
   "sunhouse.product-highlights@2.x:product-highlights": {
     "title": "Flags Destaque",
     "children": [
@@ -40,7 +31,16 @@
     }
   },
 
-  // 
+  // Flags Destaque - PDP
+  "container#product-highlights--product-page": {
+    "children": [
+      "sunhouse.product-highlights@2.x:product-highlights#pdp"
+      // ,"sunhouse.product-highlights@2.x:product-highlights#pronta-entrega" // Ainda em desenvolvimento
+    ],
+    "props": {
+      "blockClass": ["product-highlights", "product-highlights--product-page"]
+    }
+  },
   "sunhouse.product-highlights@2.x:product-highlights#pdp": {
     "title": "Flags Destaque",
     "children": [
@@ -64,4 +64,20 @@
       "blockClass": "highlights_product-page"
     }
   }
+
+  // ,"sunhouse.product-highlights@2.x:product-highlights#pronta-entrega": {
+  //   "title": "Flag Pronta Entrega",
+  //   "children": [
+  //     "product-highlight-text#pdp"
+  //   ],
+  //   "props": {
+  //     "type": "collection",
+  //     "skuAware": true, // Ativa o sistema de validação por SKU para não replicar a flag para todos SKUs da PDP
+  //     "debug": true, // Temporario: apenas para medir peso da nova funcionalidade
+  //     "filter": {
+  //       "type": "show",
+  //       "highlightNames": ["Pronta Entrega"]
+  //     }
+  //   }
+  // }
 }

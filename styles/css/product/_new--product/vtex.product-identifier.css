@@ -1,0 +1,10 @@
+/* .vtex-product-identifier-0-x-product-identifier--itemId { */
+.product-identifier--itemId {
+    background-color: #999999;
+    color: #fff;
+    padding: 6px 18px;
+    margin: 12px 0 6px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 50px
+}

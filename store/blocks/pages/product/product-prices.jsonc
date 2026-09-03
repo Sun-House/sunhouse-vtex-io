@@ -7,7 +7,8 @@
 			"product-list-price#product-page", // Preço DE
 			"discount-price#product-page", // Preço PIX
 			"product-selling-price#product-page", // Preço POR - Só vai aparecer no caso de nao renderizar o Installments Block (confirmar se é isso mesmo)
-			"flex-layout.col#installments-content" // Lista de parcelas com texto informativo de parcelamento
+			"flex-layout.col#installments-content", // Lista de parcelas com texto informativo de parcelamento
+			"flex-layout.row#product-code-identifier" // Renderiza o codigo do SKU de forma dinamica, conforme a selecao de SKU/Variação
 		],
 		"props": {
 			"blockClass": ["shelf-product-listPrice", "product-low-price"]
@@ -65,7 +66,8 @@
 			// ,"product-installments-list" -> Precisa ser configurado para aparecer em modal ou drawer lateral
 			// Esse DEV poderá nao sair no lançamento do Refresh, mas ficará em backlog prioritario
 			"flex-layout.col#installments-content-high-price", // Preço POR + parcelas
-			"discount-price#product-high-price"
+			"discount-price#product-high-price",
+			"flex-layout.row#product-code-identifier" // Renderiza o codigo do SKU de forma dinamica, conforme a selecao de SKU/Variação
 		],
 		"props": {
 			"blockClass": ["shelf-product-listPrice", "product-high-price"]

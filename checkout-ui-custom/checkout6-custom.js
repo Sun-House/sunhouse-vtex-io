@@ -1,6 +1,6 @@
 // Fn - Highlight Bar Checkout
 // Highlight Bar Checkout component
-const CUPOM_CODE = 'PAI10';
+const CUPOM_CODE = 'SUN40';
 
 // 1. Defina o bloco HTML atualizado com o botão "Usar cupom"
 const htmlBlock = `
@@ -10,8 +10,8 @@ const htmlBlock = `
             <div id="coupon-info-text-container">
                 <div>
                     <p>
-                        Mês dos Pais | Presenteie seu pai com
-                        <span class="coupon-highlight_bold-text">10% OFF</span> | Use o cupom 
+                        Comemore com a gente e ganhe
+                        <span class="coupon-highlight_bold-text">R$ 500,00 OFF acima de R$ 3.000 | Cupom 
                         <span class="coupon-highlight_bold-text" id="coupon-code-display">${CUPOM_CODE}</span> 
                         <button id="apply-coupon-button">Usar cupom <i class="bi bi-gift-fill"></i></button>
                     </p>
