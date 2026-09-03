@@ -68,9 +68,6 @@
       "flex-layout.col#product-main-mobile_wrapper",
       "flex-layout.row#breadcrumb-product",
       "container#product-top-infos",
-      //
-      // "flex-layout.row#product-code-identifier", // Renderiza o codigo do SKU de forma dinamica, conforme a selecao de SKU/Variação
-      //
       "container#product-highlights--product-page",
       "condition-layout.product#elf-checker"
     ],
@@ -162,7 +159,8 @@
     "title": "Informações Principais",
     "children": [
       "container#product-top-infos",
-      "flex-layout.row#product-code-identifier", // Renderiza o codigo do SKU de forma dinamica, conforme a selecao de SKU/Variação
+      // Renderizando diretamente dentro do bloco de preços - por enquanto aprovado assim
+      // "flex-layout.row#product-code-identifier", // Renderiza o codigo do SKU de forma dinamica, conforme a selecao de SKU/Variação
       "condition-layout.product#product-title",
       "container#product-brand-dynamic",
       "container#product-brand-fixed",
