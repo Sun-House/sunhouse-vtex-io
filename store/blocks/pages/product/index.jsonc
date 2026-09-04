@@ -481,7 +481,7 @@
     }
   },
 
-  /* Desabilitado - Pode voltar em algum momento */
+  // Desabilitado - Pode voltar em algum momento
   "rich-text#safe-purchase": {
     "title": "Texto - Compra Segura",
     "props": {
@@ -492,12 +492,16 @@
   //
 
   "vtex.add-to-cart-button:add-to-cart-button#product-page": {
-    "props": {
-      "onClickBehavior": "add-to-cart",
-      // "isOneClickBuy": true, // Funciona se desabilitar a prop do minicart "customPixelEventName"
-      // "onClickEventPropagation": "disabled", // Esta funcionando em conjunto com o minicart - la tem um evento de propagacao que causa o efeito de abrir o minicart
+    "props": {      
+      "isOneClickBuy": true, // Funciona se desabilitar a prop do minicart "customPixelEventName"
+      "customOneClickBuyLink": "/checkout/#/email",
       "customPixelEventId": "add-to-cart-event", // Nao esta funcionando corretamente, preciso validar no app sunhouse.minicart - mas deveria funcionar em conjunto com o botao da PDP de addToCart
       "text": "Comprar Agora",
+
+      // Propositalmente não esta sendo usando em virtude da prop "isOneClickBuy" ser true
+      // "onClickBehavior": "add-to-cart",
+      // "onClickEventPropagation": "disabled", // Esta funcionando em conjunto com o minicart - la tem um evento de propagacao que causa o efeito de abrir o minicart
+
       "blockClass": "add-to-cart_button"
     }
   },

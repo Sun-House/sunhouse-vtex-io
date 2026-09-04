@@ -2784,7 +2784,8 @@ td.shipping-date {
     }
 
     a.step.cart::after {
-        content: "Sacola"
+        /* content: "Sacola" */
+        content: "Meu Carrinho"
     }
 
     a.step.payment::after {

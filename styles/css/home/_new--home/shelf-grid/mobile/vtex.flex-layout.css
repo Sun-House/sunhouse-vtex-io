@@ -1,0 +1,9 @@
+/* .vtex-flex-layout-0-x-flexRow--shelf-home03 .vtex-store-components-3-x-discountInsideContainer { */
+.flexRow--shelf-home03 :global(.vtex-store-components-3-x-discountInsideContainer) {
+    top: 41px !important
+}
+
+/* .vtex-flex-layout-0-x-flexRow--shelf-home03 .vtex-stack-layout-0-x-stackItem--add-to-list-btn { */
+.flexRow--shelf-home03 :global(.vtex-stack-layout-0-x-stackItem--add-to-list-btn) {
+    top: 26px !important
+}

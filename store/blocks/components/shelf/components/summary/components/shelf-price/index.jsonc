@@ -7,7 +7,6 @@
         ],
         "props": {
             "wrapper": "true",
-            // "blockClass": "bf_price-block"
             "blockClass": ["new-shelf-price", "new-shelf-price_parcelado"]
         }
     },
@@ -21,7 +20,6 @@
         ],
         "props": {
             "wrapper": "true",
-            // "blockClass": "bf_price-block"
             "blockClass": ["new-shelf-price", "new-shelf-price_pix"]
         }
     },
@@ -32,7 +30,6 @@
         "props": {
             "hideWithoutDiscount": false,
             "message": "{listPriceValue}",
-            // "blockClass": ["product-shelf-price", "bf-list-price-shelf"]
             "blockClass": "new-list-price-shelf"
         }
     },
@@ -41,8 +38,8 @@
     "discount-price#new-shelf": {
         "props": {
             "hideWithoutDiscount": false,
-            "message": "{priceValue} PIX",
-            // "promotionName": "Desconto Pagamento à Vista (7%)",
+            // "message": "{priceValue} PIX",
+            "message": "{priceValue} • PIX",
             "promotionName": "Desconto Pagamento a Vista (10%)",
             "blockClass": ["new-pix-price-shelf", "new-shelf"]
         }
@@ -61,11 +58,8 @@
     // Bloco que renderiza o preço parcelado com parcelas e informacoes do parcelamento - Complemento de Preço
     "product-installments#new-shelf-installments": {
         "props": {
-            // "markers": ["bold"],
-            // "message": "Ou <bold>{installmentsTotalValue}</bold> em até <bold>{installmentsNumber}x</bold> de <bold>{installmentValue}</bold> sem juros no cartão de crédito",
             "message": "{installmentsTotalValue}",
             "installmentsCriteria": "max-quantity-without-interest",
-            // "blockClass": "shelf-installments"
             "blockClass": "new-shelf-installments"
         }
     }

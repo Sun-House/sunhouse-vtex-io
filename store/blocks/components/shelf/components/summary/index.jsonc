@@ -407,9 +407,10 @@
   "flex-layout.col#shelf-product-available": {
     "title": "Produto Vitrine - Disponível",
     "children": [
-      "container#shelf-price_parcelado",
+      // "container#shelf-price_parcelado",
       //Ficara inativo no codigo pois quebra layout no Refresh:
-      // "container#shelf-price_pix",
+      "container#shelf-price_pix",
+      //
       "hover-container#actions"
     ],
     "props": {
@@ -649,21 +650,20 @@
     }
   },
 
-  // "add-to-cart-button#shelf-buy": {
   "vtex.add-to-cart-button:add-to-cart-button#shelf-buy": {
     "title": "Botão comprar produto vitrine",
     "props": {
       "customPixelEventId": "addToCart",
-      
-      // Preciso testar todos esses e entender qual o ideal para o Refresh:
-      "onClickBehavior": "add-to-cart",
-      // "onClickBehavior": "ensure-sku-selection",
-      // "onClickBehavior":"go-to-product-page",
-      // "onClickBehavior":"add-to-cart-and-trigger-shipping-modal",
-      //
-
-      // "text": "Comprar",
+      "isOneClickBuy": true,
+      "customOneClickBuyLink": "/checkout/#/email",
       "text": "Comprar Agora",
+      
+      // Propositalmente nenhum esta sendo usando em virtude da prop "isOneClickBuy" ser true
+      // "onClickBehavior": "add-to-cart", // OK, adiciona ao carrinho e abre o minicart - usado atualmente no Refresh
+      // "onClickBehavior": "ensure-sku-selection", // Nada acontece de diferente, so vai direto para a PDP - nao sera usado no Refresh
+      // "onClickBehavior": "go-to-product-page", // OK, funcionando normal, mas nao sera usado no Refresh
+      // "onClickBehavior": "add-to-cart-and-trigger-shipping-modal", // Nada accontece, literalmente nao faz nada - nao sera usado no Refresh
+      
       "blockClass": "shelf-buy"
     }
   },
