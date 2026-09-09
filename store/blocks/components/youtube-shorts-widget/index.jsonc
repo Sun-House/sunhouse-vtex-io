@@ -1,15 +1,15 @@
 {
-    "container#youtube-shorts-product-page": {
-        "title": "Youtube Shorts Flutuante",
+    "container#youtube-shorts": {
+        "title": "Youtube Widget Flutuante",
         "children": [
-            "youtube-shorts-widget#product-page"
+            "youtube-shorts-widget#all-pages"
         ],
         "props": {
-            "blockClass": "container-yt-shorts"
+            "blockClass": ["container-yt-shorts", "container-yt-shorts-all-pages"]
         }
     },
 
-    "youtube-shorts-widget#product-page": {
+    "youtube-shorts-widget#all-pages": {
         "title": "Configurações do Vídeo",
         "props": {
             "shortsUrl": "https://www.youtube.com/embed/8mb6YHMvncs", // Padrao de link embed - ideal sempre usar esse formato de link

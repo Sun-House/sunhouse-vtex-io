@@ -10,4 +10,9 @@
         align-items: flex-end
     }
 
+    /* .vtex-rich-text-0-x-italic--product-highlight-text { */
+    .italic--product-highlight-text {
+        opacity: .7
+    }    
+
 }

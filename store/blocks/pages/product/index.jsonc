@@ -1,7 +1,7 @@
 {
   "store.product": {
     "children": [      
-      "container#youtube-shorts",
+      "container#youtube-shorts-product-page",
       "responsive-layout.desktop#product-main",
       "responsive-layout.mobile#product-main",
       "flex-layout.row#product-infos-wrapper",

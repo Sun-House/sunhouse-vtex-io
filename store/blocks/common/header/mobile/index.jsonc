@@ -3,7 +3,9 @@
     "props": {
       "blockClass": ["header", "header--mobile"]
     },
-    "children": ["fixed-layout#mobile-header"]
+    "children": [
+      "fixed-layout#mobile-header"
+    ]
   },
 
   "fixed-layout#mobile-header": {
@@ -23,6 +25,9 @@
       "blockClass": "header--mobile__content"
     },
     "children": [
+      // Em teste de posicionamento e comportamento
+      "container#youtube-shorts",
+      //
       "container#header__top-bar",
       "container#header__top-bar-cron",
       "container#header--mobile__main",

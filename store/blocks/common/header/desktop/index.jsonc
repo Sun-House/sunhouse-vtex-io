@@ -41,6 +41,9 @@
   "container#header--desktop__content": {
     "title": "Cabeçalho Desktop",
     "children": [
+      // Em teste de posicionamento e comportamento
+      "container#youtube-shorts",
+      //
       "container#header__top-bar",
       "container#header__top-bar-cron",
       "container#header--desktop__main",
