@@ -2,21 +2,31 @@
     "product-summary.shelf#product-highlight": {
         "title": "Vitrine de Produto Destaque",
         "children": [
-            "product-installments#new-shelf-installments", // Preço aqui
-            // "flex-layout.col#shelf-buy-button"
-            
-            // Novo esquema de botoes abaixo 
+            // "product-installments#new-shelf-installments", // Preço aqui
+            "container#shelf-price-single-product",
             "flex-layout.row#product-highlight_cta-buttons"
         ],
         "props": {
-            "blockClass": "main-shelf-new" // Pode ser necessario ajustar
+            "blockClass": "main-shelf-new"
+        }
+    },
+
+    //
+    "container#shelf-price-single-product": {
+        "title": "Preço para Produto Único",
+        "children": [
+            "product-installments#new-shelf-installments" // Preço aqui
+        ],
+        "props": {
+            "blockClass": "shelf-price-single-product"
         }
     },
 
     "flex-layout.row#product-highlight_cta-buttons": {
         "children": [
-            "rich-text#product-highlight_open-product", // Botao para abrir o produto linkado
-            "flex-layout.col#shelf-buy-button" // Botao de adicionar ao carrinho
+            "rich-text#product-highlight_open-product", // Botao para abrir o produto linkado e/ou colecao de produtos
+            "container#shelf-buy-button"
+            // "flex-layout.col#shelf-buy-button" // Botao de adicionar ao carrinho
         ],
         "props": {
             "colSizing": "auto",
@@ -25,9 +35,18 @@
         }
     },
 
+    //
+    "container#shelf-buy-button": {
+        "title": "Botao de Comprar",
+        "children": [
+            "flex-layout.col#shelf-buy-button" // Botao de adicionar ao carrinho
+        ]
+    },
+
     "rich-text#product-highlight_open-product": {
+        "title": "Texto/Botão para Página",
         "props": {
-            "text": "Conhecer Produto",
+            "text": "Conhecer Produto", // Pode ser alterado o texto e utilizado a forma de markdown para criar link
             "blockClass": "product-highlight_open-product"
         }
     }

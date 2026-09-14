@@ -12,7 +12,6 @@
     font-family: "Onest", sans-serif;
     font-size: 16px;
     color: #5b5757;
-    /* color: #16141361; */
     line-height: 1.5
 }
 
@@ -26,8 +25,7 @@
 .paragraph--product-highlight-text {
     width: 100%;
     font-family: "Onest", sans-serif;
-    color: #5b5757;
-    /* color: #16141361; */
+    color: #5b5757
 }
 
 /* .vtex-rich-text-0-x-strong--product-highlight-text { */
@@ -54,15 +52,16 @@
 
 /* .vtex-rich-text-0-x-container--product-highlight_open-product { */
 .container--product-highlight_open-product {
-    background-color: #161413;
+    /* background-color: #161413;
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
     padding: 0 24px;
+    height: 52px; */
     border-radius: 50px;
-    cursor: pointer;
+    /* cursor: pointer;
     white-space: nowrap;
-    transition: all .3s ease-in-out
+    transition: all .3s ease-in-out */
 }
 
 /* .vtex-rich-text-0-x-paragraph--product-highlight_open-product { */
@@ -73,20 +72,50 @@
     transition: all .3s ease-in-out
 }
 
-/* .vtex-rich-text-0-x-paragraph--product-highlight_open-product::after { */
-.paragraph--product-highlight_open-product::after {
+/* .vtex-rich-text-0-x-container--product-highlight_open-product:hover { */
+/* .container--product-highlight_open-product:hover {
+    background-color: #FFDA00
+} */
+
+/* .vtex-rich-text-0-x-container--product-highlight_open-product:hover .vtex-rich-text-0-x-paragraph--product-highlight_open-product { */
+/* .container--product-highlight_open-product:hover .paragraph--product-highlight_open-product {
+    color: #161413
+} */
+
+/* .vtex-rich-text-0-x-link--product-highlight_open-product { */
+.link--product-highlight_open-product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #161413;
+    color: #e1dede;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 24px;
+    height: 52px;
+    border-radius: 50px;
+    cursor: pointer;
+    white-space: nowrap;
+    z-index: 99 !important;
+    transition: all .3s ease-in-out
+}
+
+/* .vtex-rich-text-0-x-container--product-highlight_open-product:hover .vtex-rich-text-0-x-link--product-highlight_open-product { */
+.container--product-highlight_open-product:hover .link--product-highlight_open-product {
+    color: #161413 !important
+}
+
+/* .vtex-rich-text-0-x-link--product-highlight_open-product::after { */
+.link--product-highlight_open-product::after {
     content: "\F141";
     font-family: "Bootstrap-Icons";
     font-size: 18px;
     margin-left: 8px
 }
 
-/* .vtex-rich-text-0-x-container--product-highlight_open-product:hover { */
-.container--product-highlight_open-product:hover {
-    background-color: #FFDA00
-}
-
-/* .vtex-rich-text-0-x-container--product-highlight_open-product:hover .vtex-rich-text-0-x-paragraph--product-highlight_open-product { */
-.container--product-highlight_open-product:hover .paragraph--product-highlight_open-product {
+.link--product-highlight_open-product:hover {
+    background-color: #FFDA00;
     color: #161413
 }

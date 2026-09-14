@@ -67,3 +67,7 @@
 .container--product-highlight-shelf :global(.vtex-product-summary-2-x-element--main-shelf-new) {
     gap: 35px /* Pode ser necessario ajustar */
 }
+
+.container--shelf-price-single-product {
+    display: flex
+}

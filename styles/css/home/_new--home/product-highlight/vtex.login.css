@@ -1,0 +1,42 @@
+/* Colocar essa regra apenas para desktop a principio */
+/* Force desktop */
+@media screen and (min-width: 1025px) {
+
+    /* .vtex-container-container--product-highlight-shelf :has(.vtex-product-summary-2-x-clearLink--main-shelf-new) { */
+    :global(.vtex-container-container--product-highlight-shelf :has(.vtex-product-summary-2-x-clearLink--main-shelf-new)) {
+        max-width: unset !important
+    }
+
+}
+
+/* .vtex-rich-text-0-x-paragraph--product-highlight_open-product { */
+:global(.vtex-rich-text-0-x-paragraph--product-highlight_open-product:not(:has(.vtex-rich-text-0-x-link--product-highlight_open-product))) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #161413;
+    color: #e1dede;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 24px;
+    height: 52px;
+    border-radius: 50px;
+    cursor: pointer;
+    white-space: nowrap;
+    z-index: 99 !important;
+    transition: all .3s ease-in-out
+}
+
+:global(.vtex-rich-text-0-x-paragraph--product-highlight_open-product:not(:has(.vtex-rich-text-0-x-link--product-highlight_open-product)))::after {
+    content: "\F141";
+    font-family: "Bootstrap-Icons";
+    font-size: 18px;
+    margin-left: 8px
+}
+
+:global(.vtex-rich-text-0-x-paragraph--product-highlight_open-product:not(:has(.vtex-rich-text-0-x-link--product-highlight_open-product))):hover {
+    background-color: #FFDA00;
+    color: #161413
+}

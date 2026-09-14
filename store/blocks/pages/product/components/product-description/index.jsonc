@@ -4,7 +4,8 @@
         "title": "Descrição Texto (Simples)",
         "children": [
             "product-description",
-            "product-dimensions#assembled-dimensions"
+            "container#assembled-dimensions"
+            // "product-dimensions#assembled-dimensions"
         ],
         "props": {
             "blockClass": ["product-description", "product-description-pure-text"]
@@ -12,8 +13,13 @@
     },
 
     // Bloco de Dimensoes do Produto
-    "product-dimensions#assembled-dimensions": {
+    "container#assembled-dimensions": {
         "title": "Dimensões do Produto Montado",
+        "children": [
+            "product-dimensions#assembled-dimensions"
+        ]
+    },
+    "product-dimensions#assembled-dimensions": {
         "props": {
             "blockClass": "product-dimensions-assembled"
         }
