@@ -25,8 +25,16 @@
     font-style: normal
 }
 
-.sellingPrice .sellingPriceValue {
+/* .sellingPrice .sellingPriceValue {
     font-weight: 700
+} */
+
+/* .vtex-product-price-1-x-sellingPrice */
+/* .vtex-flex-layout-0-x-flexRow--product-page-price .vtex-product-price-1-x-sellingPriceValue { */
+:global(.vtex-flex-layout-0-x-flexRow--product-page-price) .sellingPriceValue {
+    font-size: 38px;
+    line-height: normal;
+    font-weight: 500
 }
 
 .sellingPrice--product-shelf-price {
@@ -194,19 +202,4 @@
     font-size: 38px;
     line-height: normal;
     font-weight: 500
-}
-
-
-
-/* Flags de Produto - Savings Seal e Savings Price */
-
-
-/* Mobile */
-@media screen and (max-width: 1024px) {
-
-    .installments--product-page {
-        white-space: normal;
-        text-align: left
-    }
-
 }

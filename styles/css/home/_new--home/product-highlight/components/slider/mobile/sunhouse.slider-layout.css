@@ -1,0 +1,26 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-slider-layout-0-x-paginationDotsContainer--product-highlight-grid-slider { */
+    .paginationDotsContainer--product-highlight-grid-slider {
+        left: 20%;
+        transform: translateX(-22%);
+        width: 65%;
+        padding: 0 50px !important
+    }
+
+    /* .sunhouse-slider-layout-0-x-paginationDotsContainer--product-highlight-grid-slider.sunhouse-slider-layout-0-x-paginationDotsContainer .sunhouse-slider-layout-0-x-paginationDot--isActive { */
+    .paginationDotsContainer--product-highlight-grid-slider.paginationDotsContainer .paginationDot--isActive {
+        min-width: 10px !important
+    }
+
+    /* .sunhouse-slider-layout-0-x-sliderRightArrow--product-highlight-grid-slider { */
+    .sliderRightArrow--product-highlight-grid-slider {
+        right: 16px
+    }
+
+    /* .sunhouse-slider-layout-0-x-sliderLeftArrow--product-highlight-grid-slider { */
+    .sliderLeftArrow--product-highlight-grid-slider {
+        right: 72px
+    }
+    
+}

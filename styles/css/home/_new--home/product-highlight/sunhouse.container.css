@@ -1,8 +1,13 @@
 /* Container Wrapper do componente */
-.container--product-highlight-grid {
+/* .container--product-highlight-grid {
     margin: 24px 0px 60px;
     padding: 105px 0px;
-    border-top: 2px solid #1614134d /* Usar base para todas as linhas de borda da Home */
+    border-top: 2px solid #1614134d
+} */
+
+/* .sunhouse-container-1-x-container--product-highlight-grid-unique { */
+.container--product-highlight-grid-unique {
+    margin-top: 40px
 }
 
 /* Imagens do Produto Destaque */

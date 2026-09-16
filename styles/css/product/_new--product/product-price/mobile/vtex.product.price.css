@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+
+    .installments--product-page {
+        white-space: normal;
+        text-align: left
+    }
+
+}

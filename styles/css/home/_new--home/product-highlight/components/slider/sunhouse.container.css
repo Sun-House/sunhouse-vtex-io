@@ -1,0 +1,12 @@
+/* Desktop Force */
+@media screen and (min-width: 1025px) {
+    
+    /* .sunhouse-container-1-x-container--product-highlight-grid-slider { */
+    .container--product-highlight-grid-slider {
+        /* height: 1199px; */
+        /* height: 1099px; */
+        height: 976px; /* Altura padrão do section automatico gerado pela VTEX - altura ideal */
+        padding-top: unset
+    }
+
+}

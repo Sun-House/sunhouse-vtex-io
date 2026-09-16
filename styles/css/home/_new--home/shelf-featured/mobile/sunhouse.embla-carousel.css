@@ -10,7 +10,19 @@
         flex-direction: column;
         position: relative;
         top: -92px;
-        height: 0 /* Normaliza o componente para nao esticar o slider component */
+        /* height: 0 */
+        height: 100%
+    }
+
+    /* .vtex-container-container--shelf-featured .sunhouse-embla-carousel-1-x-heading--shelf--mobile { */
+    :global(.vtex-container-container--shelf-featured) .heading--shelf--mobile {
+        margin: 0;
+        font-weight: 400
+    }
+
+    /* .vtex-container-container--shelf-featured .sunhouse-embla-carousel-1-x-container--shelf--mobile .sunhouse-embla-carousel-1-x-containerDots { */
+    :global(.vtex-container-container--shelf-featured) .container--shelf--mobile .containerDots {
+        margin-top: 0px !important
     }
     
     :global(.vtex-container-container--shelf-featured) .text--shelf--mobile {

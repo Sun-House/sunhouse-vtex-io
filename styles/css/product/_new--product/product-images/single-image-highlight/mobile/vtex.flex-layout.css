@@ -1,7 +1,8 @@
 @media screen and (max-width: 1024px) {
 
     .flexRow--product-main-mobile {
-        margin-top: 65px
+        /* margin-top: 65px */
+        margin-top: 132px /* Precisou ajustar pois foi criado um novo componente nesse bloco, o de codigo de produto */
     }
 
     .flexCol--mobile-first-fold {

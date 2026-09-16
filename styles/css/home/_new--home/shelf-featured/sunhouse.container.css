@@ -4,3 +4,10 @@
 .container--shelf-featured {
     margin-top: 60px
 }
+
+.container--shelf-featured {
+    /* margin-bottom: 60px; */
+    margin-bottom: 20px; /* Reduzido pois o container de spacing-default possui altura de 40px */
+    padding-bottom: 60px;
+    border-bottom: 2px solid #1614134d
+}

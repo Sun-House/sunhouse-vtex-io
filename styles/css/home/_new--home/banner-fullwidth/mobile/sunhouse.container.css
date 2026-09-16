@@ -1,0 +1,8 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-container-1-x-container--fullwidth-static-banner { */
+    .container--fullwidth-static-banner {
+        padding-top: 0
+    }
+    
+}

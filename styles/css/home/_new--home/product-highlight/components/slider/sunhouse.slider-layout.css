@@ -1,0 +1,24 @@
+/* Desktop Force */
+/* @media screen and (min-width: 1025px) {
+
+    // .sunhouse-slider-layout-0-x-sliderArrows--product-highlight-grid-slider { //
+    .sliderArrows--product-highlight-grid-slider {
+        bottom: 80px
+    }
+
+    // .sunhouse-slider-layout-0-x-paginationDotsContainer--product-highlight-grid-slider { //
+    .paginationDotsContainer--product-highlight-grid-slider {
+        bottom: 101px
+    }
+
+} */
+
+/* .sunhouse-slider-layout-0-x-slide--product-highlight-grid-slider { */
+.slide--product-highlight-grid-slider {
+    transition: .8s ease-in-out
+}
+    
+/* .sunhouse-slider-layout-0-x-slide--product-highlight-grid-slider--hidden { */
+.slide--product-highlight-grid-slider--hidden {
+    opacity: 0
+}

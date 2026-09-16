@@ -2,10 +2,21 @@
     "container#product-highlight-grid": {
         "title": "Destaque de Produto",
         "children": [
-            "flex-layout.row#product-highlight-grid"
+            "container#product-highlight-grid-unique",
+            "container#product-highlight-grid-slider" // Salvo em /components
         ],
         "props": {
             "blockClass": "product-highlight-grid"
+        }
+    },
+
+    "container#product-highlight-grid-unique": {
+        "title": "Destaque de Produto - Unico",
+        "children": [
+            "flex-layout.row#product-highlight-grid"
+        ],
+        "props": {
+            "blockClass": ["product-highlight-grid", "product-highlight-grid-unique"]
         }
     },
 

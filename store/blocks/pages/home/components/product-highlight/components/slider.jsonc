@@ -1,0 +1,59 @@
+{
+    // Slider - Carrossel
+    "container#product-highlight-grid-slider": {
+        "title": "Destaque de Produto - Slider",
+        "children": [
+            "slider-layout#product-highlight-grid"
+        ],
+        "props": {
+            "blockClass": ["ambient-showcase", "ambient-showcase_slider", "product-highlight-grid-slider"]
+        }
+    },
+
+    "slider-layout#product-highlight-grid": {
+        "title": "Configurações do Slider",
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "phone": 1
+            },
+            "showPaginationDots": "always",
+            "showNavigationArrows": "always",
+            "infinite": true,
+            "slideTransition": {
+                "speed": 1000,
+                "delay": 0,
+                "timing": "cubic-bezier(0, 0, 0.2, 1)"
+            },
+            "autoplay": {
+                "timeout": 4000,
+                "stopOnHover": true
+            },
+            "blockClass": ["ambient-showcase-slider", "product-highlight-grid-slider"] // Tentando reaproveitar style de outro componente na primeira key
+        },
+        "children": [
+            "container#product-highlight-grid-1",
+            "container#product-highlight-grid-2"
+        ]
+    },
+
+    "container#product-highlight-grid-1": {
+        "title": "Destaque 1",
+        "children": [
+            "flex-layout.row#product-highlight-grid"
+        ],
+        "props": {
+            "blockClass": "product-highlight-grid"
+        }
+    },
+
+    "container#product-highlight-grid-2": {
+        "title": "Destaque 2",
+        "children": [
+            "flex-layout.row#product-highlight-grid"
+        ],
+        "props": {
+            "blockClass": "product-highlight-grid"
+        }
+    }
+}
