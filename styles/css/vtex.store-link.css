@@ -136,7 +136,8 @@
 
 .label--link-showroom,
 .label--link-corporate,
-.label--link-wizard {
+.label--link-wizard,
+.label--link-instagram {
     display: flex
 }
 
@@ -353,6 +354,20 @@
     /* content: "\F87D"; */
     /* content: "\F1DD"; */
     content: "\F1CC";
+    font-family: "Bootstrap-Icons";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 12px;
+    color: #FFDA00
+}
+
+/* Icone do Botao Instagram do header */
+/* .vtex-store-link-0-x-label--link-instagram::before { */
+.label--link-instagram::before {
+    display: inline-flex;
+    content: "\F437";
     font-family: "Bootstrap-Icons";
     font-size: 18px;
     font-style: normal;
@@ -604,6 +619,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+
     .link--vtex-link,
     .link--eplus-link {
         height: 25px;
@@ -636,6 +652,21 @@
         margin-right: 15px;
     }
 
+    /* Icone do Botao Instagram do header mobile */
+    /* .vtex-store-link-0-x-label--link-instagram::before { */
+    .label--link-mobile-instagram::before {
+        display: inline-flex;
+        content: "\F437";
+        font-family: "Bootstrap-Icons";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        margin-right: 12px;
+        color: #161413;
+        opacity: .9
+    }
+
     .link--my-orders-link {
         padding-left: 16px;
         background: #252525;
@@ -649,7 +680,6 @@
     }
 
     .link--my-orders-link .label {
-        /* font-family: "Open Sans", sans-serif; */
         font-style: normal;
         font-weight: normal;
         font-size: 14px;

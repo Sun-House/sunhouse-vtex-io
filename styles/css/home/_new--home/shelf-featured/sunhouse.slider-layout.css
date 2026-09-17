@@ -13,12 +13,15 @@
 }
 
 :global(.vtex-container-container--shelf-featured) .text--main-shelf {
-    background-color: #fff; /* mudar para fff */
+    background-color: #fff;
     color: #161413;
     width: fit-content;
-    padding: 10px 24px;
     border-radius: 50px;
     transition: all .3s ease-in-out
+}
+
+:global(.vtex-container-container--shelf-featured) .text--main-shelf:not(:empty) {
+    padding: 10px 24px
 }
 
 :global(.vtex-container-container--shelf-featured) .link--main-shelf:hover .text--main-shelf {

@@ -19,8 +19,8 @@
       // "link#showroom", // Link para showroom virtual
       // "link#corporate", // Link para vendas corporativas
       "link#wizard", // Link coringa - tem um ajuste no Css que mostra o icone de acordo com o link atribuido
-      "link#wishlist--left"
-      // "conditional-login#desktop"
+      "link#instagram"
+      // "link#wishlist--left"
     ],
     "props": {
       "wrapper": true,
@@ -81,6 +81,16 @@
       "label": "Wizard",
       "href": "/", // Aqui sera ajustado de acordo com a necessidade diretamente pelo Site Editor
       "blockClass": ["header-links", "link-wizard"]
+    }
+  },
+
+  // Link Instagram
+  "link#instagram": {
+    "title": "Link Instagram",
+    "props": {
+      "label": "Nosso Instagram",
+      "href": "https://www.instagram.com/sunhousemoveis/",
+      "blockClass": ["header-links", "link-instagram"]
     }
   },
 

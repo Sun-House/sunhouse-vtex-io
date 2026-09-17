@@ -17,8 +17,9 @@
       // "link#stores-landing",
       // "link#corporate-mobile",
       "link#wizard-mobile",
-      "minicart.v2",
-      "link#mobile-wishlist"
+      "link#instagram-mobile",
+      "minicart.v2"
+      // "link#mobile-wishlist"
     ]
   },
 
@@ -102,6 +103,16 @@
       "href": "/",
       "label": "Wizard",
       "blockClass": ["menu-mobile-stores-landing", "menu-mobile-wizard"]
+    }
+  },
+
+  // Link Instagram
+  "link#instagram-mobile": {
+    "title": "Link Instagram",
+    "props": {
+      "href": "https://www.instagram.com/sunhousemoveis/",
+      "label": "Nosso Instagram",
+      "blockClass": ["menu-mobile-stores-landing", "link-mobile-instagram"]
     }
   },
 
