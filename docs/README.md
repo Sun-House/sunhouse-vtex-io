@@ -1,62 +1,88 @@
-# Minimum Boilerplate Theme
+# SunHouse Store Theme
 
-The minimum Boilerplate Theme is basic store front model based on the VTEX IO Store Framework.
+The **SunHouse Store Theme** (`sunhouse.sunhouse`) is the VTEX IO Store Framework storefront for [Sun House](https://www.sunhouse.com.br) — a furniture catalog with many finish variations. This repository is the production theme, kept here as a **portfolio** piece, not a starter to clone or republish.
 
-It should be used only when you want to start a new store theme without any pre-set configurations, as is the case with [Store Theme](https://github.com/vtex-apps/store-theme). 
+Blocks, CSS, and custom `sunhouse.*` apps are composed into Home, Product, Search, Header/Footer, institutional pages, and campaign landings. Native Store Framework blocks are used where they fit; custom apps cover gaps the default shelf, SKU selector, menu, and PDP flows do not.
 
-While Store Theme gives developers a ready-to-go default store front structure, the Minimum Boilerplate Theme will enable you to build you store freely from scratch.
+## Store surfaces
 
-## Configuration
+| Surface | What it covers |
+| --- | --- |
+| Home | Hero banners, category grid, featured shelves, product highlight, full-width shelf banner, blog grid, showcase slider, pre-footer FAQ |
+| Product (PDP) | Custom gallery, enhanced SKU selector with finish swatches, buy-together, WhatsApp CTAs by product type, YouTube Shorts, reviews, also-seen shelf |
+| Search / PLP | Custom search result layout, ambient showcase, category grid, shelf cards with variation swatches |
+| Header / Footer | Super menu, minicart, search, login, RD Station newsletter |
+| Landings | Corporate, stores, Black Friday, designer/collection, institutional templates |
 
-### Step 1 -  Basic setup
+## Behavior
 
-Access the VTEX IO [basic setup guide](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1) and follow all the given steps. 
+1. **Composition**: Pages are Store Framework JSONC under `store/blocks`, split by surface (`pages/`, `common/`, `landing-pages/`, `components/`).
+2. **Catalog complexity**: PDP uses `enhanced-sku-selector` (finish images + popper). Shelves use [`shelf-enhanced-sku-selector`](https://github.com/AlexJSant/shelf-enhanced-sku-selector) so cards show the same variation order as the product page.
+3. **Product types**: `condition-layout` switches PDP CTAs (standard, corporate, exclusive, unavailable) without duplicating the whole template.
+4. **Refresh**: Newer Home / PDP / PLP / shelf blocks live alongside `_deprecated` trees until the old surfaces are fully retired.
+5. **Performance**: Home uses `__fold__`; shelf swatches request resized assets from the image server instead of full catalog files.
 
-By the end of the setup, you should have the VTEX command line interface (Toolbelt) installed along with a developer workspace you can work in.
+## Theme layout
 
-### Step 2 - Cloning the Minimum Boilerplate Theme repository
-
-[Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repository to your local files to be able to effectively start working on it.
-
-Then, access the repository's directory using your terminal. 
-
-### Step 3 - Editing the `Manifest.json`
-
-Once in the repository directory, it is time to edit the Minimum Boilerplate `manifest.json` file. 
-
-Once you are in the file, you must replace the `vendor` and `account` values. `vendor` is the account name you are working on and `account` is anything you want to name your theme. For example:
-
-```json
-{
-  "vendor": "storecomponents",
-  "name": "my-test-theme",
-}
+```
+store/blocks/     # JSONC templates and block composition
+styles/css/       # CSS Handles, mirrored by surface (home, product, search, header…)
+checkout-ui-custom/
+docs/             # This file (docs builder)
 ```
 
-### Step 4 -  Installing required apps
+CSS follows the page it belongs to (`styles/css/home/_new--home/`, `product/_new--product/`, `search/_new--search/`). Shared shelf and header rules sit under `styles/css/components/` and `styles/css/common/`.
 
-In order to use Store Framework and work on your store theme, it is needed to have both `vtex.store-sitemap` and `vtex.store` installed.
+## Custom apps (selected)
 
-Run  `vtex list`  and check whether those apps are already installed. 
+These are the storefront pieces that go beyond native VTEX blocks. The full list is in `manifest.json`.
 
-If they aren't, run the following command to install them: `vtex install vtex.store-sitemap vtex.store -f`
+| App | Role |
+| --- | --- |
+| `sunhouse.enhanced-sku-selector` | PDP variation selector with finish samples |
+| `sunhouse.shelf-enhanced-sku-selector` | Shelf swatches in PDP order ([repo](https://github.com/AlexJSant/shelf-enhanced-sku-selector)) |
+| `sunhouse.product-images-custom` | PDP gallery |
+| `sunhouse.buy-together-enhanced` | Complementary products on the PDP |
+| `sunhouse.super-menu` / `sunhouse.category-menu` | Desktop and category navigation |
+| `sunhouse.minicart` | Cart drawer |
+| `sunhouse.search-result` | PLP layout |
+| `sunhouse.embla-carousel` / `sunhouse.slider-layout` | Carousels and shelves |
+| `sunhouse.whatsapp-lead-capture-pdp` | WhatsApp lead / buy CTAs |
+| `sunhouse.rd-station-forms` | Newsletter in the footer |
+| `sunhouse.youtube-shorts-widget` | Shorts embed on the PDP |
+| `sunhouse.condition-layout` | Product-type branching |
+| `sunhouse.container` | Layout wrapper used across pages |
 
-### Step 5 -  Uninstalling any existing theme
+## Customization
 
-By running `vtex list`,  you can verify if any theme is installed.
+Styling is CSS Handles plus `blockClass` on flex-layout, container, and summary blocks. App-specific overrides use the usual theme file, for example `styles/css/components/shelf/_new--shelf/shelf-sku-selector/sunhouse.shelf-enhanced-sku-selector.css`.
 
-It is common to already have a `vtex.store-theme`  installed when you start the store's front development process. 
+> Site Editor remains available for content and props. Template structure is owned in this repository.
 
-Therefore, if you find it in the app's list, copy its name and use it together with the command `vtex uninstall`. For example:
+## Dependencies
 
-```json
-vtex uninstall vtex.store-theme
-```
+Declared in `manifest.json`: native VTEX apps (`vtex.store`, `vtex.flex-layout`, `vtex.product-summary`, `vtex.search-result`, …) plus the `sunhouse.*` apps above. Peer apps include wishlist, speech-to-text, and Konfidency reviews.
 
-### Step 6- Run and preview your store
+Builders: `store`, `styles`, `docs`, `assets`, `checkout-ui-custom`.
 
-Then time has come to upload all the changes you made in your local files to the platform. For that, use the `vtex link` command. 
+<!-- DOCS-IGNORE:start -->
 
-If the process runs without any errors, the following message will be displayed: `App linked successfully`. Then, run the `vtex browse` command to open a browser window having your linked store in it.
+## Contributors ✨
 
-This will enable you to see the applied changes in real time, through the account and workspace in which you are working.
+Thanks goes to these wonderful people:
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/AlexJSant"><img src="https://avatars.githubusercontent.com/u/138253863?v=4?s=100" width="100px;" alt="Alex Santana"/><br /><sub><b>Alex Santana</b></sub></a><br /><a href="https://github.com/AlexJSant" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+<!-- DOCS-IGNORE:end -->
