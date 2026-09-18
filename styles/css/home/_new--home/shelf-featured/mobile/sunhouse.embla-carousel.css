@@ -29,9 +29,12 @@
         background-color: #fff; /* mudar para fff */
         color: #161413;
         width: fit-content;
-        padding: 10px 24px;
         border-radius: 50px;
         transition: all .3s ease-in-out
+    }
+
+    :global(.vtex-container-container--shelf-featured) .text--shelf--mobile:not(:empty) {
+        padding: 10px 24px
     }
     
     :global(.vtex-container-container--shelf-featured) .link--shelf--mobile:hover .text--shelf--mobile {

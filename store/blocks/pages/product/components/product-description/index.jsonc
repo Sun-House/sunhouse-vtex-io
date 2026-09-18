@@ -14,12 +14,13 @@
 
     // Bloco de Dimensoes do Produto
     "container#assembled-dimensions": {
-        "title": "Dimensões do Produto Montado",
+        "title": "Wrapper - Dimensões do Produto", // Permite ocultar o bloco situacionalmente via Site Editor
         "children": [
             "product-dimensions#assembled-dimensions"
         ]
     },
     "product-dimensions#assembled-dimensions": {
+        "title": "Dimensões do Produto Montado", // Aqui apenas explicita o que é o bloco, mas nao da para editar via Site Editor
         "props": {
             "blockClass": "product-dimensions-assembled"
         }
