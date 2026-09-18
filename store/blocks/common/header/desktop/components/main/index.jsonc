@@ -19,7 +19,7 @@
       // "link#showroom", // Link para showroom virtual
       // "link#corporate", // Link para vendas corporativas
       "link#wizard", // Link coringa - tem um ajuste no Css que mostra o icone de acordo com o link atribuido
-      "link#instagram"
+      "link#instagram-header"
       // "link#wishlist--left"
     ],
     "props": {
@@ -85,7 +85,7 @@
   },
 
   // Link Instagram
-  "link#instagram": {
+  "link#instagram-header": {
     "title": "Link Instagram",
     "props": {
       "label": "Nosso Instagram",
