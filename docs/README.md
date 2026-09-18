@@ -1,8 +1,6 @@
-# SunHouse Store Theme
+# Sun House storefront
 
-The **SunHouse Store Theme** (`sunhouse.sunhouse`) is the VTEX IO Store Framework storefront for [Sun House](https://www.sunhouse.com.br) — a furniture catalog with many finish variations. This repository is the production theme, kept here as a **portfolio** piece, not a starter to clone or republish.
-
-Blocks, CSS, and custom `sunhouse.*` apps are composed into Home, Product, Search, Header/Footer, institutional pages, and campaign landings. Native Store Framework blocks are used where they fit; custom apps cover gaps the default shelf, SKU selector, menu, and PDP flows do not.
+This repository is the VTEX IO Store Framework storefront for [Sun House](https://www.sunhouse.com.br) (`sunhouse.sunhouse`). Native VTEX blocks are composed with custom `sunhouse.*` apps. The repository contains the theme structure and storefront implementation.
 
 ## Store surfaces
 
@@ -14,32 +12,32 @@ Blocks, CSS, and custom `sunhouse.*` apps are composed into Home, Product, Searc
 | Header / Footer | Super menu, minicart, search, login, RD Station newsletter |
 | Landings | Corporate, stores, Black Friday, designer/collection, institutional templates |
 
-## Behavior
+## Architecture
 
-1. **Composition**: Pages are Store Framework JSONC under `store/blocks`, split by surface (`pages/`, `common/`, `landing-pages/`, `components/`).
-2. **Catalog complexity**: PDP uses `enhanced-sku-selector` (finish images + popper). Shelves use [`shelf-enhanced-sku-selector`](https://github.com/AlexJSant/shelf-enhanced-sku-selector) so cards show the same variation order as the product page.
-3. **Product types**: `condition-layout` switches PDP CTAs (standard, corporate, exclusive, unavailable) without duplicating the whole template.
-4. **Refresh**: Newer Home / PDP / PLP / shelf blocks live alongside `_deprecated` trees until the old surfaces are fully retired.
-5. **Performance**: Home uses `__fold__`; shelf swatches request resized assets from the image server instead of full catalog files.
+1. **Composition**: Pages are Store Framework JSONC under `store/blocks`, organized by surface (`pages/`, `common/`, `landing-pages/`, `components/`).
+2. **SKU selection**: The PDP uses `sunhouse.enhanced-sku-selector` (finish images and popper). Shelves use [`sunhouse.shelf-enhanced-sku-selector`](https://github.com/AlexJSant/shelf-enhanced-sku-selector) so cards follow the same variation order as the PDP.
+3. **Product types**: `sunhouse.condition-layout` selects PDP CTAs (standard, corporate, exclusive, unavailable) without duplicating the full template.
+4. **Migrations**: Newer Home, PDP, PLP, and shelf blocks coexist with `_deprecated` trees until the previous surfaces are retired.
+5. **Performance**: Home uses `__fold__`. Shelf swatches request resized assets from the image server rather than full catalog files.
 
 ## Theme layout
 
 ```
-store/blocks/     # JSONC templates and block composition
-styles/css/       # CSS Handles, mirrored by surface (home, product, search, header…)
-checkout-ui-custom/
-docs/             # This file (docs builder)
+store/blocks/        # JSONC templates and block composition
+styles/css/          # CSS Handles, organized by surface
+checkout-ui-custom/  # Checkout UI customizations
+docs/                # Documentation (docs builder)
 ```
 
-CSS follows the page it belongs to (`styles/css/home/_new--home/`, `product/_new--product/`, `search/_new--search/`). Shared shelf and header rules sit under `styles/css/components/` and `styles/css/common/`.
+CSS is grouped by the surface it belongs to (`styles/css/home/_new--home/`, `product/_new--product/`, `search/_new--search/`). Shared shelf and header rules sit under `styles/css/components/` and `styles/css/common/`.
 
 ## Custom apps (selected)
 
-These are the storefront pieces that go beyond native VTEX blocks. The full list is in `manifest.json`.
+Custom `sunhouse.*` apps extend native VTEX blocks as storefront dependencies. The complete dependency list is in `manifest.json`.
 
 | App | Role |
 | --- | --- |
-| `sunhouse.enhanced-sku-selector` | PDP variation selector with finish samples |
+| `sunhouse.enhanced-sku-selector` | PDP variation selector with finish swatches |
 | `sunhouse.shelf-enhanced-sku-selector` | Shelf swatches in PDP order ([repo](https://github.com/AlexJSant/shelf-enhanced-sku-selector)) |
 | `sunhouse.product-images-custom` | PDP gallery |
 | `sunhouse.buy-together-enhanced` | Complementary products on the PDP |
@@ -49,19 +47,19 @@ These are the storefront pieces that go beyond native VTEX blocks. The full list
 | `sunhouse.embla-carousel` / `sunhouse.slider-layout` | Carousels and shelves |
 | `sunhouse.whatsapp-lead-capture-pdp` | WhatsApp lead / buy CTAs |
 | `sunhouse.rd-station-forms` | Newsletter in the footer |
-| `sunhouse.youtube-shorts-widget` | Shorts embed on the PDP |
+| `sunhouse.youtube-shorts-widget` | YouTube Shorts embed on the PDP |
 | `sunhouse.condition-layout` | Product-type branching |
 | `sunhouse.container` | Layout wrapper used across pages |
 
 ## Customization
 
-Styling is CSS Handles plus `blockClass` on flex-layout, container, and summary blocks. App-specific overrides use the usual theme file, for example `styles/css/components/shelf/_new--shelf/shelf-sku-selector/sunhouse.shelf-enhanced-sku-selector.css`.
+Styling uses CSS Handles and `blockClass` on flex-layout, container, and summary blocks. App-specific overrides follow the theme CSS file convention, for example `styles/css/components/shelf/_new--shelf/shelf-sku-selector/sunhouse.shelf-enhanced-sku-selector.css`.
 
 > Site Editor remains available for content and props. Template structure is owned in this repository.
 
 ## Dependencies
 
-Declared in `manifest.json`: native VTEX apps (`vtex.store`, `vtex.flex-layout`, `vtex.product-summary`, `vtex.search-result`, …) plus the `sunhouse.*` apps above. Peer apps include wishlist, speech-to-text, and Konfidency reviews.
+Declared in `manifest.json`: native VTEX apps (`vtex.store`, `vtex.flex-layout`, `vtex.product-summary`, `vtex.search-result`, …) plus the `sunhouse.*` apps above. Peer dependencies include wishlist, speech-to-text, and Konfidency reviews.
 
 Builders: `store`, `styles`, `docs`, `assets`, `checkout-ui-custom`.
 
