@@ -11,8 +11,15 @@
       "container#spacing-default",
 
       // Shelfs
-      "container#shelf-featured",
+      // Em desenvolvimento - Instagram Feed Integration
+      //
+      "container#instagram-feed",
+      //
+
+      // "container#shelf-featured",
       "container#spacing-default",
+      //
+      //
 
       // Product Highlight Grid
       "container#product-highlight-grid",
