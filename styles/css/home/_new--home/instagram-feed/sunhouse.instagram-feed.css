@@ -1,0 +1,44 @@
+/* .sunhouse-instagram-feed-0-x-sliderArrows { */
+.sliderArrows {
+    all: unset;
+    position: absolute;
+    top: -80px;
+    right: 62px
+}
+
+/* .sunhouse-instagram-feed-0-x-sliderArrows .sunhouse-instagram-feed-0-x-caretIcon { */
+.sliderArrows .caretIcon {
+    width: 0 !important
+}
+
+/* .sunhouse-instagram-feed-0-x-sliderRightArrow { */
+.sliderRightArrow {
+    right: 6px
+}
+
+/* .sunhouse-instagram-feed-0-x-sliderLeftArrow::after,
+.sunhouse-instagram-feed-0-x-sliderRightArrow::after { */
+.sliderLeftArrow::after,
+.sliderRightArrow::after {
+    font-family: Bootstrap-Icons;
+    font-size: 38px;
+    opacity: .5;
+    transition: all .2s ease-in-out
+}
+
+/* .sunhouse-instagram-feed-0-x-sliderLeftArrow:hover::after,
+.sunhouse-instagram-feed-0-x-sliderRightArrow:hover::after { */
+.sliderLeftArrow:hover::after,
+.sliderRightArrow:hover::after {
+    opacity: 1
+}
+
+/* .sunhouse-instagram-feed-0-x-sliderLeftArrow::after { */
+.sliderLeftArrow::after {
+    content: "\F12F"
+}
+
+/* .sunhouse-instagram-feed-0-x-sliderRightArrow::after { */
+.sliderRightArrow::after {
+    content: "\F138"
+}
