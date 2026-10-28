@@ -1,3 +1,68 @@
+/* Title block */
+/* .sunhouse-instagram-feed-0-x-heading { */
+.heading {
+    width: 100%;
+    max-width: 1210px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 0
+}
+
+/* .sunhouse-instagram-feed-0-x-title { */
+.title {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 33px;
+    margin-bottom: 0;
+    text-align: left
+}
+
+
+/* Slider Styles */
+/* Slider Container */
+/* .sunhouse-instagram-feed-0-x-container { */
+.container {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0
+}
+
+/* Slider Layout Container */
+/* .sunhouse-instagram-feed-0-x-sliderLayoutContainer { */
+.sliderLayoutContainer {
+    margin-top: 40px;
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+
+/* Slider Slide */
+/* .sunhouse-instagram-feed-0-x-slide { */
+.slide {
+    padding-inline: 7px
+}
+
+/* Slider Card */
+/* .sunhouse-instagram-feed-0-x-card { */
+.card {
+    aspect-ratio: unset !important;
+    margin: unset !important
+}
+
+/* Slider Image */
+/* .sunhouse-instagram-feed-0-x-image { */
+.image {
+    width: 291px;
+    /* height: 355px; - Altura padrao do componente herdado - Prateleira shelf-featured */
+    height: 455px; /* Altura ideal para algo visualmente agradavel e proximo ao Instagram - porem, a imagem que vem da API é mais alta */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px
+}
+
+/* Slider Arrows */
 /* .sunhouse-instagram-feed-0-x-sliderArrows { */
 .sliderArrows {
     all: unset;

@@ -1,0 +1,7 @@
+/* .sunhouse-container-1-x-container--instagram-feed { */
+.container--instagram-feed {
+    margin-top: 52px; /* Esse ta quebrando layout */
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid #1614134d
+}

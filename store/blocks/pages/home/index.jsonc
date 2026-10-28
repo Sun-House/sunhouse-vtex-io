@@ -12,13 +12,9 @@
 
       // Shelfs
       // Em desenvolvimento - Instagram Feed Integration
-      //
-      "container#instagram-feed",
-      //
-
-      // "container#shelf-featured",
+      "container#instagram-feed", // Novo bloco padrao para esta posicao
+      "container#shelf-featured", // Se mantem aqui para caso precise voltar a utilizar
       "container#spacing-default",
-      //
       //
 
       // Product Highlight Grid
