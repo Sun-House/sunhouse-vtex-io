@@ -31,6 +31,12 @@
     padding: 0
 }
 
+/* Skeleton - Pode ser necessario mais ajustes */
+/* .sunhouse-instagram-feed-0-x-skeleton { */
+.skeleton {
+    margin-top: 40px
+}
+
 /* Slider Layout Container */
 /* .sunhouse-instagram-feed-0-x-sliderLayoutContainer { */
 .sliderLayoutContainer {
