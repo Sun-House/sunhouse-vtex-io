@@ -33,7 +33,8 @@
 @media screen and (min-width: 1025px) {
     
     :global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
-    :global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado) {
+    :global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado),
+    :global(.sunhouse-container-1-x-container--shelf-grid) :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_pix) {
         opacity: 1; /* Pode ser necessario aplicar !important */
         visibility: visible /* Pode ser necessario aplicar !important */
     }

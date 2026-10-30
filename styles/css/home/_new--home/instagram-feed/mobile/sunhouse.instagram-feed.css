@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-instagram-feed-0-x-title { */
+    .title {
+        line-height: 1.2;
+        margin: 0 18px 0 18px;
+        margin-bottom: 48px !important
+    }
+
+}

@@ -2,7 +2,6 @@
     "container#instagram-feed": {
         "title": "Instagram Feed",
         "children": [
-            // Aqui vai o app custom block
             "instagram-feed#home"
         ],
         "props": {
@@ -11,6 +10,10 @@
     },
 
     "instagram-feed#home": {
+        "children": [
+            "responsive-layout.desktop#shelf-slider",
+            "responsive-layout.mobile#shelf-slider"
+        ],
         "props": {
             "title": "Acompanhe a Sun House no Instagram",
             "allowDevelopmentFixtures": false

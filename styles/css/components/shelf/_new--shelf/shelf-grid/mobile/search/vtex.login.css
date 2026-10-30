@@ -76,8 +76,10 @@
 
     :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
     :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado),
+    :global(.render-container)[class*="render-route-store-search"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_pix),
     :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
-    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado) {
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado),
+    :global(.render-container)[class*="render-route-vtex-store-2-x-store-custom-"] :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_pix) {
         opacity: 1;
         visibility: visible
     }

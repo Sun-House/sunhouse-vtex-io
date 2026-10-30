@@ -3,6 +3,7 @@
 .heading {
     width: 100%;
     max-width: 1210px;
+    min-height: unset !important;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -62,48 +63,62 @@
     border-radius: 4px
 }
 
-/* Slider Arrows */
-/* .sunhouse-instagram-feed-0-x-sliderArrows { */
-.sliderArrows {
-    all: unset;
-    position: absolute;
-    top: -80px;
-    right: 62px
+/* Visual geral dos cards */
+/* .sunhouse-instagram-feed-0-x-cardOverlay { */
+.cardOverlay {
+    background: #000000ba;
+    transition: .3s ease-in-out
 }
 
-/* .sunhouse-instagram-feed-0-x-sliderArrows .sunhouse-instagram-feed-0-x-caretIcon { */
-.sliderArrows .caretIcon {
-    width: 0 !important
+/* .sunhouse-instagram-feed-0-x-cardOverlayButton { */
+.cardOverlayButton {
+    border: 0;
+    background-color: #fff;
+    color: #161413;
+    border-radius: 50px;
+    transition: all .3s ease-in-out
 }
 
-/* .sunhouse-instagram-feed-0-x-sliderRightArrow { */
-.sliderRightArrow {
-    right: 6px
+/* .sunhouse-instagram-feed-0-x-cardOverlayButton:hover {
+.sunhouse-instagram-feed-0-x-cardOverlayButton:focus { */
+.cardOverlayButton:hover,
+.cardOverlayButton:focus {
+    background-color: #FFDA00;
+    color: #161413;
+    scale: 1.05
 }
 
-/* .sunhouse-instagram-feed-0-x-sliderLeftArrow::after,
-.sunhouse-instagram-feed-0-x-sliderRightArrow::after { */
-.sliderLeftArrow::after,
-.sliderRightArrow::after {
-    font-family: Bootstrap-Icons;
-    font-size: 38px;
-    opacity: .5;
-    transition: all .2s ease-in-out
+/* .sunhouse-instagram-feed-0-x-fixedCard { */
+.fixedCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px
 }
 
-/* .sunhouse-instagram-feed-0-x-sliderLeftArrow:hover::after,
-.sunhouse-instagram-feed-0-x-sliderRightArrow:hover::after { */
-.sliderLeftArrow:hover::after,
-.sliderRightArrow:hover::after {
-    opacity: 1
+/* .sunhouse-instagram-feed-0-x-fixedCardText { */
+.fixedCardText {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 24px
 }
 
-/* .sunhouse-instagram-feed-0-x-sliderLeftArrow::after { */
-.sliderLeftArrow::after {
-    content: "\F12F"
+/* .sunhouse-instagram-feed-0-x-fixedCardButton { */
+.fixedCardButton {
+    border: 2px solid #161413;
+    background-color: transparent;
+    color: #161413;
+    border-radius: 50px;
+    padding: 14px;
+    transition: all .4s ease-in-out
 }
 
-/* .sunhouse-instagram-feed-0-x-sliderRightArrow::after { */
-.sliderRightArrow::after {
-    content: "\F138"
+/* .sunhouse-instagram-feed-0-x-fixedCardButton:hover {
+.sunhouse-instagram-feed-0-x-fixedCardButton:focus { */
+.fixedCardButton:hover,
+.fixedCardButton:focus {
+    border-color: #161413;
+    background-color: #161413;
+    color: #fff
 }

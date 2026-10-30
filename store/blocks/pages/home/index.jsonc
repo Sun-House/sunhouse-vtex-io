@@ -11,11 +11,9 @@
       "container#spacing-default",
 
       // Shelfs
-      // Em desenvolvimento - Instagram Feed Integration
-      "container#instagram-feed", // Novo bloco padrao para esta posicao
-      "container#shelf-featured", // Se mantem aqui para caso precise voltar a utilizar
+      "container#instagram-feed",
+      "container#shelf-featured",
       "container#spacing-default",
-      //
 
       // Product Highlight Grid
       "container#product-highlight-grid",
@@ -32,7 +30,7 @@
       "container#fullwidth-banner-shelf",
 
       // Instagram Block - Estudar se será possivel para lançamento no Refresh
-      // A SER IMPLEMENTADO - pos lancamento do MVP do Refresh
+      // Reaproveitar bloco existente `Instagram Feed` e apenas ajustar visuais (estudar se ainda é necessario colocar esse tipo de bloco aqui)
 
       // Blog Grid
       "container#blog-grid",

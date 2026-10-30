@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+
+    /* .sunhouse-embla-carousel-1-x-emblaSlide:has(.sunhouse-instagram-feed-0-x-fixedCard) { */
+    :global(.sunhouse-embla-carousel-1-x-emblaSlide:has(.sunhouse-instagram-feed-0-x-fixedCard)) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }    
+
+}

@@ -5,12 +5,14 @@
 
     :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper),
     :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
-    :global(.vtex-container-wrapper--new-shelf-price_parcelado) {
+    :global(.vtex-container-wrapper--new-shelf-price_parcelado),
+    :global(.vtex-container-wrapper--new-shelf-price_pix) {
         transition: all .2s ease-in-out
     }
 
     :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-product-summary-2-x-nameContainer--new-shelf),
-    :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado) {
+    :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_parcelado),
+    :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper):hover :global(.vtex-container-wrapper--new-shelf-price_pix) {
         opacity: 0;
         visibility: hidden
     }
@@ -19,12 +21,5 @@
         opacity: 1;
         visibility: visible
     }
-
-    /* DEBUG */
-    /* :global(.vtex-flex-layout-0-x-flexCol--hover-block-wrapper) {
-        / DEBUG /
-        background: #6633998a
-        / DEBUG /
-    } */
     
 }
