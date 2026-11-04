@@ -5,16 +5,15 @@
         "children": [
             "product-description",
             "container#assembled-dimensions"
-            // "product-dimensions#assembled-dimensions"
         ],
         "props": {
             "blockClass": ["product-description", "product-description-pure-text"]
         }
     },
 
-    // Bloco de Dimensoes do Produto
+    // Bloco de Dimensoes do Produto Montado
     "container#assembled-dimensions": {
-        "title": "Wrapper - Dimensões do Produto", // Permite ocultar o bloco situacionalmente via Site Editor
+        "title": "Dimensões do Produto Montado", // Permite ocultar o bloco situacionalmente via Site Editor
         "children": [
             "product-dimensions#assembled-dimensions"
         ]
@@ -22,9 +21,28 @@
     "product-dimensions#assembled-dimensions": {
         "title": "Dimensões do Produto Montado", // Aqui apenas explicita o que é o bloco, mas nao da para editar via Site Editor
         "props": {
+            "measures": "assembled",
             "blockClass": "product-dimensions-assembled"
         }
     },
+
+    // Não está em uso no site, mas pode ser usado em outros lugares
+    "container#freight-dimensions": {
+        "title": "Dimensões do Produto para Frete", // Permite ocultar o bloco situacionalmente via Site Editor
+        "children": [
+            "product-dimensions#freight-dimensions"
+        ]
+    },
+    // Esse ajuste foi necessario devido a uma alteração no app nativo vtex io vtex.catalog-graphql, que passou
+    // a exigir um token de autenticação para acessar as dimensões do produto (via consulta de API ao campo SKU)
+    "product-dimensions#freight-dimensions": {
+        "title": "Dimensões do Produto para Frete", // Aqui apenas explicita o que é o bloco, mas nao da para editar via Site Editor
+        "props": {
+            "measures": "freight",
+            "blockClass": ["product-dimensions-assembled", "product-dimensions-freight"] // A classe product-dimensions-assembled esta aqui apenas para herança de CSS
+        }
+    },
+    //
 
     // Normal Description - Simple
     "container#product-description-simple": {

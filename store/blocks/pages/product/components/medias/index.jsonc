@@ -20,7 +20,7 @@
     "children": [
       "stack-layout#product-image-swiper-desktop",
       "rich-text#zoom-text-mobile",
-      "product-dimensions"
+      "product-dimensions" // Não sei se esse bloco esta sendo renderizado em algum lugar (esse arquivo inteiro não tenho certeza)
     ]
   },
 
