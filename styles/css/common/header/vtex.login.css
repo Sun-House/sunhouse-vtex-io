@@ -121,3 +121,12 @@
     }
 
 }
+
+/* Ajuste temporario - ate ser removido completamente o Agentic CX */
+/* Esconde o Agentic CX - mesmo o ID sendo esse abaixo, a vtex identifica de outra maneira durante o build do server,
+   e por isso precisei aplicar o seletor de varias formas diferentes */
+div#wwc,
+:global(div#wwc),
+#wwc {
+    display: none !important
+}
