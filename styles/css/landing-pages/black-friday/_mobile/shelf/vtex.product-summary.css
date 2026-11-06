@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+
+    /* .vtex-product-summary-2-x-element--main-shelf-new .vtex-container-container--highlight_shelf-black-friday { */
+    .element--main-shelf-new :global(.vtex-container-container--highlight_shelf-black-friday) {
+        margin-top: 12px;
+        margin-left: 0;
+        margin-right: 0
+    }
+
+}

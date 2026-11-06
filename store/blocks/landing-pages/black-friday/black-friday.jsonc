@@ -6,6 +6,9 @@
 			// "vtex.search-result:search-result-layout.customQuery#black-friday"
 			"sunhouse.search-result:search-result-layout.customQuery#collection"
 		],
+		"children": [
+			"container#search-seo-new"
+		],
 		"props": {
 			"context": { // Configs nao refletem, mas usar como base para configurar manualmente no Site Editor
 				"skusFilter": "FIRST_AVAILABLE",

@@ -1,0 +1,4 @@
+/* .vtex-product-summary-2-x-element--main-shelf-new .vtex-container-container--highlight_shelf-black-friday { */
+.element--main-shelf-new :global(.vtex-container-container--highlight_shelf-black-friday) {
+    margin: 0 16px
+}
