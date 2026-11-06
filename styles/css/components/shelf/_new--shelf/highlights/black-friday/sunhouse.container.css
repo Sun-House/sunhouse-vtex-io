@@ -1,0 +1,4 @@
+/* Ajuste visual minimo global apenas para evitar CLS/LS */
+.container--highlight_shelf-black-friday {
+    min-height: 32px
+}

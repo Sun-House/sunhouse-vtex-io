@@ -1,0 +1,64 @@
+{
+    // Flag Destaque PLP - Black Friday
+    "container#shelf-highlight--black-friday": {
+      "children": [
+        "sunhouse.product-highlights@2.x:product-highlights#highlight_black-friday"
+      ],
+      "props": {
+        "blockClass": "highlight_shelf-black-friday"
+      }
+    },
+
+    "sunhouse.product-highlights@2.x:product-highlights#highlight_black-friday": {
+      "title": "Flag Destaque - Black Friday",
+      "children": [
+        "product-highlight-text#black-friday"
+      ],
+      "props": {
+        "filter": {
+          "type": "show",
+          "highlightNames": [
+            "Black Friday"
+          ]
+        }
+      }
+    },
+    "product-highlight-text#black-friday": {
+      "props": {
+        "message": "<span>Preço de <bold>Black <strong>Natal</strong></span></bold>",
+        "markers": [
+          "span",
+          "bold",
+          "strong"
+        ],
+        "blockClass": "highlight_shelf-black-friday"
+      }
+    },
+
+    // Flag Destaque PDP - Black Friday
+    "sunhouse.product-highlights@2.x:product-highlights#highlight_black-friday-pdp": {
+      "title": "Flag Destaque - Black Friday",
+      "children": [
+        "product-highlight-text#black-friday-pdp"
+      ],
+      "props": {
+        "filter": {
+          "type": "show",
+          "highlightNames": [
+            "Black Friday"
+          ]
+        }
+      }
+    },
+    "product-highlight-text#black-friday-pdp": {
+      "props": {
+        "message": "<span>Preço de <bold>Black <strong>Natal</strong></span></bold>",
+        "markers": [
+          "span",
+          "bold",
+          "strong"
+        ],
+        "blockClass": "highlight_pdp-black-friday"
+      }
+    }
+}

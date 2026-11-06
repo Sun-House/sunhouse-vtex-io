@@ -1,8 +1,10 @@
 {
 	"store.custom#black-friday-plp": {
 		"blocks": [
-			"flex-layout.row#bf_info-card__wrapper",
-			"vtex.search-result:search-result-layout.customQuery#black-friday"
+			// "flex-layout.row#bf_info-card__wrapper",
+			"container#custom_banner-department-desktop",
+			// "vtex.search-result:search-result-layout.customQuery#black-friday"
+			"sunhouse.search-result:search-result-layout.customQuery#collection"
 		],
 		"props": {
 			"context": { // Configs nao refletem, mas usar como base para configurar manualmente no Site Editor
@@ -12,6 +14,7 @@
 			}
 		}
 	},
+	// Não esta em uso - precisa de muitos ajuste e possivelmente nao valha a pena manter
 	"vtex.search-result:search-result-layout.customQuery#black-friday": {
     	"title": "Configurações da Vitrine",
     	"blocks": [

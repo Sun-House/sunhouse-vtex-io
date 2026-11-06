@@ -1,0 +1,14 @@
+/* .sunhouse-product-highlights-2-x-productHighlightText--highlight_shelf-black-friday { */
+.productHighlightText--highlight_shelf-black-friday,
+.productHighlightText-span--highlight_shelf-black-friday {
+    color: #fff;
+    font-size: 16px
+}
+
+.productHighlightText-bold--highlight_shelf-black-friday {
+    font-weight: 700
+}
+
+.productHighlightText-strong--highlight_shelf-black-friday {
+    color: #F90041
+}

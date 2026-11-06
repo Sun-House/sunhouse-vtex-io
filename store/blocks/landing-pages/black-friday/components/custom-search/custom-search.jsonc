@@ -299,51 +299,27 @@
         }
     },
 	//
-
-
-
-
-	"flex-layout.row#bf_info-card__wrapper": {
-		"title": "Banner Hero",
-		"children": [
-			"container#custom_banner-department-desktop"
-		],
-		"props": {
-			"fullWidth": true,
-			"blockClass": "bf_info-card__wrapper"
-		}
-	},
+	
 	"container#custom_banner-department-desktop": {
-		"title": "Banner - InfoCard",
+		"title": "Banner e Cronometro",
 		"children": [
-			"info-card#black-friday",
-			"cron-countdown#black-friday"
+			"list-context.info-card-list#banner-main",
+			"container#cron-countdown-black-friday"
 		],
 		"props": {
 			"blockClass": ["search-banner", "info-card_lp-banner"]
 		}
 	},
-	"info-card#black-friday": {
-		"title": "InfoCard Configs",
-    	"props": {
-			"id": "info-card--black-friday",
-			"imageAltText": "Black Friday de 2025 da Sun House",
-			"isFullModeStyle": true,
-			"textMode": "rich-text",
-			"textPosition": "center",
-			"imageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/b1f45028-b458-4da7-8e81-3e5e61d2ba70___de403d1ef6b0607d772a7beccd0d79ce.jpg",
-			"mobileImageUrl": "https://sunhouse.vtexassets.com/assets/vtex.file-manager-graphql/images/b1f45028-b458-4da7-8e81-3e5e61d2ba70___de403d1ef6b0607d772a7beccd0d79ce.jpg",
-			// "imageActionUrl": "/black-friday", -> Ta querbrando a acao do botao de CTA
-			"headline": "# Black Friday da Sun",
-			"subhead": "## Está começando a __maior Black Friday__ já vista na Sun House!",
-			"callToActionText": "Ver os produtos em oferta",
-			"callToActionUrl": "#gallery-layout-container",
-			"textAlignment": "center",
-			"fetchpriority": "auto",
-			"preload": true,
-			"blockClass": "info-card_lp-black-friday"
-    	}
-  	},
+	
+	"container#cron-countdown-black-friday": {
+		"title": "Contagem Regressiva",
+		"children": [
+			"cron-countdown#black-friday"
+		],
+		"props": {
+			"blockClass": "cron-black-friday"
+		}
+	},
 	"cron-countdown#black-friday": {
 		"title": "Contagem Regressiva - Black Friday",
 		"props": {

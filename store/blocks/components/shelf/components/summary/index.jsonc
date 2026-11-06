@@ -89,7 +89,8 @@
 
   "container#image-shelf-new": {
       "children": [
-          "product-summary-image#new-shelf"
+          "product-summary-image#new-shelf",
+          "container#shelf-highlight--black-friday" // Flag Black Friday - Ajustar visual anualmente
       ],
       "props": {
           "blockClass": ["image-shelf", "bf_image-shelf"]

@@ -1,0 +1,63 @@
+/* A partir daqui, tem muita modificação que pode quebrar no mobile
+   Vou testar, mas se ficar estranho, vou marcar para force desktop neste bloco */
+/* START */
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-container--main-banner-home:first-child .sunhouse-slider-layout-0-x-paragraph--main-banner-home)::after,
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-container--main-banner-home:first-child .sunhouse-slider-layout-0-x-paragraph--main-banner-home)::before {
+    content: ""
+}
+
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-container--main-banner-home .sunhouse-slider-layout-0-x-paragraph--main-banner-home) {
+    display: block
+}
+
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-paragraph--main-banner-home) {
+    color: #000;
+    text-shadow: 1px 1px 60px #fff;
+    font-size: 100px;
+    font-weight: 700
+}
+
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-strong--main-banner-home) {
+    color: #ab0505;
+    text-shadow: 1px 1px 60px #fff;
+    font-weight: 500
+}
+
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-heading--main-banner-home)::before,
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-heading--main-banner-home)::after {
+    content: "—";
+    color: #ab0505;
+    font-size: 42px;
+    font-weight: 200;
+    margin: 0 20px
+}
+
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-heading--main-banner-home) {
+    color: #000;
+    text-shadow: 1px 1px 20px #fff;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 500
+}
+
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-infoCardCallActionContainer--main-banner-home .vtex-button)::before,
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-infoCardCallActionContainer--main-banner-home .vtex-button)::after {
+    content: unset
+}
+
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-infoCardCallActionContainer--main-banner-home .vtex-button) {
+    background-color: #ab0505;
+    border-color: #ab0505;
+    border-radius: 4px;
+    padding: 10px 48px;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: .3s ease-in-out
+}
+
+:global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-infoCardCallActionContainer--main-banner-home .vtex-button):hover {
+    background-color: #FFDA00;
+    border-color: #FFDA00;
+    color: #161413
+}
+/* END */

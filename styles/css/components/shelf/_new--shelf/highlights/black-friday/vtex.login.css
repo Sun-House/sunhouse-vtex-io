@@ -1,0 +1,10 @@
+/* .vtex-container-container--highlight_shelf-black-friday:has(.sunhouse-product-highlights-2-x-productHighlightText--highlight_shelf-black-friday) { */
+/* :global(.vtex-container-container--highlight_shelf-black-friday:has(.sunhouse-product-highlights-2-x-productHighlightText--highlight_shelf-black-friday)) { */
+:global(.vtex-container-container--highlight_shelf-black-friday:has([class*="highlight_shelf-black-friday"])) {
+    background: #161413;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px
+}

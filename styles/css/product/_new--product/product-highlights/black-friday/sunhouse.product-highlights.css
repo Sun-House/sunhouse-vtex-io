@@ -1,0 +1,30 @@
+/* .sunhouse-product-highlights-2-x-productHighlightText-span--highlight_pdp-black-friday { */
+.productHighlightText-span--highlight_pdp-black-friday {
+    flex: 1;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin: 0 2px;
+    background-color: #161413 !important;
+    color: #fff !important;
+    /* max-width: 215px; */
+    max-width: fit-content !important;
+    margin-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    line-height: 31px;
+    font-weight: 400
+}
+
+/* .sunhouse-product-highlights-2-x-productHighlightText-bold--highlight_pdp-black-friday { */
+.productHighlightText-bold--highlight_pdp-black-friday {
+    font-weight: 700
+}
+
+/* .sunhouse-product-highlights-2-x-productHighlightText-strong--highlight_pdp-black-friday { */
+.productHighlightText-strong--highlight_pdp-black-friday {
+    color: #F90041
+}

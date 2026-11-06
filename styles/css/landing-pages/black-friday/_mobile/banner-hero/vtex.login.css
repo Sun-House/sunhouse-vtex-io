@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+    
+    /* .render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-heading--main-banner-home { */
+    :global(.render-route-vtex-store-2-x-store-custom-black-friday .sunhouse-slider-layout-0-x-heading--main-banner-home) {
+        text-align: center;
+        display: flex;
+        align-items: center
+    }
+    
+}

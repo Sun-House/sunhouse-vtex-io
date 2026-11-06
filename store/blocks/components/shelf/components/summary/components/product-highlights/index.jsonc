@@ -34,7 +34,8 @@
   // Flags Destaque - PDP
   "container#product-highlights--product-page": {
     "children": [
-      "sunhouse.product-highlights@2.x:product-highlights#pdp"
+      "sunhouse.product-highlights@2.x:product-highlights#pdp",
+      "sunhouse.product-highlights@2.x:product-highlights#highlight_black-friday-pdp" // Devera ficar oculto automaticamente fora da epoca de Black Friday
       // ,"sunhouse.product-highlights@2.x:product-highlights#pronta-entrega" // Ainda em desenvolvimento
     ],
     "props": {
@@ -51,9 +52,7 @@
         "type": "show",
         "highlightNames": [
           "Pronta Entrega",
-          "Lançamento",
-          "Outlet",
-          "Black Friday"
+          "Lançamento"
         ]
       }
     }

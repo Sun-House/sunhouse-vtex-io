@@ -1,0 +1,9 @@
+/* @media (max-width: 768px) { */
+    /* Bloqueia rolagem da tela START */
+    /* body:has(:global(.render-route-vtex-store-2-x-store-custom-black-friday)) {
+        overflow: hidden !important;
+        height: 100%;
+        position: fixed
+    } */
+    /* Bloqueia rolagem da tela END */
+/* } */
