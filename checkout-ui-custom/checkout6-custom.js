@@ -1,6 +1,6 @@
 // Fn - Highlight Bar Checkout
 // Highlight Bar Checkout component
-const CUPOM_CODE = 'FRETESP';
+const CUPOM_CODE = 'SURPRESA10';
 
 // 1. Defina o bloco HTML atualizado com o botão "Usar cupom"
 const htmlBlock = `
@@ -10,12 +10,12 @@ const htmlBlock = `
             <div id="coupon-info-text-container">
                 <div>
                     <p>
-                        Garanta o seu:
-                        <span class="coupon-highlight_bold-text">Frete grátis sem pedido mínimo </span>
-                        em toda a SP | 
-                        <span class="coupon-highlight_bold-text">Cupom </span>
+                        Presente de Black Natal:
+                        <span class="coupon-highlight_bold-text">Você ganhou 10% OFF </span>
+                        em seu pedido | 
+                        <span class="coupon-highlight_bold-text">Use o cupom </span>
                         <span class="coupon-highlight_bold-text" id="coupon-code-display">${CUPOM_CODE}</span> 
-                        <button id="apply-coupon-button">Usar cupom <i class="bi bi-gift-fill"></i></button>
+                        <button id="apply-coupon-button">Aplicar cupom <i class="bi bi-gift-fill"></i></button>
                     </p>
                 </div>
             </div>
